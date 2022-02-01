@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Sandbag -->
+
+  <FT_Sandbag.label>Military Sandbag</FT_Sandbag.label>
+  <FT_Sandbag.description>Bags of locally-sourced dirt or sand, stacked for use as cover. they are well-stacked so it is more durable.</FT_Sandbag.description>
+  <FT_Sandbag_Blueprint.label>Military Sandbag (blueprint)</FT_Sandbag_Blueprint.label>
+  <FT_Sandbag_Frame.label>Military Sandbag (building)</FT_Sandbag_Frame.label>
+  <FT_Sandbag_Frame.description>Bags of locally-sourced dirt or sand, stacked for use as cover. they are well-stacked so it is more durable.</FT_Sandbag_Frame.description>
+
+  <FT_WallSandbag.label>Military sandbag wall</FT_WallSandbag.label>
+  <FT_WallSandbag.description>Bags of locally-sourced dirt or sand, stacked for use as wall. they are well-stacked so it is more durable.</FT_WallSandbag.description>
+  <FT_WallSandbag_Blueprint.label>Military sandbag wall (blueprint)</FT_WallSandbag_Blueprint.label>
+  <FT_WallSandbag_Frame.label>Military sandbag wall (building)</FT_WallSandbag_Frame.label>
+  <FT_WallSandbag_Frame.description>Bags of locally-sourced dirt or sand, stacked for use as wall. they are well-stacked so it is more durable.</FT_WallSandbag_Frame.description>
+
+  <FT_TankTrap.label>Tank Trap</FT_TankTrap.label>
+  <FT_TankTrap.description>A Solid Concrete Pillar which can hinder the traveling vehicle.</FT_TankTrap.description>
+  <FT_TankTrap_Blueprint.label>Tank Trap (blueprint)</FT_TankTrap_Blueprint.label>
+  <FT_TankTrap_Frame.label>Tank Trap (building)</FT_TankTrap_Frame.label>
+  <FT_TankTrap_Frame.description>A Solid Concrete Pillar which can hinder the traveling vehicle.</FT_TankTrap_Frame.description>
+
+  <FT_Tetrapods.label>Tetrapods</FT_Tetrapods.label>
+  <FT_Tetrapods.description>A Solid Concrete Pillar which lay on the coastal, maybe colonist can find its use onedays</FT_Tetrapods.description>
+  <FT_Tetrapods_Blueprint.label>Tetrapods (blueprint)</FT_Tetrapods_Blueprint.label>
+  <FT_Tetrapods_Blueprint_Install.label>Tetrapods (blueprint)</FT_Tetrapods_Blueprint_Install.label>
+  <FT_Tetrapods_Frame.label>Tetrapods (building)</FT_Tetrapods_Frame.label>
+  <FT_Tetrapods_Frame.description>A Solid Concrete Pillar which lay on the coastal, maybe colonist can find its use onedays</FT_Tetrapods_Frame.description>
+
+  <FT_Barrier.label>Concrete Barrier</FT_Barrier.label>
+  <FT_Barrier.description>A Solid Concrete Pillar which can hinder the traveling vehicle and offer cover.</FT_Barrier.description>
+  <FT_Barrier_Blueprint.label>Concrete Barrier (blueprint)</FT_Barrier_Blueprint.label>
+  <FT_Barrier_Blueprint_Install.label>Concrete Barrier (blueprint)</FT_Barrier_Blueprint_Install.label>
+  <FT_Barrier_Frame.label>Concrete Barrier (building)</FT_Barrier_Frame.label>
+  <FT_Barrier_Frame.description>A Solid Concrete Pillar which can hinder the traveling vehicle and offer cover.</FT_Barrier_Frame.description>
+
+  <FT_BarrierDiagonal.label>Diagonal Concrete Barrier</FT_BarrierDiagonal.label>
+  <FT_BarrierDiagonal.description>A Solid Concrete Pillar which can hinder the traveling vehicle and offer cover.</FT_BarrierDiagonal.description>
+  <FT_BarrierDiagonal_Blueprint.label>Diagonal Concrete Barrier (blueprint)</FT_BarrierDiagonal_Blueprint.label>
+  <FT_BarrierDiagonal_Blueprint_Install.label>Diagonal Concrete Barrier (blueprint)</FT_BarrierDiagonal_Blueprint_Install.label>
+  <FT_BarrierDiagonal_Frame.label>Diagonal Concrete Barrier (building)</FT_BarrierDiagonal_Frame.label>
+  <FT_BarrierDiagonal_Frame.description>A Solid Concrete Pillar which can hinder the traveling vehicle and offer cover.</FT_BarrierDiagonal_Frame.description>
+
+
+</LanguageData>

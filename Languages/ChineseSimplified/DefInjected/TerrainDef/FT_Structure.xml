@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Floors 地板		! -->
+
+  <FT_Concrete.label>水泥道路</FT_Concrete.label>
+  <FT_Concrete.description>铺设简单但不是很好看的道路.</FT_Concrete.description>
+
+  <FT_ConcreteTile.label>混凝土地砖</FT_ConcreteTile.label>
+  <FT_ConcreteTile.description>建造相对耗时但是较为美观的混凝土地板,适合用于大型空间.</FT_ConcreteTile.description>
+
+  <FT_FineConcreteTile.label>精致混凝土地板</FT_FineConcreteTile.label>
+  <FT_FineConcreteTile.description>使用清水混凝土铺设的地板,虽然依然是混凝土但是似乎贵族也能接受用这种设计铺设他们的房间.</FT_FineConcreteTile.description>
+
+  <FT_FlagstoneConcrete.label>混凝土铺路砖</FT_FlagstoneConcrete.label>
+  <FT_TileStoneConcrete.label>混凝土地砖</FT_TileStoneConcrete.label>
+
+  <FT_PlankFloor.label>仿木水泥地板</FT_PlankFloor.label>
+  <FT_PlankFloor.description>类似于木质地板纹路的水泥地板.易于铺设.</FT_PlankFloor.description>
+
+
+</LanguageData>

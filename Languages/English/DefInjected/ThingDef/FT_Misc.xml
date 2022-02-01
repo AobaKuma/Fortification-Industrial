@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FT_FuelGenerator.label>mobile chemfuel generator</FT_FuelGenerator.label>
+  <FT_FuelGenerator.description>Produces power by consuming chemfuel. Must be periodically refueled by hand.</FT_FuelGenerator.description>
+
+  <FT_ENIAC.label>E.N.I.A.C.</FT_ENIAC.label>
+  <FT_ENIAC.description>Electronic Numerical Integrator And Computer Or simply call it Eniac, big and highly consume power energy, Increases research speed when placed near hi-tech research bench and unlocks new research projects from reading the Disk.
+	Each research bench can connect to 4 ENIAC.</FT_ENIAC.description>
+
+  <FT_AntennaTower.label>Antenna Tower</FT_AntennaTower.label>
+  <FT_AntennaTower.description>A bigger version of orbital trade beacon,(WIP), will have more function in the future.</FT_AntennaTower.description>
+
+  <FT_Radio.label>Radio terminal</FT_Radio.label>
+  <FT_Radio.description>Allows radio contact with other factions and orbital traders,also when interrogating the frequency band, some interference that may be precious metals can be located,(WIP), will have more function in the future.</FT_Radio.description>
+
+
+</LanguageData>

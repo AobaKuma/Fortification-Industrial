@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FT_TableLathe.label>車床</FT_TableLathe.label>
+  <FT_TableLathe.description>工件固定在主軸上高速旋轉，以進給運動中刀具加工的機械桌</FT_TableLathe.description>
+
+  <FT_TableChemistry.label>化學製造桌</FT_TableChemistry.label>
+  <FT_TableChemistry.description>能夠從肉類中人工提取並合成中性胺的加工桌.</FT_TableChemistry.description>
+
+  <FT_TableConcrete.label>混凝土加工機</FT_TableConcrete.label>
+  <FT_TableConcrete.description>一台能夠將石質材料加工成混凝土的重型機器</FT_TableConcrete.description>
+
+
+  <!--<FT_BlocksConcrete.label>混凝土磚</FT_BlocksConcrete.label>-->
+  <!--<FT_BlocksConcrete.description>凝固的混凝土磚塊,作為建築材料來說非常的合適,但就是不怎麼美觀.</FT_BlocksConcrete.description>-->
+  <!--<FT_BlocksConcrete.stuffProps.stuffAdjective>混凝土</FT_BlocksConcrete.stuffProps.stuffAdjective>-->
+
+</LanguageData>

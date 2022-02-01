@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FT_ENIAC.label>ENIAC</FT_ENIAC.label>
+  <FT_ENIAC.description>[Heavy Industries Nara Terminal]
+	[ version="1.0"] [ encoding="utf-8" ]
+Loading....
+
+[To user]
+Being able to build ENIAC and read this information means that you or your civilization already has the minimum requirements for the realization of the technology in the disc...
+
+OS&gt;:_</FT_ENIAC.description>
+
+  <FT_Lathe.label>lathe</FT_Lathe.label>
+  <FT_Lathe.description>Build lathe for early-stage compoment and reinforced barrel making.</FT_Lathe.description>
+
+  <FT_IndustrialCannon.label>Industrial Cannon</FT_IndustrialCannon.label>
+  <FT_IndustrialCannon.description>Using reinforced barrel to build AT and AA Guns.</FT_IndustrialCannon.description>
+
+  <FT_Concrete.label>Concrete</FT_Concrete.label>
+  <FT_Concrete.description>crush and smelt stony material to concrete.</FT_Concrete.description>
+
+  <FT_Chemistry.label>chemistry</FT_Chemistry.label>
+  <FT_Chemistry.description>Build Chemistry Table that can artificially synthesize compounds such as Neutroamine.</FT_Chemistry.description>
+
+
+</LanguageData>

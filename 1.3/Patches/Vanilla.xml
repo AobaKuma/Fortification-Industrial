@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+		        <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ResearchProjectDef[defName="Machining"]/prerequisites</xpath>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="Machining"]</xpath>
+                    <value>	
+						<prerequisites>
+							<li>FT_Lathe</li>
+						</prerequisites>					
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="MedicineProduction"]/prerequisites</xpath>
+                    <value>												
+						<li>FT_Chemistry</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="Electricity"]/researchViewX</xpath>
+                    <value>												
+						<researchViewX>4.00</researchViewX>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="Electricity"]/researchViewY</xpath>
+                    <value>												
+						<researchViewY>3.00</researchViewY>
+                    </value>
+                </li>
+				<li Class="PatchOperationRemove">
+                    <xpath>/Defs/ResearchProjectDef[defName="MicroelectronicsBasics"]/prerequisites</xpath>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="MicroelectronicsBasics"]</xpath>
+                    <value>	
+						<prerequisites>
+							<li>FT_ENIAC</li>
+						</prerequisites>					
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+				  <xpath>*/ThingDef[defName = "HiTechResearchBench"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>FT_ENIAC</li>
+					</value>
+                </li>				
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="HeavyTurrets"]/researchViewX</xpath>
+                    <value>												
+						<researchViewX>11.00</researchViewX>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ResearchProjectDef[defName="HeavyTurrets"]/researchViewY</xpath>
+                    <value>												
+						<researchViewY>3.45</researchViewY>
+                    </value>
+                </li>
+        </operations>
+    </Operation>
+	
+  <Operation Class="PatchOperationConditional">
+    <xpath>*/ThingDef[defName = "SimpleResearchBench"]/comps</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>*/ThingDef[defName = "SimpleResearchBench"]</xpath>
+      <value>
+        <comps>
+          <li Class="CompProperties_AffectedByFacilities">
+            <linkableFacilities>
+              <li>FT_ENIAC</li>
+            </linkableFacilities>
+          </li>
+        </comps>
+      </value>
+    </nomatch>
+    <match Class="PatchOperationAdd">
+      <xpath>*/ThingDef[defName = "SimpleResearchBench"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+      <value>
+        <li>FT_ENIAC</li>
+      </value>
+    </match>
+  </Operation>
+  
+	<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Expanded Materials - Metals</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName= "FT_TableConcrete"]/recipes</xpath>
+                <value>
+					<li>VMEu_MakeConcrete</li>
+					<li>VMEu_MakeBulkConcrete</li>	
+                </value>
+            </li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

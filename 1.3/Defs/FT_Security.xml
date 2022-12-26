@@ -2,8 +2,8 @@
 
 <Defs>
 
-<ThingDef Name="FT_BaseCannonBuilding" ParentName="BuildingBase" Abstract="True">
-	<thingClass>Building_TurretGun</thingClass>
+  <ThingDef Name="FT_BaseCannonBuilding" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building_TurretGun</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
@@ -24,8 +24,8 @@
     <pathCost>50</pathCost>
     <fillPercent>0.4</fillPercent>
     <tickerType>Normal</tickerType>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_Mannable">
@@ -33,81 +33,82 @@
       </li>
     </comps>
     <building>
-      <buildingTags>
-        <li>Artillery</li>
-      </buildingTags>
+		<ai_combatDangerous>true</ai_combatDangerous>
+		<turretTopDrawSize>5</turretTopDrawSize>		 
+		<turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間 ================-->
+		<turretBurstCooldownTime>5.0</turretBurstCooldownTime>
     </building>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
       <li>PlaceWorker_ShowTurretRadius</li>
     </placeWorkers>
     <uiIconScale>1.1</uiIconScale>
-<!--================可攜帶性 ================-->	
-	<minifiedDef>MinifiedThing</minifiedDef>
+
+	  <minifiedDef>MinifiedThing</minifiedDef>  <!--================可攜帶性 ================-->	
     <thingCategories>
       <li>BuildingsSecurity</li>
     </thingCategories>
-	<statBases>
+  	<statBases>
       <Mass>150</Mass>
     </statBases>
   </ThingDef>
   
-<ThingDef ParentName="FT_BaseCannonBuilding">
+  <ThingDef ParentName="FT_BaseCannonBuilding">
     <defName>FT_TurretAA</defName>
     <label>Anti Air Gun</label>
     <description>A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field.</description>
-	<techLevel>Industrial</techLevel>
-	<graphicData>
-		<texPath>ATGun/FT_AntiTankGun_Base</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		<drawSize>(3,3)</drawSize>
-      <drawOffset>(0,0,-0.1)</drawOffset>
+  	<techLevel>Industrial</techLevel>
+	  <graphicData>
+      <texPath>ATGun/FT_AntiTankGun_Base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+        <drawOffset>(0,0,-0.1)</drawOffset>
     </graphicData>
-	<size>(3,3)</size>
+  	<size>(3,3)</size>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-	<statBases>   <!--================血量與重量工作量 ================-->
-		<MaxHitPoints>750</MaxHitPoints>
-		<Flammability>0.5</Flammability>
-		<WorkToBuild>3000</WorkToBuild>
-		<Beauty>-20</Beauty>
+  	<statBases>   <!--================血量與重量工作量 ================-->
+      <MaxHitPoints>750</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <WorkToBuild>3000</WorkToBuild>
+      <Beauty>-20</Beauty>
     </statBases>
-	<comps>
-		<li Class="CompProperties_Explosive">
-			<wickTicks>240</wickTicks>
-			<explosiveRadius>2.9</explosiveRadius>
-			<explosiveDamageType>Bomb</explosiveDamageType>
-		</li>
-		<li Class="CompProperties_Refuelable">
-			<fuelLabel>Shots until barrel change</fuelLabel>
-			<fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
-			<outOfFuelMessage>Cannot shoot: Needs new reinforced barrel</outOfFuelMessage>
-			<fuelFilter><thingDefs><li>ReinforcedBarrel</li></thingDefs></fuelFilter>
-			<fuelIsMortarBarrel>true</fuelIsMortarBarrel>
-			<fuelCapacity>120</fuelCapacity>
-			<fuelMultiplier>120</fuelMultiplier>
-			<initialFuelPercent>1</initialFuelPercent>
-			<showFuelGizmo>true</showFuelGizmo>
-			<minimumFueledThreshold>1</minimumFueledThreshold>
-			<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-			<initialAllowAutoRefuel>true</initialAllowAutoRefuel>
-			<autoRefuelPercent>0</autoRefuelPercent>
-			<fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
-		</li>
+	  <comps>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>240</wickTicks>
+        <explosiveRadius>2.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until barrel change</fuelLabel>
+        <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+        <outOfFuelMessage>Cannot shoot: Needs new reinforced barrel</outOfFuelMessage>
+        <fuelFilter><thingDefs><li>ReinforcedBarrel</li></thingDefs></fuelFilter>
+        <fuelIsMortarBarrel>true</fuelIsMortarBarrel>
+        <fuelCapacity>120</fuelCapacity>
+        <fuelMultiplier>120</fuelMultiplier>
+        <initialFuelPercent>1</initialFuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
+        <autoRefuelPercent>0</autoRefuelPercent>
+        <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
+      </li>
     </comps>
     <building>
-		<turretGunDef>FT_Gun_TurretAA</turretGunDef>
-		<turretTopDrawSize>4</turretTopDrawSize>		 
-		<turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間 ================-->
-		<turretBurstCooldownTime>5.0</turretBurstCooldownTime>
-		<buildingTags>
-			<li>Artillery_MannedMortar</li>
-		</buildingTags>
+      <turretGunDef>FT_Gun_TurretAA</turretGunDef>
+      <turretTopDrawSize>4</turretTopDrawSize>		 
+      <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間 ================-->
+      <turretBurstCooldownTime>5.0</turretBurstCooldownTime>
+      <buildingTags>
+        <li>Artillery_MannedMortar</li>
+      </buildingTags>
     </building>
-	<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+  	<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
-		<Steel>350</Steel>
-		<ComponentIndustrial>5</ComponentIndustrial>
-		<ReinforcedBarrel>2</ReinforcedBarrel>
+	  	<Steel>350</Steel>
+	  	<ComponentIndustrial>5</ComponentIndustrial>
+	  	<ReinforcedBarrel>2</ReinforcedBarrel>
     </costList>
     <researchPrerequisites>
       <li>FT_IndustrialCannon</li>
@@ -170,9 +171,6 @@
         <endExplosionRadius>0.1</endExplosionRadius>
         <endExplosionDamAmount>5</endExplosionDamAmount>
         <endExplosionArmorPenetration>0.30</endExplosionArmorPenetration>
-        <alongOnWayDamage>Crush</alongOnWayDamage>
-        <alongOnWayDamAmount>5</alongOnWayDamAmount>
-        <alongOnWayDamArmorPenetration>0.15</alongOnWayDamArmorPenetration>
         <alongOnWayHediff>FT_ShellShock</alongOnWayHediff>
         <alongOnWayHediffSeverity>0.075</alongOnWayHediffSeverity>
       </li>
@@ -276,7 +274,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <defaultProjectile>FT_Bullet_ATShell</defaultProjectile>
         <requireLineOfSight>true</requireLineOfSight>
-		<isMortar>false</isMortar>
+		    <isMortar>false</isMortar>
         <warmupTime>2</warmupTime>
         <minRange>3.9</minRange>
         <range>50</range>
@@ -307,9 +305,6 @@
         <endExplosionRadius>1</endExplosionRadius>
         <endExplosionDamAmount>50</endExplosionDamAmount>
         <endExplosionArmorPenetration>5</endExplosionArmorPenetration>
-        <alongOnWayDamage>Crush</alongOnWayDamage>
-        <alongOnWayDamAmount>15</alongOnWayDamAmount>
-        <alongOnWayDamArmorPenetration>1</alongOnWayDamArmorPenetration>
         <alongOnWayHediff>FT_ShellShock</alongOnWayHediff>
         <alongOnWayHediffSeverity>0.3</alongOnWayHediffSeverity>
       </li>
@@ -488,10 +483,10 @@
       <turretTopDrawSize>1.5</turretTopDrawSize>
 	  <turretBurstWarmupTime>2.0</turretBurstWarmupTime>
       <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
-      <buildingTags>
-        <li>Artillery_BaseDestroyer</li>
-        <li>Artillery_MannedMortar</li>
-      </buildingTags>
+      <!-- <buildingTags> -->
+        <!-- <li>Artillery_BaseDestroyer</li> -->
+        <!-- <li>Artillery_MannedMortar</li> -->
+      <!-- </buildingTags> -->
     </building>
   <uiIconPath>FT_Mortar_Icon</uiIconPath>
   <uiIconScale>0.9</uiIconScale>
@@ -514,8 +509,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
         <warmupTime>6.0</warmupTime>
-        <forcedMissRadius>18</forcedMissRadius>
-        <forcedMissRadiusClassicMortars>25</forcedMissRadiusClassicMortars>
+        <forcedMissRadius>9</forcedMissRadius>
+        <forcedMissRadiusClassicMortars>12</forcedMissRadiusClassicMortars>
         <isMortar>true</isMortar>
         <requireLineOfSight>false</requireLineOfSight>
         <minRange>9.9</minRange>
@@ -1090,9 +1085,7 @@
       <AccuracyMedium>1.11</AccuracyMedium>
       <AccuracyLong>0.90</AccuracyLong>
       <RangedWeapon_Cooldown>8.0</RangedWeapon_Cooldown>
-      <DeteriorationRate>0</DeteriorationRate>
       <Mass>120</Mass>
-      <Flammability>0</Flammability>
     </statBases>
 	<comps>
 	<li Class="Fortification.CompProperties_CastPushHeat">
@@ -1269,7 +1262,7 @@
       <turretGunDef>FT_Gun_TurretHexMortar</turretGunDef>
       <buildingTags>
         <li>Artillery</li>
-        <li>Artillery_BaseDestroyer</li>
+        <!-- <li>Artillery_BaseDestroyer</li> -->
         <li>Artillery_MannedMortar</li>
       </buildingTags>
     </building>

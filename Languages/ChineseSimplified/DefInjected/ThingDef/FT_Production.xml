@@ -1,18 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <FT_TableLathe.label>车床</FT_TableLathe.label>
+<FT_TableLathe.label>车床</FT_TableLathe.label>
   <FT_TableLathe.description>工件固定在主轴上高速旋转，以进给运动中刀具加工的机械桌</FT_TableLathe.description>
-
+  
   <FT_TableChemistry.label>化学制造桌</FT_TableChemistry.label>
   <FT_TableChemistry.description>能够从肉类中人工提取并合成中性胺的加工桌.</FT_TableChemistry.description>
-
+  
   <FT_TableConcrete.label>混凝土加工机</FT_TableConcrete.label>
   <FT_TableConcrete.description>一台能够将石质材料加工成混凝土的重型机器</FT_TableConcrete.description>
-
-
-  <!--<FT_BlocksConcrete.label>混凝土砖</FT_BlocksConcrete.label>-->
-  <!--<FT_BlocksConcrete.description>凝固的混凝土砖块,作为建筑材料来说非常的合适,但就是不怎么美观.</FT_BlocksConcrete.description>-->
-  <!--<FT_BlocksConcrete.stuffProps.stuffAdjective>混凝土</FT_BlocksConcrete.stuffProps.stuffAdjective>-->
-
 </LanguageData>

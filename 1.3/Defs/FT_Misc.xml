@@ -2,7 +2,14 @@
 
 <Defs>
 
-<ThingDef ParentName="BuildingBase">
+  <JobDef>
+    <defName>FT_EnterBunkerFacility</defName>
+    <driverClass>FortificationFacility.JobDriver_EnterBunkerFacility</driverClass>
+    <reportString>entering facility</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <ThingDef ParentName="BuildingBase">
     <defName>FT_FuelGenerator</defName>
     <label>mobile chemfuel generator</label>
     <description>Produces power by consuming chemfuel. Must be periodically refueled by hand.</description>
@@ -92,7 +99,7 @@
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
   </ThingDef>
   
-<ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>FT_ENIAC</defName>
     <label>E.N.I.A.C.</label>
     <description>Electronic Numerical Integrator And Computer Or simply call it Eniac, big and highly consume power energy, Increases research speed when placed near hi-tech research bench and unlocks new research projects from reading the Disk.
@@ -100,7 +107,7 @@
     <graphicData>
       <texPath>Eniac</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(4,4)</drawSize>
+      <drawSize>(4,4.5)</drawSize>
     </graphicData>
     <uiIconScale>0.85</uiIconScale>
     <researchPrerequisites><li>FT_ENIAC</li></researchPrerequisites>
@@ -161,7 +168,7 @@
     <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
   </ThingDef>
 
- <ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>FT_AntennaTower</defName>
     <label>Antenna Tower</label>
     <thingClass>Building_OrbitalTradeBeacon</thingClass>
@@ -228,7 +235,7 @@
   <JoyGiverDef>
     <defName>ListenRadio</defName>
     <giverClass>JoyGiver_ViewArt</giverClass>
-    <baseChance>1</baseChance>
+    <baseChance>0</baseChance>
     <jobDef>FT_UseRadio</jobDef>
     <joyKind>FT_RadioTuning</joyKind>
     <requiredCapacities>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FT_VFES_TrenchTerrain.label>强化平台</FT_VFES_TrenchTerrain.label>
+  
+  <FT_VFES_PlatformTerrain.label>强化战壕</FT_VFES_PlatformTerrain.label>
+  
+  <FT_Trench.label>混凝土战壕</FT_Trench.label>
+  <FT_Trench.description>使用钢筋混凝土加固的壕沟设施,能够在不可挖掘的地形建造,有着良好的排水系统与整洁的浇筑墙体. 虽然离开掩体需要一点时间攀爬但在里面的士兵可以获得良好的掩蔽.</FT_Trench.description>
+  
+  <FT_Platform.label>混凝土平台</FT_Platform.label>
+  <FT_Platform.description>混凝土构筑的干净平台,可以站在上面射击并获得射程上的优势.但除了爬上平台需要一点时间攀爬外的问题以外站在上面几乎没有多少掩蔽.</FT_Platform.description>
+  
+  <FT_VFES_Turret_Artillery.label>城防榴弹炮</FT_VFES_Turret_Artillery.label>
+  <FT_VFES_Turret_Artillery.description>一个建造在混凝土基座上的大口径榴弹炮,有着完善的防殉爆措施. \n\n 由于其不可移动的特性因此能够计算出较为精确的射击表,相比能够移动的同型号野战炮拥有打击更远区域的能力.</FT_VFES_Turret_Artillery.description>
+
+</LanguageData>

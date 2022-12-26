@@ -1,0 +1,7 @@
+BlackArmoury.dll
+
+AOBAUltilites.dll	讓配方可以根據市場價格與重量作為材料計算單位
+
+FortificationFacility	設施結構
+
+SingalTower		誘導裝置

@@ -7,18 +7,18 @@
   <ThingDef Name="FT_SandBag_Base" Abstract="True">
     <category>Building</category>
     <thingClass>Building</thingClass>
-	<soundImpactDefault>Pawn_Melee_Punch_HitPawn</soundImpactDefault>		
+	  <soundImpactDefault>Pawn_Melee_Punch_HitPawn</soundImpactDefault>		
     <selectable>true</selectable>
     <drawerType>MapMeshAndRealTime</drawerType>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
- <graphicData>
+    <graphicData>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
       </damageData>
     </graphicData>
-	<stuffCategories>
+	  <stuffCategories>
 		<li>Fabric</li>
-	</stuffCategories>	
+  	</stuffCategories>	
     <colorPerStuff>
       <li>
         <stuff>Cloth</stuff>
@@ -29,16 +29,16 @@
         <color>(110,114,77)</color>
       </li>
     </colorPerStuff>	
-	<blockWind>false</blockWind>
-	<neverMultiSelect>true</neverMultiSelect>
-	<holdsRoof>false</holdsRoof>
-	<castEdgeShadows>true</castEdgeShadows>
+	  <blockWind>false</blockWind>
+	  <neverMultiSelect>true</neverMultiSelect>
+	  <holdsRoof>false</holdsRoof>
+	  <castEdgeShadows>true</castEdgeShadows>
         <building>
             <allowAutoroof>false</allowAutoroof>
             <isInert>true</isInert>
             <ai_chillDestination>false</ai_chillDestination>
         </building>
-	<blockLight>false</blockLight>
+	  <blockLight>false</blockLight>
     <repairEffect>ConstructDirt</repairEffect>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <filthLeaving>SandbagRubble</filthLeaving>
@@ -156,16 +156,16 @@
     <costList>
       <FT_BlocksConcrete>5</FT_BlocksConcrete>
     </costList>
-	<blockLight>false</blockLight>
+	  <blockLight>false</blockLight>
     <uiIconPath>FT_TankTrap</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <pathCost>150</pathCost>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.35</fillPercent>
     <coversFloor>false</coversFloor>
-	<holdsRoof>false</holdsRoof>
-	<castEdgeShadows>false</castEdgeShadows>
-	<tickerType>Never</tickerType>    
+	  <holdsRoof>false</holdsRoof>
+  	<castEdgeShadows>false</castEdgeShadows>
+	  <tickerType>Never</tickerType>    
     <canOverlapZones>false</canOverlapZones>
     <statBases>
       <MaxHitPoints>800</MaxHitPoints>
@@ -219,19 +219,19 @@
     <costList>
       <FT_BlocksConcrete>10</FT_BlocksConcrete>
     </costList>
-	<size>(2,1)</size>
-	<blockLight>false</blockLight>
+  	<size>(2,1)</size>
+  	<blockLight>false</blockLight>
     <uiIconPath>Tetrapods</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <pathCost>150</pathCost>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.60</fillPercent>
     <coversFloor>false</coversFloor>
-	<holdsRoof>false</holdsRoof>
-	<castEdgeShadows>false</castEdgeShadows>
-	<tickerType>Never</tickerType>    
+	  <holdsRoof>false</holdsRoof>
+  	<castEdgeShadows>false</castEdgeShadows>
+  	<tickerType>Never</tickerType>    
     <canOverlapZones>false</canOverlapZones>
-	<minifiedDef>MinifiedThing</minifiedDef>
+  	<minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories>
       <li>BuildingsSecurity</li>
     </thingCategories>
@@ -285,7 +285,7 @@
       <drawSize>(3.25,2.25)</drawSize>
       <drawOffset>(0,0,0.05)</drawOffset>
     </graphicData>
-	<size>(2,1)</size>
+  	<size>(2,1)</size>
     <uiIconPath>Barrier/FT_barrier_south</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
     <altitudeLayer>Building</altitudeLayer>
@@ -295,14 +295,14 @@
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>0.6</fillPercent>
     <canOverlapZones>false</canOverlapZones>
-	<statBases>
+  	<statBases>
       <MaxHitPoints>800</MaxHitPoints>
       <Beauty>-5</Beauty>
       <WorkToBuild>200</WorkToBuild>
       <Flammability>0.0</Flammability>
       <Mass>20</Mass>
     </statBases>
-	<minifiedDef>MinifiedThing</minifiedDef>
+  	<minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories>
       <li>BuildingsSecurity</li>
     </thingCategories>
@@ -315,11 +315,11 @@
         <texPath>Barrier/FT_barrier_south</texPath>
       </blueprintGraphicData>
     </building>
-	<costList>
+  	<costList>
       <FT_BlocksConcrete>10</FT_BlocksConcrete>
     </costList>
     <filthLeaving>Filth_RubbleBuilding</filthLeaving>
-	<rotatable>true</rotatable>
+	  <rotatable>true</rotatable>
     <researchPrerequisites>
       <li>FT_Concrete</li>
     </researchPrerequisites>
@@ -338,7 +338,7 @@
     <category>Building</category>
     <graphicData>
      <texPath>Barrier/FT_barrierTilt</texPath>
-	 <color>(175,175,175)</color>
+	   <color>(175,175,175)</color>
       <shadowData>
         <volume>(0.25,0.25,0.25)</volume>
         <offset>(0,0,0)</offset>
@@ -351,7 +351,7 @@
       <drawSize>(3,3)</drawSize>
       <drawOffset>(0,0,0)</drawOffset>
     </graphicData>
-	<size>(2,2)</size>
+	  <size>(2,2)</size>
     <uiIconPath>Barrier/FT_barrierTilt_east</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
     <altitudeLayer>Building</altitudeLayer>
@@ -361,14 +361,14 @@
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.6</fillPercent>
     <canOverlapZones>false</canOverlapZones>
-	<statBases>
+  	<statBases>
       <MaxHitPoints>850</MaxHitPoints>
       <Beauty>-5</Beauty>
       <WorkToBuild>200</WorkToBuild>
       <Flammability>0.0</Flammability>
       <Mass>20</Mass>
     </statBases>
-	<minifiedDef>MinifiedThing</minifiedDef>
+  	<minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories>
       <li>BuildingsSecurity</li>
     </thingCategories>
@@ -384,11 +384,11 @@
     <researchPrerequisites>
       <li>FT_Concrete</li>
     </researchPrerequisites>
-	<costList>
+	  <costList>
       <FT_BlocksConcrete>10</FT_BlocksConcrete>
     </costList>
     <filthLeaving>Filth_RubbleBuilding</filthLeaving>
-	<rotatable>true</rotatable>
+  	<rotatable>true</rotatable>
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded> <!-- Best affordance needed for stone -->
@@ -474,21 +474,21 @@
   </TerrainDef>
   
   <TerrainDef ParentName="FlagstoneBase">
-    <defName>FT_FlagstoneConcrete</defName>
-    <label>Concrete flagstone</label>
-    <color>(160,160,160)</color>
-    <costList>
-      <FT_BlocksConcrete>4</FT_BlocksConcrete>
-    </costList>
+		<defName>FT_FlagstoneConcrete</defName>
+		<label>concrete flagstone</label>
+		<color>(160,160,160)</color>
+		<costList>
+			<FT_BlocksConcrete>4</FT_BlocksConcrete>
+		</costList>
   </TerrainDef>
   
     <TerrainDef ParentName="TileStoneBase">
-    <defName>FT_TileStoneConcrete</defName>
-    <label>concrete tile</label>
-    <color>(140,140,140)</color>
-    <costList>
-      <FT_BlocksConcrete>4</FT_BlocksConcrete>
-    </costList>
+		<defName>FT_TileStoneConcrete</defName>
+		<label>concrete tile</label>
+		<color>(140,140,140)</color>
+		<costList>
+			<FT_BlocksConcrete>4</FT_BlocksConcrete>
+		</costList>
   </TerrainDef>
   
  <TerrainDef  ParentName="FloorBase">

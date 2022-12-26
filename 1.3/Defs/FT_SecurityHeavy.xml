@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
+
 	<ThingDef ParentName="BuildingBase">
 		<defName>FT_TurretPrince</defName>
 		<label>howitzer</label>
@@ -66,9 +67,9 @@
 				<manWorkType>Violent</manWorkType>
 			</li>
 			<li MayRequire="VanillaExpanded.VFESecurity" Class="VFESecurity.CompProperties_LongRangeArtillery">
-			<worldTileRange>15</worldTileRange>
-			<maxForcedMissRadiusFactor>2.5</maxForcedMissRadiusFactor>
-			<gizmoIconTexPath>Things/Building/Artillery/TurretArtillery_Top</gizmoIconTexPath>
+				<worldTileRange>15</worldTileRange>
+				<maxForcedMissRadiusFactor>2.5</maxForcedMissRadiusFactor>
+				<gizmoIconTexPath>Things/Building/Artillery/TurretArtillery_Top</gizmoIconTexPath>
 			</li>
 		</comps>
 		<statBases>
@@ -79,7 +80,7 @@
 			<Beauty>-20</Beauty>
 		</statBases>
 		<costList>
-			<Steel>500</Steel>
+			<Steel>450</Steel>
 			<ComponentIndustrial>6</ComponentIndustrial>
 			<ReinforcedBarrel>2</ReinforcedBarrel>
 		</costList>
@@ -129,11 +130,6 @@
 			  <categories>
 				<li>MortarShells</li>
 			  </categories>
-			  <disallowedThingDefs>
-				<li>Shell_Firefoam</li>
-				<li MayRequire="Aoba.Fortress.Industrial.NuclearDawn">FT_Shell_NuclearWarhead</li>
-				<li>Shell_AntigrainWarhead</li>
-			  </disallowedThingDefs>
 			</filter>
 		  </defaultStorageSettings>
 		</building>
@@ -208,7 +204,11 @@
 				<fuelLabel>Shots until barrel change</fuelLabel>
 				<fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
 				<outOfFuelMessage>Cannot shoot: Needs new reinforced barrel</outOfFuelMessage>
-				<fuelFilter><thingDefs><li>ReinforcedBarrel</li></thingDefs></fuelFilter>
+				<fuelFilter>
+					<thingDefs>
+						<li>ReinforcedBarrel</li>
+					</thingDefs>
+				</fuelFilter>
 				<fuelIsMortarBarrel>true</fuelIsMortarBarrel>
 				<fuelCapacity>40</fuelCapacity>
 				<fuelMultiplier>40</fuelMultiplier>
@@ -238,7 +238,7 @@
 			<Beauty>-20</Beauty>
 		</statBases>
 		<costList>
-			<Steel>750</Steel>
+			<Steel>500</Steel>
 			<ComponentIndustrial>8</ComponentIndustrial>
 			<ReinforcedBarrel>3</ReinforcedBarrel>
 		</costList>
@@ -288,11 +288,6 @@
 			  <categories>
 				<li>MortarShells</li>
 			  </categories>
-			  <disallowedThingDefs>
-				<li>Shell_Firefoam</li>
-				<li MayRequire="Aoba.Fortress.Industrial.NuclearDawn">FT_Shell_NuclearWarhead</li>
-				<li>Shell_AntigrainWarhead</li>
-			  </disallowedThingDefs>
 			</filter>
 		  </defaultStorageSettings>
 		</building>

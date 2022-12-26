@@ -1,46 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- Sandbag -->
-
-  <FT_Sandbag.label>军用沙包</FT_Sandbag.label>
+<FT_Sandbag.label>军用沙包</FT_Sandbag.label>
   <FT_Sandbag.description>就地填充内容物的掩体沙包袋,用作掩体,另外他们被叠得很密实因此更加的耐用.</FT_Sandbag.description>
   <FT_Sandbag_Blueprint.label>军用沙包 (预定地)</FT_Sandbag_Blueprint.label>
   <FT_Sandbag_Frame.label>军用沙包(建造中)</FT_Sandbag_Frame.label>
   <FT_Sandbag_Frame.description>就地填充内容物的掩体沙包袋,用作掩体,另外他们被叠得很密实因此更加的耐用.</FT_Sandbag_Frame.description>
-
+  
   <FT_WallSandbag.label>军用沙包墙</FT_WallSandbag.label>
   <FT_WallSandbag.description>就地填充内容物的掩体沙包袋,用作墙体,另外他们被叠得很密实因此更加的耐用.</FT_WallSandbag.description>
   <FT_WallSandbag_Blueprint.label>军用沙包墙(预定地)</FT_WallSandbag_Blueprint.label>
   <FT_WallSandbag_Frame.label>军用沙包墙(建造中)</FT_WallSandbag_Frame.label>
   <FT_WallSandbag_Frame.description>就地填充内容物的掩体沙包袋,用作墙体,另外他们被叠得很密实因此更加的耐用.</FT_WallSandbag_Frame.description>
-
+  
   <FT_TankTrap.label>反坦克龙牙</FT_TankTrap.label>
   <FT_TankTrap.description>用于阻滞载具的实心混凝土柱.</FT_TankTrap.description>
   <FT_TankTrap_Blueprint.label>反坦克龙牙(预定地)</FT_TankTrap_Blueprint.label>
   <FT_TankTrap_Frame.label>反坦克龙牙(建造中)</FT_TankTrap_Frame.label>
   <FT_TankTrap_Frame.description>用于阻滞载具的实心混凝土柱.</FT_TankTrap_Frame.description>
-
+  
   <FT_Tetrapods.label>消波块</FT_Tetrapods.label>
   <FT_Tetrapods.description>外型奇特的混凝土结构，也许有一天殖民者可以找到它的用途</FT_Tetrapods.description>
   <FT_Tetrapods_Blueprint.label>消波块(预定地)</FT_Tetrapods_Blueprint.label>
-  <FT_Tetrapods_Blueprint_Install.label>Tetrapods (blueprint)</FT_Tetrapods_Blueprint_Install.label>
+  <FT_Tetrapods_Blueprint_Install.label>消波块 (蓝图)</FT_Tetrapods_Blueprint_Install.label>
   <FT_Tetrapods_Frame.label>消波块(建造中)</FT_Tetrapods_Frame.label>
   <FT_Tetrapods_Frame.description>外型奇特的混凝土结构，也许有一天殖民者可以找到它的用途</FT_Tetrapods_Frame.description>
-
+  
   <FT_Barrier.label>混凝土路障</FT_Barrier.label>
   <FT_Barrier.description>一个实心的混凝土障碍物,可以用于阻滞载具以及提供掩护.</FT_Barrier.description>
   <FT_Barrier_Blueprint.label>混凝土路障(预定地)</FT_Barrier_Blueprint.label>
   <FT_Barrier_Blueprint_Install.label>混凝土路障(预定地)</FT_Barrier_Blueprint_Install.label>
   <FT_Barrier_Frame.label>混凝土路障(建造中)</FT_Barrier_Frame.label>
   <FT_Barrier_Frame.description>一个实心的混凝土障碍物,可以用于阻滞载具以及提供掩护.</FT_Barrier_Frame.description>
-
+  
   <FT_BarrierDiagonal.label>对角混凝土路障</FT_BarrierDiagonal.label>
   <FT_BarrierDiagonal.description>一个实心的混凝土障碍物,可以用于阻滞载具以及提供掩护.</FT_BarrierDiagonal.description>
   <FT_BarrierDiagonal_Blueprint.label>对角混凝土路障(预定地)</FT_BarrierDiagonal_Blueprint.label>
   <FT_BarrierDiagonal_Blueprint_Install.label>对角混凝土路障(预定地)</FT_BarrierDiagonal_Blueprint_Install.label>
   <FT_BarrierDiagonal_Frame.label>对角混凝土路障(建造中)</FT_BarrierDiagonal_Frame.label>
   <FT_BarrierDiagonal_Frame.description>一个实心的混凝土障碍物,可以用于阻滞载具以及提供掩护.</FT_BarrierDiagonal_Frame.description>
-
-
 </LanguageData>

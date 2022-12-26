@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <FT_UseRadio.reportString>Listen to the radio.</FT_UseRadio.reportString>
-
+	<FT_EnterBunkerFacility.reportString>entering facility</FT_EnterBunkerFacility.reportString>
+	<FT_UseRadio.reportString>Listen to the radio.</FT_UseRadio.reportString>
 
 </LanguageData>

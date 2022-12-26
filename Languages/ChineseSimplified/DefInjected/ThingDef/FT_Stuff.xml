@@ -1,20 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <FT_BlocksConcrete.label>袋装混凝土</FT_BlocksConcrete.label>
+	<FT_BlocksConcrete.label>袋装混凝土</FT_BlocksConcrete.label>
   <FT_BlocksConcrete.description>包含粉状混凝土的包装袋,混凝土作为建筑材料来说非常的合适,但就是不怎么美观.</FT_BlocksConcrete.description>
-  <FT_BlocksConcrete.stuffProps.stuffAdjective>混凝土</FT_BlocksConcrete.stuffProps.stuffAdjective>
-
-<FT_ReinforcedConcreteBag.label>钢筋混凝土</FT_ReinforcedConcreteBag.label>
+  <FT_BlocksConcrete.stuffProps.stuffAdjective>浇筑混凝土</FT_BlocksConcrete.stuffProps.stuffAdjective>
+  
+  <FT_ReinforcedConcreteBag.label>钢筋混凝土</FT_ReinforcedConcreteBag.label>
   <FT_ReinforcedConcreteBag.description>钢筋与包含粉状混凝土的包装袋,钢筋混凝土可以作为金属类建筑的材料,但就是不怎么美观.</FT_ReinforcedConcreteBag.description>
-  <FT_ReinforcedConcreteBag.stuffProps.stuffAdjective>混凝土</FT_ReinforcedConcreteBag.stuffProps.stuffAdjective>
-
+  <FT_ReinforcedConcreteBag.stuffProps.stuffAdjective>钢筋混凝土</FT_ReinforcedConcreteBag.stuffProps.stuffAdjective>
+  
   <FT_WoodConcrete.label>水泥纤维板</FT_WoodConcrete.label>
   <FT_WoodConcrete.description>一种水泥混合纤维制成的预制板,可以用来作为仿木头构造的建筑材料,防火且相对于水泥块来说较为轻.</FT_WoodConcrete.description>
-  <FT_WoodConcrete.stuffProps.stuffAdjective>混凝土</FT_WoodConcrete.stuffProps.stuffAdjective>
-
+  <FT_WoodConcrete.stuffProps.stuffAdjective>混凝土预制板</FT_WoodConcrete.stuffProps.stuffAdjective>
+  
   <FT_ConcreteCompressed.label>封装混凝土</FT_ConcreteCompressed.label>
   <FT_ConcreteCompressed.description>封装在一起的袋装混凝土,可以用于储存,商人也很乐意收购.</FT_ConcreteCompressed.description>
-
 
 </LanguageData>

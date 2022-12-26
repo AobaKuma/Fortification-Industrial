@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  
+	<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Combat Extended</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationReplace">
+                <xpath>/Defs/JobDef[defName="FT_EnterBunkerFacility"]/driverClass</xpath>
+				<value>
+					<driverClass>FortificationFacilityCE.JobDriver_EnterBunkerFacility</driverClass>
+				</value>
+            </li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

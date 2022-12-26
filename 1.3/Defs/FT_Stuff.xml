@@ -9,16 +9,16 @@
  <ThingDef ParentName="ResourceBase">
     <defName>FT_BlocksConcrete</defName>
     <label>concrete</label>
-    <description>Blocks of solid concrete. Concrete is a strong building material but ugly to look at.</description>
+    <description>packs of concrete dust. Concrete is a strong building material but ugly to look at.</description>
     <graphicData>
       <texPath>ConcreteBag</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-	<soundInteract>Stone_Drop</soundInteract>
+  	<soundInteract>Stone_Drop</soundInteract>
     <soundDrop>Stone_Drop</soundDrop>
     <useHitPoints>false</useHitPoints>
     <tradeability>Buyable</tradeability>
-	<statBases>
+	  <statBases>
       <MaxHitPoints>75</MaxHitPoints>
       <MarketValue>0.9</MarketValue>
       <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
@@ -36,7 +36,7 @@
 	  <categories>
         <li>Stony</li>
       </categories>
-	  <commonality>0.20</commonality>
+	  <commonality>0</commonality>
 	  <color>(150,150,150)</color>
       <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
@@ -59,7 +59,7 @@
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
   </ThingDef>  
 
-<ThingDef ParentName="ResourceBase">
+  <ThingDef ParentName="ResourceBase">
     <defName>FT_ReinforcedConcreteBag</defName>
     <label>reinforced concrete</label>
     <description>bags of solid concrete powder with steel bars. Concrete is a strong building material but ugly to look at.</description>
@@ -67,14 +67,19 @@
       <texPath>ReinforcedConcreteBag</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-	<soundInteract>Stone_Drop</soundInteract>
+  	<soundInteract>Stone_Drop</soundInteract>
     <soundDrop>Stone_Drop</soundDrop>
     <useHitPoints>false</useHitPoints>
     <tradeability>Buyable</tradeability>
-	<statBases>
+  	<statBases>
+	    <StuffPower_Armor_Sharp>1.0</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.45</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>1</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>1</StuffPower_Insulation_Heat>
       <MaxHitPoints>75</MaxHitPoints>
       <MarketValue>0.75</MarketValue>
-      <SharpDamageMultiplier>1.1</SharpDamageMultiplier>
+      <SharpDamageMultiplier>0.8</SharpDamageMultiplier>
       <BluntDamageMultiplier>1.2</BluntDamageMultiplier>
       <Beauty>-10</Beauty>
       <ConstructionSpeedFactor>0.75</ConstructionSpeedFactor>
@@ -86,18 +91,18 @@
       <li>StoneBlocks</li>
     </thingCategories>
     <stuffProps>
-	  <categories>
+	    <categories>
         <li>Metallic</li>
       </categories>
-	  <commonality>0.20</commonality>
-	  <color>(150,150,150)</color>
+	    <commonality>0</commonality>
+	    <color>(150,150,150)</color>
       <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
       <stuffAdjective>concrete</stuffAdjective>
-      <appearance>Concrete</appearance>
-	  <statFactors>
-		<Beauty>0.1</Beauty>  
+      <appearance>Metal</appearance>
+	    <statFactors>
+		    <Beauty>0.1</Beauty>  
         <MarketValue>0.75</MarketValue>
         <MaxHitPoints>2.5</MaxHitPoints>
         <Flammability>0</Flammability>
@@ -120,7 +125,7 @@
       <texPath>WoodConcrete</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-	<soundInteract>Stone_Drop</soundInteract>
+	  <soundInteract>Stone_Drop</soundInteract>
     <soundDrop>Stone_Drop</soundDrop>
     <useHitPoints>true</useHitPoints>
     <tradeability>Buyable</tradeability>
@@ -130,6 +135,11 @@
       <MarketValue>0.9</MarketValue>
       <SharpDamageMultiplier>0.2</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.3</BluntDamageMultiplier>
+	  <StuffPower_Armor_Sharp>0.8</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.35</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.45</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>1</StuffPower_Insulation_Heat>
       <Beauty>-10</Beauty>
       <ConstructionSpeedFactor>1.1</ConstructionSpeedFactor>
       <Mass>0.25</Mass>
@@ -143,7 +153,7 @@
       <categories>
         <li>Woody</li>
       </categories>
-	  <commonality>0.20</commonality>
+	  <commonality>0</commonality>
 	  <color>(150,150,150)</color>
       <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>

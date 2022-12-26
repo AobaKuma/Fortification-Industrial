@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded - Architect</li>
+        </mods>
+		<match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>	
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/TerrainDef[defName="VFEArch_PlayerBrokenAsphalt"]/costList</xpath>
+                    <value>												
+						<costList>
+							<FT_BlocksConcrete>1</FT_BlocksConcrete>
+						</costList>
+                    </value>
+                </li>
+				<li Class="PatchOperationReplace">
+                    <xpath>/Defs/TerrainDef[defName="VFEArch_Asphalt"]/costList</xpath>
+                    <value>												
+						<costList>
+							<FT_BlocksConcrete>2</FT_BlocksConcrete>
+						</costList>
+                    </value>
+                </li>
+				<li Class="PatchOperationReplace">
+                    <xpath>/Defs/TerrainDef[defName="VFEArch_ConcreteFoundation"]/costList</xpath>
+                    <value>												
+						<costList>
+							<FT_BlocksConcrete>5</FT_BlocksConcrete>
+						</costList>
+                    </value>
+                </li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+					  <TerrainDef ParentName="StoneBridgeBase">
+						<defName>VFEArch_BridgeConcrete</defName>
+						<label>concrete bridge</label>
+						<color>(160,160,160)</color>
+						<uiIconPath>StoneBridge/StoneBridgeSandstone_MenuIcon</uiIconPath>
+						<costList>
+						  <FT_BlocksConcrete>12</FT_BlocksConcrete>
+						</costList>
+					  </TerrainDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+					   <TerrainDef ParentName="VFEArch_WoodenParquetBase">
+						  <defName>VFEArch_WoodenParquetConcrete</defName>
+						  <description>using concrete prefab plank for that beautifully laid down flooring. Whilst beautiful, it takes a long time to lay down but non-flammable.</description>
+						  <label>concrete parquet</label>
+						  <costList Inherit="False">
+							 <FT_WoodConcrete>12</FT_WoodConcrete>
+						  </costList>
+						  <statBases>
+							<Flammability>0</Flammability>
+						  </statBases>
+						  <color>(150,150,150)</color>
+					   </TerrainDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+					  <TerrainDef ParentName="FloorBase">
+						<defName>VFEArch_WoodPlankFloorConcrete</defName>
+						<label>plank concrete floor</label>
+						<renderPrecedence>250</renderPrecedence>
+						<description>concrete prefab plank flooring instead of wooden, for that warm, homey feeling(not really). While it is still quick to lay,but non-flammable.</description>
+						<texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+						<burnedDef>BurnedWoodPlankFloor</burnedDef>
+						<color>(150,150,150)</color>
+						<statBases>
+						  <WorkToBuild>85</WorkToBuild>
+						  <Flammability>0</Flammability>
+						</statBases>
+						<costList>
+						  <FT_WoodConcrete>3</FT_WoodConcrete>
+						</costList>
+						<constructEffect>ConstructWood</constructEffect>
+						<designatorDropdown>VFEArch_WoodFloor</designatorDropdown>
+					  </TerrainDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<TerrainDef ParentName="PolishedStoneFloorBase">
+							<defName>VFEArch_PolishedStoneFloorConcrete</defName>
+							<label>concrete polished stone floor</label>
+							<color>(150,150,150)</color>
+							<costList>
+								<FT_BlocksConcrete>12</FT_BlocksConcrete>
+							</costList>
+						</TerrainDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<TerrainDef ParentName="StoneSlabsBase">
+							<defName>VFEArch_SlabsConcrete</defName>
+							<label>concrete slabs</label>
+							<color>(150,150,150)</color>
+							<costList>
+								<FT_BlocksConcrete>8</FT_BlocksConcrete>
+							</costList>
+						</TerrainDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<TerrainDef ParentName="CobblestoneBase">
+							<defName>VFEArch_CobblestoneFloorConcrete</defName>
+							<label>concrete cobblestone floor</label>
+							<color>(150,150,150)</color>
+							<costList>
+								<FT_BlocksConcrete>4</FT_BlocksConcrete>
+							</costList>
+						</TerrainDef>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+					  <TerrainDef ParentName="SteelBridgeBase">
+						<defName>VFEArch_BridgeSteelConcrete</defName>
+						<label>reinforced concrete bridge</label>
+						<costList>
+						  <FT_ReinforcedConcreteBag>6</FT_ReinforcedConcreteBag>
+						</costList>
+					  </TerrainDef>
+					</value>
+				</li>
+            </operations>
+        </match>
+	</Operation>
+</Patch>

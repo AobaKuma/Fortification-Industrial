@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <JobDef>
+    <defName>FT_EnterBunkerFacility</defName>
+    <driverClass>Fortification.JobDriver_EnterBunkerFacility</driverClass>
+    <reportString>entering facility</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>FT_FuelGenerator</defName>
+    <label>mobile chemfuel generator</label>
+    <description>Produces power by consuming chemfuel. Must be periodically refueled by hand.</description>
+    <thingClass>Building</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>FuelGen/FT_FuelGen</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,4)</drawSize>
+      <shadowData>
+        <volume>(1.93,1,1.69)</volume>
+        <offset>(-0.03,0,-0.1)</offset>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <fillPercent>1.0</fillPercent>
+    <rotatable>true</rotatable>
+	<minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Mass>25</Mass>
+      <WorkToBuild>2500</WorkToBuild>
+      <Flammability>0.5</Flammability>
+      <Beauty>-20</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <canOverlapZones>false</canOverlapZones>
+    <size>(1,2)</size>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+    </building>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-800</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+        <soundAmbientProducingPower>ChemfuelFiredGenerator_Ambience</soundAmbientProducingPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>5</fuelConsumptionRate>
+        <fuelCapacity>150.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </fuelFilter>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(80,112,180,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>6</heatPerSecond>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>0</explosiveRadius>
+        <explosiveExpandPerFuel>0.95</explosiveExpandPerFuel>
+        <explosiveDamageType>Flame</explosiveDamageType>
+        <destroyThingOnExplosionSize>2</destroyThingOnExplosionSize>
+        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+        <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+        <preExplosionSpawnChance>1</preExplosionSpawnChance>
+        <wickTicks>70~150</wickTicks>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <designationHotKey>Misc4</designationHotKey>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>FT_ENIAC</defName>
+    <label>E.N.I.A.C.</label>
+    <description>Electronic Numerical Integrator And Computer Or simply call it Eniac, big and highly consume power energy, Increases research speed when placed near hi-tech research bench and unlocks new research projects from reading the Disk.
+	Each research bench can connect to 4 ENIAC.</description>
+    <graphicData>
+      <texPath>Eniac</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4.5)</drawSize>
+    </graphicData>
+    <uiIconScale>0.85</uiIconScale>
+    <researchPrerequisites><li>FT_ENIAC</li></researchPrerequisites>
+    <size>(4,2)</size>
+    <rotatable>true</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <designationCategory>Misc</designationCategory>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <canOverlapZones>false</canOverlapZones>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <WorkToBuild>15000</WorkToBuild>
+      <Mass>2500</Mass>
+      <Flammability>0.25</Flammability>
+    </statBases>
+    <costList>
+      <Steel>800</Steel>
+      <ComponentIndustrial>18</ComponentIndustrial>
+    </costList>
+    <coversFloor>true</coversFloor>
+	<holdsRoof>true</holdsRoof>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+    </building>
+    <comps>
+		<li Class="CompProperties_Facility"> 
+			<statOffsets>
+				<ResearchSpeedFactor>0.25</ResearchSpeedFactor>
+				<VFEA_FailChance MayRequire="VanillaExpanded.VFEA">-0.15</VFEA_FailChance>
+				<VFEA_InjectingTimeFactor MayRequire="VanillaExpanded.VFEA">0.25</VFEA_InjectingTimeFactor>
+			</statOffsets>
+			<maxSimultaneous>4</maxSimultaneous>
+			<maxDistance>16</maxDistance>
+		</li>
+		<li Class="CompProperties_Breakdownable"/>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<shortCircuitInRain>true</shortCircuitInRain>
+			<basePowerConsumption>5000</basePowerConsumption>
+		</li>
+		<li Class="CompProperties_Flickable"/>
+		<li Class="CompProperties_HeatPusher">
+			<compClass>CompHeatPusherPowered</compClass>
+			<heatPerSecond>50</heatPerSecond>
+			<heatPushMaxTemperature>200</heatPushMaxTemperature>
+		</li>
+    </comps>
+    <placeWorkers>
+		<li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>FT_AntennaTower</defName>
+    <label>Antenna Tower</label>
+    <thingClass>Building_OrbitalTradeBeacon</thingClass>
+    <graphicData>
+      <texPath>FT_Antenna</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,8)</drawSize>
+	  <drawOffset>(0,1,3)</drawOffset>
+      <shadowData>
+        <volume>(0.3, 0.2, 0.3)</volume>
+        <offset>(0,0,-0.1)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>1800</WorkToBuild>
+      <Flammability>0.0</Flammability>
+    </statBases>
+    <size>(2,2)</size>
+    <description>A bigger version of orbital trade beacon,(WIP), will have more function in the future.</description>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <fillPercent>0.70</fillPercent>
+    <costList>
+      <Steel>240</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>100</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+        <soundAmbientProducingPower>ScannerLongRangeMineral_Ambience</soundAmbientProducingPower>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <designationCategory>Misc</designationCategory>
+    <rotatable>false</rotatable>
+    <passability>PassThroughOnly</passability>
+    <canOverlapZones>true</canOverlapZones>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+      <li>PlaceWorker_ShowTradeBeaconRadius</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>FT_ENIAC</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  <JoyKindDef>
+    <defName>FT_RadioTuning</defName>
+    <label>Radio listening</label>
+  </JoyKindDef>
+  
+  <JoyGiverDef>
+    <defName>ListenRadio</defName>
+    <giverClass>JoyGiver_ViewArt</giverClass>
+    <baseChance>0</baseChance>
+    <jobDef>FT_UseRadio</jobDef>
+    <joyKind>FT_RadioTuning</joyKind>
+    <requiredCapacities>
+      <li>Hearing</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+  
+  <JobDef>
+    <defName>FT_UseRadio</defName>
+    <driverClass>JobDriver_ViewArt</driverClass>
+    <reportString>Listen to the radio.</reportString>
+    <joyDuration>4000</joyDuration>
+    <joyMaxParticipants>9</joyMaxParticipants>
+    <joySkill>Intellectual</joySkill>
+    <joyXpPerTick>0.004</joyXpPerTick>
+    <joyKind>FT_RadioTuning</joyKind>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  
+ <WorkGiverDef>
+    <defName>RadioScan</defName>
+    <label>adjust radio frequency to scan</label>
+    <giverClass>WorkGiver_OperateScanner</giverClass>
+    <workType>Research</workType>
+    <priorityInType>50</priorityInType>
+    <verb>scan</verb>
+    <gerund>scanning at</gerund>
+    <scannerDef>FT_Radio</scannerDef>
+    <requiredCapacities>
+      <li>Manipulation</li>
+      <li>Hearing</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>FT_Radio</defName>
+    <label>Radio terminal</label>
+    <description>Allows radio contact with other factions and orbital traders,also when interrogating the frequency band, some interference that may be precious metals can be located,(WIP), will have more function in the future.</description>
+    <thingClass>Building_CommsConsole</thingClass>
+    <graphicData>
+      <texPath>Radio/Radio</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+      <shadowData>
+        <volume>(0.5,0.5,0.5)</volume>
+      </shadowData>
+    </graphicData>
+	<minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <altitudeLayer>Building</altitudeLayer>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <passability>Impassable</passability>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>2200</WorkToBuild>
+      <Flammability>0.6</Flammability>
+      <Mass>10</Mass>
+    </statBases>
+    <size>(1,1)</size>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+      <joyKind>FT_RadioTuning</joyKind>
+    </building>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <interactionCellOffset>(0,0,1)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Misc</designationCategory>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <transmitsPower>true</transmitsPower>
+        <soundAmbientProducingPower>Television_Ambience</soundAmbientProducingPower>
+        <basePowerConsumption>50</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+	  <li Class="CompProperties_LongRangeMineralScanner">
+        <scanSpeedStat>ResearchSpeed</scanSpeedStat>
+        <scanFindMtbDays>8</scanFindMtbDays>
+        <scanFindGuaranteedDays>12</scanFindGuaranteedDays>
+        <soundWorking>ScannerLongRangeMineral_Ambience</soundWorking>
+      </li>
+    </comps>
+    <designationHotKey>Misc3</designationHotKey>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>FT_ENIAC</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+  </ThingDef>
+
+
+</Defs>	

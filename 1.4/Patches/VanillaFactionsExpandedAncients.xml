@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Factions Expanded - Ancients</li>
+        </mods>
+		<match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>	
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VFEA_GeneTailoringPod"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+					<value>
+						<li>FT_ENIAC</li>
+					</value>
+                </li>
+            </operations>
+        </match>
+	</Operation>
+</Patch>

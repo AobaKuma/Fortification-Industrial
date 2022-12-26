@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Defs>
+
+  <SoundDef>
+    <defName>FT_CannonLaunchA</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>AntiTankGun</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>1.0~1.5</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+ <SoundDef> 
+    <defName>FT_CannonLaunchB</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>5</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>HowitzerLight</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>1.0~1.5</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+ <SoundDef> 
+    <defName>FT_CannonLaunchC</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>5</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Howitzer</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>1.0~1.5</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+<SoundDef>
+    <defName>FT_AutoCannonShot</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>5</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>AutoCannon</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>1.0~1.5</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>FT_NebelShot</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>4</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Nebelwerfer</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>1.0~1.5</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>FT_MGShot</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>8</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>MachineGun</clipPath>
+          </li>
+        </grains>      
+        <pitchRange>1.0~1.5</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

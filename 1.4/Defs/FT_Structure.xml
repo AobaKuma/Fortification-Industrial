@@ -49,9 +49,9 @@
 	
 	<ThingDef ParentName="FT_SandBag_Base">
 		<defName>FT_Sandbag</defName>
-		<label>Military Sandbag</label>
+		<label>Military sandbag</label>
 		<thingClass>Building</thingClass>
-		<description>Bags of locally-sourced dirt or sand, stacked for use as cover. they are well-stacked so it is more durable.</description>
+		<description>Bags of locally-sourced dirt or sand, stacked for use as cover. More professional-looking than basic sandbags.</description>
 		<graphicData>
 			<texPath>FT_Sandbag</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -94,7 +94,7 @@
 		<defName>FT_WallSandbag</defName>
 		<label>Military sandbag wall</label>
 		<thingClass>Building</thingClass>
-		<description>Bags of locally-sourced dirt or sand, stacked for use as wall. they are well-stacked so it is more durable.</description>
+		<description>Bags of locally-sourced dirt or sand, stacked for use as wall.</description>
 		<graphicData>
 			<texPath>FT_SandbagWall</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -138,8 +138,8 @@
 	
 	<ThingDef ParentName="BuildingBase">
 	 <defName>FT_TankTrap</defName>
-    <label>Tank Trap</label>
-    <description>A solid concrete pillar that can hinder vehicles.</description>
+    <label>Tank trap</label>
+    <description>A solid concrete pillar meant to hinder the movement of vehicles.</description>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
@@ -201,7 +201,7 @@
 	<ThingDef ParentName="BuildingBase">
 	 <defName>FT_Tetrapods</defName>
     <label>Tetrapods</label>
-    <description>A solid concrete pillar designed to lay on the coastline</description>
+    <description>A solid concrete pillar designed to hinder naval landings.</description>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
@@ -266,8 +266,8 @@
 	
 <ThingDef ParentName="BuildingBase">
     <defName>FT_Barrier</defName>
-    <label>Concrete Barrier</label>
-    <description>a solid concrete barrier that can hinder vehicles and provide cover</description>
+    <label>Concrete barrier</label>
+    <description>A solid concrete barrier that can hinder the movement of vehicles and provide cover.</description>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
@@ -332,8 +332,8 @@
 	
 <ThingDef ParentName="BuildingBase">
     <defName>FT_BarrierDiagonal</defName>
-    <label>Diagonal Concrete Barrier</label>
-    <description>a solid concrete barrier that can hinder vehicles and provide cover.</description>
+    <label>Diagonal concrete barrier</label>
+    <description>A solid concrete barrier that can hinder the movement of vehicles and provide cover. This one is somehow diagonal.</description>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
@@ -409,7 +409,7 @@
     </costList>
     <renderPrecedence>220</renderPrecedence>
     <designatorDropdown>FT_Floor_Concrete</designatorDropdown>
-    <description>easy to lay,but not good-looking.</description>
+    <description>Easy to lay, but not good-looking.</description>
     <texturePath>Floor/FT_concrete</texturePath>
     <color>(175,175,175)</color>
     <pathCost>0</pathCost>
@@ -450,9 +450,9 @@
   
   <TerrainDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="FloorBase" >
     <defName>FT_FineConcreteTile</defName>
-    <label>Fine Concrete Tile</label>
+    <label>Fine concrete tile</label>
     <renderPrecedence>220</renderPrecedence>
-    <description>tiles made by architectural concrete, it looks nice even though they are still concrete. Slow to construct.</description>
+    <description>Exquisite tiles made using architectural concerete, for expressing economic status. Slow to construct.</description>
     <texturePath>Floor/FT_concreteTileFine</texturePath>
     <color>(180,180,180)</color>
     <statBases>
@@ -493,9 +493,9 @@
   
  <TerrainDef  ParentName="FloorBase">
     <defName>FT_PlankFloor</defName>
-    <label>wood-liked concrete floor</label>
+    <label>Wood-like concrete floor</label>
     <renderPrecedence>250</renderPrecedence>
-    <description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <description>Fiber concrete made to imitate natural wood for that warm, homey feeling. Quick to lay, while being non-flammable.</description>
     <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
     <color>(140,140,140)</color>
     <statBases>

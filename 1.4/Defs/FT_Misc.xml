@@ -102,8 +102,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>FT_ENIAC</defName>
     <label>E.N.I.A.C.</label>
-    <description>Electronic Numerical Integrator And Computer Or simply call it Eniac, big and highly consume power energy, Increases research speed when placed near hi-tech research bench and unlocks new research projects from reading the Disk.
-	Each research bench can connect to 4 ENIAC.</description>
+    <description>Short for Electronic Numerical Integrator And Computer, increases research speed by 25% when placed near hi-tech research bench and unlocks new research projects.\n\nEach research bench can connect up to 4 E.N.I.A.C.s.</description>
     <graphicData>
       <texPath>Eniac</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -170,7 +169,7 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>FT_AntennaTower</defName>
-    <label>Antenna Tower</label>
+    <label>Antenna tower</label>
     <thingClass>Building_OrbitalTradeBeacon</thingClass>
     <graphicData>
       <texPath>FT_Antenna</texPath>
@@ -192,7 +191,10 @@
       <Flammability>0.0</Flammability>
     </statBases>
     <size>(2,2)</size>
-    <description>A bigger version of orbital trade beacon,(WIP), will have more function in the future.</description>
+    <description>Functionally identical to the standard trade beacon. You can only sell goods to orbital traders if they're near an orbital trade beacon. Cannot be placed indoors.</description>
+    <descriptionHyperlinks>
+			<ThingDef>OrbitalTradeBeacon</ThingDef>
+		</descriptionHyperlinks>
     <drawerType>MapMeshAndRealTime</drawerType>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <fillPercent>0.70</fillPercent>

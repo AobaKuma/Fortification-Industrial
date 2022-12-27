@@ -9,7 +9,7 @@
  <ThingDef ParentName="ResourceBase">
     <defName>FT_BlocksConcrete</defName>
     <label>concrete</label>
-    <description>packs of concrete dust. Concrete is a strong building material but ugly to look at.</description>
+    <description>Packs of concrete. Concrete is a strong and cheap building material but ugly to look at.</description>
     <graphicData>
       <texPath>ConcreteBag</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -62,7 +62,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>FT_ReinforcedConcreteBag</defName>
     <label>reinforced concrete</label>
-    <description>bags of solid concrete powder with steel bars. Concrete is a strong building material but ugly to look at.</description>
+    <description>Bags of solid concrete with reinforcing bars. Concrete is a strong and cheap building material but ugly to look at.</description>
     <graphicData>
       <texPath>ReinforcedConcreteBag</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -119,8 +119,8 @@
   
  <ThingDef ParentName="ResourceBase">
     <defName>FT_WoodConcrete</defName>
-    <label>fiber concrete plank</label>
-    <description>a mixture of cloth and concrete made into plank-shaped, able to make things which wood can make, but even better because it is more durable and fire-proofed</description>
+    <label>fiber cement plank</label>
+    <description>A mixture of cloth and concrete shaped into a plank, meant to imitate natural wood.</description>
     <graphicData>
       <texPath>WoodConcrete</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -179,7 +179,7 @@
   <ThingDef ParentName="ResourceBase"> 
     <defName>FT_ConcreteCompressed</defName>
     <label>Packed Concrete</label>
-    <description>Bags of solid concrete dust.they are packed-ready for storage or trade.</description>
+    <description>Bags of solid concrete packed tightly packed for storage or trade.</description>
     <graphicData>
       <texPath>CompressBag</texPath>
       <graphicClass>Graphic_Single</graphicClass>

@@ -55,8 +55,8 @@
   
   <ThingDef ParentName="FT_BaseCannonBuilding">
     <defName>FT_TurretAA</defName>
-    <label>Anti Air Gun</label>
-    <description>A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field.</description>
+    <label>Anti-Air gun</label>
+    <description>A manned autocannon that launches solid metal bullets. Useful for attacking aerial targets or groups of enemies in the field.</description>
   	<techLevel>Industrial</techLevel>
 	  <graphicData>
       <texPath>ATGun/FT_AntiTankGun_Base</texPath>
@@ -119,8 +119,8 @@
 
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>FT_Gun_TurretAA</defName>
-    <label>Anti Air Autocannon</label>
-    <description>An Autocannon designed to defend the area of skies, but also a nice weapon for the land targets.</description>
+    <label>Anti-Air autocannon</label>
+    <description>A manned autocannon that launches solid metal bullets. Useful for attacking aerial targets or groups of enemies in the field.</description>
     <graphicData>
       <texPath>ATGun/FT_AAGun</texPath>
     </graphicData>
@@ -191,8 +191,8 @@
   
   <ThingDef ParentName="FT_BaseCannonBuilding">
     <defName>FT_TurretAT</defName>
-    <label>Anti Tank Gun</label>
-    <description>A manned rifle cannon that launches solid metal shells.It is accurate makes it useful for attacking groups of enemies in the field or sniping the small fortifications.</description>
+    <label>Anti-Tank gun</label>
+    <description>A manned cannon that fires solid metal shells. It's accuracy and armor penetration makes it ideal against heavily armored targets.</description>
 	<techLevel>Industrial</techLevel>
 	<graphicData>
 		<texPath>ATGun/FT_AntiTankGun_Base</texPath>
@@ -255,8 +255,8 @@
 	
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>FT_Gun_TurretAT</defName>
-    <label>Anti Tank Cannon</label>
-    <description>A uranium slug cannon designed to snipe the heavy-armed target in range.</description>
+    <label>Anti-Tank cannon</label>
+    <description>A manned cannon that fires solid metal shells. It's accuracy and armor penetration make it ideal against heavily armored targets.</description>
     <graphicData>
       <texPath>ATGun/FT_ATGun</texPath>
     </graphicData>
@@ -326,7 +326,7 @@
     <defName>FT_ShellShock</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>shell shock</label>
-    <description>a psychological disturbance caused by prolonged exposure to active warfare, especially being under bombardment</description>
+    <description>Shell shock is a mental disorder characterized by symptoms such as fatigue, tremor, confusion, nightmares and impaired sight and hearing. Often diagnosed when a soldier is unable to function and no obvious cause can be identified.</description>
     <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
     <lethalSeverity>1</lethalSeverity>
 	<comps>
@@ -418,7 +418,7 @@
  <ThingDef ParentName="BaseArtilleryBuilding">
     <defName>FT_Turret_Mortar</defName>
     <label>infantry mortar</label>
-    <description>A light-weighted mortar that launches all kinds of shells. Improved firing speed with a simplified design, but inaccurate, useful for attacking large fortifications than groups of enemies in the field.</description>
+    <description>A light-weight mortar that launches all kinds of shells. A simplified, faster, but inaccurate design, useful for attacking large static fortifications rather than groups of enemies in the field.</description>
 	<graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>FT_MortarBase</texPath>
@@ -553,7 +553,7 @@
 
 
   <ThingDef ParentName="BuildingBase" Name="FT_MGNest" Abstract="True">
-    <description>A stationry turret strengthen with materials. Requires steel to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+    <description>A mini-turret enclosed entombed in a "nest" made of sandbags. Requires steel to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
     <thingClass>Building_TurretGun</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
@@ -634,7 +634,7 @@
   
   <ThingDef ParentName="FT_MGNest">
 	<defName>FT_Turret_Bunker</defName>
-    <label>Machine Gun Nest</label>
+    <label>Mini-turret nest</label>
     <graphicData>
       <texPath>MGBunker/FT_MGBunker_Leathery</texPath>
     </graphicData>
@@ -647,13 +647,13 @@
       <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
     </statBases>
     <stuffCategories>
-      <li>Leathery</li>
+      <li>Fabric</li>
     </stuffCategories>
   </ThingDef>
   
   <ThingDef ParentName="FT_MGNest">
     <defName>FT_Turret_BunkerM</defName>
-    <label>Machine Gun Turret Bunker</label>
+    <label>Mini-turret bunker</label>
     <graphicData>
       <texPath>MGBunker/FT_MGBunker_Metal</texPath>
     </graphicData>
@@ -672,7 +672,7 @@
   
   <ThingDef ParentName="FT_MGNest">
     <defName>FT_Turret_BunkerC</defName>
-    <label>Machine Gun Bunker</label>
+    <label>Mini-turret bunker</label>
     <graphicData>
       <texPath>MGBunker/FT_MGBunker_Concrete</texPath>
     </graphicData>
@@ -691,7 +691,7 @@
   
   <ThingDef ParentName="FT_MGNest">
     <defName>FT_Turret_BunkerF</defName>
-    <label>Military Machine Gun Nest</label>
+    <label>Military mini-turret nest</label>
     <graphicData>
       <texPath>MGBunker/FT_MGBunker_Fabric</texPath>
     </graphicData>
@@ -721,7 +721,7 @@
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>FT_Gun_MG</defName>
     <label>machine gun</label>
-    <description>An fully automatic gun made to be mounted on a turret.</description>
+    <description>A fully automatic gun made to be mounted on a turret.</description>
     <graphicData>
       <texPath>None</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -788,8 +788,8 @@
   
   <ThingDef ParentName="FT_MannedTurret">
     <defName>FT_Maxim4M</defName>
-    <label>Quad Machine gun</label>
-    <description>A Tripod with Quadruple machine gun mounted so it Have a good firepower continuity,need a pawn man on it to operate. Requires steel to refurbish its barrels after heavy use.</description>
+    <label>Quad machine gun</label>
+    <description>Four machine guns mounted on a tripod. Must be manned to operate. Requires steel to refurbish its barrels after heavy use.</description>
     <graphicData>
       <texPath>InfantryTurret/FT_Tripod</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -859,8 +859,8 @@
   
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>FT_Gun_QuadMG</defName>
-    <label>machine gun 4x mounted</label>
-    <description>what can be better than A fully machine gun be mounted on a turret ? Four of them!</description>
+    <label>4 machine guns</label>
+    <description>What is better than a machine gun? Four of them.</description>
     <graphicData>
       <texPath>InfantryTurret/FT_QuadMaximGun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -896,8 +896,8 @@
   
   <ThingDef ParentName="FT_MannedTurret">
     <defName>FT_AutoCannon</defName>
-    <label>Auto Cannon</label>
-    <description>A Tripod with high caliber machine gun mounted. Requires steel to refurbish its barrels after heavy use.it needs a pawn to man on it to operate.</description>
+    <label>Autocannon</label>
+    <description>A tripod with an autocannon mounted on top. Must be manned to operate. Requires steel to refurbish its barrels after heavy use.</description>
     <graphicData>
       <texPath>InfantryTurret/FT_Tripod</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -965,7 +965,7 @@
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>FT_Gun_Autocannon</defName>
     <label>autocannon</label>
-    <description>A self-loading large-bore cannon designed to attach to a turret.</description>
+    <description>A self-loading large-bore cannon designed to be attached to a turret.</description>
     <graphicData>
       <texPath>InfantryTurret/FT_AutoCannonGun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1001,9 +1001,8 @@
   
   <ThingDef ParentName="FT_MannedTurret">
     <defName>FT_RecoillessGun</defName>
-    <label>Recoilless Gun</label>
-    <description>A Tripod with Recoilless gun mounted.A light-weighted soloution of anti armour operation, Requires ReinforcedBarrel to refurbish its barrels after heavy use. also it needs a pawn to man on it to operate.
-	But notice, do not use it indoors!!</description>
+    <label>Recoilless gun</label>
+    <description>A tripod with recoilless rifle mounted on top. Must be manned to operate. Requires a replacement reinforced barrel after heavy use. Warranty void if used indoors.</description>
     <graphicData>
       <texPath>InfantryTurret/FT_Tripod</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1075,8 +1074,8 @@
   
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>FT_Gun_Recoilless</defName>
-    <label>Recoilless Cannon</label>
-    <description>A Recoilless cannon designed to snipe the heavy-armed target in range.</description>
+    <label>Recoilless cannon</label>
+    <description>A gun with no recoil. Amazing!</description>
     <graphicData>
       <texPath>InfantryTurret/FT_RecoillessGun</texPath>
       <drawSize>(3,3)</drawSize>
@@ -1183,8 +1182,8 @@
 
   <ThingDef ParentName="BuildingBase">
     <defName>FT_TurretHexMortar</defName>
-    <label>Hexagonal Mortar Launcher</label>
-    <description>A manned mortar launcher with six barrel, with some mysterious technology, it can shoot six mortar shells at one time, however, it's not accurate.</description>
+    <label>hexagonal mortar launcher</label>
+    <description>A manned mortar launcher capable of launching six shells at once with a tradeoff of reduced accuracy.</description>
 	  <graphicData>
 		<texPath>InfantryTurret/FT_HexMortarBase</texPath>
 		<graphicClass>Graphic_Single</graphicClass>

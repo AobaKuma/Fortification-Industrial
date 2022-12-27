@@ -34,8 +34,12 @@
 
  <ThingDef ParentName="FT_BenchBase">
     <defName>FT_TableLathe</defName>
-    <label>Lathe</label>
-    <description>A machine that rotates a workpiece about an axis of rotation to perform various operations.</description>
+    <label>Electric lathe</label>
+    <description>An electrically-powered piece of equipment that allows the production of simple mechanical parts.</description>
+    <descriptionHyperlinks>
+			<ThingDef>ComponentIndustrial</ThingDef>
+      <ThingDef>ReinforcedBarrel</ThingDef>
+		</descriptionHyperlinks>
     <graphicData>
       <texPath>Lathe/Lathe</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -69,7 +73,7 @@
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <shortCircuitInRain>true</shortCircuitInRain>
-        <basePowerConsumption>800</basePowerConsumption>
+        <basePowerConsumption>400</basePowerConsumption>
       </li>
     </comps>
     <researchPrerequisites>
@@ -83,8 +87,12 @@
   
  <ThingDef ParentName="FT_BenchBase">
     <defName>FT_TableChemistry</defName>
-    <label>Chemistry Table</label>
-    <description>A table that can artificially synthesize compounds such as Neutroamine.</description>
+    <label>Chemistry table</label>
+    <description>An electrically-powered workstation that can artificially synthesize chemical compounds.</description>
+    <descriptionHyperlinks>
+			<ThingDef>Neutroamine</ThingDef>
+      <ThingDef>Dye</ThingDef>
+		</descriptionHyperlinks>
     <graphicData>
       <texPath>TableChemistry/TableChemistry</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -119,7 +127,7 @@
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <shortCircuitInRain>true</shortCircuitInRain>
-        <basePowerConsumption>800</basePowerConsumption>
+        <basePowerConsumption>400</basePowerConsumption>
       </li>
     </comps>
     <researchPrerequisites>
@@ -135,8 +143,14 @@
 
  <ThingDef ParentName="FT_BenchBase">
     <defName>FT_TableConcreteMixer</defName>
-    <label>ConcreteMixer</label>
-    <description>A machine that crushes and mixes stony materials into concrete dusts</description>
+    <label>Concrete mixer</label>
+    <description>An electrically-powered machine that crushes and mixes stony input to produce concrete - a durable and cheap building material.</description>
+    <descriptionHyperlinks>
+			<ThingDef>FT_BlocksConcrete</ThingDef>
+      <ThingDef>FT_ReinforcedConcreteBag</ThingDef>
+      <ThingDef>FT_WoodConcrete</ThingDef>
+      <ThingDef>FT_ConcreteCompressed</ThingDef>
+		</descriptionHyperlinks>
     <graphicData>
       <texPath>ConcreteMixer/FT_ConcreteMixer</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -174,7 +188,7 @@
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <shortCircuitInRain>true</shortCircuitInRain>
-        <basePowerConsumption>800</basePowerConsumption>
+        <basePowerConsumption>200</basePowerConsumption>
       </li>
     </comps>
     <researchPrerequisites>

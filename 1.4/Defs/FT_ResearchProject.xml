@@ -3,15 +3,8 @@
 
   <ResearchProjectDef>
     <defName>FT_ENIAC</defName>
-    <label>ENIAC</label>
-    <description>[Interstellar Industries Complex Nara Terminal]
-	[ version="1.0"] [ encoding="utf-8" ]
-Loading....
-
-[To user]
-Being able to build ENIAC and read this information means that you or your civilization already has the minimum requirements for the realization of the technology in the disc...
-
-OS>:_</description>
+    <label>E.N.I.A.C.</label>
+    <description>Create early-industrial-era electronics and basic electronic computers.</description>
     <baseCost>1000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
@@ -24,7 +17,7 @@ OS>:_</description>
   <ResearchProjectDef>
     <defName>FT_Lathe</defName>
     <label>lathe</label>
-    <description>Build lathe for early-stage compoment and reinforced barrel making.</description>
+    <description>Create an electric lathe to mass-produce reinforced barrels and components.</description>
     <baseCost>500</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
@@ -38,7 +31,7 @@ OS>:_</description>
   <ResearchProjectDef>
     <defName>FT_HeavyArtillery</defName>
     <label>heavy artillery</label>
-    <description>Using ENIAC to calculate the artillery ballistics table, unlock the design of heavy artilleries.</description>
+    <description>Use the E.N.I.A.C. to unlock the secrets of large-calibre artillery ballistics.</description>
     <baseCost>2000</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
@@ -54,7 +47,7 @@ OS>:_</description>
   <ResearchProjectDef>
     <defName>FT_IndustrialCannon</defName>
     <label>Industrial Cannon</label>
-    <description>Using reinforced barrel to build AT and AA Guns.</description>
+    <description>Build simple industrial-era field cannons.</description>
     <baseCost>750</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
@@ -67,7 +60,7 @@ OS>:_</description>
   <ResearchProjectDef>
     <defName>FT_Concrete</defName>
     <label>Concrete</label>
-    <description>crush and smelt stony material to concrete.</description>
+    <description>Crush and mix stony materials into concrete, a durable, cheap building material whose appearance leaves much to be desired.</description>
     <baseCost>250</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>
@@ -83,7 +76,7 @@ OS>:_</description>
     <ResearchProjectDef>
     <defName>FT_Chemistry</defName>
     <label>chemistry</label>
-    <description>Build Chemistry Table that can artificially synthesize compounds such as Neutroamine.</description>
+    <description>Artificially synthesize basic chemical compounds such as neutroamine and plant dye.</description>
     <baseCost>500</baseCost>
     <techLevel>Industrial</techLevel>
     <prerequisites>

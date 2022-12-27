@@ -1,18 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <FT_TableLathe.label>Lathe</FT_TableLathe.label>
-  <FT_TableLathe.description>A machine that rotates a workpiece about an axis of rotation to perform various operations.</FT_TableLathe.description>
+  <FT_TableLathe.label>Electric lathe</FT_TableLathe.label>
+  <FT_TableLathe.description>An electrically-powered piece of equipment that allows the production of simple mechanical parts.</FT_TableLathe.description>
 
-  <FT_TableChemistry.label>Chemistry Table</FT_TableChemistry.label>
-  <FT_TableChemistry.description>A table that can artificially synthesize compounds such as Neutroamine.</FT_TableChemistry.description>
+  <FT_TableChemistry.label>Chemistry table</FT_TableChemistry.label>
+  <FT_TableChemistry.description>An electrically-powered workstation that can artificially synthesize chemical compounds.</FT_TableChemistry.description>
 
-  <FT_TableConcrete.label>ConcreteMixer</FT_TableConcrete.label>
-  <FT_TableConcrete.description>A machine that crush and mixutre the stony material to concrete bricks.</FT_TableConcrete.description>
-
-
-  <!--<FT_BlocksConcrete.label>concrete blocks</FT_BlocksConcrete.label>-->
-  <!--<FT_BlocksConcrete.description>Blocks of solid concrete. Concrete is a nice building material but terriable at looking.</FT_BlocksConcrete.description>-->
-  <!--<FT_BlocksConcrete.stuffProps.stuffAdjective>concrete</FT_BlocksConcrete.stuffProps.stuffAdjective>-->
+  <FT_TableConcrete.label>Concrete mixer</FT_TableConcrete.label>
+  <FT_TableConcrete.description>An electrically-powered machine that crushes and mixes stony input to produce concrete - a durable and cheap building material.</FT_TableConcrete.description> -->
 
 </LanguageData>

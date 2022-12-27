@@ -7,9 +7,7 @@
 		<li>1.4</li>
 	</supportedVersions>
 		<packageId>Aoba.Fortress.Industrial</packageId>
-	<description>
-It has always been a problem to make their settlements secured since human existence, so this is the reason why people in each era have used their own wisdom to build various of fortifications.
-	</description>
+	<description>An assortment of various industrial-era structures, turrets, and concrete-derived materials meant to protect your colony from danger.\n\nEnglish translation improved by _sashkaa.</description>
   	<loadAfter>
     	<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>VanillaExpanded.VFEArchitect</li>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<ThingDef ParentName="BuildingBase">
+		<defName>FT_TurretAT_Plus</defName>
+		<label>76mm anti-tank gun</label>
+		<description>A direct-fire cannon with capability to destroy a heavy armed vehicle.</description>
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<texPath>InfantryTurret/FT_HexMortarBase</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<drawOffset>(0,0,-0.1)</drawOffset>
+		</graphicData>
+		<size>(3,3)</size>
+		<thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(-1,0,-1)</interactionCellOffset>
+		<stealable>false</stealable>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.85</fillPercent>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<tickerType>Normal</tickerType>
+		<designationCategory>Security</designationCategory>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<specialDisplayRadius>5</specialDisplayRadius>
+		<researchPrerequisites>
+			<li>FT_HeavyArtillery</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>240</wickTicks>
+				<explosiveRadius>4.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Mannable">
+				<manWorkType>Violent</manWorkType>
+			</li>
+			<li MayRequire="VanillaExpanded.VFESecurity" Class="VFESecurity.CompProperties_LongRangeArtillery">
+				<worldTileRange>5</worldTileRange>
+				<maxForcedMissRadiusFactor>2.5</maxForcedMissRadiusFactor>
+				<gizmoIconTexPath>Things/Building/Artillery/TurretArtillery_Top</gizmoIconTexPath>
+			</li>
+		</comps>
+		<statBases>
+			<Mass>255</Mass>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<WorkToBuild>3500</WorkToBuild>
+			<Beauty>-2</Beauty>
+		</statBases>
+		<costList>
+			<Steel>450</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ReinforcedBarrel>2</ReinforcedBarrel>
+		</costList>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<building>
+			<turretBurstWarmupTime>3.0</turretBurstWarmupTime>
+			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+			<turretTopDrawSize>4</turretTopDrawSize>	
+			<turretGunDef>FT_Gun_TurretAT_Plus</turretGunDef>
+		</building>
+		<uiIconPath>InfantryTurret/FT_AntiTankGunPlus_Icon</uiIconPath>
+		<uiIconScale>1.2</uiIconScale>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>FT_Gun_TurretAT_Plus</defName>
+		<label>76mm anti-tank gun</label>
+		<description>A direct-fire cannon with capability to destroy a heavy armed vehicle.</description>
+		<graphicData>
+			<texPath>InfantryTurret/FT_AntiTankGunPlus</texPath>
+			<drawOffset>(0,0,0)</drawOffset>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<statBases>
+			<SightsEfficiency>2.3</SightsEfficiency>
+			<ShotSpread>0.01</ShotSpread>
+			<SwayFactor>1.41</SwayFactor>
+			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+			<Mass>205</Mass>
+			<Flammability>0</Flammability>     
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<recoilAmount>4.74</recoilAmount>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_155mmHowitzerShell_HE_directfire</defaultProjectile>
+				<warmupTime>3</warmupTime>
+				<minRange>5</minRange>
+				<range>90</range>
+				<soundCast>120mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>32</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<recoilPattern>Mounted</recoilPattern>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>2</reloadTime>
+				<ammoSet>AmmoSet_762x385mmRCannonShell</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>	

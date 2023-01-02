@@ -7,7 +7,7 @@
 	<RecipeDef>
 		<defName>FT_Make_ConcreteCompressed</defName>
 		<label>Pack concrete</label>
-		<description>Pack concrete into bags for easier storage and transportation.\n\nThe Thebian Galactic Trading Etiquette (from the 437th edition onwards) dictates that concrete ought to be packed before being involved in any commercial transaction.</description>
+		<description>pack Concrete bag for storage,also trader are willing to buy them.</description>
 		<jobString>Packing concrete.</jobString>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
@@ -44,7 +44,7 @@
 	<RecipeDef>
 		<defName>FT_Unpack_ConcreteCompressed</defName>
 		<label>Unpack concrete</label>
-		<description>Unpack concrete bags.</description>
+		<description>Unpack Concrete bags for usage.</description>
 		<jobString>Unpacking concrete.</jobString>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
@@ -81,7 +81,7 @@
 <!-- 混凝土攪拌機 -->
   
   <RecipeDef Name="MakeConcreteBase" Abstract="True">
-    <jobString>making concrete</jobString>
+    <jobString>making Concrete from material</jobString>
     <workAmount>600</workAmount>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>CutStone</effectWorking>
@@ -91,8 +91,8 @@
 
   <RecipeDef ParentName="MakeConcreteBase">
     <defName>FT_Make_ConcreteByStonyJunks</defName>
-    <label>make concrete from junk</label>
-    <description>Crush non-burnable and non-smeltable stony junk into concrete.</description>
+    <label>make Concrete from junks</label>
+    <description>crush stony junks and made into concrete. the junk material must not be burnable or smeltable.</description>
 	  <ingredientValueGetterClass>AOBAUtilities.IngredientValueGetter_Mass</ingredientValueGetterClass>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredients>
@@ -146,8 +146,8 @@
   
   <RecipeDef ParentName="MakeConcreteBase">
     <defName>FT_Make_ConcreteByChunk</defName>
-    <label>make concrete from chunk</label>
-    <description>Crush chunks and made into Concrete.</description>
+    <label>make Concrete from chunk</label>
+    <description>crush chunks and made into Concrete.</description>
     <ingredients>
 		<li>
 			<filter>
@@ -178,8 +178,8 @@
   
   <RecipeDef ParentName="MakeConcreteBase">
     <defName>FT_Make_ConcreteByBlock</defName>
-    <label>make concrete</label>
-    <description>Crush stone blocks into concrete.</description>
+    <label>make Concrete</label>
+    <description>crush blocks and made into concrete.</description>
     <ingredients>
 		<li>
 			<filter>
@@ -216,8 +216,8 @@
 
   <RecipeDef>
     <defName>FT_Make_ConcreteWood</defName>
-    <label>Make fiber cement</label>
-    <description>Mix cloth and concrete into light yet strong concrete planks. Fireproof but less durable than solid concrete.</description>
+    <label>make Fiber cement</label>
+    <description>mixing the cloth and concrete to get the light-weighted concrete plank,fire-proofed but not durable as the soild bricks.</description>
     <jobString>making concrete.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
@@ -259,8 +259,8 @@
   <RecipeDef>
     <defName>FT_Make_ReinforcedConcrete</defName>
     <label>prepare steel for concrete</label>
-    <description>Mix rebar into raw concrete to get Reinforced Concrete, an alternative for metallic materials.</description>
-    <jobString>making reinforced concrete.</jobString>
+    <description>mixing the embedded steel bars and concrete to get the Reinforced concrete ,an alternative Materials for Metalic building.</description>
+    <jobString>making concrete.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
@@ -305,8 +305,8 @@
   <RecipeDef>
     <defName>FT_Make_ReinforcedBarrel</defName>
     <label>make reinforced barrel</label>
-    <description>Make a reinforced barrel at the lathe.</description>
-    <jobString>Making reinforced barrel.</jobString>
+    <description>Make a reinforced barrel from lathe.</description>
+    <jobString>Making Barrel.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
@@ -340,7 +340,7 @@
 	<RecipeDef>
 		<defName>FT_Make_ComponentIndustrial</defName>
 		<label>make component</label>
-		<description>Make a component at the lathe, takes a long time and is less economical than producing it at the Fabrication Bench.</description>
+		<description>Make a component from lathe,take longer time and resources.</description>
 		<jobString>Making component.</jobString>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
@@ -375,7 +375,7 @@
   <RecipeDef>
     <defName>FT_Make_Neutroamine</defName>
     <label>synthesize Neutroamine</label>
-    <description>Synthesize neutroamine from meat.</description>
+    <description>synthesize neutroamine from meat.</description>
     <jobString>Synthesizing neutroamine.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
@@ -415,9 +415,9 @@
   
   <RecipeDef>
     <defName>FT_Make_Dye</defName>
-    <label>synthesize dye</label>
-    <description>synthesize dye from chemfuel.</description>
-    <jobString>Synthesizing dye.</jobString>
+    <label>synthesize Dye</label>
+    <description>synthesize Dye from Chemfuel.</description>
+    <jobString>Synthesizing Dye.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>

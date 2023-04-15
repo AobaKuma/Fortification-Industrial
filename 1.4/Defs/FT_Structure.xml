@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
 
-	<!-- Base -->
+  <!-- Base -->
 
   <ThingDef Name="FT_SandBag_Base" Abstract="True">
     <category>Building</category>
     <thingClass>Building</thingClass>
-	  <soundImpactDefault>Pawn_Melee_Punch_HitPawn</soundImpactDefault>		
+    <soundImpactDefault>Pawn_Melee_Punch_HitPawn</soundImpactDefault>
     <selectable>true</selectable>
     <drawerType>MapMeshAndRealTime</drawerType>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
@@ -16,9 +16,9 @@
         <cornerTL>Damage/Corner</cornerTL>
       </damageData>
     </graphicData>
-	  <stuffCategories>
-		<li>Fabric</li>
-  	</stuffCategories>	
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
     <colorPerStuff>
       <li>
         <stuff>Cloth</stuff>
@@ -28,123 +28,125 @@
         <stuff>Synthread</stuff>
         <color>(110,114,77)</color>
       </li>
-    </colorPerStuff>	
-	  <blockWind>false</blockWind>
-	  <neverMultiSelect>true</neverMultiSelect>
-	  <holdsRoof>false</holdsRoof>
-	  <castEdgeShadows>true</castEdgeShadows>
-        <building>
-            <allowAutoroof>false</allowAutoroof>
-            <isInert>true</isInert>
-            <ai_chillDestination>false</ai_chillDestination>
-        </building>
-	  <blockLight>false</blockLight>
+    </colorPerStuff>
+    <blockWind>false</blockWind>
+    <neverMultiSelect>true</neverMultiSelect>
+    <holdsRoof>false</holdsRoof>
+    <castEdgeShadows>true</castEdgeShadows>
+    <building>
+      <allowAutoroof>false</allowAutoroof>
+      <isInert>true</isInert>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <blockLight>false</blockLight>
     <repairEffect>ConstructDirt</repairEffect>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <filthLeaving>SandbagRubble</filthLeaving>
     <designationCategory>Security</designationCategory>
     <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
   </ThingDef>
-	<!-- Sandbag -->	
-	
-	<ThingDef ParentName="FT_SandBag_Base">
-		<defName>FT_Sandbag</defName>
-		<label>Military Sandbag</label>
-		<thingClass>Building</thingClass>
-		<description>Bags of locally-sourced dirt or sand, stacked for use as cover. they are well-stacked so it is more durable.</description>
-		<graphicData>
-			<texPath>FT_Sandbag</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<linkType>Asymmetric</linkType>
-			<linkFlags>
-				<li>Sandbags</li>
-			</linkFlags>
-			<asymmetricLink>
-				<linkFlags>
-					<li>Rock</li>
-				</linkFlags>
-			</asymmetricLink>
-		</graphicData>
-		<uiIconPath>FT_Sandbag_icon</uiIconPath>
-		<building>
-			<blueprintGraphicData>
-				<texPath>FT_Sandbag_blueprint</texPath>
-			</blueprintGraphicData>
-		</building>	
-		<pathCost>50</pathCost>
-		<statBases>
-			<MaxHitPoints>400</MaxHitPoints>
-			<WorkToBuild>360</WorkToBuild>
-			<Flammability>0</Flammability>
-			<Beauty>0</Beauty>
-		</statBases>
-		<costStuffCount>7</costStuffCount>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<fillPercent>0.65</fillPercent>
-		<coversFloor>false</coversFloor>
-		<castEdgeShadows>false</castEdgeShadows>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
-		<tickerType>Never</tickerType>
-		<rotatable>false</rotatable>	
-		<staticSunShadowHeight>0.30</staticSunShadowHeight>
-	</ThingDef>
-	
-	<ThingDef ParentName="FT_SandBag_Base">
-		<defName>FT_WallSandbag</defName>
-		<label>Military sandbag wall</label>
-		<thingClass>Building</thingClass>
-		<description>Bags of locally-sourced dirt or sand, stacked for use as wall. they are well-stacked so it is more durable.</description>
-		<graphicData>
-			<texPath>FT_SandbagWall</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<linkType>Asymmetric</linkType>
-			<linkFlags>
-				<li>Sandbags</li>
-			</linkFlags>
-			<asymmetricLink>
-				<linkFlags>
-					<li>Wall</li>
-					<li>Rock</li>
-				</linkFlags>
-				<linkToDoors>false</linkToDoors>
-			</asymmetricLink>
-		</graphicData>
-		<uiIconPath>FT_SandbagWall_icon</uiIconPath>
-		<building>
-			<blueprintGraphicData>
-				<texPath>FT_SandbagWall_blueprint</texPath>
-			</blueprintGraphicData>
-		</building>	
-		<statBases>
-			<MaxHitPoints>600</MaxHitPoints>
-			<WorkToBuild>500</WorkToBuild>
-			<Flammability>0</Flammability>
-			<Beauty>0</Beauty>
-		</statBases>
-		<blockWind>true</blockWind>
-		<holdsRoof>true</holdsRoof>
-		<costStuffCount>10</costStuffCount>
-		<altitudeLayer>Building</altitudeLayer>
-		<passability>Impassable</passability>
-		<fillPercent>1.00</fillPercent>
-		<coversFloor>false</coversFloor>
-		<castEdgeShadows>false</castEdgeShadows>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
-		<tickerType>Never</tickerType>
-		<rotatable>false</rotatable>	
-		<staticSunShadowHeight>1.0</staticSunShadowHeight>
-	</ThingDef>
-	
-	<ThingDef ParentName="BuildingBase">
-	 <defName>FT_TankTrap</defName>
+  <!-- Sandbag -->
+
+  <ThingDef ParentName="FT_SandBag_Base">
+    <defName>FT_Sandbag</defName>
+    <label>Military Sandbag</label>
+    <thingClass>Building</thingClass>
+    <description>Bags of locally-sourced dirt or sand, stacked for use as cover. they are
+      well-stacked so it is more durable.</description>
+    <graphicData>
+      <texPath>FT_Sandbag</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Asymmetric</linkType>
+      <linkFlags>
+        <li>Sandbags</li>
+      </linkFlags>
+      <asymmetricLink>
+        <linkFlags>
+          <li>Rock</li>
+        </linkFlags>
+      </asymmetricLink>
+    </graphicData>
+    <uiIconPath>FT_Sandbag_icon</uiIconPath>
+    <building>
+      <blueprintGraphicData>
+        <texPath>FT_Sandbag_blueprint</texPath>
+      </blueprintGraphicData>
+    </building>
+    <pathCost>50</pathCost>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToBuild>360</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+    </statBases>
+    <costStuffCount>7</costStuffCount>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.65</fillPercent>
+    <coversFloor>false</coversFloor>
+    <castEdgeShadows>false</castEdgeShadows>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <staticSunShadowHeight>0.30</staticSunShadowHeight>
+  </ThingDef>
+
+  <ThingDef ParentName="FT_SandBag_Base">
+    <defName>FT_WallSandbag</defName>
+    <label>Military sandbag wall</label>
+    <thingClass>Building</thingClass>
+    <description>Bags of locally-sourced dirt or sand, stacked for use as wall. they are
+      well-stacked so it is more durable.</description>
+    <graphicData>
+      <texPath>FT_SandbagWall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Asymmetric</linkType>
+      <linkFlags>
+        <li>Sandbags</li>
+      </linkFlags>
+      <asymmetricLink>
+        <linkFlags>
+          <li>Wall</li>
+          <li>Rock</li>
+        </linkFlags>
+        <linkToDoors>false</linkToDoors>
+      </asymmetricLink>
+    </graphicData>
+    <uiIconPath>FT_SandbagWall_icon</uiIconPath>
+    <building>
+      <blueprintGraphicData>
+        <texPath>FT_SandbagWall_blueprint</texPath>
+      </blueprintGraphicData>
+    </building>
+    <statBases>
+      <MaxHitPoints>600</MaxHitPoints>
+      <WorkToBuild>500</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+    </statBases>
+    <blockWind>true</blockWind>
+    <holdsRoof>true</holdsRoof>
+    <costStuffCount>10</costStuffCount>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <fillPercent>1.00</fillPercent>
+    <coversFloor>false</coversFloor>
+    <castEdgeShadows>false</castEdgeShadows>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>FT_TankTrap</defName>
     <label>Tank Trap</label>
     <description>A solid concrete pillar that can hinder vehicles.</description>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
-     <texPath>FT_TankTrap</texPath>
-     <graphicClass>Graphic_Single</graphicClass>
+      <texPath>FT_TankTrap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
       <shadowData>
         <volume>(0.75,0.25,0.75)</volume>
         <offset>(0,0,0)</offset>
@@ -156,16 +158,16 @@
     <costList>
       <FT_BlocksConcrete>5</FT_BlocksConcrete>
     </costList>
-	  <blockLight>false</blockLight>
+    <blockLight>false</blockLight>
     <uiIconPath>FT_TankTrap</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <pathCost>150</pathCost>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.35</fillPercent>
     <coversFloor>false</coversFloor>
-	  <holdsRoof>false</holdsRoof>
-  	<castEdgeShadows>false</castEdgeShadows>
-	  <tickerType>Never</tickerType>    
+    <holdsRoof>false</holdsRoof>
+    <castEdgeShadows>false</castEdgeShadows>
+    <tickerType>Never</tickerType>
     <canOverlapZones>false</canOverlapZones>
     <statBases>
       <MaxHitPoints>800</MaxHitPoints>
@@ -176,11 +178,11 @@
     <researchPrerequisites>
       <li>FT_Concrete</li>
     </researchPrerequisites>
-    <pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>	
+    <pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
     <building>
       <allowAutoroof>false</allowAutoroof>
-	  <ai_chillDestination>false</ai_chillDestination>
-	  <expandHomeArea>false</expandHomeArea>	
+      <ai_chillDestination>false</ai_chillDestination>
+      <expandHomeArea>false</expandHomeArea>
       <isInert>true</isInert>
       <blueprintGraphicData>
         <texPath>FT_TankTrap_blueprint</texPath>
@@ -196,18 +198,18 @@
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
     <repairEffect>ConstructMetal</repairEffect>
-	</ThingDef>
-	
-	<ThingDef ParentName="BuildingBase">
-	 <defName>FT_Tetrapods</defName>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>FT_Tetrapods</defName>
     <label>Tetrapods</label>
     <description>A solid concrete pillar designed to lay on the coastline</description>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
-     <texPath>Tetrapods</texPath>
-     <graphicClass>Graphic_Single</graphicClass>
-	 <drawSize>2</drawSize>
+      <texPath>Tetrapods</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2</drawSize>
       <shadowData>
         <volume>(0.75,0.25,0.75)</volume>
         <offset>(0,0,0)</offset>
@@ -219,19 +221,19 @@
     <costList>
       <FT_BlocksConcrete>10</FT_BlocksConcrete>
     </costList>
-  	<size>(2,1)</size>
-  	<blockLight>false</blockLight>
+    <size>(2,1)</size>
+    <blockLight>false</blockLight>
     <uiIconPath>Tetrapods</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <pathCost>150</pathCost>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.60</fillPercent>
     <coversFloor>false</coversFloor>
-	  <holdsRoof>false</holdsRoof>
-  	<castEdgeShadows>false</castEdgeShadows>
-  	<tickerType>Never</tickerType>    
+    <holdsRoof>false</holdsRoof>
+    <castEdgeShadows>false</castEdgeShadows>
+    <tickerType>Never</tickerType>
     <canOverlapZones>false</canOverlapZones>
-  	<minifiedDef>MinifiedThing</minifiedDef>
+    <minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories>
       <li>BuildingsSecurity</li>
     </thingCategories>
@@ -245,11 +247,11 @@
       <WorkToBuild>200</WorkToBuild>
       <Flammability>0.0</Flammability>
     </statBases>
-    <pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>	
+    <pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
     <building>
       <allowAutoroof>false</allowAutoroof>
-	  <ai_chillDestination>false</ai_chillDestination>
-	  <expandHomeArea>false</expandHomeArea>	
+      <ai_chillDestination>false</ai_chillDestination>
+      <expandHomeArea>false</expandHomeArea>
       <isInert>true</isInert>
       <blueprintGraphicData>
         <texPath>Tetrapods_blueprint</texPath>
@@ -262,17 +264,17 @@
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
     <repairEffect>ConstructMetal</repairEffect>
-	</ThingDef>
-	
-<ThingDef ParentName="BuildingBase">
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
     <defName>FT_Barrier</defName>
     <label>Concrete Barrier</label>
     <description>a solid concrete barrier that can hinder vehicles and provide cover</description>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
-     <texPath>Barrier/FT_barrier</texPath>
-	 <color>(180,180,180)</color>
+      <texPath>Barrier/FT_barrier</texPath>
+      <color>(180,180,180)</color>
       <shadowData>
         <volume>(0.75,0.25,0.75)</volume>
         <offset>(0,0,0)</offset>
@@ -285,7 +287,7 @@
       <drawSize>(3.25,2.25)</drawSize>
       <drawOffset>(0,0,0.05)</drawOffset>
     </graphicData>
-  	<size>(2,1)</size>
+    <size>(2,1)</size>
     <uiIconPath>Barrier/FT_barrier_south</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
     <altitudeLayer>Building</altitudeLayer>
@@ -295,14 +297,14 @@
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>0.6</fillPercent>
     <canOverlapZones>false</canOverlapZones>
-  	<statBases>
+    <statBases>
       <MaxHitPoints>800</MaxHitPoints>
       <Beauty>-5</Beauty>
       <WorkToBuild>200</WorkToBuild>
       <Flammability>0.0</Flammability>
       <Mass>20</Mass>
     </statBases>
-  	<minifiedDef>MinifiedThing</minifiedDef>
+    <minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories>
       <li>BuildingsSecurity</li>
     </thingCategories>
@@ -315,11 +317,11 @@
         <texPath>Barrier/FT_barrier_south</texPath>
       </blueprintGraphicData>
     </building>
-  	<costList>
+    <costList>
       <FT_BlocksConcrete>10</FT_BlocksConcrete>
     </costList>
     <filthLeaving>Filth_RubbleBuilding</filthLeaving>
-	  <rotatable>true</rotatable>
+    <rotatable>true</rotatable>
     <researchPrerequisites>
       <li>FT_Concrete</li>
     </researchPrerequisites>
@@ -329,16 +331,16 @@
     <designationCategory>Security</designationCategory>
     <staticSunShadowHeight>0.00</staticSunShadowHeight>
   </ThingDef>
-	
-<ThingDef ParentName="BuildingBase">
+
+  <ThingDef ParentName="BuildingBase">
     <defName>FT_BarrierDiagonal</defName>
     <label>Diagonal Concrete Barrier</label>
     <description>a solid concrete barrier that can hinder vehicles and provide cover.</description>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
-     <texPath>Barrier/FT_barrierTilt</texPath>
-	   <color>(175,175,175)</color>
+      <texPath>Barrier/FT_barrierTilt</texPath>
+      <color>(175,175,175)</color>
       <shadowData>
         <volume>(0.25,0.25,0.25)</volume>
         <offset>(0,0,0)</offset>
@@ -351,7 +353,7 @@
       <drawSize>(3,3)</drawSize>
       <drawOffset>(0,0,0)</drawOffset>
     </graphicData>
-	  <size>(2,2)</size>
+    <size>(2,2)</size>
     <uiIconPath>Barrier/FT_barrierTilt_east</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
     <altitudeLayer>Building</altitudeLayer>
@@ -361,14 +363,14 @@
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.6</fillPercent>
     <canOverlapZones>false</canOverlapZones>
-  	<statBases>
+    <statBases>
       <MaxHitPoints>850</MaxHitPoints>
       <Beauty>-5</Beauty>
       <WorkToBuild>200</WorkToBuild>
       <Flammability>0.0</Flammability>
       <Mass>20</Mass>
     </statBases>
-  	<minifiedDef>MinifiedThing</minifiedDef>
+    <minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories>
       <li>BuildingsSecurity</li>
     </thingCategories>
@@ -384,11 +386,11 @@
     <researchPrerequisites>
       <li>FT_Concrete</li>
     </researchPrerequisites>
-	  <costList>
+    <costList>
       <FT_BlocksConcrete>10</FT_BlocksConcrete>
     </costList>
     <filthLeaving>Filth_RubbleBuilding</filthLeaving>
-  	<rotatable>true</rotatable>
+    <rotatable>true</rotatable>
     <selectable>true</selectable>
     <neverMultiSelect>true</neverMultiSelect>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded> <!-- Best affordance needed for stone -->
@@ -400,9 +402,9 @@
     <defName>FT_Floor_Concrete</defName>
     <label>Concrete floor</label>
   </DesignatorDropdownGroupDef>
-  
-  <TerrainDef ParentName="FloorBase" >
-	<defName>FT_Concrete</defName>
+
+  <TerrainDef ParentName="FloorBase">
+    <defName>FT_Concrete</defName>
     <label>concrete path</label>
     <costList>
       <FT_BlocksConcrete>2</FT_BlocksConcrete>
@@ -423,9 +425,9 @@
       <li>FT_Concrete</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>2</constructionSkillPrerequisite>
-   </TerrainDef>
+  </TerrainDef>
 
-   <TerrainDef ParentName="FloorBase">
+  <TerrainDef ParentName="FloorBase">
     <defName>FT_ConcreteTile</defName>
     <label>Concrete tile</label>
     <renderPrecedence>230</renderPrecedence>
@@ -438,7 +440,7 @@
       <WorkToBuild>250</WorkToBuild>
       <Beauty>1</Beauty>
       <Cleanliness>-0.1</Cleanliness>
-      <FilthMultiplier>1.1</FilthMultiplier>	  
+      <FilthMultiplier>1.1</FilthMultiplier>
     </statBases>
     <costList>
       <FT_BlocksConcrete>3</FT_BlocksConcrete>
@@ -447,8 +449,8 @@
       <li>FT_Concrete</li>
     </researchPrerequisites>
   </TerrainDef>
-  
-  <TerrainDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="FloorBase" >
+
+  <TerrainDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="FloorBase">
     <defName>FT_FineConcreteTile</defName>
     <label>Fine Concrete Tile</label>
     <renderPrecedence>220</renderPrecedence>
@@ -472,32 +474,33 @@
       <FT_BlocksConcrete>25</FT_BlocksConcrete>
     </costList>
   </TerrainDef>
-  
+
   <TerrainDef ParentName="FlagstoneBase">
-		<defName>FT_FlagstoneConcrete</defName>
-		<label>concrete flagstone</label>
-		<color>(160,160,160)</color>
-		<costList>
-			<FT_BlocksConcrete>4</FT_BlocksConcrete>
-		</costList>
+    <defName>FT_FlagstoneConcrete</defName>
+    <label>concrete flagstone</label>
+    <color>(160,160,160)</color>
+    <costList>
+      <FT_BlocksConcrete>4</FT_BlocksConcrete>
+    </costList>
   </TerrainDef>
-  
-    <TerrainDef ParentName="TileStoneBase">
-		<defName>FT_TileStoneConcrete</defName>
-		<label>concrete tile</label>
-		<color>(140,140,140)</color>
-		<costList>
-			<FT_BlocksConcrete>4</FT_BlocksConcrete>
-		</costList>
+
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>FT_TileStoneConcrete</defName>
+    <texturePath>Floor/FT_PrefabTile</texturePath>
+    <label>concrete tile</label>
+    <color>(150,150,150)</color>
+    <costList>
+      <FT_WoodConcrete>4</FT_WoodConcrete>
+    </costList>
   </TerrainDef>
-  
- <TerrainDef  ParentName="FloorBase">
+
+  <TerrainDef ParentName="FloorBase">
     <defName>FT_PlankFloor</defName>
     <label>wood-liked concrete floor</label>
     <renderPrecedence>250</renderPrecedence>
     <description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
     <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
-    <color>(140,140,140)</color>
+    <color>(120,120,120)</color>
     <statBases>
       <WorkToBuild>10</WorkToBuild>
       <Flammability>0.0</Flammability>
@@ -508,5 +511,5 @@
     </costList>
   </TerrainDef>
 
-	
+
 </Defs>	

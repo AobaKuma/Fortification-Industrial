@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--================鋼筋混凝土======================-->
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>Aoba.Fortress.Industrial</modId>
+		<key>RemoveRebarConcrete</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationFindMod">
+						<mods>
+							<li>Vanilla Furniture Expanded - Security</li>
+						</mods>
+						<match Class="PatchOperationSequence">
+							<operations>
+								<li Class="PatchOperationReplace">
+									<xpath>Defs/ThingDef[defName="FT_Trench"]/costList</xpath>
+									<value>
+										<costList>
+											<FT_BlocksConcrete>12</FT_BlocksConcrete>
+										</costList>
+									</value>
+								</li>
+								<li Class="PatchOperationReplace">
+									<xpath>Defs/ThingDef[defName="FT_Platform"]/costList</xpath>
+									<value>
+										<costList>
+											<FT_BlocksConcrete>18</FT_BlocksConcrete>
+										</costList>
+									</value>
+								</li>
+								<li Class="PatchOperationReplace">
+									<xpath>
+										Defs/ThingDef[defName="FT_VFES_Turret_Artillery"]/costList</xpath>
+									<value>
+										<costList>
+											<Steel>120</Steel>
+											<FT_BlocksConcrete>50</FT_BlocksConcrete>
+											<ComponentIndustrial>9</ComponentIndustrial>
+										</costList>
+									</value>
+								</li>
+							</operations>
+						</match>
+					</li>
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/RecipeDef[defName="FT_Make_ReinforcedConcrete"]</xpath>
+					</li>
+					<li Class="PatchOperationRemove">
+						<xpath>
+							Defs/RecipeDef[defName="FT_Make_ConcreteByBlock"]/defaultIngredientFilter/disallowedThingDefs/li[text()="FT_ReinforcedConcreteBag"]</xpath>
+					</li>
+					<li Class="PatchOperationRemove">
+						<xpath>
+							Defs/RecipeDef[defName="FT_Make_ConcreteByBlock"]/fixedIngredientFilter/disallowedThingDefs/li[text()="FT_ReinforcedConcreteBag"]</xpath>
+					</li>
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="FT_ReinforcedConcreteBag"]</xpath>
+					</li>
+				</operations>
+			</Operation>
+		</caseTrue>
+	</Operation>
+
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>Aoba.Fortress.Industrial</modId>
+		<key>RemoveFiberConcrete</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationRemove">
+						<xpath>
+							Defs/RecipeDef[defName="FT_Make_ConcreteByBlock"]/defaultIngredientFilter/disallowedThingDefs/li[text()="FT_WoodConcrete"]</xpath>
+					</li>
+					<li Class="PatchOperationRemove">
+						<xpath>
+							Defs/RecipeDef[defName="FT_Make_ConcreteByBlock"]/fixedIngredientFilter/disallowedThingDefs/li[text()="FT_WoodConcrete"]</xpath>
+					</li>
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/RecipeDef[defName="FT_Make_ConcreteWood"]</xpath>
+					</li>
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/TerrainDef[defName="FT_PlankFloor"]</xpath>
+					</li>
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="FT_WoodConcrete"]</xpath>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>*/TerrainDef[defName = "FT_TileStoneConcrete"]/costList</xpath>
+						<value>
+							<costList>
+								<FT_BlocksConcrete>4</FT_BlocksConcrete>
+							</costList>
+						</value>
+					</li>
+				</operations>
+			</Operation>
+		</caseTrue>
+	</Operation>
+
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>Aoba.Fortress.Industrial</modId>
+		<key>CoreTechtree_Eniac</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ResearchProjectDef[defName="Electricity"]/researchViewX</xpath>
+						<value>
+							<researchViewX>4.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ResearchProjectDef[defName="Electricity"]/researchViewY</xpath>
+						<value>
+							<researchViewY>3.00</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="FT_ENIAC"]/researchViewX</xpath>
+						<value>
+							<researchViewX>5.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="FT_ENIAC"]/researchViewY</xpath>
+						<value>
+							<researchViewY>4.80</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>
+							Defs/ResearchProjectDef[defName="MicroelectronicsBasics"]/prerequisites</xpath>
+						<value>
+							<prerequisites>
+								<li>Electricity</li>
+							</prerequisites>
+						</value>
+					</li>
+				</operations>
+			</Operation>
+		</caseTrue>
+		<caseFalse>
+			<Operation Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ResearchProjectDef[defName="Electricity"]/researchViewX</xpath>
+						<value>
+							<researchViewX>4.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ResearchProjectDef[defName="Electricity"]/researchViewY</xpath>
+						<value>
+							<researchViewY>3.00</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>
+							/Defs/ResearchProjectDef[defName="MicroelectronicsBasics"]/prerequisites</xpath>
+						<value>
+							<prerequisites>
+								<li>FT_ENIAC</li>
+							</prerequisites>
+						</value>
+					</li>
+				</operations>
+			</Operation>
+		</caseFalse>
+	</Operation>
+
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>Aoba.Fortress.Industrial</modId>
+		<key>CoreTechtree_Lathe</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ResearchProjectDef[defName="FT_Lathe"]/researchViewX</xpath>
+						<value>
+							<researchViewX>5.00</researchViewX>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ResearchProjectDef[defName="FT_Lathe"]/researchViewY</xpath>
+						<value>
+							<researchViewY>3.00</researchViewY>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ResearchProjectDef[defName="Machining"]/prerequisites</xpath>
+						<value>
+							<prerequisites>
+								<li>Electricity</li>
+								<li>Smithing</li>
+							</prerequisites>
+						</value>
+					</li>
+				</operations>
+			</Operation>
+		</caseTrue>
+		<caseFalse>
+			<Operation Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ResearchProjectDef[defName="Machining"]/prerequisites</xpath>
+						<value>
+							<prerequisites>
+								<li>FT_Lathe</li>
+							</prerequisites>
+						</value>
+					</li>
+				</operations>
+			</Operation>
+		</caseFalse>
+	</Operation>
+</Patch>

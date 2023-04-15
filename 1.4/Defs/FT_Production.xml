@@ -121,7 +121,7 @@
     <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     <recipes>
       <li>FT_Make_Neutroamine</li>
-	    <li MayRequire="Ludeon.RimWorld.Ideology">FT_Make_Dye</li>
+	  <li>FT_Make_Dye</li>
     </recipes>
     <comps>
       <li Class="CompProperties_Power">
@@ -167,13 +167,11 @@
       <Cleanliness>-2</Cleanliness>
     </statBases>
 	  <recipes>
-      <li>FT_Make_ConcreteByChunk</li>
-      <li>FT_Make_ConcreteByBlock</li>	
-      <li>FT_Make_ConcreteCompressed</li>
-      <li>FT_Unpack_ConcreteCompressed</li>	
-      <li>FT_Make_ConcreteWood</li>
-      <li>FT_Make_ReinforcedConcrete</li>
-      <li>FT_Make_ConcreteByStonyJunks</li>
+		  <li>FT_Make_ConcreteByChunk</li>
+		  <li>FT_Make_ConcreteByBlock</li>	
+		  <li>FT_Make_ConcreteCompressed</li>
+		  <li>FT_Unpack_ConcreteCompressed</li>	
+		  <li>FT_Make_ConcreteByStonyJunks</li>
 	  </recipes>
     <size>(2,2)</size>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>

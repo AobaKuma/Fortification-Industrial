@@ -6,6 +6,11 @@
     <label>fortified trench floor</label>
     <texturePath>Floor/FT_concreteTile</texturePath>
     <layerable>true</layerable>
+	<affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    </affordances>
     <pathCost>12</pathCost>
     <fertility>0</fertility>
     <edgeType>Fade</edgeType>
@@ -26,6 +31,11 @@
     <label>fortified platform</label>
     <texturePath>Floor/FT_concreteTile</texturePath>
     <layerable>true</layerable>
+	<affordances>
+      <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
+    </affordances>
     <pathCost>12</pathCost>
     <fertility>0</fertility>
     <edgeType>Fade</edgeType>
@@ -48,8 +58,10 @@
 		<graphicData>
 			<texPath>ConcreteTrench/Trench_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<linkType>Basic</linkType>
-			<linkFlags><li>Custom6</li></linkFlags>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Custom6</li>
+			</linkFlags>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
 		<uiIconPath>ConcreteTrench/Trench_MenuIcon</uiIconPath>
@@ -59,7 +71,7 @@
 			</li>
 		</comps>
 		<costList>
-			<FT_ReinforcedConcreteBag>5</FT_ReinforcedConcreteBag>
+			<FT_BlocksConcrete>5</FT_BlocksConcrete>
 		</costList>
 		<statBases>
 			<MaxHitPoints>1000</MaxHitPoints>
@@ -90,6 +102,7 @@
 		<repairEffect>ConstructMetal</repairEffect>
 		<building>
 			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
 			<ai_chillDestination>false</ai_chillDestination>
 			<blueprintGraphicData>
 				<texPath>Things/Security/Trench/Trench_Blueprint_Atlas</texPath>
@@ -101,6 +114,7 @@
 				<multiplier>0.5</multiplier>
 			</li>
 		</damageMultipliers>
+		<clearBuildingArea>false</clearBuildingArea>
 		<researchPrerequisites><li>VWE_TrenchWarfare</li></researchPrerequisites>
 	</ThingDef>
 
@@ -111,8 +125,10 @@
 		<graphicData>
 			<texPath>ConcretePlatform/Platform_Atlas</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<linkType>Basic</linkType>
-			<linkFlags><li>Custom9</li></linkFlags>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Custom9</li>
+			</linkFlags>
 		</graphicData>
 		<techLevel>Industrial</techLevel>
 		<uiIconPath>ConcretePlatform/Platform_MenuIcon</uiIconPath>
@@ -122,7 +138,7 @@
 			</li>
 		</comps>
 		<costList>
-			<FT_ReinforcedConcreteBag>5</FT_ReinforcedConcreteBag>
+			<FT_BlocksConcrete>5</FT_BlocksConcrete>
 		</costList>
 		<statBases>
 			<MaxHitPoints>1000</MaxHitPoints>
@@ -153,6 +169,7 @@
 		<repairEffect>ConstructMetal</repairEffect>
 		<building>
 			<isInert>true</isInert>
+			<isEdifice>false</isEdifice>
 			<ai_chillDestination>false</ai_chillDestination>
 			<blueprintGraphicData>
 				<texPath>ConcretePlatform/Platform_Blueprint_Atlas</texPath>
@@ -164,6 +181,7 @@
 				<multiplier>0.5</multiplier>
 			</li>
 		</damageMultipliers>
+		<clearBuildingArea>false</clearBuildingArea>
 		<researchPrerequisites><li>VWE_TrenchWarfare</li></researchPrerequisites>
 	</ThingDef>
 
@@ -197,7 +215,7 @@
     <stealable>false</stealable>
     <costList>
 		<Steel>120</Steel>
-		<FT_ReinforcedConcreteBag>18</FT_ReinforcedConcreteBag>
+		<FT_BlocksConcrete>40</FT_BlocksConcrete>
 		<ComponentIndustrial>9</ComponentIndustrial>
     </costList>
     <comps>

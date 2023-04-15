@@ -106,11 +106,10 @@
         <count>10</count>
       </li>
     </ingredients>
-
   	<fixedIngredientFilter>
    		<categories>
-				<li>Weapons</li>
-        <li>Apparel</li>
+			<li>Weapons</li>
+			<li>Apparel</li>
 	  	</categories>
       <specialFiltersToDisallow>
         <li>AllowBurnableWeapons</li>
@@ -119,29 +118,25 @@
         <li>AllowSmeltableApparel</li>
       </specialFiltersToDisallow>
     </fixedIngredientFilter>
-
     <forceHiddenSpecialFilters>
       <li>AllowBurnableWeapons</li>
       <li>AllowSmeltable</li>
       <li>AllowBurnableApparel</li>
       <li>AllowSmeltableApparel</li>
     </forceHiddenSpecialFilters>
-
   	<defaultIngredientFilter>
 		  <categories>
-				<li>Weapons</li>
-        <li>Apparel</li>
+			<li>Weapons</li>
+			<li>Apparel</li>
 		  </categories>
       <disallowedThingDefs>
         <li>Apparel_ShieldBelt</li>
         <li>Apparel_SmokepopBelt</li>
       </disallowedThingDefs>
     </defaultIngredientFilter>
-
     <products>
 	  	<FT_BlocksConcrete>20</FT_BlocksConcrete>
     </products>
-
   </RecipeDef>
   
   <RecipeDef ParentName="MakeConcreteBase">
@@ -190,22 +185,24 @@
 			<count>20</count>
 		</li>
     </ingredients>
-	  <fixedIngredientFilter>
+	<fixedIngredientFilter>
       <categories>
         <li>StoneBlocks</li>
       </categories>
       <disallowedThingDefs>
         <li>FT_BlocksConcrete</li>
         <li>FT_WoodConcrete</li>
+		<li>FT_ReinforcedConcreteBag</li>
       </disallowedThingDefs>
     </fixedIngredientFilter>
-	  <defaultIngredientFilter>
+	<defaultIngredientFilter>
       <categories>
         <li>StoneBlocks</li>
       </categories>
       <disallowedThingDefs>
         <li>FT_BlocksConcrete</li>
         <li>FT_WoodConcrete</li>
+		<li>FT_ReinforcedConcreteBag</li>
       </disallowedThingDefs>
     </defaultIngredientFilter>
     <products>
@@ -222,6 +219,9 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
+	<recipeUsers>
+	  <li>FT_TableConcreteMixer</li>
+    </recipeUsers>
     <workAmount>50</workAmount>
     <ingredients>
       <li>
@@ -280,11 +280,12 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>5</count>
+        <count>10</count>
       </li>
     </ingredients>
   	<recipeUsers>
       <li>CraftingSpot</li>
+	  <li>FT_TableConcreteMixer</li>
     </recipeUsers>
     <fixedIngredientFilter>
       <thingDefs>
@@ -292,10 +293,10 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <FT_ReinforcedConcreteBag>25</FT_ReinforcedConcreteBag>
+      <FT_ReinforcedConcreteBag>20</FT_ReinforcedConcreteBag>
     </products>
     <skillRequirements>
-      <Crafting>2</Crafting>
+      <Crafting>5</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
 	  <researchPrerequisite>FT_Concrete</researchPrerequisite>

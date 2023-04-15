@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
 	<ThingDef ParentName="BuildingBase">
@@ -43,11 +43,12 @@
 				<explosiveRadius>4.9</explosiveRadius>
 				<explosiveDamageType>Bomb</explosiveDamageType>
 			</li>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Mannable">
 				<manWorkType>Violent</manWorkType>
 			</li>
-			<li MayRequire="VanillaExpanded.VFESecurity" Class="VFESecurity.CompProperties_LongRangeArtillery">
+			<li MayRequire="VanillaExpanded.VFESecurity"
+				Class="VFESecurity.CompProperties_LongRangeArtillery">
 				<worldTileRange>5</worldTileRange>
 				<maxForcedMissRadiusFactor>2.5</maxForcedMissRadiusFactor>
 				<gizmoIconTexPath>Things/Building/Artillery/TurretArtillery_Top</gizmoIconTexPath>
@@ -62,20 +63,20 @@
 		</statBases>
 		<costList>
 			<Steel>450</Steel>
-			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentIndustrial>6</ComponentIndustrial>
 			<ReinforcedBarrel>2</ReinforcedBarrel>
 		</costList>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
 			<turretBurstWarmupTime>3.0</turretBurstWarmupTime>
 			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
-			<turretTopDrawSize>4</turretTopDrawSize>	
+			<turretTopDrawSize>4</turretTopDrawSize>
 			<turretGunDef>FT_Gun_TurretAT_Plus</turretGunDef>
 		</building>
 		<uiIconPath>InfantryTurret/FT_AntiTankGunPlus_Icon</uiIconPath>
 		<uiIconScale>1.2</uiIconScale>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>FT_Gun_TurretAT_Plus</defName>
 		<label>76mm anti-tank gun</label>
@@ -91,7 +92,7 @@
 			<SwayFactor>1.41</SwayFactor>
 			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
 			<Mass>205</Mass>
-			<Flammability>0</Flammability>     
+			<Flammability>0</Flammability>
 		</statBases>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -121,5 +122,67 @@
 				<aiAimMode>AimedShot</aiAimMode>
 			</li>
 		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>FT_TurretAutoCannon_</defName>
+		<label>20mm anti-air gun</label>
+		<description>A rapid-fire cannon with capability to shoot down aircraft.</description>
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<texPath>InfantryTurret/FT_WheeledTripod</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.5,2.5)</drawSize>
+			<drawOffset>(0,0,0)</drawOffset>
+		</graphicData>
+		<size>(2,1)</size>
+		<thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<stealable>false</stealable>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.66</fillPercent>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<tickerType>Normal</tickerType>
+		<designationCategory>Security</designationCategory>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>GunTurrets</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Mannable">
+				<manWorkType>Violent</manWorkType>
+			</li>
+		</comps>
+		<statBases>
+			<Mass>85</Mass>
+			<MaxHitPoints>750</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>3500</WorkToBuild>
+			<Beauty>-2</Beauty>
+		</statBases>
+		<costList>
+			<Steel>180</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+			<turretBurstWarmupTime>1.2</turretBurstWarmupTime>
+			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+			<turretTopDrawSize>2</turretTopDrawSize>
+			<turretGunDef>FT_Gun_Autocannon</turretGunDef>
+		</building>
+		<uiIconPath>InfantryTurret/FT_AutoCannonTurret_icon</uiIconPath>
+		<uiIconScale>1</uiIconScale>
 	</ThingDef>
 </Defs>	

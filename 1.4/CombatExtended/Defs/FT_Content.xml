@@ -8,8 +8,8 @@
 		<techLevel>Industrial</techLevel>
 		<graphicData>
 			<texPath>InfantryTurret/FT_HexMortarBase</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(3,3)</drawSize>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.25,3.25)</drawSize>
 			<drawOffset>(0,0,-0.1)</drawOffset>
 		</graphicData>
 		<size>(3,3)</size>
@@ -47,11 +47,13 @@
 			<li Class="CompProperties_Mannable">
 				<manWorkType>Violent</manWorkType>
 			</li>
-			<li MayRequire="VanillaExpanded.VFESecurity"
-				Class="VFESecurity.CompProperties_LongRangeArtillery">
-				<worldTileRange>5</worldTileRange>
-				<maxForcedMissRadiusFactor>2.5</maxForcedMissRadiusFactor>
-				<gizmoIconTexPath>Things/Building/Artillery/TurretArtillery_Top</gizmoIconTexPath>
+			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+				<randomGraphics>
+					<li>InfantryTurret/FT_HexMortarBase</li>
+					<li>InfantryTurret/FT_HexMortarBase_Sec</li>
+					<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Heavy</li>
+					<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Wheel_Sec</li>
+				</randomGraphics>
 			</li>
 		</comps>
 		<statBases>
@@ -75,6 +77,24 @@
 		</building>
 		<uiIconPath>InfantryTurret/FT_AntiTankGunPlus_Icon</uiIconPath>
 		<uiIconScale>1.2</uiIconScale>
+			<damageMultipliers>
+		  <li>
+			<damageDef>EMP</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li>
+			<damageDef>Stun</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">
+				<damageDef>MechBandShockwave</damageDef>
+				<multiplier>0</multiplier>
+		  </li>
+		  <li MayRequire="CETeam.CombatExtended">
+				<damageDef>Electrical</damageDef>
+				<multiplier>0</multiplier>
+		  </li>
+	</damageMultipliers>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseWeaponTurret">
@@ -97,12 +117,12 @@
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
-				<recoilAmount>4.74</recoilAmount>
+				<recoilAmount>0</recoilAmount>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_155mmHowitzerShell_HE_directfire</defaultProjectile>
+				<defaultProjectile>Bullet_762x385mmRCannonShell_HEAT</defaultProjectile>
 				<warmupTime>3</warmupTime>
 				<minRange>5</minRange>
-				<range>90</range>
+				<range>125</range>
 				<soundCast>120mm</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>32</muzzleFlashScale>
@@ -115,7 +135,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>1</magazineSize>
-				<reloadTime>2</reloadTime>
+				<reloadTime>4</reloadTime>
 				<ammoSet>AmmoSet_762x385mmRCannonShell</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
@@ -131,7 +151,7 @@
 		<techLevel>Industrial</techLevel>
 		<graphicData>
 			<texPath>InfantryTurret/FT_WheeledTripod</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2.5,2.5)</drawSize>
 			<drawOffset>(0,0,0)</drawOffset>
 		</graphicData>
@@ -178,11 +198,78 @@
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<building>
 			<turretBurstWarmupTime>1.2</turretBurstWarmupTime>
-			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+			<turretBurstCooldownTime>0.75</turretBurstCooldownTime>
 			<turretTopDrawSize>2</turretTopDrawSize>
-			<turretGunDef>FT_Gun_Autocannon</turretGunDef>
+			<turretGunDef>FT_Gun_Autocannon_Twin</turretGunDef>
 		</building>
 		<uiIconPath>InfantryTurret/FT_AutoCannonTurret_icon</uiIconPath>
 		<uiIconScale>1</uiIconScale>
+			<damageMultipliers>
+		  <li>
+			<damageDef>EMP</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li>
+			<damageDef>Stun</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">
+				<damageDef>MechBandShockwave</damageDef>
+				<multiplier>0</multiplier>
+		  </li>
+		  <li MayRequire="CETeam.CombatExtended">
+				<damageDef>Electrical</damageDef>
+				<multiplier>0</multiplier>
+		  </li>
+	</damageMultipliers>
 	</ThingDef>
+	
+		<ThingDef ParentName="BaseWeaponTurret">
+		<defName>FT_Gun_Autocannon_Twin</defName>
+		<label>autocannon</label>
+		<description>A self-loading large-bore cannon designed to attach to a turret.</description>
+		<graphicData>
+			<texPath>InfantryTurret/FT_AutoCannonGun_Twin</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
+		<statBases>
+          <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+          <SightsEfficiency>1</SightsEfficiency>
+          <ShotSpread>0.3</ShotSpread>
+          <SwayFactor>1.15</SwayFactor>
+          <Bulk>50</Bulk>
+        </statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<recoilAmount>1.6</recoilAmount>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_20x110mmHispano_AP</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>75</range>
+				<burstShotCount>12</burstShotCount>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<soundCast>Shot_Autocannon</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+				<recoilPattern>Mounted</recoilPattern>
+
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>120</magazineSize>
+				<reloadTime>5</reloadTime>
+				<ammoSet>AmmoSet_20x110mmHispano</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+					<aiAimMode>Snapshot</aiAimMode>
+					<aimedBurstShotCount>6</aimedBurstShotCount>
+			</li>
+		</comps>
+	</ThingDef>
+	
 </Defs>	

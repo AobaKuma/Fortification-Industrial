@@ -9,8 +9,8 @@
   <FT_ReinforcedConcreteBag.description>鋼筋與包含粉狀混凝土的包裝袋,鋼筋混凝土可以作為金屬類建築的材料,但就是不怎麼美觀.</FT_ReinforcedConcreteBag.description>
   <FT_ReinforcedConcreteBag.stuffProps.stuffAdjective>鋼筋混凝土</FT_ReinforcedConcreteBag.stuffProps.stuffAdjective>
   
-  <FT_WoodConcrete.label>水泥纖維板</FT_WoodConcrete.label>
-  <FT_WoodConcrete.description>一種水泥混合纖維製成的預製板,可以用來作為仿木頭構造的建築材料,防火且相對於水泥塊來說較為輕.</FT_WoodConcrete.description>
+  <FT_WoodConcrete.label>水泥預製板</FT_WoodConcrete.label>
+  <FT_WoodConcrete.description>預先凝固成板狀用來組合建造的混凝土預製件,作為快速建築用的材料而言相當優秀,防火且建造工時較少.</FT_WoodConcrete.description>
   <FT_WoodConcrete.stuffProps.stuffAdjective>混凝土預製板</FT_WoodConcrete.stuffProps.stuffAdjective>
   
   <FT_ConcreteCompressed.label>封裝混凝土</FT_ConcreteCompressed.label>

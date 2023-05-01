@@ -25,7 +25,7 @@
       </li>
       
       <li Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[@Name="FT_TurretQuadAA" or @Name="FT_BaseCannonBuilding" or @Name="FT_MGNest" or defName="FT_TurretAA" or defName="FT_TurretAT"]/building/turretBurstCooldownTime</xpath>
+        <xpath>Defs/ThingDef[@Name="FT_BaseCannonBuilding" or @Name="FT_MGNest" or defName="FT_TurretAA" or defName="FT_TurretAT" or defName="FT_TurretQuadAA" or defName="FT_AutoCannon" or defName="FT_RecoillessGun"]/building/turretBurstCooldownTime</xpath>
         <value>
           <turretBurstCooldownTime>1</turretBurstCooldownTime>
         </value>
@@ -47,7 +47,7 @@
           <statBases>
             <RangedWeapon_Cooldown>3.3</RangedWeapon_Cooldown>
             <SightsEfficiency>2.2</SightsEfficiency>
-            <ShotSpread>0.01</ShotSpread>
+            <ShotSpread>0.05</ShotSpread>
             <SwayFactor>0.83</SwayFactor>
           </statBases>
           <Properties>
@@ -63,14 +63,11 @@
             <soundCast>Shot_Autocannon</soundCast>
             <soundCastTail>GunTail_Heavy</soundCastTail>
             <muzzleFlashScale>18</muzzleFlashScale>
-            <targetParams>
-              <canTargetLocations>true</canTargetLocations>
-            </targetParams>
             <recoilPattern>Mounted</recoilPattern>
           </Properties>
           <AmmoUser>
             <magazineSize>160</magazineSize>
-            <reloadTime>12</reloadTime>
+            <reloadTime>8</reloadTime>
             <ammoSet>AmmoSet_20x138mmB</ammoSet>
           </AmmoUser>
           <FireModes>
@@ -94,11 +91,11 @@
           <SwayFactor>0.75</SwayFactor>
         </statBases>
         <Properties>
-          <recoilAmount>1.5</recoilAmount>
+          <recoilAmount>1.25</recoilAmount>
           <verbClass>CombatExtended.Verb_ShootCE</verbClass>
           <hasStandardCommand>true</hasStandardCommand>
           <defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
-          <warmupTime>1.2</warmupTime>
+          <warmupTime>1.25</warmupTime>
           <minRange>3.9</minRange>
 		      <range>100</range>
           <burstShotCount>8</burstShotCount>
@@ -106,14 +103,11 @@
           <soundCast>Shot_Autocannon</soundCast>
           <soundCastTail>GunTail_Heavy</soundCastTail>
           <muzzleFlashScale>12</muzzleFlashScale>
-          <targetParams>
-            <canTargetLocations>true</canTargetLocations>
-          </targetParams>
           <recoilPattern>Mounted</recoilPattern>
         </Properties>
         <AmmoUser>
           <magazineSize>40</magazineSize>
-          <reloadTime>3</reloadTime>
+          <reloadTime>2</reloadTime>
           <ammoSet>AmmoSet_20x138mmB</ammoSet>
         </AmmoUser>
         <FireModes>
@@ -141,8 +135,8 @@
           <hasStandardCommand>true</hasStandardCommand>
           <defaultProjectile>Bullet_37x223mmR_HE</defaultProjectile>
           <warmupTime>2</warmupTime>
-		      <minRange>3.9</minRange>
-          <range>78</range>
+		  <minRange>3.9</minRange>
+          <range>85</range>
           <soundCast>FT_CannonLaunchA</soundCast>
           <soundCastTail>GunTail_Heavy</soundCastTail>
           <muzzleFlashScale>12</muzzleFlashScale>
@@ -153,7 +147,7 @@
         </Properties>
         <AmmoUser>
           <magazineSize>1</magazineSize>
-          <reloadTime>6</reloadTime>
+          <reloadTime>3</reloadTime>
           <ammoSet>AmmoSet_37x223mmR</ammoSet>
         </AmmoUser>
         <FireModes>
@@ -186,10 +180,10 @@
           <verbClass>CombatExtended.Verb_ShootCE</verbClass>
           <hasStandardCommand>true</hasStandardCommand>
           <defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
-          <warmupTime>1.2</warmupTime>
+          <warmupTime>1</warmupTime>
           <range>50</range>
           <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-          <burstShotCount>5</burstShotCount>
+          <burstShotCount>8</burstShotCount>
           <soundCast>GunShotA</soundCast>
           <soundCastTail>GunTail_Medium</soundCastTail>
           <muzzleFlashScale>9</muzzleFlashScale>
@@ -202,6 +196,8 @@
         </AmmoUser>
         <FireModes>
           <aiAimMode>AimedShot</aiAimMode>
+		  <aimedBurstShotCount>4</aimedBurstShotCount>
+		  <noSingleShot>true</noSingleShot>
         </FireModes>
         <weaponTags>
           <li>TurretGun</li>
@@ -237,7 +233,7 @@
                 <defaultProjectile>Bullet_105x607mmRCannonShell_HEAT</defaultProjectile>
                 <warmupTime>2</warmupTime>
                 <minRange>3.9</minRange>
-                <range>72</range>
+                <range>75</range>
                 <soundCast>FT_CannonLaunchA</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>20</muzzleFlashScale>
@@ -250,7 +246,7 @@
             <comps>
               <li Class="CombatExtended.CompProperties_AmmoUser">
                 <magazineSize>1</magazineSize>
-                <reloadTime>5.8</reloadTime>
+                <reloadTime>4</reloadTime>
                 <ammoSet>AmmoSet_105x607mmRCannonShell</ammoSet>
               </li>
               <li Class="CombatExtended.CompProperties_FireModes">
@@ -267,7 +263,7 @@
 				<statBases>
 					<RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
 					<SightsEfficiency>1.00</SightsEfficiency>
-					<ShotSpread>0.03</ShotSpread>
+					<ShotSpread>0.2</ShotSpread>
 					<SwayFactor>1.67</SwayFactor>
 					<Bulk>30.67</Bulk>
 				</statBases>
@@ -283,9 +279,6 @@
 					<soundCast>GunShotA</soundCast>
 					<soundCastTail>GunTail_Light</soundCastTail>
 					<muzzleFlashScale>11</muzzleFlashScale>
-					<targetParams>
-						<canTargetLocations>true</canTargetLocations>
-					</targetParams>
 					<recoilPattern>Mounted</recoilPattern>
 				</Properties>
 				<AmmoUser>
@@ -296,7 +289,7 @@
 				<FireModes>
 					<aiUseBurstMode>FALSE</aiUseBurstMode>
 					<aiAimMode>SuppressFire</aiAimMode>
-					<aimedBurstShotCount>12</aimedBurstShotCount>
+					<aimedBurstShotCount>10</aimedBurstShotCount>
 					<noSingleShot>true</noSingleShot>
 				</FireModes>
 				<weaponTags>
@@ -310,12 +303,12 @@
         <statBases>
           <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
           <SightsEfficiency>1</SightsEfficiency>
-          <ShotSpread>0.20</ShotSpread>
+          <ShotSpread>0.01</ShotSpread>
           <SwayFactor>1</SwayFactor>
           <Bulk>25.54</Bulk>
         </statBases>
         <Properties>
-          <recoilAmount>1.25</recoilAmount>
+          <recoilAmount>1.5</recoilAmount>
           <verbClass>CombatExtended.Verb_ShootCE</verbClass>
           <hasStandardCommand>True</hasStandardCommand>
           <defaultProjectile>Bullet_20x110mmHispano_AP</defaultProjectile>
@@ -330,7 +323,7 @@
         </Properties>
         <AmmoUser>
           <magazineSize>60</magazineSize>
-          <reloadTime>4</reloadTime>
+          <reloadTime>3</reloadTime>
           <ammoSet>AmmoSet_20x110mmHispano</ammoSet>
         </AmmoUser>
 				<FireModes>

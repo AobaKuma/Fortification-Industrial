@@ -73,8 +73,8 @@
 			<description>A manned mortar launcher with six barrel, with some mysterious technology, it can shoot six mortar shells at one time, however, it's not accurate.</description>
 			  <graphicData>
 				<texPath>InfantryTurret/FT_HexMortarBase</texPath>
-				<graphicClass>Graphic_Single</graphicClass>
-				<drawSize>(3,3)</drawSize>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>(3.25,3.25)</drawSize>
 			  <drawOffset>(0,0,-0.1)</drawOffset>
 			</graphicData>
 			  <size>(3,3)</size>
@@ -130,6 +130,14 @@
 			  <li Class="CompProperties_Mannable">
 				<manWorkType>Violent</manWorkType>
 			  </li>
+			  <li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+				<randomGraphics>
+					<li>InfantryTurret/FT_HexMortarBase</li>
+					<li>InfantryTurret/FT_HexMortarBase_Sec</li>
+					<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Heavy</li>
+					<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Wheel_Sec</li>
+				</randomGraphics>
+			  </li>
 			</comps>
 			  <statBases>
 			  <MaxHitPoints>300</MaxHitPoints>
@@ -157,6 +165,24 @@
 			</building>
 			<uiIconPath>InfantryTurret/FT_HexMortar_icon</uiIconPath>
 			<uiIconScale>1.2</uiIconScale>
+	<damageMultipliers>
+		  <li>
+			<damageDef>EMP</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li>
+			<damageDef>Stun</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">
+				<damageDef>MechBandShockwave</damageDef>
+				<multiplier>0</multiplier>
+		  </li>
+		  <li MayRequire="CETeam.CombatExtended">
+				<damageDef>Electrical</damageDef>
+				<multiplier>0</multiplier>
+		  </li>
+	</damageMultipliers>
 		  </ThingDef>
 		
 
@@ -167,8 +193,8 @@
 		<techLevel>Industrial</techLevel>
 		<graphicData>
 			<texPath>InfantryTurret/FT_HexMortarBase</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(3,3)</drawSize>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.25,3.25)</drawSize>
 			<drawOffset>(0,0,-0.1)</drawOffset>
 		</graphicData>
 		<size>(3,3)</size>
@@ -229,6 +255,14 @@
 				<maxForcedMissRadiusFactor>2.5</maxForcedMissRadiusFactor>
 				<gizmoIconTexPath>Things/Building/Artillery/TurretArtillery_Top</gizmoIconTexPath>
 			</li>
+			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+				<randomGraphics>
+					<li>InfantryTurret/FT_HexMortarBase</li>
+					<li>InfantryTurret/FT_HexMortarBase_Sec</li>
+					<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Heavy</li>
+					<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Wheel_Sec</li>
+				</randomGraphics>
+			</li>
 		</comps>
 		<statBases>
 			<Mass>255</Mass>
@@ -256,6 +290,24 @@
 		</building>
 		<uiIconPath>Prince/Prince_Icon</uiIconPath>
 		<uiIconScale>1.2</uiIconScale>
+	<damageMultipliers>
+		  <li>
+			<damageDef>EMP</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li>
+			<damageDef>Stun</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">
+				<damageDef>MechBandShockwave</damageDef>
+				<multiplier>0</multiplier>
+		  </li>
+		  <li MayRequire="CETeam.CombatExtended">
+				<damageDef>Electrical</damageDef>
+				<multiplier>0</multiplier>
+		  </li>
+	</damageMultipliers>
 	</ThingDef>
 	
 	<ThingDef ParentName="BaseWeaponTurret">
@@ -312,15 +364,15 @@
 		</verbs>
 	</ThingDef>
 	
-	<ThingDef MayRequire="VanillaExpanded.VFESecurity" ParentName="BuildingBase">
+	<ThingDef ParentName="BuildingBase">
 		<defName>FT_TurretEmpero</defName>
 		<label>field cannon</label>
 		<description>an artillery that can only shoot horizontally at close range due to extremely high Muzzle velocity,but it is high accuracy. \n\n Correctly called 155mm caliber howitzer model NK-30 "Empero",it is a relieable artillery designed for Interstellar Industries Complex Nara, provide the technical support of those pre-industrial world incapable to fight against the mechanoid armies.</description>
 		<techLevel>Industrial</techLevel>
 		<graphicData>
-			<texPath>Empero/Empero_Base</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(3.25)</drawSize>
+			<texPath>Empero/Empero_Base_Old</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5)</drawSize>
 			<drawOffset>(0,0,-0.1)</drawOffset>
 		</graphicData>
 		<size>(3,3)</size>
@@ -380,7 +432,7 @@
 			<li Class="CompProperties_Mannable">
 				<manWorkType>Violent</manWorkType>
 			</li>
-			<li Class="VFESecurity.CompProperties_LongRangeArtillery">
+			<li MayRequire="VanillaExpanded.VFESecurity" Class="VFESecurity.CompProperties_LongRangeArtillery">
 			<worldTileRange>35</worldTileRange>
 			<maxForcedMissRadiusFactor>2.5</maxForcedMissRadiusFactor>
 			<gizmoIconTexPath>Things/Building/Artillery/TurretArtillery_Top</gizmoIconTexPath>
@@ -412,9 +464,27 @@
 		</building>
 		<uiIconPath>Empero/Empero_Icon</uiIconPath>
 		<uiIconScale>1.75</uiIconScale>
+	<damageMultipliers>
+		  <li>
+			<damageDef>EMP</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li>
+			<damageDef>Stun</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">
+				<damageDef>MechBandShockwave</damageDef>
+				<multiplier>0</multiplier>
+		  </li>
+		  <li MayRequire="CETeam.CombatExtended">
+				<damageDef>Electrical</damageDef>
+				<multiplier>0</multiplier>
+		  </li>
+	</damageMultipliers>
 	</ThingDef>
 	
-	<ThingDef MayRequire="VanillaExpanded.VFESecurity" ParentName="BaseWeaponTurret">
+	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>FT_Gun_TurretEmpero</defName>
 		<label>field cannon</label>
 		<description>A powerful direct-firing cannon with high accuracy.</description>

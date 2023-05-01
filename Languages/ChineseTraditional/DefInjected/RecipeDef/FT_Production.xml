@@ -10,9 +10,9 @@
   <FT_Unpack_ConcreteCompressed.label>分裝混凝土</FT_Unpack_ConcreteCompressed.label>
   <FT_Unpack_ConcreteCompressed.description>分裝混凝土用於建築.</FT_Unpack_ConcreteCompressed.description>
   <FT_Unpack_ConcreteCompressed.jobString>分裝混凝土中.</FT_Unpack_ConcreteCompressed.jobString>
-  <FT_Make_ConcreteWood.label>製作水泥纖維板</FT_Make_ConcreteWood.label>
-  <FT_Make_ConcreteWood.description>用水泥與棉布纖維混合製造預製板,可以用來作為仿木頭構造的建築材料,防火且相對於水泥塊來說較為輕.</FT_Make_ConcreteWood.description>
-  <FT_Make_ConcreteWood.jobString>製造水泥纖維中</FT_Make_ConcreteWood.jobString>
+  <FT_Make_ConcreteWood.label>製作水泥預製板</FT_Make_ConcreteWood.label>
+  <FT_Make_ConcreteWood.description>用混凝土倒入模具澆築水泥預製板,作為大規模建築用的材料,防火且建造相對省時.</FT_Make_ConcreteWood.description>
+  <FT_Make_ConcreteWood.jobString>澆築預製板中</FT_Make_ConcreteWood.jobString>
   <FT_Make_ReinforcedConcrete.label>備料鋼筋混凝土</FT_Make_ReinforcedConcrete.label>
   <FT_Make_ReinforcedConcrete.description>給混凝土準備鋼筋來用於澆築鋼筋混凝土建築.</FT_Make_ReinforcedConcrete.description>
   <FT_Make_ReinforcedConcrete.jobString>準備材料中.</FT_Make_ReinforcedConcrete.jobString>

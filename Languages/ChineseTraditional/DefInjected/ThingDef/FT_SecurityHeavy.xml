@@ -13,5 +13,13 @@
   <FT_Gun_TurretEmpero.label>重型野戰砲</FT_Gun_TurretEmpero.label>
   <FT_Gun_TurretEmpero.description>一門高精度的大威力直射火炮.</FT_Gun_TurretEmpero.description>
 
+  <FT_TurretAutoCannon_.label>拖曳式機炮</FT_TurretAutoCannon_.label>
+  <FT_TurretAutoCannon_.description>20x110毫米口徑的防空機砲，由拖曳式底盤搭載提供相對穩定的射擊環境.</FT_TurretAutoCannon_.description>
+
+  <FT_TurretAT_Plus.label>重型反坦克炮</FT_TurretAT_Plus.label>
+  <FT_TurretAT_Plus.description>76毫米口徑的長身管反坦克炮，能在遠距離殲滅重裝甲載具.</FT_TurretAT_Plus.description>
+
+  <FT_Gun_TurretAT_Plus.label>重型反坦克炮</FT_Gun_TurretAT_Plus.label>
+  <FT_Gun_TurretAT_Plus.description>76毫米口徑的長身管反坦克炮，能在遠距離殲滅重裝甲載具.</FT_Gun_TurretAT_Plus.description>
 
 </LanguageData>

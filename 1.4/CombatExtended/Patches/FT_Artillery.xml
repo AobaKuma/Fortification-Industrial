@@ -102,7 +102,7 @@
 						</li>
 						<li Class="CombatExtended.CompProperties_AmmoUser">
 							<magazineSize>1</magazineSize>
-							<reloadTime>5</reloadTime>
+							<reloadTime>2</reloadTime>
 							<ammoSet>AmmoSet_60mmMortarShell</ammoSet>
 						</li>
 					</value>
@@ -146,7 +146,10 @@
 					<xpath>Defs/ThingDef[defName="FT_Gun_TurretHexMortar"]</xpath>
 					<value>
 						<statBases>
-							<SightsEfficiency>0.8</SightsEfficiency>
+							<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+							<SightsEfficiency>0.5</SightsEfficiency>
+							<ShotSpread>1</ShotSpread>
+							<SwayFactor>0.5</SwayFactor>
 						</statBases>
 					</value>
 				</li>
@@ -164,18 +167,18 @@
 						</li>
 						<li Class="CombatExtended.CompProperties_AmmoUser">
 							<magazineSize>6</magazineSize>
-							<reloadTime>8.5</reloadTime>
+							<reloadTime>10</reloadTime>
 							<ammoSet>AmmoSet_15cmNebelwerfer</ammoSet>
 						</li>
 						<li Class="CombatExtended.CompProperties_FireModes">
 							<aimedBurstShotCount>3</aimedBurstShotCount>
-							<aiUseBurstMode>FALSE</aiUseBurstMode>
-							<aiAimMode>AimedShot</aiAimMode>
-							<noSnapshot>true</noSnapshot>
+							<aiUseBurstMode>true</aiUseBurstMode>
+							<aiAimMode>SuppressFire</aiAimMode>
+							<noSingleShot>true</noSingleShot>
 						</li>
 					</value>
 				</li>
-
+					
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName="FT_Gun_TurretHexMortar"]/verbs</xpath>
 					<value>
@@ -193,11 +196,12 @@
 								<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 								<soundCast>FT_NebelShot</soundCast>
 								<muzzleFlashScale>39</muzzleFlashScale>
-								<circularError>1.1</circularError>
+								<circularError>1.5</circularError>
 								<indirectFirePenalty>0.3</indirectFirePenalty>
 								<targetParams>
 									<canTargetLocations>true</canTargetLocations>
 								</targetParams>
+								<recoilAmount>0.0</recoilAmount>
 							</li>
 						</verbs>
 					</value>
@@ -252,6 +256,7 @@
 								<minRange>50</minRange>
 								<range>1000</range>
 								<soundCast>FT_CannonLaunchB</soundCast>
+								<soundCastTail>GunTail_Heavy</soundCastTail>
 								<muzzleFlashScale>16</muzzleFlashScale>
 								<circularError>1</circularError>
 								<indirectFirePenalty>0.4</indirectFirePenalty>
@@ -264,12 +269,6 @@
 				</li>
 
 				<!-- === 155mm Field Cannon / NK-30 "Empero" === -->
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Vanilla Furniture Expanded - Security</li>
-					</mods>
-					<match Class="PatchOperationSequence">
-						<operations>
 
 							<li Class="PatchOperationRemove">
 								<xpath>Defs/ThingDef[defName="FT_TurretEmpero"]/comps/li[@Class =
@@ -323,7 +322,7 @@
 											<RangedWeapon_Cooldown>8.0</RangedWeapon_Cooldown>
 											<SightsEfficiency>2.18</SightsEfficiency>
 											<ShotSpread>0.01</ShotSpread>
-											<SwayFactor>3.07</SwayFactor>
+											<SwayFactor>1</SwayFactor>
 											<DeteriorationRate>0</DeteriorationRate>
 											<Mass>205</Mass>
 											<Flammability>0</Flammability>
@@ -352,15 +351,13 @@
 												<ammoSet>AmmoSet_155mmHowitzerShell_directfire</ammoSet>
 											</li>
 											<li Class="CombatExtended.CompProperties_FireModes">
-												<aiAimMode>AimedShot</aiAimMode>
+												<aiUseBurstMode>false</aiUseBurstMode>
 											</li>
 										</comps>
 									</ThingDef>
 								</value>
 							</li>
-						</operations>
-					</match>
-				</li>
+						
 			</operations>
 		</match>
 	</Operation>

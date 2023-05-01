@@ -7,7 +7,7 @@
   <FT_TableChemistry.label>化學製造桌</FT_TableChemistry.label>
   <FT_TableChemistry.description>能夠從肉類中人工提取並合成中性胺的加工桌.</FT_TableChemistry.description>
   
-  <FT_TableConcrete.label>混凝土加工機</FT_TableConcrete.label>
-  <FT_TableConcrete.description>一台能夠將石質材料加工成混凝土的重型機器</FT_TableConcrete.description>
+  <FT_TableConcreteMixer.label>混凝土加工機</FT_TableConcreteMixer.label>
+  <FT_TableConcreteMixer.description>一台能夠將石質材料加工成混凝土的重型機器</FT_TableConcreteMixer.description>
 
 </LanguageData>

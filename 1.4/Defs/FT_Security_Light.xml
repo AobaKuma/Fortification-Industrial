@@ -38,6 +38,24 @@
       ================-->
       <turretBurstCooldownTime>5.0</turretBurstCooldownTime>
     </building>
+	<damageMultipliers>
+		  <li>
+			<damageDef>EMP</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li>
+			<damageDef>Stun</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">
+				<damageDef>MechBandShockwave</damageDef>
+				<multiplier>0</multiplier>
+		  </li>
+		  <li MayRequire="CETeam.CombatExtended">
+				<damageDef>Electrical</damageDef>
+				<multiplier>0</multiplier>
+		  </li>
+	</damageMultipliers>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
       <li>PlaceWorker_ShowTurretRadius</li>
@@ -60,12 +78,13 @@
     <description>A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field.</description>
     <techLevel>Industrial</techLevel>
     <graphicData>
-      <texPath>ATGun/FT_AntiTankGun_Base</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(3,3)</drawSize>
-      <drawOffset>(0,0,-0.1)</drawOffset>
+		<texPath>ATGun/FT_AntiAirGun_Base</texPath>
+		<graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.25,3.25)</drawSize>
+      <drawOffset>(0,0,0)</drawOffset>
     </graphicData>
     <size>(3,3)</size>
+	<interactionCellOffset>(1,0,-1)</interactionCellOffset>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <statBases>   <!--================血量與重量工作量
       ================-->
@@ -100,6 +119,14 @@
         <autoRefuelPercent>0</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
+	  <li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+		<randomGraphics>
+			<li>ATGun/FT_AntiAirGun_Base</li>
+			<li>ATGun/FT_AntiTankGun_Base</li>
+			<li>ATGun/FT_AntiTankGun_Base_Sec</li>
+			<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_AA</li>
+		</randomGraphics>
+	  </li>
     </comps>
     <building>
       <turretGunDef>FT_Gun_TurretAA</turretGunDef>
@@ -158,6 +185,7 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
+		<!--<forcedMissRadius>0.1</forcedMissRadius>-->
       </li>
     </verbs>
   </ThingDef>
@@ -169,12 +197,13 @@
     <description>A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field.</description>
     <techLevel>Industrial</techLevel>
     <graphicData>
-      <texPath>ATGun/FT_AntiAirGun_Base</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(3,3)</drawSize>
+      <texPath>InfantryTurret/FT_HexMortarBase</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.25,3.25)</drawSize>
       <drawOffset>(0,0,0)</drawOffset>
     </graphicData>
     <size>(3,3)</size>
+	<interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <statBases>   <!--================血量與重量工作量
       ================-->
@@ -209,6 +238,14 @@
         <autoRefuelPercent>0</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
+	  <li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+		<randomGraphics>
+			<li>ATGun/FT_AntiAirGun_Base</li>
+			<li>InfantryTurret/FT_HexMortarBase</li>
+			<li>InfantryTurret/FT_HexMortarBase_Sec</li>
+			<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_AA</li>
+		</randomGraphics>
+	  </li>
     </comps>
     <building>
       <turretGunDef>FT_Gun_TurretQuadAA</turretGunDef>
@@ -267,6 +304,7 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
+		<!--<forcedMissRadius>0.1</forcedMissRadius>-->
       </li>
     </verbs>
   </ThingDef>
@@ -274,14 +312,15 @@
   <ThingDef ParentName="BaseBullet">
     <defName>FT_Bullet_AAShell</defName>
     <label>uranium APT shell</label>
-    <thingClass>Fortification.Bullet_AlongWayDamage</thingClass>
+    <!--<thingClass>Fortification.Bullet_AlongWayDamage</thingClass>-->
+	<!--<thingClass>Fortification.Projectile_ExplosiveByComps</thingClass>-->
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.2</drawSize>
     </graphicData>
-    <comps>
-      <li Class="Fortification.AlongWayDamage_CompProperties">
+<!--    <comps>
+     <li Class="Fortification.AlongWayDamage_CompProperties">
         <endExplosionDam>Bomb</endExplosionDam>
         <endExplosionRadius>0.1</endExplosionRadius>
         <endExplosionDamAmount>5</endExplosionDamAmount>
@@ -289,7 +328,21 @@
         <alongOnWayHediff>FT_ShellShock</alongOnWayHediff>
         <alongOnWayHediffSeverity>0.075</alongOnWayHediffSeverity>
       </li>
-    </comps>
+    </comps>-->
+<!--		<comps>
+			<li Class="Fortification.CompProperties_CompositeExplosion">
+				<compositeExplosions>
+					<li>
+					<countdown>1</countdown>
+					<radius>0.5</radius>
+					<damamgeDef>Bomb</damamgeDef>
+					<amount>5</amount>
+					<armorPenetration>0.3</armorPenetration>
+					<explosionSound>MortarBomb_Explode</explosionSound>
+					</li>
+				</compositeExplosions>
+			</li>
+		</comps>-->
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>15</damageAmountBase>
@@ -298,6 +351,12 @@
       <speed>93</speed>
       <arcHeightFactor>0.3</arcHeightFactor>
       <shadowSize>0.6</shadowSize>
+<!--	  	  		<explosionDelay>2</explosionDelay>
+		<explosionEffect>ExtinguisherExplosion</explosionEffect>
+		<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+		<soundExplode>Explosion_GiantBomb</soundExplode>
+		<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+		<soundAmbient>MortarRound_Ambient</soundAmbient>-->
     </projectile>
   </ThingDef>
 
@@ -309,8 +368,8 @@
     <techLevel>Industrial</techLevel>
     <graphicData>
       <texPath>ATGun/FT_AntiTankGun_Base</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(3,3)</drawSize>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.25,3.25)</drawSize>
       <drawOffset>(0,0,-0.1)</drawOffset>
     </graphicData>
     <size>(3,3)</size>
@@ -338,8 +397,8 @@
           </thingDefs>
         </fuelFilter>
         <fuelIsMortarBarrel>true</fuelIsMortarBarrel>
-        <fuelCapacity>40</fuelCapacity>
-        <fuelMultiplier>40</fuelMultiplier>
+		<fuelCapacity>40</fuelCapacity>    <!-- 40 burst -->
+		<fuelMultiplier>20</fuelMultiplier><!-- 1 barrel=20 ammo -->
         <initialFuelPercent>1</initialFuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
@@ -348,6 +407,14 @@
         <autoRefuelPercent>0</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
+	  <li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+		<randomGraphics>
+			<li>ATGun/FT_AntiTankGun_Base</li>
+			<li>ATGun/FT_AntiTankGun_Base_Sec</li>
+			<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Heavy</li>
+			<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Wheel_Sec</li>
+		</randomGraphics>
+	  </li>
     </comps>
     <building>
       <turretGunDef>FT_Gun_TurretAT</turretGunDef>
@@ -405,6 +472,7 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
+		<!--<forcedMissRadius>0.1</forcedMissRadius>-->
       </li>
     </verbs>
   </ThingDef>
@@ -412,13 +480,14 @@
   <ThingDef ParentName="BaseBullet">
     <defName>FT_Bullet_ATShell</defName>
     <label>armor piercing shell</label>
-    <thingClass>Fortification.Bullet_AlongWayDamage</thingClass>
+    <!--<thingClass>Fortification.Bullet_AlongWayDamage</thingClass>-->
+	<!--<thingClass>Fortification.Projectile_ExplosiveByComps</thingClass>-->
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>2</drawSize>
     </graphicData>
-    <comps>
+ <!--   <comps>
       <li Class="Fortification.AlongWayDamage_CompProperties">
         <endExplosionDam>Bomb</endExplosionDam>
         <endExplosionRadius>1</endExplosionRadius>
@@ -427,7 +496,21 @@
         <alongOnWayHediff>FT_ShellShock</alongOnWayHediff>
         <alongOnWayHediffSeverity>0.3</alongOnWayHediffSeverity>
       </li>
-    </comps>
+    </comps>-->
+<!--			<comps>
+			<li Class="Fortification.CompProperties_CompositeExplosion">
+				<compositeExplosions>
+					<li>
+					<countdown>1</countdown>
+					<radius>1</radius>
+					<damamgeDef>Bomb</damamgeDef>
+					<amount>50</amount>
+					<armorPenetration>5</armorPenetration>
+					<explosionSound>MortarBomb_Explode</explosionSound>
+					</li>
+				</compositeExplosions>
+			</li>
+		</comps>-->
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>100</damageAmountBase>
@@ -436,6 +519,11 @@
       <speed>100</speed>
       <arcHeightFactor>0.2</arcHeightFactor>
       <shadowSize>0.6</shadowSize>
+<!--	  	<explosionDelay>2</explosionDelay>
+		<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+		<soundExplode>Explosion_GiantBomb</soundExplode>
+		<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+		<soundAmbient>MortarRound_Ambient</soundAmbient>-->
     </projectile>
   </ThingDef>
 
@@ -520,6 +608,24 @@
     </building>
     <uiIconPath>FT_Mortar_Icon</uiIconPath>
     <uiIconScale>0.9</uiIconScale>
+	<damageMultipliers>
+		  <li>
+			<damageDef>EMP</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li>
+			<damageDef>Stun</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">
+				<damageDef>MechBandShockwave</damageDef>
+				<multiplier>0</multiplier>
+		  </li>
+		  <li MayRequire="CETeam.CombatExtended">
+				<damageDef>Electrical</damageDef>
+				<multiplier>0</multiplier>
+		  </li>
+	</damageMultipliers>
   </ThingDef>
 
   <ThingDef ParentName="BaseArtilleryWeapon">
@@ -598,8 +704,6 @@
         <manWorkType>Violent</manWorkType>
       </li>
       <li Class="CompProperties_Forbiddable" />
-      <li Class="CompProperties_Flickable" />
-      <li Class="CompProperties_Breakdownable" />
     </comps>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
@@ -607,6 +711,24 @@
     <hasTooltip>true</hasTooltip>
     <designationCategory>Security</designationCategory>
     <hasInteractionCell>true</hasInteractionCell>
+	<damageMultipliers>
+		  <li>
+			<damageDef>EMP</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li>
+			<damageDef>Stun</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">
+				<damageDef>MechBandShockwave</damageDef>
+				<multiplier>0</multiplier>
+		  </li>
+		  <li MayRequire="CETeam.CombatExtended">
+				<damageDef>Electrical</damageDef>
+				<multiplier>0</multiplier>
+		  </li>
+	</damageMultipliers>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
     </placeWorkers>
@@ -633,7 +755,6 @@
     <uiIconPath>InfantryTurret/FT_QuadMaximGun_icon</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
     <minifiedDef>MinifiedThing</minifiedDef>
-    <altitudeLayer>Building</altitudeLayer>
     <stealable>false</stealable>
     <rotatable>true</rotatable>
     <statBases>
@@ -653,25 +774,34 @@
             <li>Steel</li>
           </thingDefs>
         </fuelFilter>
-        <fuelCapacity>240</fuelCapacity>
+        <fuelCapacity>960</fuelCapacity>
         <initialFuelPercent>1</initialFuelPercent>
         <autoRefuelPercent>0.75</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
-        <fuelMultiplier>2</fuelMultiplier>
+        <fuelMultiplier>4</fuelMultiplier>
         <factorByDifficulty>true</factorByDifficulty>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>
         <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
       </li>
+	    <li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall"/> 
     </comps>
     <fillPercent>0.4</fillPercent>
+    <altitudeLayer>BuildingBelowTop</altitudeLayer>
+    <placeWorkers Inherit="false">
+      <li>PlaceWorker_TurretTop</li>
+      <li>Fortification.PlaceWorker_Emplacement</li>
+      <li>PlaceWorker_NeverAdjacentSameDef</li>
+    </placeWorkers>
     <costList>
       <Steel>80</Steel>
       <ComponentIndustrial>8</ComponentIndustrial>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <building>
+			<canPlaceOverWall>false</canPlaceOverWall>
+			<isEdifice>false</isEdifice>
       <turretTopDrawSize>1.0</turretTopDrawSize>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>FT_Gun_QuadMG</turretGunDef>
@@ -713,7 +843,7 @@
         <soundCast>GunShotA</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
-        <consumeFuelPerShot>0.25</consumeFuelPerShot>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
       </li>
     </verbs>
   </ThingDef>
@@ -768,12 +898,12 @@
             <li>Uranium</li>
           </thingDefs>
         </fuelFilter>
-        <fuelCapacity>60</fuelCapacity>
+        <fuelCapacity>120</fuelCapacity>
         <initialFuelPercent>1</initialFuelPercent>
         <autoRefuelPercent>0.75</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
-        <fuelMultiplier>2</fuelMultiplier>
+        <fuelMultiplier>4</fuelMultiplier>
         <factorByDifficulty>true</factorByDifficulty>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>
@@ -815,7 +945,7 @@
         <soundCast>FT_AutoCannonShot</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>12</muzzleFlashScale>
-        <consumeFuelPerShot>0.5</consumeFuelPerShot>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
       </li>
     </verbs>
   </ThingDef>
@@ -861,12 +991,12 @@
             <li>ReinforcedBarrel</li>
           </thingDefs>
         </fuelFilter>
-        <fuelCapacity>20</fuelCapacity>
+		<fuelCapacity>20</fuelCapacity>    <!-- 20 burst -->
+		<fuelMultiplier>20</fuelMultiplier><!-- 1 barrel=20 ammo -->
         <initialFuelPercent>1</initialFuelPercent>
         <autoRefuelPercent>0.05</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
-        <fuelMultiplier>20</fuelMultiplier>
         <factorByDifficulty>false</factorByDifficulty>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>
@@ -935,6 +1065,7 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
+		<!--<forcedMissRadius>0.1</forcedMissRadius>-->
       </li>
     </verbs>
   </ThingDef>

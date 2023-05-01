@@ -13,7 +13,6 @@
     </affordances>
     <pathCost>12</pathCost>
     <fertility>0</fertility>
-    <edgeType>Fade</edgeType>
     <renderPrecedence>320</renderPrecedence>
     <modExtensions>
       <li Class="VFESecurity.TerrainDefExtension">
@@ -38,7 +37,6 @@
     </affordances>
     <pathCost>12</pathCost>
     <fertility>0</fertility>
-    <edgeType>Fade</edgeType>
     <renderPrecedence>320</renderPrecedence>
     <modExtensions>
       <li Class="VFESecurity.TerrainDefExtension">
@@ -184,81 +182,5 @@
 		<clearBuildingArea>false</clearBuildingArea>
 		<researchPrerequisites><li>VWE_TrenchWarfare</li></researchPrerequisites>
 	</ThingDef>
-
-  <ThingDef ParentName="BaseArtilleryBuilding">
-    <defName>FT_VFES_Turret_Artillery</defName>
-    <label>fortified artillery</label>
-    <description>A large-caliber howitzer on a concrete base with perfect anti-explosion measures. \n\n because it's stationary,so a more accurated firing table can be calculated \n\n it has the ability to bombard farther than the mobile one.</description>
-    <thingClass>Building_TurretGun</thingClass>
-    <graphicData>
-      <texPath>ConcreteArtilleryBase/TurretArtillery_Base</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(3.25,3.25)</drawSize>
-      <damageData>
-        <rect>(0.38,0.2,0.56375,0.8)</rect>
-        <cornerTL>Damage/Corner</cornerTL>
-      </damageData>
-      <shadowData>
-        <offset>(-0.13,-0.87,-0.1)</offset>
-        <volume>(0.5,0.4,1.05)</volume>
-      </shadowData>
-    </graphicData>
-    <statBases>
-      <MaxHitPoints>1200</MaxHitPoints>
-      <WorkToBuild>5000</WorkToBuild>
-    </statBases>
-    <techLevel>Industrial</techLevel>
-    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
-    <hasInteractionCell>true</hasInteractionCell>
-    <size>(3,3)</size>
-    <rotatable>true</rotatable>
-    <stealable>false</stealable>
-    <costList>
-		<Steel>120</Steel>
-		<FT_BlocksConcrete>40</FT_BlocksConcrete>
-		<ComponentIndustrial>9</ComponentIndustrial>
-    </costList>
-    <comps>
-      <li Class="VFESecurity.CompProperties_LongRangeArtillery">
-        <worldTileRange>30</worldTileRange>
-        <maxForcedMissRadiusFactor>2.5</maxForcedMissRadiusFactor>
-        <gizmoIconTexPath>ConcreteArtilleryBase/TurretArtillery_Top</gizmoIconTexPath>
-      </li>
-    </comps>
-	<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <building>
-      <turretGunDef>VFES_Artillery_Weapon</turretGunDef>
-      <turretTopDrawSize>3</turretTopDrawSize>
-      <buildingTags>
-        <li>Artillery_BaseDestroyer</li>
-      </buildingTags>
-      <turretBurstWarmupTime>8</turretBurstWarmupTime>
-      <turretBurstCooldownTime>8.5</turretBurstCooldownTime>
-      <defaultStorageSettings Inherit="False">
-        <filter>
-          <categories>
-            <li>MortarShells</li>
-          </categories>
-          <disallowedThingDefs>
-            <li>Shell_Incendiary</li>
-            <li>Shell_Firefoam</li>
-            <li>Shell_AntigrainWarhead</li>
-          </disallowedThingDefs>
-        </filter>
-      </defaultStorageSettings>
-    </building>
-	<damageMultipliers>
-		<li>
-			<damageDef>Bomb</damageDef>
-			<multiplier>0.5</multiplier>
-		</li>
-	</damageMultipliers>
-    <uiIconPath>ConcreteArtilleryBase/TurretArtillery_MenuIcon</uiIconPath>
-    <uiIconScale>0.9</uiIconScale>
-    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-    <researchPrerequisites>
-      <li>VFES_Artillery</li>
-    </researchPrerequisites>
-  </ThingDef>
 
 </Defs>

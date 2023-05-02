@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+<!--	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_FT_15cmNebelwerfer</defName>
+		<label>15cm Nebelwerfer Rockets</label>
+		<ammoTypes>
+			<Ammo_15cmNebelwerfer_Smoke>Bullet_FT_15cmNebelwerfer_Smoke</Ammo_15cmNebelwerfer_Smoke>
+			<Ammo_15cmNebelwerfer_EMP>Bullet_FT_15cmNebelwerfer_EMP</Ammo_15cmNebelwerfer_EMP>
+			<Ammo_15cmNebelwerfer_Toxic>Bullet_FT_15cmNebelwerfer_Toxic</Ammo_15cmNebelwerfer_Toxic>
+		</ammoTypes>
+		<isMortarAmmoSet>true</isMortarAmmoSet>
+	</CombatExtended.AmmoSetDef>-->
+	
+	<!-- ==================== Ammo ========================== -->
+
+<!--	<ThingDef Class="CombatExtended.AmmoDef" Name="15cmNebelwerferBase" ParentName="AmmoBase" Abstract="True">
+		<description>15cm heavy rocket typically used in multi-barrel rocket artillery launchers.</description>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_TableMachining</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Ammo15cmNebelwerfer</li>
+		</thingCategories>
+		<stackLimit>25</stackLimit>
+		<cookOffFlashScale>25</cookOffFlashScale>
+		<cookOffSound>MortarBomb_Explode</cookOffSound>
+	</ThingDef>-->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="15cmNebelwerferBase">
+		<defName>Ammo_15cmNebelwerfer_Smoke</defName>
+		<label>15cm Nebelwerfer Rocket (Smoke)</label>
+		<graphicData>
+			<texPath>Ammo/15cmNbW_Smoke</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>198.66</MarketValue>
+			<Mass>31.8</Mass>
+			<Bulk>57.59</Bulk>
+		</statBases>
+		<ammoClass>Smoke</ammoClass>
+		<detonateProjectile>Bullet_15cmNebelwerfer_Smoke</detonateProjectile>
+		<stackLimit>25</stackLimit>
+	</ThingDef>
+	
+		<ThingDef Class="CombatExtended.AmmoDef" ParentName="15cmNebelwerferBase">
+		<defName>Ammo_15cmNebelwerfer_EMP</defName>
+		<label>15cm Nebelwerfer Rocket (EMP)</label>
+		<graphicData>
+			<texPath>Ammo/15cmNbW_EMP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>596.54</MarketValue>
+			<Mass>31.8</Mass>
+			<Bulk>57.59</Bulk>
+		</statBases>
+		<ammoClass>GrenadeEMP</ammoClass>
+		<detonateProjectile>Bullet_15cmNebelwerfer_EMP</detonateProjectile>
+		<stackLimit>25</stackLimit>
+	</ThingDef>
+	
+		<ThingDef Class="CombatExtended.AmmoDef" ParentName="15cmNebelwerferBase" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Ammo_15cmNebelwerfer_Toxic</defName>
+		<label>15cm Nebelwerfer Rocket (Toxic)</label>
+		<graphicData>
+			<texPath>Ammo/15cmNbW_Toxic</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>198.66</MarketValue>
+			<Mass>31.8</Mass>
+			<Bulk>57.59</Bulk>
+		</statBases>
+		<ammoClass>Toxic</ammoClass>
+		<detonateProjectile>Bullet_15cmNebelwerfer_Toxic</detonateProjectile>
+		<stackLimit>25</stackLimit>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base130mmType63">
+		<defName>Bullet_15cmNebelwerfer_Smoke</defName>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<label>15cm Nebelwerfer Rocket (Smoke)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/15cm_NbW</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>0</speed>
+			<damageDef>Smoke</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+			<explosionRadius>6.5</explosionRadius>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<spreadMult>7.5</spreadMult>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>Explosion_EMP</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+			<postExplosionGasType>BlindSmoke</postExplosionGasType>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<explosionEffect>ExtinguisherExplosion</explosionEffect>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base130mmType63">
+		<defName>Bullet_15cmNebelwerfer_EMP</defName>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<label>15cm Nebelwerfer Rocket (EMP)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/15cm_NbW</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>0</speed>
+			<damageDef>EMP</damageDef>
+			<damageAmountBase>175</damageAmountBase>
+			<explosionRadius>5.5</explosionRadius>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<spreadMult>2.5</spreadMult>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base130mmType63" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Bullet_15cmNebelwerfer_Toxic</defName>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<label>15cm Nebelwerfer Rocket (Toxic)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/15cm_NbW</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>0</speed>
+			<damageDef>ToxGas</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+			<explosionRadius>0.1</explosionRadius>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<spreadMult>7.5</spreadMult>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>ToxicShellLanded</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+			<postExplosionSpawnThingDef>Shell_Toxic_Releasing</postExplosionSpawnThingDef>
+			<postExplosionSpawnThingDefWater>Shell_Toxic_Releasing_Water</postExplosionSpawnThingDefWater>
+		</projectile>
+	</ThingDef>
+	
+		<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_15cmNebelwerfer_Smoke</defName>
+		<label>make 15cm Nebelwerfer smoke rocket</label>
+		<description>Craft a 15cm Nebelwerfer smoke rockets.</description>
+		<jobString>Making 15cm Nebelwerfer smoke rockets.</jobString>
+		<workAmount>44600</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>380</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>17</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>ComponentIndustrial</li>
+				<li>Prometheum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_15cmNebelwerfer_Smoke>6</Ammo_15cmNebelwerfer_Smoke>
+		</products>
+	</RecipeDef>
+	
+		<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_15cmNebelwerfer_EMP</defName>
+		<label>make 15cm Nebelwerfer EMP rocket</label>
+		<description>Craft a 15cm Nebelwerfer EMP rockets.</description>
+		<jobString>Making 15cm Nebelwerfer EMP rockets.</jobString>
+		<workAmount>44600</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>382</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>28</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_15cmNebelwerfer_EMP>6</Ammo_15cmNebelwerfer_EMP>
+		</products>
+	</RecipeDef>
+	
+		<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>MakeAmmo_15cmNebelwerfer_Toxic</defName>
+		<label>make 15cm Nebelwerfer toxic rocket</label>
+		<description>Craft a 15cm Nebelwerfer toxic rockets.</description>
+		<jobString>Making 15cm Nebelwerfer toxic rockets.</jobString>
+		<workAmount>44600</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>380</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>17</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>ComponentIndustrial</li>
+				<li>Prometheum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_15cmNebelwerfer_Toxic>6</Ammo_15cmNebelwerfer_Toxic>
+		</products>
+	</RecipeDef>
+	
+</Defs>

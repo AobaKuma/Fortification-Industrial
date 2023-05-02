@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+		<Operation Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_15cmNebelwerfer"]/ammoTypes</xpath>
+						<value>
+							<Ammo_15cmNebelwerfer_Smoke>Bullet_15cmNebelwerfer_Smoke</Ammo_15cmNebelwerfer_Smoke>
+							<Ammo_15cmNebelwerfer_EMP>Bullet_15cmNebelwerfer_EMP</Ammo_15cmNebelwerfer_EMP>
+							<Ammo_15cmNebelwerfer_Toxic MayRequire="Ludeon.RimWorld.Biotech">Bullet_15cmNebelwerfer_Toxic</Ammo_15cmNebelwerfer_Toxic>
+						</value>
+				</li>
+			</operations>
+		</Operation>
+</Patch>

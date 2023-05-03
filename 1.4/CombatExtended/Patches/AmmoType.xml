@@ -11,6 +11,16 @@
 							<Ammo_15cmNebelwerfer_Toxic MayRequire="Ludeon.RimWorld.Biotech">Bullet_15cmNebelwerfer_Toxic</Ammo_15cmNebelwerfer_Toxic>
 						</value>
 				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Bullet_15cmNebelwerfer_HE"]/comps</xpath>
+					<value>
+							<li Class="AOBAUtilities.CompProperties_Flecker">
+								<fleck>Smoke</fleck>
+								<fleckSize>0.5</fleckSize>
+							</li>
+					</value>
+				</li>
 			</operations>
 		</Operation>
 </Patch>

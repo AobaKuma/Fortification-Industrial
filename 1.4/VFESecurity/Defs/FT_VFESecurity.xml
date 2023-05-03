@@ -114,6 +114,9 @@
 		</damageMultipliers>
 		<clearBuildingArea>false</clearBuildingArea>
 		<researchPrerequisites><li>VWE_TrenchWarfare</li></researchPrerequisites>
+		<placeWorkers>
+			<li>AOBAUtilities.PlaceWorker_NoAltitudeLayerOccupy</li>
+		</placeWorkers>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
@@ -181,6 +184,9 @@
 		</damageMultipliers>
 		<clearBuildingArea>false</clearBuildingArea>
 		<researchPrerequisites><li>VWE_TrenchWarfare</li></researchPrerequisites>
+		<placeWorkers>
+			<li>AOBAUtilities.PlaceWorker_NoAltitudeLayerOccupy</li>
+		</placeWorkers>
 	</ThingDef>
 
 </Defs>

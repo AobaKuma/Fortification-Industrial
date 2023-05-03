@@ -52,7 +52,7 @@
 					<xpath>
 						Defs/ThingDef[defName="FT_TurretHexMortar"]/building/turretBurstCooldownTime</xpath>
 					<value>
-						<turretBurstCooldownTime>6</turretBurstCooldownTime>
+						<turretBurstCooldownTime>1</turretBurstCooldownTime>
 					</value>
 				</li>
 
@@ -148,7 +148,7 @@
 						<statBases>
 							<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
 							<SightsEfficiency>0.5</SightsEfficiency>
-							<ShotSpread>1</ShotSpread>
+							<ShotSpread>2</ShotSpread>
 							<SwayFactor>0.5</SwayFactor>
 						</statBases>
 					</value>
@@ -167,7 +167,7 @@
 						</li>
 						<li Class="CombatExtended.CompProperties_AmmoUser">
 							<magazineSize>6</magazineSize>
-							<reloadTime>10</reloadTime>
+							<reloadTime>15</reloadTime>
 							<ammoSet>AmmoSet_15cmNebelwerfer</ammoSet>
 						</li>
 						<li Class="CombatExtended.CompProperties_FireModes">
@@ -189,7 +189,7 @@
 								<hasStandardCommand>true</hasStandardCommand>
 								<requireLineOfSight>false</requireLineOfSight>
 								<defaultProjectile>Bullet_15cmNebelwerfer_HE</defaultProjectile>
-								<warmupTime>10</warmupTime>
+								<warmupTime>4</warmupTime>
 								<minRange>40</minRange>
 								<range>1000</range>
 								<burstShotCount>6</burstShotCount>

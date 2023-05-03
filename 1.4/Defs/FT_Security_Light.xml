@@ -755,6 +755,7 @@
     <uiIconPath>InfantryTurret/FT_QuadMaximGun_icon</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
     <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
     <stealable>false</stealable>
     <rotatable>true</rotatable>
     <statBases>
@@ -785,23 +786,14 @@
         <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>
         <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
       </li>
-	    <li Class="VanillaFurnitureExpanded.CompProperties_MountableOnWall"/> 
     </comps>
     <fillPercent>0.4</fillPercent>
-    <altitudeLayer>BuildingBelowTop</altitudeLayer>
-    <placeWorkers Inherit="false">
-      <li>PlaceWorker_TurretTop</li>
-      <li>AOBAUtilities.PlaceWorker_Emplacement</li>
-      <li>PlaceWorker_NeverAdjacentSameDef</li>
-    </placeWorkers>
     <costList>
       <Steel>80</Steel>
       <ComponentIndustrial>8</ComponentIndustrial>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <building>
-			<canPlaceOverWall>false</canPlaceOverWall>
-			<isEdifice>false</isEdifice>
       <turretTopDrawSize>1.0</turretTopDrawSize>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>FT_Gun_QuadMG</turretGunDef>

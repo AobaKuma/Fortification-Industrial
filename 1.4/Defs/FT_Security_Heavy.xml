@@ -290,7 +290,7 @@
 		</building>
 		<uiIconPath>Prince/Prince_Icon</uiIconPath>
 		<uiIconScale>1.2</uiIconScale>
-	<damageMultipliers>
+		<damageMultipliers>
 		  <li>
 			<damageDef>EMP</damageDef>
 			<multiplier>0</multiplier>
@@ -307,7 +307,7 @@
 				<damageDef>Electrical</damageDef>
 				<multiplier>0</multiplier>
 		  </li>
-	</damageMultipliers>
+		</damageMultipliers>
 	</ThingDef>
 	
 	<ThingDef ParentName="BaseWeaponTurret">

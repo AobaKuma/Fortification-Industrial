@@ -791,7 +791,7 @@
     <altitudeLayer>BuildingBelowTop</altitudeLayer>
     <placeWorkers Inherit="false">
       <li>PlaceWorker_TurretTop</li>
-      <li>Fortification.PlaceWorker_Emplacement</li>
+      <li>AOBAUtilities.PlaceWorker_Emplacement</li>
       <li>PlaceWorker_NeverAdjacentSameDef</li>
     </placeWorkers>
     <costList>

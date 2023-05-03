@@ -168,7 +168,7 @@
 						<li Class="CombatExtended.CompProperties_AmmoUser">
 							<magazineSize>6</magazineSize>
 							<reloadTime>10</reloadTime>
-							<ammoSet>AmmoSet_15cmNebelwerfer</ammoSet>
+							<ammoSet>AmmoSet_15cmNebelwerferB</ammoSet>
 						</li>
 						<li Class="CombatExtended.CompProperties_FireModes">
 							<aimedBurstShotCount>3</aimedBurstShotCount>

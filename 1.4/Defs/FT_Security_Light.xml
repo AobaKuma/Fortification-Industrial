@@ -59,6 +59,7 @@
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
       <li>PlaceWorker_ShowTurretRadius</li>
+	  <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
     <uiIconScale>1.1</uiIconScale>
     <minifiedDef>MinifiedThing</minifiedDef>  <!--================可攜帶性
@@ -732,6 +733,7 @@
 	</damageMultipliers>
     <placeWorkers>
 		<li>PlaceWorker_TurretTop</li>
+		<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		<!--<li>AOBAUtilities.PlaceWorker_Emplacement</li>
 		<li>AOBAUtilities.PlaceWorker_NoAltitudeLayerOccupy</li>
 		<li>PlaceWorker_NeverAdjacentSameDef</li>-->

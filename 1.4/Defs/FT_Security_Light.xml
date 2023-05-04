@@ -59,6 +59,7 @@
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
       <li>PlaceWorker_ShowTurretRadius</li>
+	  <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
     <uiIconScale>1.1</uiIconScale>
     <minifiedDef>MinifiedThing</minifiedDef>  <!--================可攜帶性
@@ -185,7 +186,7 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-		<!--<forcedMissRadius>0.1</forcedMissRadius>-->
+		<forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
   </ThingDef>
@@ -304,7 +305,7 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-		<!--<forcedMissRadius>0.1</forcedMissRadius>-->
+		<forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
   </ThingDef>
@@ -313,7 +314,7 @@
     <defName>FT_Bullet_AAShell</defName>
     <label>uranium APT shell</label>
     <!--<thingClass>Fortification.Bullet_AlongWayDamage</thingClass>-->
-	<!--<thingClass>Fortification.Projectile_ExplosiveByComps</thingClass>-->
+	<thingClass>Fortification.Projectile_ExplosiveByComps</thingClass>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -329,7 +330,7 @@
         <alongOnWayHediffSeverity>0.075</alongOnWayHediffSeverity>
       </li>
     </comps>-->
-<!--		<comps>
+		<comps>
 			<li Class="Fortification.CompProperties_CompositeExplosion">
 				<compositeExplosions>
 					<li>
@@ -342,7 +343,7 @@
 					</li>
 				</compositeExplosions>
 			</li>
-		</comps>-->
+		</comps>
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>15</damageAmountBase>
@@ -351,12 +352,12 @@
       <speed>93</speed>
       <arcHeightFactor>0.3</arcHeightFactor>
       <shadowSize>0.6</shadowSize>
-<!--	  	  		<explosionDelay>2</explosionDelay>
+	  	<explosionDelay>2</explosionDelay>
 		<explosionEffect>ExtinguisherExplosion</explosionEffect>
 		<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
 		<soundExplode>Explosion_GiantBomb</soundExplode>
 		<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-		<soundAmbient>MortarRound_Ambient</soundAmbient>-->
+		<soundAmbient>MortarRound_Ambient</soundAmbient>
     </projectile>
   </ThingDef>
 
@@ -472,7 +473,7 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-		<!--<forcedMissRadius>0.1</forcedMissRadius>-->
+		<forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
   </ThingDef>
@@ -481,7 +482,7 @@
     <defName>FT_Bullet_ATShell</defName>
     <label>armor piercing shell</label>
     <!--<thingClass>Fortification.Bullet_AlongWayDamage</thingClass>-->
-	<!--<thingClass>Fortification.Projectile_ExplosiveByComps</thingClass>-->
+	<thingClass>Fortification.Projectile_ExplosiveByComps</thingClass>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -497,7 +498,7 @@
         <alongOnWayHediffSeverity>0.3</alongOnWayHediffSeverity>
       </li>
     </comps>-->
-<!--			<comps>
+			<comps>
 			<li Class="Fortification.CompProperties_CompositeExplosion">
 				<compositeExplosions>
 					<li>
@@ -510,7 +511,7 @@
 					</li>
 				</compositeExplosions>
 			</li>
-		</comps>-->
+		</comps>
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>100</damageAmountBase>
@@ -519,11 +520,11 @@
       <speed>100</speed>
       <arcHeightFactor>0.2</arcHeightFactor>
       <shadowSize>0.6</shadowSize>
-<!--	  	<explosionDelay>2</explosionDelay>
+	  	<explosionDelay>2</explosionDelay>
 		<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
 		<soundExplode>Explosion_GiantBomb</soundExplode>
 		<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-		<soundAmbient>MortarRound_Ambient</soundAmbient>-->
+		<soundAmbient>MortarRound_Ambient</soundAmbient>
     </projectile>
   </ThingDef>
 
@@ -692,7 +693,8 @@
     <uiIconPath>InfantryTurret/FT_QuadMaximGun_icon</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
     <minifiedDef>MinifiedThing</minifiedDef>
-    <altitudeLayer>Building</altitudeLayer>
+    <!--<altitudeLayer>BuildingBelowTop</altitudeLayer>-->
+	<altitudeLayer>Building</altitudeLayer>
     <stealable>false</stealable>
     <rotatable>true</rotatable>
     <thingCategories>
@@ -730,8 +732,16 @@
 		  </li>
 	</damageMultipliers>
     <placeWorkers>
-      <li>PlaceWorker_TurretTop</li>
+		<li>PlaceWorker_TurretTop</li>
+		<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		<!--<li>AOBAUtilities.PlaceWorker_Emplacement</li>
+		<li>AOBAUtilities.PlaceWorker_NoAltitudeLayerOccupy</li>
+		<li>PlaceWorker_NeverAdjacentSameDef</li>-->
     </placeWorkers>
+	<!--<building>
+	    <canPlaceOverWall>false</canPlaceOverWall>
+        <isEdifice>false</isEdifice>
+	</building>-->
   </ThingDef>
 
   <ThingDef ParentName="FT_MannedTurret">
@@ -1057,7 +1067,7 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-		<!--<forcedMissRadius>0.1</forcedMissRadius>-->
+		<forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
   </ThingDef>

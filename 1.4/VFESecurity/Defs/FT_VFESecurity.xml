@@ -11,7 +11,7 @@
       <li>Medium</li>
       <li>Heavy</li>
     </affordances>
-    <pathCost>12</pathCost>
+    <pathCost>0</pathCost>
     <fertility>0</fertility>
     <renderPrecedence>320</renderPrecedence>
     <modExtensions>
@@ -35,7 +35,7 @@
       <li>Medium</li>
       <li>Heavy</li>
     </affordances>
-    <pathCost>12</pathCost>
+    <pathCost>1</pathCost>
     <fertility>0</fertility>
     <renderPrecedence>320</renderPrecedence>
     <modExtensions>
@@ -114,6 +114,9 @@
 		</damageMultipliers>
 		<clearBuildingArea>false</clearBuildingArea>
 		<researchPrerequisites><li>VWE_TrenchWarfare</li></researchPrerequisites>
+		<placeWorkers>
+			<li>AOBAUtilities.PlaceWorker_NoAltitudeLayerOccupy</li>
+		</placeWorkers>
 	</ThingDef>
 
 	<ThingDef ParentName="BuildingBase">
@@ -181,6 +184,9 @@
 		</damageMultipliers>
 		<clearBuildingArea>false</clearBuildingArea>
 		<researchPrerequisites><li>VWE_TrenchWarfare</li></researchPrerequisites>
+		<placeWorkers>
+			<li>AOBAUtilities.PlaceWorker_NoAltitudeLayerOccupy</li>
+		</placeWorkers>
 	</ThingDef>
 
 </Defs>

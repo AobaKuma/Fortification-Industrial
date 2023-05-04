@@ -66,6 +66,92 @@ Connect to other power poles using the 'link' button, or select multiple power p
     </researchPrerequisites>
   </ThingDef>
 
+<!--含路燈-->
+
+    <ThingDef ParentName="BuildingBase" MayRequire="co.uk.epicguru.rimforgepoles">
+    <defName>FT_PowerPole_Lamp</defName>
+    <label>power pole (street lamp)</label>
+    <description>A concrete power pole, using tin or copper cables to carry an electrical current.
+Connect to other power poles using the 'link' button, or select multiple power poles and press the 'auto-link' button.</description>
+    <thingClass>RimForge.Buildings.Building_PowerPole</thingClass>
+    <graphicData>
+      <texPath>PowerPole/building_Lamp</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>     
+      <drawSize>(2,2)</drawSize>
+      <drawOffset>(0,0,0.5)</drawOffset>
+      <drawRotated>true</drawRotated>
+      <shadowData>
+        <volume>(0.3, 0.9, 0.3)</volume>
+        <offset>(0,0,-0.23)</offset>
+      </shadowData>
+    </graphicData>
+	<rotatable>true</rotatable>
+    <defaultPlacingRot>East</defaultPlacingRot>
+    <passability>PassThroughOnly</passability>
+    <designationCategory>Power</designationCategory>
+    <drawerType>RealtimeOnly</drawerType>
+    <selectable>true</selectable>
+    <canOverlapZones>true</canOverlapZones>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <tickerType>Rare</tickerType>
+    <drawOffscreen>true</drawOffscreen>
+    <category>Building</category>
+    <altitudeLayer>PawnUnused</altitudeLayer>
+    <pathCost>20</pathCost>
+    <size>(1, 1)</size>
+    <costList>
+      <FT_BlocksConcrete>12</FT_BlocksConcrete>
+	    <Steel>5</Steel>
+    </costList>
+    <comps>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTransmitter</compClass>
+			<transmitsPower>true</transmitsPower>
+		</li>
+		<li Class="CompProperties_Breakdownable"/>
+		<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>40</basePowerConsumption>
+			<transmitsPower>true</transmitsPower>
+			<powerUpgrades>
+				<li>
+					<researchProject>ColoredLights</researchProject>
+					<factor>0.5</factor>
+				</li>
+			</powerUpgrades>
+		</li>
+		<li Class="CompProperties_Glower">
+			<glowRadius>15</glowRadius>
+			<glowColor>(370,370,370,0)</glowColor>
+			<colorPickerEnabled>true</colorPickerEnabled>
+			<darklightToggle>true</darklightToggle>
+		</li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+      <li>RimForge.Buildings.PlaceWorker_ShowConnectRadius</li>
+    </placeWorkers>
+    <holdsRoof>true</holdsRoof>
+    <fillPercent>1</fillPercent>
+    <castEdgeShadows>false</castEdgeShadows>
+    <!-- <staticSunShadowHeight>1.5</staticSunShadowHeight> -->
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>-1</Beauty>
+      <Cleanliness>1</Cleanliness>
+      <Mass>70</Mass>
+    </statBases>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsPower</li>
+    </thingCategories>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+
   <ThingDef ParentName="BuildingBase" MayRequire="oskarpotocki.vfe.mechanoid">
     <defName>FT_DistributionBox</defName>
     <label>distribution box</label>

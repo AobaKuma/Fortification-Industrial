@@ -117,7 +117,9 @@
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
-        <autoRefuelPercent>0</autoRefuelPercent>
+		<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+		<initialConfigurableTargetFuelLevel>120</initialConfigurableTargetFuelLevel>
+		<autoRefuelPercent>100</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
 	  <li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
@@ -236,7 +238,9 @@
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
-        <autoRefuelPercent>0</autoRefuelPercent>
+		<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+		<initialConfigurableTargetFuelLevel>480</initialConfigurableTargetFuelLevel>
+		<autoRefuelPercent>100</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
 	  <li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
@@ -353,8 +357,8 @@
       <arcHeightFactor>0.3</arcHeightFactor>
       <shadowSize>0.6</shadowSize>
 	  	<explosionDelay>2</explosionDelay>
-		<explosionEffect>ExtinguisherExplosion</explosionEffect>
-		<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+		<!--<explosionEffect>ExtinguisherExplosion</explosionEffect>-->
+		<!--<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>-->
 		<soundExplode>Explosion_GiantBomb</soundExplode>
 		<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
 		<soundAmbient>MortarRound_Ambient</soundAmbient>
@@ -405,7 +409,9 @@
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
-        <autoRefuelPercent>0</autoRefuelPercent>
+		<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+		<initialConfigurableTargetFuelLevel>40</initialConfigurableTargetFuelLevel>
+		<autoRefuelPercent>100</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
 	  <li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
@@ -521,7 +527,7 @@
       <arcHeightFactor>0.2</arcHeightFactor>
       <shadowSize>0.6</shadowSize>
 	  	<explosionDelay>2</explosionDelay>
-		<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+		<!--<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>-->
 		<soundExplode>Explosion_GiantBomb</soundExplode>
 		<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
 		<soundAmbient>MortarRound_Ambient</soundAmbient>
@@ -592,7 +598,9 @@
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
-        <autoRefuelPercent>0</autoRefuelPercent>
+		<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+		<initialConfigurableTargetFuelLevel>50</initialConfigurableTargetFuelLevel>
+		<autoRefuelPercent>100</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
     </comps>
@@ -787,14 +795,16 @@
         </fuelFilter>
         <fuelCapacity>960</fuelCapacity>
         <initialFuelPercent>1</initialFuelPercent>
-        <autoRefuelPercent>0.75</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
-        <fuelMultiplier>4</fuelMultiplier>
+        <fuelMultiplier>8</fuelMultiplier> <!-- 1 steel=8ammo -->
         <factorByDifficulty>true</factorByDifficulty>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>
         <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+		<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+		<initialConfigurableTargetFuelLevel>960</initialConfigurableTargetFuelLevel>
+		<autoRefuelPercent>100</autoRefuelPercent>
       </li>
     </comps>
     <fillPercent>0.4</fillPercent>
@@ -902,7 +912,6 @@
         </fuelFilter>
         <fuelCapacity>120</fuelCapacity>
         <initialFuelPercent>1</initialFuelPercent>
-        <autoRefuelPercent>0.75</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <fuelMultiplier>4</fuelMultiplier>
@@ -910,6 +919,9 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>
         <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+		<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+		<initialConfigurableTargetFuelLevel>120</initialConfigurableTargetFuelLevel>
+		<autoRefuelPercent>100</autoRefuelPercent>
       </li>
     </comps>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
@@ -996,13 +1008,15 @@
 		<fuelCapacity>20</fuelCapacity>    <!-- 20 burst -->
 		<fuelMultiplier>20</fuelMultiplier><!-- 1 barrel=20 ammo -->
         <initialFuelPercent>1</initialFuelPercent>
-        <autoRefuelPercent>0.05</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <factorByDifficulty>false</factorByDifficulty>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>
         <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+		<initialConfigurableTargetFuelLevel>20</initialConfigurableTargetFuelLevel>
+		<autoRefuelPercent>100</autoRefuelPercent>
       </li>
     </comps>
     <passability>PassThroughOnly</passability>

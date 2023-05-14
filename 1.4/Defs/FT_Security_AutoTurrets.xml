@@ -44,15 +44,17 @@
         <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
         <outOfFuelMessage>Cannot shoot: Needs new barrel</outOfFuelMessage>
         <fuelFilter><thingDefs><li>Steel</li></thingDefs></fuelFilter>
-        <fuelCapacity>120</fuelCapacity>       <!-- 30 bursts -->
-        <fuelMultiplier>0.75</fuelMultiplier> <!-- 1.333 steel per burst, 80 per full rearm -->
+        <fuelCapacity>240</fuelCapacity>       <!-- 40 bursts -->
+        <fuelMultiplier>8</fuelMultiplier> <!-- 1 steel=8ammo -->
         <initialFuelPercent>1</initialFuelPercent>
-        <autoRefuelPercent>0.5</autoRefuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <factorByDifficulty>true</factorByDifficulty>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+		<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+		<initialConfigurableTargetFuelLevel>240</initialConfigurableTargetFuelLevel>
+		<autoRefuelPercent>100</autoRefuelPercent>
       </li>
     </comps>
     <passability>PassThroughOnly</passability>
@@ -195,7 +197,7 @@
         <soundCast>GunShotA</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
-        <consumeFuelPerShot>0.5</consumeFuelPerShot>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
       </li>
     </verbs>
   </ThingDef>

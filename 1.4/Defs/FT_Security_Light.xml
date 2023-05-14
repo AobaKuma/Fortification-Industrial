@@ -350,7 +350,7 @@
 		</comps>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>15</damageAmountBase>
+      <damageAmountBase>20</damageAmountBase>
       <armorPenetrationBase>1.5</armorPenetrationBase>
       <stoppingPower>4</stoppingPower>
       <speed>93</speed>
@@ -953,7 +953,7 @@
         <defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
         <warmupTime>0</warmupTime>
         <minRange>1.9</minRange>
-        <range>32.9</range>
+        <range>34.9</range>
         <ticksBetweenBurstShots>17</ticksBetweenBurstShots>
         <burstShotCount>5</burstShotCount>
         <soundCast>FT_AutoCannonShot</soundCast>

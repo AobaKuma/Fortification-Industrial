@@ -177,7 +177,7 @@
         <isMortar>false</isMortar>
         <warmupTime>1</warmupTime>
         <minRange>3.9</minRange>
-        <range>65</range>
+        <range>45</range>
         <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
         <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
         <burstShotCount>6</burstShotCount>
@@ -298,7 +298,7 @@
         <isMortar>false</isMortar>
         <warmupTime>1.2</warmupTime>
         <minRange>3.9</minRange>
-        <range>75</range>
+        <range>45</range>
         <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
         <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
         <burstShotCount>16</burstShotCount>

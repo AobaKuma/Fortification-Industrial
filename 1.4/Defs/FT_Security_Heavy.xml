@@ -123,7 +123,9 @@
 				<minimumFueledThreshold>1</minimumFueledThreshold>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<initialAllowAutoRefuel>true</initialAllowAutoRefuel>
-				<autoRefuelPercent>0</autoRefuelPercent>
+			<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+			<initialConfigurableTargetFuelLevel>72</initialConfigurableTargetFuelLevel>
+			<autoRefuelPercent>100</autoRefuelPercent>
 				<fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
 			  </li>
 			  <li Class="CompProperties_Forbiddable"/>
@@ -243,7 +245,9 @@
 				<minimumFueledThreshold>1</minimumFueledThreshold>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<initialAllowAutoRefuel>true</initialAllowAutoRefuel>
-				<autoRefuelPercent>0</autoRefuelPercent>
+				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+				<initialConfigurableTargetFuelLevel>40</initialConfigurableTargetFuelLevel>
+				<autoRefuelPercent>100</autoRefuelPercent>
 				<fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
 			</li>
 			<li Class="CompProperties_Forbiddable"/>
@@ -425,7 +429,9 @@
 				<minimumFueledThreshold>1</minimumFueledThreshold>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<initialAllowAutoRefuel>true</initialAllowAutoRefuel>
-				<autoRefuelPercent>0</autoRefuelPercent>
+				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+				<initialConfigurableTargetFuelLevel>40</initialConfigurableTargetFuelLevel>
+				<autoRefuelPercent>100</autoRefuelPercent>
 				<fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
 			</li>
 			<li Class="CompProperties_Forbiddable"/>

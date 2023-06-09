@@ -29,7 +29,6 @@
 		<tickerType>Normal</tickerType>
 		<designationCategory>Security</designationCategory>
 		<placeWorkers>
-			<li>PlaceWorker_NotUnderRoof</li>
 			<li>PlaceWorker_TurretTop</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
@@ -204,7 +203,7 @@
 		</building>
 		<uiIconPath>InfantryTurret/FT_AutoCannonTurret_icon</uiIconPath>
 		<uiIconScale>1</uiIconScale>
-			<damageMultipliers>
+	<damageMultipliers>
 		  <li>
 			<damageDef>EMP</damageDef>
 			<multiplier>0</multiplier>

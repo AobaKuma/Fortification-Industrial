@@ -138,10 +138,16 @@
     <staticSunShadowHeight>1.0</staticSunShadowHeight>
   </ThingDef>
 
+  <DesignatorDropdownGroupDef>
+    <defName>FT_ConcreteBarriers</defName>
+    <label>concrete barriers</label>
+  </DesignatorDropdownGroupDef>
+
   <ThingDef ParentName="BuildingBase">
     <defName>FT_TankTrap</defName>
     <label>Tank Trap</label>
     <description>A solid concrete pillar that can hinder vehicles.</description>
+    <designatorDropdown>FT_ConcreteBarriers</designatorDropdown>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
@@ -204,6 +210,7 @@
     <defName>FT_Tetrapods</defName>
     <label>Tetrapods</label>
     <description>A solid concrete pillar designed to lay on the coastline</description>
+    <designatorDropdown>FT_ConcreteBarriers</designatorDropdown>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
@@ -270,6 +277,7 @@
     <defName>FT_Barrier</defName>
     <label>Concrete Barrier</label>
     <description>a solid concrete barrier that can hinder vehicles and provide cover</description>
+    <designatorDropdown>FT_ConcreteBarriers</designatorDropdown>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
@@ -336,6 +344,7 @@
     <defName>FT_BarrierDiagonal</defName>
     <label>Diagonal Concrete Barrier</label>
     <description>a solid concrete barrier that can hinder vehicles and provide cover.</description>
+    <designatorDropdown>FT_ConcreteBarriers</designatorDropdown>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>

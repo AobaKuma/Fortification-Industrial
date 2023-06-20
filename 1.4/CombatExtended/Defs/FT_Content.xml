@@ -5,6 +5,7 @@
 		<defName>FT_TurretAT_Plus</defName>
 		<label>76mm anti-tank gun</label>
 		<description>A direct-fire cannon with capability to destroy a heavy armed vehicle.</description>
+    	<designatorDropdown>FT_AT</designatorDropdown>
 		<techLevel>Industrial</techLevel>
 		<graphicData>
 			<texPath>InfantryTurret/FT_HexMortarBase</texPath>
@@ -148,6 +149,7 @@
 		<defName>FT_TurretAutoCannon_</defName>
 		<label>20mm anti-air gun</label>
 		<description>A rapid-fire cannon with capability to shoot down aircraft.</description>
+    	<designatorDropdown>FT_MG</designatorDropdown>
 		<techLevel>Industrial</techLevel>
 		<graphicData>
 			<texPath>InfantryTurret/FT_WheeledTripod</texPath>
@@ -224,7 +226,7 @@
 	</damageMultipliers>
 	</ThingDef>
 	
-		<ThingDef ParentName="BaseWeaponTurret">
+	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>FT_Gun_Autocannon_Twin</defName>
 		<label>autocannon</label>
 		<description>A self-loading large-bore cannon designed to attach to a turret.</description>
@@ -255,7 +257,6 @@
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>12</muzzleFlashScale>
 				<recoilPattern>Mounted</recoilPattern>
-
 			</li>
 		</verbs>
 		<comps>
@@ -266,8 +267,8 @@
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiUseBurstMode>FALSE</aiUseBurstMode>
-					<aiAimMode>Snapshot</aiAimMode>
-					<aimedBurstShotCount>6</aimedBurstShotCount>
+				<aiAimMode>Snapshot</aiAimMode>
+				<aimedBurstShotCount>6</aimedBurstShotCount>
 			</li>
 		</comps>
 	</ThingDef>

@@ -1,198 +1,21 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
 
-	    <!--================噴煙者 ================-->
+	<!--================噴煙者================-->
+	<DesignatorDropdownGroupDef>
+		<defName>FT_MT</defName>
+		<label>mortars</label>
+	</DesignatorDropdownGroupDef>
 
-  
-		<ThingDef ParentName="BaseArtilleryWeapon"> 
-			<defName>FT_Gun_TurretHexMortar</defName>
-			<label>multi-barrel mortar</label>
-			<description>Mortar launcher. Lobs bombs over walls. Very inaccurate but long-ranged.</description>
-			<recoilPower>6</recoilPower>
-			<graphicData>
-			  <texPath>InfantryTurret/FT_HexMortarGun</texPath>
-			  <drawSize>(4,4)</drawSize>
-			</graphicData>
-			<weaponTags>
-			  <li>Artillery_BaseDestroyer</li>
-			</weaponTags>
-			<verbs>
-			  <li>
-				<verbClass>Fortification.Verb_NewShoot</verbClass>
-				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-				<warmupTime>10.0</warmupTime>
-				<forcedMissRadius>10</forcedMissRadius>
-				<forcedMissRadiusClassicMortars>10</forcedMissRadiusClassicMortars>
-				<isMortar>true</isMortar>
-				<requireLineOfSight>false</requireLineOfSight>
-				<minRange>19.9</minRange>
-				<range>500</range>
-				<burstShotCount>6</burstShotCount>
-				<soundCast>FT_NebelShot</soundCast>
-				<muzzleFlashScale>30</muzzleFlashScale>
-				<consumeFuelPerShot>1</consumeFuelPerShot>
-				<targetParams>
-				  <canTargetLocations>true</canTargetLocations>
-				</targetParams>
-			  </li>
-			</verbs>
-			<comps>
-			  <li Class="CompProperties_ChangeableProjectile" />
-			</comps>
-			<building>
-			  <fixedStorageSettings>
-				<filter>
-				  <categories>
-					<li>MortarShells</li>
-				  </categories>
-				  <disallowedThingDefs>
-					<li MayRequire="Aoba.Fortress.Industrial.NuclearDawn">FT_Shell_NuclearWarhead</li>
-					<li>Shell_AntigrainWarhead</li>
-				  </disallowedThingDefs>
-				</filter>
-			  </fixedStorageSettings>
-			  <defaultStorageSettings>
-				<filter>
-				  <categories>
-					<li>MortarShells</li>
-				  </categories>
-				  <disallowedThingDefs>
-					<li>Shell_Firefoam</li>
-					<li MayRequire="Aoba.Fortress.Industrial.NuclearDawn">FT_Shell_NuclearWarhead</li>
-					<li>Shell_AntigrainWarhead</li>
-				  </disallowedThingDefs>
-				</filter>
-			  </defaultStorageSettings>
-			</building>
-		  </ThingDef>
-		
-		  <ThingDef ParentName="BuildingBase">
-			<defName>FT_TurretHexMortar</defName>
-			<label>Hexagonal Mortar Launcher</label>
-			<description>A manned mortar launcher with six barrel, with some mysterious technology, it can shoot six mortar shells at one time, however, it's not accurate.</description>
-			  <graphicData>
-				<texPath>InfantryTurret/FT_HexMortarBase</texPath>
-				<graphicClass>Graphic_Multi</graphicClass>
-				<drawSize>(3.25,3.25)</drawSize>
-			  <drawOffset>(0,0,-0.1)</drawOffset>
-			</graphicData>
-			  <size>(3,3)</size>
-			  <thingClass>Building_TurretGun</thingClass>
-			<drawerType>MapMeshAndRealTime</drawerType>
-			<minifiedDef>MinifiedThing</minifiedDef>
-			<altitudeLayer>Building</altitudeLayer>
-			<hasInteractionCell>True</hasInteractionCell>
-			<interactionCellOffset>(0,0,-1)</interactionCellOffset>
-			<stealable>false</stealable>
-			<passability>PassThroughOnly</passability>
-			<pathCost>50</pathCost>
-			<fillPercent>0.4</fillPercent>
-			<thingCategories>
-			  <li>BuildingsSecurity</li>
-			</thingCategories>
-			<tickerType>Normal</tickerType>
-			<designationCategory>Security</designationCategory>
-			<inspectorTabs>
-			  <li>ITab_Shells</li>
-			</inspectorTabs>
-			<placeWorkers>
-			  <li>PlaceWorker_NotUnderRoof</li>
-			  <li>PlaceWorker_TurretTop</li>
-			  <li>PlaceWorker_PreventInteractionSpotOverlap</li>
-			</placeWorkers>
-			<researchPrerequisites>
-			  <li>FT_HeavyArtillery</li>
-			</researchPrerequisites>
-			<comps>
-			  <li Class="CompProperties_Explosive">
-				<wickTicks>240</wickTicks>
-				<explosiveRadius>4.9</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-			  </li>
-			  <li Class="CompProperties_Refuelable">
-				<fuelLabel>Shots until barrel change</fuelLabel>
-				<fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
-				<outOfFuelMessage>Cannot shoot: Needs new reinforced barrel</outOfFuelMessage>
-				<fuelFilter><thingDefs><li>ReinforcedBarrel</li></thingDefs></fuelFilter>
-				<fuelIsMortarBarrel>true</fuelIsMortarBarrel>
-				<fuelCapacity>72</fuelCapacity>
-				<fuelMultiplier>12</fuelMultiplier>
-				<initialFuelPercent>1</initialFuelPercent>
-				<showFuelGizmo>true</showFuelGizmo>
-				<minimumFueledThreshold>1</minimumFueledThreshold>
-				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-				<initialAllowAutoRefuel>true</initialAllowAutoRefuel>
-			<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-			<initialConfigurableTargetFuelLevel>72</initialConfigurableTargetFuelLevel>
-			<autoRefuelPercent>100</autoRefuelPercent>
-				<fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
-			  </li>
-			  <li Class="CompProperties_Forbiddable"/>
-			  <li Class="CompProperties_Mannable">
-				<manWorkType>Violent</manWorkType>
-			  </li>
-			  <li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
-				<randomGraphics>
-					<li>InfantryTurret/FT_HexMortarBase</li>
-					<li>InfantryTurret/FT_HexMortarBase_Sec</li>
-					<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Heavy</li>
-					<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Wheel_Sec</li>
-				</randomGraphics>
-			  </li>
-			</comps>
-			  <statBases>
-			  <MaxHitPoints>300</MaxHitPoints>
-			  <Flammability>0.7</Flammability>
-			  <WorkToBuild>3000</WorkToBuild>
-			  <Mass>200</Mass>
-			  <Beauty>-2</Beauty>
-			</statBases>
-			  <costList>
-					<Steel>425</Steel>
-					<ComponentIndustrial>5</ComponentIndustrial>
-					<ReinforcedBarrel>6</ReinforcedBarrel>
-			  </costList>
-			<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-			<building>
-			  <turretBurstWarmupTime>2.0</turretBurstWarmupTime>
-			  <turretBurstCooldownTime>30.0</turretBurstCooldownTime>
-				  <turretTopDrawSize>3</turretTopDrawSize>	
-			  <turretGunDef>FT_Gun_TurretHexMortar</turretGunDef>
-			  <buildingTags>
-				<li>Artillery</li>
-				<!-- <li>Artillery_BaseDestroyer</li> -->
-				<li>Artillery_MannedMortar</li>
-			  </buildingTags>
-			</building>
-			<uiIconPath>InfantryTurret/FT_HexMortar_icon</uiIconPath>
-			<uiIconScale>1.2</uiIconScale>
-	<damageMultipliers>
-		  <li>
-			<damageDef>EMP</damageDef>
-			<multiplier>0</multiplier>
-		  </li>
-		  <li>
-			<damageDef>Stun</damageDef>
-			<multiplier>0</multiplier>
-		  </li>
-		  <li MayRequire="Ludeon.RimWorld.Biotech">
-				<damageDef>MechBandShockwave</damageDef>
-				<multiplier>0</multiplier>
-		  </li>
-		  <li MayRequire="CETeam.CombatExtended">
-				<damageDef>Electrical</damageDef>
-				<multiplier>0</multiplier>
-		  </li>
-	</damageMultipliers>
-		  </ThingDef>
-		
 
-	<ThingDef ParentName="BuildingBase">
-		<defName>FT_TurretPrince</defName>
-		<label>howitzer</label>
-		<description>An artillery that gave up part of the direct-fire capability in pursuit of high precision and light-weighted.\n\n Correctly called 155mm howitzer model NK-33L "Prince" ,It is a lightweight artillery designed to improve maneuverability.</description>
-		<techLevel>Industrial</techLevel>
+	<ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
+		<defName>FT_TurretHexMortar</defName>
+		<label>Hexagonal Mortar Launcher</label>
+		<description>A manned mortar launcher with six barrel, with some mysterious technology, it can shoot six mortar shells at one time, however, it's not accurate.</description>
+		<designatorDropdown>FT_MT</designatorDropdown>
+		<uiIconPath>InfantryTurret/FT_HexMortar_icon</uiIconPath>
+		<uiIconScale>1.2</uiIconScale>
 		<graphicData>
 			<texPath>InfantryTurret/FT_HexMortarBase</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -200,21 +23,8 @@
 			<drawOffset>(0,0,-0.1)</drawOffset>
 		</graphicData>
 		<size>(3,3)</size>
-		<thingClass>Building_TurretGun</thingClass>
-		<drawerType>MapMeshAndRealTime</drawerType>
-		<minifiedDef>MinifiedThing</minifiedDef>
-		<altitudeLayer>Building</altitudeLayer>
-		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
-		<stealable>false</stealable>
-		<passability>PassThroughOnly</passability>
-		<pathCost>50</pathCost>
 		<fillPercent>0.4</fillPercent>
-		<thingCategories>
-			<li>BuildingsSecurity</li>
-		</thingCategories>
-		<tickerType>Normal</tickerType>
-		<designationCategory>Security</designationCategory>
 		<inspectorTabs>
 			<li>ITab_Shells</li>
 		</inspectorTabs>
@@ -236,28 +46,27 @@
 				<fuelLabel>Shots until barrel change</fuelLabel>
 				<fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
 				<outOfFuelMessage>Cannot shoot: Needs new reinforced barrel</outOfFuelMessage>
-				<fuelFilter><thingDefs><li>ReinforcedBarrel</li></thingDefs></fuelFilter>
+				<fuelFilter>
+					<thingDefs>
+						<li>ReinforcedBarrel</li>
+					</thingDefs>
+				</fuelFilter>
 				<fuelIsMortarBarrel>true</fuelIsMortarBarrel>
-				<fuelCapacity>40</fuelCapacity>
-				<fuelMultiplier>40</fuelMultiplier>
+				<fuelCapacity>72</fuelCapacity>
+				<fuelMultiplier>12</fuelMultiplier>
 				<initialFuelPercent>1</initialFuelPercent>
 				<showFuelGizmo>true</showFuelGizmo>
 				<minimumFueledThreshold>1</minimumFueledThreshold>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<initialAllowAutoRefuel>true</initialAllowAutoRefuel>
 				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-				<initialConfigurableTargetFuelLevel>40</initialConfigurableTargetFuelLevel>
+				<initialConfigurableTargetFuelLevel>72</initialConfigurableTargetFuelLevel>
 				<autoRefuelPercent>100</autoRefuelPercent>
 				<fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
 			</li>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Mannable">
 				<manWorkType>Violent</manWorkType>
-			</li>
-			<li MayRequire="VanillaExpanded.VFESecurity" Class="VFESecurity.CompProperties_LongRangeArtillery">
-				<worldTileRange>15</worldTileRange>
-				<maxForcedMissRadiusFactor>2.5</maxForcedMissRadiusFactor>
-				<gizmoIconTexPath>Things/Building/Artillery/TurretArtillery_Top</gizmoIconTexPath>
 			</li>
 			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
 				<randomGraphics>
@@ -269,132 +78,117 @@
 			</li>
 		</comps>
 		<statBases>
-			<Mass>255</Mass>
-			<MaxHitPoints>1000</MaxHitPoints>
-			<Flammability>0.5</Flammability>
-			<WorkToBuild>3500</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0.7</Flammability>
+			<WorkToBuild>3000</WorkToBuild>
+			<Mass>200</Mass>
 			<Beauty>-2</Beauty>
 		</statBases>
 		<costList>
-			<Steel>450</Steel>
-			<ComponentIndustrial>6</ComponentIndustrial>
-			<ReinforcedBarrel>2</ReinforcedBarrel>
+			<Steel>425</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<ReinforcedBarrel>6</ReinforcedBarrel>
 		</costList>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
-			<turretBurstWarmupTime>3.0</turretBurstWarmupTime>
-			<turretBurstCooldownTime>10.0</turretBurstCooldownTime>
-			<turretTopDrawSize>3.5</turretTopDrawSize>	
-			<turretGunDef>FT_Gun_TurretPrince</turretGunDef>
+			<turretBurstWarmupTime>2.0</turretBurstWarmupTime>
+			<turretBurstCooldownTime>30.0</turretBurstCooldownTime>
+			<turretTopDrawSize>3</turretTopDrawSize>
+			<turretGunDef>FT_Gun_TurretHexMortar</turretGunDef>
 			<buildingTags>
 				<li>Artillery</li>
-				<li>Artillery_BaseDestroyer</li>
 				<li>Artillery_MannedMortar</li>
 			</buildingTags>
 		</building>
-		<uiIconPath>Prince/Prince_Icon</uiIconPath>
-		<uiIconScale>1.2</uiIconScale>
-	<damageMultipliers>
-		  <li>
-			<damageDef>EMP</damageDef>
-			<multiplier>0</multiplier>
-		  </li>
-		  <li>
-			<damageDef>Stun</damageDef>
-			<multiplier>0</multiplier>
-		  </li>
-		  <li MayRequire="Ludeon.RimWorld.Biotech">
-				<damageDef>MechBandShockwave</damageDef>
-				<multiplier>0</multiplier>
-		  </li>
-		  <li MayRequire="CETeam.CombatExtended">
-				<damageDef>Electrical</damageDef>
-				<multiplier>0</multiplier>
-		  </li>
-	</damageMultipliers>
 	</ThingDef>
-	
-	<ThingDef ParentName="BaseWeaponTurret">
-		<defName>FT_Gun_TurretPrince</defName>
-		<label>howitzer</label>
-		<description>An artillery that gave up part of the direct-fire capability in pursuit of high precision and light-weighted.\n\n Correctly called 155mm howitzer model NK-33L "Prince" ,It is a lightweight artillery designed to improve maneuverability.</description>
+
+	<ThingDef ParentName="BaseArtilleryWeapon">
+		<defName>FT_Gun_TurretHexMortar</defName>
+		<label>multi-barrel mortar</label>
+		<description>Mortar launcher. Lobs bombs over walls. Very inaccurate but long-ranged.</description>
+		<recoilPower>6</recoilPower>
 		<graphicData>
-			<texPath>Prince/Prince_Gun</texPath>
-			<drawOffset>(5,0,0)</drawOffset>
+			<texPath>InfantryTurret/FT_HexMortarGun</texPath>
+			<drawSize>(4,4)</drawSize>
 		</graphicData>
-		<statBases>
-		  <RangedWeapon_Cooldown>8.0</RangedWeapon_Cooldown>
-		  <Mass>205</Mass>
-		</statBases>
-		<comps>
-		  <li Class="CompProperties_ChangeableProjectile" />
-		</comps>
-		<building>
-		  <fixedStorageSettings>
-			<filter>
-			  <categories>
-				<li>MortarShells</li>
-			  </categories>
-			</filter>
-		  </fixedStorageSettings>
-		  <defaultStorageSettings>
-			<filter>
-			  <categories>
-				<li>MortarShells</li>
-			  </categories>
-			</filter>
-		  </defaultStorageSettings>
-		</building>
+		<weaponTags>
+			<li>Artillery_BaseDestroyer</li>
+      		<li>TurretGun</li>
+		</weaponTags>
 		<verbs>
 			<li>
-				<verbClass>Verb_Shoot</verbClass>
+				<verbClass>Fortification.Verb_NewShoot</verbClass>
 				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-				<warmupTime>6.0</warmupTime>
-				<forcedMissRadius>5</forcedMissRadius>
-				<forcedMissRadiusClassicMortars>8</forcedMissRadiusClassicMortars>
+				<warmupTime>10.0</warmupTime>
+				<forcedMissRadius>10</forcedMissRadius>
+				<forcedMissRadiusClassicMortars>10</forcedMissRadiusClassicMortars>
 				<isMortar>true</isMortar>
 				<requireLineOfSight>false</requireLineOfSight>
-				<minRange>49.9</minRange>
+				<minRange>19.9</minRange>
 				<range>500</range>
-				<burstShotCount>1</burstShotCount>
-				<soundCast>FT_CannonLaunchB</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>16</muzzleFlashScale>
+				<burstShotCount>6</burstShotCount>
+				<soundCast>FT_NebelShot</soundCast>
+				<muzzleFlashScale>30</muzzleFlashScale>
 				<consumeFuelPerShot>1</consumeFuelPerShot>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
 			</li>
 		</verbs>
+		<comps>
+			<li Class="CompProperties_ChangeableProjectile" />
+		</comps>
+		<building>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+						<li>MortarShells</li>
+					</categories>
+					<disallowedThingDefs>
+						<li MayRequire="Aoba.Fortress.Industrial.NuclearDawn">FT_Shell_NuclearWarhead</li>
+						<li>Shell_AntigrainWarhead</li>
+					</disallowedThingDefs>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<filter>
+					<categories>
+						<li>MortarShells</li>
+					</categories>
+					<disallowedThingDefs>
+						<li>Shell_Firefoam</li>
+						<li MayRequire="Aoba.Fortress.Industrial.NuclearDawn">FT_Shell_NuclearWarhead</li>
+						<li>Shell_AntigrainWarhead</li>
+					</disallowedThingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
 	</ThingDef>
-	
-	<ThingDef ParentName="BuildingBase">
-		<defName>FT_TurretEmpero</defName>
-		<label>field cannon</label>
-		<description>an artillery that can only shoot horizontally at close range due to extremely high Muzzle velocity,but it is high accuracy. \n\n Correctly called 155mm caliber howitzer model NK-30 "Empero",it is a relieable artillery designed for Interstellar Industries Complex Nara, provide the technical support of those pre-industrial world incapable to fight against the mechanoid armies.</description>
-		<techLevel>Industrial</techLevel>
+
+
+	<DesignatorDropdownGroupDef>
+		<defName>FT_HZ</defName>
+		<label>howitzers</label>
+	</DesignatorDropdownGroupDef>
+
+
+
+	<ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
+		<defName>FT_TurretPrince</defName>
+		<label>howitzer</label>
+		<description>An artillery that gave up part of the direct-fire capability in pursuit of high precision and light-weighted.\n\n Correctly called 155mm howitzer model NK-33L "Prince" ,It is a lightweight artillery designed to improve maneuverability.</description>
+		<designatorDropdown>FT_HZ</designatorDropdown>
+		<uiIconPath>Prince/Prince_Icon</uiIconPath>
+		<uiIconScale>1.2</uiIconScale>
 		<graphicData>
-			<texPath>Empero/Empero_Base_Old</texPath>
+			<texPath>InfantryTurret/FT_HexMortarBase</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3.5)</drawSize>
+			<drawSize>(3.25,3.25)</drawSize>
 			<drawOffset>(0,0,-0.1)</drawOffset>
 		</graphicData>
 		<size>(3,3)</size>
-		<thingClass>Building_TurretGun</thingClass>
-		<drawerType>MapMeshAndRealTime</drawerType>
-		<minifiedDef>MinifiedThing</minifiedDef>
-		<altitudeLayer>Building</altitudeLayer>
-		<hasInteractionCell>True</hasInteractionCell>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
-		<stealable>false</stealable>
-		<passability>PassThroughOnly</passability>
-		<pathCost>50</pathCost>
 		<fillPercent>0.4</fillPercent>
-		<thingCategories>
-			<li>BuildingsSecurity</li>
-		</thingCategories>
-		<tickerType>Normal</tickerType>
-		<designationCategory>Security</designationCategory>
 		<inspectorTabs>
 			<li>ITab_Shells</li>
 		</inspectorTabs>
@@ -434,14 +228,167 @@
 				<autoRefuelPercent>100</autoRefuelPercent>
 				<fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
 			</li>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Mannable">
 				<manWorkType>Violent</manWorkType>
 			</li>
 			<li MayRequire="VanillaExpanded.VFESecurity" Class="VFESecurity.CompProperties_LongRangeArtillery">
-			<worldTileRange>35</worldTileRange>
-			<maxForcedMissRadiusFactor>2.5</maxForcedMissRadiusFactor>
-			<gizmoIconTexPath>Things/Building/Artillery/TurretArtillery_Top</gizmoIconTexPath>
+				<worldTileRange>15</worldTileRange>
+				<maxForcedMissRadiusFactor>2.5</maxForcedMissRadiusFactor>
+				<gizmoIconTexPath>Things/Building/Artillery/TurretArtillery_Top</gizmoIconTexPath>
+			</li>
+			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+				<randomGraphics>
+					<li>InfantryTurret/FT_HexMortarBase</li>
+					<li>InfantryTurret/FT_HexMortarBase_Sec</li>
+					<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Heavy</li>
+					<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Wheel_Sec</li>
+				</randomGraphics>
+			</li>
+		</comps>
+		<statBases>
+			<Mass>255</Mass>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+			<WorkToBuild>3500</WorkToBuild>
+			<Beauty>-2</Beauty>
+		</statBases>
+		<costList>
+			<Steel>450</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ReinforcedBarrel>2</ReinforcedBarrel>
+		</costList>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<building>
+			<turretBurstWarmupTime>3.0</turretBurstWarmupTime>
+			<turretBurstCooldownTime>10.0</turretBurstCooldownTime>
+			<turretTopDrawSize>3.5</turretTopDrawSize>
+			<turretGunDef>FT_Gun_TurretPrince</turretGunDef>
+			<buildingTags>
+				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
+				<li>Artillery_MannedMortar</li>
+			</buildingTags>
+		</building>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>FT_Gun_TurretPrince</defName>
+		<label>howitzer</label>
+		<description>An artillery that gave up part of the direct-fire capability in pursuit of high precision and light-weighted.\n\n Correctly called 155mm howitzer model NK-33L "Prince" ,It is a lightweight artillery designed to improve maneuverability.</description>
+		<graphicData>
+			<texPath>Prince/Prince_Gun</texPath>
+			<drawOffset>(5,0,0)</drawOffset>
+		</graphicData>
+		<statBases>
+			<RangedWeapon_Cooldown>8.0</RangedWeapon_Cooldown>
+			<Mass>205</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_ChangeableProjectile" />
+		</comps>
+		<building>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+						<li>MortarShells</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<filter>
+					<categories>
+						<li>MortarShells</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<warmupTime>6.0</warmupTime>
+				<forcedMissRadius>5</forcedMissRadius>
+				<forcedMissRadiusClassicMortars>8</forcedMissRadiusClassicMortars>
+				<isMortar>true</isMortar>
+				<requireLineOfSight>false</requireLineOfSight>
+				<minRange>49.9</minRange>
+				<range>500</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>FT_CannonLaunchB</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>16</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
+		<defName>FT_TurretEmpero</defName>
+		<label>field cannon</label>
+		<description>an artillery that can only shoot horizontally at close range due to extremely high Muzzle velocity,but it is high accuracy. \n\n Correctly called 155mm caliber howitzer model NK-30 "Empero",it is a relieable artillery designed for Interstellar Industries Complex Nara, provide the technical support of those pre-industrial world incapable to fight against the mechanoid armies.</description>
+		<designatorDropdown>FT_HZ</designatorDropdown>
+		<uiIconPath>Empero/Empero_Icon</uiIconPath>
+		<uiIconScale>1.75</uiIconScale>
+		<graphicData>
+			<texPath>Empero/Empero_Base_Old</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5)</drawSize>
+			<drawOffset>(0,0,-0.1)</drawOffset>
+		</graphicData>
+		<size>(3,3)</size>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<fillPercent>0.4</fillPercent>
+		<inspectorTabs>
+			<li>ITab_Shells</li>
+		</inspectorTabs>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>FT_HeavyArtillery</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>240</wickTicks>
+				<explosiveRadius>4.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+			</li>
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until barrel change</fuelLabel>
+				<fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+				<outOfFuelMessage>Cannot shoot: Needs new reinforced barrel</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>ReinforcedBarrel</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelIsMortarBarrel>true</fuelIsMortarBarrel>
+				<fuelCapacity>40</fuelCapacity>
+				<fuelMultiplier>40</fuelMultiplier>
+				<initialFuelPercent>1</initialFuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<initialAllowAutoRefuel>true</initialAllowAutoRefuel>
+				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+				<initialConfigurableTargetFuelLevel>40</initialConfigurableTargetFuelLevel>
+				<autoRefuelPercent>100</autoRefuelPercent>
+				<fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
+			</li>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Mannable">
+				<manWorkType>Violent</manWorkType>
+			</li>
+			<li MayRequire="VanillaExpanded.VFESecurity" Class="VFESecurity.CompProperties_LongRangeArtillery">
+				<worldTileRange>35</worldTileRange>
+				<maxForcedMissRadiusFactor>2.5</maxForcedMissRadiusFactor>
+				<gizmoIconTexPath>Things/Building/Artillery/TurretArtillery_Top</gizmoIconTexPath>
 			</li>
 		</comps>
 		<statBases>
@@ -460,7 +407,7 @@
 		<building>
 			<turretBurstWarmupTime>5.0</turretBurstWarmupTime>
 			<turretBurstCooldownTime>10.0</turretBurstCooldownTime>
-			<turretTopDrawSize>5.8</turretTopDrawSize>	
+			<turretTopDrawSize>5.8</turretTopDrawSize>
 			<turretGunDef>FT_Gun_TurretEmpero</turretGunDef>
 			<buildingTags>
 				<li>Artillery</li>
@@ -468,28 +415,8 @@
 				<li>Artillery_MannedMortar</li>
 			</buildingTags>
 		</building>
-		<uiIconPath>Empero/Empero_Icon</uiIconPath>
-		<uiIconScale>1.75</uiIconScale>
-	<damageMultipliers>
-		  <li>
-			<damageDef>EMP</damageDef>
-			<multiplier>0</multiplier>
-		  </li>
-		  <li>
-			<damageDef>Stun</damageDef>
-			<multiplier>0</multiplier>
-		  </li>
-		  <li MayRequire="Ludeon.RimWorld.Biotech">
-				<damageDef>MechBandShockwave</damageDef>
-				<multiplier>0</multiplier>
-		  </li>
-		  <li MayRequire="CETeam.CombatExtended">
-				<damageDef>Electrical</damageDef>
-				<multiplier>0</multiplier>
-		  </li>
-	</damageMultipliers>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>FT_Gun_TurretEmpero</defName>
 		<label>field cannon</label>
@@ -499,27 +426,27 @@
 			<drawOffset>(5,0,0)</drawOffset>
 		</graphicData>
 		<statBases>
-		  <RangedWeapon_Cooldown>8.0</RangedWeapon_Cooldown>
-		  <Mass>205</Mass>
+			<RangedWeapon_Cooldown>8.0</RangedWeapon_Cooldown>
+			<Mass>205</Mass>
 		</statBases>
 		<comps>
-		  <li Class="CompProperties_ChangeableProjectile" />
+			<li Class="CompProperties_ChangeableProjectile" />
 		</comps>
 		<building>
-		  <fixedStorageSettings>
-			<filter>
-			  <categories>
-				<li>MortarShells</li>
-			  </categories>
-			</filter>
-		  </fixedStorageSettings>
-		  <defaultStorageSettings>
-			<filter>
-			  <categories>
-				<li>MortarShells</li>
-			  </categories>
-			</filter>
-		  </defaultStorageSettings>
+			<fixedStorageSettings>
+				<filter>
+					<categories>
+						<li>MortarShells</li>
+					</categories>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<filter>
+					<categories>
+						<li>MortarShells</li>
+					</categories>
+				</filter>
+			</defaultStorageSettings>
 		</building>
 		<verbs>
 			<li>
@@ -543,5 +470,5 @@
 			</li>
 		</verbs>
 	</ThingDef>
-	
+
 </Defs>	

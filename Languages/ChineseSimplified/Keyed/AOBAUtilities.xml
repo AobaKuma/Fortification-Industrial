@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-    <FT_BillRequires_Mass>需要总计质量</FT_BillRequires_Mass>
-    <FT_BillRequires_MarketValue>需要总计价格</FT_BillRequires_MarketValue>
+  <FT_BillRequires_Mass>需要总计质量</FT_BillRequires_Mass>
+  <FT_BillRequires_MarketValue>需要总计价格</FT_BillRequires_MarketValue>
+
 </LanguageData>

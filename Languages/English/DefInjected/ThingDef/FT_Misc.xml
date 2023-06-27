@@ -13,5 +13,9 @@
   <FT_Radio.label>Radio terminal</FT_Radio.label>
   <FT_Radio.description>Allows radio contact with other factions and orbital traders, with the chance of locating precious metals.</FT_Radio.description>
 
+  <FT_FirefoamPopper.label>hydrant</FT_FirefoamPopper.label>
+  <FT_FirefoamPopper.description>When it detects fire, this safety device pops and sprays a fire-retardant foam in a circular field around itself. Can also be triggered manually.</FT_FirefoamPopper.description>
+  <FT_FirefoamPopper.comps.1.useLabel>Trigger {0_label}</FT_FirefoamPopper.comps.1.useLabel>
+
 
 </LanguageData>

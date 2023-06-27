@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-<FT_Operate.label>操作機器</FT_Operate.label>
-  <FT_Operate.verb>操作</FT_Operate.verb>
-  <FT_Operate.gerund>操作於</FT_Operate.gerund>
-  
-  <FT_Synthesizing.label>化合物合成</FT_Synthesizing.label>
-  <FT_Synthesizing.verb>合成</FT_Synthesizing.verb>
-  <FT_Synthesizing.gerund>合成於</FT_Synthesizing.gerund>
+  <!--<FT_Operate.label>操作機器</FT_Operate.label>-->
+  <!--<FT_Operate.verb>操作</FT_Operate.verb>-->
+  <!--<FT_Operate.gerund>操作於</FT_Operate.gerund>-->
+
+  <!--<FT_Synthesizing.label>化合物合成</FT_Synthesizing.label>-->
+  <!--<FT_Synthesizing.verb>合成</FT_Synthesizing.verb>-->
+  <!--<FT_Synthesizing.gerund>合成於</FT_Synthesizing.gerund>-->
 
 </LanguageData>

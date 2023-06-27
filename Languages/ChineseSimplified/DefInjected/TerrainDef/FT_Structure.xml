@@ -5,39 +5,33 @@
 
   <FT_Concrete.label>水泥道路</FT_Concrete.label>
   <FT_Concrete.description>铺设简单但不是很好看的道路.</FT_Concrete.description>
-  
+
   <FT_ConcreteTile.label>混凝土地砖</FT_ConcreteTile.label>
   <FT_ConcreteTile.description>建造相对耗时但是较为美观的混凝土地板,适合用于大型空间.</FT_ConcreteTile.description>
-  
+
   <FT_FineConcreteTile.label>精致混凝土地板</FT_FineConcreteTile.label>
   <FT_FineConcreteTile.description>使用清水混凝土铺设的地板,虽然依然是混凝土但是似乎贵族也能接受用这种设计铺设他们的房间.</FT_FineConcreteTile.description>
-  
+
   <FT_FlagstoneConcrete.label>混凝土铺路砖</FT_FlagstoneConcrete.label>
-  
   <FT_TileStoneConcrete.label>混凝土地砖</FT_TileStoneConcrete.label>
-  
+
   <FT_PlankFloor.label>仿木水泥地板</FT_PlankFloor.label>
   <FT_PlankFloor.description>类似于木质地板纹路的水泥地板.易于铺设.</FT_PlankFloor.description>
-  
-  <VFEArch_BridgeConcrete.label>混凝土砖桥</VFEArch_BridgeConcrete.label>
-  <VFEArch_BridgeConcrete.description>石桥是可以建在水上的结构。桥梁允许在水上更快速地移动。一旦建成便可以支撑许多结构，包括重型建筑和各种墙。桥梁可以在沼泽地区建造。 \n\n可以用任何种类的石砖进行建造,自然也包含混凝土.</VFEArch_BridgeConcrete.description>
 
-  <VFEArch_BridgeSteelConcrete.label>钢筋混凝土桥</VFEArch_BridgeSteelConcrete.label>
-  <VFEArch_BridgeSteelConcrete.description>钢桥是可以建在水上的结构。桥梁允许在水上更快速地移动。一旦建成便可以支撑许多结构，包括重型建筑和各种墙。桥梁可以在沼泽地区建造。 \n\n钢铁桥梁非常耐用,而使用混凝土作为辅助材料也不影响其强度.</VFEArch_BridgeSteelConcrete.description>
 
-  <VFEArch_CobblestoneFloorConcrete.label>混凝土鹅卵石地板</VFEArch_CobblestoneFloorConcrete.label>
-  <VFEArch_CobblestoneFloorConcrete.description>用大小不一的混凝土块随意铺设出的地砖,给人以乡野城堡一样的感觉.虽然铺设速度要比普通石制地砖砖快得多,也不需要专业的岩石切割知识,但缺乏抛光设计的美感.</VFEArch_CobblestoneFloorConcrete.description>
-
-  <VFEArch_SlabsConcrete.label>混凝土石板</VFEArch_SlabsConcrete.label>
-  <VFEArch_SlabsConcrete.description>大尺寸的浇筑混凝土板,很适合用于打造圣殿或神庙.看起来十分漂亮,但需要花费大量的时间与资源进行铺设.</VFEArch_SlabsConcrete.description>
-
-  <VFEArch_PolishedStoneFloorConcrete.label>抛光混凝土地砖</VFEArch_PolishedStoneFloorConcrete.label>
-  <VFEArch_PolishedStoneFloorConcrete.description>精美的抛光清水混凝土,很适合用于打造优雅的豪宅.虽然铺设速度要比精致石制地砖快上不少,但需要消耗大量的资源.看起来很漂亮.</VFEArch_PolishedStoneFloorConcrete.description>  
-  
-  <VFEArch_WoodPlankFloorConcrete.label>预制混凝土地板</VFEArch_WoodPlankFloorConcrete.label>
-  <VFEArch_WoodPlankFloorConcrete.description>普通木地板可以营造出温馨、如家的感觉.而拿混凝土板造出来的也大概如此(?),它可以快速铺设,且并不可燃.</VFEArch_WoodPlankFloorConcrete.description> 
-
-  <VFEArch_WoodenParquetConcrete.label>混凝土拼花地板</VFEArch_WoodenParquetConcrete.label>
-  <VFEArch_WoodenParquetConcrete.description>精美的预制混凝土地板,营造出华丽、别致的感觉(并不).虽然很漂亮,但需要花费大量的时间来建造不过好在它并不可燃.</VFEArch_WoodenParquetConcrete.description> 
+  <!--<VFEArch_BridgeConcrete.label>混凝土砖桥</VFEArch_BridgeConcrete.label>-->
+  <!--<VFEArch_BridgeConcrete.description>石桥是可以建在水上的结构。桥梁允许在水上更快速地移动。一旦建成便可以支撑许多结构，包括重型建筑和各种墙。桥梁可以在沼泽地区建造。 \n\n可以用任何种类的石砖进行建造,自然也包含混凝土.</VFEArch_BridgeConcrete.description>-->
+  <!--<VFEArch_BridgeSteelConcrete.label>钢筋混凝土桥</VFEArch_BridgeSteelConcrete.label>-->
+  <!--<VFEArch_BridgeSteelConcrete.description>钢桥是可以建在水上的结构。桥梁允许在水上更快速地移动。一旦建成便可以支撑许多结构，包括重型建筑和各种墙。桥梁可以在沼泽地区建造。 \n\n钢铁桥梁非常耐用,而使用混凝土作为辅助材料也不影响其强度.</VFEArch_BridgeSteelConcrete.description>-->
+  <!--<VFEArch_CobblestoneFloorConcrete.label>混凝土鹅卵石地板</VFEArch_CobblestoneFloorConcrete.label>-->
+  <!--<VFEArch_CobblestoneFloorConcrete.description>用大小不一的混凝土块随意铺设出的地砖,给人以乡野城堡一样的感觉.虽然铺设速度要比普通石制地砖砖快得多,也不需要专业的岩石切割知识,但缺乏抛光设计的美感.</VFEArch_CobblestoneFloorConcrete.description>-->
+  <!--<VFEArch_SlabsConcrete.label>混凝土石板</VFEArch_SlabsConcrete.label>-->
+  <!--<VFEArch_SlabsConcrete.description>大尺寸的浇筑混凝土板,很适合用于打造圣殿或神庙.看起来十分漂亮,但需要花费大量的时间与资源进行铺设.</VFEArch_SlabsConcrete.description>-->
+  <!--<VFEArch_PolishedStoneFloorConcrete.label>抛光混凝土地砖</VFEArch_PolishedStoneFloorConcrete.label>-->
+  <!--<VFEArch_PolishedStoneFloorConcrete.description>精美的抛光清水混凝土,很适合用于打造优雅的豪宅.虽然铺设速度要比精致石制地砖快上不少,但需要消耗大量的资源.看起来很漂亮.</VFEArch_PolishedStoneFloorConcrete.description>-->
+  <!--<VFEArch_WoodPlankFloorConcrete.label>预制混凝土地板</VFEArch_WoodPlankFloorConcrete.label>-->
+  <!--<VFEArch_WoodPlankFloorConcrete.description>普通木地板可以营造出温馨、如家的感觉.而拿混凝土板造出来的也大概如此(?),它可以快速铺设,且并不可燃.</VFEArch_WoodPlankFloorConcrete.description>-->
+  <!--<VFEArch_WoodenParquetConcrete.label>混凝土拼花地板</VFEArch_WoodenParquetConcrete.label>-->
+  <!--<VFEArch_WoodenParquetConcrete.description>精美的预制混凝土地板,营造出华丽、别致的感觉(并不).虽然很漂亮,但需要花费大量的时间来建造不过好在它并不可燃.</VFEArch_WoodenParquetConcrete.description>-->
 
 </LanguageData>

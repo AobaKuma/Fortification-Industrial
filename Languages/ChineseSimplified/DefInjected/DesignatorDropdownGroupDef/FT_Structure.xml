@@ -1,6 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-<FT_Floor_Concrete.label>混凝土地板</FT_Floor_Concrete.label>
+  <!-- Sandbag -->
+
+  <FT_ConcreteBarriers.label>concrete barriers</FT_ConcreteBarriers.label>
+
+
+  <!-- Floors 地板		! -->
+
+  <FT_Floor_Concrete.label>混凝土地板</FT_Floor_Concrete.label>
+
 
 </LanguageData>

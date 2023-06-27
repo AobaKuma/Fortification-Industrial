@@ -748,7 +748,7 @@
     <building>
       <turretTopDrawSize>1.0</turretTopDrawSize>
       <ai_combatDangerous>true</ai_combatDangerous>
-      <turretGunDef>FT_Artillery_Mortar</turretGunDef>
+      <turretGunDef>FT_Gun_QuadMG</turretGunDef>
       <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
     </building>
     <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
@@ -794,7 +794,7 @@
 
   <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
     <defName>FT_AutoCannon</defName>
-    <label>Auto Cannon</label>
+    <label>autocannon</label>
     <description>A Tripod with high caliber machine gun mounted. Requires steel to refurbish its barrels after heavy use.it needs a pawn to man on it to operate.</description>
     <designatorDropdown>FT_MG</designatorDropdown>
     <uiIconPath>InfantryTurret/FT_AutoCannonGun_icon</uiIconPath>

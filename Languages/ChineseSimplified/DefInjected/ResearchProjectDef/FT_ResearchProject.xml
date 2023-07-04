@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-<FT_ENIAC.label>伊尼亚克真空管电脑</FT_ENIAC.label>
+  <FT_ENIAC.label>伊尼亚克真空管电脑</FT_ENIAC.label>
   <FT_ENIAC.description>真空管电子数值计算机,虽然算不上是最好的但可以说是微电子科技的里程碑.</FT_ENIAC.description>
 
   <FT_Lathe.label>车床</FT_Lathe.label>
@@ -18,4 +18,6 @@
 
   <FT_Chemistry.label>化学</FT_Chemistry.label>
   <FT_Chemistry.description>解锁化学制造桌,能够从肉类中人工提取并合成中性胺.</FT_Chemistry.description>
+
+
 </LanguageData>

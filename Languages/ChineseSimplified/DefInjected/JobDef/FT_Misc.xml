@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-<FT_EnterBunkerFacility.reportString>进入建筑工事</FT_EnterBunkerFacility.reportString>
-<FT_UseRadio.reportString>收听电台广播</FT_UseRadio.reportString>
+
+  <FT_EnterBunkerFacility.reportString>进入建筑工事</FT_EnterBunkerFacility.reportString>
+  <FT_UseRadio.reportString>收听电台广播</FT_UseRadio.reportString>
+
 
 </LanguageData>

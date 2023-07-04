@@ -311,7 +311,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>300000</workAmount>
+    <workAmount>60000</workAmount>
     <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <ingredients>
       <li>
@@ -320,7 +320,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>300</count>
+        <count>75</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -332,7 +332,7 @@
       <ReinforcedBarrel>1</ReinforcedBarrel>
     </products>
     <skillRequirements>
-      <Crafting>15</Crafting>
+      <Crafting>3</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
 	  <researchPrerequisite>FT_Lathe</researchPrerequisite>
@@ -346,7 +346,7 @@
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_Machining</soundWorking>
-		<workAmount>18000</workAmount>
+		<workAmount>10000</workAmount>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<ingredients>
 		  <li>
@@ -367,7 +367,7 @@
 		  <ComponentIndustrial>1</ComponentIndustrial>
 		</products>
 		<skillRequirements>
-		  <Crafting>5</Crafting>
+		  <Crafting>10</Crafting>
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 	</RecipeDef>

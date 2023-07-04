@@ -4,6 +4,7 @@
   <ThingDef Name="FT_BaseCannonBuilding" ParentName="BuildingBase" Abstract="True">
     <thingClass>Building_TurretGun</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
+    <techLevel>Industrial</techLevel>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <damageData>
@@ -17,8 +18,10 @@
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
+    <hasTooltip>true</hasTooltip>
     <interactionCellOffset>(-1,0,-1)</interactionCellOffset>
     <stealable>false</stealable>
+    <rotatable>true</rotatable>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <fillPercent>0.4</fillPercent>
@@ -31,18 +34,7 @@
         <manWorkType>Violent</manWorkType>
       </li>
     </comps>
-<<<<<<< Updated upstream
-    <building>
-      <ai_combatDangerous>true</ai_combatDangerous>
-      <turretTopDrawSize>5</turretTopDrawSize>
-      <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間
-      ================-->
-      <turretBurstCooldownTime>5.0</turretBurstCooldownTime>
-    </building>
-	<damageMultipliers>
-=======
 	  <damageMultipliers>
->>>>>>> Stashed changes
 		  <li>
 			<damageDef>EMP</damageDef>
 			<multiplier>0</multiplier>
@@ -59,13 +51,15 @@
 				<damageDef>Electrical</damageDef>
 				<multiplier>0</multiplier>
 		  </li>
-	</damageMultipliers>
+	  </damageMultipliers>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
-      <li>PlaceWorker_ShowTurretRadius</li>
-	  <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+	    <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
     <uiIconScale>1.1</uiIconScale>
+  </ThingDef>
+
+  <ThingDef Name="FT_BaseCannonBuilding_Mobile" ParentName="FT_BaseCannonBuilding" Abstract="True">
     <minifiedDef>MinifiedThing</minifiedDef>  <!--================可攜帶性
     ================-->
     <thingCategories>
@@ -81,36 +75,28 @@
     </building>
   </ThingDef>
 
-<<<<<<< Updated upstream
-=======
   <!--<DesignatorDropdownGroupDef>
     <defName>FT_AA</defName>
     <label>anti air</label>
   </DesignatorDropdownGroupDef>-->
->>>>>>> Stashed changes
 
-  <ThingDef ParentName="FT_BaseCannonBuilding">
+  <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
     <defName>FT_TurretAA</defName>
     <label>Anti Air Gun</label>
     <description>A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field.</description>
-<<<<<<< Updated upstream
-    <techLevel>Industrial</techLevel>
-=======
     <!--<designatorDropdown>FT_AA</designatorDropdown>-->
     <uiIconPath>ATGun/FT_AntiAirGun</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
->>>>>>> Stashed changes
     <graphicData>
-		<texPath>ATGun/FT_AntiAirGun_Base</texPath>
-		<graphicClass>Graphic_Multi</graphicClass>
+      <texPath>ATGun/FT_AntiAirGun_Base</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(3.25,3.25)</drawSize>
       <drawOffset>(0,0,0)</drawOffset>
     </graphicData>
     <size>(3,3)</size>
-	<interactionCellOffset>(1,0,-1)</interactionCellOffset>
+	  <interactionCellOffset>(1,0,-1)</interactionCellOffset><!--操作點在右下方-->
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <statBases>   <!--================血量與重量工作量
-      ================-->
+    <statBases>   <!--================血量與重量工作量================-->
       <MaxHitPoints>750</MaxHitPoints>
       <Flammability>0.5</Flammability>
       <WorkToBuild>3000</WorkToBuild>
@@ -139,25 +125,24 @@
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
-		<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-		<initialConfigurableTargetFuelLevel>120</initialConfigurableTargetFuelLevel>
-		<autoRefuelPercent>100</autoRefuelPercent>
+		    <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+		    <initialConfigurableTargetFuelLevel>120</initialConfigurableTargetFuelLevel>
+		    <autoRefuelPercent>100</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
-	  <li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
-		<randomGraphics>
-			<li>ATGun/FT_AntiAirGun_Base</li>
-			<li>ATGun/FT_AntiTankGun_Base</li>
-			<li>ATGun/FT_AntiTankGun_Base_Sec</li>
-			<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_AA</li>
-		</randomGraphics>
+	    <li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+		  <randomGraphics>
+        <li>ATGun/FT_AntiAirGun_Base</li>
+        <li>ATGun/FT_AntiTankGun_Base</li>
+        <li>ATGun/FT_AntiTankGun_Base_Sec</li>
+        <li>FT_ConcreteArtilleryBase/TurretArtillery_Base_AA</li>
+      </randomGraphics>
 	  </li>
     </comps>
     <building>
       <turretGunDef>FT_Gun_TurretAA</turretGunDef>
       <turretTopDrawSize>4</turretTopDrawSize>
-      <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間
-      ================-->
+      <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
       <turretBurstCooldownTime>5.0</turretBurstCooldownTime>
       <buildingTags>
         <li>Artillery_MannedMortar</li>
@@ -172,8 +157,6 @@
     <researchPrerequisites>
       <li>FT_IndustrialCannon</li>
     </researchPrerequisites>
-    <uiIconPath>ATGun/FT_AntiAirGun</uiIconPath>
-    <uiIconScale>1.2</uiIconScale>
   </ThingDef>
 
   <ThingDef ParentName="BaseWeaponTurret">
@@ -199,7 +182,7 @@
         <isMortar>false</isMortar>
         <warmupTime>1</warmupTime>
         <minRange>3.9</minRange>
-        <range>45</range>
+        <range>65</range>
         <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
         <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
         <burstShotCount>6</burstShotCount>
@@ -210,23 +193,19 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-		<forcedMissRadius>0.1</forcedMissRadius>
+		    <forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
   </ThingDef>
 
 
-  <ThingDef ParentName="FT_BaseCannonBuilding">
+  <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
     <defName>FT_TurretQuadAA</defName>
     <label>Quad Anti Air Gun</label>
     <description>A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field.</description>
-<<<<<<< Updated upstream
-    <techLevel>Industrial</techLevel>
-=======
     <!--<designatorDropdown>FT_AA</designatorDropdown>-->
     <uiIconPath>ATGun/FT_AntiAirGun_Vierling</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
->>>>>>> Stashed changes
     <graphicData>
       <texPath>InfantryTurret/FT_HexMortarBase</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -234,10 +213,9 @@
       <drawOffset>(0,0,0)</drawOffset>
     </graphicData>
     <size>(3,3)</size>
-	<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+	  <interactionCellOffset>(0,0,-1)</interactionCellOffset><!--操作點在下方-->
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <statBases>   <!--================血量與重量工作量
-      ================-->
+    <statBases>   <!--================血量與重量工作量================-->
       <MaxHitPoints>750</MaxHitPoints>
       <Flammability>0.45</Flammability>
       <WorkToBuild>7000</WorkToBuild>
@@ -266,25 +244,24 @@
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
-		<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-		<initialConfigurableTargetFuelLevel>480</initialConfigurableTargetFuelLevel>
-		<autoRefuelPercent>100</autoRefuelPercent>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+        <initialConfigurableTargetFuelLevel>480</initialConfigurableTargetFuelLevel>
+        <autoRefuelPercent>100</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
-	  <li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
-		<randomGraphics>
-			<li>ATGun/FT_AntiAirGun_Base</li>
-			<li>InfantryTurret/FT_HexMortarBase</li>
-			<li>InfantryTurret/FT_HexMortarBase_Sec</li>
-			<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_AA</li>
-		</randomGraphics>
+      <li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+      <randomGraphics>
+        <li>ATGun/FT_AntiAirGun_Base</li>
+        <li>InfantryTurret/FT_HexMortarBase</li>
+        <li>InfantryTurret/FT_HexMortarBase_Sec</li>
+        <li>FT_ConcreteArtilleryBase/TurretArtillery_Base_AA</li>
+      </randomGraphics>
 	  </li>
     </comps>
     <building>
       <turretGunDef>FT_Gun_TurretQuadAA</turretGunDef>
       <turretTopDrawSize>4</turretTopDrawSize>
-      <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間
-      ================-->
+      <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
       <turretBurstCooldownTime>5.0</turretBurstCooldownTime>
       <buildingTags>
         <li>Artillery_MannedMortar</li>
@@ -299,8 +276,6 @@
     <researchPrerequisites>
       <li>FT_IndustrialCannon</li>
     </researchPrerequisites>
-    <uiIconPath>ATGun/FT_AntiAirGun_Vierling</uiIconPath>
-    <uiIconScale>1.2</uiIconScale>
   </ThingDef>
 
   <ThingDef ParentName="BaseWeaponTurret">
@@ -326,7 +301,7 @@
         <isMortar>false</isMortar>
         <warmupTime>1.2</warmupTime>
         <minRange>3.9</minRange>
-        <range>45</range>
+        <range>75</range>
         <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
         <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
         <burstShotCount>16</burstShotCount>
@@ -394,13 +369,6 @@
   </ThingDef>
 
 
-<<<<<<< Updated upstream
-  <ThingDef ParentName="FT_BaseCannonBuilding">
-    <defName>FT_TurretAT</defName>
-    <label>Anti Tank Gun</label>
-    <description>A manned rifle cannon that launches solid metal shells.It is accurate makes it useful for attacking groups of enemies in the field or sniping the small fortifications.</description>
-    <techLevel>Industrial</techLevel>
-=======
   <!--<DesignatorDropdownGroupDef>
     <defName>FT_AT</defName>
     <label>anti tanks</label>
@@ -413,7 +381,6 @@
     <!--<designatorDropdown>FT_AT</designatorDropdown>-->
     <uiIconPath>ATGun/FT_AntiTankGun</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
->>>>>>> Stashed changes
     <graphicData>
       <texPath>ATGun/FT_AntiTankGun_Base</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -422,8 +389,7 @@
     </graphicData>
     <size>(3,3)</size>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <statBases>   <!--================血量與重量工作量
-      ================-->
+    <statBases>   <!--================血量與重量工作量================-->
       <MaxHitPoints>750</MaxHitPoints>
       <Flammability>0.5</Flammability>
       <WorkToBuild>1000</WorkToBuild>
@@ -445,32 +411,31 @@
           </thingDefs>
         </fuelFilter>
         <fuelIsMortarBarrel>true</fuelIsMortarBarrel>
-		<fuelCapacity>40</fuelCapacity>    <!-- 40 burst -->
-		<fuelMultiplier>20</fuelMultiplier><!-- 1 barrel=20 ammo -->
+        <fuelCapacity>40</fuelCapacity>    <!-- 40 burst -->
+        <fuelMultiplier>20</fuelMultiplier><!-- 1 barrel=20 ammo -->
         <initialFuelPercent>1</initialFuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
-		<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-		<initialConfigurableTargetFuelLevel>40</initialConfigurableTargetFuelLevel>
-		<autoRefuelPercent>100</autoRefuelPercent>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+        <initialConfigurableTargetFuelLevel>40</initialConfigurableTargetFuelLevel>
+        <autoRefuelPercent>100</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
-	  <li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
-		<randomGraphics>
-			<li>ATGun/FT_AntiTankGun_Base</li>
-			<li>ATGun/FT_AntiTankGun_Base_Sec</li>
-			<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Heavy</li>
-			<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Wheel_Sec</li>
-		</randomGraphics>
-	  </li>
+      <li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+      <randomGraphics>
+        <li>ATGun/FT_AntiTankGun_Base</li>
+        <li>ATGun/FT_AntiTankGun_Base_Sec</li>
+        <li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Heavy</li>
+        <li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Wheel_Sec</li>
+      </randomGraphics>
+      </li>
     </comps>
     <building>
       <turretGunDef>FT_Gun_TurretAT</turretGunDef>
       <turretTopDrawSize>4</turretTopDrawSize>
-      <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間
-      ================-->
+      <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
       <turretBurstCooldownTime>5.0</turretBurstCooldownTime>
       <buildingTags>
         <li>Artillery_MannedMortar</li>
@@ -485,8 +450,6 @@
     <researchPrerequisites>
       <li>FT_IndustrialCannon</li>
     </researchPrerequisites>
-    <uiIconPath>ATGun/FT_AntiTankGun</uiIconPath>
-    <uiIconScale>1.2</uiIconScale>
   </ThingDef>
 
   <ThingDef ParentName="BaseWeaponTurret">
@@ -522,7 +485,7 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-		<forcedMissRadius>0.1</forcedMissRadius>
+		    <forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
   </ThingDef>
@@ -577,16 +540,13 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="BaseArtilleryBuilding">
+  <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
     <defName>FT_Turret_Mortar</defName>
     <label>infantry mortar</label>
     <description>A light-weighted mortar that launches all kinds of shells. Improved firing speed with a simplified design, but inaccurate, useful for attacking large fortifications than groups of enemies in the field.</description>
-<<<<<<< Updated upstream
-=======
     <!--<designatorDropdown>FT_MT</designatorDropdown>-->	
     <uiIconPath>FT_Mortar_Icon</uiIconPath>
     <uiIconScale>0.9</uiIconScale>
->>>>>>> Stashed changes
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>FT_MortarBase</texPath>
@@ -601,22 +561,13 @@
       </shadowData>
     </graphicData>
     <size>(1,1)</size>
-    <costStuffCount>15</costStuffCount>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <costList>
-      <Steel>5</Steel>
+      <Steel>20</Steel>
       <ComponentIndustrial>2</ComponentIndustrial>
       <ReinforcedBarrel>1</ReinforcedBarrel>
     </costList>
-    <costListForDifficulty>
-      <difficultyVar>classicMortars</difficultyVar>
-      <invert>true</invert>
-      <costList>
-        <ComponentIndustrial>2</ComponentIndustrial>
-        <ReinforcedBarrel>1</ReinforcedBarrel>
-      </costList>
-      <costStuffCount>30</costStuffCount>
-    </costListForDifficulty>
+	  <interactionCellOffset>(1,0,0)</interactionCellOffset><!--操作點在右方-->
     <statBases>
       <MaxHitPoints>150</MaxHitPoints>
       <Flammability>0.7</Flammability>
@@ -624,6 +575,9 @@
       <Mass>8</Mass>
       <Beauty>-1</Beauty>
     </statBases>
+		<inspectorTabs>
+			<li>ITab_Shells</li>
+		</inspectorTabs>
     <comps>
       <li Class="CompProperties_Explosive">
         <wickTicks>240</wickTicks>
@@ -647,9 +601,9 @@
         <minimumFueledThreshold>1</minimumFueledThreshold>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
-		<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-		<initialConfigurableTargetFuelLevel>50</initialConfigurableTargetFuelLevel>
-		<autoRefuelPercent>100</autoRefuelPercent>
+		    <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+		    <initialConfigurableTargetFuelLevel>50</initialConfigurableTargetFuelLevel>
+		    <autoRefuelPercent>100</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
     </comps>
@@ -659,43 +613,19 @@
       <turretTopDrawSize>1.5</turretTopDrawSize>
       <turretBurstWarmupTime>2.0</turretBurstWarmupTime>
       <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
-      <!-- <buildingTags> -->
-      <!-- <li>Artillery_BaseDestroyer</li> -->
-      <!-- <li>Artillery_MannedMortar</li> -->
-      <!-- </buildingTags> -->
+      <buildingTags>
+        <li>Artillery_BaseDestroyer</li>
+      </buildingTags>
     </building>
-<<<<<<< Updated upstream
-    <uiIconPath>FT_Mortar_Icon</uiIconPath>
-    <uiIconScale>0.9</uiIconScale>
-	<damageMultipliers>
-		  <li>
-			<damageDef>EMP</damageDef>
-			<multiplier>0</multiplier>
-		  </li>
-		  <li>
-			<damageDef>Stun</damageDef>
-			<multiplier>0</multiplier>
-		  </li>
-		  <li MayRequire="Ludeon.RimWorld.Biotech">
-				<damageDef>MechBandShockwave</damageDef>
-				<multiplier>0</multiplier>
-		  </li>
-		  <li MayRequire="CETeam.CombatExtended">
-				<damageDef>Electrical</damageDef>
-				<multiplier>0</multiplier>
-		  </li>
-	</damageMultipliers>
-=======
 	<researchPrerequisites>
 		<li>Mortars</li>
 	</researchPrerequisites>
->>>>>>> Stashed changes
   </ThingDef>
 
-  <ThingDef ParentName="BaseArtilleryWeapon">
+  <ThingDef ParentName="BaseWeaponTurret">
     <defName>FT_Artillery_Mortar</defName>
     <label>mortar</label>
-    <description>Mortar launcher. Lobs bombs over walls. Very inaccurate but long-ranged.</description>
+    <description>Mortar launcher. Lobs bombs over walls. accurate but short-ranged.</description>
     <recoilPower>3</recoilPower>
     <graphicData>
       <texPath>FT_MortarGun</texPath>
@@ -703,6 +633,7 @@
     </graphicData>
     <weaponTags>
       <li>Artillery_BaseDestroyer</li>
+      <li>TurretGun</li>
     </weaponTags>
     <verbs>
       <li>
@@ -714,7 +645,7 @@
         <isMortar>true</isMortar>
         <requireLineOfSight>false</requireLineOfSight>
         <minRange>9.9</minRange>
-        <range>500</range>
+        <range>100</range>
         <burstShotCount>1</burstShotCount>
         <soundCast>Mortar_LaunchA</soundCast>
         <muzzleFlashScale>16</muzzleFlashScale>
@@ -749,70 +680,7 @@
     </building>
   </ThingDef>
 
-  <ThingDef Name="FT_MannedTurret" ParentName="BuildingBase" Abstract="True">
-    <thingClass>Building_TurretGun</thingClass>
-    <drawerType>MapMeshAndRealTime</drawerType>
-    <techLevel>Industrial</techLevel>
-    <uiIconPath>InfantryTurret/FT_QuadMaximGun_icon</uiIconPath>
-    <uiIconScale>1.2</uiIconScale>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <!--<altitudeLayer>BuildingBelowTop</altitudeLayer>-->
-	<altitudeLayer>Building</altitudeLayer>
-    <stealable>false</stealable>
-    <rotatable>true</rotatable>
-    <thingCategories>
-      <li>BuildingsSecurity</li>
-    </thingCategories>
-    <tickerType>Normal</tickerType>
-    <comps>
-      <li Class="CompProperties_Mannable">
-        <manWorkType>Violent</manWorkType>
-      </li>
-      <li Class="CompProperties_Forbiddable" />
-    </comps>
-    <passability>PassThroughOnly</passability>
-    <pathCost>50</pathCost>
-    <fillPercent>0.4</fillPercent>
-    <hasTooltip>true</hasTooltip>
-    <designationCategory>Security</designationCategory>
-    <hasInteractionCell>true</hasInteractionCell>
-	<damageMultipliers>
-		  <li>
-			<damageDef>EMP</damageDef>
-			<multiplier>0</multiplier>
-		  </li>
-		  <li>
-			<damageDef>Stun</damageDef>
-			<multiplier>0</multiplier>
-		  </li>
-		  <li MayRequire="Ludeon.RimWorld.Biotech">
-				<damageDef>MechBandShockwave</damageDef>
-				<multiplier>0</multiplier>
-		  </li>
-		  <li MayRequire="CETeam.CombatExtended">
-				<damageDef>Electrical</damageDef>
-				<multiplier>0</multiplier>
-		  </li>
-	</damageMultipliers>
-    <placeWorkers>
-		<li>PlaceWorker_TurretTop</li>
-		<li>PlaceWorker_PreventInteractionSpotOverlap</li>
-		<!--<li>AOBAUtilities.PlaceWorker_Emplacement</li>
-		<li>AOBAUtilities.PlaceWorker_NoAltitudeLayerOccupy</li>
-		<li>PlaceWorker_NeverAdjacentSameDef</li>-->
-    </placeWorkers>
-	<!--<building>
-	    <canPlaceOverWall>false</canPlaceOverWall>
-        <isEdifice>false</isEdifice>
-	</building>-->
-  </ThingDef>
 
-<<<<<<< Updated upstream
-  <ThingDef ParentName="FT_MannedTurret">
-    <defName>FT_Maxim4M</defName>
-    <label>Quad Machine gun</label>
-    <description>A Tripod with Quadruple machine gun mounted so it Have a good firepower continuity,need a pawn man on it to operate. Requires steel to refurbish its barrels after heavy use.</description>
-=======
   <!--<DesignatorDropdownGroupDef>
     <defName>FT_MG</defName>
     <label>machine guns</label>
@@ -825,7 +693,6 @@
     <!--<designatorDropdown>FT_MG</designatorDropdown>-->
     <uiIconPath>InfantryTurret/FT_QuadMaximGun_icon</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
->>>>>>> Stashed changes
     <graphicData>
       <texPath>InfantryTurret/FT_Tripod</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -839,13 +706,6 @@
         <offset>(0,0,0)</offset>
       </shadowData>
     </graphicData>
-    <techLevel>Industrial</techLevel>
-    <uiIconPath>InfantryTurret/FT_QuadMaximGun_icon</uiIconPath>
-    <uiIconScale>1.2</uiIconScale>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <altitudeLayer>Building</altitudeLayer>
-    <stealable>false</stealable>
-    <rotatable>true</rotatable>
     <statBases>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0.7</Flammability>
@@ -872,9 +732,9 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>
         <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
-		<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-		<initialConfigurableTargetFuelLevel>960</initialConfigurableTargetFuelLevel>
-		<autoRefuelPercent>100</autoRefuelPercent>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+        <initialConfigurableTargetFuelLevel>960</initialConfigurableTargetFuelLevel>
+        <autoRefuelPercent>100</autoRefuelPercent>
       </li>
     </comps>
     <costList>
@@ -929,16 +789,13 @@
     </verbs>
   </ThingDef>
 
-  <ThingDef ParentName="FT_MannedTurret">
+  <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
     <defName>FT_AutoCannon</defName>
-    <label>Auto Cannon</label>
+    <label>autocannon</label>
     <description>A Tripod with high caliber machine gun mounted. Requires steel to refurbish its barrels after heavy use.it needs a pawn to man on it to operate.</description>
-<<<<<<< Updated upstream
-=======
     <!--<designatorDropdown>FT_MG</designatorDropdown>-->
     <uiIconPath>InfantryTurret/FT_AutoCannonGun_icon</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
->>>>>>> Stashed changes
     <graphicData>
       <texPath>InfantryTurret/FT_Tripod</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -952,11 +809,6 @@
         <offset>(0,0,0)</offset>
       </shadowData>
     </graphicData>
-    <techLevel>Industrial</techLevel>
-    <uiIconPath>InfantryTurret/FT_AutoCannonGun_icon</uiIconPath>
-    <uiIconScale>1.2</uiIconScale>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <altitudeLayer>Building</altitudeLayer>
     <statBases>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0.7</Flammability>
@@ -994,9 +846,9 @@
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>
         <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
-		<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-		<initialConfigurableTargetFuelLevel>120</initialConfigurableTargetFuelLevel>
-		<autoRefuelPercent>100</autoRefuelPercent>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+        <initialConfigurableTargetFuelLevel>120</initialConfigurableTargetFuelLevel>
+        <autoRefuelPercent>100</autoRefuelPercent>
       </li>
     </comps>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
@@ -1040,18 +892,13 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="FT_MannedTurret">
+  <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
     <defName>FT_RecoillessGun</defName>
     <label>Recoilless Gun</label>
-<<<<<<< Updated upstream
-    <description>A Tripod with Recoilless gun mounted.A light-weighted soloution of anti armour operation, Requires ReinforcedBarrel to refurbish its barrels after heavy use. also it needs a pawn to man on it to operate.
-      But notice, do not use it indoors!!</description>
-=======
     <description>A Tripod with Recoilless gun mounted.A light-weighted soloution of anti armour operation, Requires ReinforcedBarrel to refurbish its barrels after heavy use. also it needs a pawn to man on it to operate. But notice, do not use it indoors!!</description>
     <!--<designatorDropdown>FT_AT</designatorDropdown>-->
     <uiIconPath>InfantryTurret/FT_RecoillessGun_icon</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
->>>>>>> Stashed changes
     <graphicData>
       <texPath>InfantryTurret/FT_Tripod</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1065,11 +912,6 @@
         <offset>(0,0,0)</offset>
       </shadowData>
     </graphicData>
-    <techLevel>Industrial</techLevel>
-    <uiIconPath>InfantryTurret/FT_RecoillessGun_icon</uiIconPath>
-    <uiIconScale>1.2</uiIconScale>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <altitudeLayer>Building</altitudeLayer>
     <statBases>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0.7</Flammability>
@@ -1087,8 +929,8 @@
             <li>ReinforcedBarrel</li>
           </thingDefs>
         </fuelFilter>
-		<fuelCapacity>20</fuelCapacity>    <!-- 20 burst -->
-		<fuelMultiplier>20</fuelMultiplier><!-- 1 barrel=20 ammo -->
+		    <fuelCapacity>20</fuelCapacity>    <!-- 20 burst -->
+		    <fuelMultiplier>20</fuelMultiplier><!-- 1 barrel=20 ammo -->
         <initialFuelPercent>1</initialFuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
@@ -1097,29 +939,20 @@
         <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>
         <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
 				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-		<initialConfigurableTargetFuelLevel>20</initialConfigurableTargetFuelLevel>
-		<autoRefuelPercent>100</autoRefuelPercent>
+		    <initialConfigurableTargetFuelLevel>20</initialConfigurableTargetFuelLevel>
+		    <autoRefuelPercent>100</autoRefuelPercent>
       </li>
     </comps>
-<<<<<<< Updated upstream
-    <passability>PassThroughOnly</passability>
-    <pathCost>50</pathCost>
-    <fillPercent>0.4</fillPercent>
-    <hasTooltip>true</hasTooltip>
-=======
     <interactionCellOffset>(-1,0,-1)</interactionCellOffset>
->>>>>>> Stashed changes
     <costList>
       <Steel>150</Steel>
       <ReinforcedBarrel>1</ReinforcedBarrel>
       <ComponentIndustrial>5</ComponentIndustrial>
     </costList>
-    <interactionCellOffset>(-1,0,-1)</interactionCellOffset>
     <building>
       <turretGunDef>FT_Gun_Recoilless</turretGunDef>
       <turretTopDrawSize>2.5</turretTopDrawSize>
-      <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間
-      ================-->
+      <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
       <turretBurstCooldownTime>10.0</turretBurstCooldownTime>
     </building>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
@@ -1167,12 +1000,9 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-		<forcedMissRadius>0.1</forcedMissRadius>
+		    <forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
   </ThingDef>
-<<<<<<< Updated upstream
-=======
   
->>>>>>> Stashed changes
 </Defs>	

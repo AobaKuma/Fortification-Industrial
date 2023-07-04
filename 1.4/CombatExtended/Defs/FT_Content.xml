@@ -5,6 +5,10 @@
 		<defName>FT_TurretAT_Plus</defName>
 		<label>76mm anti-tank gun</label>
 		<description>A direct-fire cannon with capability to destroy a heavy armed vehicle.</description>
+<<<<<<< Updated upstream
+=======
+    	<!--<designatorDropdown>FT_AT</designatorDropdown>-->
+>>>>>>> Stashed changes
 		<techLevel>Industrial</techLevel>
 		<graphicData>
 			<texPath>InfantryTurret/FT_HexMortarBase</texPath>
@@ -37,11 +41,11 @@
 			<li>FT_HeavyArtillery</li>
 		</researchPrerequisites>
 		<comps>
-			<li Class="CompProperties_Explosive">
+			<!--<li Class="CompProperties_Explosive">
 				<wickTicks>240</wickTicks>
 				<explosiveRadius>4.9</explosiveRadius>
 				<explosiveDamageType>Bomb</explosiveDamageType>
-			</li>
+			</li>-->
 			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Mannable">
 				<manWorkType>Violent</manWorkType>
@@ -147,6 +151,10 @@
 		<defName>FT_TurretAutoCannon_</defName>
 		<label>20mm anti-air gun</label>
 		<description>A rapid-fire cannon with capability to shoot down aircraft.</description>
+<<<<<<< Updated upstream
+=======
+    	<!--<designatorDropdown>FT_MG</designatorDropdown>-->
+>>>>>>> Stashed changes
 		<techLevel>Industrial</techLevel>
 		<graphicData>
 			<texPath>InfantryTurret/FT_WheeledTripod</texPath>

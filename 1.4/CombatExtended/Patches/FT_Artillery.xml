@@ -79,6 +79,13 @@
 						<label>60mm mortar</label>
 					</value>
 				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="FT_TurretHexMortar"]/fillPercent</xpath>
+					<value>
+						<fillPercent>0.85</fillPercent>
+					</value>
+				</li>
 
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="FT_Artillery_Mortar"]</xpath>

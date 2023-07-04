@@ -31,6 +31,7 @@
         <manWorkType>Violent</manWorkType>
       </li>
     </comps>
+<<<<<<< Updated upstream
     <building>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretTopDrawSize>5</turretTopDrawSize>
@@ -39,6 +40,9 @@
       <turretBurstCooldownTime>5.0</turretBurstCooldownTime>
     </building>
 	<damageMultipliers>
+=======
+	  <damageMultipliers>
+>>>>>>> Stashed changes
 		  <li>
 			<damageDef>EMP</damageDef>
 			<multiplier>0</multiplier>
@@ -70,14 +74,32 @@
     <statBases>
       <Mass>150</Mass>
     </statBases>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
+      <turretBurstCooldownTime>3.0</turretBurstCooldownTime>
+    </building>
   </ThingDef>
 
+<<<<<<< Updated upstream
+=======
+  <!--<DesignatorDropdownGroupDef>
+    <defName>FT_AA</defName>
+    <label>anti air</label>
+  </DesignatorDropdownGroupDef>-->
+>>>>>>> Stashed changes
 
   <ThingDef ParentName="FT_BaseCannonBuilding">
     <defName>FT_TurretAA</defName>
     <label>Anti Air Gun</label>
     <description>A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field.</description>
+<<<<<<< Updated upstream
     <techLevel>Industrial</techLevel>
+=======
+    <!--<designatorDropdown>FT_AA</designatorDropdown>-->
+    <uiIconPath>ATGun/FT_AntiAirGun</uiIconPath>
+    <uiIconScale>1.2</uiIconScale>
+>>>>>>> Stashed changes
     <graphicData>
 		<texPath>ATGun/FT_AntiAirGun_Base</texPath>
 		<graphicClass>Graphic_Multi</graphicClass>
@@ -198,7 +220,13 @@
     <defName>FT_TurretQuadAA</defName>
     <label>Quad Anti Air Gun</label>
     <description>A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field.</description>
+<<<<<<< Updated upstream
     <techLevel>Industrial</techLevel>
+=======
+    <!--<designatorDropdown>FT_AA</designatorDropdown>-->
+    <uiIconPath>ATGun/FT_AntiAirGun_Vierling</uiIconPath>
+    <uiIconScale>1.2</uiIconScale>
+>>>>>>> Stashed changes
     <graphicData>
       <texPath>InfantryTurret/FT_HexMortarBase</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -366,11 +394,26 @@
   </ThingDef>
 
 
+<<<<<<< Updated upstream
   <ThingDef ParentName="FT_BaseCannonBuilding">
     <defName>FT_TurretAT</defName>
     <label>Anti Tank Gun</label>
     <description>A manned rifle cannon that launches solid metal shells.It is accurate makes it useful for attacking groups of enemies in the field or sniping the small fortifications.</description>
     <techLevel>Industrial</techLevel>
+=======
+  <!--<DesignatorDropdownGroupDef>
+    <defName>FT_AT</defName>
+    <label>anti tanks</label>
+  </DesignatorDropdownGroupDef>-->
+
+  <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
+    <defName>FT_TurretAT</defName>
+    <label>Anti Tank Gun</label>
+    <description>A manned rifle cannon that launches solid metal shells.It is accurate makes it useful for attacking groups of enemies in the field or sniping the small fortifications.</description>
+    <!--<designatorDropdown>FT_AT</designatorDropdown>-->
+    <uiIconPath>ATGun/FT_AntiTankGun</uiIconPath>
+    <uiIconScale>1.2</uiIconScale>
+>>>>>>> Stashed changes
     <graphicData>
       <texPath>ATGun/FT_AntiTankGun_Base</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -538,6 +581,12 @@
     <defName>FT_Turret_Mortar</defName>
     <label>infantry mortar</label>
     <description>A light-weighted mortar that launches all kinds of shells. Improved firing speed with a simplified design, but inaccurate, useful for attacking large fortifications than groups of enemies in the field.</description>
+<<<<<<< Updated upstream
+=======
+    <!--<designatorDropdown>FT_MT</designatorDropdown>-->	
+    <uiIconPath>FT_Mortar_Icon</uiIconPath>
+    <uiIconScale>0.9</uiIconScale>
+>>>>>>> Stashed changes
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>FT_MortarBase</texPath>
@@ -615,6 +664,7 @@
       <!-- <li>Artillery_MannedMortar</li> -->
       <!-- </buildingTags> -->
     </building>
+<<<<<<< Updated upstream
     <uiIconPath>FT_Mortar_Icon</uiIconPath>
     <uiIconScale>0.9</uiIconScale>
 	<damageMultipliers>
@@ -635,6 +685,11 @@
 				<multiplier>0</multiplier>
 		  </li>
 	</damageMultipliers>
+=======
+	<researchPrerequisites>
+		<li>Mortars</li>
+	</researchPrerequisites>
+>>>>>>> Stashed changes
   </ThingDef>
 
   <ThingDef ParentName="BaseArtilleryWeapon">
@@ -752,10 +807,25 @@
 	</building>-->
   </ThingDef>
 
+<<<<<<< Updated upstream
   <ThingDef ParentName="FT_MannedTurret">
     <defName>FT_Maxim4M</defName>
     <label>Quad Machine gun</label>
     <description>A Tripod with Quadruple machine gun mounted so it Have a good firepower continuity,need a pawn man on it to operate. Requires steel to refurbish its barrels after heavy use.</description>
+=======
+  <!--<DesignatorDropdownGroupDef>
+    <defName>FT_MG</defName>
+    <label>machine guns</label>
+  </DesignatorDropdownGroupDef>-->
+
+  <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
+    <defName>FT_Maxim4M</defName>
+    <label>Quad Machine gun</label>
+    <description>A Tripod with Quadruple machine gun mounted so it Have a good firepower continuity,need a pawn man on it to operate. Requires steel to refurbish its barrels after heavy use.</description>
+    <!--<designatorDropdown>FT_MG</designatorDropdown>-->
+    <uiIconPath>InfantryTurret/FT_QuadMaximGun_icon</uiIconPath>
+    <uiIconScale>1.2</uiIconScale>
+>>>>>>> Stashed changes
     <graphicData>
       <texPath>InfantryTurret/FT_Tripod</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -807,7 +877,6 @@
 		<autoRefuelPercent>100</autoRefuelPercent>
       </li>
     </comps>
-    <fillPercent>0.4</fillPercent>
     <costList>
       <Steel>80</Steel>
       <ComponentIndustrial>8</ComponentIndustrial>
@@ -864,6 +933,12 @@
     <defName>FT_AutoCannon</defName>
     <label>Auto Cannon</label>
     <description>A Tripod with high caliber machine gun mounted. Requires steel to refurbish its barrels after heavy use.it needs a pawn to man on it to operate.</description>
+<<<<<<< Updated upstream
+=======
+    <!--<designatorDropdown>FT_MG</designatorDropdown>-->
+    <uiIconPath>InfantryTurret/FT_AutoCannonGun_icon</uiIconPath>
+    <uiIconScale>1.2</uiIconScale>
+>>>>>>> Stashed changes
     <graphicData>
       <texPath>InfantryTurret/FT_Tripod</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -968,8 +1043,15 @@
   <ThingDef ParentName="FT_MannedTurret">
     <defName>FT_RecoillessGun</defName>
     <label>Recoilless Gun</label>
+<<<<<<< Updated upstream
     <description>A Tripod with Recoilless gun mounted.A light-weighted soloution of anti armour operation, Requires ReinforcedBarrel to refurbish its barrels after heavy use. also it needs a pawn to man on it to operate.
       But notice, do not use it indoors!!</description>
+=======
+    <description>A Tripod with Recoilless gun mounted.A light-weighted soloution of anti armour operation, Requires ReinforcedBarrel to refurbish its barrels after heavy use. also it needs a pawn to man on it to operate. But notice, do not use it indoors!!</description>
+    <!--<designatorDropdown>FT_AT</designatorDropdown>-->
+    <uiIconPath>InfantryTurret/FT_RecoillessGun_icon</uiIconPath>
+    <uiIconScale>1.2</uiIconScale>
+>>>>>>> Stashed changes
     <graphicData>
       <texPath>InfantryTurret/FT_Tripod</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1019,10 +1101,14 @@
 		<autoRefuelPercent>100</autoRefuelPercent>
       </li>
     </comps>
+<<<<<<< Updated upstream
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
     <fillPercent>0.4</fillPercent>
     <hasTooltip>true</hasTooltip>
+=======
+    <interactionCellOffset>(-1,0,-1)</interactionCellOffset>
+>>>>>>> Stashed changes
     <costList>
       <Steel>150</Steel>
       <ReinforcedBarrel>1</ReinforcedBarrel>
@@ -1085,4 +1171,8 @@
       </li>
     </verbs>
   </ThingDef>
+<<<<<<< Updated upstream
+=======
+  
+>>>>>>> Stashed changes
 </Defs>	

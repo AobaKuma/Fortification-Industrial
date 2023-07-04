@@ -49,6 +49,7 @@
 					<xpath>Defs/ThingDef[defName="FT_TurretHexMortar"]/fillPercent</xpath>
 					<value>
 						<fillPercent>0.85</fillPercent>
+
 					</value>
 				</li>
 

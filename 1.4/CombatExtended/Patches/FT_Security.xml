@@ -9,8 +9,9 @@
       <operations>
 
         <!-- === Common === -->
-		
+
 		<!--thingClass修改為CE砲塔-->
+
         <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[@Name="FT_BaseCannonBuilding" or @Name="FT_MGNest"]/thingClass</xpath>
           <value>
@@ -67,16 +68,12 @@
       </li>
 
         <!--刪除受損爆炸-->    <!--刪除原版裝填-->    <!--刪除原版子彈-->
+
         <li Class="PatchOperationRemove">
           <xpath>
             Defs/ThingDef[defName="FT_TurretQuadAA" or defName="FT_TurretAA" or
             defName="FT_TurretAT"]/comps/li[@Class="CompProperties_Explosive"] |
-			
-            Defs/ThingDef[defName="FT_TurretQuadAA" or defName="FT_TurretAA" or
-            defName="FT_TurretAT" or @Name="FT_MGNest" or defName="FT_Maxim4M" or
-            defName="FT_AutoCannon" or
-            defName="FT_RecoillessGun"]/comps/li[@Class="CompProperties_Refuelable"] |
-			
+
             Defs/ThingDef[defName="FT_Bullet_AAShell" or defName="FT_Bullet_ATShell"]
           </xpath>
         </li>
@@ -89,7 +86,7 @@
             Defs/ThingDef[defName="FT_Turret_Mortar"]/inspectorTabs
           </xpath>
         </li>
-		
+
 
         <!-- === Turrets === -->
 
@@ -211,6 +208,7 @@
         </li>
 
         <!-- === MG Nests === -->
+
         <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
           <defName>FT_Gun_MG</defName>
           <statBases>
@@ -340,7 +338,7 @@
             <li>TurretGun</li>
           </weaponTags>
         </li>
-
+        
         <!-- Autocannon -->
         <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
           <defName>FT_Gun_Autocannon</defName>

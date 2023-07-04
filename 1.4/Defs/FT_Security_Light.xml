@@ -75,16 +75,11 @@
     </building>
   </ThingDef>
 
-  <!--<DesignatorDropdownGroupDef>
-    <defName>FT_AA</defName>
-    <label>anti air</label>
-  </DesignatorDropdownGroupDef>-->
 
   <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
     <defName>FT_TurretAA</defName>
     <label>Anti Air Gun</label>
     <description>A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field.</description>
-    <!--<designatorDropdown>FT_AA</designatorDropdown>-->
     <uiIconPath>ATGun/FT_AntiAirGun</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
     <graphicData>
@@ -203,7 +198,6 @@
     <defName>FT_TurretQuadAA</defName>
     <label>Quad Anti Air Gun</label>
     <description>A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field.</description>
-    <!--<designatorDropdown>FT_AA</designatorDropdown>-->
     <uiIconPath>ATGun/FT_AntiAirGun_Vierling</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
     <graphicData>
@@ -369,16 +363,10 @@
   </ThingDef>
 
 
-  <!--<DesignatorDropdownGroupDef>
-    <defName>FT_AT</defName>
-    <label>anti tanks</label>
-  </DesignatorDropdownGroupDef>-->
-
   <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
     <defName>FT_TurretAT</defName>
     <label>Anti Tank Gun</label>
     <description>A manned rifle cannon that launches solid metal shells.It is accurate makes it useful for attacking groups of enemies in the field or sniping the small fortifications.</description>
-    <!--<designatorDropdown>FT_AT</designatorDropdown>-->
     <uiIconPath>ATGun/FT_AntiTankGun</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
     <graphicData>
@@ -544,7 +532,6 @@
     <defName>FT_Turret_Mortar</defName>
     <label>infantry mortar</label>
     <description>A light-weighted mortar that launches all kinds of shells. Improved firing speed with a simplified design, but inaccurate, useful for attacking large fortifications than groups of enemies in the field.</description>
-    <!--<designatorDropdown>FT_MT</designatorDropdown>-->	
     <uiIconPath>FT_Mortar_Icon</uiIconPath>
     <uiIconScale>0.9</uiIconScale>
     <graphicData>
@@ -617,9 +604,9 @@
         <li>Artillery_BaseDestroyer</li>
       </buildingTags>
     </building>
-	<researchPrerequisites>
-		<li>Mortars</li>
-	</researchPrerequisites>
+    <researchPrerequisites>
+      <li>Mortars</li>
+    </researchPrerequisites>
   </ThingDef>
 
   <ThingDef ParentName="BaseWeaponTurret">
@@ -681,16 +668,10 @@
   </ThingDef>
 
 
-  <!--<DesignatorDropdownGroupDef>
-    <defName>FT_MG</defName>
-    <label>machine guns</label>
-  </DesignatorDropdownGroupDef>-->
-
   <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
     <defName>FT_Maxim4M</defName>
     <label>Quad Machine gun</label>
     <description>A Tripod with Quadruple machine gun mounted so it Have a good firepower continuity,need a pawn man on it to operate. Requires steel to refurbish its barrels after heavy use.</description>
-    <!--<designatorDropdown>FT_MG</designatorDropdown>-->
     <uiIconPath>InfantryTurret/FT_QuadMaximGun_icon</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
     <graphicData>
@@ -793,7 +774,6 @@
     <defName>FT_AutoCannon</defName>
     <label>autocannon</label>
     <description>A Tripod with high caliber machine gun mounted. Requires steel to refurbish its barrels after heavy use.it needs a pawn to man on it to operate.</description>
-    <!--<designatorDropdown>FT_MG</designatorDropdown>-->
     <uiIconPath>InfantryTurret/FT_AutoCannonGun_icon</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
     <graphicData>
@@ -896,7 +876,6 @@
     <defName>FT_RecoillessGun</defName>
     <label>Recoilless Gun</label>
     <description>A Tripod with Recoilless gun mounted.A light-weighted soloution of anti armour operation, Requires ReinforcedBarrel to refurbish its barrels after heavy use. also it needs a pawn to man on it to operate. But notice, do not use it indoors!!</description>
-    <!--<designatorDropdown>FT_AT</designatorDropdown>-->
     <uiIconPath>InfantryTurret/FT_RecoillessGun_icon</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
     <graphicData>
@@ -1004,5 +983,4 @@
       </li>
     </verbs>
   </ThingDef>
-  
 </Defs>	

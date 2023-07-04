@@ -34,11 +34,6 @@
         <manWorkType>Violent</manWorkType>
       </li>
     </comps>
-    <building>
-      <ai_combatDangerous>true</ai_combatDangerous>
-      <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
-      <turretBurstCooldownTime>3.0</turretBurstCooldownTime>
-    </building>
 	  <damageMultipliers>
 		  <li>
 			<damageDef>EMP</damageDef>
@@ -73,18 +68,18 @@
     <statBases>
       <Mass>150</Mass>
     </statBases>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
+      <turretBurstCooldownTime>3.0</turretBurstCooldownTime>
+    </building>
   </ThingDef>
 
-  <DesignatorDropdownGroupDef>
-    <defName>FT_AA</defName>
-    <label>anti air</label>
-  </DesignatorDropdownGroupDef>
 
   <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
     <defName>FT_TurretAA</defName>
     <label>Anti Air Gun</label>
     <description>A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field.</description>
-    <designatorDropdown>FT_AA</designatorDropdown>
     <uiIconPath>ATGun/FT_AntiAirGun</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
     <graphicData>
@@ -94,10 +89,9 @@
       <drawOffset>(0,0,0)</drawOffset>
     </graphicData>
     <size>(3,3)</size>
-	  <interactionCellOffset>(1,0,-1)</interactionCellOffset>
+	  <interactionCellOffset>(1,0,-1)</interactionCellOffset><!--操作點在右下方-->
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <statBases>   <!--================血量與重量工作量
-      ================-->
+    <statBases>   <!--================血量與重量工作量================-->
       <MaxHitPoints>750</MaxHitPoints>
       <Flammability>0.5</Flammability>
       <WorkToBuild>3000</WorkToBuild>
@@ -143,8 +137,7 @@
     <building>
       <turretGunDef>FT_Gun_TurretAA</turretGunDef>
       <turretTopDrawSize>4</turretTopDrawSize>
-      <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間
-      ================-->
+      <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
       <turretBurstCooldownTime>5.0</turretBurstCooldownTime>
       <buildingTags>
         <li>Artillery_MannedMortar</li>
@@ -205,7 +198,6 @@
     <defName>FT_TurretQuadAA</defName>
     <label>Quad Anti Air Gun</label>
     <description>A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field.</description>
-    <designatorDropdown>FT_AA</designatorDropdown>
     <uiIconPath>ATGun/FT_AntiAirGun_Vierling</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
     <graphicData>
@@ -215,10 +207,9 @@
       <drawOffset>(0,0,0)</drawOffset>
     </graphicData>
     <size>(3,3)</size>
-	  <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+	  <interactionCellOffset>(0,0,-1)</interactionCellOffset><!--操作點在下方-->
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <statBases>   <!--================血量與重量工作量
-      ================-->
+    <statBases>   <!--================血量與重量工作量================-->
       <MaxHitPoints>750</MaxHitPoints>
       <Flammability>0.45</Flammability>
       <WorkToBuild>7000</WorkToBuild>
@@ -264,8 +255,7 @@
     <building>
       <turretGunDef>FT_Gun_TurretQuadAA</turretGunDef>
       <turretTopDrawSize>4</turretTopDrawSize>
-      <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間
-      ================-->
+      <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
       <turretBurstCooldownTime>5.0</turretBurstCooldownTime>
       <buildingTags>
         <li>Artillery_MannedMortar</li>
@@ -373,16 +363,10 @@
   </ThingDef>
 
 
-  <DesignatorDropdownGroupDef>
-    <defName>FT_AT</defName>
-    <label>anti tanks</label>
-  </DesignatorDropdownGroupDef>
-
   <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
     <defName>FT_TurretAT</defName>
     <label>Anti Tank Gun</label>
     <description>A manned rifle cannon that launches solid metal shells.It is accurate makes it useful for attacking groups of enemies in the field or sniping the small fortifications.</description>
-    <designatorDropdown>FT_AT</designatorDropdown>
     <uiIconPath>ATGun/FT_AntiTankGun</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
     <graphicData>
@@ -393,8 +377,7 @@
     </graphicData>
     <size>(3,3)</size>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <statBases>   <!--================血量與重量工作量
-      ================-->
+    <statBases>   <!--================血量與重量工作量================-->
       <MaxHitPoints>750</MaxHitPoints>
       <Flammability>0.5</Flammability>
       <WorkToBuild>1000</WorkToBuild>
@@ -440,8 +423,7 @@
     <building>
       <turretGunDef>FT_Gun_TurretAT</turretGunDef>
       <turretTopDrawSize>4</turretTopDrawSize>
-      <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間
-      ================-->
+      <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
       <turretBurstCooldownTime>5.0</turretBurstCooldownTime>
       <buildingTags>
         <li>Artillery_MannedMortar</li>
@@ -550,7 +532,6 @@
     <defName>FT_Turret_Mortar</defName>
     <label>infantry mortar</label>
     <description>A light-weighted mortar that launches all kinds of shells. Improved firing speed with a simplified design, but inaccurate, useful for attacking large fortifications than groups of enemies in the field.</description>
-    <designatorDropdown>FT_MT</designatorDropdown>	
     <uiIconPath>FT_Mortar_Icon</uiIconPath>
     <uiIconScale>0.9</uiIconScale>
     <graphicData>
@@ -573,6 +554,7 @@
       <ComponentIndustrial>2</ComponentIndustrial>
       <ReinforcedBarrel>1</ReinforcedBarrel>
     </costList>
+	  <interactionCellOffset>(1,0,0)</interactionCellOffset><!--操作點在右方-->
     <statBases>
       <MaxHitPoints>150</MaxHitPoints>
       <Flammability>0.7</Flammability>
@@ -622,6 +604,9 @@
         <li>Artillery_BaseDestroyer</li>
       </buildingTags>
     </building>
+    <researchPrerequisites>
+      <li>Mortars</li>
+    </researchPrerequisites>
   </ThingDef>
 
   <ThingDef ParentName="BaseWeaponTurret">
@@ -683,16 +668,10 @@
   </ThingDef>
 
 
-  <DesignatorDropdownGroupDef>
-    <defName>FT_MG</defName>
-    <label>machine guns</label>
-  </DesignatorDropdownGroupDef>
-
   <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
     <defName>FT_Maxim4M</defName>
     <label>Quad Machine gun</label>
     <description>A Tripod with Quadruple machine gun mounted so it Have a good firepower continuity,need a pawn man on it to operate. Requires steel to refurbish its barrels after heavy use.</description>
-    <designatorDropdown>FT_MG</designatorDropdown>
     <uiIconPath>InfantryTurret/FT_QuadMaximGun_icon</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
     <graphicData>
@@ -739,7 +718,6 @@
         <autoRefuelPercent>100</autoRefuelPercent>
       </li>
     </comps>
-    <fillPercent>0.4</fillPercent>
     <costList>
       <Steel>80</Steel>
       <ComponentIndustrial>8</ComponentIndustrial>
@@ -796,7 +774,6 @@
     <defName>FT_AutoCannon</defName>
     <label>autocannon</label>
     <description>A Tripod with high caliber machine gun mounted. Requires steel to refurbish its barrels after heavy use.it needs a pawn to man on it to operate.</description>
-    <designatorDropdown>FT_MG</designatorDropdown>
     <uiIconPath>InfantryTurret/FT_AutoCannonGun_icon</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
     <graphicData>
@@ -899,7 +876,6 @@
     <defName>FT_RecoillessGun</defName>
     <label>Recoilless Gun</label>
     <description>A Tripod with Recoilless gun mounted.A light-weighted soloution of anti armour operation, Requires ReinforcedBarrel to refurbish its barrels after heavy use. also it needs a pawn to man on it to operate. But notice, do not use it indoors!!</description>
-    <designatorDropdown>FT_AT</designatorDropdown>
     <uiIconPath>InfantryTurret/FT_RecoillessGun_icon</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
     <graphicData>
@@ -947,7 +923,6 @@
       </li>
     </comps>
     <interactionCellOffset>(-1,0,-1)</interactionCellOffset>
-    <fillPercent>0.4</fillPercent>
     <costList>
       <Steel>150</Steel>
       <ReinforcedBarrel>1</ReinforcedBarrel>
@@ -1008,5 +983,4 @@
       </li>
     </verbs>
   </ThingDef>
-
 </Defs>	

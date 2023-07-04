@@ -44,6 +44,14 @@
 						<turretBurstCooldownTime>1</turretBurstCooldownTime>
 					</value>
 				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="FT_TurretHexMortar"]/fillPercent</xpath>
+					<value>
+						<fillPercent>0.85</fillPercent>
+
+					</value>
+				</li>
 
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName="FT_Gun_TurretHexMortar"]</xpath>

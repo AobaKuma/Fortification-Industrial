@@ -10,6 +10,8 @@
 
         <!-- === Common === -->
 
+		<!--thingClass修改為CE砲塔-->
+
         <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[@Name="FT_BaseCannonBuilding" or @Name="FT_MGNest"]/thingClass</xpath>
           <value>
@@ -17,31 +19,74 @@
           </value>
         </li>
 
-        <li Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[@Name="FT_BaseCannonBuilding"]/fillPercent</xpath>
+		<!--重型火砲的射擊高度-->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="FT_BaseCannonBuilding"]/fillPercent</xpath>
+        <value>
+          <fillPercent>0.85</fillPercent>
+        </value>
+      </li>
+	  
+		<!--為了能夠正確地越過工事射擊口攻擊而略為提高-->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="FT_Maxim4M" or defName="FT_AutoCannon" or defName="FT_RecoillessGun"]</xpath>
           <value>
-            <fillPercent>0.85</fillPercent>
+            <fillPercent>0.77</fillPercent>
           </value>
         </li>
+		
+		<!--防止自動砲塔通過工事射擊口攻擊，依舊可使用壓制射擊來規避，其他較矮的射擊牆依舊能夠使用-->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[@Name="FT_MGNest"]/fillPercent</xpath>
+          <value>
+            <fillPercent>0.74</fillPercent>
+          </value>
+        </li>
+		
+		<!--削弱步兵迫擊砲的掩護效果，由於是曲射武器並不影響攻擊，並且操作點設定在側邊-->
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="FT_Turret_Mortar"]</xpath>
+          <value>
+            <fillPercent>0.55</fillPercent>
+          </value>
+        </li>
+      
+		<!--大多數砲塔的冷卻時間-->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="FT_BaseCannonBuilding" or @Name="FT_MGNest" or defName="FT_TurretAA" or defName="FT_TurretAT" or defName="FT_TurretQuadAA" or defName="FT_AutoCannon" or defName="FT_RecoillessGun"]/building/turretBurstCooldownTime</xpath>
+        <value>
+          <turretBurstCooldownTime>1</turretBurstCooldownTime>
+        </value>
+      </li>
+	  
+		<!--馬克沁的冷卻時間，更加快速的傾瀉子彈壓制敵人(裝彈量800)-->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="FT_Maxim4M"]/building/turretBurstCooldownTime</xpath>
+        <value>
+          <turretBurstCooldownTime>0.5</turretBurstCooldownTime>
+        </value>
+      </li>
 
-        <li Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[@Name="FT_BaseCannonBuilding"]/building/turretBurstCooldownTime</xpath>
-          <value>
-            <turretBurstCooldownTime>1</turretBurstCooldownTime>
-          </value>
-        </li>
+        <!--刪除受損爆炸-->    <!--刪除原版裝填-->    <!--刪除原版子彈-->
 
         <li Class="PatchOperationRemove">
           <xpath>
             Defs/ThingDef[defName="FT_TurretQuadAA" or defName="FT_TurretAA" or
             defName="FT_TurretAT"]/comps/li[@Class="CompProperties_Explosive"] |
-            Defs/ThingDef[defName="FT_TurretQuadAA" or defName="FT_TurretAA" or
-            defName="FT_TurretAT" or @Name="FT_MGNest" or defName="FT_Maxim4M" or
-            defName="FT_AutoCannon" or
-            defName="FT_RecoillessGun"]/comps/li[@Class="CompProperties_Refuelable"] |
+
             Defs/ThingDef[defName="FT_Bullet_AAShell" or defName="FT_Bullet_ATShell"]
           </xpath>
         </li>
+		
+        <!-- === Infantry Mortar === -->	
+        <li Class="PatchOperationRemove">
+          <xpath>
+            Defs/ThingDef[defName="FT_Turret_Mortar"]/comps/li[@Class="CompProperties_Refuelable"] |            
+            Defs/ThingDef[defName="FT_Turret_Mortar"]/comps/li[@Class="CompProperties_Explosive"] |   
+            Defs/ThingDef[defName="FT_Turret_Mortar"]/inspectorTabs
+          </xpath>
+        </li>
+
 
         <!-- === Turrets === -->
 
@@ -163,13 +208,6 @@
         </li>
 
         <!-- === MG Nests === -->
-
-        <li Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[@Name="FT_MGNest"]/fillPercent</xpath>
-          <value>
-            <fillPercent>0.75</fillPercent>
-          </value>
-        </li>
 
         <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
           <defName>FT_Gun_MG</defName>
@@ -300,7 +338,7 @@
             <li>TurretGun</li>
           </weaponTags>
         </li>
-
+        
         <!-- Autocannon -->
         <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
           <defName>FT_Gun_Autocannon</defName>
@@ -335,27 +373,12 @@
             <aiAimMode>Snapshot</aiAimMode>
             <aimedBurstShotCount>3</aimedBurstShotCount>
           </FireModes>
-          <weaponTags Inherit="False">
+          <weaponTags>
             <li>TurretGun</li>
           </weaponTags>
         </li>
 
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName="FT_AutoCannon"]</xpath>
-          <value>
-            <fillPercent>0.75</fillPercent>
-          </value>
-        </li>
-
         <!-- === Infantry Mortar === -->
-        <li Class="PatchOperationRemove">
-          <xpath>
-            Defs/ThingDef[defName="FT_Turret_Mortar"]/comps/li[@Class="CompProperties_Refuelable"] |            
-            Defs/ThingDef[defName="FT_Turret_Mortar"]/comps/li[@Class="CompProperties_Explosive"] |   
-            Defs/ThingDef[defName="FT_Turret_Mortar"]/inspectorTabs
-          </xpath>
-        </li>
-
         <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[defName="FT_Artillery_Mortar"]</xpath>
           <value>

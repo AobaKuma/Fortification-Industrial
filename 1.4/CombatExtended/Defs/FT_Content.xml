@@ -145,7 +145,7 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="BuildingBase">
-		<defName>FT_TurretAutoCannon_</defName>
+		<defName>FT_TurretAutoCannon_Twin</defName>
 		<label>20mm anti-air gun</label>
 		<description>A rapid-fire cannon with capability to shoot down aircraft.</description>
 		<techLevel>Industrial</techLevel>

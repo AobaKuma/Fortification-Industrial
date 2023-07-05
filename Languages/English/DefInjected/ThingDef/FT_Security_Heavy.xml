@@ -21,16 +21,14 @@
   <FT_Gun_TurretEmpero.label>field cannon</FT_Gun_TurretEmpero.label>
   <FT_Gun_TurretEmpero.description>A powerful direct-firing cannon with high accuracy.</FT_Gun_TurretEmpero.description>
 
-  <FT_TurretAutoCannon_.label>20mm anti-air gun</FT_TurretAutoCannon_.label>
-  <FT_TurretAutoCannon_.description>A rapid-fire cannon with capability to shoot down aircraft.</FT_TurretAutoCannon_.description>
 
-  <FT_Gun_Autocannon_Twin.label>autocannon</FT_Gun_Autocannon_Twin.label>
-  <FT_Gun_Autocannon_Twin.description>A self-loading large-bore cannon designed to attach to a turret.</FT_Gun_Autocannon_Twin.description>
-
-  <FT_TurretAT_Plus.label>76mm anti-tank gun</FT_TurretAT_Plus.label>
-  <FT_TurretAT_Plus.description>A direct-fire cannon with capability to destroy a heavy armed vehicle.</FT_TurretAT_Plus.description>
-
-  <FT_Gun_TurretAT_Plus.label>76mm anti-tank gun</FT_Gun_TurretAT_Plus.label>
-  <FT_Gun_TurretAT_Plus.description>A direct-fire cannon with capability to destroy a heavy armed vehicle.</FT_Gun_TurretAT_Plus.description>
+  <!--<FT_TurretAutoCannon_.label>20mm anti-air gun</FT_TurretAutoCannon_.label>-->
+  <!--<FT_TurretAutoCannon_.description>A rapid-fire cannon with capability to shoot down aircraft.</FT_TurretAutoCannon_.description>-->
+  <!--<FT_Gun_Autocannon_Twin.label>autocannon</FT_Gun_Autocannon_Twin.label>-->
+  <!--<FT_Gun_Autocannon_Twin.description>A self-loading large-bore cannon designed to attach to a turret.</FT_Gun_Autocannon_Twin.description>-->
+  <!--<FT_TurretAT_Plus.label>76mm anti-tank gun</FT_TurretAT_Plus.label>-->
+  <!--<FT_TurretAT_Plus.description>A direct-fire cannon with capability to destroy a heavy armed vehicle.</FT_TurretAT_Plus.description>-->
+  <!--<FT_Gun_TurretAT_Plus.label>76mm anti-tank gun</FT_Gun_TurretAT_Plus.label>-->
+  <!--<FT_Gun_TurretAT_Plus.description>A direct-fire cannon with capability to destroy a heavy armed vehicle.</FT_Gun_TurretAT_Plus.description>-->
 
 </LanguageData>

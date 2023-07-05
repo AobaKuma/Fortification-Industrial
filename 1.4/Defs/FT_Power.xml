@@ -154,8 +154,8 @@ Connect to other power poles using the 'link' button, or select multiple power p
 
   <ThingDef ParentName="BuildingBase" MayRequire="oskarpotocki.vfe.mechanoid">
     <defName>FT_DistributionBox</defName>
-    <label>distribution box</label>
-	  <description>A metal box on a concrete foundation connects to power networks via conduit to extend the range at which electronics can connect to said conduits. Proper implementation can triple the range at which electric current can be utilized.</description>
+    <label>distribution box(wip)</label>
+	  <description>A metal box on a concrete foundation connects to power networks via conduit to extend the range at which electronics can connect to said conduits. (this feature still wip, so it just a decoration)</description>
     <graphicData>
       <texPath>DistributionBox/building</texPath>
       <graphicClass>Graphic_Single</graphicClass>

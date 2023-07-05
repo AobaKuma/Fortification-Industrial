@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <FT_TurretAA.label>防空炮</FT_TurretAA.label>
+  <FT_TurretAA.label>轻型防空炮</FT_TurretAA.label>
   <FT_TurretAA.description>发射机炮子弹的速射机炮,需要手动操作,其速射性能使其适合用于打击空中目标以及地面人群.</FT_TurretAA.description>
 
   <FT_Gun_TurretAA.label>对空机炮</FT_Gun_TurretAA.label>
   <FT_Gun_TurretAA.description>用于对空攻击的大口径机关炮,但用于地面目标也很适合..</FT_Gun_TurretAA.description>
 
-  <FT_TurretQuadAA.label>Quad Anti Air Gun</FT_TurretQuadAA.label>
-  <FT_TurretQuadAA.description>A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field.</FT_TurretQuadAA.description>
+  <FT_TurretQuadAA.label>四聯防空炮</FT_TurretQuadAA.label>
+  <FT_TurretQuadAA.description>一種古老的防空機炮設計,採用多聯裝的方式提高火力密度與火力持續性.</FT_TurretQuadAA.description>
 
-  <FT_Gun_TurretQuadAA.label>Quad Anti Air cannon</FT_Gun_TurretQuadAA.label>
-  <FT_Gun_TurretQuadAA.description>An Quad mounted Autocannon designed to defend the area of skies, but also a nice weapon for ground targets.</FT_Gun_TurretQuadAA.description>
+  <FT_Gun_TurretQuadAA.label>防空机炮</FT_Gun_TurretQuadAA.label>
+  <FT_Gun_TurretQuadAA.description>在人类进入太空时代前便已广泛使用的大口径机炮,其制造工艺在经过了一定的改良后随着那些武装殖民船辗转无数的世界并开枝散叶.</FT_Gun_TurretQuadAA.description>
 
   <FT_Bullet_AAShell.label>铀芯曳光弹</FT_Bullet_AAShell.label>
 
@@ -36,10 +36,10 @@
   <FT_Gun_QuadMG.description>有什么能比一挺机枪来的爽快呢?,四挺!</FT_Gun_QuadMG.description>
 
   <FT_AutoCannon.label>自动机炮</FT_AutoCannon.label>
-  <FT_AutoCannon.description>安装在三角架上的大口径机枪.大量射击后需消耗钢铁来更换炮管</FT_AutoCannon.description>
+  <FT_AutoCannon.description>安装在三角架上的大口径机炮.大量射击后需消耗钢铁来更换炮管</FT_AutoCannon.description>
 
-  <FT_Gun_Autocannon.label>自动炮</FT_Gun_Autocannon.label>
-  <FT_Gun_Autocannon.description>一挺大口径的全自动机炮</FT_Gun_Autocannon.description>
+  <FT_Gun_Autocannon.label>自动机炮</FT_Gun_Autocannon.label>
+  <FT_Gun_Autocannon.description>一种大口径的导气式机炮,被广泛的使用在工业世界的装甲载具与航空器上.</FT_Gun_Autocannon.description>
 
   <FT_RecoillessGun.label>无后座力炮</FT_RecoillessGun.label>
   <FT_RecoillessGun.description>安装在三角架上的无后座力炮,对于野战来说比反坦克炮还要易于携带,频繁使用后需要加固炮管来维护.另外请注意,千万不要在室内使用它.</FT_RecoillessGun.description>

@@ -32,7 +32,7 @@
 
   <FT_Make_ReinforcedConcrete.label>備料鋼筋混凝土</FT_Make_ReinforcedConcrete.label>
   <FT_Make_ReinforcedConcrete.description>給混凝土準備鋼筋來用於澆築鋼筋混凝土建築.</FT_Make_ReinforcedConcrete.description>
-  <FT_Make_ReinforcedConcrete.jobString>準備材料中.</FT_Make_ReinforcedConcrete.jobString>
+  <FT_Make_ReinforcedConcrete.jobString>準備材料中</FT_Make_ReinforcedConcrete.jobString>
 
 
   <!-- 車床 -->

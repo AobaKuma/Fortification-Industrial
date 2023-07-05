@@ -14,9 +14,9 @@
 
   <!-- 混凝土攪拌機 -->
 
-  <FT_Make_ConcreteByStonyJunks.label>make Concrete from junks</FT_Make_ConcreteByStonyJunks.label>
-  <FT_Make_ConcreteByStonyJunks.description>crush stony junks and made into concrete. the junk material must not be burnable or smeltable.</FT_Make_ConcreteByStonyJunks.description>
-  <FT_Make_ConcreteByStonyJunks.jobString>making Concrete from material</FT_Make_ConcreteByStonyJunks.jobString>
+  <FT_Make_ConcreteByStonyJunks.label>将石质材料回收混凝土</FT_Make_ConcreteByStonyJunks.label>
+  <FT_Make_ConcreteByStonyJunks.description>将不可燃且不可熔炼的装备回收作为混凝土材料.</FT_Make_ConcreteByStonyJunks.description>
+  <FT_Make_ConcreteByStonyJunks.jobString>回收资源中</FT_Make_ConcreteByStonyJunks.jobString>
 
   <FT_Make_ConcreteByChunk.label>将石块加工成混凝土</FT_Make_ConcreteByChunk.label>
   <FT_Make_ConcreteByChunk.description>将石块加工成混凝土.</FT_Make_ConcreteByChunk.description>

@@ -142,6 +142,15 @@
 				<aiAimMode>AimedShot</aiAimMode>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalshThree</def>
+				<drawSize>(4,3)</drawSize>
+				<offsets>
+					<li>(2.2,0)</li>
+				</offsets>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	
 	<ThingDef ParentName="BuildingBase">
@@ -269,6 +278,17 @@
 				<aimedBurstShotCount>6</aimedBurstShotCount>
 			</li>
 		</comps>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(2,2)</drawSize>
+				<offsets>
+					<li>(0.9,0.1)</li>
+					<li>(0.9,-0.1)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	
 </Defs>	

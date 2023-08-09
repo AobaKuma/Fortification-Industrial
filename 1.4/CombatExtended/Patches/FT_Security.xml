@@ -73,6 +73,10 @@
           <xpath>
             Defs/ThingDef[defName="FT_TurretQuadAA" or defName="FT_TurretAA" or
             defName="FT_TurretAT"]/comps/li[@Class="CompProperties_Explosive"] |
+			
+            Defs/ThingDef[defName="FT_TurretQuadAA" or defName="FT_TurretAA" or
+            defName="FT_TurretAT" or @Name="FT_MGNest" or defName="FT_Maxim4M" or
+            defName="FT_AutoCannon" or defName="FT_RecoillessGun"]/comps/li[@Class="CompProperties_Refuelable"] |
 
             Defs/ThingDef[defName="FT_Bullet_AAShell" or defName="FT_Bullet_ATShell"]
           </xpath>
@@ -100,13 +104,13 @@
             <SwayFactor>0.83</SwayFactor>
           </statBases>
           <Properties>
-            <recoilAmount>1.65</recoilAmount>
+            <recoilAmount>1.35</recoilAmount>
             <verbClass>CombatExtended.Verb_ShootCE</verbClass>
             <hasStandardCommand>true</hasStandardCommand>
             <defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
             <warmupTime>1.5</warmupTime>
             <minRange>3.9</minRange>
-            <range>100</range>
+            <range>90</range>
             <burstShotCount>16</burstShotCount>
             <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
             <soundCast>Shot_Autocannon</soundCast>
@@ -140,13 +144,13 @@
             <SwayFactor>0.75</SwayFactor>
           </statBases>
           <Properties>
-            <recoilAmount>1.25</recoilAmount>
+            <recoilAmount>1.35</recoilAmount>
             <verbClass>CombatExtended.Verb_ShootCE</verbClass>
             <hasStandardCommand>true</hasStandardCommand>
             <defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
             <warmupTime>1.25</warmupTime>
             <minRange>3.9</minRange>
-            <range>100</range>
+            <range>90</range>
             <burstShotCount>8</burstShotCount>
             <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
             <soundCast>Shot_Autocannon</soundCast>
@@ -218,7 +222,7 @@
             <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
           </statBases>
           <Properties>
-            <recoilAmount>1.16</recoilAmount>
+            <recoilAmount>0.7</recoilAmount>
             <verbClass>CombatExtended.Verb_ShootCE</verbClass>
             <hasStandardCommand>true</hasStandardCommand>
             <defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
@@ -310,7 +314,7 @@
             <Bulk>30.67</Bulk>
           </statBases>
           <Properties>
-            <recoilAmount>2.25</recoilAmount>
+            <recoilAmount>0.8</recoilAmount>
             <verbClass>CombatExtended.Verb_ShootCE</verbClass>
             <hasStandardCommand>true</hasStandardCommand>
             <defaultProjectile>Bullet_303British_FMJ</defaultProjectile>
@@ -350,7 +354,7 @@
             <Bulk>25.54</Bulk>
           </statBases>
           <Properties>
-            <recoilAmount>1.5</recoilAmount>
+            <recoilAmount>1.65</recoilAmount>
             <verbClass>CombatExtended.Verb_ShootCE</verbClass>
             <hasStandardCommand>True</hasStandardCommand>
             <defaultProjectile>Bullet_20x110mmHispano_AP</defaultProjectile>

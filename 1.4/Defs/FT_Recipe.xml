@@ -311,7 +311,7 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>60000</workAmount>
+    <workAmount>90000</workAmount>
     <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
     <ingredients>
       <li>
@@ -330,9 +330,10 @@
     </fixedIngredientFilter>
     <products>
       <ReinforcedBarrel>1</ReinforcedBarrel>
+	  <ChunkSlagSteel>3</ChunkSlagSteel>
     </products>
     <skillRequirements>
-      <Crafting>3</Crafting>
+      <Crafting>15</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
 	  <researchPrerequisite>FT_Lathe</researchPrerequisite>
@@ -346,7 +347,7 @@
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_Machining</soundWorking>
-		<workAmount>10000</workAmount>
+		<workAmount>9000</workAmount>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<ingredients>
 		  <li>

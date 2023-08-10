@@ -412,8 +412,8 @@
                   <hasStandardCommand>true</hasStandardCommand>
                   <defaultProjectile>Bullet_60mmMortarShell_HE</defaultProjectile>
                   <warmupTime>3.5</warmupTime>
-			            <minRange>20</minRange>
-                  <range>60</range>
+			      <minRange>20</minRange>
+                  <range>500</range>
                   <burstShotCount>1</burstShotCount>
                   <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
                   <soundCast>Mortar_LaunchA</soundCast>

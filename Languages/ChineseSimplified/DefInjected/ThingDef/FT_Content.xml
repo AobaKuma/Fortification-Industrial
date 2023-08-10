@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FT_Gun_TurretAT_Plus.label>重型反坦克炮</FT_Gun_TurretAT_Plus.label>
+  <FT_Gun_TurretAT_Plus.description>大口徑長身管的老式反坦克加農砲,放在5500年的邊緣世界對付具備厚重裝甲的重型機械族也綽綽有餘.</FT_Gun_TurretAT_Plus.description>
+
+  <FT_TurretAT_Plus.label>重型反坦克炮</FT_TurretAT_Plus.label>
+  <FT_TurretAT_Plus.description>安裝在砲架上的長身管反坦克炮,使用得當能在遠距離殲滅重裝甲載具.</FT_TurretAT_Plus.description>
+
+  <FT_TurretAutoCannon_Twin.label>拖曳式機炮</FT_TurretAutoCannon_Twin.label>
+  <FT_TurretAutoCannon_Twin.description>20x110毫米口徑的防空機砲，由拖曳式底盤搭載提供相對穩定的射擊環境.</FT_TurretAutoCannon_Twin.description>
+
+</LanguageData>

@@ -206,7 +206,7 @@
     <repairEffect>ConstructMetal</repairEffect>
 		<modExtensions>
 			<li MayRequire="smashphil.vehicleframework" Class="Vehicles.CustomCostDefModExtension">
-				<cost>300</cost>
+				<cost>10086</cost>
         <vehicles/>
 			</li>
 		</modExtensions>
@@ -346,7 +346,7 @@
     <staticSunShadowHeight>0.00</staticSunShadowHeight>
     <modExtensions>
 			<li MayRequire="smashphil.vehicleframework" Class="Vehicles.CustomCostDefModExtension">
-				<cost>200</cost>
+				<cost>10086</cost>
         <vehicles/>
 			</li>
 		</modExtensions>
@@ -419,7 +419,7 @@
     <staticSunShadowHeight>0.00</staticSunShadowHeight>
     <modExtensions>
 			<li MayRequire="smashphil.vehicleframework" Class="Vehicles.CustomCostDefModExtension">
-				<cost>200</cost>
+				<cost>10086</cost>
         <vehicles/>
 			</li>
 		</modExtensions>

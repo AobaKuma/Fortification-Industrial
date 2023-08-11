@@ -62,7 +62,7 @@
       </linkFlags>
       <asymmetricLink>
         <linkFlags>
-          <li>Rock</li>
+          <!-- <li>Rock</li> -->
         </linkFlags>
       </asymmetricLink>
     </graphicData>
@@ -107,7 +107,7 @@
       <asymmetricLink>
         <linkFlags>
           <li>Wall</li>
-          <li>Rock</li>
+          <!-- <li>Rock</li> -->
         </linkFlags>
         <linkToDoors>false</linkToDoors>
       </asymmetricLink>
@@ -204,6 +204,12 @@
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
     <repairEffect>ConstructMetal</repairEffect>
+		<modExtensions>
+			<li MayRequire="smashphil.vehicleframework" Class="Vehicles.CustomCostDefModExtension">
+				<cost>10086</cost>
+        <vehicles/>
+			</li>
+		</modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -233,7 +239,7 @@
     <uiIconPath>Tetrapods</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <pathCost>150</pathCost>
-    <passability>PassThroughOnly</passability>
+    <passability>Impassable</passability>
     <fillPercent>0.60</fillPercent>
     <coversFloor>false</coversFloor>
     <holdsRoof>false</holdsRoof>
@@ -338,6 +344,12 @@
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded> <!-- Best affordance needed for stone -->
     <designationCategory>Security</designationCategory>
     <staticSunShadowHeight>0.00</staticSunShadowHeight>
+    <modExtensions>
+			<li MayRequire="smashphil.vehicleframework" Class="Vehicles.CustomCostDefModExtension">
+				<cost>10086</cost>
+        <vehicles/>
+			</li>
+		</modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -405,6 +417,12 @@
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded> <!-- Best affordance needed for stone -->
     <designationCategory>Security</designationCategory>
     <staticSunShadowHeight>0.00</staticSunShadowHeight>
+    <modExtensions>
+			<li MayRequire="smashphil.vehicleframework" Class="Vehicles.CustomCostDefModExtension">
+				<cost>10086</cost>
+        <vehicles/>
+			</li>
+		</modExtensions>
   </ThingDef>
   <!--		Floors 地板		!-->
   <DesignatorDropdownGroupDef>

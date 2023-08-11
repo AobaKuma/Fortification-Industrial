@@ -75,7 +75,6 @@
     </building>
   </ThingDef>
 
-
   <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
     <defName>FT_TurretAA</defName>
     <label>Anti Air Gun</label>
@@ -122,7 +121,7 @@
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
 		    <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
 		    <initialConfigurableTargetFuelLevel>120</initialConfigurableTargetFuelLevel>
-		    <autoRefuelPercent>100</autoRefuelPercent>
+		    <autoRefuelPercent>0.1</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
 	    <li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
@@ -193,7 +192,6 @@
     </verbs>
   </ThingDef>
 
-
   <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
     <defName>FT_TurretQuadAA</defName>
     <label>Quad Anti Air Gun</label>
@@ -240,7 +238,7 @@
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
         <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
         <initialConfigurableTargetFuelLevel>480</initialConfigurableTargetFuelLevel>
-        <autoRefuelPercent>100</autoRefuelPercent>
+        <autoRefuelPercent>0.1</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
       <li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
@@ -327,23 +325,12 @@
   <ThingDef ParentName="BaseBullet">
     <defName>FT_Bullet_AAShell</defName>
     <label>uranium APT shell</label>
-    <!--<thingClass>Fortification.Bullet_AlongWayDamage</thingClass>-->
-	<thingClass>Fortification.Projectile_ExplosiveByComps</thingClass>
+	  <thingClass>Fortification.Projectile_ExplosiveByComps</thingClass>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.2</drawSize>
     </graphicData>
-<!--    <comps>
-     <li Class="Fortification.AlongWayDamage_CompProperties">
-        <endExplosionDam>Bomb</endExplosionDam>
-        <endExplosionRadius>0.1</endExplosionRadius>
-        <endExplosionDamAmount>5</endExplosionDamAmount>
-        <endExplosionArmorPenetration>0.30</endExplosionArmorPenetration>
-        <alongOnWayHediff>FT_ShellShock</alongOnWayHediff>
-        <alongOnWayHediffSeverity>0.075</alongOnWayHediffSeverity>
-      </li>
-    </comps>-->
 		<comps>
 			<li Class="Fortification.CompProperties_CompositeExplosion">
 				<compositeExplosions>
@@ -360,21 +347,18 @@
 		</comps>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>20</damageAmountBase>
-      <armorPenetrationBase>1.5</armorPenetrationBase>
+      <damageAmountBase>18</damageAmountBase>
+      <armorPenetrationBase>0.45</armorPenetrationBase>
       <stoppingPower>4</stoppingPower>
       <speed>93</speed>
       <arcHeightFactor>0.3</arcHeightFactor>
       <shadowSize>0.6</shadowSize>
 	  	<explosionDelay>2</explosionDelay>
-		<!--<explosionEffect>ExtinguisherExplosion</explosionEffect>-->
-		<!--<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>-->
-		<soundExplode>Explosion_GiantBomb</soundExplode>
-		<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-		<soundAmbient>MortarRound_Ambient</soundAmbient>
+      <soundExplode>Explosion_GiantBomb</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
     </projectile>
   </ThingDef>
-
 
   <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
     <defName>FT_TurretAT</defName>
@@ -390,7 +374,7 @@
     </graphicData>
     <size>(3,3)</size>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <statBases>   <!--================血量與重量工作量================-->
+    <statBases>
       <MaxHitPoints>750</MaxHitPoints>
       <Flammability>0.5</Flammability>
       <WorkToBuild>1000</WorkToBuild>
@@ -421,7 +405,7 @@
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
         <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
         <initialConfigurableTargetFuelLevel>40</initialConfigurableTargetFuelLevel>
-        <autoRefuelPercent>100</autoRefuelPercent>
+        <autoRefuelPercent>0.1</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
       <li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
@@ -438,9 +422,6 @@
       <turretTopDrawSize>4</turretTopDrawSize>
       <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
       <turretBurstCooldownTime>5.0</turretBurstCooldownTime>
-      <buildingTags>
-        <li>Artillery_MannedMortar</li>
-      </buildingTags>
     </building>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
@@ -473,7 +454,7 @@
         <verbClass>Verb_Shoot</verbClass>
         <defaultProjectile>FT_Bullet_ATShell</defaultProjectile>
         <requireLineOfSight>true</requireLineOfSight>
-        <isMortar>false</isMortar>
+        <isMortar>true</isMortar>
         <warmupTime>2</warmupTime>
         <minRange>3.9</minRange>
         <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
@@ -494,24 +475,13 @@
   <ThingDef ParentName="BaseBullet">
     <defName>FT_Bullet_ATShell</defName>
     <label>armor piercing shell</label>
-    <!--<thingClass>Fortification.Bullet_AlongWayDamage</thingClass>-->
-	<thingClass>Fortification.Projectile_ExplosiveByComps</thingClass>
+	  <thingClass>Fortification.Projectile_ExplosiveByComps</thingClass>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>2</drawSize>
     </graphicData>
- <!--   <comps>
-      <li Class="Fortification.AlongWayDamage_CompProperties">
-        <endExplosionDam>Bomb</endExplosionDam>
-        <endExplosionRadius>1</endExplosionRadius>
-        <endExplosionDamAmount>50</endExplosionDamAmount>
-        <endExplosionArmorPenetration>5</endExplosionArmorPenetration>
-        <alongOnWayHediff>FT_ShellShock</alongOnWayHediff>
-        <alongOnWayHediffSeverity>0.3</alongOnWayHediffSeverity>
-      </li>
-    </comps>-->
-			<comps>
+		<comps>
 			<li Class="Fortification.CompProperties_CompositeExplosion">
 				<compositeExplosions>
 					<li>
@@ -527,17 +497,16 @@
 		</comps>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>100</damageAmountBase>
-      <armorPenetrationBase>2.5</armorPenetrationBase>
+      <damageAmountBase>50</damageAmountBase>
+      <armorPenetrationBase>0.75</armorPenetrationBase>
       <stoppingPower>10</stoppingPower>
       <speed>100</speed>
       <arcHeightFactor>0.2</arcHeightFactor>
       <shadowSize>0.6</shadowSize>
-	  	<explosionDelay>2</explosionDelay>
-		<!--<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>-->
-		<soundExplode>Explosion_GiantBomb</soundExplode>
-		<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-		<soundAmbient>MortarRound_Ambient</soundAmbient>
+	  	<explosionDelay>1</explosionDelay>
+      <soundExplode>Explosion_GiantBomb</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
     </projectile>
   </ThingDef>
 
@@ -603,7 +572,7 @@
         <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
 		    <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
 		    <initialConfigurableTargetFuelLevel>50</initialConfigurableTargetFuelLevel>
-		    <autoRefuelPercent>100</autoRefuelPercent>
+		    <autoRefuelPercent>0.1</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
     </comps>
@@ -613,9 +582,6 @@
       <turretTopDrawSize>1.5</turretTopDrawSize>
       <turretBurstWarmupTime>2.0</turretBurstWarmupTime>
       <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
-      <buildingTags>
-        <li>Artillery_BaseDestroyer</li>
-      </buildingTags>
     </building>
     <researchPrerequisites>
       <li>Mortars</li>
@@ -632,7 +598,6 @@
       <drawSize>(2,2)</drawSize>
     </graphicData>
     <weaponTags>
-      <li>Artillery_BaseDestroyer</li>
       <li>TurretGun</li>
     </weaponTags>
     <verbs>
@@ -728,7 +693,7 @@
         <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
         <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
         <initialConfigurableTargetFuelLevel>960</initialConfigurableTargetFuelLevel>
-        <autoRefuelPercent>100</autoRefuelPercent>
+        <autoRefuelPercent>0.1</autoRefuelPercent>
       </li>
     </comps>
     <costList>
@@ -854,7 +819,7 @@
         <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
         <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
         <initialConfigurableTargetFuelLevel>120</initialConfigurableTargetFuelLevel>
-        <autoRefuelPercent>100</autoRefuelPercent>
+        <autoRefuelPercent>0.1</autoRefuelPercent>
       </li>
     </comps>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
@@ -945,7 +910,7 @@
         <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
 				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
 		    <initialConfigurableTargetFuelLevel>20</initialConfigurableTargetFuelLevel>
-		    <autoRefuelPercent>100</autoRefuelPercent>
+		    <autoRefuelPercent>0.1</autoRefuelPercent>
       </li>
     </comps>
     <interactionCellOffset>(-1,0,-1)</interactionCellOffset>
@@ -991,13 +956,11 @@
       <li>
         <verbClass>Fortification.Verb_NewShoot</verbClass>
         <defaultProjectile>FT_Bullet_ATShell</defaultProjectile>
-        <requireLineOfSight>true</requireLineOfSight>
-        <isMortar>false</isMortar>
         <warmupTime>1.5</warmupTime>
-        <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
         <minRange>3.9</minRange>
         <range>40</range>
         <burstShotCount>1</burstShotCount>
+        <isMortar>true</isMortar>
         <soundCast>FT_CannonLaunchA</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>25</muzzleFlashScale>
@@ -1005,6 +968,7 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
+        <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
 		    <forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>

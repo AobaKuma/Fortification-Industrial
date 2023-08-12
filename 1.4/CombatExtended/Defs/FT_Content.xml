@@ -291,4 +291,120 @@
 		</modExtensions>
 	</ThingDef>
 	
+<!-- 測距儀 -->
+ 	<ThingDef ParentName="BuildingBase">
+		<defName>FTC_SpotterLight_Turret</defName>
+		<label>mobile artillery spotter</label>
+		<description>A manned artillery scope with radio. Useful to coordinate artillery strikes.\n\nUsing this on a target will mark it, removing the indirect fire penalty from any artillery pieces targeting it. Additionally, any directed fire will use the aiming accuracy and efficiency of the spotter, rather than the artillery operator to determine final accuracy.</description>
+		<graphicData>
+			<texPath>InfantryTurret/FT_Tripod</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<drawOffset>(0,0,-0.1)</drawOffset>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.27,0.25,0.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<size>(1,1)</size>
+		<thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<stealable>false</stealable>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.85</fillPercent>
+		<tickerType>Normal</tickerType>
+		<designationCategory>Security</designationCategory>
+		<placeWorkers Inherit="false">
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>FT_HeavyArtillery</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Mannable">
+				<manWorkType>Violent</manWorkType>
+			</li>
+		</comps>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>1000</WorkToBuild>
+			<Beauty>-2</Beauty>
+			<Mass>12</Mass>
+			<Bulk>15</Bulk>
+		</statBases>
+		<specialDisplayRadius>150</specialDisplayRadius>
+		<costList>
+			<Steel>175</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+    	  	<ai_combatDangerous>false</ai_combatDangerous>
+			<turretBurstWarmupTime>2.0</turretBurstWarmupTime>
+			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+			<turretTopDrawSize>1.5</turretTopDrawSize>	
+			<turretGunDef>FTC_SpotterLight_Gun</turretGunDef>
+		</building>
+		<uiIconPath>ArtilleryRangeFinder_Icon</uiIconPath>
+		<uiIconScale>1</uiIconScale>
+		<damageMultipliers>
+		  <li>
+			<damageDef>EMP</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li>
+			<damageDef>Stun</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li MayRequire="Ludeon.RimWorld.Biotech">
+				<damageDef>MechBandShockwave</damageDef>
+				<multiplier>0</multiplier>
+		  </li>
+		  <li MayRequire="CETeam.CombatExtended">
+				<damageDef>Electrical</damageDef>
+				<multiplier>0</multiplier>
+		  </li>
+		</damageMultipliers>
+ 	 </ThingDef>
+
+  	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>FTC_SpotterLight_Gun</defName>
+		<label>mobile artillery spotter</label>
+		<description>A manned artillery scope with radio. Useful to coordinate artillery strikes.\n\nUsing this on a target will mark it, removing the indirect fire penalty from any artillery pieces targeting it. Additionally, any directed fire will use the aiming accuracy and efficiency of the spotter, rather than the artillery operator to determine final accuracy.</description>
+	    <graphicData>
+			<texPath>ArtilleryRangeFinder_Gun</texPath>
+			<drawSize>1</drawSize>
+  		</graphicData>
+		<statBases>
+			<SightsEfficiency>2.5</SightsEfficiency>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_MarkForArtillery</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<hasStandardCommand>true</hasStandardCommand>
+				<requireLineOfSight>true</requireLineOfSight>
+				<defaultProjectile>Bullet_Dummy</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<range>1000</range>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			</li>
+		</verbs>
+  	</ThingDef>
+	
 </Defs>	

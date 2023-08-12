@@ -205,7 +205,7 @@
     <designationCategory>Security</designationCategory>
     <repairEffect>ConstructMetal</repairEffect>
 		<modExtensions>
-			<li MayRequire="smashphil.vehicleframework" Class="Vehicles.CustomCostDefModExtension">
+			<li MayRequireAnyOf="SmashPhil.VehicleFramework,SmashPhil.VehicleFramework_steam" Class="Vehicles.CustomCostDefModExtension">
 				<cost>10086</cost>
         <vehicles/>
 			</li>
@@ -345,7 +345,7 @@
     <designationCategory>Security</designationCategory>
     <staticSunShadowHeight>0.00</staticSunShadowHeight>
     <modExtensions>
-			<li MayRequire="smashphil.vehicleframework" Class="Vehicles.CustomCostDefModExtension">
+			<li MayRequireAnyOf="SmashPhil.VehicleFramework,SmashPhil.VehicleFramework_steam" Class="Vehicles.CustomCostDefModExtension">
 				<cost>10086</cost>
         <vehicles/>
 			</li>
@@ -418,7 +418,7 @@
     <designationCategory>Security</designationCategory>
     <staticSunShadowHeight>0.00</staticSunShadowHeight>
     <modExtensions>
-			<li MayRequire="smashphil.vehicleframework" Class="Vehicles.CustomCostDefModExtension">
+			<li MayRequireAnyOf="SmashPhil.VehicleFramework,SmashPhil.VehicleFramework_steam" Class="Vehicles.CustomCostDefModExtension">
 				<cost>10086</cost>
         <vehicles/>
 			</li>

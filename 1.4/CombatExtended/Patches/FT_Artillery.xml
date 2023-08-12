@@ -12,7 +12,7 @@
 
 				<li Class="PatchOperationRemove">
 					<xpath>
-						Defs/ThingDef[defName="FT_TurretHexMortar" or defName="FT_TurretPrince"]/comps/li[@Class = "CompProperties_Refuelable"]|
+						Defs/ThingDef[defName="FT_TurretHexMortar" or defName="FT_TurretPrince"]/comps/li[@Class = "CompProperties_Explosive"]|
 						Defs/ThingDef[defName="FT_TurretHexMortar" or defName="FT_TurretPrince"]/comps/li[@Class = "CompProperties_Refuelable"]|
 						Defs/ThingDef[defName="FT_TurretHexMortar" or defName="FT_TurretPrince"]/inspectorTabs |
 						Defs/ThingDef[defName="FT_TurretHexMortar" or defName="FT_TurretPrince"]/building/buildingTags/li[text()="Artillery_BaseDestroyer"]
@@ -196,7 +196,10 @@
 				<!-- === 155mm Field Cannon / NK-30 "Empero" === -->
 
 				<li Class="PatchOperationRemove">
-					<xpath>Defs/ThingDef[defName="FT_TurretEmpero"]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
+					<xpath>
+					Defs/ThingDef[defName="FT_TurretEmpero"]/comps/li[@Class="CompProperties_Refuelable"]|
+					Defs/ThingDef[defName="FT_TurretEmpero"]/comps/li[@Class="CompProperties_Explosive"]
+					</xpath>
 				</li>
 
 				<li Class="PatchOperationRemove">

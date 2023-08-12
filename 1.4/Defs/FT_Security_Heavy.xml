@@ -73,7 +73,7 @@
 			</li>
 		</comps>
 		<statBases>
-			<MaxHitPoints>300</MaxHitPoints>
+			<MaxHitPoints>750</MaxHitPoints>
 			<Flammability>0.7</Flammability>
 			<WorkToBuild>3000</WorkToBuild>
 			<Mass>200</Mass>

@@ -332,6 +332,21 @@
         <scanFindGuaranteedDays>12</scanFindGuaranteedDays>
         <soundWorking>ScannerLongRangeMineral_Ambience</soundWorking>
       </li>
+      <li Class="CompProperties_Usable" MayRequire="Ludeon.RimWorld.Biotech"><!--呼叫機械boss-->
+        <useJob>TriggerObject</useJob>
+        <useLabel>Summon diabolus threat</useLabel>
+        <useDuration>900</useDuration>
+        <floatMenuOptionPriority>SummonThreat</floatMenuOptionPriority>
+        <floatMenuFactionIcon>Mechanoid</floatMenuFactionIcon>
+        <ignoreOtherReservations>true</ignoreOtherReservations>
+      </li>
+      <li Class="CompProperties_Useable_CallBossgroup" MayRequire="Ludeon.RimWorld.Biotech">
+        <bossgroupDef>Diabolus</bossgroupDef>
+        <spawnLetterLabelKey>LetterLabelCommsConsoleSpawned</spawnLetterLabelKey>
+        <spawnLetterTextKey>LetterCommsConsoleSpawned</spawnLetterTextKey>
+        <effecterDef>CommsConsoleBossgroupSummoned</effecterDef>
+        <delayTicks>120</delayTicks>
+      </li>
     </comps>
     <designationHotKey>Misc3</designationHotKey>
     <placeWorkers>
@@ -341,6 +356,7 @@
       <li>FT_ENIAC</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+	<tickerType MayRequire="Ludeon.RimWorld.Biotech">Normal</tickerType><!-- used by call bossgroup -->
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">

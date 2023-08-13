@@ -10,4 +10,7 @@
   <FT_TurretAutoCannon_Twin.label>拖曳式機炮</FT_TurretAutoCannon_Twin.label>
   <FT_TurretAutoCannon_Twin.description>20x110毫米口徑的防空機砲，由拖曳式底盤搭載提供相對穩定的射擊環境.</FT_TurretAutoCannon_Twin.description>
 
+  <FTC_SpotterLight_Turret.label>砲兵測距儀</FTC_SpotterLight_Turret.label>
+  <FTC_SpotterLight_Turret.description>一種自帶無線電的野戰砲兵瞄準鏡. 對於協調火砲打擊很有用.\n\n在目標上使用此功能將對其進行標記,從而消除任何瞄準該目標的火砲的間接火力懲罰。 此外，任何定向火力都將使用觀察員的瞄準精度和效率，而不是砲兵操作員來確定最終精度.</FTC_SpotterLight_Turret.description>
+
 </LanguageData>

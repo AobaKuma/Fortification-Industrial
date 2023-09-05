@@ -1,85 +1,85 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
 
-<!-- 工作點 -->
+  <!-- 工作點 -->
 
-	<RecipeDef>
-		<defName>FT_Make_ConcreteCompressed</defName>
-		<label>Pack concrete</label>
-		<description>pack Concrete bag for storage,also trader are willing to buy them.</description>
-		<jobString>Packing concrete.</jobString>
-		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_Machining</soundWorking>
-		<workAmount>50</workAmount>
-		<ingredients>
-		  <li>
-			<filter>
-			  <thingDefs>
-				<li>FT_BlocksConcrete</li>
-			  </thingDefs>
-			</filter>
-			<count>75</count>
-		  </li>
-		</ingredients>
-		<fixedIngredientFilter>
-		  <thingDefs>
-			<li>FT_BlocksConcrete</li>
-		  </thingDefs>
-		</fixedIngredientFilter>
-		<recipeUsers>
-		  <li>CraftingSpot</li>
-		</recipeUsers>
-		<products>
-		  <FT_ConcreteCompressed>1</FT_ConcreteCompressed>
-		</products>
-		<skillRequirements>
-		  <Crafting>2</Crafting>
-		</skillRequirements>
-		<workSkill>Crafting</workSkill>
-		<researchPrerequisite>FT_Concrete</researchPrerequisite>	
-	</RecipeDef>
-  
-	<RecipeDef>
-		<defName>FT_Unpack_ConcreteCompressed</defName>
-		<label>Unpack concrete</label>
-		<description>Unpack Concrete bags for usage.</description>
-		<jobString>Unpacking concrete.</jobString>
-		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_Machining</soundWorking>
-		<workAmount>50</workAmount>
-		<ingredients>
-		  <li>
-			<filter>
-			  <thingDefs>
-				<li>FT_ConcreteCompressed</li>
-			  </thingDefs>
-			</filter>
-			<count>1</count>
-		  </li>
-		</ingredients>
-		<fixedIngredientFilter>
-		  <thingDefs>
-			<li>FT_BlocksConcrete</li>
-		  </thingDefs>
-		</fixedIngredientFilter>
-		<products>
-		  <FT_BlocksConcrete>75</FT_BlocksConcrete>
-		</products>
-		<recipeUsers>
-		  <li>CraftingSpot</li>
-		</recipeUsers>
-		<skillRequirements>
-		  <Crafting>2</Crafting>
-		</skillRequirements>
-		<workSkill>Crafting</workSkill>
-		<researchPrerequisite>FT_Concrete</researchPrerequisite>
-	</RecipeDef>
+  <RecipeDef>
+    <defName>FT_Make_ConcreteCompressed</defName>
+    <label>Pack concrete</label>
+    <description>pack Concrete bag for storage,also trader are willing to buy them.</description>
+    <jobString>Packing concrete.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>50</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FT_BlocksConcrete</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>FT_BlocksConcrete</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <products>
+      <FT_ConcreteCompressed>1</FT_ConcreteCompressed>
+    </products>
+    <skillRequirements>
+      <Crafting>2</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <researchPrerequisite>FT_Concrete</researchPrerequisite>
+  </RecipeDef>
 
-<!-- 混凝土攪拌機 -->
-  
+  <RecipeDef>
+    <defName>FT_Unpack_ConcreteCompressed</defName>
+    <label>Unpack concrete</label>
+    <description>Unpack Concrete bags for usage.</description>
+    <jobString>Unpacking concrete.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>50</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FT_ConcreteCompressed</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>FT_BlocksConcrete</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <FT_BlocksConcrete>75</FT_BlocksConcrete>
+    </products>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>2</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+    <researchPrerequisite>FT_Concrete</researchPrerequisite>
+  </RecipeDef>
+
+  <!-- 混凝土攪拌機 -->
+
   <RecipeDef Name="MakeConcreteBase" Abstract="True">
     <jobString>making Concrete from material</jobString>
     <workAmount>600</workAmount>
@@ -93,7 +93,7 @@
     <defName>FT_Make_ConcreteByStonyJunks</defName>
     <label>make Concrete from junks</label>
     <description>crush stony junks and made into concrete. the junk material must not be burnable or smeltable.</description>
-	  <ingredientValueGetterClass>AOBAUtilities.IngredientValueGetter_Mass</ingredientValueGetterClass>
+    <ingredientValueGetterClass>AOBAUtilities.IngredientValueGetter_Mass</ingredientValueGetterClass>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredients>
       <li>
@@ -106,11 +106,11 @@
         <count>10</count>
       </li>
     </ingredients>
-  	<fixedIngredientFilter>
-   		<categories>
-			<li>Weapons</li>
-			<li>Apparel</li>
-	  	</categories>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Weapons</li>
+        <li>Apparel</li>
+      </categories>
       <specialFiltersToDisallow>
         <li>AllowBurnableWeapons</li>
         <li>AllowSmeltable</li>
@@ -124,92 +124,92 @@
       <li>AllowBurnableApparel</li>
       <li>AllowSmeltableApparel</li>
     </forceHiddenSpecialFilters>
-  	<defaultIngredientFilter>
-		  <categories>
-			<li>Weapons</li>
-			<li>Apparel</li>
-		  </categories>
+    <defaultIngredientFilter>
+      <categories>
+        <li>Weapons</li>
+        <li>Apparel</li>
+      </categories>
       <disallowedThingDefs>
         <li>Apparel_ShieldBelt</li>
         <li>Apparel_SmokepopBelt</li>
       </disallowedThingDefs>
     </defaultIngredientFilter>
     <products>
-	  	<FT_BlocksConcrete>20</FT_BlocksConcrete>
+      <FT_BlocksConcrete>20</FT_BlocksConcrete>
     </products>
   </RecipeDef>
-  
+
   <RecipeDef ParentName="MakeConcreteBase">
     <defName>FT_Make_ConcreteByChunk</defName>
     <label>make Concrete from chunk</label>
     <description>crush chunks and made into Concrete.</description>
     <ingredients>
-		<li>
-			<filter>
-				<categories>
-					<li>StoneChunks</li>
-				</categories>
-			</filter>
-			<count>1</count>
-		</li>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneChunks</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
     </ingredients>
-  	<fixedIngredientFilter>
-   		<categories>
-			<li>StoneChunks</li>
-		</categories>
-		<disallowedThingDefs>
-			<li>FT_BlocksConcrete</li>
-		</disallowedThingDefs>
+    <fixedIngredientFilter>
+      <categories>
+        <li>StoneChunks</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>FT_BlocksConcrete</li>
+      </disallowedThingDefs>
     </fixedIngredientFilter>
-  	<defaultIngredientFilter>
-		<categories>
-			<li>StoneChunks</li>
-		</categories>
+    <defaultIngredientFilter>
+      <categories>
+        <li>StoneChunks</li>
+      </categories>
     </defaultIngredientFilter>
     <products>
-		<FT_BlocksConcrete>40</FT_BlocksConcrete>
+      <FT_BlocksConcrete>40</FT_BlocksConcrete>
     </products>
   </RecipeDef>
-  
+
   <RecipeDef ParentName="MakeConcreteBase">
     <defName>FT_Make_ConcreteByBlock</defName>
     <label>make Concrete</label>
     <description>crush blocks and made into concrete.</description>
     <ingredients>
-		<li>
-			<filter>
-				<categories>
-					<li>StoneBlocks</li>
-				</categories>
-			</filter>
-			<count>20</count>
-		</li>
+      <li>
+        <filter>
+          <categories>
+            <li>StoneBlocks</li>
+          </categories>
+        </filter>
+        <count>20</count>
+      </li>
     </ingredients>
-	<fixedIngredientFilter>
+    <fixedIngredientFilter>
       <categories>
         <li>StoneBlocks</li>
       </categories>
       <disallowedThingDefs>
         <li>FT_BlocksConcrete</li>
         <li>FT_WoodConcrete</li>
-		<li>FT_ReinforcedConcreteBag</li>
+        <li>FT_ReinforcedConcreteBag</li>
       </disallowedThingDefs>
     </fixedIngredientFilter>
-	<defaultIngredientFilter>
+    <defaultIngredientFilter>
       <categories>
         <li>StoneBlocks</li>
       </categories>
       <disallowedThingDefs>
         <li>FT_BlocksConcrete</li>
         <li>FT_WoodConcrete</li>
-		<li>FT_ReinforcedConcreteBag</li>
+        <li>FT_ReinforcedConcreteBag</li>
       </disallowedThingDefs>
     </defaultIngredientFilter>
     <products>
       <FT_BlocksConcrete>25</FT_BlocksConcrete>
     </products>
   </RecipeDef>
-  
+
 
   <RecipeDef>
     <defName>FT_Make_ConcreteWood</defName>
@@ -219,8 +219,8 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
-	<recipeUsers>
-	  <li>FT_TableConcreteMixer</li>
+    <recipeUsers>
+      <li>FT_TableConcreteMixer</li>
     </recipeUsers>
     <workAmount>50</workAmount>
     <ingredients>
@@ -253,9 +253,9 @@
       <Crafting>2</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
-	  <researchPrerequisite>FT_Concrete</researchPrerequisite>
+    <researchPrerequisite>FT_Concrete</researchPrerequisite>
   </RecipeDef>
-  
+
   <RecipeDef>
     <defName>FT_Make_ReinforcedConcrete</defName>
     <label>prepare steel for concrete</label>
@@ -283,9 +283,9 @@
         <count>10</count>
       </li>
     </ingredients>
-  	<recipeUsers>
+    <recipeUsers>
       <li>CraftingSpot</li>
-	  <li>FT_TableConcreteMixer</li>
+      <li>FT_TableConcreteMixer</li>
     </recipeUsers>
     <fixedIngredientFilter>
       <thingDefs>
@@ -299,7 +299,7 @@
       <Crafting>5</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
-	  <researchPrerequisite>FT_Concrete</researchPrerequisite>
+    <researchPrerequisite>FT_Concrete</researchPrerequisite>
   </RecipeDef>
 
   <!-- 車床 -->
@@ -330,49 +330,49 @@
     </fixedIngredientFilter>
     <products>
       <ReinforcedBarrel>1</ReinforcedBarrel>
-	  <ChunkSlagSteel>3</ChunkSlagSteel>
+      <ChunkSlagSteel>3</ChunkSlagSteel>
     </products>
     <skillRequirements>
       <Crafting>15</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
-	  <researchPrerequisite>FT_Lathe</researchPrerequisite>
+    <researchPrerequisite>FT_Lathe</researchPrerequisite>
   </RecipeDef>
 
-	<RecipeDef>
-		<defName>FT_Make_ComponentIndustrial</defName>
-		<label>make component</label>
-		<description>Make a component from lathe,take longer time and resources.</description>
-		<jobString>Making component.</jobString>
-		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_Machining</soundWorking>
-		<workAmount>9000</workAmount>
-		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-		<ingredients>
-		  <li>
-			<filter>
-			  <thingDefs>
-				<li>Steel</li>
-			  </thingDefs>
-			</filter>
-			<count>20</count>
-		  </li>
-		</ingredients>
-		<fixedIngredientFilter>
-		  <thingDefs>
-			<li>Steel</li>
-		  </thingDefs>
-		</fixedIngredientFilter>
-		<products>
-		  <ComponentIndustrial>1</ComponentIndustrial>
-		</products>
-		<skillRequirements>
-		  <Crafting>10</Crafting>
-		</skillRequirements>
-		<workSkill>Crafting</workSkill>
-	</RecipeDef>
-  
+  <RecipeDef>
+    <defName>FT_Make_ComponentIndustrial</defName>
+    <label>make component</label>
+    <description>Make a component from lathe,take longer time and resources.</description>
+    <jobString>Making component.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>9000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </products>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
   <!-- 化學工作臺 -->
   <RecipeDef>
     <defName>FT_Make_Neutroamine</defName>
@@ -383,8 +383,8 @@
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
     <workAmount>5000</workAmount>
-	  <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
-	  <ingredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+    <ingredients>
       <li>
         <filter>
           <categories>
@@ -394,27 +394,27 @@
         <count>5</count>
       </li>
     </ingredients>
-	  <fixedIngredientFilter>
-	  	<categories>
-	  		<li>MeatRaw</li>
-	  	</categories>
+    <fixedIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
     </fixedIngredientFilter>
 
     <defaultIngredientFilter>
-		  <categories>
-		  	<li>MeatRaw</li>
-		  </categories>
-  	</defaultIngredientFilter>
+      <categories>
+        <li>MeatRaw</li>
+      </categories>
+    </defaultIngredientFilter>
 
     <products>
-		<Neutroamine>5</Neutroamine>
+      <Neutroamine>5</Neutroamine>
     </products>
     <skillRequirements>
-		<Medicine>8</Medicine>
+      <Medicine>8</Medicine>
     </skillRequirements>
     <workSkill>Medicine</workSkill>
   </RecipeDef>
-  
+
   <RecipeDef>
     <defName>FT_Make_Dye</defName>
     <label>synthesize Dye</label>
@@ -424,17 +424,17 @@
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
     <workAmount>1500</workAmount>
-	  <ingredients>
-		<li>
-			<filter>
-				<thingDefs>
-					<li>Chemfuel</li>
-				</thingDefs>
-			</filter>
-			<count>15</count>
-		</li>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
     </ingredients>
-	  <fixedIngredientFilter>
+    <fixedIngredientFilter>
       <thingDefs>
         <li>Chemfuel</li>
       </thingDefs>
@@ -443,12 +443,12 @@
       <thingDefs>
         <li>Chemfuel</li>
       </thingDefs>
-	  </defaultIngredientFilter>
+    </defaultIngredientFilter>
     <products>
-		<Dye>5</Dye>
+      <Dye>5</Dye>
     </products>
     <skillRequirements>
-		<Crafting>3</Crafting>
+      <Crafting>3</Crafting>
     </skillRequirements>
     <workSkill>Crafting</workSkill>
   </RecipeDef>
@@ -471,7 +471,7 @@
     </requiredCapacities>
     <prioritizeSustains>true</prioritizeSustains>
   </WorkGiverDef>
-  
+
   <WorkGiverDef>
     <defName>FT_Synthesizing</defName>
     <label>Synthesizing Compound</label>

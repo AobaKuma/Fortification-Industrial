@@ -1,0 +1,52 @@
+<<<<<<< Updated upstream
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!--<FT_TurretPrince.label>榴彈砲</FT_TurretPrince.label>-->
+  <!--<FT_TurretPrince.description>一種為了追求高精度和輕量化而放棄部分直射能力的火砲.\n\n更具體的稱呼是 NK-33L 親王型 155毫米榴彈砲,是一種設計用於機動部屬的輕型火砲.</FT_TurretPrince.description>-->
+
+  <!--<FT_Gun_TurretPrince.label>榴彈砲</FT_Gun_TurretPrince.label>-->
+  <!--<FT_Gun_TurretPrince.description>一種為了追求高精度和輕量化而放棄部分直射能力的火砲.\n\n更具體的稱呼是 NK-33L 親王型 155毫米榴彈砲,是一種設計用於機動部屬的輕型火砲.</FT_Gun_TurretPrince.description>-->
+
+  <!--<FT_TurretEmpero.label>重型野戰砲</FT_TurretEmpero.label>-->
+  <!--<FT_TurretEmpero.description>一種火砲,由於極高的砲口初速所以只能近距離水平射擊,但精度很高. \n\n更具體的稱呼是 NK-30"帝王型" 155 毫米重型榴彈砲 它是由奈良重工設計的可靠火砲,為那些無法對抗機械軍隊的前工業文明提供技術支持.</FT_TurretEmpero.description>-->
+
+  <!--<FT_Gun_TurretEmpero.label>重型野戰砲</FT_Gun_TurretEmpero.label>-->
+  <!--<FT_Gun_TurretEmpero.description>一門高精度的大威力直射火炮.</FT_Gun_TurretEmpero.description>-->
+
+  <!--<FT_TurretAutoCannon_.label>拖曳式機炮</FT_TurretAutoCannon_.label>-->
+  <!--<FT_TurretAutoCannon_.description>20x110毫米口徑的防空機砲，由拖曳式底盤搭載提供相對穩定的射擊環境.</FT_TurretAutoCannon_.description>-->
+
+  <!--<FT_TurretAT_Plus.label>重型反坦克炮</FT_TurretAT_Plus.label>-->
+  <!--<FT_TurretAT_Plus.description>76毫米口徑的長身管反坦克炮，能在遠距離殲滅重裝甲載具.</FT_TurretAT_Plus.description>-->
+
+  <!--<FT_Gun_TurretAT_Plus.label>重型反坦克炮</FT_Gun_TurretAT_Plus.label>-->
+  <!--<FT_Gun_TurretAT_Plus.description>76毫米口徑的長身管反坦克炮，能在遠距離殲滅重裝甲載具.</FT_Gun_TurretAT_Plus.description>-->
+
+=======
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!--<FT_TurretPrince.label>榴彈砲</FT_TurretPrince.label>-->
+  <!--<FT_TurretPrince.description>一種為了追求高精度和輕量化而放棄部分直射能力的火砲.\n\n更具體的稱呼是 NK-33L 親王型 155毫米榴彈砲,是一種設計用於機動部屬的輕型火砲.</FT_TurretPrince.description>-->
+
+  <!--<FT_Gun_TurretPrince.label>榴彈砲</FT_Gun_TurretPrince.label>-->
+  <!--<FT_Gun_TurretPrince.description>一種為了追求高精度和輕量化而放棄部分直射能力的火砲.\n\n更具體的稱呼是 NK-33L 親王型 155毫米榴彈砲,是一種設計用於機動部屬的輕型火砲.</FT_Gun_TurretPrince.description>-->
+
+  <!--<FT_TurretEmpero.label>重型野戰砲</FT_TurretEmpero.label>-->
+  <!--<FT_TurretEmpero.description>一種火砲,由於極高的砲口初速所以只能近距離水平射擊,但精度很高. \n\n更具體的稱呼是 NK-30"帝王型" 155 毫米重型榴彈砲 它是由奈良重工設計的可靠火砲,為那些無法對抗機械軍隊的前工業文明提供技術支持.</FT_TurretEmpero.description>-->
+
+  <!--<FT_Gun_TurretEmpero.label>重型野戰砲</FT_Gun_TurretEmpero.label>-->
+  <!--<FT_Gun_TurretEmpero.description>一門高精度的大威力直射火炮.</FT_Gun_TurretEmpero.description>-->
+
+  <!--<FT_TurretAutoCannon_.label>拖曳式機炮</FT_TurretAutoCannon_.label>-->
+  <!--<FT_TurretAutoCannon_.description>20x110毫米口徑的防空機砲，由拖曳式底盤搭載提供相對穩定的射擊環境.</FT_TurretAutoCannon_.description>-->
+
+  <!--<FT_TurretAT_Plus.label>重型反坦克炮</FT_TurretAT_Plus.label>-->
+  <!--<FT_TurretAT_Plus.description>76毫米口徑的長身管反坦克炮，能在遠距離殲滅重裝甲載具.</FT_TurretAT_Plus.description>-->
+
+  <!--<FT_Gun_TurretAT_Plus.label>重型反坦克炮</FT_Gun_TurretAT_Plus.label>-->
+  <!--<FT_Gun_TurretAT_Plus.description>76毫米口徑的長身管反坦克炮，能在遠距離殲滅重裝甲載具.</FT_Gun_TurretAT_Plus.description>-->
+
+>>>>>>> Stashed changes
+</LanguageData>

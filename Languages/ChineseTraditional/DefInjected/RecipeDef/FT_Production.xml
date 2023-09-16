@@ -1,0 +1,72 @@
+<<<<<<< Updated upstream
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!--<FT_Make_ComponentIndustrial.label>製造零件</FT_Make_ComponentIndustrial.label>-->
+  <!--<FT_Make_ComponentIndustrial.description>在車床將鋼鐵加工成零件,由於硬件限制因此效率不如精密製作桌</FT_Make_ComponentIndustrial.description>-->
+  <!--<FT_Make_ComponentIndustrial.jobString>正在製作零件</FT_Make_ComponentIndustrial.jobString>-->
+  <!--<FT_Make_ConcreteCompressed.label>封裝混凝土</FT_Make_ConcreteCompressed.label>-->
+  <!--<FT_Make_ConcreteCompressed.description>將混凝土封裝,可以用於儲存以及販售.</FT_Make_ConcreteCompressed.description>-->
+  <!--<FT_Make_ConcreteCompressed.jobString>封裝混凝土中.</FT_Make_ConcreteCompressed.jobString>-->
+  <!--<FT_Unpack_ConcreteCompressed.label>分裝混凝土</FT_Unpack_ConcreteCompressed.label>-->
+  <!--<FT_Unpack_ConcreteCompressed.description>分裝混凝土用於建築.</FT_Unpack_ConcreteCompressed.description>-->
+  <!--<FT_Unpack_ConcreteCompressed.jobString>分裝混凝土中.</FT_Unpack_ConcreteCompressed.jobString>-->
+  <!--<FT_Make_ConcreteWood.label>製作水泥預製板</FT_Make_ConcreteWood.label>-->
+  <!--<FT_Make_ConcreteWood.description>用混凝土倒入模具澆築水泥預製板,作為大規模建築用的材料,防火且建造相對省時.</FT_Make_ConcreteWood.description>-->
+  <!--<FT_Make_ConcreteWood.jobString>澆築預製板中</FT_Make_ConcreteWood.jobString>-->
+  <!--<FT_Make_ReinforcedConcrete.label>備料鋼筋混凝土</FT_Make_ReinforcedConcrete.label>-->
+  <!--<FT_Make_ReinforcedConcrete.description>給混凝土準備鋼筋來用於澆築鋼筋混凝土建築.</FT_Make_ReinforcedConcrete.description>-->
+  <!--<FT_Make_ReinforcedConcrete.jobString>準備材料中.</FT_Make_ReinforcedConcrete.jobString>-->
+  <!--<FT_Make_ReinforcedBarrel.label>製造精密砲管</FT_Make_ReinforcedBarrel.label>-->
+  <!--<FT_Make_ReinforcedBarrel.description>在車床製造精密砲管.</FT_Make_ReinforcedBarrel.description>-->
+  <!--<FT_Make_ReinforcedBarrel.jobString>切削砲管中.</FT_Make_ReinforcedBarrel.jobString>-->
+  <!--<FT_Make_Neutroamine.label>合成中性胺</FT_Make_Neutroamine.label>-->
+  <!--<FT_Make_Neutroamine.description>從肉類資源中合成中性胺.</FT_Make_Neutroamine.description>-->
+  <!--<FT_Make_Neutroamine.jobString>化學合成中.</FT_Make_Neutroamine.jobString>-->
+  <!--<FT_Make_Dye.label>人工合成染料</FT_Make_Dye.label>-->
+  <!--<FT_Make_Dye.description>用化合燃料合成染料</FT_Make_Dye.description>-->
+  <!--<FT_Make_Dye.jobString>合成染料中</FT_Make_Dye.jobString>-->
+  <!--<FT_Make_ConcreteByChunk.label>將石塊加工成混凝土</FT_Make_ConcreteByChunk.label>-->
+  <!--<FT_Make_ConcreteByChunk.description>將石塊加工成混凝土.</FT_Make_ConcreteByChunk.description>-->
+  <!--<FT_Make_ConcreteByChunk.jobString>加工石料中</FT_Make_ConcreteByChunk.jobString>-->
+  <!--<FT_Make_ConcreteByBlock.label>將石磚加工成混凝土</FT_Make_ConcreteByBlock.label>-->
+  <!--<FT_Make_ConcreteByBlock.description>將石磚加工成混凝土.</FT_Make_ConcreteByBlock.description>-->
+  <!--<FT_Make_ConcreteByBlock.jobString>加工石料中</FT_Make_ConcreteByBlock.jobString>-->
+
+=======
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!--<FT_Make_ComponentIndustrial.label>製造零件</FT_Make_ComponentIndustrial.label>-->
+  <!--<FT_Make_ComponentIndustrial.description>在車床將鋼鐵加工成零件,由於硬件限制因此效率不如精密製作桌</FT_Make_ComponentIndustrial.description>-->
+  <!--<FT_Make_ComponentIndustrial.jobString>正在製作零件</FT_Make_ComponentIndustrial.jobString>-->
+  <!--<FT_Make_ConcreteCompressed.label>封裝混凝土</FT_Make_ConcreteCompressed.label>-->
+  <!--<FT_Make_ConcreteCompressed.description>將混凝土封裝,可以用於儲存以及販售.</FT_Make_ConcreteCompressed.description>-->
+  <!--<FT_Make_ConcreteCompressed.jobString>封裝混凝土中.</FT_Make_ConcreteCompressed.jobString>-->
+  <!--<FT_Unpack_ConcreteCompressed.label>分裝混凝土</FT_Unpack_ConcreteCompressed.label>-->
+  <!--<FT_Unpack_ConcreteCompressed.description>分裝混凝土用於建築.</FT_Unpack_ConcreteCompressed.description>-->
+  <!--<FT_Unpack_ConcreteCompressed.jobString>分裝混凝土中.</FT_Unpack_ConcreteCompressed.jobString>-->
+  <!--<FT_Make_ConcreteWood.label>製作水泥預製板</FT_Make_ConcreteWood.label>-->
+  <!--<FT_Make_ConcreteWood.description>用混凝土倒入模具澆築水泥預製板,作為大規模建築用的材料,防火且建造相對省時.</FT_Make_ConcreteWood.description>-->
+  <!--<FT_Make_ConcreteWood.jobString>澆築預製板中</FT_Make_ConcreteWood.jobString>-->
+  <!--<FT_Make_ReinforcedConcrete.label>備料鋼筋混凝土</FT_Make_ReinforcedConcrete.label>-->
+  <!--<FT_Make_ReinforcedConcrete.description>給混凝土準備鋼筋來用於澆築鋼筋混凝土建築.</FT_Make_ReinforcedConcrete.description>-->
+  <!--<FT_Make_ReinforcedConcrete.jobString>準備材料中.</FT_Make_ReinforcedConcrete.jobString>-->
+  <!--<FT_Make_ReinforcedBarrel.label>製造精密砲管</FT_Make_ReinforcedBarrel.label>-->
+  <!--<FT_Make_ReinforcedBarrel.description>在車床製造精密砲管.</FT_Make_ReinforcedBarrel.description>-->
+  <!--<FT_Make_ReinforcedBarrel.jobString>切削砲管中.</FT_Make_ReinforcedBarrel.jobString>-->
+  <!--<FT_Make_Neutroamine.label>合成中性胺</FT_Make_Neutroamine.label>-->
+  <!--<FT_Make_Neutroamine.description>從肉類資源中合成中性胺.</FT_Make_Neutroamine.description>-->
+  <!--<FT_Make_Neutroamine.jobString>化學合成中.</FT_Make_Neutroamine.jobString>-->
+  <!--<FT_Make_Dye.label>人工合成染料</FT_Make_Dye.label>-->
+  <!--<FT_Make_Dye.description>用化合燃料合成染料</FT_Make_Dye.description>-->
+  <!--<FT_Make_Dye.jobString>合成染料中</FT_Make_Dye.jobString>-->
+  <!--<FT_Make_ConcreteByChunk.label>將石塊加工成混凝土</FT_Make_ConcreteByChunk.label>-->
+  <!--<FT_Make_ConcreteByChunk.description>將石塊加工成混凝土.</FT_Make_ConcreteByChunk.description>-->
+  <!--<FT_Make_ConcreteByChunk.jobString>加工石料中</FT_Make_ConcreteByChunk.jobString>-->
+  <!--<FT_Make_ConcreteByBlock.label>將石磚加工成混凝土</FT_Make_ConcreteByBlock.label>-->
+  <!--<FT_Make_ConcreteByBlock.description>將石磚加工成混凝土.</FT_Make_ConcreteByBlock.description>-->
+  <!--<FT_Make_ConcreteByBlock.jobString>加工石料中</FT_Make_ConcreteByBlock.jobString>-->
+
+>>>>>>> Stashed changes
+</LanguageData>

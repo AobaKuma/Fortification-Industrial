@@ -14,7 +14,7 @@
 						</mods>
 						<match Class="PatchOperationSequence">
 							<operations>
-								<li Class="PatchOperationReplace">
+								<li Class="PatchOperationReplace"><!--強化壕溝-->
 									<xpath>Defs/ThingDef[defName="FT_Trench"]/costList</xpath>
 									<value>
 										<costList>
@@ -22,7 +22,7 @@
 										</costList>
 									</value>
 								</li>
-								<li Class="PatchOperationReplace">
+								<li Class="PatchOperationReplace"><!--強化平台-->
 									<xpath>Defs/ThingDef[defName="FT_Platform"]/costList</xpath>
 									<value>
 										<costList>
@@ -30,7 +30,7 @@
 										</costList>
 									</value>
 								</li>
-								<li Class="PatchOperationReplace">
+								<li Class="PatchOperationReplace"><!--強化火炮-->
 									<xpath>
 										Defs/ThingDef[defName="FT_VFES_Turret_Artillery"]/costList</xpath>
 									<value>
@@ -44,19 +44,32 @@
 							</operations>
 						</match>
 					</li>
-					<li Class="PatchOperationRemove">
+					<li Class="PatchOperationRemove"><!--製造配方-->
 						<xpath>Defs/RecipeDef[defName="FT_Make_ReinforcedConcrete"]</xpath>
 					</li>
-					<li Class="PatchOperationRemove">
-						<xpath>
-							Defs/RecipeDef[defName="FT_Make_ConcreteByBlock"]/defaultIngredientFilter/disallowedThingDefs/li[text()="FT_ReinforcedConcreteBag"]</xpath>
+					<li Class="PatchOperationRemove"><!--配方過濾-->
+						<xpath>Defs/RecipeDef[defName="FT_Make_ConcreteByBlock"]/defaultIngredientFilter/disallowedThingDefs/li[text()="FT_ReinforcedConcreteBag"]</xpath>
 					</li>
-					<li Class="PatchOperationRemove">
-						<xpath>
-							Defs/RecipeDef[defName="FT_Make_ConcreteByBlock"]/fixedIngredientFilter/disallowedThingDefs/li[text()="FT_ReinforcedConcreteBag"]</xpath>
+					<li Class="PatchOperationRemove"><!--配方過濾-->
+						<xpath>Defs/RecipeDef[defName="FT_Make_ConcreteByBlock"]/fixedIngredientFilter/disallowedThingDefs/li[text()="FT_ReinforcedConcreteBag"]</xpath>
 					</li>
-					<li Class="PatchOperationRemove">
+					<li Class="PatchOperationRemove"><!--刪除本體-->
 						<xpath>Defs/ThingDef[defName="FT_ReinforcedConcreteBag"]</xpath>
+					</li>
+
+					<li Class="PatchOperationFindMod">
+						<mods>
+							<li>Vanilla Furniture Expanded - Architect</li>
+						</mods>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/TerrainDef[defName="VFEArch_BridgeSteelConcrete"]/costList</xpath>
+							<value>
+								<costList>
+									<FT_BlocksConcrete>6</FT_BlocksConcrete>
+									<Steel>6</Steel>
+								</costList>
+							</value>
+						</match>
 					</li>
 				</operations>
 			</Operation>
@@ -71,29 +84,45 @@
 			<Operation Class="PatchOperationSequence">
 				<operations>
 					<li Class="PatchOperationRemove">
-						<xpath>
-							Defs/RecipeDef[defName="FT_Make_ConcreteByBlock"]/defaultIngredientFilter/disallowedThingDefs/li[text()="FT_WoodConcrete"]</xpath>
+						<xpath>Defs/RecipeDef[defName="FT_Make_ConcreteByBlock"]/defaultIngredientFilter/disallowedThingDefs/li[text()="FT_WoodConcrete"]</xpath>
 					</li>
 					<li Class="PatchOperationRemove">
-						<xpath>
-							Defs/RecipeDef[defName="FT_Make_ConcreteByBlock"]/fixedIngredientFilter/disallowedThingDefs/li[text()="FT_WoodConcrete"]</xpath>
+						<xpath>Defs/RecipeDef[defName="FT_Make_ConcreteByBlock"]/fixedIngredientFilter/disallowedThingDefs/li[text()="FT_WoodConcrete"]</xpath>
 					</li>
 					<li Class="PatchOperationRemove">
 						<xpath>Defs/RecipeDef[defName="FT_Make_ConcreteWood"]</xpath>
 					</li>
-					<li Class="PatchOperationRemove">
-						<xpath>Defs/TerrainDef[defName="FT_PlankFloor"]</xpath>
-					</li>
-					<li Class="PatchOperationRemove">
-						<xpath>Defs/ThingDef[defName="FT_WoodConcrete"]</xpath>
-					</li>
 					<li Class="PatchOperationReplace">
-						<xpath>*/TerrainDef[defName = "FT_TileStoneConcrete"]/costList</xpath>
+						<xpath>Defs/TerrainDef[defName="FT_PlankFloor"]/costList</xpath>
 						<value>
 							<costList>
 								<FT_BlocksConcrete>4</FT_BlocksConcrete>
 							</costList>
 						</value>
+					</li>
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="FT_WoodConcrete"]</xpath>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/TerrainDef[defName = "FT_TileStoneConcrete"]/costList</xpath>
+						<value>
+							<costList>
+								<FT_BlocksConcrete>4</FT_BlocksConcrete>
+							</costList>
+						</value>
+					</li>
+					<li Class="PatchOperationFindMod">
+						<mods>
+							<li>Vanilla Furniture Expanded - Architect</li>
+						</mods>
+						<match Class="PatchOperationReplace">
+							<xpath>Defs/TerrainDef[defName="VFEArch_WoodPlankFloorConcrete"]/costList</xpath>
+							<value>
+								<costList>
+									<FT_BlocksConcrete>4</FT_BlocksConcrete>
+								</costList>
+							</value>
+						</match>
 					</li>
 				</operations>
 			</Operation>

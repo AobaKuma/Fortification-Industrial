@@ -322,7 +322,7 @@
 		<graphicData>
 			<texPath>Empero/Empero_Base_Old</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(6,6)</drawSize>
+			<drawSize>(7,7)</drawSize>
 			<drawOffset>(0,-0.01,0)</drawOffset>
 		</graphicData>
 		<size>(3,3)</size>
@@ -393,7 +393,7 @@
 		<building>
 			<turretBurstWarmupTime>5.0</turretBurstWarmupTime>
 			<turretBurstCooldownTime>10.0</turretBurstCooldownTime>
-			<turretTopDrawSize>8.5</turretTopDrawSize>
+			<turretTopDrawSize>7</turretTopDrawSize>
 			<turretGunDef>FT_Gun_TurretEmpero</turretGunDef>
 			<buildingTags>
 				<li>Artillery</li>

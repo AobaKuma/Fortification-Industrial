@@ -954,6 +954,24 @@
       <li Class="Fortification.CompProperties_CastPushHeat">
         <energyPerCast>50000</energyPerCast>
       </li>
+      <li Class="Fortification.CompProperties_CastFlecker">
+        <fleck>DustPuffThick</fleck>
+        <burstAmount>20</burstAmount>
+        <burstSway>20</burstSway>
+        <burstAngle>180</burstAngle>
+        <fleckSizeRange>(1,8)</fleckSizeRange>
+        <burstSpeedRange>(0.5,1)</burstSpeedRange>
+        <burstOffsetRange>(4,9)</burstOffsetRange> 
+      </li>
+      <li Class="Fortification.CompProperties_CastFlecker">
+        <fleck>DustPuff</fleck>
+        <burstAmount>10</burstAmount>
+        <burstSway>5</burstSway>
+        <burstAngle>180</burstAngle>
+        <fleckSizeRange>(5,8)</fleckSizeRange>
+        <burstSpeedRange>(1,8)</burstSpeedRange>
+        <burstOffsetRange>(7,11)</burstOffsetRange> 
+      </li>
     </comps>
     <verbs>
       <li>

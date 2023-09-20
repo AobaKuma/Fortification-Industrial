@@ -170,7 +170,11 @@
 		<graphicData>
 			<texPath>InfantryTurret/FT_HexMortarBase</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
+<<<<<<< Updated upstream
 			<drawSize>(3.5,4)</drawSize>
+=======
+			<drawSize>(4,4)</drawSize>
+>>>>>>> Stashed changes
 			<drawOffset>(0,-0.01,0)</drawOffset>
 		</graphicData>
 		<size>(3,3)</size>
@@ -249,7 +253,7 @@
 		<building>
 			<turretBurstWarmupTime>3.0</turretBurstWarmupTime>
 			<turretBurstCooldownTime>10.0</turretBurstCooldownTime>
-			<turretTopDrawSize>3.5</turretTopDrawSize>
+			<turretTopDrawSize>5</turretTopDrawSize>
 			<turretGunDef>FT_Gun_TurretPrince</turretGunDef>
 			<buildingTags>
 				<li>Artillery</li>
@@ -393,7 +397,11 @@
 		<building>
 			<turretBurstWarmupTime>5.0</turretBurstWarmupTime>
 			<turretBurstCooldownTime>10.0</turretBurstCooldownTime>
+<<<<<<< Updated upstream
 			<turretTopDrawSize>7</turretTopDrawSize>
+=======
+			<turretTopDrawSize>6</turretTopDrawSize>
+>>>>>>> Stashed changes
 			<turretGunDef>FT_Gun_TurretEmpero</turretGunDef>
 			<buildingTags>
 				<li>Artillery</li>

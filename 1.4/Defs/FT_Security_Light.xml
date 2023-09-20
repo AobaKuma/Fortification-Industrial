@@ -966,6 +966,15 @@
       <li Class="Fortification.CompProperties_CastFlecker">
         <fleck>DustPuff</fleck>
         <burstAmount>10</burstAmount>
+        <burstSway>45</burstSway>
+        <burstAngle>0</burstAngle>
+        <fleckSizeRange>(1,3)</fleckSizeRange>
+        <burstSpeedRange>(-0.5,0.5)</burstSpeedRange>
+        <burstOffsetRange>(2,5)</burstOffsetRange> 
+      </li>
+      <li Class="Fortification.CompProperties_CastFlecker">
+        <fleck>DustPuff</fleck>
+        <burstAmount>10</burstAmount>
         <burstSway>5</burstSway>
         <burstAngle>180</burstAngle>
         <fleckSizeRange>(5,8)</fleckSizeRange>

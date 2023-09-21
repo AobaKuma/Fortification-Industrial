@@ -168,13 +168,9 @@
 		<uiIconPath>Prince/Prince_Icon</uiIconPath>
 		<uiIconScale>1.2</uiIconScale>
 		<graphicData>
-			<texPath>InfantryTurret/FT_HexMortarBase</texPath>
+			<texPath>Prince/Prince_Base</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-<<<<<<< Updated upstream
-			<drawSize>(3.5,4)</drawSize>
-=======
-			<drawSize>(4,4)</drawSize>
->>>>>>> Stashed changes
+			<drawSize>(6,6)</drawSize>
 			<drawOffset>(0,-0.01,0)</drawOffset>
 		</graphicData>
 		<size>(3,3)</size>
@@ -228,14 +224,14 @@
 				<maxForcedMissRadiusFactor>2.5</maxForcedMissRadiusFactor>
 				<gizmoIconTexPath>Things/Building/Artillery/TurretArtillery_Top</gizmoIconTexPath>
 			</li>
-			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+			<!--<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
 				<randomGraphics>
 					<li>InfantryTurret/FT_HexMortarBase</li>
 					<li>InfantryTurret/FT_HexMortarBase_Sec</li>
 					<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Heavy</li>
 					<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Wheel_Sec</li>
 				</randomGraphics>
-			</li>
+			</li>-->
 		</comps>
 		<statBases>
 			<Mass>255</Mass>
@@ -253,7 +249,7 @@
 		<building>
 			<turretBurstWarmupTime>3.0</turretBurstWarmupTime>
 			<turretBurstCooldownTime>10.0</turretBurstCooldownTime>
-			<turretTopDrawSize>5</turretTopDrawSize>
+			<turretTopDrawSize>4</turretTopDrawSize>
 			<turretGunDef>FT_Gun_TurretPrince</turretGunDef>
 			<buildingTags>
 				<li>Artillery</li>
@@ -397,11 +393,7 @@
 		<building>
 			<turretBurstWarmupTime>5.0</turretBurstWarmupTime>
 			<turretBurstCooldownTime>10.0</turretBurstCooldownTime>
-<<<<<<< Updated upstream
 			<turretTopDrawSize>7</turretTopDrawSize>
-=======
-			<turretTopDrawSize>6</turretTopDrawSize>
->>>>>>> Stashed changes
 			<turretGunDef>FT_Gun_TurretEmpero</turretGunDef>
 			<buildingTags>
 				<li>Artillery</li>

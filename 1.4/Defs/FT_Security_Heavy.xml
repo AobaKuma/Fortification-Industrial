@@ -63,7 +63,7 @@
 			<li Class="CompProperties_Mannable">
 				<manWorkType>Violent</manWorkType>
 			</li>
-			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
 				<randomGraphics>
 					<li>InfantryTurret/FT_HexMortarBase</li>
 					<li>InfantryTurret/FT_HexMortarBase_Sec</li>
@@ -131,6 +131,34 @@
 			</li>
 		</verbs>
 		<comps>
+			<li Class="Fortification.CompProperties_CastFlecker"> <!-- 尾煙-->
+				<fleck>DustPuffThick</fleck>
+				<burstAmount>10</burstAmount>
+				<burstSway>60</burstSway>
+				<burstAngle>180</burstAngle>
+				<fleckSizeRange>(3,5)</fleckSizeRange>
+				<burstSpeedRange>(1,2)</burstSpeedRange>
+				<burstOffsetRange>(2,6)</burstOffsetRange> 
+			</li>
+			<li Class="Fortification.CompProperties_CastFlecker"><!-- 噴火-->
+				<fleck>DustPuffThick</fleck>
+				<burstAmount>10</burstAmount>
+				<burstSway>70</burstSway>
+				<burstAngle>180</burstAngle>
+				<fleckSizeRange>(3,5)</fleckSizeRange>
+				<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
+				<burstOffsetRange>(2,6)</burstOffsetRange> 
+				<rangeScaleFactor>(1,0.1)</rangeScaleFactor>
+			</li>
+			<li Class="Fortification.CompProperties_CastFlecker"><!-- 揚塵-->
+				<fleck>DustPuff</fleck>
+				<burstAmount>15</burstAmount>
+				<burstSway>30</burstSway>
+				<burstAngle>0</burstAngle>
+				<fleckSizeRange>(1,2)</fleckSizeRange>
+				<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
+				<burstOffsetRange>(2,6)</burstOffsetRange> 
+			</li>
 			<li Class="CompProperties_ChangeableProjectile" />
 		</comps>
 		<building>
@@ -224,7 +252,7 @@
 				<maxForcedMissRadiusFactor>2.5</maxForcedMissRadiusFactor>
 				<gizmoIconTexPath>Things/Building/Artillery/TurretArtillery_Top</gizmoIconTexPath>
 			</li>
-			<li Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
 				<randomGraphics>
 					<li>InfantryTurret/FT_HexMortarBase</li>
 					<li>InfantryTurret/FT_HexMortarBase_Sec</li>
@@ -272,6 +300,34 @@
 			<Mass>205</Mass>
 		</statBases>
 		<comps>
+			<li Class="Fortification.CompProperties_CastFlecker">
+				<fleck>DustPuffThick</fleck>
+				<burstAmount>10</burstAmount>
+				<burstSway>110</burstSway>
+				<burstAngle>180</burstAngle>
+				<fleckSizeRange>(3,5)</fleckSizeRange>
+				<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
+				<burstOffsetRange>(2,6)</burstOffsetRange> 
+			</li>
+			<li Class="Fortification.CompProperties_CastFlecker">
+				<fleck>DustPuffThick</fleck>
+				<burstAmount>10</burstAmount>
+				<burstSway>70</burstSway>
+				<burstAngle>180</burstAngle>
+				<fleckSizeRange>(3,5)</fleckSizeRange>
+				<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
+				<burstOffsetRange>(2,6)</burstOffsetRange> 
+				<rangeScaleFactor>(1,0.1)</rangeScaleFactor>
+			</li>
+			<li Class="Fortification.CompProperties_CastFlecker">
+				<fleck>DustPuff</fleck>
+				<burstAmount>15</burstAmount>
+				<burstSway>30</burstSway>
+				<burstAngle>0</burstAngle>
+				<fleckSizeRange>(1,2)</fleckSizeRange>
+				<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
+				<burstOffsetRange>(2,6)</burstOffsetRange> 
+			</li>
 			<li Class="CompProperties_ChangeableProjectile" />
 		</comps>
 		<building>
@@ -290,9 +346,11 @@
 				</filter>
 			</defaultStorageSettings>
 		</building>
+		<recoilPower>100</recoilPower>
+		<recoilRelaxation>1</recoilRelaxation>
 		<verbs>
 			<li>
-				<verbClass>Verb_Shoot</verbClass>
+				<verbClass>Fortification.Verb_NewShoot</verbClass>
 				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 				<warmupTime>6.0</warmupTime>
 				<forcedMissRadius>5</forcedMissRadius>
@@ -416,6 +474,34 @@
 			<Mass>205</Mass>
 		</statBases>
 		<comps>
+			<li Class="Fortification.CompProperties_CastFlecker">
+				<fleck>DustPuffThick</fleck>
+				<burstAmount>10</burstAmount>
+				<burstSway>110</burstSway>
+				<burstAngle>180</burstAngle>
+				<fleckSizeRange>(3,5)</fleckSizeRange>
+				<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
+				<burstOffsetRange>(2,6)</burstOffsetRange> 
+			</li>
+			<li Class="Fortification.CompProperties_CastFlecker">
+				<fleck>DustPuffThick</fleck>
+				<burstAmount>10</burstAmount>
+				<burstSway>70</burstSway>
+				<burstAngle>180</burstAngle>
+				<fleckSizeRange>(3,5)</fleckSizeRange>
+				<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
+				<burstOffsetRange>(2,6)</burstOffsetRange> 
+				<rangeScaleFactor>(1,0.1)</rangeScaleFactor>
+			</li>
+			<li Class="Fortification.CompProperties_CastFlecker">
+				<fleck>DustPuff</fleck>
+				<burstAmount>15</burstAmount>
+				<burstSway>30</burstSway>
+				<burstAngle>0</burstAngle>
+				<fleckSizeRange>(1,2)</fleckSizeRange>
+				<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
+				<burstOffsetRange>(2,6)</burstOffsetRange> 
+			</li>
 			<li Class="CompProperties_ChangeableProjectile" />
 		</comps>
 		<building>
@@ -436,7 +522,7 @@
 		</building>
 		<verbs>
 			<li>
-				<verbClass>Verb_Shoot</verbClass>
+				<verbClass>Fortification.Verb_NewShoot</verbClass>
 				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 				<warmupTime>6.0</warmupTime>
 				<forcedMissRadius>2</forcedMissRadius>

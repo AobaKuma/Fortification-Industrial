@@ -81,7 +81,7 @@
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
     <modExtensions>
-      <li Class="RecipeInheritance.ThingDefExtension">
+      <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="RecipeInheritance.ThingDefExtension">
         <inheritRecipesFrom>
           <li>TableSculpting</li>
         </inheritRecipesFrom>

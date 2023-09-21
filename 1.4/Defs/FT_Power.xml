@@ -4,8 +4,7 @@
   <ThingDef ParentName="BuildingBase" MayRequire="co.uk.epicguru.rimforgepoles">
     <defName>FT_PowerPole</defName>
     <label>power pole</label>
-    <description>A concrete power pole, using tin or copper cables to carry an electrical current.
-Connect to other power poles using the 'link' button, or select multiple power poles and press the 'auto-link' button.</description>
+    <description>A concrete power pole, using tin or copper cables to carry an electrical current. Connect to other power poles using the 'link' button, or select multiple power poles and press the 'auto-link' button.</description>
     <thingClass>RimForge.Buildings.Building_PowerPole</thingClass>
     <graphicData>
       <texPath>PowerPole/building</texPath>
@@ -71,8 +70,7 @@ Connect to other power poles using the 'link' button, or select multiple power p
     <ThingDef ParentName="BuildingBase" MayRequire="co.uk.epicguru.rimforgepoles">
     <defName>FT_PowerPole_Lamp</defName>
     <label>power pole (street lamp)</label>
-    <description>A concrete power pole, using tin or copper cables to carry an electrical current.
-Connect to other power poles using the 'link' button, or select multiple power poles and press the 'auto-link' button.</description>
+    <description>A concrete power pole, using tin or copper cables to carry an electrical current. Connect to other power poles using the 'link' button, or select multiple power poles and press the 'auto-link' button.</description>
     <thingClass>RimForge.Buildings.Building_PowerPole</thingClass>
     <graphicData>
       <texPath>PowerPole/building_Lamp</texPath>

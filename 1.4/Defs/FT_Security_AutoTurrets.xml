@@ -52,9 +52,9 @@
         <factorByDifficulty>true</factorByDifficulty>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
-		<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-		<initialConfigurableTargetFuelLevel>240</initialConfigurableTargetFuelLevel>
-		<autoRefuelPercent>100</autoRefuelPercent>
+		    <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+		    <initialConfigurableTargetFuelLevel>240</initialConfigurableTargetFuelLevel>
+		    <autoRefuelPercent>0.1</autoRefuelPercent>
       </li>
     </comps>
     <passability>PassThroughOnly</passability>
@@ -157,7 +157,7 @@
     <stuffCategories>
       <li>Fabric</li>
     </stuffCategories>
-	<colorPerStuff>
+	  <colorPerStuff>
       <li>
         <stuff>Cloth</stuff>
         <color>(139,122,87)</color>

@@ -48,14 +48,14 @@
 				</fuelFilter>
 				<fuelIsMortarBarrel>true</fuelIsMortarBarrel>
 				<fuelCapacity>72</fuelCapacity>
-				<fuelMultiplier>12</fuelMultiplier>
+				<fuelMultiplier>24</fuelMultiplier>
 				<initialFuelPercent>1</initialFuelPercent>
 				<showFuelGizmo>true</showFuelGizmo>
 				<minimumFueledThreshold>1</minimumFueledThreshold>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<initialAllowAutoRefuel>true</initialAllowAutoRefuel>
 				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-				<initialConfigurableTargetFuelLevel>72</initialConfigurableTargetFuelLevel>
+				<initialConfigurableTargetFuelLevel>48</initialConfigurableTargetFuelLevel>
 				<autoRefuelPercent>0.83</autoRefuelPercent>
 				<fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
 			</li>
@@ -203,15 +203,15 @@
 					</thingDefs>
 				</fuelFilter>
 				<fuelIsMortarBarrel>true</fuelIsMortarBarrel>
-				<fuelCapacity>80</fuelCapacity>
-				<fuelMultiplier>40</fuelMultiplier>
+				<fuelCapacity>60</fuelCapacity>
+				<fuelMultiplier>30</fuelMultiplier>
 				<initialFuelPercent>1</initialFuelPercent>
 				<showFuelGizmo>true</showFuelGizmo>
 				<minimumFueledThreshold>1</minimumFueledThreshold>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<initialAllowAutoRefuel>true</initialAllowAutoRefuel>
 				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-				<initialConfigurableTargetFuelLevel>40</initialConfigurableTargetFuelLevel>
+				<initialConfigurableTargetFuelLevel>1</initialConfigurableTargetFuelLevel>
 				<autoRefuelPercent>0.5</autoRefuelPercent>
 				<fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
 			</li>
@@ -363,7 +363,7 @@
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<initialAllowAutoRefuel>true</initialAllowAutoRefuel>
 				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-				<initialConfigurableTargetFuelLevel>30</initialConfigurableTargetFuelLevel>
+				<initialConfigurableTargetFuelLevel>1</initialConfigurableTargetFuelLevel>
 				<autoRefuelPercent>0.5</autoRefuelPercent>
 				<fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
 			</li>

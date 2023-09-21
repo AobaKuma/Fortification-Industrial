@@ -48,14 +48,14 @@
 				</fuelFilter>
 				<fuelIsMortarBarrel>true</fuelIsMortarBarrel>
 				<fuelCapacity>72</fuelCapacity>
-				<fuelMultiplier>12</fuelMultiplier>
+				<fuelMultiplier>24</fuelMultiplier>
 				<initialFuelPercent>1</initialFuelPercent>
 				<showFuelGizmo>true</showFuelGizmo>
 				<minimumFueledThreshold>1</minimumFueledThreshold>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<initialAllowAutoRefuel>true</initialAllowAutoRefuel>
 				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-				<initialConfigurableTargetFuelLevel>72</initialConfigurableTargetFuelLevel>
+				<initialConfigurableTargetFuelLevel>48</initialConfigurableTargetFuelLevel>
 				<autoRefuelPercent>0.83</autoRefuelPercent>
 				<fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
 			</li>
@@ -196,10 +196,10 @@
 		<uiIconPath>Prince/Prince_Icon</uiIconPath>
 		<uiIconScale>1.2</uiIconScale>
 		<graphicData>
-			<texPath>InfantryTurret/FT_HexMortarBase</texPath>
+			<texPath>Prince/Prince_Base</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3.25,3.25)</drawSize>
-			<drawOffset>(0,0,-0.1)</drawOffset>
+			<drawSize>(6,6)</drawSize>
+			<drawOffset>(0,-0.01,0)</drawOffset>
 		</graphicData>
 		<size>(3,3)</size>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
@@ -231,15 +231,15 @@
 					</thingDefs>
 				</fuelFilter>
 				<fuelIsMortarBarrel>true</fuelIsMortarBarrel>
-				<fuelCapacity>80</fuelCapacity>
-				<fuelMultiplier>40</fuelMultiplier>
+				<fuelCapacity>60</fuelCapacity>
+				<fuelMultiplier>30</fuelMultiplier>
 				<initialFuelPercent>1</initialFuelPercent>
 				<showFuelGizmo>true</showFuelGizmo>
 				<minimumFueledThreshold>1</minimumFueledThreshold>
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<initialAllowAutoRefuel>true</initialAllowAutoRefuel>
 				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-				<initialConfigurableTargetFuelLevel>40</initialConfigurableTargetFuelLevel>
+				<initialConfigurableTargetFuelLevel>1</initialConfigurableTargetFuelLevel>
 				<autoRefuelPercent>0.5</autoRefuelPercent>
 				<fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
 			</li>
@@ -277,7 +277,7 @@
 		<building>
 			<turretBurstWarmupTime>3.0</turretBurstWarmupTime>
 			<turretBurstCooldownTime>10.0</turretBurstCooldownTime>
-			<turretTopDrawSize>3.5</turretTopDrawSize>
+			<turretTopDrawSize>4</turretTopDrawSize>
 			<turretGunDef>FT_Gun_TurretPrince</turretGunDef>
 			<buildingTags>
 				<li>Artillery</li>
@@ -292,7 +292,7 @@
 		<label>howitzer</label>
 		<description>An artillery that gave up part of the direct-fire capability in pursuit of high precision and light-weighted.\n\n Correctly called 155mm howitzer model NK-33L "Prince" ,It is a lightweight artillery designed to improve maneuverability.</description>
 		<graphicData>
-			<texPath>Prince/Prince_Gun</texPath>
+			<texPath>Prince/Duke_Gun</texPath>
 			<drawOffset>(5,0,0)</drawOffset>
 		</graphicData>
 		<statBases>
@@ -380,11 +380,11 @@
 		<graphicData>
 			<texPath>Empero/Empero_Base_Old</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3.5)</drawSize>
-			<drawOffset>(0,0,-0.1)</drawOffset>
+			<drawSize>(7,7)</drawSize>
+			<drawOffset>(0,-0.01,0)</drawOffset>
 		</graphicData>
 		<size>(3,3)</size>
-		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
 		<fillPercent>0.4</fillPercent>
 		<inspectorTabs>
 			<li>ITab_Shells</li>
@@ -421,7 +421,7 @@
 				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
 				<initialAllowAutoRefuel>true</initialAllowAutoRefuel>
 				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-				<initialConfigurableTargetFuelLevel>30</initialConfigurableTargetFuelLevel>
+				<initialConfigurableTargetFuelLevel>1</initialConfigurableTargetFuelLevel>
 				<autoRefuelPercent>0.5</autoRefuelPercent>
 				<fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
 			</li>
@@ -451,7 +451,7 @@
 		<building>
 			<turretBurstWarmupTime>5.0</turretBurstWarmupTime>
 			<turretBurstCooldownTime>10.0</turretBurstCooldownTime>
-			<turretTopDrawSize>5.8</turretTopDrawSize>
+			<turretTopDrawSize>7</turretTopDrawSize>
 			<turretGunDef>FT_Gun_TurretEmpero</turretGunDef>
 			<buildingTags>
 				<li>Artillery</li>

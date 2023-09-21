@@ -561,7 +561,7 @@
       <speed>100</speed>
       <arcHeightFactor>0.2</arcHeightFactor>
       <shadowSize>0.6</shadowSize>
-	  	<explosionDelay>1</explosionDelay>
+	  	<explosionDelay>2</explosionDelay>
       <soundExplode>Explosion_GiantBomb</soundExplode>
       <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
       <soundAmbient>MortarRound_Ambient</soundAmbient>

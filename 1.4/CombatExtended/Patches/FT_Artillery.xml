@@ -79,7 +79,8 @@
 						</li>
 						<li Class="CombatExtended.CompProperties_AmmoUser">
 							<magazineSize>6</magazineSize>
-							<reloadTime>15</reloadTime>
+							<reloadOneAtATime>true</reloadOneAtATime>
+							<reloadTime>2.5</reloadTime>
 							<ammoSet>AmmoSet_15cmNebelwerfer</ammoSet>
 						</li>
 						<li Class="CombatExtended.CompProperties_FireModes">

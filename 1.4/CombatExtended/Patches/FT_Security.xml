@@ -27,27 +27,27 @@
         </value>
       </li>
 	  
-		<!--為了能夠正確地越過工事射擊口攻擊而略為提高-->
+		<!--小砲塔-->
         <li Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="FT_Maxim4M" or defName="FT_AutoCannon" or defName="FT_RecoillessGun"]</xpath>
           <value>
-            <fillPercent>0.77</fillPercent>
+            <fillPercent>0.85</fillPercent>
           </value>
         </li>
 		
-		<!--防止自動砲塔通過工事射擊口攻擊，依舊可使用壓制射擊來規避，其他較矮的射擊牆依舊能夠使用-->
+		<!--自動砲塔-->
         <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[@Name="FT_MGNest"]/fillPercent</xpath>
           <value>
-            <fillPercent>0.74</fillPercent>
+            <fillPercent>0.85</fillPercent>
           </value>
         </li>
 		
-		<!--削弱步兵迫擊砲的掩護效果，由於是曲射武器並不影響攻擊，並且操作點設定在側邊-->
+		<!--步兵迫擊砲-->
         <li Class="PatchOperationAdd">
           <xpath>Defs/ThingDef[defName="FT_Turret_Mortar"]</xpath>
           <value>
-            <fillPercent>0.55</fillPercent>
+            <fillPercent>0.85</fillPercent>
           </value>
         </li>
       

@@ -509,7 +509,7 @@
 
     <verbs>
       <li>
-        <verbClass>Fortification.Verb_NewShoot</verbClass>
+        <verbClass>Verb_Shoot</verbClass>
         <defaultProjectile>FT_Bullet_ATShell</defaultProjectile>
         <requireLineOfSight>true</requireLineOfSight>
         <isMortar>true</isMortar>
@@ -981,7 +981,7 @@
       <turretGunDef>FT_Gun_Recoilless</turretGunDef>
       <turretTopDrawSize>2.5</turretTopDrawSize>
       <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
-      <turretBurstCooldownTime>10.0</turretBurstCooldownTime>
+      <turretBurstCooldownTime>5.0</turretBurstCooldownTime>
     </building>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <researchPrerequisites>
@@ -1039,7 +1039,7 @@
     </comps>
     <verbs>
       <li>
-        <verbClass>Fortification.Verb_NewShoot</verbClass>
+        <verbClass>Verb_Shoot</verbClass>
         <defaultProjectile>FT_Bullet_ATShell</defaultProjectile>
         <warmupTime>1.5</warmupTime>
         <minRange>3.9</minRange>

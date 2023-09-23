@@ -112,7 +112,7 @@
 		</weaponTags>
 		<verbs>
 			<li>
-				<verbClass>Fortification.Verb_NewShoot</verbClass>
+				<verbClass>Verb_Shoot</verbClass>
 				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 				<warmupTime>10.0</warmupTime>
 				<forcedMissRadius>10</forcedMissRadius>
@@ -350,7 +350,7 @@
 		<recoilRelaxation>1</recoilRelaxation>
 		<verbs>
 			<li>
-				<verbClass>Fortification.Verb_NewShoot</verbClass>
+				<verbClass>Verb_Shoot</verbClass>
 				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 				<warmupTime>6.0</warmupTime>
 				<forcedMissRadius>5</forcedMissRadius>
@@ -522,7 +522,7 @@
 		</building>
 		<verbs>
 			<li>
-				<verbClass>Fortification.Verb_NewShoot</verbClass>
+				<verbClass>Verb_Shoot</verbClass>
 				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 				<warmupTime>6.0</warmupTime>
 				<forcedMissRadius>2</forcedMissRadius>

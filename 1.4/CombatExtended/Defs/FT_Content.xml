@@ -62,6 +62,8 @@
 			<Flammability>0.5</Flammability>
 			<WorkToBuild>3500</WorkToBuild>
 			<Beauty>-2</Beauty>
+			<ShootingAccuracyTurret>1.25</ShootingAccuracyTurret>
+			<AimingAccuracy>1.25</AimingAccuracy>
 		</statBases>
 		<costList>
 			<Steel>450</Steel>
@@ -199,6 +201,8 @@
 			<Flammability>0</Flammability>
 			<WorkToBuild>3500</WorkToBuild>
 			<Beauty>-2</Beauty>
+			<ShootingAccuracyTurret>1.0</ShootingAccuracyTurret>
+			<AimingAccuracy>1.0</AimingAccuracy>
 		</statBases>
 		<costList>
 			<Steel>180</Steel>

@@ -66,7 +66,9 @@
       <li>BuildingsSecurity</li>
     </thingCategories>
     <statBases>
-      <Mass>150</Mass>
+		<Mass>150</Mass>
+		<ShootingAccuracyTurret>1.0</ShootingAccuracyTurret>
+		<AimingAccuracy MayRequire="CETeam.CombatExtended">1.0</AimingAccuracy>
     </statBases>
     <building>
       <ai_combatDangerous>true</ai_combatDangerous>

@@ -196,9 +196,9 @@
 		<uiIconPath>Prince/Prince_Icon</uiIconPath>
 		<uiIconScale>1.2</uiIconScale>
 		<graphicData>
-			<texPath>Prince/Prince_Base</texPath>
+			<texPath>InfantryTurret/FT_HexMortarBase</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(6,6)</drawSize>
+			<drawSize>(4,4)</drawSize>
 			<drawOffset>(0,-0.01,0)</drawOffset>
 		</graphicData>
 		<size>(3,3)</size>

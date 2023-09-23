@@ -72,9 +72,20 @@
 						<li Class="CombatExtended.CompProperties_Charges">
 							<chargeSpeeds>
 								<li>30</li>
+								<li>35</li>
+								<li>40</li>
+								<li>45</li>
 								<li>50</li>
+								<li>55</li>
+								<li>60</li>
+								<li>65</li>
 								<li>70</li>
+								<li>75</li>
+								<li>80</li>
+								<li>85</li>
 								<li>90</li>
+								<li>95</li>
+								<li>100</li>
 							</chargeSpeeds>
 						</li>
 						<li Class="CombatExtended.CompProperties_AmmoUser">
@@ -156,9 +167,20 @@
 						<li Class="CombatExtended.CompProperties_Charges">
 							<chargeSpeeds>
 								<li>30</li>
+								<li>35</li>
+								<li>40</li>
+								<li>45</li>
 								<li>50</li>
+								<li>55</li>
+								<li>60</li>
+								<li>65</li>
 								<li>70</li>
+								<li>75</li>
+								<li>80</li>
+								<li>85</li>
 								<li>90</li>
+								<li>95</li>
+								<li>100</li>
 							</chargeSpeeds>
 						</li>
 						<li Class="CombatExtended.CompProperties_AmmoUser">
@@ -245,7 +267,7 @@
 								<RangedWeapon_Cooldown>8.0</RangedWeapon_Cooldown>
 								<SightsEfficiency>2.18</SightsEfficiency>
 								<ShotSpread>0.01</ShotSpread>
-								<SwayFactor>1</SwayFactor>
+								<SwayFactor>1.50</SwayFactor>
 								<DeteriorationRate>0</DeteriorationRate>
 								<Mass>205</Mass>
 								<Flammability>0</Flammability>

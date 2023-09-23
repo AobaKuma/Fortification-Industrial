@@ -110,10 +110,18 @@
 			<explosionEffect>ExtinguisherExplosion</explosionEffect>
 		</projectile>
 		<comps>
-            <li Class="AOBAUtilities.CompProperties_Flecker">
-                <fleck>Smoke</fleck>
-                <fleckSize>0.5</fleckSize>
-            </li>
+			<li Class="AOBAUtilities.CompProperties_Flecker">
+				<fleck>FT_TrailSmoke</fleck>
+				<fleckSize>0.5</fleckSize>
+			</li>
+			<li Class="AOBAUtilities.CompProperties_Flecker">
+				<fleck>FT_ExhaustFlame</fleck>
+				<fleckSize>0.5</fleckSize>
+			</li>
+			<li Class="AOBAUtilities.CompProperties_Flecker">
+				<fleck>FT_ExhaustFlameGlow</fleck>
+				<fleckSize>0.5</fleckSize>
+			</li>
         </comps>
 	</ThingDef>
 	

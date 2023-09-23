@@ -109,7 +109,7 @@
 		<statBases>
 			<SightsEfficiency>2.3</SightsEfficiency>
 			<ShotSpread>0.01</ShotSpread>
-			<SwayFactor>1.41</SwayFactor>
+			<SwayFactor>1.34</SwayFactor>
 			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
 			<Mass>205</Mass>
 			<Flammability>0</Flammability>
@@ -246,8 +246,8 @@
 		<statBases>
           <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
           <SightsEfficiency>1</SightsEfficiency>
-          <ShotSpread>0.3</ShotSpread>
-          <SwayFactor>1.15</SwayFactor>
+          <ShotSpread>0.1</ShotSpread>
+          <SwayFactor>1.26</SwayFactor>
           <Bulk>50</Bulk>
         </statBases>
 		<verbs>

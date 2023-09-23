@@ -1,6 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <FleckDef ParentName="FleckBase_Thrown"><!-- 火箭尾跡-->
+    <defName>FT_TrailSmoke</defName>
+    <graphicData>
+      <texPath>Things/Mote/Smoke</texPath>
+      <renderInstanced>true</renderInstanced>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.50</fadeInTime>
+    <solidTime>2</solidTime>
+    <fadeOutTime>1.2</fadeOutTime>
+    <growthRate>0.05</growthRate>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase_Thrown"><!-- 尾焰-->
+    <defName>FT_ExhaustFlame</defName>
+    <graphicData>
+      <texPath>Things/Mote/JumpFlame</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+      <renderInstanced>true</renderInstanced>
+    </graphicData>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <solidTime>0.2</solidTime>
+    <fadeOutTime>0.05</fadeOutTime>
+    <growthRate>-4</growthRate>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase_Thrown"><!-- 發光-->
+    <defName>FT_ExhaustFlameGlow</defName>
+    <graphicData>
+      <texPath>Things/Mote/JumpFlame</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <color>(1,0.6,0.6,0.3)</color>
+    </graphicData>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <solidTime>0</solidTime>
+    <fadeOutTime>0.3</fadeOutTime>
+    <growthRate>-3</growthRate>
+  </FleckDef>
+
   <EffecterDef>
     <defName>FT_ArtilleryCastShot</defName>
     <children>

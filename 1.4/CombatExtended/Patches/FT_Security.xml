@@ -100,7 +100,7 @@
           <statBases>
             <RangedWeapon_Cooldown>3.3</RangedWeapon_Cooldown>
             <SightsEfficiency>2.2</SightsEfficiency>
-            <ShotSpread>0.23</ShotSpread>
+            <ShotSpread>0.10</ShotSpread>
             <SwayFactor>1.44</SwayFactor>
           </statBases>
           <Properties>
@@ -112,14 +112,14 @@
             <minRange>3.9</minRange>
             <range>90</range>
             <burstShotCount>16</burstShotCount>
-            <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+            <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
             <soundCast>Shot_Autocannon</soundCast>
             <soundCastTail>GunTail_Heavy</soundCastTail>
             <muzzleFlashScale>18</muzzleFlashScale>
             <recoilPattern>Mounted</recoilPattern>
           </Properties>
           <AmmoUser>
-            <magazineSize>160</magazineSize>
+            <magazineSize>80</magazineSize>
             <reloadTime>8</reloadTime>
             <ammoSet>AmmoSet_20x138mmB</ammoSet>
           </AmmoUser>
@@ -140,7 +140,7 @@
           <statBases>
             <RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
             <SightsEfficiency>2.18</SightsEfficiency>
-            <ShotSpread>0.15</ShotSpread>
+            <ShotSpread>0.01</ShotSpread>
             <SwayFactor>1.38</SwayFactor>
           </statBases>
           <Properties>
@@ -152,14 +152,14 @@
             <minRange>3.9</minRange>
             <range>90</range>
             <burstShotCount>8</burstShotCount>
-            <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+            <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
             <soundCast>Shot_Autocannon</soundCast>
             <soundCastTail>GunTail_Heavy</soundCastTail>
             <muzzleFlashScale>12</muzzleFlashScale>
             <recoilPattern>Mounted</recoilPattern>
           </Properties>
           <AmmoUser>
-            <magazineSize>40</magazineSize>
+            <magazineSize>20</magazineSize>
             <reloadTime>2</reloadTime>
             <ammoSet>AmmoSet_20x138mmB</ammoSet>
           </AmmoUser>
@@ -388,15 +388,15 @@
             <warmupTime>1</warmupTime>
             <range>75</range>
             <burstShotCount>6</burstShotCount>
-            <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+            <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
             <soundCast>Shot_Autocannon</soundCast>
             <soundCastTail>GunTail_Heavy</soundCastTail>
             <muzzleFlashScale>12</muzzleFlashScale>
             <recoilPattern>Mounted</recoilPattern>
           </Properties>
           <AmmoUser>
-            <magazineSize>60</magazineSize>
-            <reloadTime>3</reloadTime>
+            <magazineSize>12</magazineSize>
+            <reloadTime>2</reloadTime>
             <ammoSet>AmmoSet_20x110mmHispano</ammoSet>
           </AmmoUser>
           <FireModes>

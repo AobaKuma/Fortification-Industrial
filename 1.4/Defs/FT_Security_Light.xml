@@ -181,7 +181,7 @@
         <minRange>3.9</minRange>
         <range>65</range>
         <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
-        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
         <burstShotCount>6</burstShotCount>
         <soundCast>Shot_Autocannon</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -299,7 +299,7 @@
         <minRange>3.9</minRange>
         <range>75</range>
         <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
-        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
         <burstShotCount>16</burstShotCount>
         <soundCast>Shot_Autocannon</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>

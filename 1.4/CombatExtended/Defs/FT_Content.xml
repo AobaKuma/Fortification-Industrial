@@ -263,7 +263,7 @@
 				<warmupTime>1</warmupTime>
 				<range>75</range>
 				<burstShotCount>12</burstShotCount>
-				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
 				<soundCast>Shot_Autocannon</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>12</muzzleFlashScale>
@@ -272,8 +272,8 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>120</magazineSize>
-				<reloadTime>5</reloadTime>
+				<magazineSize>24</magazineSize>
+				<reloadTime>4</reloadTime>
 				<ammoSet>AmmoSet_20x110mmHispano</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">

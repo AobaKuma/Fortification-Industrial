@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_FT_37x223mmR</defName>
+		<label>37x223mmR</label>
+		<ammoTypes>
+			<Ammo_37x223mmR_AP>Bullet_FT_37x223mmR_AP</Ammo_37x223mmR_AP>
+			<Ammo_37x223mmR_HE>Bullet_FT_37x223mmR_HE</Ammo_37x223mmR_HE>
+			<Ammo_35x228mmNATO_SAPHEI>Bullet_FT_37x223mmR_Canister</Ammo_35x228mmNATO_SAPHEI>
+			<Ammo_35x228mmNATO_HEI>Bullet_FT_37x223mmR_Shrapnel</Ammo_35x228mmNATO_HEI>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+
+
+	<!-- ================== Projectiles ================== -->
+	
+	<ThingDef ParentName="Base37x223mmRBullet">
+		<defName>Bullet_FT_37x223mmR_AP</defName>
+		<label>37x223mmR shell (AP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>82</damageAmountBase>
+			<armorPenetrationSharp>71</armorPenetrationSharp>
+			<armorPenetrationBlunt>3398.44</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base37x223mmRBullet">
+		<defName>Bullet_FT_37x223mmR_HE</defName>
+		<label>37x223mmR shell (HE)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>150</speed>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>33</damageAmountBase>
+			<explosionRadius>1</explosionRadius>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>5</Fragment_Large>
+					<Fragment_Small>5</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="Base37x223mmRBullet">
+		<defName>Bullet_FT_37x223mmR_Canister</defName>
+		<label>37x223mmR shell (Canister)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Shotgun_Pellet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>100</speed>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<pelletCount>122</pelletCount>
+			<armorPenetrationSharp>7.5</armorPenetrationSharp>
+			<armorPenetrationBlunt>16.2</armorPenetrationBlunt>
+			<spreadMult>200</spreadMult>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base37x223mmRBullet">
+		<defName>Bullet_FT_37x223mmR_Shrapnel</defName>
+		<thingClass>Fortification.Projectile_ClusterBomb</thingClass>
+		<label>37x223mmR shell (Shrapnel)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<aimHeightOffset>3</aimHeightOffset>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>105</damageAmountBase>
+			<armorPenetrationSharp>56</armorPenetrationSharp>
+			<armorPenetrationBlunt>3398.44</armorPenetrationBlunt>
+		</projectile>
+		<comps>
+      <li Class="Fortification.CompProperties_ClusterBomb">
+        <clusterBurstCount>0</clusterBurstCount> <!-- 破片數量 -->
+        <forceMissingRange>6</forceMissingRange><!-- 散射範圍(以母彈目標為圓心擴散) -->
+		<safetyDistance>1.5</safetyDistance><!-- 安全距離 -->
+        <!--<doDismantlExplosion>true</doDismantlExplosion>--><!-- 分裂時爆炸 -->
+        <!--<dismantlExplosionDam>Smoke</dismantlExplosionDam>--><!-- 分裂爆炸的DamageDef -->
+        <!--<dismantlExplosionRadius>0.5</dismantlExplosionRadius>--><!-- 分裂爆炸的範圍 -->
+        <!--<dismantlExplosionDamAmount>0</dismantlExplosionDamAmount>--><!-- 分裂爆炸的傷害 -->
+        <!--<dismantlExplosionArmorPenetration>0</dismantlExplosionArmorPenetration>--><!-- 分裂爆炸傷害的穿甲 -->
+        <!--<dismantlExplosionSound>ExtinguisherExplosion</dismantlExplosionSound>--><!-- 分裂爆炸的音效SoundDef -->
+        <TDDistance>10~15</TDDistance><!--距離目標多遠時分裂(最小/最大距離) -->
+      </li>
+      <li Class="CombatExtended.CompProperties_Fragments">
+        <fragments>
+			<Fragment_0000Shots>122</Fragment_0000Shots>
+        </fragments>
+				<fragAngleRange>-25~-10</fragAngleRange>
+				<fragXZAngleRange>-10~10</fragXZAngleRange>
+      </li>
+		</comps>
+	</ThingDef>
+	
+  <ThingDef ParentName="BaseFragment">
+    <defName>Fragment_0000Shots</defName>
+    <label>0000 shots</label>
+		<graphicData>
+			<texPath>Things/Projectile/Shotgun_Pellet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>100</speed>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationSharp>7.5</armorPenetrationSharp>
+			<armorPenetrationBlunt>16.2</armorPenetrationBlunt>
+			<!--<gravityFactor>5</gravityFactor>-->
+		</projectile>
+  </ThingDef>
+	
+		<!-- ==================== Recipes ========================== -->
+
+
+	
+</Defs>

@@ -99,7 +99,7 @@
           <defName>FT_Gun_TurretQuadAA</defName>
           <statBases>
             <RangedWeapon_Cooldown>3.3</RangedWeapon_Cooldown>
-            <SightsEfficiency>2.2</SightsEfficiency>
+            <SightsEfficiency>2.18</SightsEfficiency>
             <ShotSpread>0.10</ShotSpread>
             <SwayFactor>1.44</SwayFactor>
           </statBases>
@@ -186,8 +186,8 @@
           <Properties>
             <verbClass>CombatExtended.Verb_ShootCE</verbClass>
             <hasStandardCommand>true</hasStandardCommand>
-            <defaultProjectile>Bullet_37x223mmR_HE</defaultProjectile>
-            <warmupTime>2</warmupTime>
+            <defaultProjectile>Bullet_FT_37x223mmR_Canister</defaultProjectile>
+            <warmupTime>1.5</warmupTime>
             <minRange>3.9</minRange>
             <range>90</range>
             <soundCast>FT_CannonLaunchA</soundCast>
@@ -200,8 +200,8 @@
           </Properties>
           <AmmoUser>
             <magazineSize>1</magazineSize>
-            <reloadTime>3</reloadTime>
-            <ammoSet>AmmoSet_37x223mmR</ammoSet>
+            <reloadTime>2</reloadTime>
+            <ammoSet>AmmoSet_FT_37x223mmR</ammoSet>
           </AmmoUser>
           <FireModes>
             <aiAimMode>AimedShot</aiAimMode>
@@ -384,7 +384,7 @@
             <recoilAmount>1.65</recoilAmount>
             <verbClass>CombatExtended.Verb_ShootCE</verbClass>
             <hasStandardCommand>True</hasStandardCommand>
-            <defaultProjectile>Bullet_20x110mmHispano_AP</defaultProjectile>
+            <defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
             <warmupTime>1</warmupTime>
             <range>75</range>
             <burstShotCount>6</burstShotCount>
@@ -396,8 +396,8 @@
           </Properties>
           <AmmoUser>
             <magazineSize>12</magazineSize>
-            <reloadTime>2</reloadTime>
-            <ammoSet>AmmoSet_20x110mmHispano</ammoSet>
+            <reloadTime>1.5</reloadTime>
+            <ammoSet>AmmoSet_20x138mmB</ammoSet>
           </AmmoUser>
           <FireModes>
             <aiUseBurstMode>FALSE</aiUseBurstMode>

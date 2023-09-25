@@ -92,7 +92,7 @@
 							<magazineSize>6</magazineSize>
 							<reloadOneAtATime>true</reloadOneAtATime>
 							<reloadTime>2.5</reloadTime>
-							<ammoSet>AmmoSet_15cmNebelwerfer</ammoSet>
+							<ammoSet>AmmoSet_FT_15cmNebelwerfer</ammoSet>
 						</li>
 						<li Class="CombatExtended.CompProperties_FireModes">
 							<aimedBurstShotCount>3</aimedBurstShotCount>
@@ -112,7 +112,7 @@
 								<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 								<hasStandardCommand>true</hasStandardCommand>
 								<requireLineOfSight>false</requireLineOfSight>
-								<defaultProjectile>Bullet_15cmNebelwerfer_HE</defaultProjectile>
+								<defaultProjectile>Bullet_FT_15cmNebelwerfer_HE</defaultProjectile>
 								<warmupTime>4</warmupTime>
 								<minRange>40</minRange>
 								<range>1000</range>

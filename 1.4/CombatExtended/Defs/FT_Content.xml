@@ -187,7 +187,7 @@
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
 		<researchPrerequisites>
-			<li>GunTurrets</li>
+			<li>GasOperation</li>
 		</researchPrerequisites>
 		<comps>
 			<li Class="CompProperties_Forbiddable" />
@@ -259,7 +259,7 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<recoilAmount>1.55</recoilAmount>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_20x110mmHispano_AP</defaultProjectile>
+				<defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
 				<warmupTime>1</warmupTime>
 				<range>75</range>
 				<burstShotCount>12</burstShotCount>
@@ -273,8 +273,8 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>24</magazineSize>
-				<reloadTime>4</reloadTime>
-				<ammoSet>AmmoSet_20x110mmHispano</ammoSet>
+				<reloadTime>3</reloadTime>
+				<ammoSet>AmmoSet_20x138mmB</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiUseBurstMode>FALSE</aiUseBurstMode>

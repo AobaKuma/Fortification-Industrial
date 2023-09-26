@@ -567,7 +567,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
+  <ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
     <defName>FT_Turret_Mortar</defName>
     <label>infantry mortar</label>
     <description>A light-weighted mortar that launches all kinds of shells. Improved firing speed with a simplified design, but inaccurate, useful for attacking large fortifications than groups of enemies in the field.</description>
@@ -703,7 +703,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
+  <ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
     <defName>FT_Maxim4M</defName>
     <label>Quad Machine gun</label>
     <description>A Tripod with Quadruple machine gun mounted so it Have a good firepower continuity,need a pawn man on it to operate. Requires steel to refurbish its barrels after heavy use.</description>
@@ -818,7 +818,7 @@
 		</modExtensions>
   </ThingDef>
 
-  <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
+  <ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
     <defName>FT_AutoCannon</defName>
     <label>autocannon</label>
     <description>A Tripod with high caliber machine gun mounted. Requires steel to refurbish its barrels after heavy use.it needs a pawn to man on it to operate.</description>
@@ -920,7 +920,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
+  <ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
     <defName>FT_RecoillessGun</defName>
     <label>Recoilless Gun</label>
     <description>A Tripod with Recoilless gun mounted.A light-weighted soloution of anti armour operation, Requires ReinforcedBarrel to refurbish its barrels after heavy use. also it needs a pawn to man on it to operate. But notice, do not use it indoors!!</description>

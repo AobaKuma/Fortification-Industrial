@@ -176,8 +176,9 @@
     <soundInteract>Stone_Drop</soundInteract>
     <soundDrop>Stone_Drop</soundDrop>
     <useHitPoints>false</useHitPoints>
-    <stackLimit>75</stackLimit>
+    <stackLimit>20</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
+    <fillPercent>0.5</fillPercent>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
       <MarketValue>50</MarketValue>

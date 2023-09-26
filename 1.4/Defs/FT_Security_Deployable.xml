@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <ThingDef ParentName="MinifiedThing">
+		<defName>FT_MinifiedTurret</defName>
+		<label>minified turret</label>
+		<thingClass>Fortification.MinifiedThingDeployable</thingClass>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>TriggerObject</useJob>
+				<useLabel>Pick up {0_label}</useLabel>
+			</li>
+			<li>
+				<compClass>Fortification.CompMinifyToInventory</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+  <ThingDef Name="FT_BaseCannonBuilding_Deployable" ParentName="FT_BaseCannonBuilding" Abstract="True">
+		<minifiedDef>FT_MinifiedTurret</minifiedDef>
+		<!--================可攜帶性
+    ================-->
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<statBases>
+			<Mass>150</Mass>
+		</statBases>
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretBurstWarmupTime>1.0</turretBurstWarmupTime>
+			<!--================冷卻與瞄準時間================-->
+			<turretBurstCooldownTime>3.0</turretBurstCooldownTime>
+		</building>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>TriggerObject</useJob>
+				<useLabel>Pick up {0_label}</useLabel>
+			</li>
+			<li>
+				<compClass>Fortification.CompMinifyToInventory</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>	

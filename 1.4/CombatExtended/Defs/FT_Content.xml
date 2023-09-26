@@ -323,6 +323,7 @@
 		<passability>PassThroughOnly</passability>
 		<pathCost>50</pathCost>
 		<fillPercent>0.85</fillPercent>
+		<minifiedDef>FT_MinifiedTurret</minifiedDef>
 		<tickerType>Normal</tickerType>
 		<designationCategory>Security</designationCategory>
 		<placeWorkers Inherit="false">
@@ -335,7 +336,14 @@
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_Mannable">
-				<manWorkType>Violent</manWorkType>
+				<!-- <manWorkType>Violent</manWorkType> -->
+			</li>
+			<li Class="CompProperties_Usable">
+				<useJob>TriggerObject</useJob>
+				<useLabel>Pick up {0_label}</useLabel>
+			</li>
+			<li>
+				<compClass>Fortification.CompMinifyToInventory</compClass>
 			</li>
 		</comps>
 		<statBases>

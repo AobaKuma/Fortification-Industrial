@@ -712,7 +712,7 @@
     <graphicData>
       <texPath>InfantryTurret/FT_Tripod</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1,1)</drawSize>
+      <drawSize>(1.2,1.2)</drawSize>
       <drawOffset>(0,0,-0.1)</drawOffset>
       <damageData>
         <rect>(0.2,0.2,0.6,0.6)</rect>
@@ -818,7 +818,7 @@
 		</modExtensions>
   </ThingDef>
 
-  <ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
+  <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
     <defName>FT_AutoCannon</defName>
     <label>autocannon</label>
     <description>A Tripod with high caliber machine gun mounted. Requires steel to refurbish its barrels after heavy use.it needs a pawn to man on it to operate.</description>
@@ -827,7 +827,7 @@
     <graphicData>
       <texPath>InfantryTurret/FT_Tripod</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1,1)</drawSize>
+      <drawSize>(1.2,1.2)</drawSize>
       <drawOffset>(0,0,-0.1)</drawOffset>
       <damageData>
         <rect>(0.2,0.2,0.6,0.6)</rect>
@@ -920,16 +920,16 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
+  <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
     <defName>FT_RecoillessGun</defName>
-    <label>Recoilless Gun</label>
+    <label>recoilless gun</label>
     <description>A Tripod with Recoilless gun mounted.A light-weighted soloution of anti armour operation, Requires ReinforcedBarrel to refurbish its barrels after heavy use. also it needs a pawn to man on it to operate. But notice, do not use it indoors!!</description>
     <uiIconPath>InfantryTurret/FT_RecoillessGun_icon</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
     <graphicData>
       <texPath>InfantryTurret/FT_Tripod</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1,1)</drawSize>
+      <drawSize>(1.2,1.2)</drawSize>
       <drawOffset>(0,0,-0.1)</drawOffset>
       <damageData>
         <rect>(0.2,0.2,0.6,0.6)</rect>
@@ -990,7 +990,7 @@
 
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>FT_Gun_Recoilless</defName>
-    <label>Recoilless Cannon</label>
+    <label>recoilless cannon</label>
     <description>A Recoilless cannon designed to snipe the heavy-armed target in range.</description>
     <graphicData>
       <texPath>InfantryTurret/FT_RecoillessGun</texPath>

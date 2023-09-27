@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<CombatExtended.AmmoCategoryDef>
+		<defName>FT_HSEH</defName>
+		<label>碎甲彈</label>
+		<description>碎甲彈</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>FT_Shrapnel</defName>
+		<label>榴霰彈</label>
+		<description>榴霰彈</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<CombatExtended.AmmoCategoryDef>
+		<defName>FT_Canister</defName>
+		<label>炮射霰彈</label>
+		<description>炮射霰彈</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+</Defs>

@@ -13,7 +13,7 @@
 		<!--thingClass修改為CE砲塔-->
 
         <li Class="PatchOperationReplace">
-          <xpath>Defs/ThingDef[@Name="FT_BaseCannonBuilding" or @Name="FT_MGNest" or @Namw="FT_BaseCannonBuilding_Mobile"or @Namw="FT_BaseCannonBuilding_Deployable"]/thingClass</xpath>
+          <xpath>Defs/ThingDef[@Name="FT_BaseCannonBuilding" or @Name="FT_MGNest"]/thingClass</xpath>
           <value>
             <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
           </value>
@@ -53,7 +53,19 @@
       
 		<!--大多數砲塔的冷卻時間-->
       <li Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[@Name="FT_BaseCannonBuilding" or @Name="FT_MGNest" or @Namw="FT_BaseCannonBuilding_Mobile"or @Namw="FT_BaseCannonBuilding_Deployable"]/building/turretBurstCooldownTime</xpath>
+        <xpath>Defs/ThingDef[  
+          defName="FT_TurretQuadAA" or 
+          defName="FT_TurretAA"     or
+          defName="FT_TurretAT"     or 
+          @Name="FT_MGNest"         or
+          defName="FT_Maxim4M"      or
+          defName="FT_AutoCannon"   or
+          defName="FT_RecoillessGun"or
+          defName="FT_Turret_Mortar"or
+          defName="FT_TurretHexMortar"or
+          defName="FT_TurretPrince"or
+          defName="FT_TurretEmpero"
+          /building/turretBurstCooldownTime</xpath>
         <value>
           <turretBurstCooldownTime>1</turretBurstCooldownTime>
         </value>
@@ -87,7 +99,10 @@
             defName="FT_RecoillessGun"
             ]/comps/li[@Class="CompProperties_Refuelable"] |
 
-            Defs/ThingDef[defName="FT_Bullet_AAShell" or defName="FT_Bullet_ATShell"]
+            Defs/ThingDef[
+            defName="FT_Bullet_AAShell" or
+            defName="FT_Bullet_ATShell"
+            ]
           </xpath>
         </li>
 		

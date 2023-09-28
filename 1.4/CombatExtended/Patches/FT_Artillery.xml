@@ -26,13 +26,6 @@
 						<spawnedConceptLearnOpportunity>CE_MortarDirectFire</spawnedConceptLearnOpportunity>
 					</value>
 				</li>
-
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="FT_TurretHexMortar" or defName="FT_TurretPrince" or defName="FT_TurretEmpero"]/building/turretBurstCooldownTime</xpath>
-					<value>
-          				<turretBurstCooldownTime>1</turretBurstCooldownTime>
-					</value>
-				</li>
 				<!-- === Multi-Mortar / Nebelwerfer === -->
 
 				<li Class="CombatExtended.PatchOperationMakeGunCECompatible">

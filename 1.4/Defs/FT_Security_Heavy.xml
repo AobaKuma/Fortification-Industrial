@@ -387,7 +387,7 @@
 		<graphicData>
 			<texPath>Empero/Empero_Base_Old</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(7,7)</drawSize>
+			<drawSize>(5,5)</drawSize>
 			<drawOffset>(0,-0.01,0)</drawOffset>
 		</graphicData>
 		<size>(3,3)</size>

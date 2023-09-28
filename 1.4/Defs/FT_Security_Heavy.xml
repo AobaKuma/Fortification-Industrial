@@ -119,7 +119,7 @@
 		</weaponTags>
 		<verbs>
 			<li>
-				<verbClass>Verb_Shoot</verbClass>
+				<verbClass>Fortification.Verb_NewShoot</verbClass>
 				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 				<warmupTime>10.0</warmupTime>
 				<forcedMissRadius>10</forcedMissRadius>

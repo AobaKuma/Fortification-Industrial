@@ -634,7 +634,7 @@
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <building>
-      <turretTopDrawSize>1.0</turretTopDrawSize>
+      <turretTopDrawSize>12.0</turretTopDrawSize>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>FT_Gun_QuadMG</turretGunDef>
       <turretBurstCooldownTime>1.0</turretBurstCooldownTime>

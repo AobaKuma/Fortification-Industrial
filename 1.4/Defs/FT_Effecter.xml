@@ -7,7 +7,7 @@
       <texPath>Things/Mote/Smoke</texPath>
       <renderInstanced>true</renderInstanced>
     </graphicData>
-    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <altitudeLayer>Projectile</altitudeLayer>
     <fadeInTime>0.50</fadeInTime>
     <solidTime>2</solidTime>
     <fadeOutTime>1.2</fadeOutTime>

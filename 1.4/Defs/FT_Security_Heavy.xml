@@ -63,6 +63,11 @@
 			<li Class="CompProperties_Mannable">
 				<manWorkType>Violent</manWorkType>
 			</li>
+			<li MayRequire="VanillaExpanded.VFESecurity" Class="VFESecurity.CompProperties_LongRangeArtillery">
+				<worldTileRange>35</worldTileRange>
+				<maxForcedMissRadiusFactor>2.5</maxForcedMissRadiusFactor>
+				<gizmoIconTexPath>Things/Building/Artillery/TurretArtillery_Top</gizmoIconTexPath>
+			</li>
 			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
 				<randomGraphics>
 					<li>InfantryTurret/FT_HexMortarBase</li>
@@ -92,6 +97,7 @@
 			<turretGunDef>FT_Gun_TurretHexMortar</turretGunDef>
 			<buildingTags>
 				<li>Artillery</li>
+				<li>Artillery_BaseDestroyer</li>
 				<li>Artillery_MannedMortar</li>
 			</buildingTags>
 		</building>
@@ -106,6 +112,7 @@
 			<texPath>InfantryTurret/FT_HexMortarGun</texPath>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<weaponTags>
 			<li>Artillery_BaseDestroyer</li>
       		<li>TurretGun</li>
@@ -192,7 +199,6 @@
 		<defName>FT_TurretPrince</defName>
 		<label>howitzer</label>
 		<description>An artillery that gave up part of the direct-fire capability in pursuit of high precision and light-weighted.\n\n Correctly called 155mm howitzer model NK-33L "Prince" ,It is a lightweight artillery designed to improve maneuverability.</description>
-
 		<uiIconPath>Prince/Prince_Icon</uiIconPath>
 		<uiIconScale>1.2</uiIconScale>
 		<graphicData>
@@ -295,6 +301,7 @@
 			<texPath>Prince/Duke_Gun</texPath>
 			<drawOffset>(5,0,0)</drawOffset>
 		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<statBases>
 			<RangedWeapon_Cooldown>8.0</RangedWeapon_Cooldown>
 			<Mass>205</Mass>
@@ -469,6 +476,7 @@
 			<texPath>Empero/Empero_Gun</texPath>
 			<drawOffset>(5,0,0)</drawOffset>
 		</graphicData>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<statBases>
 			<RangedWeapon_Cooldown>8.0</RangedWeapon_Cooldown>
 			<Mass>205</Mass>

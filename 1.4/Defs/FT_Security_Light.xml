@@ -28,6 +28,9 @@
     <tickerType>Normal</tickerType>
     <designationCategory>Security</designationCategory>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <statBases>
+      <Beauty>-2</Beauty>
+    </statBases>
     <comps>
       <li Class="CompProperties_Forbiddable" />
       <li Class="CompProperties_Mannable">
@@ -66,9 +69,9 @@
       <li>BuildingsSecurity</li>
     </thingCategories>
     <statBases>
-		<Mass>150</Mass>
-		<ShootingAccuracyTurret>1.0</ShootingAccuracyTurret>
-		<AimingAccuracy MayRequire="CETeam.CombatExtended">1.0</AimingAccuracy>
+      <Mass>150</Mass>
+      <ShootingAccuracyTurret>1.0</ShootingAccuracyTurret>
+      <AimingAccuracy MayRequire="CETeam.CombatExtended">1.0</AimingAccuracy>
     </statBases>
     <building>
       <ai_combatDangerous>true</ai_combatDangerous>
@@ -97,7 +100,6 @@
       <MaxHitPoints>750</MaxHitPoints>
       <Flammability>0.5</Flammability>
       <WorkToBuild>3000</WorkToBuild>
-      <Beauty>-2</Beauty>
     </statBases>
     <comps>
       <li Class="CompProperties_Explosive">
@@ -163,6 +165,7 @@
     <graphicData>
       <texPath>ATGun/FT_AAGun</texPath>
     </graphicData>
+    <soundInteract>Artillery_ShellLoaded</soundInteract>
     <statBases>
       <AccuracyTouch>0.59</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
@@ -193,6 +196,18 @@
 		    <forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
+    <comps>
+		  <li Class="Fortification.CompProperties_CastFlecker">
+			<fleck>DustPuff</fleck>
+			<onGroundOverride>true</onGroundOverride>
+			<burstAmount>10</burstAmount>
+			<burstSway>30</burstSway>
+			<burstAngle>0</burstAngle>
+			<fleckSizeRange>(1,2)</fleckSizeRange>
+			<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
+			<burstOffsetRange>(1,3)</burstOffsetRange> 
+		  </li>
+		</comps>
   </ThingDef>
 
   <!-- 四聯防空炮 -->
@@ -215,7 +230,7 @@
       <MaxHitPoints>750</MaxHitPoints>
       <Flammability>0.45</Flammability>
       <WorkToBuild>7000</WorkToBuild>
-      <Beauty>-2</Beauty>
+      <Bulk MayRequire="ceteam.combatextended">50</Bulk>
     </statBases>
     <comps>
       <li Class="CompProperties_Explosive">
@@ -281,13 +296,13 @@
     <graphicData>
       <texPath>ATGun/FT_AAGun_Vierling</texPath>
     </graphicData>
+    <soundInteract>Artillery_ShellLoaded</soundInteract>
     <statBases>
       <AccuracyTouch>0.59</AccuracyTouch>
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.99</AccuracyMedium>
       <AccuracyLong>0.70</AccuracyLong>
       <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
-      <Mass>160</Mass>
     </statBases>
     <verbs>
       <li>
@@ -299,7 +314,7 @@
         <minRange>3.9</minRange>
         <range>75</range>
         <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
-        <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
         <burstShotCount>16</burstShotCount>
         <soundCast>Shot_Autocannon</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -308,9 +323,21 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-		<forcedMissRadius>0.1</forcedMissRadius>
+		    <forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
+    <comps>
+		  <li Class="Fortification.CompProperties_CastFlecker">
+			<fleck>DustPuff</fleck>
+			<onGroundOverride>true</onGroundOverride>
+			<burstAmount>10</burstAmount>
+			<burstSway>40</burstSway>
+			<burstAngle>0</burstAngle>
+			<fleckSizeRange>(1,2)</fleckSizeRange>
+			<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
+			<burstOffsetRange>(1,3.5)</burstOffsetRange> 
+		  </li>
+		</comps>
 		<modExtensions>
 			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
 				<def>MF_StandardMuzzleFalshTwo</def>
@@ -383,7 +410,8 @@
       <MaxHitPoints>750</MaxHitPoints>
       <Flammability>0.5</Flammability>
       <WorkToBuild>1000</WorkToBuild>
-      <Beauty>-2</Beauty>
+      <Mass>160</Mass>
+      <Bulk MayRequire="ceteam.combatextended">50</Bulk>
     </statBases>
     <comps>
       <li Class="CompProperties_Explosive">
@@ -446,6 +474,7 @@
     <graphicData>
       <texPath>ATGun/FT_ATGun</texPath>
     </graphicData>
+    <soundInteract>Artillery_ShellLoaded</soundInteract>
     <statBases>
       <AccuracyTouch>0.89</AccuracyTouch>
       <AccuracyShort>1.00</AccuracyShort>
@@ -456,7 +485,8 @@
     </statBases>
     <comps>
       <li Class="Fortification.CompProperties_CastFlecker">
-        <fleck>DustPuffThick</fleck><!--生成的Fleck,參考原版-->
+        <fleck>DustPuff</fleck><!--生成的Fleck,參考原版-->
+        <onGroundOverride>true</onGroundOverride><!--根據砲塔下方地形決定是否產生-->
         <burstAmount>10</burstAmount><!--一次射擊生成的數量-->
         <burstSway>110</burstSway><!--噴射角度的左右隨機偏移範圍-->
         <burstAngle>180</burstAngle><!--生成偏移子彈發射方向的噴射角度(0 = 與發射角度同向)-->
@@ -465,7 +495,8 @@
         <burstOffsetRange>(2,6)</burstOffsetRange> <!--Fleck的生成位置偏移旋轉中心點的距離區間-->
       </li>
       <li Class="Fortification.CompProperties_CastFlecker">
-        <fleck>DustPuffThick</fleck>
+        <fleck>DustPuff</fleck>
+        <onGroundOverride>true</onGroundOverride>
         <burstAmount>10</burstAmount>
         <burstSway>70</burstSway>
         <burstAngle>180</burstAngle>
@@ -476,6 +507,7 @@
       </li>
       <li Class="Fortification.CompProperties_CastFlecker">
         <fleck>DustPuff</fleck>
+        <onGroundOverride>true</onGroundOverride>
         <burstAmount>15</burstAmount>
         <burstSway>30</burstSway>
         <burstAngle>0</burstAngle>
@@ -483,29 +515,7 @@
         <burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
         <burstOffsetRange>(2,6)</burstOffsetRange> 
       </li>
-      
     </comps>
-      <!-- <li Class="Fortification.CompProperties_CastFlecker">
-        <fleck>BlastEMP</fleck>
-        <burstAmount>20</burstAmount>
-        <burstSway>0</burstSway>
-        <burstAngle>0</burstAngle>
-        <fleckSizeRange>(1,3)</fleckSizeRange>
-        <burstSpeedRange>(-0.01,0.1)</burstSpeedRange>
-        <burstOffsetRange>(1,15)</burstOffsetRange> 
-        <rangeScaleFactor>(1,0.1)</rangeScaleFactor>
-      </li>
-      <li Class="Fortification.CompProperties_CastFlecker">
-        <fleck>ElectricalSpark</fleck>
-        <burstAmount>24</burstAmount>
-        <burstSway>5</burstSway>
-        <burstAngle>0</burstAngle>
-        <fleckSizeRange>(1,2)</fleckSizeRange>
-        <burstSpeedRange>(-0.01,0.1)</burstSpeedRange>
-        <burstOffsetRange>(3,10)</burstOffsetRange> 
-        <rangeScaleFactor>(1,0.1)</rangeScaleFactor>
-      </li> -->
-
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
@@ -591,6 +601,7 @@
       <Flammability>0.7</Flammability>
       <WorkToBuild>3300</WorkToBuild>
       <Mass>25</Mass>
+      <Bulk MayRequire="ceteam.combatextended">25.54</Bulk>
       <Beauty>-2</Beauty>
       <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
     </statBases>
@@ -705,7 +716,8 @@
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0.7</Flammability>
       <WorkToBuild>3300</WorkToBuild>
-      <Mass>20</Mass>
+      <Mass>23</Mass>
+      <Bulk MayRequire="ceteam.combatextended">25.54</Bulk>
       <Beauty>-2</Beauty>
       <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
     </statBases>
@@ -748,7 +760,6 @@
       <li>GasOperation</li>
     </researchPrerequisites>
   </ThingDef>
-
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>FT_Gun_Autocannon</defName>
     <label>autocannon</label>
@@ -807,7 +818,8 @@
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0.7</Flammability>
       <WorkToBuild>3300</WorkToBuild>
-      <Mass>20</Mass>
+      <Mass>38</Mass>
+      <Bulk MayRequire="ceteam.combatextended">40</Bulk>
       <Beauty>-2</Beauty>
       <ShootingAccuracyTurret>0.90</ShootingAccuracyTurret>
     </statBases>
@@ -860,6 +872,7 @@
       <texPath>InfantryTurret/FT_RecoillessGun</texPath>
       <drawSize>(3,3)</drawSize>
     </graphicData>
+    <soundInteract>Artillery_ShellLoaded</soundInteract>
     <statBases>
       <AccuracyTouch>0.89</AccuracyTouch>
       <AccuracyShort>1.25</AccuracyShort>

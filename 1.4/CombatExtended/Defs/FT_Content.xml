@@ -107,7 +107,6 @@
 			<texPath>InfantryTurret/FT_AntiTankGunPlus</texPath>
 			<drawOffset>(0,0,0)</drawOffset>
 		</graphicData>
-		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<statBases>
 			<SightsEfficiency>2.3</SightsEfficiency>
 			<ShotSpread>0.01</ShotSpread>
@@ -246,7 +245,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-		<soundInteract>Artillery_ShellLoaded</soundInteract>
+
 		<statBases>
           <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
           <SightsEfficiency>1</SightsEfficiency>
@@ -333,6 +332,9 @@
 		<researchPrerequisites>
 			<li>FT_HeavyArtillery</li>
 		</researchPrerequisites>
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
 		<comps>
 			<li Class="CompProperties_Forbiddable"/>
 			<li Class="CompProperties_Mannable">
@@ -351,7 +353,7 @@
 			<Flammability>0</Flammability>
 			<WorkToBuild>1000</WorkToBuild>
 			<Beauty>-2</Beauty>
-			<Mass>12</Mass>
+			<Mass>20</Mass>
 			<Bulk>15</Bulk>
 		</statBases>
 		<specialDisplayRadius>150</specialDisplayRadius>

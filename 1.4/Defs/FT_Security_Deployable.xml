@@ -5,6 +5,9 @@
 		<defName>FT_MinifiedTurret</defName>
 		<label>minified turret</label>
 		<thingClass>Fortification.MinifiedThingDeployable</thingClass>
+		<statBases>
+			<Mass>20</Mass>
+		</statBases>
 		<comps>
 			<li Class="CompProperties_Usable">
 				<useJob>TriggerObject</useJob>
@@ -24,7 +27,7 @@
 			<li>BuildingsSecurity</li>
 		</thingCategories>
 		<statBases>
-			<Mass>150</Mass>
+			<Mass>50</Mass>
 		</statBases>
 		<building>
 			<ai_combatDangerous>true</ai_combatDangerous>
@@ -46,7 +49,7 @@
 	<ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
 		<defName>FT_Turret_Mortar</defName>
 		<label>infantry mortar</label>
-		<description>A light-weighted mortar that launches all kinds of shells. Improved firing speed with a simplified design, but inaccurate, useful for attacking large fortifications than groups of enemies in the field.</description>
+		<description>A light-weighted mortar that launches all kinds of mortar shells. Improved firing speed with a simplified design, it has a shorter range but it can be easily carried by infantry.</description>
 		<uiIconPath>FT_Mortar_Icon</uiIconPath>
 		<uiIconScale>0.9</uiIconScale>
 		<graphicData>
@@ -74,7 +77,8 @@
 		  <MaxHitPoints>150</MaxHitPoints>
 		  <Flammability>0.7</Flammability>
 		  <WorkToBuild>100</WorkToBuild>
-		  <Mass>8</Mass>
+		  <Mass>20</Mass>
+		  <Bulk MayRequire="ceteam.combatextended">24.75</Bulk>
 		  <Beauty>-1</Beauty>
 		</statBases>
 			<inspectorTabs>
@@ -124,7 +128,7 @@
 	  <ThingDef ParentName="BaseWeaponTurret">
 		<defName>FT_Artillery_Mortar</defName>
 		<label>mortar</label>
-		<description>Mortar launcher. Lobs bombs over walls. accurate but short-ranged.</description>
+		<description>A powerful indirect-firing weapon with ability to rapid deploy.</description>
 		<recoilPower>3</recoilPower>
 		<graphicData>
 		  <texPath>FT_MortarGun</texPath>
@@ -155,6 +159,27 @@
 		</verbs>
 		<comps>
 		  <li Class="CompProperties_ChangeableProjectile" />
+		  <li Class="Fortification.CompProperties_CastFlecker">
+			<fleck>DustPuff</fleck>
+			<onGroundOverride>true</onGroundOverride>
+			<burstAmount>15</burstAmount>
+			<burstSway>100</burstSway>
+			<burstAngle>180</burstAngle>
+			<fleckSizeRange>(2,4)</fleckSizeRange>
+			<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
+			<burstOffsetRange>(0,3)</burstOffsetRange> 
+			<rangeScaleFactor>(1,0.1)</rangeScaleFactor>
+		  </li>
+		  <li Class="Fortification.CompProperties_CastFlecker">
+			<fleck>DustPuff</fleck>
+			<onGroundOverride>true</onGroundOverride>
+			<burstAmount>15</burstAmount>
+			<burstSway>30</burstSway>
+			<burstAngle>0</burstAngle>
+			<fleckSizeRange>(1,2)</fleckSizeRange>
+			<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
+			<burstOffsetRange>(1,3)</burstOffsetRange> 
+		  </li>
 		</comps>
 		<building>
 		  <fixedStorageSettings>

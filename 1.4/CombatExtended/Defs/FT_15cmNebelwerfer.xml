@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!-- ==================== AmmoSet ========================== -->
@@ -13,7 +13,7 @@
 			<Ammo_15cmNebelwerfer_Toxic MayRequire="Ludeon.RimWorld.Biotech">Bullet_FT_15cmNebelwerfer_Toxic</Ammo_15cmNebelwerfer_Toxic>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
-	
+
 	<!-- ==================== Ammo ========================== -->
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="15cmNebelwerferBase">
@@ -32,8 +32,8 @@
 		<detonateProjectile>Bullet_FT_15cmNebelwerfer_Smoke</detonateProjectile>
 		<stackLimit>25</stackLimit>
 	</ThingDef>
-	
-		<ThingDef Class="CombatExtended.AmmoDef" ParentName="15cmNebelwerferBase">
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="15cmNebelwerferBase">
 		<defName>Ammo_15cmNebelwerfer_EMP</defName>
 		<label>15cm Nebelwerfer Rocket (EMP)</label>
 		<graphicData>
@@ -49,8 +49,9 @@
 		<detonateProjectile>Bullet_FT_15cmNebelwerfer_EMP</detonateProjectile>
 		<stackLimit>25</stackLimit>
 	</ThingDef>
-	
-		<ThingDef Class="CombatExtended.AmmoDef" ParentName="15cmNebelwerferBase" MayRequire="Ludeon.RimWorld.Biotech">
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="15cmNebelwerferBase"
+		MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>Ammo_15cmNebelwerfer_Toxic</defName>
 		<label>15cm Nebelwerfer Rocket (Toxic)</label>
 		<graphicData>
@@ -68,7 +69,7 @@
 	</ThingDef>
 
 	<!-- ================== Projectiles ================== -->
-	
+
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base130mmType63">
 		<defName>Bullet_FT_15cmNebelwerfer_HE</defName>
 		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
@@ -111,7 +112,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
+
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base130mmType63">
 		<defName>Bullet_FT_15cmNebelwerfer_Smoke</defName>
 		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
@@ -154,9 +155,9 @@
 				<fleck>FT_ExhaustFlameGlow</fleck>
 				<fleckSize>0.5</fleckSize>
 			</li>
-        </comps>
+		</comps>
 	</ThingDef>
-	
+
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base130mmType63">
 		<defName>Bullet_FT_15cmNebelwerfer_EMP</defName>
 		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
@@ -192,10 +193,11 @@
 				<fleck>FT_ExhaustFlameGlow</fleck>
 				<fleckSize>0.5</fleckSize>
 			</li>
-        </comps>
+		</comps>
 	</ThingDef>
-	
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base130mmType63" MayRequire="Ludeon.RimWorld.Biotech">
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base130mmType63"
+		MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>Bullet_FT_15cmNebelwerfer_Toxic</defName>
 		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 		<label>15cm Nebelwerfer Rocket (Toxic)</label>
@@ -236,48 +238,48 @@
 				<fleck>FT_ExhaustFlameGlow</fleck>
 				<fleckSize>0.5</fleckSize>
 			</li>
-        </comps>
+		</comps>
 	</ThingDef>
-	
-		<ThingDef Name="15cmNbW_Shell_Toxic_Releasing_Base" Abstract="True" MayRequire="Ludeon.RimWorld.Biotech">
-			<label>15cmNbW tox shell</label>
-			<selectable>false</selectable>
-			<tickerType>Normal</tickerType>
-			<thingClass>ThingWithComps</thingClass>
-			<useHitPoints>false</useHitPoints>
-			<rotatable>false</rotatable>
-			<comps>
-				<li Class="CompProperties_ReleaseGas">
-					<gasType>ToxGas</gasType>
-					<cellsToFill>55</cellsToFill>
-					<durationSeconds>60</durationSeconds>
-					<effecterReleasing>GasReleasing</effecterReleasing>
-				</li>
-				<li Class="CompProperties_DestroyAfterDelay">
-					<delayTicks>30000</delayTicks><!-- 1/2 day -->
-				</li>
-			</comps>
-		</ThingDef>
 
-		<ThingDef ParentName="15cmNbW_Shell_Toxic_Releasing_Base" MayRequire="Ludeon.RimWorld.Biotech">
-			<defName>Shell_15cmNbW_Toxic_Releasing</defName>
-			<graphicData>
-				<texPath>Ammo/15cm_NbW_Projectile_Toxic_Landed</texPath>
-				<graphicClass>Graphic_Single</graphicClass>
-				<shaderType>Transparent</shaderType>
-			</graphicData>
-		</ThingDef>
+	<ThingDef Name="15cmNbW_Shell_Toxic_Releasing_Base" Abstract="True" MayRequire="Ludeon.RimWorld.Biotech">
+		<label>15cmNbW tox shell</label>
+		<selectable>false</selectable>
+		<tickerType>Normal</tickerType>
+		<thingClass>ThingWithComps</thingClass>
+		<useHitPoints>false</useHitPoints>
+		<rotatable>false</rotatable>
+		<comps>
+			<li Class="CompProperties_ReleaseGas">
+				<gasType>ToxGas</gasType>
+				<cellsToFill>55</cellsToFill>
+				<durationSeconds>60</durationSeconds>
+				<effecterReleasing>GasReleasing</effecterReleasing>
+			</li>
+			<li Class="CompProperties_DestroyAfterDelay">
+				<delayTicks>30000</delayTicks><!-- 1/2 day -->
+			</li>
+		</comps>
+	</ThingDef>
 
-		<ThingDef ParentName="15cmNbW_Shell_Toxic_Releasing_Base" MayRequire="Ludeon.RimWorld.Biotech">
+	<ThingDef ParentName="15cmNbW_Shell_Toxic_Releasing_Base" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Shell_15cmNbW_Toxic_Releasing</defName>
+		<graphicData>
+			<texPath>Ammo/15cm_NbW_Projectile_Toxic_Landed</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="15cmNbW_Shell_Toxic_Releasing_Base" MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>Shell_15cmNbW_Toxic_Releasing_Water</defName>
-			<graphicData>
-				<texPath>Ammo/15cm_NbW_Projectile_Toxic_Water</texPath>
-				<graphicClass>Graphic_Single</graphicClass>
-				<shaderType>Transparent</shaderType>
-			</graphicData>
-		</ThingDef>
-	
-		<!-- ==================== Recipes ========================== -->
+		<graphicData>
+			<texPath>Ammo/15cm_NbW_Projectile_Toxic_Water</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
 
 	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_15cmNebelwerfer_Smoke</defName>
@@ -322,8 +324,8 @@
 			<Ammo_15cmNebelwerfer_Smoke>6</Ammo_15cmNebelwerfer_Smoke>
 		</products>
 	</RecipeDef>
-	
-		<!-- ==================== Recipes ========================== -->
+
+	<!-- ==================== Recipes ========================== -->
 
 	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_15cmNebelwerfer_EMP</defName>
@@ -359,8 +361,8 @@
 			<Ammo_15cmNebelwerfer_EMP>6</Ammo_15cmNebelwerfer_EMP>
 		</products>
 	</RecipeDef>
-	
-		<!-- ==================== Recipes ========================== -->
+
+	<!-- ==================== Recipes ========================== -->
 
 	<RecipeDef ParentName="AmmoRecipeBase" MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>MakeAmmo_15cmNebelwerfer_Toxic</defName>
@@ -405,5 +407,5 @@
 			<Ammo_15cmNebelwerfer_Toxic>6</Ammo_15cmNebelwerfer_Toxic>
 		</products>
 	</RecipeDef>
-	
+
 </Defs>

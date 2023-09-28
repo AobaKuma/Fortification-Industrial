@@ -1,15 +1,10 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  
-	<Operation Class="PatchOperationFindMod">
-    <mods>
-        <li>Combat Extended</li>
-    </mods>
-	<match Class="PatchOperationSequence">
-		<success>Always</success>
+
+	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="Ammo_37x223mmR_AP"]/graphicData</xpath>
+				<xpath>Defs/ThingDef[defName="Ammo_37x223mmR_AP"]/graphicData</xpath>
 				<value>
 					<graphicData>
 						<texPath>Ammo/37x223mmR_AP</texPath>
@@ -17,9 +12,9 @@
 						<drawSize>(1.025)</drawSize>
 					</graphicData>
 				</value>
-            </li>
+			</li>
 			<li Class="PatchOperationReplace">
-                <xpath>Defs/ThingDef[defName="Ammo_37x223mmR_HE"]/graphicData</xpath>
+				<xpath>Defs/ThingDef[defName="Ammo_37x223mmR_HE"]/graphicData</xpath>
 				<value>
 					<graphicData>
 						<texPath>Ammo/37x223mmR_HE</texPath>
@@ -27,9 +22,8 @@
 						<drawSize>(1.025)</drawSize>
 					</graphicData>
 				</value>
-            </li>
+			</li>
 		</operations>
-	</match>
-</Operation>
+	</Operation>
 
 </Patch>

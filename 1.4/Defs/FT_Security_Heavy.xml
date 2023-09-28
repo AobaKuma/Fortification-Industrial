@@ -284,6 +284,10 @@
 			<turretBurstWarmupTime>3.0</turretBurstWarmupTime>
 			<turretBurstCooldownTime>10.0</turretBurstCooldownTime>
 			<turretTopDrawSize>4</turretTopDrawSize>
+			<turretTopOffset>(0,0.5)</turretTopOffset>
+			<turretTopLoadedGraphic>
+				<texPath>Prince/Prince_Gun</texPath>
+			</turretTopLoadedGraphic>
 			<turretGunDef>FT_Gun_TurretPrince</turretGunDef>
 			<buildingTags>
 				<li>Artillery</li>
@@ -299,7 +303,6 @@
 		<description>An artillery that gave up part of the direct-fire capability in pursuit of high precision and light-weighted.\n\n Correctly called 155mm howitzer model NK-33L "Prince" ,It is a lightweight artillery designed to improve maneuverability.</description>
 		<graphicData>
 			<texPath>Prince/Duke_Gun</texPath>
-			<drawOffset>(5,0,0)</drawOffset>
 		</graphicData>
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<statBases>

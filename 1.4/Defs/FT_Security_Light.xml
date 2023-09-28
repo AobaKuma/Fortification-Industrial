@@ -193,7 +193,6 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-		    <forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
     <comps>
@@ -323,7 +322,6 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-		    <forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
     <comps>
@@ -534,7 +532,6 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-		    <forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
   </ThingDef>
@@ -582,7 +579,7 @@
     <label>Quad Machine gun</label>
     <description>A Tripod with Quadruple machine gun mounted so it Have a good firepower continuity,need a pawn man on it to operate. Requires steel to refurbish its barrels after heavy use.</description>
     <uiIconPath>InfantryTurret/FT_QuadMaximGun_icon</uiIconPath>
-    <uiIconScale>1.2</uiIconScale>
+    <uiIconScale>0.8</uiIconScale>
     <graphicData>
       <texPath>InfantryTurret/FT_Tripod</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -634,7 +631,7 @@
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <building>
-      <turretTopDrawSize>12.0</turretTopDrawSize>
+      <turretTopDrawSize>1.8</turretTopDrawSize>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>FT_Gun_QuadMG</turretGunDef>
       <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
@@ -939,7 +936,6 @@
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
         <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
-		    <forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
   </ThingDef>

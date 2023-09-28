@@ -3,26 +3,26 @@
 	
 	<CombatExtended.AmmoCategoryDef>
 		<defName>FT_HESH</defName>
-		<label>碎甲彈</label>
-		<description>碎甲彈</description>
+		<label>HESH</label>
+		<description>HESH</description>
 	</CombatExtended.AmmoCategoryDef>
 
 	<CombatExtended.AmmoCategoryDef>
 		<defName>FT_Shrapnel</defName>
-		<label>榴霰彈</label>
-		<description>榴霰彈</description>
+		<label>Shrapnel</label>
+		<description>Shrapnel</description>
 	</CombatExtended.AmmoCategoryDef>
 	
 	<CombatExtended.AmmoCategoryDef>
 		<defName>FT_Canister</defName>
-		<label>炮射霰彈</label>
-		<description>炮射霰彈</description>
+		<label>Canister</label>
+		<description>Canister</description>
 	</CombatExtended.AmmoCategoryDef>
 	
 	<CombatExtended.AmmoCategoryDef>
 		<defName>FT_SAPHE</defName>
-		<label>半穿甲高爆彈</label>
-		<description>半穿甲高爆彈</description>
+		<label>SAPHE</label>
+		<description>SAPHE</description>
 	</CombatExtended.AmmoCategoryDef>
 	
 </Defs>

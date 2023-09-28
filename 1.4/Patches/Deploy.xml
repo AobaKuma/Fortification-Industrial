@@ -13,15 +13,15 @@
 					<comps />
 				</value>
 			</li>
-		</operations>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="Human"]/comps</xpath>
-		<value>
-			<li>
-				<compClass>Fortification.CompPawnTurretDeployGizmo</compClass>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Human"]/comps</xpath>
+				<value>
+					<li>
+						<compClass>Fortification.CompPawnTurretDeployGizmo</compClass>
+					</li>
+				</value>
 			</li>
-		</value>
+		</operations>
 	</Operation>
 
 	<Operation Class="PatchOperationConditional">

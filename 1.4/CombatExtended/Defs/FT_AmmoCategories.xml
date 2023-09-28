@@ -2,7 +2,7 @@
 <Defs>
 	
 	<CombatExtended.AmmoCategoryDef>
-		<defName>FT_HSEH</defName>
+		<defName>FT_HESH</defName>
 		<label>碎甲彈</label>
 		<description>碎甲彈</description>
 	</CombatExtended.AmmoCategoryDef>
@@ -17,6 +17,12 @@
 		<defName>FT_Canister</defName>
 		<label>炮射霰彈</label>
 		<description>炮射霰彈</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<CombatExtended.AmmoCategoryDef>
+		<defName>FT_SAPHE</defName>
+		<label>半穿甲高爆彈</label>
+		<description>半穿甲高爆彈</description>
 	</CombatExtended.AmmoCategoryDef>
 	
 </Defs>

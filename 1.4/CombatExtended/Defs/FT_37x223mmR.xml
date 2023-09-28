@@ -27,6 +27,7 @@
 		<graphicData>
 			<texPath>Ammo/37x223mmR_Canister</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>(1.025)</drawSize>
 		</graphicData>
 		<statBases>
 			<MarketValue>5.63</MarketValue>
@@ -42,6 +43,7 @@
 		<graphicData>
 			<texPath>Ammo/37x223mmR_Shrapnel</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>(1.025)</drawSize>
 		</graphicData>
 		<statBases>
 			<MarketValue>8.49</MarketValue>
@@ -57,6 +59,7 @@
 		<graphicData>
 			<texPath>Ammo/37x223mmR_HESH</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>(1.025)</drawSize>
 		</graphicData>
 		<statBases>
 			<MarketValue>8.54</MarketValue>
@@ -72,6 +75,7 @@
 		<graphicData>
 			<texPath>Ammo/37x223mmR_APDS</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>(1.025)</drawSize>
 		</graphicData>
 		<statBases>
 			<MarketValue>6.96</MarketValue>
@@ -87,6 +91,7 @@
 		<graphicData>
 			<texPath>Ammo/37x223mmR_EMP</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>(1.025)</drawSize>
 		</graphicData>
 		<statBases>
 			<MarketValue>14.95</MarketValue>
@@ -100,14 +105,15 @@
 		<defName>Ammo_37x223mmR_AP-HE</defName>
 		<label>37x223mmR cartridge (AP-HE)</label>
 		<graphicData>
-			<texPath>Ammo/37x223mmR_AP-HE</texPath>
+			<texPath>Ammo/37x223mmR_APHE</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>(1.025)</drawSize>
 		</graphicData>
 		<statBases>
 			<MarketValue>8.7</MarketValue>
 			<Mass>1.43</Mass>
 		</statBases>
-		<ammoClass>ExplosiveAP</ammoClass>
+		<ammoClass>FT_SAPHE</ammoClass>
 		<cookOffProjectile>Bullet_FT_37x223mmR_AP-HE</cookOffProjectile>
 	</ThingDef>
 	
@@ -117,6 +123,7 @@
 		<graphicData>
 			<texPath>Ammo/37x223mmR_Incendiary</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>(1.025)</drawSize>
 		</graphicData>
 		<statBases>
 			<MarketValue>8.23</MarketValue>
@@ -127,6 +134,41 @@
 	</ThingDef>
 
 	<!-- ================== Projectiles ================== -->
+	
+	<ThingDef ParentName="Base37x223mmRBullet">
+		<defName>Bullet_FT_37x223mmR_AP</defName>
+		<label>37x223mmR shell (AP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>82</damageAmountBase>
+			<armorPenetrationSharp>71</armorPenetrationSharp>
+			<armorPenetrationBlunt>3398.44</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base37x223mmRBullet">
+		<defName>Bullet_FT_37x223mmR_HE</defName>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<label>37x223mmR shell (HE)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>150</speed>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>33</damageAmountBase>
+			<explosionRadius>1.1</explosionRadius>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<screenShakeFactor>0</screenShakeFactor>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>2</Fragment_Large>
+					<Fragment_Small>2</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
 	
 	<ThingDef ParentName="Base37x223mmRBullet">
 		<defName>Bullet_FT_37x223mmR_Canister</defName>
@@ -156,6 +198,7 @@
 			<damageAmountBase>82</damageAmountBase>
 			<armorPenetrationSharp>67.5</armorPenetrationSharp>
 			<armorPenetrationBlunt>3398.44</armorPenetrationBlunt>
+			<screenShakeFactor>0</screenShakeFactor>
 		</projectile>
 		<comps>
       <li Class="Fortification.CompProperties_ClusterBomb">
@@ -182,23 +225,17 @@
 	
 	<ThingDef ParentName="Base37x223mmRBullet">
 		<defName>Bullet_FT_37x223mmR_HESH</defName>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 		<label>37x223mmR shell (HESH)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<speed>150</speed>
 			<damageDef>Thump</damageDef>
 			<damageAmountBase>35</damageAmountBase>
-			<explosionRadius>0.5</explosionRadius>
+			<explosionRadius>1.1</explosionRadius>
 			<soundExplode>ThumpCannon_Impact</soundExplode>
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<screenShakeFactor>0</screenShakeFactor>
 		</projectile>
-		<comps>
-			<li Class="CombatExtended.CompProperties_Fragments">
-				<fragments>
-					<Fragment_Small>10</Fragment_Small>
-				</fragments>
-				<fragXZAngleRange>-80~80</fragXZAngleRange>
-			</li>
-		</comps>
 	</ThingDef>
 	
 	<ThingDef ParentName="Base37x223mmRBullet">
@@ -215,13 +252,15 @@
 	
 	<ThingDef ParentName="Base37x223mmRBullet">
 		<defName>Bullet_FT_37x223mmR_EMP</defName>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 		<label>37x223mmR shell (EMP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<speed>150</speed>
 			<damageDef>EMP</damageDef>
 			<damageAmountBase>27</damageAmountBase>
-			<explosionRadius>2.5</explosionRadius>
+			<explosionRadius>2</explosionRadius>
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<screenShakeFactor>0</screenShakeFactor>
 		</projectile>
 		<comps>
 			<li Class="CombatExtended.CompProperties_Fragments">
@@ -252,35 +291,25 @@
 	
 	<ThingDef ParentName="Base37x223mmRBullet">
 		<defName>Bullet_FT_37x223mmR_Incendiary</defName>
-		<thingClass>Fortification.Projectile_ClusterBomb</thingClass>
+		<thingClass>CombatExtended.ProjectileCE_Bursting</thingClass>
 		<label>37x223mmR shell (incendiary)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>150</speed>
 			<aimHeightOffset>3</aimHeightOffset>
 			<damageDef>PrometheumFlame</damageDef>
-			<damageAmountBase>2</damageAmountBase>
-			<explosionRadius>3.5</explosionRadius>
+			<damageAmountBase>1</damageAmountBase>
+			<explosionRadius>2</explosionRadius>
 			<soundExplode>MortarIncendiary_Explode</soundExplode>
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<screenShakeFactor>0</screenShakeFactor>
+			<armingDelay>3</armingDelay>
 		</projectile>
 		<comps>
-      <li Class="Fortification.CompProperties_ClusterBomb">
-        <clusterBurstCount>0</clusterBurstCount> <!-- 破片數量 -->
-        <forceMissingRange>6</forceMissingRange><!-- 散射範圍(以母彈目標為圓心擴散) -->
-		<safetyDistance>1.5</safetyDistance><!-- 安全距離 -->
-        <!--<doDismantlExplosion>true</doDismantlExplosion>--><!-- 分裂時爆炸 -->
-        <!--<dismantlExplosionDam>Smoke</dismantlExplosionDam>--><!-- 分裂爆炸的DamageDef -->
-        <!--<dismantlExplosionRadius>0.5</dismantlExplosionRadius>--><!-- 分裂爆炸的範圍 -->
-        <!--<dismantlExplosionDamAmount>0</dismantlExplosionDamAmount>--><!-- 分裂爆炸的傷害 -->
-        <!--<dismantlExplosionArmorPenetration>0</dismantlExplosionArmorPenetration>--><!-- 分裂爆炸傷害的穿甲 -->
-        <!--<dismantlExplosionSound>ExtinguisherExplosion</dismantlExplosionSound>--><!-- 分裂爆炸的音效SoundDef -->
-        <TDDistance>10~15</TDDistance><!--距離目標多遠時分裂(最小/最大距離) -->
-      </li>
       <li Class="CombatExtended.CompProperties_Fragments">
         <fragments>
 			<Fragment_FT_Spark>50</Fragment_FT_Spark>
         </fragments>
-				<fragAngleRange>-20~-5</fragAngleRange>
-				<fragXZAngleRange>-15~15</fragXZAngleRange>
+				<fragAngleRange>-90~-30</fragAngleRange>
       </li>
 		</comps>
 	</ThingDef>
@@ -296,7 +325,7 @@
 			<color>(254,189,58)</color>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>50</speed>
+			<speed>25</speed>
 			<damageDef>PrometheumFlame</damageDef>
 			<damageAmountBase>1</damageAmountBase>
 			<explosionRadius>0.5</explosionRadius>
@@ -304,8 +333,23 @@
 			<preExplosionSpawnChance>0.25</preExplosionSpawnChance>
 			<!--<soundExplode>MortarIncendiary_Explode</soundExplode>-->
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-			<gravityFactor>5</gravityFactor>
+			<gravityFactor>25</gravityFactor>
+			<screenShakeFactor>0</screenShakeFactor>
 		</projectile>
+		<comps>
+			<li Class="AOBAUtilities.CompProperties_Flecker">
+				<fleck>FT_TrailSmoke</fleck>
+				<fleckSize>0.2</fleckSize>
+			</li>
+			<li Class="AOBAUtilities.CompProperties_Flecker">
+				<fleck>FT_ExhaustFlame</fleck>
+				<fleckSize>0.2</fleckSize>
+			</li>
+			<li Class="AOBAUtilities.CompProperties_Flecker">
+				<fleck>FT_ExhaustFlameGlow</fleck>
+				<fleckSize>0.2</fleckSize>
+			</li>
+        </comps>
   </ThingDef>
 	
 <!-- ==================== Pellets ========================== -->
@@ -330,7 +374,7 @@
 		<!-- ==================== Recipes ========================== -->
 		
 	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_FT_37x223mmR_Canister</defName>
+		<defName>MakeAmmo_37x223mmR_Canister</defName>
 		<label>make 37x223mmR (canister) cartridge x25</label>
 		<description>Craft 25 37x223mmR (canister) cartridges.</description>
 		<jobString>Making 37x223mmR (canister) cartridges.</jobString>
@@ -359,7 +403,7 @@
 	</RecipeDef>
 	
 	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_FT_37x223mmR_Shrapnel</defName>
+		<defName>MakeAmmo_37x223mmR_Shrapnel</defName>
 		<label>make 37x223mmR (shrapnel) cartridge x25</label>
 		<description>Craft 25 37x223mmR (shrapnel) cartridges.</description>
 		<jobString>Making 37x223mmR (shrapnel) cartridges.</jobString>
@@ -406,7 +450,7 @@
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_FT_37x223mmR_HESH</defName>
+		<defName>MakeAmmo_37x223mmR_HESH</defName>
 		<label>make 37x223mmR (HESH) cartridge x25</label>
 		<description>Craft 25 37x223mmR (HESH) cartridges.</description>
 		<jobString>Making 37x223mmR (HESH) cartridges.</jobString>
@@ -453,7 +497,7 @@
 	</RecipeDef>
 	
 	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_FT_37x223mmR_APDS</defName>
+		<defName>MakeAmmo_37x223mmR_APDS</defName>
 		<label>make 37x223mmR (sabot) cartridge x25</label>
 		<description>Craft 25 37x223mmR (sabot) cartridges.</description>
 		<jobString>Making 37x223mmR (sabot) cartridges.</jobString>
@@ -491,7 +535,7 @@
 	</RecipeDef>
 	
 	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_FT_37x223mmR_EMP</defName>
+		<defName>MakeAmmo_37x223mmR_EMP</defName>
 		<label>make 37x223mmR (EMP) cartridge x25</label>
 		<description>Craft 25 37x223mmR (EMP) cartridges.</description>
 		<jobString>Making 37x223mmR (EMP) cartridges.</jobString>
@@ -520,7 +564,7 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_37x223mmR_HEI>25</Ammo_37x223mmR_HEI>
+			<Ammo_37x223mmR_EMP>25</Ammo_37x223mmR_EMP>
 		</products>
 		<skillRequirements>
 			<Crafting>4</Crafting>
@@ -529,7 +573,7 @@
 	</RecipeDef>
 	
 	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_FT_37x223mmR_AP-HE</defName>
+		<defName>MakeAmmo_37x223mmR_AP-HE</defName>
 		<label>make 37x223mmR (AP-HE) cartridge x25</label>
 		<description>Craft 25 37x223mmR (AP-HE) cartridges.</description>
 		<jobString>Making 37x223mmR (AP-HE) cartridges.</jobString>
@@ -576,7 +620,7 @@
 	</RecipeDef>
 	
 	<RecipeDef ParentName="AmmoRecipeBase">
-		<defName>MakeAmmo_FT_37x223mmR_Incendiary</defName>
+		<defName>MakeAmmo_37x223mmR_Incendiary</defName>
 		<label>make 37x223mmR (incendiary) cartridge x25</label>
 		<description>Craft 25 37x223mmR (incendiary) cartridges.</description>
 		<jobString>Making 37x223mmR (incendiary) cartridges.</jobString>

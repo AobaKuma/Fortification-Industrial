@@ -215,7 +215,7 @@
       </li>
       <li Class="CombatExtended.CompProperties_Fragments">
         <fragments>
-			<Fragment_FT_0000Shots>122</Fragment_FT_0000Shots>
+			<Fragment_FT_ShrapnelPellet>122</Fragment_FT_ShrapnelPellet>
         </fragments>
 				<fragAngleRange>-25~-10</fragAngleRange>
 				<fragXZAngleRange>-10~10</fragXZAngleRange>
@@ -262,14 +262,6 @@
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 			<screenShakeFactor>0</screenShakeFactor>
 		</projectile>
-		<comps>
-			<li Class="CombatExtended.CompProperties_Fragments">
-				<fragments>
-					<Fragment_Small>10</Fragment_Small>
-				</fragments>
-				<fragXZAngleRange>-80~80</fragXZAngleRange>
-			</li>
-		</comps>
 	</ThingDef>
 	
 	<ThingDef ParentName="Base37x223mmRBullet">
@@ -318,7 +310,7 @@
 
   <ThingDef ParentName="BaseFragment">
     <defName>Fragment_FT_Spark</defName>
-    <label>Spark</label>
+    <label>spark</label>
 		<graphicData>
 			<texPath>Things/Projectile/Shotgun_Pellet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -355,8 +347,8 @@
 <!-- ==================== Pellets ========================== -->
 	
   <ThingDef ParentName="BaseFragment">
-    <defName>Fragment_FT_0000Shots</defName>
-    <label>0000 shots</label>
+    <defName>Fragment_FT_ShrapnelPellet</defName>
+    <label>shrapnel pellet</label>
 		<graphicData>
 			<texPath>Things/Projectile/Shotgun_Pellet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

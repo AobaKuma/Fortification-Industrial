@@ -24,8 +24,8 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>198.66</MarketValue>
-			<Mass>31.8</Mass>
+			<MarketValue>158.6</MarketValue>
+			<Mass>33.5</Mass>
 			<Bulk>57.59</Bulk>
 		</statBases>
 		<ammoClass>Smoke</ammoClass>
@@ -41,8 +41,8 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>596.54</MarketValue>
-			<Mass>31.8</Mass>
+			<MarketValue>270.3</MarketValue>
+			<Mass>34.6</Mass>
 			<Bulk>57.59</Bulk>
 		</statBases>
 		<ammoClass>GrenadeEMP</ammoClass>
@@ -58,8 +58,8 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>198.66</MarketValue>
-			<Mass>31.8</Mass>
+			<MarketValue>158.6</MarketValue>
+			<Mass>33.5</Mass>
 			<Bulk>57.59</Bulk>
 		</statBases>
 		<ammoClass>Toxic</ammoClass>
@@ -323,8 +323,6 @@
 		</products>
 	</RecipeDef>
 	
-		<!-- ==================== Recipes ========================== -->
-
 	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_15cmNebelwerfer_EMP</defName>
 		<label>make 15cm Nebelwerfer EMP rocket</label>
@@ -359,8 +357,6 @@
 			<Ammo_15cmNebelwerfer_EMP>6</Ammo_15cmNebelwerfer_EMP>
 		</products>
 	</RecipeDef>
-	
-		<!-- ==================== Recipes ========================== -->
 
 	<RecipeDef ParentName="AmmoRecipeBase" MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>MakeAmmo_15cmNebelwerfer_Toxic</defName>

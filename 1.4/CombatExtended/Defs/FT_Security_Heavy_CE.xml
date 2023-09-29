@@ -221,6 +221,9 @@
 					<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Wheel_Sec</li>
 				</randomGraphics>
 			</li>
+			<li MayRequire="3HSTltd.Framework">
+				<compClass>BillDoorsFramework.CompTurretFix</compClass>
+			</li>
 		</comps>
 		<statBases>
 			<Bulk>2500</Bulk>
@@ -254,7 +257,9 @@
 		</graphicData>
 		<statBases>
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
-			<SightsEfficiency>0.5</SightsEfficiency>
+			<SightsEfficiency>2.5</SightsEfficiency>
+			<ShotSpread MayRequire="3HSTltd.Framework">0.01</ShotSpread>
+			<SwayFactor MayRequire="3HSTltd.Framework">0.05</SwayFactor>
 		</statBases>
 		<weaponTags>
       		<li>TurretGun</li>
@@ -271,7 +276,7 @@
 				<range>1000</range>
 				<soundCast>FT_CannonLaunchB</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>16</muzzleFlashScale>
+				<muzzleFlashScale>25</muzzleFlashScale>
 				<indirectFirePenalty>0.4</indirectFirePenalty>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
@@ -283,7 +288,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>1</magazineSize>
-				<reloadTime>10</reloadTime>
+				<reloadTime>7.5</reloadTime>
 				<ammoSet>AmmoSet_155mmHowitzerShell</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_Charges">
@@ -353,6 +358,40 @@
 				<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
 				<burstOffsetRange>(2,6)</burstOffsetRange> 
 			</li>
+			<li MayRequire="3HSTltd.Framework" Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>false</aiUseBurstMode>
+			</li>
+			<li MayRequire="3HSTltd.Framework" Class="BillDoorsFramework.CompProperties_SecondaryAmmo">
+				<secondaryVerb>
+					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+					<hasStandardCommand>true</hasStandardCommand>
+					<requireLineOfSight>false</requireLineOfSight>
+					<defaultProjectile>Bullet_105mmHowitzerShell_HE_directfire</defaultProjectile>
+					<warmupTime>4</warmupTime>
+					<minRange>14.9</minRange>
+					<range>1000</range>
+					<soundCast>FT_CannonLaunchB</soundCast>
+					<soundCastTail>GunTail_Heavy</soundCastTail>
+					<muzzleFlashScale>25</muzzleFlashScale>
+					<indirectFirePenalty>0.4</indirectFirePenalty>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+					<recoilPattern>Mounted</recoilPattern>
+					<recoilAmount>0.0</recoilAmount>
+				</secondaryVerb>
+				<secondaryAmmoProps>
+					<magazineSize>1</magazineSize>
+					<reloadTime>5</reloadTime>
+					<ammoSet>AmmoSet_FT_105mmHowitzerShell_directfire</ammoSet>
+				</secondaryAmmoProps>
+				<mainWeaponLabel>direct fire</mainWeaponLabel>
+				<secondaryWeaponLabel>indirect fire</secondaryWeaponLabel>
+				<description>switch firing mode</description>
+				<mainCommandIcon>UI/Icons/FireModes/Direct</mainCommandIcon>
+				<secondaryCommandIcon>UI/Icons/FireModes/Indirect</secondaryCommandIcon>
+			</li>
 		</comps>
 	</ThingDef>
 	
@@ -383,6 +422,9 @@
 			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Mannable">
 				<manWorkType>Violent</manWorkType>
+			</li>
+			<li MayRequire="3HSTltd.Framework">
+				<compClass>BillDoorsFramework.CompTurretFix</compClass>
 			</li>
 		</comps>
 		<statBases>
@@ -419,7 +461,7 @@
 			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
 			<SightsEfficiency>2.5</SightsEfficiency>
 			<ShotSpread>0.01</ShotSpread>
-			<SwayFactor>1.50</SwayFactor>
+			<SwayFactor>0.05</SwayFactor>
 		</statBases>
 		<weaponTags>
       		<li>TurretGun</li>
@@ -446,7 +488,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>1</magazineSize>
-				<reloadTime>10</reloadTime>
+				<reloadTime>7.5</reloadTime>
 				<ammoSet>AmmoSet_155mmHowitzerShell_directfire</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
@@ -479,6 +521,35 @@
 				<fleckSizeRange>(1,2)</fleckSizeRange>
 				<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
 				<burstOffsetRange>(2,6)</burstOffsetRange> 
+			</li>
+			<li MayRequire="3HSTltd.Framework" Class="BillDoorsFramework.CompProperties_SecondaryAmmo">
+				<secondaryVerb>
+					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Bullet_155mmHowitzerShell_HE_directfire</defaultProjectile>
+					<warmupTime>4</warmupTime>
+					<minRange>14.9</minRange>
+					<range>1000</range>
+					<soundCast>FT_CannonLaunchC</soundCast>
+					<soundCastTail>GunTail_Heavy</soundCastTail>
+					<muzzleFlashScale>32</muzzleFlashScale>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+					<recoilPattern>Mounted</recoilPattern>
+					<recoilAmount>0.0</recoilAmount>
+				</secondaryVerb>
+				<secondaryAmmoProps>
+					<magazineSize>1</magazineSize>
+					<reloadTime>7.5</reloadTime>
+					<ammoSet>AmmoSet_155mmHowitzerShell_directfire</ammoSet>
+				</secondaryAmmoProps>
+				<mainWeaponLabel>direct fire</mainWeaponLabel>
+				<secondaryWeaponLabel>indirect fire</secondaryWeaponLabel>
+				<description>switch firing mode</description>
+				<mainCommandIcon>UI/Icons/FireModes/Direct</mainCommandIcon>
+				<secondaryCommandIcon>UI/Icons/FireModes/Indirect</secondaryCommandIcon>
 			</li>
 		</comps>
 	</ThingDef>

@@ -71,7 +71,7 @@
 			<ComponentIndustrial>2</ComponentIndustrial>
 			<ReinforcedBarrel>1</ReinforcedBarrel>
 		</costList>
-			<interactionCellOffset>(1,0,-1)</interactionCellOffset><!--操作點在右下方-->
+			<interactionCellOffset>(1,0,0)</interactionCellOffset><!--操作點在右方-->
 		<statBases>
 			<MaxHitPoints>250</MaxHitPoints>
 			<Flammability>0</Flammability>
@@ -145,6 +145,45 @@
 				<aiUseBurstMode>FALSE</aiUseBurstMode>
 				<aiAimMode>Snapshot</aiAimMode>
 			</li>
+			<li Class="CombatExtended.CompProperties_Charges">
+				<chargeSpeeds>
+					<li>30</li>
+					<li>35</li>
+					<li>40</li>
+					<li>45</li>
+					<li>50</li>
+					<li>55</li>
+					<li>60</li>
+					<li>65</li>
+					<li>70</li>
+					<li>75</li>
+					<li>80</li>
+					<li>85</li>
+					<li>90</li>
+					<li>95</li>
+					<li>100</li>
+					<li>105</li>
+					<li>110</li>
+					<li>115</li>
+					<li>120</li>
+					<li>125</li>
+					<li>130</li>
+					<li>135</li>
+					<li>140</li>
+					<li>145</li>
+					<li>150</li>
+					<li>155</li>
+					<li>160</li>
+					<li>165</li>
+					<li>170</li>
+					<li>175</li>
+					<li>180</li>
+					<li>185</li>
+					<li>190</li>
+					<li>195</li>
+					<li>200</li>
+				</chargeSpeeds>
+			</li>
 			<li Class="Fortification.CompProperties_CastFlecker">
 				<fleck>DustPuff</fleck>
 				<onGroundOverride>true</onGroundOverride>
@@ -188,6 +227,8 @@
 			</shadowData>
 		</graphicData>
 		<size>(1,1)</size>
+		<uiIconPath>ArtilleryRangeFinder_Icon</uiIconPath>
+		<uiIconScale>1.2</uiIconScale>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<costList>
 			<Steel>175</Steel>

@@ -152,7 +152,7 @@
             <warmupTime>1.25</warmupTime>
             <minRange>3.9</minRange>
             <range>90</range>
-            <burstShotCount>8</burstShotCount>
+            <burstShotCount>4</burstShotCount>
             <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
             <soundCast>Shot_Autocannon</soundCast>
             <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -169,7 +169,7 @@
 		<li Class="CombatExtended.CompProperties_FireModes">
             <aiUseBurstMode>FALSE</aiUseBurstMode>
             <aiAimMode>Snapshot</aiAimMode>
-            <aimedBurstShotCount>4</aimedBurstShotCount>
+            <aimedBurstShotCount>2</aimedBurstShotCount>
             <noSingleShot>true</noSingleShot>		
 		</li>
 		<li Class="Fortification.CompProperties_CastFlecker">
@@ -260,7 +260,7 @@
 			<warmupTime>1.5</warmupTime>
 			<minRange>3.9</minRange>
 			<range>90</range>
-			<burstShotCount>16</burstShotCount>
+			<burstShotCount>8</burstShotCount>
 			<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
 			<soundCast>Shot_Autocannon</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -277,7 +277,7 @@
 		<li Class="CombatExtended.CompProperties_FireModes">
             <aiUseBurstMode>FALSE</aiUseBurstMode>
             <aiAimMode>Snapshot</aiAimMode>
-            <aimedBurstShotCount>8</aimedBurstShotCount>
+            <aimedBurstShotCount>4</aimedBurstShotCount>
             <noSingleShot>true</noSingleShot>	
 		</li>
 		  <li Class="Fortification.CompProperties_CastFlecker">
@@ -443,6 +443,8 @@
 		<drawOffset>(0,0,-0.1)</drawOffset>
 	</graphicData>
 	<size>(3,3)</size>
+    <uiIconPath>InfantryTurret/FT_AntiTankGunPlus_Icon</uiIconPath>
+    <uiIconScale>1.2</uiIconScale>
     <statBases>
 		<Bulk>1500</Bulk>
 		<Mass>1850</Mass>
@@ -525,38 +527,39 @@
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiAimMode>AimedShot</aiAimMode>
 			</li>
+			<li Class="Fortification.CompProperties_CastFlecker">
+				<fleck>DustPuff</fleck><!--生成的Fleck,參考原版-->
+				<onGroundOverride>true</onGroundOverride><!--根據砲塔下方地形決定是否產生-->
+				<burstAmount>20</burstAmount><!--一次射擊生成的數量-->
+				<burstSway>110</burstSway><!--噴射角度的左右隨機偏移範圍-->
+				<burstAngle>180</burstAngle><!--生成偏移子彈發射方向的噴射角度(0 = 與發射角度同向)-->
+				<fleckSizeRange>(3,5)</fleckSizeRange><!--Fleck的生成大小隨機區間-->
+				<burstSpeedRange>(0.2,0.5)</burstSpeedRange><!--Fleck的飛行速度隨機區間-->
+				<burstOffsetRange>(2,6)</burstOffsetRange> <!--Fleck的生成位置偏移旋轉中心點的距離區間-->
+			</li>
+			<li Class="Fortification.CompProperties_CastFlecker">
+				<fleck>DustPuff</fleck>
+				<onGroundOverride>true</onGroundOverride>
+				<burstAmount>20</burstAmount>
+				<burstSway>70</burstSway>
+				<burstAngle>180</burstAngle>
+				<fleckSizeRange>(3,5)</fleckSizeRange>
+				<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
+				<burstOffsetRange>(2,6)</burstOffsetRange> 
+				<rangeScaleFactor>(1,0.1)</rangeScaleFactor>
+			</li>
+			<li Class="Fortification.CompProperties_CastFlecker">
+				<fleck>DustPuff</fleck>
+				<onGroundOverride>true</onGroundOverride>
+				<burstAmount>25</burstAmount>
+				<burstSway>30</burstSway>
+				<burstAngle>0</burstAngle>
+				<fleckSizeRange>(1,2)</fleckSizeRange>
+				<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
+				<burstOffsetRange>(2,6)</burstOffsetRange> 
+			</li>
 		</comps>
-		<li Class="Fortification.CompProperties_CastFlecker">
-			<fleck>DustPuff</fleck><!--生成的Fleck,參考原版-->
-			<onGroundOverride>true</onGroundOverride><!--根據砲塔下方地形決定是否產生-->
-			<burstAmount>20</burstAmount><!--一次射擊生成的數量-->
-			<burstSway>110</burstSway><!--噴射角度的左右隨機偏移範圍-->
-			<burstAngle>180</burstAngle><!--生成偏移子彈發射方向的噴射角度(0 = 與發射角度同向)-->
-			<fleckSizeRange>(3,5)</fleckSizeRange><!--Fleck的生成大小隨機區間-->
-			<burstSpeedRange>(0.2,0.5)</burstSpeedRange><!--Fleck的飛行速度隨機區間-->
-			<burstOffsetRange>(2,6)</burstOffsetRange> <!--Fleck的生成位置偏移旋轉中心點的距離區間-->
-		</li>
-		<li Class="Fortification.CompProperties_CastFlecker">
-			<fleck>DustPuff</fleck>
-			<onGroundOverride>true</onGroundOverride>
-			<burstAmount>20</burstAmount>
-			<burstSway>70</burstSway>
-			<burstAngle>180</burstAngle>
-			<fleckSizeRange>(3,5)</fleckSizeRange>
-			<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
-			<burstOffsetRange>(2,6)</burstOffsetRange> 
-			<rangeScaleFactor>(1,0.1)</rangeScaleFactor>
-		</li>
-		<li Class="Fortification.CompProperties_CastFlecker">
-			<fleck>DustPuff</fleck>
-			<onGroundOverride>true</onGroundOverride>
-			<burstAmount>25</burstAmount>
-			<burstSway>30</burstSway>
-			<burstAngle>0</burstAngle>
-			<fleckSizeRange>(1,2)</fleckSizeRange>
-			<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
-			<burstOffsetRange>(2,6)</burstOffsetRange> 
-		</li>
+
 		<modExtensions>
 			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
 				<def>MF_StandardMuzzleFalshThree</def>
@@ -574,7 +577,7 @@
     <label>Quad Machine gun</label>
     <description>A Tripod with Quadruple machine gun mounted so it Have a good firepower continuity,need a pawn man on it to operate. Requires steel to refurbish its barrels after heavy use.</description>
     <uiIconPath>InfantryTurret/FT_QuadMaximGun_icon</uiIconPath>
-    <uiIconScale>1.2</uiIconScale>
+    <uiIconScale>1</uiIconScale>
     <graphicData>
 		<texPath>InfantryTurret/FT_Tripod</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
@@ -603,7 +606,7 @@
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <building>
-		<turretTopDrawSize>1.0</turretTopDrawSize>
+		<turretTopDrawSize>1.5</turretTopDrawSize>
 		<ai_combatDangerous>true</ai_combatDangerous>
 		<turretGunDef>FT_Gun_QuadMG</turretGunDef>
 		<turretBurstWarmupTime>0.75</turretBurstWarmupTime>

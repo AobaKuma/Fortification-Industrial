@@ -95,7 +95,6 @@
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<soundCast>FT_NebelShot</soundCast>
 				<muzzleFlashScale>39</muzzleFlashScale>
-				<circularError>1.5</circularError>
 				<indirectFirePenalty>0.3</indirectFirePenalty>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
@@ -262,22 +261,21 @@
 		</weaponTags>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-					<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
-					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-					<hasStandardCommand>true</hasStandardCommand>
-					<requireLineOfSight>false</requireLineOfSight>
-					<defaultProjectile>Bullet_155mmHowitzerShell_HE</defaultProjectile>
-					<warmupTime>4</warmupTime>
-					<minRange>50</minRange>
-					<range>1000</range>
-					<soundCast>FT_CannonLaunchB</soundCast>
-					<soundCastTail>GunTail_Heavy</soundCastTail>
-					<muzzleFlashScale>16</muzzleFlashScale>
-					<circularError>1</circularError>
-					<indirectFirePenalty>0.4</indirectFirePenalty>
-					<targetParams>
-						<canTargetLocations>true</canTargetLocations>
-					</targetParams>
+				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<hasStandardCommand>true</hasStandardCommand>
+				<requireLineOfSight>false</requireLineOfSight>
+				<defaultProjectile>Bullet_155mmHowitzerShell_HE</defaultProjectile>
+				<warmupTime>4</warmupTime>
+				<minRange>50</minRange>
+				<range>1000</range>
+				<soundCast>FT_CannonLaunchB</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>16</muzzleFlashScale>
+				<indirectFirePenalty>0.4</indirectFirePenalty>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
 				<recoilPattern>Mounted</recoilPattern>
 				<recoilAmount>0.0</recoilAmount>
 			</li>
@@ -357,6 +355,7 @@
 			</li>
 		</comps>
 	</ThingDef>
+	
 
 	<ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
 		<defName>FT_TurretEmpero</defName>
@@ -374,7 +373,6 @@
 		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
 		<fillPercent>1.5</fillPercent>
 		<placeWorkers>
-			<li>PlaceWorker_NotUnderRoof</li>
 			<li>PlaceWorker_TurretTop</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
@@ -429,6 +427,7 @@
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_155mmHowitzerShell_HE_directfire</defaultProjectile>
 				<warmupTime>4</warmupTime>

@@ -193,6 +193,7 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
+		<forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
     <comps>
@@ -322,6 +323,7 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
+		<forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
     <comps>
@@ -532,6 +534,7 @@
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
+		<forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
   </ThingDef>
@@ -936,6 +939,7 @@
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
         <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+		<forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
   </ThingDef>

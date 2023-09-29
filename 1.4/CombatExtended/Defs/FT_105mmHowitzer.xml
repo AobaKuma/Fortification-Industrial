@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_FT_105mmHowitzerShell_directfire</defName>
+		<label>105mm Howitzer shells</label>
+		<ammoTypes>
+			<Ammo_105mmHowitzerShell_HE>Bullet_105mmHowitzerShell_HE_directfire</Ammo_105mmHowitzerShell_HE>
+			<Ammo_105mmHowitzerShell_Incendiary>Bullet_105mmHowitzerShell_Incendiary_directfire</Ammo_105mmHowitzerShell_Incendiary>
+			<Ammo_105mmHowitzerShell_EMP>Bullet_105mmHowitzerShell_EMP_directfire</Ammo_105mmHowitzerShell_EMP>
+			<Ammo_105mmHowitzerShell_Smoke>Bullet_105mmHowitzerShell_Smoke_directfire</Ammo_105mmHowitzerShell_Smoke>
+		</ammoTypes>
+		<isMortarAmmoSet>true</isMortarAmmoSet>
+	</CombatExtended.AmmoSetDef>
+	
+</Defs>

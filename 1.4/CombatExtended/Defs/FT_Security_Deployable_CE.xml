@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <ThingDef ParentName="MinifiedThing">
+		<defName>FT_MinifiedTurret</defName>
+		<label>minified turret</label>
+		<thingClass>Fortification.MinifiedThingDeployable</thingClass>
+		<statBases>
+			<Mass>20</Mass>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>TriggerObject</useJob>
+				<useLabel>Pick up {0_label}</useLabel>
+			</li>
+			<li>
+				<compClass>Fortification.CompMinifyToInventory</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+  <ThingDef Name="FT_BaseCannonBuilding_Deployable" ParentName="FT_BaseCannonBuilding" Abstract="True">
+		<minifiedDef>FT_MinifiedTurret</minifiedDef>
+		<!--================可攜帶性================-->
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+		<statBases>
+			<Mass>50</Mass>
+		</statBases>
+		<building>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretBurstWarmupTime>1.0</turretBurstWarmupTime>
+			<!--================冷卻與瞄準時間================-->
+			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+		</building>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>TriggerObject</useJob>
+				<useLabel>Pick up {0_label}</useLabel>
+			</li>
+			<li>
+				<compClass>Fortification.CompMinifyToInventory</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
+		<defName>FT_Turret_Mortar</defName>
+		<label>infantry mortar</label>
+		<description>A light-weighted mortar that launches all kinds of mortar shells. Improved firing speed with a simplified design, it has a shorter range but it can be easily carried by infantry.</description>
+		<uiIconPath>FT_Mortar_Icon</uiIconPath>
+		<uiIconScale>0.9</uiIconScale>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>FT_MortarBase</texPath>
+			<drawSize>(2,2)</drawSize>
+			<damageData>
+				<rect>(0.2,0.2,0.2,0.2)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+			</damageData>
+			<shadowData>
+				<offset>(-0.1,-0.87,-0.1)</offset>
+				<volume>(0.5,0.4,1.05)</volume>
+			</shadowData>
+		</graphicData>
+		<size>(1,1)</size>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ReinforcedBarrel>1</ReinforcedBarrel>
+		</costList>
+			<interactionCellOffset>(1,0,-1)</interactionCellOffset><!--操作點在右下方-->
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>500</WorkToBuild>
+			<Mass>20</Mass>
+			<Bulk>15</Bulk>
+		</statBases>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+		  <turretGunDef>FT_Artillery_Mortar</turretGunDef>
+		  <turretTopDrawSize>1.5</turretTopDrawSize>
+		  <turretBurstWarmupTime>2.0</turretBurstWarmupTime>
+		  <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+		</building>
+		<researchPrerequisites>
+		  <li>Mortars</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+	  </ThingDef>
+	
+	  <ThingDef ParentName="BaseWeaponTurret">
+		<defName>FT_Artillery_Mortar</defName>
+		<label>mortar</label>
+		<description>A powerful indirect-firing weapon with ability to rapid deploy.</description>
+		<recoilPower>3</recoilPower>
+		<graphicData>
+			<texPath>FT_MortarGun</texPath>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+        <statBases>
+			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+			<SightsEfficiency>0.5</SightsEfficiency>
+        </statBases>
+		<weaponTags>
+			<li>TurretGun</li>
+		</weaponTags>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<recoilAmount>1.5</recoilAmount>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_60mmMortarShell_HE</defaultProjectile>
+				<warmupTime>3.5</warmupTime>
+				<minRange>20</minRange>
+				<range>500</range>
+				<burstShotCount>1</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<soundCast>Mortar_LaunchA</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>16</muzzleFlashScale>
+				<recoilPattern>Mounted</recoilPattern>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<circularError>1</circularError>
+				<indirectFirePenalty>0.2</indirectFirePenalty>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>2</reloadTime>
+				<ammoSet>AmmoSet_60mmMortarShell</ammoSet>  
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>FALSE</aiUseBurstMode>
+				<aiAimMode>Snapshot</aiAimMode>
+			</li>
+			<li Class="Fortification.CompProperties_CastFlecker">
+				<fleck>DustPuff</fleck>
+				<onGroundOverride>true</onGroundOverride>
+				<burstAmount>15</burstAmount>
+				<burstSway>100</burstSway>
+				<burstAngle>180</burstAngle>
+				<fleckSizeRange>(2,4)</fleckSizeRange>
+				<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
+				<burstOffsetRange>(0,3)</burstOffsetRange> 
+				<rangeScaleFactor>(1,0.1)</rangeScaleFactor>
+			</li>
+			<li Class="Fortification.CompProperties_CastFlecker">
+				<fleck>DustPuff</fleck>
+				<onGroundOverride>true</onGroundOverride>
+				<burstAmount>15</burstAmount>
+				<burstSway>30</burstSway>
+				<burstAngle>0</burstAngle>
+				<fleckSizeRange>(1,2)</fleckSizeRange>
+				<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
+				<burstOffsetRange>(1,3)</burstOffsetRange> 
+			</li>
+		</comps>
+	</ThingDef>
+	
+<!--測距儀-->
+	<ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
+		<defName>FTC_SpotterLight_Turret</defName>
+		<label>mobile artillery spotter</label>
+		<description>A manned artillery scope with radio. Useful to coordinate artillery strikes.\n\nUsing this on a target will mark it, removing the indirect fire penalty from any artillery pieces targeting it. Additionally, any directed fire will use the aiming accuracy and efficiency of the spotter, rather than the artillery operator to determine final accuracy.</description>
+		<graphicData>
+			<texPath>InfantryTurret/FT_Tripod</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<drawOffset>(0,0,-0.1)</drawOffset>
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+			<shadowData>
+				<volume>(0.27,0.25,0.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+		<size>(1,1)</size>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<costList>
+			<Steel>175</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset><!--操作點在下方-->
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>500</WorkToBuild>
+			<Mass>10</Mass>
+			<Bulk>10</Bulk>
+			<ShootingAccuracyTurret>10.0</ShootingAccuracyTurret>
+			<AimingAccuracy>10.0</AimingAccuracy>
+		</statBases>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<building>
+    	  	<ai_combatDangerous>false</ai_combatDangerous>
+			<turretBurstWarmupTime>2.0</turretBurstWarmupTime>
+			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+			<turretTopDrawSize>1.5</turretTopDrawSize>	
+			<turretGunDef>FTC_SpotterLight_Gun</turretGunDef>
+		</building>
+		<researchPrerequisites>
+		  <li>Mortars</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
+	  </ThingDef>
+	
+  	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>FTC_SpotterLight_Gun</defName>
+		<label>mobile artillery spotter</label>
+		<description>A manned artillery scope with radio. Useful to coordinate artillery strikes.\n\nUsing this on a target will mark it, removing the indirect fire penalty from any artillery pieces targeting it. Additionally, any directed fire will use the aiming accuracy and efficiency of the spotter, rather than the artillery operator to determine final accuracy.</description>
+	    <graphicData>
+			<texPath>ArtilleryRangeFinder_Gun</texPath>
+			<drawSize>1</drawSize>
+  		</graphicData>
+		<statBases>
+			<SightsEfficiency>5.0</SightsEfficiency>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>TurretGun</li>
+		</weaponTags>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_MarkForArtillery</verbClass>
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<hasStandardCommand>true</hasStandardCommand>
+				<requireLineOfSight>true</requireLineOfSight>
+				<defaultProjectile>Bullet_Dummy</defaultProjectile>
+				<warmupTime>2</warmupTime>
+				<range>1000</range>
+				<muzzleFlashScale>0</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+			</li>
+		</verbs>
+  	</ThingDef>
+	
+</Defs>	

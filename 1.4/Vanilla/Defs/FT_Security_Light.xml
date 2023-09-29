@@ -50,10 +50,6 @@
 				<damageDef>MechBandShockwave</damageDef>
 				<multiplier>0</multiplier>
 		  </li>
-		  <li MayRequire="CETeam.CombatExtended">
-				<damageDef>Electrical</damageDef>
-				<multiplier>0</multiplier>
-		  </li>
 	  </damageMultipliers>
     <placeWorkers>
       <li>PlaceWorker_TurretTop</li>
@@ -71,7 +67,6 @@
     <statBases>
       <Mass>150</Mass>
       <ShootingAccuracyTurret>1.0</ShootingAccuracyTurret>
-      <AimingAccuracy MayRequire="CETeam.CombatExtended">1.0</AimingAccuracy>
     </statBases>
     <building>
       <ai_combatDangerous>true</ai_combatDangerous>
@@ -230,7 +225,6 @@
       <MaxHitPoints>750</MaxHitPoints>
       <Flammability>0.45</Flammability>
       <WorkToBuild>7000</WorkToBuild>
-      <Bulk MayRequire="ceteam.combatextended">50</Bulk>
     </statBases>
     <comps>
       <li Class="CompProperties_Explosive">
@@ -411,7 +405,6 @@
       <Flammability>0.5</Flammability>
       <WorkToBuild>1000</WorkToBuild>
       <Mass>160</Mass>
-      <Bulk MayRequire="ceteam.combatextended">50</Bulk>
     </statBases>
     <comps>
       <li Class="CompProperties_Explosive">
@@ -601,7 +594,6 @@
       <Flammability>0.7</Flammability>
       <WorkToBuild>3300</WorkToBuild>
       <Mass>25</Mass>
-      <Bulk MayRequire="ceteam.combatextended">25.54</Bulk>
       <Beauty>-2</Beauty>
       <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
     </statBases>
@@ -717,7 +709,6 @@
       <Flammability>0.7</Flammability>
       <WorkToBuild>3300</WorkToBuild>
       <Mass>23</Mass>
-      <Bulk MayRequire="ceteam.combatextended">25.54</Bulk>
       <Beauty>-2</Beauty>
       <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
     </statBases>
@@ -819,7 +810,6 @@
       <Flammability>0.7</Flammability>
       <WorkToBuild>3300</WorkToBuild>
       <Mass>38</Mass>
-      <Bulk MayRequire="ceteam.combatextended">40</Bulk>
       <Beauty>-2</Beauty>
       <ShootingAccuracyTurret>0.90</ShootingAccuracyTurret>
     </statBases>

@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
 		<operations>
-			<li Class="PatchOperationConditional">
+			<li Class="PatchOperationTest">
 				<xpath>Defs/ThingDef[defName="Human"]/comps</xpath>
-				<nomatch Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Human"]</xpath>
-					<value>
-						<comps />
-					</value>
-				</nomatch>
+				<success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Human"]</xpath>
+				<value>
+					<comps />
+				</value>
 			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="Human"]/comps</xpath>
@@ -26,15 +28,22 @@
 		<xpath>Defs/AlienRace.ThingDef_AlienRace</xpath>
 		<match Class="PatchOperationSequence">
 			<operations>
-				<li Class="PatchOperationConditional">
-					<xpath>Defs/AlienRace.ThingDef_AlienRace[race/intelligence="Humanlike"]/comps</xpath>
-					<nomatch Class="PatchOperationAdd">
-						<xpath>Defs/AlienRace.ThingDef_AlienRace[race/intelligence="Humanlike"]</xpath>
-						<value>
-							<comps />
-						</value>
-					</nomatch>
+				<li Class="PatchOperationSequence">
+					<success>Always</success>
+					<operations>
+						<li Class="PatchOperationTest">
+							<xpath>Defs/AlienRace.ThingDef_AlienRace[race/intelligence="Humanlike"]/comps</xpath>
+							<success>Invert</success>
+						</li>
+						<li Class="PatchOperationAdd">
+							<xpath>Defs/AlienRace.ThingDef_AlienRace[race/intelligence="Humanlike"]</xpath>
+							<value>
+								<comps />
+							</value>
+						</li>
+					</operations>
 				</li>
+
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/AlienRace.ThingDef_AlienRace[race/intelligence="Humanlike"]/comps</xpath>
 					<value>

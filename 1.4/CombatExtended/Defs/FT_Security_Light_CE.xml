@@ -6,15 +6,7 @@
     <drawerType>MapMeshAndRealTime</drawerType>
     <techLevel>Industrial</techLevel>
     <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-      <damageData>
-        <rect>(0.38,0.2,0.56375,0.8)</rect>
-        <cornerTL>Damage/Corner</cornerTL>
-      </damageData>
-      <shadowData>
-        <offset>(-0.13,-0.87,-0.1)</offset>
-        <volume>(0.5,0.4,1.05)</volume>
-      </shadowData>
+		<graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
@@ -76,500 +68,6 @@
 		<turretBurstCooldownTime>3.0</turretBurstCooldownTime>
     </building>
   </ThingDef>
-
-  <!-- 單裝防空炮 -->
-  <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
-    <defName>FT_TurretAA</defName>
-    <label>Anti Air Gun</label>
-    <description>A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field.</description>
-    <uiIconPath>ATGun/FT_AntiAirGun</uiIconPath>
-    <uiIconScale>1.2</uiIconScale>
-    <graphicData>
-		<texPath>ATGun/FT_AntiAirGun_Base</texPath>
-		<graphicClass>Graphic_Multi</graphicClass>
-		<drawSize>(3.25,3.25)</drawSize>
-		<drawOffset>(0,0,0)</drawOffset>
-    </graphicData>
-    <size>(3,3)</size>
-	<interactionCellOffset>(1,0,-1)</interactionCellOffset><!--操作點在右下方-->
-    <statBases>   <!--================血量與重量工作量================-->
-		<MaxHitPoints>1000</MaxHitPoints>
-		<Flammability>0</Flammability>
-		<WorkToBuild>3000</WorkToBuild>
-		<Bulk>1000</Bulk>
-		<Mass>450</Mass>
-    </statBases>
-    <comps>
-	    <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
-			<randomGraphics>
-				<li>ATGun/FT_AntiAirGun_Base</li>
-				<li>ATGun/FT_AntiTankGun_Base</li>
-				<li>ATGun/FT_AntiTankGun_Base_Sec</li>
-				<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_AA</li>
-			</randomGraphics>
-		</li>
-    </comps>
-    <building>
-		<turretGunDef>FT_Gun_TurretAA</turretGunDef>
-		<turretTopDrawSize>4</turretTopDrawSize>
-		<turretBurstWarmupTime>1.25</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
-		<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
-    </building>
-    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
-    <costList>
-		<Steel>350</Steel>
-		<ComponentIndustrial>3</ComponentIndustrial>
-		<ReinforcedBarrel>1</ReinforcedBarrel>
-    </costList>
-    <researchPrerequisites>
-		<li>FT_IndustrialCannon</li>
-    </researchPrerequisites>
-  </ThingDef>
-
-  <ThingDef ParentName="BaseWeaponTurret">
-    <defName>FT_Gun_TurretAA</defName>
-    <label>Anti Air cannon</label>
-    <description>An Autocannon designed to defend the area of skies, but also a nice weapon for ground targets.</description>
-    <graphicData>
-		<texPath>ATGun/FT_AAGun</texPath>
-    </graphicData>
-    <soundInteract>Artillery_ShellLoaded</soundInteract>
-    <statBases>
-		<RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
-		<SightsEfficiency>2.18</SightsEfficiency>
-        <ShotSpread>0.01</ShotSpread>
-        <SwayFactor>1.38</SwayFactor>
-    </statBases>
-	<weaponTags>
-		<li>TurretGun</li>
-	</weaponTags>
-    <verbs>
-		<li Class="CombatExtended.VerbPropertiesCE">
-            <recoilAmount>1.35</recoilAmount>
-            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-            <hasStandardCommand>true</hasStandardCommand>
-            <defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
-            <warmupTime>1.25</warmupTime>
-            <minRange>3.9</minRange>
-            <range>90</range>
-            <burstShotCount>4</burstShotCount>
-            <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-            <soundCast>Shot_Autocannon</soundCast>
-            <soundCastTail>GunTail_Heavy</soundCastTail>
-            <muzzleFlashScale>12</muzzleFlashScale>
-            <recoilPattern>Mounted</recoilPattern>
-		</li>
-    </verbs>
-    <comps>
-		<li Class="CombatExtended.CompProperties_AmmoUser">
-            <magazineSize>20</magazineSize>
-            <reloadTime>2</reloadTime>
-            <ammoSet>AmmoSet_20x138mmB</ammoSet>   
-		</li>
-		<li Class="CombatExtended.CompProperties_FireModes">
-            <aiUseBurstMode>FALSE</aiUseBurstMode>
-            <aiAimMode>Snapshot</aiAimMode>
-            <aimedBurstShotCount>2</aimedBurstShotCount>
-            <noSingleShot>true</noSingleShot>		
-		</li>
-		<li Class="Fortification.CompProperties_CastFlecker">
-			<fleck>DustPuff</fleck>
-			<onGroundOverride>true</onGroundOverride>
-			<burstAmount>10</burstAmount>
-			<burstSway>30</burstSway>
-			<burstAngle>0</burstAngle>
-			<fleckSizeRange>(1,2)</fleckSizeRange>
-			<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
-			<burstOffsetRange>(1,3)</burstOffsetRange> 
-		</li>
-	</comps>
-  </ThingDef>
-
-  <!-- 四聯防空炮 -->
-  <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
-    <defName>FT_TurretQuadAA</defName>
-    <label>Quad Anti Air Gun</label>
-    <description>A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field.</description>
-    <uiIconPath>ATGun/FT_AntiAirGun_Vierling</uiIconPath>
-    <uiIconScale>1.2</uiIconScale>
-    <graphicData>
-		<texPath>InfantryTurret/FT_HexMortarBase</texPath>
-		<graphicClass>Graphic_Multi</graphicClass>
-		<drawSize>(3.25,3.25)</drawSize>
-		<drawOffset>(0,0,0)</drawOffset>
-    </graphicData>
-    <size>(3,3)</size>
-	<interactionCellOffset>(0,0,-1)</interactionCellOffset><!--操作點在下方-->
-    <statBases>   <!--================血量與重量工作量================-->
-		<MaxHitPoints>1000</MaxHitPoints>
-		<Flammability>0</Flammability>
-		<WorkToBuild>7000</WorkToBuild>
-		<Bulk>1000</Bulk>
-		<Mass>1509</Mass>
-    </statBases>
-    <comps>
-		<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
-			<randomGraphics>
-				<li>ATGun/FT_AntiAirGun_Base</li>
-				<li>InfantryTurret/FT_HexMortarBase</li>
-				<li>InfantryTurret/FT_HexMortarBase_Sec</li>
-				<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_AA</li>
-			</randomGraphics>
-		</li>
-    </comps>
-    <building>
-		<turretGunDef>FT_Gun_TurretQuadAA</turretGunDef>
-		<turretTopDrawSize>4</turretTopDrawSize>
-		<turretBurstWarmupTime>1.5</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
-		<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
-    </building>
-    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
-	<costList>
-		<Steel>400</Steel>
-		<ComponentIndustrial>5</ComponentIndustrial>
-		<ReinforcedBarrel>4</ReinforcedBarrel>
-    </costList>
-    <researchPrerequisites>
-		<li>FT_IndustrialCannon</li>
-    </researchPrerequisites>
-  </ThingDef>
-
-  <ThingDef ParentName="BaseWeaponTurret">
-    <defName>FT_Gun_TurretQuadAA</defName>
-    <label>Quad Anti Air cannon</label>
-    <description>An Quad mounted Autocannon designed to defend the area of skies, but also a nice weapon for ground targets.</description>
-    <graphicData>
-      <texPath>ATGun/FT_AAGun_Vierling</texPath>
-    </graphicData>
-    <soundInteract>Artillery_ShellLoaded</soundInteract>
-    <statBases>
-		<RangedWeapon_Cooldown>3.3</RangedWeapon_Cooldown>
-		<SightsEfficiency>2.18</SightsEfficiency>
-		<ShotSpread>0.10</ShotSpread>
-		<SwayFactor>1.44</SwayFactor>
-    </statBases>
-	<weaponTags>
-		<li>TurretGun</li>
-	</weaponTags>
-    <verbs>
-		<li Class="CombatExtended.VerbPropertiesCE">
-			<recoilAmount>1.35</recoilAmount>
-			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
-			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
-			<warmupTime>1.5</warmupTime>
-			<minRange>3.9</minRange>
-			<range>90</range>
-			<burstShotCount>8</burstShotCount>
-			<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
-			<soundCast>Shot_Autocannon</soundCast>
-			<soundCastTail>GunTail_Heavy</soundCastTail>
-			<muzzleFlashScale>18</muzzleFlashScale>
-			<recoilPattern>Mounted</recoilPattern>
-		</li>
-    </verbs>
-    <comps>
-		<li Class="CombatExtended.CompProperties_AmmoUser">
-            <magazineSize>80</magazineSize>
-            <reloadTime>8</reloadTime>
-            <ammoSet>AmmoSet_20x138mmB</ammoSet>
-		</li>
-		<li Class="CombatExtended.CompProperties_FireModes">
-            <aiUseBurstMode>FALSE</aiUseBurstMode>
-            <aiAimMode>Snapshot</aiAimMode>
-            <aimedBurstShotCount>4</aimedBurstShotCount>
-            <noSingleShot>true</noSingleShot>	
-		</li>
-		  <li Class="Fortification.CompProperties_CastFlecker">
-			<fleck>DustPuff</fleck>
-			<onGroundOverride>true</onGroundOverride>
-			<burstAmount>10</burstAmount>
-			<burstSway>40</burstSway>
-			<burstAngle>0</burstAngle>
-			<fleckSizeRange>(1,2)</fleckSizeRange>
-			<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
-			<burstOffsetRange>(1,3.5)</burstOffsetRange> 
-		  </li>
-		</comps>
-		<modExtensions>
-			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
-				<def>MF_StandardMuzzleFalshTwo</def>
-				<drawSize>(2,2)</drawSize>
-				<offsets>
-					<li>(1.35,0.3)</li>
-					<li>(1.25,-0.3)</li>
-					<li>(1.25,0.3)</li>
-					<li>(1.35,-0.3)</li>
-				</offsets>
-				<isAlternately>true</isAlternately>
-			</li>
-		</modExtensions>
-  </ThingDef>
-
-  <!-- 輕型反坦克炮 -->
-  <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
-    <defName>FT_TurretAT</defName>
-    <label>Anti Tank Gun</label>
-    <description>A manned rifle cannon that launches solid metal shells.It is accurate makes it useful for attacking groups of enemies in the field or sniping the small fortifications.</description>
-    <uiIconPath>ATGun/FT_AntiTankGun</uiIconPath>
-    <uiIconScale>1.2</uiIconScale>
-    <graphicData>
-      <texPath>ATGun/FT_AntiTankGun_Base</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(3.25,3.25)</drawSize>
-      <drawOffset>(0,0,-0.1)</drawOffset>
-    </graphicData>
-    <size>(3,3)</size>
-    <statBases>
-      <MaxHitPoints>1000</MaxHitPoints>
-      <Flammability>0</Flammability>
-      <WorkToBuild>3000</WorkToBuild>
-		<Bulk>1000</Bulk>
-		<Mass>814</Mass>
-    </statBases>
-    <comps>
-		<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
-			<randomGraphics>
-				<li>ATGun/FT_AntiTankGun_Base</li>
-				<li>ATGun/FT_AntiTankGun_Base_Sec</li>
-				<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Heavy</li>
-				<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Wheel_Sec</li>
-			</randomGraphics>
-		</li>
-    </comps>
-    <building>
-		<turretGunDef>FT_Gun_TurretAT</turretGunDef>
-		<turretTopDrawSize>4</turretTopDrawSize>
-		<turretBurstWarmupTime>1.5</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
-		<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
-    </building>
-    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
-    <costList>
-		<Steel>425</Steel>
-		<ComponentIndustrial>4</ComponentIndustrial>
-		<ReinforcedBarrel>1</ReinforcedBarrel>
-    </costList>
-    <researchPrerequisites>
-		<li>FT_IndustrialCannon</li>
-    </researchPrerequisites>
-  </ThingDef>
-
-  <ThingDef ParentName="BaseWeaponTurret">
-    <defName>FT_Gun_TurretAT</defName>
-    <label>Anti Tank Cannon</label>
-    <description>A uranium slug cannon designed to snipe the heavy-armed target in range.</description>
-    <graphicData>
-      <texPath>ATGun/FT_ATGun</texPath>
-    </graphicData>
-    <soundInteract>Artillery_ShellLoaded</soundInteract>
-    <statBases>
-		<RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
-		<SightsEfficiency>2.18</SightsEfficiency>
-		<ShotSpread>0.01</ShotSpread>
-        <SwayFactor>1.05</SwayFactor>
-    </statBases>
-	<weaponTags>
-		<li>TurretGun</li>
-	</weaponTags>
-    <verbs>
-		<li Class="CombatExtended.VerbPropertiesCE">
-			<verbClass>CombatExtended.Verb_ShootCE</verbClass>
-			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>Bullet_FT_37x223mmR_Canister</defaultProjectile>
-			<warmupTime>1.5</warmupTime>
-			<minRange>3.9</minRange>
-			<range>90</range>
-			<soundCast>FT_CannonLaunchA</soundCast>
-			<soundCastTail>GunTail_Heavy</soundCastTail>
-			<muzzleFlashScale>12</muzzleFlashScale>
-			<targetParams>
-				<canTargetLocations>true</canTargetLocations>
-			</targetParams>
-			<recoilPattern>Mounted</recoilPattern>
-		</li>
-    </verbs>
-    <comps>
-		<li Class="CombatExtended.CompProperties_AmmoUser">
-            <magazineSize>1</magazineSize>
-            <reloadTime>1</reloadTime>
-            <ammoSet>AmmoSet_FT_37x223mmR</ammoSet>
-		</li>
-		<li Class="CombatExtended.CompProperties_FireModes">
-            <aiAimMode>AimedShot</aiAimMode>	
-		</li>
-		<li Class="Fortification.CompProperties_CastFlecker">
-			<fleck>DustPuff</fleck><!--生成的Fleck,參考原版-->
-			<onGroundOverride>true</onGroundOverride><!--根據砲塔下方地形決定是否產生-->
-			<burstAmount>10</burstAmount><!--一次射擊生成的數量-->
-			<burstSway>110</burstSway><!--噴射角度的左右隨機偏移範圍-->
-			<burstAngle>180</burstAngle><!--生成偏移子彈發射方向的噴射角度(0 = 與發射角度同向)-->
-			<fleckSizeRange>(3,5)</fleckSizeRange><!--Fleck的生成大小隨機區間-->
-			<burstSpeedRange>(0.2,0.5)</burstSpeedRange><!--Fleck的飛行速度隨機區間-->
-			<burstOffsetRange>(2,6)</burstOffsetRange> <!--Fleck的生成位置偏移旋轉中心點的距離區間-->
-		</li>
-		<li Class="Fortification.CompProperties_CastFlecker">
-			<fleck>DustPuff</fleck>
-			<onGroundOverride>true</onGroundOverride>
-			<burstAmount>10</burstAmount>
-			<burstSway>70</burstSway>
-			<burstAngle>180</burstAngle>
-			<fleckSizeRange>(3,5)</fleckSizeRange>
-			<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
-			<burstOffsetRange>(2,6)</burstOffsetRange> 
-			<rangeScaleFactor>(1,0.1)</rangeScaleFactor>
-		</li>
-		<li Class="Fortification.CompProperties_CastFlecker">
-			<fleck>DustPuff</fleck>
-			<onGroundOverride>true</onGroundOverride>
-			<burstAmount>15</burstAmount>
-			<burstSway>30</burstSway>
-			<burstAngle>0</burstAngle>
-			<fleckSizeRange>(1,2)</fleckSizeRange>
-			<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
-			<burstOffsetRange>(2,6)</burstOffsetRange> 
-		</li>
-    </comps>
-  </ThingDef>
-  
-  <!-- 重型反坦克炮 -->
-  <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
-	<defName>FT_TurretAT_Plus</defName>
-	<label>76mm anti-tank gun</label>
-	<description>A direct-fire cannon with capability to destroy a heavy armed vehicle.</description>
-	<graphicData>
-		<texPath>InfantryTurret/FT_HexMortarBase</texPath>
-		<graphicClass>Graphic_Multi</graphicClass>
-		<drawSize>(3.25,3.25)</drawSize>
-		<drawOffset>(0,0,-0.1)</drawOffset>
-	</graphicData>
-	<size>(3,3)</size>
-    <uiIconPath>InfantryTurret/FT_AntiTankGunPlus_Icon</uiIconPath>
-    <uiIconScale>1.2</uiIconScale>
-    <statBases>
-		<Bulk>1500</Bulk>
-		<Mass>1850</Mass>
-		<MaxHitPoints>1250</MaxHitPoints>
-		<Flammability>0</Flammability>
-		<WorkToBuild>4000</WorkToBuild>
-		<ShootingAccuracyTurret>1.25</ShootingAccuracyTurret>
-		<AimingAccuracy>1.25</AimingAccuracy>
-    </statBases>
-    <comps>
-		<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
-			<randomGraphics>
-				<li>InfantryTurret/FT_HexMortarBase</li>
-				<li>InfantryTurret/FT_HexMortarBase_Sec</li>
-				<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Heavy</li>
-				<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Wheel_Sec</li>
-			</randomGraphics>
-		</li>
-    </comps>
-    <building>
-		<turretBurstWarmupTime>3.0</turretBurstWarmupTime>
-		<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
-		<ai_combatDangerous>true</ai_combatDangerous>
-		<turretTopDrawSize>4</turretTopDrawSize>
-		<turretGunDef>FT_Gun_TurretAT_Plus</turretGunDef>
-    </building>
-    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
-    <costList>
-		<Steel>450</Steel>
-		<ComponentIndustrial>6</ComponentIndustrial>
-		<ReinforcedBarrel>2</ReinforcedBarrel>
-    </costList>
-		<researchPrerequisites>
-			<li>FT_HeavyArtillery</li>
-		</researchPrerequisites>
-  </ThingDef>
-  
-	<ThingDef ParentName="BaseWeaponTurret">
-		<defName>FT_Gun_TurretAT_Plus</defName>
-		<label>76mm anti-tank gun</label>
-		<description>A direct-fire cannon with capability to destroy a heavy armed vehicle.</description>
-		<graphicData>
-			<texPath>InfantryTurret/FT_AntiTankGunPlus</texPath>
-			<drawOffset>(0,0,0)</drawOffset>
-		</graphicData>
-		<uiIconPath>InfantryTurret/FT_AntiTankGunPlus_Icon</uiIconPath>
-		<uiIconScale>1.2</uiIconScale>
-		<statBases>
-			<SightsEfficiency>2.5</SightsEfficiency>
-			<ShotSpread>0.01</ShotSpread>
-			<SwayFactor>1.34</SwayFactor>
-		</statBases>
-		<weaponTags>
-			<li>TurretGun</li>
-		</weaponTags>
-		<verbs>
-			<li Class="CombatExtended.VerbPropertiesCE">
-				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
-				<recoilAmount>0</recoilAmount>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_762x385mmRCannonShell_HEAT</defaultProjectile>
-				<warmupTime>3</warmupTime>
-				<minRange>5</minRange>
-				<range>110</range>
-				<soundCast>120mm</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>32</muzzleFlashScale>
-				<targetParams>
-					<canTargetLocations>true</canTargetLocations>
-				</targetParams>
-				<recoilPattern>Mounted</recoilPattern>
-			</li>
-		</verbs>
-		<comps>
-			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>1</magazineSize>
-				<reloadTime>4</reloadTime>
-				<ammoSet>AmmoSet_762x385mmRCannonShell</ammoSet>
-			</li>
-			<li Class="CombatExtended.CompProperties_FireModes">
-				<aiAimMode>AimedShot</aiAimMode>
-			</li>
-			<li Class="Fortification.CompProperties_CastFlecker">
-				<fleck>DustPuff</fleck><!--生成的Fleck,參考原版-->
-				<onGroundOverride>true</onGroundOverride><!--根據砲塔下方地形決定是否產生-->
-				<burstAmount>20</burstAmount><!--一次射擊生成的數量-->
-				<burstSway>110</burstSway><!--噴射角度的左右隨機偏移範圍-->
-				<burstAngle>180</burstAngle><!--生成偏移子彈發射方向的噴射角度(0 = 與發射角度同向)-->
-				<fleckSizeRange>(3,5)</fleckSizeRange><!--Fleck的生成大小隨機區間-->
-				<burstSpeedRange>(0.2,0.5)</burstSpeedRange><!--Fleck的飛行速度隨機區間-->
-				<burstOffsetRange>(2,6)</burstOffsetRange> <!--Fleck的生成位置偏移旋轉中心點的距離區間-->
-			</li>
-			<li Class="Fortification.CompProperties_CastFlecker">
-				<fleck>DustPuff</fleck>
-				<onGroundOverride>true</onGroundOverride>
-				<burstAmount>20</burstAmount>
-				<burstSway>70</burstSway>
-				<burstAngle>180</burstAngle>
-				<fleckSizeRange>(3,5)</fleckSizeRange>
-				<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
-				<burstOffsetRange>(2,6)</burstOffsetRange> 
-				<rangeScaleFactor>(1,0.1)</rangeScaleFactor>
-			</li>
-			<li Class="Fortification.CompProperties_CastFlecker">
-				<fleck>DustPuff</fleck>
-				<onGroundOverride>true</onGroundOverride>
-				<burstAmount>25</burstAmount>
-				<burstSway>30</burstSway>
-				<burstAngle>0</burstAngle>
-				<fleckSizeRange>(1,2)</fleckSizeRange>
-				<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
-				<burstOffsetRange>(2,6)</burstOffsetRange> 
-			</li>
-		</comps>
-
-		<modExtensions>
-			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
-				<def>MF_StandardMuzzleFalshThree</def>
-				<drawSize>(4,3)</drawSize>
-				<offsets>
-					<li>(2.2,0)</li>
-				</offsets>
-			</li>
-		</modExtensions>
-	</ThingDef>
 	
 <!--聯裝機槍-->
   <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
@@ -583,13 +81,6 @@
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>(1.2,1.2)</drawSize>
 		<drawOffset>(0,0,-0.1)</drawOffset>
-		<damageData>
-			<rect>(0.2,0.2,0.6,0.6)</rect>
-		</damageData>
-		<shadowData>
-			<volume>(0.27,0.25,0.27)</volume>
-			<offset>(0,0,0)</offset>
-		</shadowData>
     </graphicData>
     <statBases>
 		<MaxHitPoints>200</MaxHitPoints>
@@ -606,13 +97,13 @@
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <building>
-		<turretTopDrawSize>1.5</turretTopDrawSize>
+		<turretTopDrawSize>1.25</turretTopDrawSize>
 		<ai_combatDangerous>true</ai_combatDangerous>
 		<turretGunDef>FT_Gun_QuadMG</turretGunDef>
 		<turretBurstWarmupTime>0.75</turretBurstWarmupTime>
 		<turretBurstCooldownTime>0.5</turretBurstCooldownTime>
     </building>
-    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <researchPrerequisites>
 		<li>BlowbackOperation</li>
     </researchPrerequisites>
@@ -653,7 +144,7 @@
     </verbs>
     <comps>
 		<li Class="CombatExtended.CompProperties_AmmoUser">
-            <magazineSize>800</magazineSize>
+            <magazineSize>2000</magazineSize>
             <reloadTime>7.8</reloadTime>
             <ammoSet>AmmoSet_303British</ammoSet>
 		</li>
@@ -669,10 +160,10 @@
 				<def>MF_StandardMuzzleFalsh</def>
 				<drawSize>(0.5,0.5)</drawSize>
 				<offsets>
-					<li>(0.5,0.16)</li>
-					<li>(0.5,0.055)</li>
-					<li>(0.5,-0.055)</li>
-					<li>(0.5,-0.16)</li>
+					<li>(0.6,0.19)</li>
+					<li>(0.6,0.0625)</li>
+					<li>(0.6,-0.0625)</li>
+					<li>(0.6,-0.19)</li>
 				</offsets>
 				<isAlternately>true</isAlternately>
 			</li>
@@ -691,13 +182,6 @@
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>(1.2,1.2)</drawSize>
 		<drawOffset>(0,0,-0.1)</drawOffset>
-		<damageData>
-			<rect>(0.2,0.2,0.6,0.6)</rect>
-		</damageData>
-		<shadowData>
-			<volume>(0.27,0.25,0.27)</volume>
-			<offset>(0,0,0)</offset>
-		</shadowData>
     </graphicData>
     <statBases>
 		<MaxHitPoints>200</MaxHitPoints>
@@ -886,13 +370,6 @@
 		<graphicClass>Graphic_Single</graphicClass>
 		<drawSize>(1.2,1.2)</drawSize>
 		<drawOffset>(0,0,-0.1)</drawOffset>
-		<damageData>
-			<rect>(0.2,0.2,0.6,0.6)</rect>
-		</damageData>
-		<shadowData>
-			<volume>(0.27,0.25,0.27)</volume>
-			<offset>(0,0,0)</offset>
-		</shadowData>
     </graphicData>
     <statBases>
 		<MaxHitPoints>120</MaxHitPoints>

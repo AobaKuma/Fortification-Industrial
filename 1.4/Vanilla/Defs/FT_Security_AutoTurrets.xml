@@ -6,17 +6,10 @@
     <thingClass>Building_TurretGun</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <texPath>MGBunker/FT_MGBunker_Leathery</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(2,2)</drawSize>
+		<texPath>MGBunker/FT_MGBunker_Leathery</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2.5,2.5)</drawSize>
 	    <drawOffset>(0,0,0)</drawOffset>
-      <damageData>
-        <rect>(0.2,0.2,0.6,0.6)</rect>
-      </damageData>
-      <shadowData>
-        <volume>(1.5,0.35,1.5)</volume>
-        <offset>(0,0,0)</offset>
-      </shadowData>
     </graphicData>
     <size>(3,3)</size>
     <uiIconPath>MGBunker/FT_MGBunker_Leathery</uiIconPath>

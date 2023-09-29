@@ -7,14 +7,6 @@
     <techLevel>Industrial</techLevel>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
-      <damageData>
-        <rect>(0.38,0.2,0.56375,0.8)</rect>
-        <cornerTL>Damage/Corner</cornerTL>
-      </damageData>
-      <shadowData>
-        <offset>(-0.13,-0.87,-0.1)</offset>
-        <volume>(0.5,0.4,1.05)</volume>
-      </shadowData>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <hasInteractionCell>True</hasInteractionCell>
@@ -177,10 +169,10 @@
         <isMortar>false</isMortar>
         <warmupTime>1</warmupTime>
         <minRange>3.9</minRange>
-        <range>65</range>
+        <range>45</range>
         <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
-        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-        <burstShotCount>6</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <burstShotCount>8</burstShotCount>
         <soundCast>Shot_Autocannon</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>12</muzzleFlashScale>
@@ -306,9 +298,9 @@
         <isMortar>false</isMortar>
         <warmupTime>1.2</warmupTime>
         <minRange>3.9</minRange>
-        <range>75</range>
+        <range>45</range>
         <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
-        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <burstShotCount>16</burstShotCount>
         <soundCast>Shot_Autocannon</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -581,13 +573,6 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1.2,1.2)</drawSize>
       <drawOffset>(0,0,-0.1)</drawOffset>
-      <damageData>
-        <rect>(0.2,0.2,0.6,0.6)</rect>
-      </damageData>
-      <shadowData>
-        <volume>(0.27,0.25,0.27)</volume>
-        <offset>(0,0,0)</offset>
-      </shadowData>
     </graphicData>
     <statBases>
       <MaxHitPoints>120</MaxHitPoints>
@@ -626,12 +611,12 @@
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <building>
-      <turretTopDrawSize>1.8</turretTopDrawSize>
+      <turretTopDrawSize>1.25</turretTopDrawSize>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>FT_Gun_QuadMG</turretGunDef>
       <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
     </building>
-    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <researchPrerequisites>
       <li>BlowbackOperation</li>
     </researchPrerequisites>
@@ -663,7 +648,7 @@
         <range>30.9</range>
         <minRange>1.9</minRange>
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-        <burstShotCount>5</burstShotCount>
+        <burstShotCount>24</burstShotCount>
         <soundCast>GunShotA</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -675,10 +660,10 @@
 				<def>MF_StandardMuzzleFalsh</def>
 				<drawSize>(0.5,0.5)</drawSize>
 				<offsets>
-					<li>(0.5,0.16)</li>
-					<li>(0.5,0.055)</li>
-					<li>(0.5,-0.055)</li>
-					<li>(0.5,-0.16)</li>
+					<li>(0.6,0.19)</li>
+					<li>(0.6,0.0625)</li>
+					<li>(0.6,-0.0625)</li>
+					<li>(0.6,-0.19)</li>
 				</offsets>
 				<isAlternately>true</isAlternately>
 			</li>
@@ -696,13 +681,6 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1.2,1.2)</drawSize>
       <drawOffset>(0,0,-0.1)</drawOffset>
-      <damageData>
-        <rect>(0.2,0.2,0.6,0.6)</rect>
-      </damageData>
-      <shadowData>
-        <volume>(0.27,0.25,0.27)</volume>
-        <offset>(0,0,0)</offset>
-      </shadowData>
     </graphicData>
     <statBases>
       <MaxHitPoints>120</MaxHitPoints>
@@ -797,13 +775,6 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1.2,1.2)</drawSize>
       <drawOffset>(0,0,-0.1)</drawOffset>
-      <damageData>
-        <rect>(0.2,0.2,0.6,0.6)</rect>
-      </damageData>
-      <shadowData>
-        <volume>(0.27,0.25,0.27)</volume>
-        <offset>(0,0,0)</offset>
-      </shadowData>
     </graphicData>
     <statBases>
       <MaxHitPoints>120</MaxHitPoints>

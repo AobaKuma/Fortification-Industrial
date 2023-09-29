@@ -72,7 +72,7 @@
 				<randomGraphics>
 					<li>InfantryTurret/FT_HexMortarBase</li>
 					<li>InfantryTurret/FT_HexMortarBase_Sec</li>
-					<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Heavy</li>
+					<!--<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Heavy</li>-->
 					<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Wheel_Sec</li>
 				</randomGraphics>
 			</li>
@@ -262,7 +262,7 @@
 				<randomGraphics>
 					<li>InfantryTurret/FT_HexMortarBase</li>
 					<li>InfantryTurret/FT_HexMortarBase_Sec</li>
-					<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Heavy</li>
+					<!--<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Heavy</li>-->
 					<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Wheel_Sec</li>
 				</randomGraphics>
 			</li>

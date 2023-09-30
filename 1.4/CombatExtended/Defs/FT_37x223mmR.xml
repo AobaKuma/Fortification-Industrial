@@ -181,7 +181,7 @@
 			<speed>100</speed>
 			<damageDef>Bullet</damageDef>
 			<pelletCount>122</pelletCount>
-			<damageAmountBase>10</damageAmountBase>
+			<damageAmountBase>7</damageAmountBase>
 			<armorPenetrationSharp>7.5</armorPenetrationSharp>
 			<armorPenetrationBlunt>27.9</armorPenetrationBlunt>
 <!--			
@@ -370,7 +370,7 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<speed>100</speed>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>10</damageAmountBase>
+			<damageAmountBase>7</damageAmountBase>
 			<armorPenetrationSharp>7.5</armorPenetrationSharp>
 			<armorPenetrationBlunt>27.9</armorPenetrationBlunt>
 			<gravityFactor>5</gravityFactor>
@@ -413,6 +413,7 @@
 		<label>make 37x223mmR (shrapnel) cartridge x25</label>
 		<description>Craft 25 37x223mmR (shrapnel) cartridges.</description>
 		<jobString>Making 37x223mmR (shrapnel) cartridges.</jobString>
+		<researchPrerequisite>CE_AdvancedAmmo</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -460,6 +461,7 @@
 		<label>make 37x223mmR (HESH) cartridge x25</label>
 		<description>Craft 25 37x223mmR (HESH) cartridges.</description>
 		<jobString>Making 37x223mmR (HESH) cartridges.</jobString>
+		<researchPrerequisite>CE_AdvancedAmmo</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -507,6 +509,7 @@
 		<label>make 37x223mmR (sabot) cartridge x25</label>
 		<description>Craft 25 37x223mmR (sabot) cartridges.</description>
 		<jobString>Making 37x223mmR (sabot) cartridges.</jobString>
+		<researchPrerequisite>CE_AdvancedAmmo</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -545,6 +548,7 @@
 		<label>make 37x223mmR (EMP) cartridge x25</label>
 		<description>Craft 25 37x223mmR (EMP) cartridges.</description>
 		<jobString>Making 37x223mmR (EMP) cartridges.</jobString>
+		<researchPrerequisite>MicroelectronicsBasics</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -583,6 +587,7 @@
 		<label>make 37x223mmR (AP-HE) cartridge x25</label>
 		<description>Craft 25 37x223mmR (AP-HE) cartridges.</description>
 		<jobString>Making 37x223mmR (AP-HE) cartridges.</jobString>
+		<researchPrerequisite>CE_AdvancedAmmo</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>
@@ -630,6 +635,7 @@
 		<label>make 37x223mmR (incendiary) cartridge x25</label>
 		<description>Craft 25 37x223mmR (incendiary) cartridges.</description>
 		<jobString>Making 37x223mmR (incendiary) cartridges.</jobString>
+		<researchPrerequisite>CE_AdvancedAmmo</researchPrerequisite>
 		<ingredients>
 			<li>
 				<filter>

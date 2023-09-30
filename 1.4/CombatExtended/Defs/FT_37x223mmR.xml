@@ -130,7 +130,7 @@
 			<Mass>1.36</Mass>
 		</statBases>
 		<ammoClass>GrenadeIncendiary</ammoClass>
-
+		<cookOffProjectile>Bullet_FT_37x223mmR_Incendiary</cookOffProjectile>
 	</ThingDef>
 
 	<!-- ================== Projectiles ================== -->

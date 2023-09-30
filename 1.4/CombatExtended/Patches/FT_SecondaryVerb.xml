@@ -25,6 +25,15 @@
 					<reloadTime>5</reloadTime>
 				</value>
             </li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="FT_Gun_TurretPrince"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/verbClass</xpath>
+				<value>
+					<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofCE</verbClass>
+				</value>
+            </li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="FT_TurretPrince"]/placeWorkers/li["PlaceWorker_NotUnderRoof"]</xpath>
+            </li>
 			
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="FT_Gun_TurretEmpero"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/defaultProjectile</xpath>
@@ -41,7 +50,7 @@
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="FT_Gun_TurretEmpero"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/verbClass</xpath>
 				<value>
-					<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+					<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofCE</verbClass>
 				</value>
             </li>
 			<li Class="PatchOperationReplace">

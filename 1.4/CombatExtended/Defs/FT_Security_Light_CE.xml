@@ -451,7 +451,8 @@
 			<burstAngle>180</burstAngle>
 			<fleckSizeRange>(1,8)</fleckSizeRange>
 			<burstSpeedRange>(0.5,1)</burstSpeedRange>
-			<burstOffsetRange>(4,9)</burstOffsetRange> 
+			<burstOffsetRange>(4,9)</burstOffsetRange>
+			<onGroundOverride>true</onGroundOverride>
 		</li>
 		<li Class="Fortification.CompProperties_CastFlecker"><!-- 向後噴-->
 			<fleck>DustPuff</fleck>
@@ -461,6 +462,7 @@
 			<fleckSizeRange>(1,3)</fleckSizeRange>
 			<burstSpeedRange>(-0.5,0.5)</burstSpeedRange>
 			<burstOffsetRange>(2,5)</burstOffsetRange> 
+			<onGroundOverride>true</onGroundOverride>
 		</li>
 		<li Class="Fortification.CompProperties_CastFlecker"><!-- 向後噴-->
 			<fleck>JumpFlameGlow</fleck>
@@ -469,7 +471,8 @@
 			<burstAngle>180</burstAngle>
 			<fleckSizeRange>(1,2)</fleckSizeRange>
 			<burstSpeedRange>(2,2.5)</burstSpeedRange>
-			<burstOffsetRange>(2,2.5)</burstOffsetRange> 
+			<burstOffsetRange>(2,2.5)</burstOffsetRange>
+			<onGroundOverride>true</onGroundOverride>			
 		</li>
 		<li Class="Fortification.CompProperties_CastFlecker"><!-- 向前-->
 			<fleck>DustPuff</fleck>
@@ -478,7 +481,8 @@
 			<burstAngle>180</burstAngle>
 			<fleckSizeRange>(5,8)</fleckSizeRange>
 			<burstSpeedRange>(1,8)</burstSpeedRange>
-			<burstOffsetRange>(7,11)</burstOffsetRange> 
+			<burstOffsetRange>(7,11)</burstOffsetRange>
+			<onGroundOverride>true</onGroundOverride>
 		</li>
     </comps>
   </ThingDef>

@@ -3,7 +3,7 @@
 <Defs>
   <ThingDef ParentName="BuildingBase" Name="FT_MGNest" Abstract="True">
     <description>A stationry turret strengthen with materials. Requires steel to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
-    <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
+    <thingClass>Building_TurretGun</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
       <texPath>MGBunker/FT_MGBunker_Leathery</texPath>

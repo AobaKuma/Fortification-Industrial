@@ -206,6 +206,12 @@
 				<damageDef>BDRG_HighCalRailgun</damageDef>
 				<multiplier>0.75</multiplier>
 			</li>
+<!--==========-->
+<!--FT HESH-->
+			<li>
+			<damageDef>HESH_ShockWave</damageDef>
+			<multiplier>0.75</multiplier>
+		  </li>
 		</damageMultipliers>
   </ThingDef>
 

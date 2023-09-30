@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef>
+	<defName>HESH_ShockWave</defName>
+	<label>shock wave</label>	
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>false</isExplosive>
+    <deathMessage>{0} 被衝擊波震碎了</deathMessage>
+    <hediff>Crush</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Blunt</armorCategory>
+    <defaultDamage>5</defaultDamage>
+    <defaultArmorPenetration>0</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>10</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+    <plantDamageFactor>4</plantDamageFactor>
+  </DamageDef>
+	
+</Defs>

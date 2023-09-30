@@ -6,7 +6,6 @@
         <li>Artillery Machine</li>
     </mods>
 	<match Class="PatchOperationSequence">
-		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[@Name="Ammo37x223mmRBase"]/tradeTags</xpath>

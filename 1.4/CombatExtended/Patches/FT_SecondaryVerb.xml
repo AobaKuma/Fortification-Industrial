@@ -6,7 +6,6 @@
         <li>Bill Doors' Framework</li>
     </mods>
 	<match Class="PatchOperationSequence">
-		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="FT_Gun_TurretPrince"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/defaultProjectile</xpath>

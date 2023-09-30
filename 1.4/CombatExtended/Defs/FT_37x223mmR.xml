@@ -180,10 +180,17 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<speed>100</speed>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>20</damageAmountBase>
 			<pelletCount>122</pelletCount>
+			<damageAmountBase>10</damageAmountBase>
 			<armorPenetrationSharp>7.5</armorPenetrationSharp>
+			<armorPenetrationBlunt>27.9</armorPenetrationBlunt>
+<!--			
 			<armorPenetrationBlunt>16.2</armorPenetrationBlunt>
+			
+			<damageAmountBase>35</damageAmountBase>
+			<armorPenetrationSharp>17.2</armorPenetrationSharp>
+			<armorPenetrationBlunt>27.9</armorPenetrationBlunt>
+-->			
 			<spreadMult>200</spreadMult>
 		</projectile>
 	</ThingDef>
@@ -225,17 +232,24 @@
 	
 	<ThingDef ParentName="Base37x223mmRBullet">
 		<defName>Bullet_FT_37x223mmR_HESH</defName>
-		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<!--<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>-->
 		<label>37x223mmR shell (HESH)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>150</speed>
-			<damageDef>Thump</damageDef>
-			<damageAmountBase>35</damageAmountBase>
-			<explosionRadius>1.1</explosionRadius>
+			<speed>125</speed>
+			<damageDef>HESH_ShockWave</damageDef>
+			<damageAmountBase>82</damageAmountBase>
+			<armorPenetrationBlunt>106.5</armorPenetrationBlunt>
 			<soundExplode>ThumpCannon_Impact</soundExplode>
-			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 			<screenShakeFactor>0</screenShakeFactor>
 		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>23</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>1.1</explosiveRadius>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+		</comps>
 	</ThingDef>
 	
 	<ThingDef ParentName="Base37x223mmRBullet">
@@ -297,12 +311,12 @@
 			<armingDelay>3</armingDelay>
 		</projectile>
 		<comps>
-      <li Class="CombatExtended.CompProperties_Fragments">
-        <fragments>
-			<Fragment_FT_Spark>50</Fragment_FT_Spark>
-        </fragments>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_FT_Spark>50</Fragment_FT_Spark>
+				</fragments>
 				<fragAngleRange>-90~-30</fragAngleRange>
-      </li>
+			</li>
 		</comps>
 	</ThingDef>
 	
@@ -356,9 +370,9 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<speed>100</speed>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>20</damageAmountBase>
+			<damageAmountBase>10</damageAmountBase>
 			<armorPenetrationSharp>7.5</armorPenetrationSharp>
-			<armorPenetrationBlunt>16.2</armorPenetrationBlunt>
+			<armorPenetrationBlunt>27.9</armorPenetrationBlunt>
 			<gravityFactor>5</gravityFactor>
 		</projectile>
   </ThingDef>

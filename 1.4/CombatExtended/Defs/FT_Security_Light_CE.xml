@@ -289,7 +289,7 @@
 		<ai_combatDangerous>true</ai_combatDangerous>
 		<turretBurstWarmupTime>1.2</turretBurstWarmupTime>
 		<turretBurstCooldownTime>0.75</turretBurstCooldownTime>
-		<turretTopDrawSize>2</turretTopDrawSize>
+		<turretTopDrawSize>3</turretTopDrawSize>
 		<turretGunDef>FT_Gun_Autocannon_Twin</turretGunDef>
     </building>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
@@ -303,7 +303,7 @@
 		<label>autocannon</label>
 		<description>A self-loading large-bore cannon designed to attach to a turret.</description>
 		<graphicData>
-			<texPath>InfantryTurret/FT_AutoCannonGun_Twin</texPath>
+			<texPath>InfantryTurret/FT_Lahti_I-40</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
@@ -325,8 +325,8 @@
 				<defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
 				<warmupTime>1</warmupTime>
 				<range>75</range>
-				<burstShotCount>12</burstShotCount>
-				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<burstShotCount>4</burstShotCount>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
 				<soundCast>Shot_Autocannon</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>12</muzzleFlashScale>
@@ -335,14 +335,14 @@
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
-				<magazineSize>24</magazineSize>
-				<reloadTime>3</reloadTime>
+				<magazineSize>40</magazineSize>
+				<reloadTime>4</reloadTime>
 				<ammoSet>AmmoSet_20x138mmB</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiUseBurstMode>FALSE</aiUseBurstMode>
 				<aiAimMode>Snapshot</aiAimMode>
-				<aimedBurstShotCount>6</aimedBurstShotCount>
+				<aimedBurstShotCount>2</aimedBurstShotCount>
 			</li>
 		</comps>
 		<modExtensions>

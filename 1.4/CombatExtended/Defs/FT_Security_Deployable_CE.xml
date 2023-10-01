@@ -206,7 +206,7 @@
 		<label>mobile artillery spotter</label>
 		<description>A manned artillery scope with radio. Useful to coordinate artillery strikes.\n\nUsing this on a target will mark it, removing the indirect fire penalty from any artillery pieces targeting it. Additionally, any directed fire will use the aiming accuracy and efficiency of the spotter, rather than the artillery operator to determine final accuracy.</description>
 		<graphicData>
-			<texPath>InfantryTurret/FT_Tripod</texPath>
+			<texPath>InfantryTurret/FT_Tripod_Deployable</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 			<drawOffset>(0,0,-0.1)</drawOffset>

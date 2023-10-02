@@ -137,7 +137,7 @@
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
       <Steel>350</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
+      <ComponentIndustrial>7</ComponentIndustrial>
       <ReinforcedBarrel>1</ReinforcedBarrel>
     </costList>
     <researchPrerequisites>
@@ -267,7 +267,7 @@
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
       <Steel>400</Steel>
-      <ComponentIndustrial>5</ComponentIndustrial>
+      <ComponentIndustrial>14</ComponentIndustrial>
       <ReinforcedBarrel>4</ReinforcedBarrel>
     </costList>
     <researchPrerequisites>
@@ -607,7 +607,7 @@
     </comps>
     <costList>
       <Steel>80</Steel>
-      <ComponentIndustrial>8</ComponentIndustrial>
+      <ComponentIndustrial>10</ComponentIndustrial>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <building>
@@ -692,7 +692,7 @@
     </statBases>
     <costList>
       <Steel>120</Steel>
-      <ComponentIndustrial>5</ComponentIndustrial>
+      <ComponentIndustrial>6</ComponentIndustrial>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <building>
@@ -864,15 +864,26 @@
         <burstSpeedRange>(-0.5,0.5)</burstSpeedRange>
         <burstOffsetRange>(2,5)</burstOffsetRange> 
       </li>
-      <li Class="Fortification.CompProperties_CastFlecker"><!-- 向後噴-->
-        <fleck>JumpFlameGlow</fleck>
-        <burstAmount>10</burstAmount>
-        <burstSway>5</burstSway>
-        <burstAngle>180</burstAngle>
-        <fleckSizeRange>(1,2)</fleckSizeRange>
-        <burstSpeedRange>(2,2.5)</burstSpeedRange>
-        <burstOffsetRange>(2,2.5)</burstOffsetRange> 
-      </li>
+		<li Class="Fortification.CompProperties_CastFlecker"><!-- 向後噴-->
+			<fleck>FT_ExhaustFlame</fleck>
+			<burstAmount>10</burstAmount>
+			<burstSway>5</burstSway>
+			<burstAngle>180</burstAngle>
+			<fleckSizeRange>(1,2)</fleckSizeRange>
+			<burstSpeedRange>(2,2.5)</burstSpeedRange>
+			<burstOffsetRange>(2,2.5)</burstOffsetRange>
+			<onGroundOverride>true</onGroundOverride>			
+		</li>
+		<li Class="Fortification.CompProperties_CastFlecker"><!-- 向後噴-->
+			<fleck>FT_ExhaustFlameGlow</fleck>
+			<burstAmount>10</burstAmount>
+			<burstSway>5</burstSway>
+			<burstAngle>180</burstAngle>
+			<fleckSizeRange>(1,2)</fleckSizeRange>
+			<burstSpeedRange>(2,2.5)</burstSpeedRange>
+			<burstOffsetRange>(2,2.5)</burstOffsetRange>
+			<onGroundOverride>true</onGroundOverride>			
+		</li>
       <li Class="Fortification.CompProperties_CastFlecker"><!-- 向前-->
         <fleck>DustPuff</fleck>
         <burstAmount>10</burstAmount>

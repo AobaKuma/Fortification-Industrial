@@ -65,7 +65,7 @@
     <building>
 		<ai_combatDangerous>true</ai_combatDangerous>
 		<turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
-		<turretBurstCooldownTime>3.0</turretBurstCooldownTime>
+		<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
     </building>
   </ThingDef>
 	
@@ -93,7 +93,7 @@
     </comps>
     <costList>
 		<Steel>80</Steel>
-		<ComponentIndustrial>8</ComponentIndustrial>
+		<ComponentIndustrial>20</ComponentIndustrial>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <building>
@@ -193,7 +193,8 @@
     </statBases>
     <costList>
 		<Steel>120</Steel>
-		<ComponentIndustrial>5</ComponentIndustrial>
+		<ComponentIndustrial>6</ComponentIndustrial>
+		<ReinforcedBarrel>1</ReinforcedBarrel>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <building>
@@ -201,7 +202,7 @@
 		<ai_combatDangerous>true</ai_combatDangerous>
 		<turretGunDef>FT_Gun_Autocannon</turretGunDef>
 		<turretBurstWarmupTime>1.0</turretBurstWarmupTime>
-		<turretBurstCooldownTime>2.6</turretBurstCooldownTime>
+		<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
     </building>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <researchPrerequisites>
@@ -282,7 +283,8 @@
     </statBases>
     <costList>
 		<Steel>180</Steel>
-		<ComponentIndustrial>7</ComponentIndustrial>
+		<ComponentIndustrial>12</ComponentIndustrial>
+		<ReinforcedBarrel>2</ReinforcedBarrel>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <building>
@@ -343,6 +345,7 @@
 				<aiUseBurstMode>FALSE</aiUseBurstMode>
 				<aiAimMode>Snapshot</aiAimMode>
 				<aimedBurstShotCount>2</aimedBurstShotCount>
+				<noSingleShot>true</noSingleShot>
 			</li>
 		</comps>
 		<modExtensions>
@@ -350,8 +353,8 @@
 				<def>MF_StandardMuzzleFalshTwo</def>
 				<drawSize>(2,2)</drawSize>
 				<offsets>
-					<li>(0.9,0.1)</li>
-					<li>(0.9,-0.1)</li>
+					<li>(1.5,0.1)</li>
+					<li>(1.5,-0.1)</li>
 				</offsets>
 				<isAlternately>true</isAlternately>
 			</li>
@@ -388,7 +391,7 @@
       <turretGunDef>FT_Gun_Recoilless</turretGunDef>
       <turretTopDrawSize>2.5</turretTopDrawSize>
       <turretBurstWarmupTime>2.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
-      <turretBurstCooldownTime>5.0</turretBurstCooldownTime>
+      <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
     </building>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <researchPrerequisites>
@@ -465,7 +468,17 @@
 			<onGroundOverride>true</onGroundOverride>
 		</li>
 		<li Class="Fortification.CompProperties_CastFlecker"><!-- 向後噴-->
-			<fleck>JumpFlameGlow</fleck>
+			<fleck>FT_ExhaustFlame</fleck>
+			<burstAmount>10</burstAmount>
+			<burstSway>5</burstSway>
+			<burstAngle>180</burstAngle>
+			<fleckSizeRange>(1,2)</fleckSizeRange>
+			<burstSpeedRange>(2,2.5)</burstSpeedRange>
+			<burstOffsetRange>(2,2.5)</burstOffsetRange>
+			<onGroundOverride>true</onGroundOverride>			
+		</li>
+		<li Class="Fortification.CompProperties_CastFlecker"><!-- 向後噴-->
+			<fleck>FT_ExhaustFlameGlow</fleck>
 			<burstAmount>10</burstAmount>
 			<burstSway>5</burstSway>
 			<burstAngle>180</burstAngle>

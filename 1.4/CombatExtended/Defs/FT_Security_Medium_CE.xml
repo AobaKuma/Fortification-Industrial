@@ -16,7 +16,7 @@
     <building>
 		<ai_combatDangerous>true</ai_combatDangerous>
 		<turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
-		<turretBurstCooldownTime>3.0</turretBurstCooldownTime>
+		<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
     </building>
 		<damageMultipliers>
 		  <li>
@@ -256,7 +256,7 @@
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
 		<Steel>350</Steel>
-		<ComponentIndustrial>3</ComponentIndustrial>
+		<ComponentIndustrial>7</ComponentIndustrial>
 		<ReinforcedBarrel>1</ReinforcedBarrel>
     </costList>
     <researchPrerequisites>
@@ -307,8 +307,7 @@
 		<li Class="CombatExtended.CompProperties_FireModes">
             <aiUseBurstMode>FALSE</aiUseBurstMode>
             <aiAimMode>Snapshot</aiAimMode>
-            <aimedBurstShotCount>2</aimedBurstShotCount>
-            <noSingleShot>true</noSingleShot>		
+            <aimedBurstShotCount>2</aimedBurstShotCount>		
 		</li>
 		<li Class="Fortification.CompProperties_CastFlecker">
 			<fleck>DustPuff</fleck>
@@ -364,7 +363,7 @@
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	<costList>
 		<Steel>400</Steel>
-		<ComponentIndustrial>5</ComponentIndustrial>
+		<ComponentIndustrial>28</ComponentIndustrial>
 		<ReinforcedBarrel>4</ReinforcedBarrel>
     </costList>
     <researchPrerequisites>

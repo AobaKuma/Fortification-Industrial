@@ -894,7 +894,7 @@
     </comps>
     <verbs>
       <li>
-        <verbClass>Verb_Shoot</verbClass>
+        <verbClass>Fortification.Verb_NewShoot</verbClass>
         <defaultProjectile>FT_Bullet_ATShell</defaultProjectile>
         <warmupTime>1.5</warmupTime>
         <minRange>3.9</minRange>

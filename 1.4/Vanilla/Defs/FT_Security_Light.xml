@@ -631,19 +631,17 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <AccuracyTouch>0.80</AccuracyTouch>
-      <AccuracyShort>0.94</AccuracyShort>
-      <AccuracyMedium>0.75</AccuracyMedium>
-      <AccuracyLong>0.50</AccuracyLong>
+      <AccuracyTouch>0.30</AccuracyTouch>
+      <AccuracyShort>0.50</AccuracyShort>
+      <AccuracyMedium>0.50</AccuracyMedium>
+      <AccuracyLong>0.36</AccuracyLong>
       <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
-      <DeteriorationRate>0</DeteriorationRate>
       <Mass>15</Mass>
-      <Flammability>0</Flammability>
     </statBases>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
-        <defaultProjectile>Bullet_MiniTurret</defaultProjectile>
+        <defaultProjectile>Bullet_Minigun</defaultProjectile>
         <warmupTime>0.5</warmupTime>
         <range>30.9</range>
         <minRange>1.9</minRange>
@@ -688,7 +686,7 @@
       <WorkToBuild>3300</WorkToBuild>
       <Mass>23</Mass>
       <Beauty>-2</Beauty>
-      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+      <ShootingAccuracyTurret>1.0</ShootingAccuracyTurret>
     </statBases>
     <costList>
       <Steel>120</Steel>

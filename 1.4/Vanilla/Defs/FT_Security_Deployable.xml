@@ -125,6 +125,9 @@
 		  <texPath>FT_MortarGun</texPath>
 		  <drawSize>(2,2)</drawSize>
 		</graphicData>
+		<statBases>
+		  <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
 		<weaponTags>
 		  <li>TurretGun</li>
 		</weaponTags>

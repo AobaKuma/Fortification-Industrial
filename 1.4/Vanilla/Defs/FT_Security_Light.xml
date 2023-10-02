@@ -158,7 +158,7 @@
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.99</AccuracyMedium>
       <AccuracyLong>0.70</AccuracyLong>
-      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
       <Mass>120</Mass>
     </statBases>
     <verbs>
@@ -288,7 +288,7 @@
       <AccuracyShort>0.70</AccuracyShort>
       <AccuracyMedium>0.99</AccuracyMedium>
       <AccuracyLong>0.70</AccuracyLong>
-      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
       <li>
@@ -465,7 +465,7 @@
       <AccuracyShort>1.00</AccuracyShort>
       <AccuracyMedium>1.00</AccuracyMedium>
       <AccuracyLong>0.99</AccuracyLong>
-      <RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
       <Mass>120</Mass>
     </statBases>
     <comps>
@@ -741,7 +741,7 @@
       <AccuracyShort>0.85</AccuracyShort>
       <AccuracyMedium>0.75</AccuracyMedium>
       <AccuracyLong>0.65</AccuracyLong>
-      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>2.6</RangedWeapon_Cooldown>
       <Mass>40</Mass>
     </statBases>
     <verbs>
@@ -837,7 +837,7 @@
       <AccuracyShort>1.25</AccuracyShort>
       <AccuracyMedium>1.11</AccuracyMedium>
       <AccuracyLong>0.90</AccuracyLong>
-      <RangedWeapon_Cooldown>8.0</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
       <Mass>120</Mass>
     </statBases>
     <comps>

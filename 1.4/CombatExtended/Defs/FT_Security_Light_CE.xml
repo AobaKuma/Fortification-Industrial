@@ -93,7 +93,7 @@
     </comps>
     <costList>
 		<Steel>80</Steel>
-		<ComponentIndustrial>20</ComponentIndustrial>
+		<ComponentIndustrial>4</ComponentIndustrial>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <building>
@@ -193,7 +193,7 @@
     </statBases>
     <costList>
 		<Steel>120</Steel>
-		<ComponentIndustrial>6</ComponentIndustrial>
+		<ComponentIndustrial>2</ComponentIndustrial>
 		<ReinforcedBarrel>1</ReinforcedBarrel>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
@@ -283,7 +283,7 @@
     </statBases>
     <costList>
 		<Steel>180</Steel>
-		<ComponentIndustrial>12</ComponentIndustrial>
+		<ComponentIndustrial>4</ComponentIndustrial>
 		<ReinforcedBarrel>2</ReinforcedBarrel>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>

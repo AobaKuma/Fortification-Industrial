@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <RadioScan.label>調整無線電頻率定位可能的礦物位置</RadioScan.label>
-  <RadioScan.verb>調頻</RadioScan.verb>
-  <RadioScan.gerund>調頻於</RadioScan.gerund>
-
+  <RadioScan.label>调整无线电频率定位可能的矿物位置</RadioScan.label>
+  <RadioScan.verb>调频</RadioScan.verb>
+  <RadioScan.gerund>调频于</RadioScan.gerund>
 
 </LanguageData>

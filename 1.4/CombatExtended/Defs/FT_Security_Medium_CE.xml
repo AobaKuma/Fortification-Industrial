@@ -610,7 +610,7 @@
     </building>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
-		<Steel>450</Steel>
+		<Steel>500</Steel>
 		<ComponentIndustrial>6</ComponentIndustrial>
 		<ReinforcedBarrel>2</ReinforcedBarrel>
     </costList>

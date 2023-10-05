@@ -8,6 +8,7 @@
   <FT_PowerPole_Frame.label>电线杆(建造中)</FT_PowerPole_Frame.label>
   <FT_PowerPole_Frame.description>混凝土电线杆,使用锡或铜电缆来传输电流. 使用“链接”按钮连接到其他电源杆,或选择多个电源杆并按“自动链接”按钮.</FT_PowerPole_Frame.description>
 
+
   <!-- 含路灯 -->
 
   <FT_PowerPole_Lamp.label>带灯电线杆</FT_PowerPole_Lamp.label>
@@ -19,5 +20,6 @@
 
   <FT_DistributionBox.label>变电箱(WIP)</FT_DistributionBox.label>
   <FT_DistributionBox.description>安装在混凝土平台上的金属变压器接线盒,目前并无功能.</FT_DistributionBox.description>
+
 
 </LanguageData>

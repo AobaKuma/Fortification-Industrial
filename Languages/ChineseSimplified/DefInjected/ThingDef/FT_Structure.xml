@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <!-- Sandbag -->
-
   <FT_Sandbag.label>军用沙包</FT_Sandbag.label>
   <FT_Sandbag.description>就地填充内容物的掩体沙包袋,用作掩体,另外他们被叠得很密实因此更加的耐用.</FT_Sandbag.description>
   <FT_Sandbag_Blueprint.label>军用沙包 (预定地)</FT_Sandbag_Blueprint.label>
@@ -41,6 +39,5 @@
   <FT_BarrierDiagonal_Blueprint_Install.label>对角混凝土路障(预定地)</FT_BarrierDiagonal_Blueprint_Install.label>
   <FT_BarrierDiagonal_Frame.label>对角混凝土路障(建造中)</FT_BarrierDiagonal_Frame.label>
   <FT_BarrierDiagonal_Frame.description>一个实心的混凝土障碍物,可以用于阻滞载具以及提供掩护.</FT_BarrierDiagonal_Frame.description>
-
 
 </LanguageData>

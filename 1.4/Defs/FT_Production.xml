@@ -108,7 +108,7 @@
       <Steel>100</Steel>
       <Gold>50</Gold>
       <ComponentIndustrial>5</ComponentIndustrial>
-	  <ComponentSpacer>1</ComponentSpacer>
+	    <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <statBases>
       <WorkToBuild>3000</WorkToBuild>

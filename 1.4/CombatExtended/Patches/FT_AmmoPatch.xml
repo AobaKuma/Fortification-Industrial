@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_37x223mmR"]/ammoTypes</xpath>
+				<value>
+
+						<Ammo_37x223mmR_Canister>Bullet_FT_37x223mmR_Canister</Ammo_37x223mmR_Canister>
+						<Ammo_37x223mmR_Shrapnel>Bullet_FT_37x223mmR_Shrapnel</Ammo_37x223mmR_Shrapnel>
+						<Ammo_37x223mmR_HESH>Bullet_FT_37x223mmR_HESH</Ammo_37x223mmR_HESH>
+						<Ammo_37x223mmR_APDS>Bullet_FT_37x223mmR_APDS</Ammo_37x223mmR_APDS>
+						<Ammo_37x223mmR_EMP>Bullet_FT_37x223mmR_EMP</Ammo_37x223mmR_EMP>
+						<Ammo_37x223mmR_AP-HE>Bullet_FT_37x223mmR_AP-HE</Ammo_37x223mmR_AP-HE>
+						<Ammo_37x223mmR_Incendiary>Bullet_FT_37x223mmR_Incendiary</Ammo_37x223mmR_Incendiary>
+
+				</value>
+            </li>
+			<li Class="PatchOperationAdd">
+                <xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_15cmNebelwerfer"]/ammoTypes</xpath>
+				<value>
+
+					<Ammo_15cmNebelwerfer_Smoke>Bullet_FT_15cmNebelwerfer_Smoke</Ammo_15cmNebelwerfer_Smoke>
+					<Ammo_15cmNebelwerfer_EMP>Bullet_FT_15cmNebelwerfer_EMP</Ammo_15cmNebelwerfer_EMP>
+					<Ammo_15cmNebelwerfer_Toxic MayRequire="Ludeon.RimWorld.Biotech">Bullet_FT_15cmNebelwerfer_Toxic</Ammo_15cmNebelwerfer_Toxic>
+
+				</value>
+            </li>
+		</operations>
+</Operation>
+
+</Patch>

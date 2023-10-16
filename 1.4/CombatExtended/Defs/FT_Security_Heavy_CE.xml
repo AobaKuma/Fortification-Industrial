@@ -64,7 +64,7 @@
 		</building>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseArtilleryWeapon">
+	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>FT_Gun_TurretHexMortar</defName>
 		<label>multi-barrel mortar</label>
 		<description>Mortar launcher. Lobs bombs over walls. Very inaccurate but long-ranged.</description>
@@ -489,6 +489,7 @@
 				</targetParams>
 				<recoilPattern>Mounted</recoilPattern>
 				<recoilAmount>0.0</recoilAmount>
+				<indirectFirePenalty MayRequire="3HSTltd.Framework">0.4</indirectFirePenalty>
 			</li>
 		</verbs>
 		<comps>

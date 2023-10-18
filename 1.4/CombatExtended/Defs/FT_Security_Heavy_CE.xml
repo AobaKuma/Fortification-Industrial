@@ -358,7 +358,7 @@
 			</li>
 		</comps>
 		<modExtensions>
-            <li Class="BillDoorsFramework.ModExtension_VerbNotUnderRoof">
+            <li Class="BillDoorsFramework.ModExtension_VerbNotUnderRoof" MayRequire="3HSTltd.Framework">
                 <appliesInSecondaryMode>false</appliesInSecondaryMode>
             </li>
         </modExtensions>
@@ -526,7 +526,7 @@
 			</li>
 		</comps>
 		<modExtensions>
-            <li Class="BillDoorsFramework.ModExtension_VerbNotUnderRoof">
+            <li Class="BillDoorsFramework.ModExtension_VerbNotUnderRoof" MayRequire="3HSTltd.Framework">
                 <appliesInSecondaryMode>false</appliesInSecondaryMode>
             </li>
         </modExtensions>

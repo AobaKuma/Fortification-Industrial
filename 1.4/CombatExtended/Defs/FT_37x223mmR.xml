@@ -208,7 +208,16 @@
 			<screenShakeFactor>0</screenShakeFactor>
 		</projectile>
 		<comps>
-			<li Class="Fortification.CompProperties_ClusterBomb">
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_FT_ShrapnelPellet>122</Fragment_FT_ShrapnelPellet>
+				</fragments>
+				<fragAngleRange>-25~-10</fragAngleRange>
+				<fragXZAngleRange>-10~10</fragXZAngleRange>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="Fortification.ModExtension_ClusterBomb">
 				<clusterBurstCount>0</clusterBurstCount>
 				<!-- 破片數量 -->
 				<forceMissingRange>6</forceMissingRange>
@@ -230,14 +239,7 @@
 				<TDDistance>10~15</TDDistance>
 				<!--距離目標多遠時分裂(最小/最大距離) -->
 			</li>
-			<li Class="CombatExtended.CompProperties_Fragments">
-				<fragments>
-					<Fragment_FT_ShrapnelPellet>122</Fragment_FT_ShrapnelPellet>
-				</fragments>
-				<fragAngleRange>-25~-10</fragAngleRange>
-				<fragXZAngleRange>-10~10</fragXZAngleRange>
-			</li>
-		</comps>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="Base37x223mmRBullet">

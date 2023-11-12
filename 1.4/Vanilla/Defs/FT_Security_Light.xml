@@ -137,7 +137,7 @@
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
       <Steel>350</Steel>
-      <ComponentIndustrial>7</ComponentIndustrial>
+      <ComponentIndustrial>2</ComponentIndustrial>
       <ReinforcedBarrel>1</ReinforcedBarrel>
     </costList>
     <researchPrerequisites>
@@ -154,11 +154,11 @@
     </graphicData>
     <soundInteract>Artillery_ShellLoaded</soundInteract>
     <statBases>
-      <AccuracyTouch>0.59</AccuracyTouch>
-      <AccuracyShort>0.70</AccuracyShort>
-      <AccuracyMedium>0.99</AccuracyMedium>
-      <AccuracyLong>0.70</AccuracyLong>
-      <RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.27</AccuracyTouch>
+      <AccuracyShort>0.38</AccuracyShort>
+      <AccuracyMedium>0.49</AccuracyMedium>
+      <AccuracyLong>1.0</AccuracyLong>
+      <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
       <Mass>120</Mass>
     </statBases>
     <verbs>
@@ -267,7 +267,7 @@
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
       <Steel>400</Steel>
-      <ComponentIndustrial>14</ComponentIndustrial>
+      <ComponentIndustrial>8</ComponentIndustrial>
       <ReinforcedBarrel>4</ReinforcedBarrel>
     </costList>
     <researchPrerequisites>
@@ -284,11 +284,11 @@
     </graphicData>
     <soundInteract>Artillery_ShellLoaded</soundInteract>
     <statBases>
-      <AccuracyTouch>0.59</AccuracyTouch>
-      <AccuracyShort>0.70</AccuracyShort>
-      <AccuracyMedium>0.99</AccuracyMedium>
-      <AccuracyLong>0.70</AccuracyLong>
-      <RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.32</AccuracyTouch>
+      <AccuracyShort>0.43</AccuracyShort>
+      <AccuracyMedium>0.54</AccuracyMedium>
+      <AccuracyLong>1.0</AccuracyLong>
+      <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
     </statBases>
     <verbs>
       <li>
@@ -465,7 +465,7 @@
       <AccuracyShort>1.00</AccuracyShort>
       <AccuracyMedium>1.00</AccuracyMedium>
       <AccuracyLong>0.99</AccuracyLong>
-      <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
       <Mass>120</Mass>
     </statBases>
     <comps>
@@ -591,7 +591,7 @@
             <li>Steel</li>
           </thingDefs>
         </fuelFilter>
-        <fuelCapacity>960</fuelCapacity>
+        <fuelCapacity>800</fuelCapacity>
         <initialFuelPercent>1</initialFuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
@@ -607,7 +607,7 @@
     </comps>
     <costList>
       <Steel>80</Steel>
-      <ComponentIndustrial>10</ComponentIndustrial>
+      <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <building>
@@ -631,10 +631,10 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <AccuracyTouch>0.30</AccuracyTouch>
-      <AccuracyShort>0.50</AccuracyShort>
-      <AccuracyMedium>0.50</AccuracyMedium>
-      <AccuracyLong>0.36</AccuracyLong>
+      <AccuracyTouch>0.22</AccuracyTouch>
+      <AccuracyShort>0.37</AccuracyShort>
+      <AccuracyMedium>0.37</AccuracyMedium>
+      <AccuracyLong>0.27</AccuracyLong>
       <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
       <Mass>15</Mass>
     </statBases>
@@ -646,7 +646,7 @@
         <range>30.9</range>
         <minRange>1.9</minRange>
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-        <burstShotCount>24</burstShotCount>
+        <burstShotCount>20</burstShotCount>
         <soundCast>GunShotA</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
@@ -690,7 +690,7 @@
     </statBases>
     <costList>
       <Steel>120</Steel>
-      <ComponentIndustrial>6</ComponentIndustrial>
+      <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <building>
@@ -737,11 +737,11 @@
       <drawSize>(2,2)</drawSize>
     </graphicData>
     <statBases>
-      <AccuracyTouch>0.95</AccuracyTouch>
-      <AccuracyShort>0.85</AccuracyShort>
-      <AccuracyMedium>0.75</AccuracyMedium>
-      <AccuracyLong>0.65</AccuracyLong>
-      <RangedWeapon_Cooldown>2.6</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.28</AccuracyTouch>
+      <AccuracyShort>0.72</AccuracyShort>
+      <AccuracyMedium>0.66</AccuracyMedium>
+      <AccuracyLong>0.50</AccuracyLong>
+      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
       <Mass>40</Mass>
     </statBases>
     <verbs>
@@ -833,11 +833,11 @@
     </graphicData>
     <soundInteract>Artillery_ShellLoaded</soundInteract>
     <statBases>
-      <AccuracyTouch>0.89</AccuracyTouch>
-      <AccuracyShort>1.25</AccuracyShort>
-      <AccuracyMedium>1.11</AccuracyMedium>
+      <AccuracyTouch>0.84</AccuracyTouch>
+      <AccuracyShort>0.95</AccuracyShort>
+      <AccuracyMedium>0.92</AccuracyMedium>
       <AccuracyLong>0.90</AccuracyLong>
-      <RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>8.0</RangedWeapon_Cooldown>
       <Mass>120</Mass>
     </statBases>
     <comps>
@@ -894,7 +894,7 @@
     </comps>
     <verbs>
       <li>
-        <verbClass>Fortification.Verb_NewShoot</verbClass>
+        <verbClass>Verb_Shoot</verbClass>
         <defaultProjectile>FT_Bullet_ATShell</defaultProjectile>
         <warmupTime>1.5</warmupTime>
         <minRange>3.9</minRange>

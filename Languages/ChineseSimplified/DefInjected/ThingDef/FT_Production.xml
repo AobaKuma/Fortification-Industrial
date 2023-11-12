@@ -8,10 +8,9 @@
   <FT_TableChemistry.description>能够从肉类中人工提取并合成中性胺的加工桌.</FT_TableChemistry.description>
 
 
-  <!-- 混凝土攪拌機 -->
+  <!-- 混凝土搅拌机 -->
 
   <FT_TableConcreteMixer.label>混凝土加工机</FT_TableConcreteMixer.label>
   <FT_TableConcreteMixer.description>一台能够将石质材料加工成混凝土的重型机器</FT_TableConcreteMixer.description>
-
 
 </LanguageData>

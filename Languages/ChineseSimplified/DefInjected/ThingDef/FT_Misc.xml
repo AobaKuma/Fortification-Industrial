@@ -13,6 +13,7 @@
 
   <FT_Radio.label>无线电终端</FT_Radio.label>
   <FT_Radio.description>允许透过无线电通讯联络其他阵营与轨道商人,此外透过对影响讯号的频率分辨,可以定位到可能的稀有金属位置,(完整功能尚未完成,将来会有更多功能).</FT_Radio.description>
+  <FT_Radio.comps.4.useLabel>Summon diabolus threat</FT_Radio.comps.4.useLabel>
 
   <FT_FirefoamPopper.label>消防栓</FT_FirefoamPopper.label>
   <FT_FirefoamPopper.description>红色金属消防栓,他基本上就是个更适合街道放置的一次性消防灭火装置.</FT_FirefoamPopper.description>

@@ -41,7 +41,7 @@
     <costStuffCount>150</costStuffCount>
     <costList>
       <Steel>150</Steel>
-      <ComponentIndustrial>4</ComponentIndustrial>
+      <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>

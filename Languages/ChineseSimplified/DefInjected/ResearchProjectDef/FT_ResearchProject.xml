@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <FT_ENIAC.label>伊尼亚克真空管电脑</FT_ENIAC.label>
-  <FT_ENIAC.description>真空管电子数值计算机,虽然算不上是最好的但可以说是微电子科技的里程碑.</FT_ENIAC.description>
+  <FT_ENIAC.label>真空管电脑</FT_ENIAC.label>
+  <FT_ENIAC.description>真空管电子数值计算机,虽然算不上是最好的但可以说是电子科技的里程碑.</FT_ENIAC.description>
 
   <FT_Lathe.label>车床</FT_Lathe.label>
   <FT_Lathe.description>解锁车床用于早期工业的零件与炮管生产.</FT_Lathe.description>

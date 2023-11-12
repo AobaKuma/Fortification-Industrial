@@ -13,6 +13,7 @@
 
   <FT_Radio.label>無線電終端</FT_Radio.label>
   <FT_Radio.description>允許透過無線電通訊聯絡其他陣營與軌道商人,此外透過對影響訊號的頻率分辨,可以定位到可能的稀有金屬位置,(完整功能尚未完成,將來會有更多功能).</FT_Radio.description>
+  <FT_Radio.comps.4.useLabel>Summon diabolus threat</FT_Radio.comps.4.useLabel>
 
   <FT_FirefoamPopper.label>消防栓</FT_FirefoamPopper.label>
   <FT_FirefoamPopper.description>紅色金屬消防栓,他基本上就是個更適合街道放置的一次性消防滅火裝置.</FT_FirefoamPopper.description>

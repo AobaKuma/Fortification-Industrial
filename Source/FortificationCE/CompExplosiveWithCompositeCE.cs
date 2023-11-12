@@ -32,8 +32,8 @@ namespace Fortification
 
         public CompProperties_ExplosiveWithComposite Props => (CompProperties_ExplosiveWithComposite)props;
 
-        public CompCompositeExplosion compCompositeExplosion;
-        public CompExpolsionWithEvents compExpolsionWithEvents;
+        public ModExtension_CompositeExplosion compCompositeExplosion;
+        public ModExtension_ExpolsionWithEvents compExpolsionWithEvents;
         public int ticksToDetonation_ForComps = -1;
 
         protected int StartWickThreshold => Mathf.RoundToInt(Props.startWickHitPointsPercent * (float)parent.MaxHitPoints);
@@ -80,8 +80,8 @@ namespace Fortification
             {
                 countdownTicksLeft = Props.countdownTicks.Value.RandomInRange;
             }
-            compCompositeExplosion = parent.GetComp<CompCompositeExplosion>();
-            compExpolsionWithEvents = parent.GetComp<CompExpolsionWithEvents>();
+            compCompositeExplosion = parent.def.GetModExtension<ModExtension_CompositeExplosion>();
+            compExpolsionWithEvents = parent.def.GetModExtension<ModExtension_ExpolsionWithEvents>();
             UpdateOverlays();
         }
 
@@ -277,7 +277,7 @@ namespace Fortification
             }
             if (compExpolsionWithEvents != null)
             {
-                foreach (Condition condition in compExpolsionWithEvents.Props.conditions)
+                foreach (Condition condition in compExpolsionWithEvents.conditions)
                 {
                     TryStartCondition(map, condition);
                 }
@@ -298,7 +298,7 @@ namespace Fortification
         {
             if (compCompositeExplosion != null)
             {
-                foreach (CompositeExplosion compositeExplosion in compCompositeExplosion.CompositeExplosions)
+                foreach (CompositeExplosion compositeExplosion in compCompositeExplosion.compositeExplosions)
                 {
 
                     if (compositeExplosion.countdown == ticksToDetonation_ForComps)

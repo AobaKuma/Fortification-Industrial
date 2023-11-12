@@ -3,18 +3,22 @@ using Verse;
 
 namespace Fortification
 {
-    public class Projectile_ExplosiveByComps: Projectile_Explosive
+    public class Projectile_ExplosiveByComps : Projectile_Explosive
     {
+        public int ticksToDetonation_ForComps = -1;
+        public ModExtension_CompositeExplosion compCompositeExplosion;
+        public ModExtension_ExpolsionWithEvents compExpolsionWithEvents;
+
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
-            compCompositeExplosion = GetComp<CompCompositeExplosion>();
-            compExpolsionWithEvents = GetComp<CompExpolsionWithEvents>();
+            compCompositeExplosion = def.GetModExtension<ModExtension_CompositeExplosion>();
+            compExpolsionWithEvents = def.GetModExtension<ModExtension_ExpolsionWithEvents>();
         }
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Values.Look(ref ticksToDetonation_ForComps, "ticksToDetonation_ForComps",-1);
+            Scribe_Values.Look(ref ticksToDetonation_ForComps, "ticksToDetonation_ForComps", -1);
         }
         public override void Tick()
         {
@@ -23,9 +27,9 @@ namespace Fortification
                 ticksToDetonation_ForComps--;
                 if (compCompositeExplosion != null)
                 {
-                    foreach (CompositeExplosion explosion in compCompositeExplosion.CompositeExplosions)
+                    foreach (CompositeExplosion explosion in compCompositeExplosion.compositeExplosions)
                     {
-                        if(explosion.countdown == ticksToDetonation_ForComps)
+                        if (explosion.countdown == ticksToDetonation_ForComps)
                         {
                             GenExplosion.DoExplosion(
                                 Position,
@@ -72,7 +76,7 @@ namespace Fortification
             ticksToDetonation_ForComps = def.projectile.explosionDelay;
             if (compExpolsionWithEvents != null)
             {
-                foreach (Condition condition in compExpolsionWithEvents.Props.conditions)
+                foreach (Condition condition in compExpolsionWithEvents.conditions)
                 {
                     TryStartCondition(condition);
                 }
@@ -93,8 +97,5 @@ namespace Fortification
             GameCondition gameCondition = GameConditionMaker.MakeCondition(condition.conditionDef, condition.duration.RandomInRange);
             Map.gameConditionManager.RegisterCondition(gameCondition);
         }
-        public int ticksToDetonation_ForComps = -1;
-        public CompCompositeExplosion compCompositeExplosion;
-        public CompExpolsionWithEvents compExpolsionWithEvents;
     }
 }

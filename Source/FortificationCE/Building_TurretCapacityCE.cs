@@ -20,24 +20,9 @@ namespace Fortification
             {
                 yield return floatMenuOption2;
             }
-            if (this.innerContainer.Count == 0)
+            foreach (FloatMenuOption floatMenuOption2 in BuildingTurretCapacityUtil.GetFloatMenuOptions(myPawn, this, this.innerContainer))
             {
-                if (!myPawn.CanReach(this, PathEndMode.InteractionCell, Danger.Deadly, false, false, TraverseMode.ByPawn))
-                {
-                    FloatMenuOption floatMenuOption3 = new FloatMenuOption("CannotUseNoPath".Translate(), null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
-                    yield return floatMenuOption3;
-                }
-                else
-                {
-                    JobDef jobDef = JobDefOf.FT_EnterBunkerFacility;
-                    string label = "FT_BunkerFacility_EnterText".Translate();
-                    void action()
-                    {
-                        Job job = JobMaker.MakeJob(jobDef, this);
-                        myPawn.jobs.TryTakeOrderedJob(job, new JobTag?(JobTag.Misc), false);
-                    }
-                    yield return FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption(label, action, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0), myPawn, this, "ReservedBy");
-                }
+                yield return floatMenuOption2;
             }
             yield break;
         }

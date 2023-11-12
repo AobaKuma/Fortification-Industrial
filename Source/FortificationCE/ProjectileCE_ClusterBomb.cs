@@ -12,23 +12,23 @@ namespace Fortification
 {
     public class ProjectileCE_ClusterBomb : ProjectileCE
     {
+        ModExtension_ClusterBomb Extension => def.GetModExtension<ModExtension_ClusterBomb>();
         public override void Tick()
         {
             base.Tick();
-            var Props = GetComp<CompClusterBomb>().Props;
             //如果目前飛行距離與目標距離小於一個特定距離
-            IntRange tDDistance = Props.TDDistance;
+            IntRange tDDistance = Extension.TDDistance;
             float a = Vector3.Distance(intendedTarget.CenterVector3, ExactPosition);
             float b = Vector3.Distance(origin, ExactPosition);
-            if (a < tDDistance.min && b > Props.safetyDistance)
+            if (a < tDDistance.min && b > Extension.safetyDistance)
             {
                 if (this.GetComp<CompFragments>() != null)
                 {
                     GetComp<CompFragments>().Throw(ExactPosition, base.Map, launcher);
                 }
-                if (Props.doDismantlExplosion)
+                if (Extension.doDismantlExplosion)
                 {
-                    GenExplosion.DoExplosion(ExactPosition.ToIntVec3(), Map, Props.dismantlExplosionRadius, Props.dismantlExplosionDam, (Thing)this, Props.dismantlExplosionDamAmount, Props.dismantlExplosionArmorPenetration, Props.dismantlExplosionSound, (ThingDef)null, (ThingDef)null, (Thing)null, (ThingDef)null, 1f, 1, null, false, (ThingDef)null, 0f, 1, 0f, false, (float?)null, (List<Thing>)null);
+                    GenExplosion.DoExplosion(ExactPosition.ToIntVec3(), Map, Extension.dismantlExplosionRadius, Extension.dismantlExplosionDam, (Thing)this, Extension.dismantlExplosionDamAmount, Extension.dismantlExplosionArmorPenetration, Extension.dismantlExplosionSound, (ThingDef)null, (ThingDef)null, (Thing)null, (ThingDef)null, 1f, 1, null, false, (ThingDef)null, 0f, 1, 0f, false, (float?)null, (List<Thing>)null);
                 }
                 Dismantling();
             }
@@ -51,15 +51,14 @@ namespace Fortification
 
         private void Dismantling()
         {
-            var Props = GetComp<CompClusterBomb>().Props;
             //Vector3 vector = ExactPosition - new Vector3(origin.x, 0f, origin.y);
             //IntVec3 intVec = (ExactPosition + vector.normalized * 5).ToIntVec3();
-            float baseOffsetAngle = Props.forceMissingRange;
-            ThingDef projectile = Props.projectile;
-            for (int i = 0; i < Props.clusterBurstCount; i++)
+            float baseOffsetAngle = Extension.forceMissingRange;
+            ThingDef projectile = Extension.projectile;
+            for (int i = 0; i < Extension.clusterBurstCount; i++)
             {
                 ProjectileCE projectile2 = (ProjectileCE)GenSpawn.Spawn(projectile, ExactPosition.ToIntVec3(), Map);
-                float errorRange = Props.forceMissingRange;
+                float errorRange = Extension.forceMissingRange;
                 List<IntVec3> list = GenRadial.RadialCellsAround(destinationInt.ToIntVec3(), errorRange, useCenter: true).ToList();
                 IntVec3 intVec2 = list.RandomElement();
                 this.TryGetComp<CompFragments>()?.Throw(intVec2.ToVector3(), Map, this);

@@ -11,7 +11,7 @@ namespace Fortification
     {
         public static void Postfix(ref bool __result, Building_TurretGun __instance)
         {
-            if (ThingCompUtility.TryGetComp<CompForceTargetable>(__instance) != null)
+            if (__instance.def.HasModExtension<ModExtension_ForceTargetable>())
             {
                 if (__instance is Building_TurretCapacity building_TurretCapacity && building_TurretCapacity.PawnInside != null)
                 {

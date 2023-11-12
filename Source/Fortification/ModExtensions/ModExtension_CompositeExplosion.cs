@@ -5,21 +5,6 @@ using Verse.Sound;
 
 namespace Fortification
 {
-    public class CompCompositeExplosion : ThingComp
-    {
-        public CompProperties_CompositeExplosion Props => (CompProperties_CompositeExplosion)this.props;
-        public virtual List<CompositeExplosion> CompositeExplosions => Props.compositeExplosions;
-    }
-
-    public class CompProperties_CompositeExplosion : CompProperties
-    {
-        public CompProperties_CompositeExplosion()
-        {
-            compClass = typeof(CompCompositeExplosion);
-        }
-        public List<CompositeExplosion> compositeExplosions = new List<CompositeExplosion>();
-    }
-
     public class ModExtension_CompositeExplosion : DefModExtension
     {
         public List<CompositeExplosion> compositeExplosions = new List<CompositeExplosion>();

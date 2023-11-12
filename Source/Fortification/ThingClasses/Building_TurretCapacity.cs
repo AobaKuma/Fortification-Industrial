@@ -11,46 +11,34 @@ namespace Fortification
     [StaticConstructorOnStartup]
     public class Building_TurretCapacity : Building_TurretGun, IThingHolder
     {
-
-        public static readonly Texture2D ExitFacilityIcon = ContentFinder<Texture2D>.Get("Things/ExitFacility");
-        public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn myPawn)
-        {
-            foreach (FloatMenuOption floatMenuOption2 in base.GetFloatMenuOptions(myPawn))
-            {
-                yield return floatMenuOption2;
-            }
-            if (this.innerContainer.Count == 0)
-            {
-                if (!myPawn.CanReach(this, PathEndMode.InteractionCell, Danger.Deadly, false, false, TraverseMode.ByPawn))
-                {
-                    FloatMenuOption floatMenuOption3 = new FloatMenuOption("CannotUseNoPath".Translate(), null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
-                    yield return floatMenuOption3;
-                }
-                else
-                {
-                    JobDef jobDef = JobDefOf.FT_EnterBunkerFacility;
-                    string label = "FT_BunkerFacility_EnterText".Translate();
-                    void action()
-                    {
-                        Job job = JobMaker.MakeJob(jobDef, this);
-                        myPawn.jobs.TryTakeOrderedJob(job, new JobTag?(JobTag.Misc), false);
-                    }
-                    yield return FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption(label, action, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0), myPawn, this, "ReservedBy");
-                }
-            }
-            yield break;
-        }
         public bool CanEnter => !innerContainer.Any;
+        public static readonly Texture2D ExitFacilityIcon = ContentFinder<Texture2D>.Get("Things/ExitFacility");
+        public Pawn PawnInside => innerContainer.Any ? innerContainer.First() as Pawn : null;
+        public float CurrentAccuracy => PawnInside == null ? PawnInside.GetStatValue(StatDefOf.ShootingAccuracyPawn) : 0;
+
         public Building_TurretCapacity()
         {
             this.innerContainer = new ThingOwner<Thing>(this, false, LookMode.Deep);
         }
+
+        public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn myPawn)
+        {
+            foreach (FloatMenuOption floatMenuOption1 in base.GetFloatMenuOptions(myPawn))
+            {
+                yield return floatMenuOption1;
+            }
+            foreach (FloatMenuOption floatMenuOption2 in BuildingTurretCapacityUtil.GetFloatMenuOptions(myPawn, this, this.innerContainer))
+            {
+                yield return floatMenuOption2;
+            }
+            yield break;
+        }
+
         public void GetChildHolders(List<IThingHolder> outChildren)
         {
             ThingOwnerUtility.AppendThingHoldersFromThings(outChildren, this.GetDirectlyHeldThings());
         }
-        public Pawn PawnInside => innerContainer.Any ? innerContainer.First() as Pawn : null;
-        public float CurrentAccuracy => PawnInside == null ? PawnInside.GetStatValue(StatDefOf.ShootingAccuracyPawn) : 0;
+
         public override void Tick()
         {
             if (!innerContainer.Any)
@@ -68,6 +56,7 @@ namespace Fortification
                 }
             }
         }
+
         public override string GetInspectString()
         {
             StringBuilder stringBuilder = new StringBuilder();
@@ -89,9 +78,10 @@ namespace Fortification
             }
             return stringBuilder.ToString().TrimEndNewlines();
         }
+
         private bool ShouldGetOut()
         {
-            if (PawnInside.needs.food != null)
+            if (PawnInside?.needs.food != null)
             {
                 //只有在這兩個同時都小於10%時會自動出來
                 if (PawnInside.needs.food.CurLevel <= 0.1f && PawnInside.needs.rest.CurLevel <= 0.1f)
@@ -99,13 +89,14 @@ namespace Fortification
                     return true;
                 }
             }
-
             return false;
         }
+
         public ThingOwner GetDirectlyHeldThings()
         {
             return this.innerContainer;
         }
+
         public override void ExposeData()
         {
             base.ExposeData();
@@ -114,6 +105,7 @@ namespace Fortification
                 this
             });
         }
+
         public override IEnumerable<Gizmo> GetGizmos()
         {
             foreach (Gizmo gizmo in base.GetGizmos())
@@ -137,6 +129,7 @@ namespace Fortification
         {
             return this.innerContainer.CanAcceptAnyOf(thing, true);
         }
+
         public virtual bool TryAcceptThing(Thing thing, bool allowSpecialEffects = true)
         {
             if (!this.Accepts(thing))
@@ -159,6 +152,7 @@ namespace Fortification
             }
             return false;
         }
+
         public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
         {
             GetOut();
@@ -169,5 +163,31 @@ namespace Fortification
             this.innerContainer.TryDropAll(this.InteractionCell, base.Map, ThingPlaceMode.Near, null, null, true);
         }
         protected ThingOwner innerContainer;
+    }
+    public static class BuildingTurretCapacityUtil
+    {
+        public static IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn myPawn, Thing me, ThingOwner innerContainer)
+        {
+            if (innerContainer.Count == 0)
+            {
+                if (!myPawn.CanReach(me, PathEndMode.InteractionCell, Danger.Deadly, false, false, TraverseMode.ByPawn))
+                {
+                    FloatMenuOption floatMenuOption3 = new FloatMenuOption("CannotUseNoPath".Translate(), null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
+                    yield return floatMenuOption3;
+                }
+                else
+                {
+                    JobDef jobDef = JobDefOf.FT_EnterBunkerFacility;
+                    string label = "FT_BunkerFacility_EnterText".Translate();
+                    void action()
+                    {
+                        Job job = JobMaker.MakeJob(jobDef, me);
+                        myPawn.jobs.TryTakeOrderedJob(job, new JobTag?(JobTag.Misc), false);
+                    }
+                    yield return FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption(label, action, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0), myPawn, me, "ReservedBy");
+                }
+            }
+            yield break;
+        }
     }
 }

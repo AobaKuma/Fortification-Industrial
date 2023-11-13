@@ -30,7 +30,7 @@ namespace Fortification
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
             Pawn parentpawn = parent as Pawn;
-            if (parentpawn == null)
+            if (parentpawn == null || !parentpawn.Drafted)
             {
                 yield break;
             }

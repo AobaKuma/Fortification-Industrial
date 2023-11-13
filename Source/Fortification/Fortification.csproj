@@ -58,6 +58,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Harmony\Harmony_Pawn.cs" />
     <Compile Include="PatchOperationAddCompIfNeeded.cs" />
     <Compile Include="ThingClasses\Building_TurretCapacity.cs" />
     <Compile Include="ThingClasses\Bullet_AlongWayDamage.cs" />

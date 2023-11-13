@@ -30,27 +30,27 @@ namespace Fortification
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
             Pawn parentpawn = parent as Pawn;
-            if (parentpawn == null || !parentpawn.Drafted)
+            if (parentpawn == null && Find.Selector.SingleSelectedThing == parentpawn && parentpawn.Drafted)
             {
-                yield break;
-            }
-            foreach (Thing thing in parentpawn.inventory.innerContainer)
-            {
-                if (thing is MinifiedThingDeployable deployable && Find.Selector.SingleSelectedThing == parentpawn)
+                foreach (Thing thing in parentpawn.inventory.innerContainer)
                 {
-                    Command_Target command_Target = new Command_Target
+                    if (thing is MinifiedThingDeployable deployable)
                     {
-                        defaultLabel = deployable.InnerThing.Label,
-                        targetingParams = TargetParam(parentpawn),
-                        icon = deployable.InnerThing.def.GetUIIconForStuff(null),
-                        action = delegate (LocalTargetInfo target)
+                        Command_Target command_Target = new Command_Target
                         {
-                            deployable.Deploy(target.Cell, parentpawn);
-                        }
-                    };
-                    yield return command_Target;
+                            defaultLabel = deployable.InnerThing.Label,
+                            targetingParams = TargetParam(parentpawn),
+                            icon = deployable.InnerThing.def.GetUIIconForStuff(null),
+                            action = delegate (LocalTargetInfo target)
+                            {
+                                deployable.Deploy(target.Cell, parentpawn);
+                            }
+                        };
+                        yield return command_Target;
+                    }
                 }
             }
+            yield break;
         }
     }
 

@@ -220,7 +220,7 @@
       <drawSize>(2,2)</drawSize>
     </graphicData>
     <statBases>
-		<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+		<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 		<SightsEfficiency>1</SightsEfficiency>
 		<ShotSpread>0.01</ShotSpread>
 		<SwayFactor>1.35</SwayFactor>
@@ -310,7 +310,7 @@
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<statBases>
-          <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+          <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
           <SightsEfficiency>1</SightsEfficiency>
           <ShotSpread>0.1</ShotSpread>
           <SwayFactor>1.26</SwayFactor>
@@ -409,7 +409,7 @@
     </graphicData>
     <soundInteract>Artillery_ShellLoaded</soundInteract>
     <statBases>
-		<RangedWeapon_Cooldown>2.3</RangedWeapon_Cooldown>
+		<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
 		<SightsEfficiency>2.18</SightsEfficiency>
 		<ShotSpread>0.01</ShotSpread>
 		<SwayFactor>1.55</SwayFactor>

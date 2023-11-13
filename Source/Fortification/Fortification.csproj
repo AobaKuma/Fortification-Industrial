@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2221DD4B-DCE6-48F0-A680-6831C514C037}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fortification</RootNamespace>
+    <AssemblyName>Fortification</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Fortification_Industrial\1.4\Vanilla\Assemblies</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\1.4\Assemblies\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\Reference\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\Reference\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\Reference\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\Reference\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ThingClasses\Building_TurretCapacity.cs" />
+    <Compile Include="ThingClasses\Bullet_AlongWayDamage.cs" />
+    <Compile Include="Comps\CompCastFlecker.cs" />
+    <Compile Include="Comps\CompCastEffecter.cs" />
+    <Compile Include="Harmony\Harmony_ThreatDisabled.cs" />
+    <Compile Include="Harmony\Harmony_Verb_Shoot.cs" />
+    <Compile Include="ThingClasses\Projectile_ClusterBomb.cs" />
+    <Compile Include="ModExtensions\ModExtension_AlongWayDamage.cs" />
+    <Compile Include="Comps\CompCastPushHeat.cs" />
+    <Compile Include="ModExtensions\ModExtension_ClusterBomb.cs" />
+    <Compile Include="ModExtensions\ModExtension_CompositeExplosion.cs" />
+    <Compile Include="Comps\CompExplosiveWithComposite.cs" />
+    <Compile Include="ModExtensions\ModExtension_ExpolsionWithEvents.cs" />
+    <Compile Include="ModExtensions\ModExtension_ForceTargetable.cs" />
+    <Compile Include="Harmony\HarmonyPatches.cs" />
+    <Compile Include="Harmony\Harmony_TurretGun.cs" />
+    <Compile Include="JobDefOf.cs" />
+    <Compile Include="JobDriver_EnterBunkerFacility.cs" />
+    <Compile Include="ThingClasses\Projectile_ExplosiveByComps.cs" />
+    <Compile Include="Comps\CompPawnTurretDeployGizmo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Verb_NewShoot.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

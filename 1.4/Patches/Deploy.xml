@@ -25,35 +25,14 @@
 	</Operation>
 
 	<Operation Class="PatchOperationConditional">
-		<success>Always</success>
 		<xpath>Defs/AlienRace.ThingDef_AlienRace</xpath>
-		<match Class="PatchOperationSequence">
-			<operations>
-				<li Class="PatchOperationSequence">
-					<success>Always</success>
-					<operations>
-						<li Class="PatchOperationTest">
-							<xpath>Defs/AlienRace.ThingDef_AlienRace[race/intelligence="Humanlike"]/comps</xpath>
-							<success>Invert</success>
-						</li>
-						<li Class="PatchOperationAdd">
-							<xpath>Defs/AlienRace.ThingDef_AlienRace[race/intelligence="Humanlike"]</xpath>
-							<value>
-								<comps />
-							</value>
-						</li>
-					</operations>
+		<match Class="Fortification.PatchOperationAddCompIfNeeded">
+			<xpath>Defs/AlienRace.ThingDef_AlienRace</xpath>
+			<value>
+				<li>
+					<compClass>Fortification.CompPawnTurretDeployGizmo</compClass>
 				</li>
-
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/AlienRace.ThingDef_AlienRace[race/intelligence="Humanlike"]/comps</xpath>
-					<value>
-						<li>
-							<compClass>Fortification.CompPawnTurretDeployGizmo</compClass>
-						</li>
-					</value>
-				</li>
-			</operations>
+			</value>
 		</match>
 	</Operation>
 </Patch>

@@ -283,7 +283,7 @@
     </statBases>
     <costList>
 		<Steel>180</Steel>
-		<ComponentIndustrial>8</ComponentIndustrial>
+		<ComponentIndustrial>9</ComponentIndustrial>
 		<ReinforcedBarrel>2</ReinforcedBarrel>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>

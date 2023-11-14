@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <FTF_CurrentOperator>operator inside:</FTF_CurrentOperator>
-  <FTF_RequireOperator>require operator</FTF_RequireOperator>
-  <FT_BunkerFacility_EnterText>get in facility</FT_BunkerFacility_EnterText>
-  <FT_BunkerFacility_ExitText>evacuate facility</FT_BunkerFacility_ExitText>
+	<FTF_CurrentOperator>operator inside:</FTF_CurrentOperator>
+	<FTF_RequireOperator>require operator</FTF_RequireOperator>
+	<FT_BunkerFacility_EnterText>get in facility</FT_BunkerFacility_EnterText>
+	<FT_BunkerFacility_ExitText>evacuate facility</FT_BunkerFacility_ExitText>
 
+	<FT_DisabledUndrafted>not drafted</FT_DisabledUndrafted>
 </LanguageData>

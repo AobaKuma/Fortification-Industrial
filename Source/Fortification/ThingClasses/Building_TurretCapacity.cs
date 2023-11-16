@@ -8,8 +8,14 @@ using Verse.AI;
 
 namespace Fortification
 {
+    public interface IPawnCapacity
+    {
+        bool TryAcceptThing(Thing thing);
+    }
+
+
     [StaticConstructorOnStartup]
-    public class Building_TurretCapacity : Building_TurretGun, IThingHolder
+    public class Building_TurretCapacity : Building_TurretGun, IThingHolder, IPawnCapacity
     {
         public bool CanEnter => !innerContainer.Any;
         public static readonly Texture2D ExitFacilityIcon = ContentFinder<Texture2D>.Get("Things/ExitFacility");
@@ -130,7 +136,7 @@ namespace Fortification
             return this.innerContainer.CanAcceptAnyOf(thing, true);
         }
 
-        public virtual bool TryAcceptThing(Thing thing, bool allowSpecialEffects = true)
+        public virtual bool TryAcceptThing(Thing thing)
         {
             if (!this.Accepts(thing))
             {

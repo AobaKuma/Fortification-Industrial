@@ -11,6 +11,7 @@
 			<Ammo_155mmHowitzerShell_Incendiary>Bullet_FT_155mmHowitzerShell_Incendiary</Ammo_155mmHowitzerShell_Incendiary>
 			<Ammo_155mmHowitzerShell_EMP>Bullet_FT_155mmHowitzerShell_EMP</Ammo_155mmHowitzerShell_EMP>
 			<Ammo_155mmHowitzerShell_Smoke>Bullet_FT_155mmHowitzerShell_Smoke</Ammo_155mmHowitzerShell_Smoke>
+			<FT_Shell_NuclearWarhead MayRequire="Aoba.Fortress.Industrial.NuclearDawn">FT_Bullet_NuclearWarhead_CE</FT_Shell_NuclearWarhead>
 		</ammoTypes>
 		<isMortarAmmoSet>true</isMortarAmmoSet>
 	</CombatExtended.AmmoSetDef>
@@ -23,6 +24,7 @@
 			<Ammo_155mmHowitzerShell_Incendiary>Bullet_FT_155mmHowitzerShell_Incendiary_directfire</Ammo_155mmHowitzerShell_Incendiary>
 			<Ammo_155mmHowitzerShell_EMP>Bullet_FT_155mmHowitzerShell_EMP_directfire</Ammo_155mmHowitzerShell_EMP>
 			<Ammo_155mmHowitzerShell_Smoke>Bullet_FT_155mmHowitzerShell_Smoke_directfire</Ammo_155mmHowitzerShell_Smoke>
+			<FT_Shell_NuclearWarhead MayRequire="Aoba.Fortress.Industrial.NuclearDawn">FT_Bullet_NuclearWarhead_CE_directfire</FT_Shell_NuclearWarhead>
 		</ammoTypes>
 		<isMortarAmmoSet>true</isMortarAmmoSet>
 	</CombatExtended.AmmoSetDef>

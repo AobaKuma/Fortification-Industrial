@@ -348,8 +348,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.2</drawSize>
     </graphicData>
-		<comps>
-			<li Class="Fortification.CompProperties_CompositeExplosion">
+		<modExtensions>
+			<li Class="Fortification.ModExtension_CompositeExplosion">
 				<compositeExplosions>
 					<li>
 					<countdown>1</countdown>
@@ -361,7 +361,7 @@
 					</li>
 				</compositeExplosions>
 			</li>
-		</comps>
+		</modExtensions>
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>18</damageAmountBase>
@@ -533,8 +533,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>2</drawSize>
     </graphicData>
-		<comps>
-			<li Class="Fortification.CompProperties_CompositeExplosion">
+		<modExtensions>
+			<li Class="Fortification.ModExtension_CompositeExplosion">
 				<compositeExplosions>
 					<li>
 					<countdown>1</countdown>
@@ -546,7 +546,7 @@
 					</li>
 				</compositeExplosions>
 			</li>
-		</comps>
+		</modExtensions>
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>50</damageAmountBase>

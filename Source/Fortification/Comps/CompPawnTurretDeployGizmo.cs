@@ -81,7 +81,7 @@ namespace Fortification
                 createdThing.SetFactionDirect(workerPawn.Faction);
             }
             Thing thing = GenSpawn.Spawn(createdThing, cell, map, workerPawn.Rotation, WipeMode.VanishOrMoveAside);
-            if (thing.def.thingClass == typeof(Building_TurretGun))
+            if (thing.TryGetComp<CompMannable>() != null)
             {
                 Find.Selector.Deselect(workerPawn);
                 Find.Selector.Select(thing, playSound: false, forceDesignatorDeselect: false);

@@ -7,11 +7,12 @@ using RimWorld;
 using UnityEngine;
 using Verse;
 using Verse.AI;
+using Fortification;
 
 namespace Fortification
 {
     [StaticConstructorOnStartup]
-    public class Building_TurretCapacityCE : Building_TurretGunCE, IThingHolder
+    public class Building_TurretCapacityCE : Building_TurretGunCE, IThingHolder, IPawnCapacity
     {
         public static readonly Texture2D ExitFacilityIcon = ContentFinder<Texture2D>.Get("Things/ExitFacility");
         public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn myPawn)
@@ -122,7 +123,7 @@ namespace Fortification
         {
             return this.innerContainer.CanAcceptAnyOf(thing, true);
         }
-        public virtual bool TryAcceptThing(Thing thing, bool allowSpecialEffects = true)
+        public virtual bool TryAcceptThing(Thing thing)
         {
             if (!this.Accepts(thing))
             {

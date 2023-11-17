@@ -79,7 +79,7 @@
     <graphicData>
 		<texPath>InfantryTurret/FT_Tripod</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
-		<drawSize>(1.2,1.2)</drawSize>
+		<drawSize>(1.3,1.3)</drawSize>
 		<drawOffset>(0,0,-0.1)</drawOffset>
     </graphicData>
     <statBases>
@@ -92,12 +92,12 @@
     <comps>
     </comps>
     <costList>
-		<Steel>80</Steel>
-		<ComponentIndustrial>4</ComponentIndustrial>
+		<Steel>160</Steel>
+		<ComponentIndustrial>16</ComponentIndustrial>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <building>
-		<turretTopDrawSize>1.25</turretTopDrawSize>
+		<turretTopDrawSize>2</turretTopDrawSize>
 		<ai_combatDangerous>true</ai_combatDangerous>
 		<turretGunDef>FT_Gun_QuadMG</turretGunDef>
 		<turretBurstWarmupTime>0.75</turretBurstWarmupTime>
@@ -160,10 +160,10 @@
 				<def>MF_StandardMuzzleFalsh</def>
 				<drawSize>(0.5,0.5)</drawSize>
 				<offsets>
-					<li>(0.6,0.19)</li>
-					<li>(0.6,0.0625)</li>
-					<li>(0.6,-0.0625)</li>
-					<li>(0.6,-0.19)</li>
+					<li>(0.96,0.304)</li>
+					<li>(0.96,0.125)</li>
+					<li>(0.96,-0.125)</li>
+					<li>(0.96,-0.304)</li>
 				</offsets>
 				<isAlternately>true</isAlternately>
 			</li>
@@ -180,7 +180,7 @@
     <graphicData>
 		<texPath>InfantryTurret/FT_Tripod</texPath>
 		<graphicClass>Graphic_Single</graphicClass>
-		<drawSize>(1.2,1.2)</drawSize>
+		<drawSize>(1.3,1.3)</drawSize>
 		<drawOffset>(0,0,-0.1)</drawOffset>
     </graphicData>
     <statBases>
@@ -193,12 +193,12 @@
     </statBases>
     <costList>
 		<Steel>120</Steel>
-		<ComponentIndustrial>2</ComponentIndustrial>
+		<ComponentIndustrial>4</ComponentIndustrial>
 		<ReinforcedBarrel>1</ReinforcedBarrel>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <building>
-		<turretTopDrawSize>2.0</turretTopDrawSize>
+		<turretTopDrawSize>2.5</turretTopDrawSize>
 		<ai_combatDangerous>true</ai_combatDangerous>
 		<turretGunDef>FT_Gun_Autocannon</turretGunDef>
 		<turretBurstWarmupTime>1.0</turretBurstWarmupTime>
@@ -268,7 +268,7 @@
 	<graphicData>
 		<texPath>InfantryTurret/FT_WheeledTripod</texPath>
 		<graphicClass>Graphic_Multi</graphicClass>
-		<drawSize>(2.5,2.5)</drawSize>
+		<drawSize>(3,3)</drawSize>
 		<drawOffset>(0,0,0)</drawOffset>
 	</graphicData>
 	<size>(2,1)</size>
@@ -283,7 +283,7 @@
     </statBases>
     <costList>
 		<Steel>180</Steel>
-		<ComponentIndustrial>4</ComponentIndustrial>
+		<ComponentIndustrial>9</ComponentIndustrial>
 		<ReinforcedBarrel>2</ReinforcedBarrel>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
@@ -291,7 +291,7 @@
 		<ai_combatDangerous>true</ai_combatDangerous>
 		<turretBurstWarmupTime>1.2</turretBurstWarmupTime>
 		<turretBurstCooldownTime>0.75</turretBurstCooldownTime>
-		<turretTopDrawSize>3</turretTopDrawSize>
+		<turretTopDrawSize>3.5</turretTopDrawSize>
 		<turretGunDef>FT_Gun_Autocannon_Twin</turretGunDef>
     </building>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>

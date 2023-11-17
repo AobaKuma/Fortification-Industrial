@@ -200,7 +200,7 @@
 		<thingClass>Fortification.ProjectileCE_ClusterBomb</thingClass>
 		<label>37x223mmR shell (Shrapnel)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<aimHeightOffset>3</aimHeightOffset>
+			<!--<aimHeightOffset>3</aimHeightOffset>-->
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>82</damageAmountBase>
 			<armorPenetrationSharp>67.5</armorPenetrationSharp>
@@ -212,7 +212,7 @@
 				<fragments>
 					<Fragment_FT_ShrapnelPellet>122</Fragment_FT_ShrapnelPellet>
 				</fragments>
-				<fragAngleRange>-25~-10</fragAngleRange>
+				<!--<fragAngleRange>-25~-10</fragAngleRange>-->
 				<fragXZAngleRange>-10~10</fragXZAngleRange>
 			</li>
 		</comps>
@@ -222,7 +222,7 @@
 				<!-- 破片數量 -->
 				<forceMissingRange>6</forceMissingRange>
 				<!-- 散射範圍(以母彈目標為圓心擴散) -->
-				<safetyDistance>1.5</safetyDistance>
+				<safetyDistance>3.9</safetyDistance>
 				<!-- 安全距離 -->
 				<!--<doDismantlExplosion>true</doDismantlExplosion>-->
 				<!-- 分裂時爆炸 -->
@@ -320,7 +320,7 @@
 			<soundExplode>MortarIncendiary_Explode</soundExplode>
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 			<screenShakeFactor>0</screenShakeFactor>
-			<armingDelay>3</armingDelay>
+			<armingDelay>5</armingDelay>
 		</projectile>
 		<comps>
 			<li Class="CombatExtended.CompProperties_Fragments">

@@ -256,7 +256,7 @@
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
 		<Steel>350</Steel>
-		<ComponentIndustrial>2</ComponentIndustrial>
+		<ComponentIndustrial>5</ComponentIndustrial>
 		<ReinforcedBarrel>1</ReinforcedBarrel>
     </costList>
     <researchPrerequisites>
@@ -363,7 +363,7 @@
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	<costList>
 		<Steel>400</Steel>
-		<ComponentIndustrial>8</ComponentIndustrial>
+		<ComponentIndustrial>20</ComponentIndustrial>
 		<ReinforcedBarrel>4</ReinforcedBarrel>
     </costList>
     <researchPrerequisites>

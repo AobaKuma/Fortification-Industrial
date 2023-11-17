@@ -13,7 +13,6 @@ namespace Fortification
         bool TryAcceptThing(Thing thing);
     }
 
-
     [StaticConstructorOnStartup]
     public class Building_TurretCapacity : Building_TurretGun, IThingHolder, IPawnCapacity
     {

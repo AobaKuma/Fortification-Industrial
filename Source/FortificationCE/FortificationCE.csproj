@@ -72,6 +72,7 @@
   <ItemGroup>
     <Compile Include="Building_TurretCapacityCE.cs" />
     <Compile Include="BulletCE_AlongWayDamage.cs" />
+    <Compile Include="Harmony_ThreatDisabled.cs" />
     <Compile Include="Harmony_Verb_Shoot.cs" />
     <Compile Include="ProjectileCE_ClusterBomb.cs" />
     <Compile Include="HarmonyPatches.cs" />

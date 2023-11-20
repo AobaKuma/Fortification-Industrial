@@ -136,7 +136,7 @@
     </building>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
-      <Steel>350</Steel>
+      <Steel>450</Steel>
       <ComponentIndustrial>5</ComponentIndustrial>
       <ReinforcedBarrel>1</ReinforcedBarrel>
     </costList>
@@ -266,7 +266,7 @@
     </building>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
-      <Steel>400</Steel>
+      <Steel>600</Steel>
       <ComponentIndustrial>20</ComponentIndustrial>
       <ReinforcedBarrel>4</ReinforcedBarrel>
     </costList>
@@ -689,7 +689,7 @@
       <ShootingAccuracyTurret>1.0</ShootingAccuracyTurret>
     </statBases>
     <costList>
-      <Steel>120</Steel>
+      <Steel>220</Steel>
       <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
@@ -705,14 +705,14 @@
         <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
         <fuelFilter>
           <thingDefs>
-            <li>Uranium</li>
+            <li>Steel</li>
           </thingDefs>
         </fuelFilter>
         <fuelCapacity>120</fuelCapacity>
         <initialFuelPercent>1</initialFuelPercent>
         <showFuelGizmo>true</showFuelGizmo>
         <minimumFueledThreshold>1</minimumFueledThreshold>
-        <fuelMultiplier>4</fuelMultiplier>
+        <fuelMultiplier>1</fuelMultiplier>
         <factorByDifficulty>true</factorByDifficulty>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
         <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>

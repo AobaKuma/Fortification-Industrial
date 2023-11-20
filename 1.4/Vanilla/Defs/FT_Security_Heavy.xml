@@ -275,7 +275,7 @@
 			<Beauty>-2</Beauty>
 		</statBases>
 		<costList>
-			<Steel>450</Steel>
+			<Steel>550</Steel>
 			<ComponentIndustrial>6</ComponentIndustrial>
 			<ReinforcedBarrel>2</ReinforcedBarrel>
 		</costList>
@@ -446,7 +446,7 @@
 			</li>
 		</comps>
 		<statBases>
-			<Mass>500</Mass>
+			<Mass>600</Mass>
 			<MaxHitPoints>1000</MaxHitPoints>
 			<Flammability>0.5</Flammability>
 			<WorkToBuild>5000</WorkToBuild>

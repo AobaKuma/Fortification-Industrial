@@ -34,6 +34,9 @@
 			<!--================冷卻與瞄準時間================-->
 			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
 		</building>
+		<tradeTags>
+			<li>CE_Turret</li>
+		</tradeTags>
 		<comps>
 			<li Class="CompProperties_Usable">
 				<useJob>TriggerObject</useJob>

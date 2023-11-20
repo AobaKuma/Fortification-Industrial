@@ -8,7 +8,6 @@
 		<defName>FT_TurretHexMortar</defName>
 		<label>Hexagonal Mortar Launcher</label>
 		<description>A manned mortar launcher with six barrel, with some mysterious technology, it can shoot six mortar shells at one time, however, it's not accurate.</description>
-
 		<uiIconPath>InfantryTurret/FT_HexMortar_icon</uiIconPath>
 		<uiIconScale>1.2</uiIconScale>
 		<graphicData>
@@ -236,7 +235,7 @@
 			<WorkToBuild>3500</WorkToBuild>
 		</statBases>
 		<costList>
-			<Steel>450</Steel>
+			<Steel>550</Steel>
 			<ComponentIndustrial>6</ComponentIndustrial>
 			<ReinforcedBarrel>2</ReinforcedBarrel>
 		</costList>
@@ -404,7 +403,7 @@
 			<WorkToBuild>5000</WorkToBuild>
 		</statBases>
 		<costList>
-			<Steel>500</Steel>
+			<Steel>600</Steel>
 			<ComponentIndustrial>8</ComponentIndustrial>
 			<ReinforcedBarrel>3</ReinforcedBarrel>
 		</costList>

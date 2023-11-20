@@ -67,6 +67,9 @@
 		<turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
 		<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
     </building>
+	<tradeTags>
+		<li>CE_Turret</li>
+	</tradeTags>
   </ThingDef>
 	
 <!--聯裝機槍-->
@@ -133,7 +136,7 @@
             <hasStandardCommand>true</hasStandardCommand>
             <defaultProjectile>Bullet_303British_FMJ</defaultProjectile>
             <warmupTime>0.75</warmupTime>
-            <range>60</range>
+            <range>62</range>
             <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
             <burstShotCount>20</burstShotCount>
             <soundCast>GunShotA</soundCast>
@@ -192,7 +195,7 @@
 		<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
     </statBases>
     <costList>
-		<Steel>120</Steel>
+		<Steel>220</Steel>
 		<ComponentIndustrial>4</ComponentIndustrial>
 		<ReinforcedBarrel>1</ReinforcedBarrel>
     </costList>
@@ -235,7 +238,7 @@
 			<hasStandardCommand>True</hasStandardCommand>
 			<defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
 			<warmupTime>1</warmupTime>
-			<range>75</range>
+			<range>80</range>
 			<burstShotCount>6</burstShotCount>
 			<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
 			<soundCast>Shot_Autocannon</soundCast>
@@ -282,7 +285,7 @@
 		<AimingAccuracy>1.0</AimingAccuracy>
     </statBases>
     <costList>
-		<Steel>180</Steel>
+		<Steel>280</Steel>
 		<ComponentIndustrial>9</ComponentIndustrial>
 		<ReinforcedBarrel>2</ReinforcedBarrel>
     </costList>
@@ -326,7 +329,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
 				<warmupTime>1</warmupTime>
-				<range>75</range>
+				<range>80</range>
 				<burstShotCount>4</burstShotCount>
 				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
 				<soundCast>Shot_Autocannon</soundCast>

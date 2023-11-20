@@ -255,7 +255,7 @@
     </building>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <costList>
-		<Steel>350</Steel>
+		<Steel>450</Steel>
 		<ComponentIndustrial>5</ComponentIndustrial>
 		<ReinforcedBarrel>1</ReinforcedBarrel>
     </costList>
@@ -362,7 +362,7 @@
     </building>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 	<costList>
-		<Steel>400</Steel>
+		<Steel>600</Steel>
 		<ComponentIndustrial>20</ComponentIndustrial>
 		<ReinforcedBarrel>4</ReinforcedBarrel>
     </costList>
@@ -515,7 +515,7 @@
 			<defaultProjectile>Bullet_FT_37x223mmR_Canister</defaultProjectile>
 			<warmupTime>1.5</warmupTime>
 			<minRange>3.9</minRange>
-			<range>90</range>
+			<range>95</range>
 			<soundCast>FT_CannonLaunchA</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
 			<muzzleFlashScale>12</muzzleFlashScale>
@@ -579,6 +579,9 @@
 		<drawSize>(3.25,3.25)</drawSize>
 		<drawOffset>(0,0,-0.1)</drawOffset>
 	</graphicData>
+	<tradeTags>
+		<li>CE_Turret</li>
+	</tradeTags>
 	<size>(3,3)</size>
     <uiIconPath>InfantryTurret/FT_AntiTankGunPlus_Icon</uiIconPath>
     <uiIconScale>1.2</uiIconScale>

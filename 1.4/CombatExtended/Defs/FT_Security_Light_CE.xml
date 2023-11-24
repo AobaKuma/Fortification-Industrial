@@ -368,7 +368,7 @@
   <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
     <defName>FT_RecoillessGun</defName>
     <label>recoilless gun</label>
-    <description>A Tripod with Recoilless gun mounted.A light-weighted soloution of anti armour operation, Requires ReinforcedBarrel to refurbish its barrels after heavy use. also it needs a pawn to man on it to operate. But notice, do not use it indoors!!</description>
+    <description>Tripod with Recoilless gun mounted. A light-weighted soloution of anti armour operation, Requires ReinforcedBarrel to refurbish its barrels after heavy use. also it needs a pawn to man on it to operate. But notice, do not use it indoors!!</description>
     <uiIconPath>InfantryTurret/FT_RecoillessGun_icon</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
     <graphicData>

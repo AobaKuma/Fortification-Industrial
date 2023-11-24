@@ -689,7 +689,7 @@
       <ShootingAccuracyTurret>1.0</ShootingAccuracyTurret>
     </statBases>
     <costList>
-      <Steel>220</Steel>
+      <Steel>160</Steel>
       <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>

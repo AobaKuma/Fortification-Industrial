@@ -148,7 +148,7 @@
     <comps>
 		<li Class="CombatExtended.CompProperties_AmmoUser">
             <magazineSize>800</magazineSize>
-            <reloadTime>7.8</reloadTime>
+            <reloadTime>10</reloadTime>
             <ammoSet>AmmoSet_303British</ammoSet>
 		</li>
 		<li Class="CombatExtended.CompProperties_FireModes">
@@ -195,7 +195,7 @@
 		<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
     </statBases>
     <costList>
-		<Steel>220</Steel>
+		<Steel>160</Steel>
 		<ComponentIndustrial>4</ComponentIndustrial>
 		<ReinforcedBarrel>1</ReinforcedBarrel>
     </costList>

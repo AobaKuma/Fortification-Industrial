@@ -384,7 +384,7 @@
 		<Mass>210</Mass>
 		<Bulk>340</Bulk>
     </statBases>
-    <interactionCellOffset>(-1,0,-1)</interactionCellOffset>
+    <interactionCellOffset>(-1,0,0)</interactionCellOffset>
     <costList>
       <Steel>150</Steel>
       <ReinforcedBarrel>1</ReinforcedBarrel>

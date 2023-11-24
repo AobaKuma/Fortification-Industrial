@@ -805,7 +805,7 @@
 		    <autoRefuelPercent>0.1</autoRefuelPercent>
       </li>
     </comps>
-    <interactionCellOffset>(-1,0,-1)</interactionCellOffset>
+    <interactionCellOffset>(-1,0,0)</interactionCellOffset>
     <costList>
       <Steel>150</Steel>
       <ReinforcedBarrel>1</ReinforcedBarrel>

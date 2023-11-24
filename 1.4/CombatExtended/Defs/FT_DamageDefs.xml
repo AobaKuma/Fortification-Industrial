@@ -15,7 +15,7 @@
     <defaultDamage>5</defaultDamage>
     <defaultArmorPenetration>0</defaultArmorPenetration>
     <buildingDamageFactorImpassable>10</buildingDamageFactorImpassable>
-    <buildingDamageFactorPassable>2</buildingDamageFactorPassable>
+    <buildingDamageFactorPassable>10</buildingDamageFactorPassable>
     <plantDamageFactor>4</plantDamageFactor>
   </DamageDef>
 	

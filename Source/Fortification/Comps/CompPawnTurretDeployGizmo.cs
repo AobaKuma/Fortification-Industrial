@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Verse;
 using Verse.AI;
 using UnityEngine;
+using Unity.Jobs;
+using Verse.Sound;
 
 namespace Fortification
 {
@@ -56,6 +58,34 @@ namespace Fortification
 
     internal class MinifiedThingDeployable : MinifiedThing
     {
+        MinifiedThingDeployableGraphicExt ext;
+
+        MinifiedThingDeployableGraphicExt Ext
+        {
+            get
+            {
+                if (ext == null)
+                {
+                    ext = InnerThing?.def.GetModExtension<MinifiedThingDeployableGraphicExt>();
+                }
+                return ext;
+            }
+        }
+
+
+        public override Graphic Graphic
+        {
+            get
+            {
+                if (!Spawned && Ext != null)
+                {
+                    return Ext.graphicData.Graphic;
+                }
+                return base.Graphic;
+            }
+        }
+
+
         public bool Deploy(IntVec3 cell, Pawn workerPawn)
         {
             workerPawn.rotationTracker.Face(cell.ToVector3Shifted());
@@ -81,7 +111,7 @@ namespace Fortification
                 createdThing.SetFactionDirect(workerPawn.Faction);
             }
             Thing thing = GenSpawn.Spawn(createdThing, cell, map, workerPawn.Rotation, WipeMode.VanishOrMoveAside);
-            if (thing.TryGetComp<CompMannable>() != null)
+            if (thing.TryGetComp<CompMannable>() != null && !workerPawn.WorkTagIsDisabled(WorkTags.Violent))
             {
                 Find.Selector.Deselect(workerPawn);
                 Find.Selector.Select(thing, playSound: false, forceDesignatorDeselect: false);
@@ -90,6 +120,11 @@ namespace Fortification
             }
             return true;
         }
+    }
+
+    public class MinifiedThingDeployableGraphicExt : DefModExtension
+    {
+        public GraphicData graphicData;
     }
 
     internal class CompMinifyToInventory : CompUseEffect
@@ -101,11 +136,32 @@ namespace Fortification
             {
                 thing = building.MakeMinified();
             }
-            if (thing.Spawned)
+            if (usedBy.equipment.Primary == null && thing.TryGetComp<CompEquippable>() != null && !usedBy.WorkTagIsDisabled(WorkTags.Violent))
             {
-                thing.DeSpawn();
+                ThingWithComps thingWithComps2 = null;
+                if (thing.def.stackLimit > 1 && thing.stackCount > 1)
+                {
+                    thingWithComps2 = (ThingWithComps)thing.SplitOff(1);
+                }
+                else
+                {
+                    thingWithComps2 = (ThingWithComps)thing;
+                }
+                usedBy.equipment.MakeRoomFor(thingWithComps2);
+                usedBy.equipment.AddEquipment(thingWithComps2);
+                if (thing.def.soundInteract != null)
+                {
+                    thing.def.soundInteract.PlayOneShot(new TargetInfo(usedBy.Position, usedBy.Map));
+                }
             }
-            usedBy.inventory.innerContainer.TryAddOrTransfer(thing);
+            else
+            {
+                if (thing.Spawned)
+                {
+                    thing.DeSpawn();
+                }
+                usedBy.inventory.innerContainer.TryAddOrTransfer(thing);
+            }
         }
     }
 }

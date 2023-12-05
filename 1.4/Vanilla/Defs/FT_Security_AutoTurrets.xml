@@ -77,7 +77,7 @@
   </ThingDef>
   
   <ThingDef ParentName="FT_MGNest">
-	<defName>FT_Turret_Bunker</defName>
+	<defName>FT_Turret_BunkerL</defName>
     <label>Machine Gun Nest</label>
     <graphicData>
       <texPath>MGBunker/FT_MGBunker_Leathery</texPath>

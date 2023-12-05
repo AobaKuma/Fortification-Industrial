@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <FT_Turret_Bunker.label>机枪阵地</FT_Turret_Bunker.label>
-  <FT_Turret_Bunker.description>一种用皮革材料加固防护的机枪阵地,大量射击后需消耗钢铁来更换炮管.损坏时可能会爆炸.它的AI不分敌我,所以请小心它的火力掩护.</FT_Turret_Bunker.description>
+  <FT_Turret_BunkerL.label>机枪阵地</FT_Turret_BunkerL.label>
+  <FT_Turret_BunkerL.description>一种用皮革材料加固防护的机枪阵地,大量射击后需消耗钢铁来更换炮管.损坏时可能会爆炸.它的AI不分敌我,所以请小心它的火力掩护.</FT_Turret_BunkerL.description>
 
   <FT_Turret_BunkerM.label>机枪炮塔碉堡</FT_Turret_BunkerM.label>
   <FT_Turret_BunkerM.description>一种用材料加固防护的固定炮塔,大量射击后需消耗钢铁来更换炮管.损坏时可能会爆炸.它的AI不分敌我,所以请小心它的火力掩护.</FT_Turret_BunkerM.description>

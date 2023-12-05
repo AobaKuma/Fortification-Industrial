@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
-  <FT_Turret_Bunker.label>機槍陣地</FT_Turret_Bunker.label>
-  <FT_Turret_Bunker.description>一種用皮革材料加固防護的機槍陣地,大量射擊後需消耗鋼鐵來更換砲管.損壞時可能會爆炸.它的AI不分敵我,所以請小心它的火力掩護.</FT_Turret_Bunker.description>
+  <FT_Turret_BunkerL.label>機槍陣地</FT_Turret_BunkerL.label>
+  <FT_Turret_BunkerL.description>一種用皮革材料加固防護的機槍陣地,大量射擊後需消耗鋼鐵來更換砲管.損壞時可能會爆炸.它的AI不分敵我,所以請小心它的火力掩護.</FT_Turret_BunkerL.description>
 
   <FT_Turret_BunkerM.label>機槍砲塔碉堡</FT_Turret_BunkerM.label>
   <FT_Turret_BunkerM.description>一種用材料加固防護的固定砲塔,大量射擊後需消耗鋼鐵來更換砲管.損壞時可能會爆炸.它的AI不分敵我,所以請小心它的火力掩護.</FT_Turret_BunkerM.description>

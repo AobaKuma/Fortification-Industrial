@@ -5,6 +5,8 @@ using Verse.AI;
 using UnityEngine;
 using Unity.Jobs;
 using Verse.Sound;
+using System;
+using System.Net.NetworkInformation;
 
 namespace Fortification
 {
@@ -56,7 +58,7 @@ namespace Fortification
         }
     }
 
-    internal class MinifiedThingDeployable : MinifiedThing
+    public class MinifiedThingDeployable : MinifiedThing
     {
         MinifiedThingDeployableGraphicExt ext;
 
@@ -72,7 +74,6 @@ namespace Fortification
             }
         }
 
-
         public override Graphic Graphic
         {
             get
@@ -84,7 +85,6 @@ namespace Fortification
                 return base.Graphic;
             }
         }
-
 
         public bool Deploy(IntVec3 cell, Pawn workerPawn)
         {
@@ -102,6 +102,9 @@ namespace Fortification
             Thing createdThing = InnerThing;
             Map map = workerPawn.Map;
             GenSpawn.WipeExistingThings(cell, workerPawn.Rotation, createdThing.def, map, DestroyMode.Deconstruct);
+
+            DeployCECompatHook(this, createdThing);
+
             if (!Destroyed)
             {
                 Destroy();
@@ -120,6 +123,7 @@ namespace Fortification
             }
             return true;
         }
+        public static void DeployCECompatHook(MinifiedThingDeployable minified, Thing turret) { }
     }
 
     public class MinifiedThingDeployableGraphicExt : DefModExtension
@@ -127,7 +131,7 @@ namespace Fortification
         public GraphicData graphicData;
     }
 
-    internal class CompMinifyToInventory : CompUseEffect
+    public class CompMinifyToInventory : CompUseEffect
     {
         public override void DoEffect(Pawn usedBy)
         {

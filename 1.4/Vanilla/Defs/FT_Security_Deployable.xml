@@ -21,6 +21,7 @@
 
 	<ThingDef ParentName="FT_MinifiedTurret" Name="FT_MinifiedTurretEquippable" Abstract="true">
 		<equipmentType>Primary</equipmentType>
+		<techLevel>Industrial</techLevel>
 		<comps>
 			<li>
 				<compClass>CompEquippable</compClass>

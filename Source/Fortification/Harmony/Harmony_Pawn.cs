@@ -30,6 +30,29 @@ namespace Fortification
             };
         }
 
+        public static Gizmo GenGizmoForThing(Thing thing, Pawn pawn)
+        {
+            if (thing is MinifiedThingDeployable deployable)
+            {
+                Command_Target command_Target = new Command_Target
+                {
+                    defaultLabel = deployable.InnerThing.Label,
+                    targetingParams = TargetParam(pawn),
+                    icon = deployable.InnerThing.def.GetUIIconForStuff(null),
+                    action = delegate (LocalTargetInfo target)
+                    {
+                        deployable.Deploy(target.Cell, pawn);
+                    }
+                };
+                if (!pawn.Drafted)
+                {
+                    command_Target.Disable("FT_DisabledUndrafted".Translate());
+                }
+                return command_Target;
+            }
+            return null;
+        }
+
         public static IEnumerable<Gizmo> Postfix(IEnumerable<Gizmo> __result, Pawn __instance)
         {
             foreach (Gizmo command in __result) yield return command;
@@ -37,24 +60,13 @@ namespace Fortification
             {
                 foreach (Thing thing in __instance.inventory.innerContainer)
                 {
-                    if (thing is MinifiedThingDeployable deployable)
-                    {
-                        Command_Target command_Target = new Command_Target
-                        {
-                            defaultLabel = deployable.InnerThing.Label,
-                            targetingParams = TargetParam(__instance),
-                            icon = deployable.InnerThing.def.GetUIIconForStuff(null),
-                            action = delegate (LocalTargetInfo target)
-                            {
-                                deployable.Deploy(target.Cell, __instance);
-                            }
-                        };
-                        if (!__instance.Drafted)
-                        {
-                            command_Target.Disable("FT_DisabledUndrafted".Translate());
-                        }
-                        yield return command_Target;
-                    }
+                    Gizmo g = GenGizmoForThing(thing, __instance);
+                    if (g != null) yield return g;
+                }
+                foreach (Thing thing in __instance.equipment.AllEquipmentListForReading)
+                {
+                    Gizmo g = GenGizmoForThing(thing, __instance);
+                    if (g != null) yield return g;
                 }
             }
         }

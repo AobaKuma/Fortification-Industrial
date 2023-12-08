@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-  <ThingDef ParentName="MinifiedThing">
+	<ThingDef ParentName="MinifiedThing" Name="FT_MinifiedTurret">
 		<defName>FT_MinifiedTurret</defName>
 		<label>minified turret</label>
 		<thingClass>Fortification.MinifiedThingDeployable</thingClass>
@@ -19,7 +19,26 @@
 		</comps>
 	</ThingDef>
 
-  <ThingDef Name="FT_BaseCannonBuilding_Deployable" ParentName="FT_BaseCannonBuilding" Abstract="True">
+	<ThingDef ParentName="FT_MinifiedTurret" Name="FT_MinifiedTurretEquippable" Abstract="true">
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/LMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<equipmentType>Primary</equipmentType>
+		<techLevel>Industrial</techLevel>
+		<weaponTags/>
+		<comps>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+		<weaponClasses>
+			<li>Ranged</li>
+		</weaponClasses>
+	</ThingDef>
+
+	<ThingDef Name="FT_BaseCannonBuilding_Deployable" ParentName="FT_BaseCannonBuilding" Abstract="True">
 		<minifiedDef>FT_MinifiedTurret</minifiedDef>
 		<!--================可攜帶性================-->
 		<thingCategories>
@@ -66,7 +85,8 @@
 			<ComponentIndustrial>2</ComponentIndustrial>
 			<ReinforcedBarrel>1</ReinforcedBarrel>
 		</costList>
-			<interactionCellOffset>(1,0,0)</interactionCellOffset><!--操作點在右方-->
+		<interactionCellOffset>(1,0,0)</interactionCellOffset>
+		<!--操作點在右方-->
 		<statBases>
 			<MaxHitPoints>250</MaxHitPoints>
 			<Flammability>0</Flammability>
@@ -76,22 +96,22 @@
 		</statBases>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<building>
-		  <turretGunDef>FT_Artillery_Mortar</turretGunDef>
-		  <turretTopDrawSize>1.5</turretTopDrawSize>
-		  <turretBurstWarmupTime>2.0</turretBurstWarmupTime>
-		  <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+			<turretGunDef>FT_Artillery_Mortar</turretGunDef>
+			<turretTopDrawSize>1.5</turretTopDrawSize>
+			<turretBurstWarmupTime>2.0</turretBurstWarmupTime>
+			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
 		</building>
 		<researchPrerequisites>
-		  <li>Mortars</li>
+			<li>Mortars</li>
 		</researchPrerequisites>
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
 			<li>PlaceWorker_TurretTop</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
-	  </ThingDef>
-	
-	  <ThingDef ParentName="BaseWeaponTurret">
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>FT_Artillery_Mortar</defName>
 		<label>mortar</label>
 		<description>A powerful indirect-firing weapon with ability to rapid deploy.</description>
@@ -100,10 +120,10 @@
 			<texPath>FT_MortarGun</texPath>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
-        <statBases>
+		<statBases>
 			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
 			<SightsEfficiency>0.5</SightsEfficiency>
-        </statBases>
+		</statBases>
 		<weaponTags>
 			<li>TurretGun</li>
 		</weaponTags>
@@ -134,7 +154,7 @@
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>1</magazineSize>
 				<reloadTime>2</reloadTime>
-				<ammoSet>AmmoSet_60mmMortarShell</ammoSet>  
+				<ammoSet>AmmoSet_60mmMortarShell</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiUseBurstMode>FALSE</aiUseBurstMode>
@@ -187,7 +207,7 @@
 				<burstAngle>180</burstAngle>
 				<fleckSizeRange>(2,4)</fleckSizeRange>
 				<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
-				<burstOffsetRange>(0,3)</burstOffsetRange> 
+				<burstOffsetRange>(0,3)</burstOffsetRange>
 				<rangeScaleFactor>(1,0.1)</rangeScaleFactor>
 			</li>
 			<li Class="Fortification.CompProperties_CastFlecker">
@@ -198,12 +218,12 @@
 				<burstAngle>0</burstAngle>
 				<fleckSizeRange>(1,2)</fleckSizeRange>
 				<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
-				<burstOffsetRange>(1,3)</burstOffsetRange> 
+				<burstOffsetRange>(1,3)</burstOffsetRange>
 			</li>
 		</comps>
 	</ThingDef>
-	
-<!--測距儀-->
+
+	<!--測距儀-->
 	<ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
 		<defName>FTC_SpotterLight_Turret</defName>
 		<label>mobile artillery spotter</label>
@@ -222,7 +242,8 @@
 			<Steel>175</Steel>
 			<ComponentIndustrial>8</ComponentIndustrial>
 		</costList>
-		<interactionCellOffset>(0,0,-1)</interactionCellOffset><!--操作點在下方-->
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<!--操作點在下方-->
 		<statBases>
 			<MaxHitPoints>250</MaxHitPoints>
 			<Flammability>0</Flammability>
@@ -234,29 +255,29 @@
 		</statBases>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<building>
-    	  	<ai_combatDangerous>false</ai_combatDangerous>
+			<ai_combatDangerous>false</ai_combatDangerous>
 			<turretBurstWarmupTime>2.0</turretBurstWarmupTime>
 			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
-			<turretTopDrawSize>1.5</turretTopDrawSize>	
+			<turretTopDrawSize>1.5</turretTopDrawSize>
 			<turretGunDef>FTC_SpotterLight_Gun</turretGunDef>
 		</building>
 		<researchPrerequisites>
-		  <li>Mortars</li>
+			<li>Mortars</li>
 		</researchPrerequisites>
 		<placeWorkers>
 			<li>PlaceWorker_TurretTop</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
-	  </ThingDef>
-	
-  	<ThingDef ParentName="BaseWeaponTurret">
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>FTC_SpotterLight_Gun</defName>
 		<label>mobile artillery spotter</label>
 		<description>A manned artillery scope with radio. Useful to coordinate artillery strikes.\n\nUsing this on a target will mark it, removing the indirect fire penalty from any artillery pieces targeting it. Additionally, any directed fire will use the aiming accuracy and efficiency of the spotter, rather than the artillery operator to determine final accuracy.</description>
-	    <graphicData>
+		<graphicData>
 			<texPath>ArtilleryRangeFinder_Gun</texPath>
 			<drawSize>1</drawSize>
-  		</graphicData>
+		</graphicData>
 		<statBases>
 			<SightsEfficiency>5.0</SightsEfficiency>
 			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
@@ -280,6 +301,6 @@
 				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
 			</li>
 		</verbs>
-  	</ThingDef>
-	
-</Defs>	
+	</ThingDef>
+
+</Defs>

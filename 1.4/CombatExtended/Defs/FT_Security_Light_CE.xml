@@ -238,7 +238,7 @@
 			<hasStandardCommand>True</hasStandardCommand>
 			<defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
 			<warmupTime>1</warmupTime>
-			<range>80</range>
+			<range>86</range>
 			<burstShotCount>6</burstShotCount>
 			<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
 			<soundCast>Shot_Autocannon</soundCast>
@@ -329,7 +329,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
 				<warmupTime>1</warmupTime>
-				<range>80</range>
+				<range>86</range>
 				<burstShotCount>4</burstShotCount>
 				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
 				<soundCast>Shot_Autocannon</soundCast>
@@ -428,7 +428,7 @@
 			<defaultProjectile>Bullet_105x607mmRCannonShell_HEAT</defaultProjectile>
 			<warmupTime>2</warmupTime>
 			<minRange>3.9</minRange>
-			<range>75</range>
+			<range>80</range>
 			<soundCast>FT_CannonLaunchA</soundCast>
 			<soundCastTail>GunTail_Heavy</soundCastTail>
 			<muzzleFlashScale>20</muzzleFlashScale>

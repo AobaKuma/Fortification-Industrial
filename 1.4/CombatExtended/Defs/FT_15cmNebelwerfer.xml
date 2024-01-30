@@ -98,18 +98,6 @@
 					<Fragment_Small>30</Fragment_Small>
 				</fragments>
 			</li>
-			<li Class="AOBAUtilities.CompProperties_Flecker">
-				<fleck>FT_TrailSmoke</fleck>
-				<fleckSize>0.5</fleckSize>
-			</li>
-			<li Class="AOBAUtilities.CompProperties_Flecker">
-				<fleck>FT_ExhaustFlame</fleck>
-				<fleckSize>0.5</fleckSize>
-			</li>
-			<li Class="AOBAUtilities.CompProperties_Flecker">
-				<fleck>FT_ExhaustFlameGlow</fleck>
-				<fleckSize>0.5</fleckSize>
-			</li>
 		</comps>
 	</ThingDef>
 
@@ -142,20 +130,6 @@
 			</shellingProps>
 			<gravityFactor>50</gravityFactor>
 		</projectile>
-		<comps>
-			<li Class="AOBAUtilities.CompProperties_Flecker">
-				<fleck>FT_TrailSmoke</fleck>
-				<fleckSize>0.5</fleckSize>
-			</li>
-			<li Class="AOBAUtilities.CompProperties_Flecker">
-				<fleck>FT_ExhaustFlame</fleck>
-				<fleckSize>0.5</fleckSize>
-			</li>
-			<li Class="AOBAUtilities.CompProperties_Flecker">
-				<fleck>FT_ExhaustFlameGlow</fleck>
-				<fleckSize>0.5</fleckSize>
-			</li>
-		</comps>
 	</ThingDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base130mmType63">
@@ -180,20 +154,6 @@
 			</shellingProps>
 			<gravityFactor>50</gravityFactor>
 		</projectile>
-		<comps>
-			<li Class="AOBAUtilities.CompProperties_Flecker">
-				<fleck>FT_TrailSmoke</fleck>
-				<fleckSize>0.5</fleckSize>
-			</li>
-			<li Class="AOBAUtilities.CompProperties_Flecker">
-				<fleck>FT_ExhaustFlame</fleck>
-				<fleckSize>0.5</fleckSize>
-			</li>
-			<li Class="AOBAUtilities.CompProperties_Flecker">
-				<fleck>FT_ExhaustFlameGlow</fleck>
-				<fleckSize>0.5</fleckSize>
-			</li>
-		</comps>
 	</ThingDef>
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base130mmType63"
@@ -225,20 +185,6 @@
 			</shellingProps>
 			<gravityFactor>50</gravityFactor>
 		</projectile>
-		<comps>
-			<li Class="AOBAUtilities.CompProperties_Flecker">
-				<fleck>FT_TrailSmoke</fleck>
-				<fleckSize>0.5</fleckSize>
-			</li>
-			<li Class="AOBAUtilities.CompProperties_Flecker">
-				<fleck>FT_ExhaustFlame</fleck>
-				<fleckSize>0.5</fleckSize>
-			</li>
-			<li Class="AOBAUtilities.CompProperties_Flecker">
-				<fleck>FT_ExhaustFlameGlow</fleck>
-				<fleckSize>0.5</fleckSize>
-			</li>
-		</comps>
 	</ThingDef>
 
 	<ThingDef Name="15cmNbW_Shell_Toxic_Releasing_Base" Abstract="True" MayRequire="Ludeon.RimWorld.Biotech">

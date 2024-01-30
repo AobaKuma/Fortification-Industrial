@@ -213,7 +213,7 @@
 					<Fragment_FT_ShrapnelPellet>122</Fragment_FT_ShrapnelPellet>
 				</fragments>
 				<!--<fragAngleRange>-25~-10</fragAngleRange>-->
-				<fragXZAngleRange>-10~10</fragXZAngleRange>
+				<fragXZAngleRange>-15~15</fragXZAngleRange>
 			</li>
 		</comps>
 		<modExtensions>

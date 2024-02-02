@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FT_PowerPole.label>電線杆</FT_PowerPole.label>
+  <FT_PowerPole.description>混凝土電線杆,使用錫或銅電纜來傳輸電流. 使用“鏈接”按鈕連接到其他電源杆,或選擇多個電源杆並按“自動鏈接”按鈕.</FT_PowerPole.description>
+  <FT_PowerPole_Blueprint.label>電線杆(藍圖)</FT_PowerPole_Blueprint.label>
+  <FT_PowerPole_Blueprint_Install.label>電線杆(藍圖)</FT_PowerPole_Blueprint_Install.label>
+  <FT_PowerPole_Frame.label>電線杆(建造中)</FT_PowerPole_Frame.label>
+  <FT_PowerPole_Frame.description>混凝土電線杆,使用錫或銅電纜來傳輸電流. 使用“鏈接”按鈕連接到其他電源杆,或選擇多個電源杆並按“自動鏈接”按鈕.</FT_PowerPole_Frame.description>
+
+
+  <!-- 含路燈 -->
+
+  <FT_PowerPole_Lamp.label>帶燈電線杆</FT_PowerPole_Lamp.label>
+  <FT_PowerPole_Lamp.description>混凝土電線杆,使用錫或銅電纜來傳輸電流. 使用“鏈接”按鈕連接到其他電源杆,或選擇多個電源杆並按“自動鏈接”按鈕.</FT_PowerPole_Lamp.description>
+  <FT_PowerPole_Lamp_Blueprint.label>帶燈電線杆(藍圖)</FT_PowerPole_Lamp_Blueprint.label>
+  <FT_PowerPole_Lamp_Blueprint_Install.label>帶燈電線杆(藍圖)</FT_PowerPole_Lamp_Blueprint_Install.label>
+  <FT_PowerPole_Lamp_Frame.label>帶燈電線杆(建造中)</FT_PowerPole_Lamp_Frame.label>
+  <FT_PowerPole_Lamp_Frame.description>混凝土電線杆,使用錫或銅電纜來傳輸電流. 使用“鏈接”按鈕連接到其他電源杆,或選擇多個電源杆並按“自動鏈接”按鈕.</FT_PowerPole_Lamp_Frame.description>
+
+  <FT_DistributionBox.label>變電箱(WIP)</FT_DistributionBox.label>
+  <FT_DistributionBox.description>安裝在混凝土平臺上的金屬變壓器接線盒,目前並無功能.</FT_DistributionBox.description>
+
+
+</LanguageData>

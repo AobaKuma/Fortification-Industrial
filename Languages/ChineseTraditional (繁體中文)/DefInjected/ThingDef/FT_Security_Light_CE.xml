@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: autocannon -->
+  <FT_AutoCannon.label>自動機砲</FT_AutoCannon.label>
+  <!-- EN: A Tripod with high caliber machine gun mounted. Requires steel to refurbish its barrels after heavy use.it needs a pawn to man on it to operate. -->
+  <FT_AutoCannon.description>安裝在三角架上的大口徑機砲.大量射擊後需消耗鋼鐵來更換砲管</FT_AutoCannon.description>
+  
+  <!-- EN: autocannon -->
+  <FT_Gun_Autocannon.label>自動機砲</FT_Gun_Autocannon.label>
+  <!-- EN: A self-loading large-bore cannon designed to attach to a turret. -->
+  <FT_Gun_Autocannon.description>一種大口徑的導氣式機砲,被廣泛的使用在工業世界的裝甲載具與航空器上.</FT_Gun_Autocannon.description>
+  <!-- EN: autocannon -->
+  <FT_Gun_Autocannon.verbs.Verb_ShootCE.label>自動機砲</FT_Gun_Autocannon.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: autocannon -->
+  <FT_Gun_Autocannon_Twin.label>聯裝機砲</FT_Gun_Autocannon_Twin.label>
+  <!-- EN: A self-loading large-bore cannon designed to attach to a turret. -->
+  <FT_Gun_Autocannon_Twin.description>一種大口徑的導氣式機砲,被廣泛的使用在工業世界的裝甲載具與航空器上.</FT_Gun_Autocannon_Twin.description>
+  <!-- EN: autocannon -->
+  <FT_Gun_Autocannon_Twin.verbs.Verb_ShootCE.label>聯裝機砲</FT_Gun_Autocannon_Twin.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: machine gun 4x mounted -->
+  <FT_Gun_QuadMG.label>四聯機槍</FT_Gun_QuadMG.label>
+  <!-- EN: what can be better than A fully machine gun be mounted on a turret ? Four of them! -->
+  <FT_Gun_QuadMG.description>有什麼能比一挺機槍來的爽快呢?,四挺!</FT_Gun_QuadMG.description>
+  <!-- EN: machine gun 4x mounted -->
+  <FT_Gun_QuadMG.verbs.Verb_ShootCE.label>四聯機槍</FT_Gun_QuadMG.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: recoilless cannon -->
+  <FT_Gun_Recoilless.label>無後座力砲</FT_Gun_Recoilless.label>
+  <!-- EN: A Recoilless cannon designed to snipe the heavy-armed target in range. -->
+  <FT_Gun_Recoilless.description>一挺設計用於反裝甲目標的短距無後座力砲.</FT_Gun_Recoilless.description>
+  <!-- EN: recoilless cannon -->
+  <FT_Gun_Recoilless.verbs.Verb_ShootCE.label>無後座力砲</FT_Gun_Recoilless.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: Quad Machine gun -->
+  <FT_Maxim4M.label>聯裝機槍</FT_Maxim4M.label>
+  <!-- EN: A Tripod with Quadruple machine gun mounted so it Have a good firepower continuity,need a pawn man on it to operate. Requires steel to refurbish its barrels after heavy use. -->
+  <FT_Maxim4M.description>安裝在三角架上的四聯裝機槍,有著良好的火力持續性.大量射擊後需消耗鋼鐵來更換砲管.</FT_Maxim4M.description>
+  
+  <!-- EN: recoilless gun -->
+  <FT_RecoillessGun.label>無後座力砲</FT_RecoillessGun.label>
+  <!-- EN: Tripod with Recoilless gun mounted. A light-weighted soloution of anti armour operation, Requires ReinforcedBarrel to refurbish its barrels after heavy use. also it needs a pawn to man on it to operate. But notice, do not use it indoors!! -->
+  <FT_RecoillessGun.description>安裝在三角架上的無後座力砲,對於野戰來說比反坦克炮還要易於攜帶,頻繁使用後需要加固砲管來維護.另外請注意,千萬不要在室內使用它.</FT_RecoillessGun.description>
+  
+  <!-- EN: 20mm anti-air gun -->
+  <FT_TurretAutoCannon_Twin.label>拖曳式機炮</FT_TurretAutoCannon_Twin.label>
+  <!-- EN: A rapid-fire cannon with capability to shoot down aircraft. -->
+  <FT_TurretAutoCannon_Twin.description>20x138B口徑的防空機砲，由拖曳式底盤搭載提供相對穩定的射擊環境.</FT_TurretAutoCannon_Twin.description>
+  
+</LanguageData>

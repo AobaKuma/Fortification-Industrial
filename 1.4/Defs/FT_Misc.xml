@@ -173,6 +173,7 @@
     <defName>FT_AntennaTower</defName>
     <label>Antenna Tower</label>
     <thingClass>Building_OrbitalTradeBeacon</thingClass>
+    <tickerType>Normal</tickerType>
     <graphicData>
       <texPath>FT_Antenna</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -193,7 +194,7 @@
       <Flammability>0.0</Flammability>
     </statBases>
     <size>(2,2)</size>
-    <description>A bigger version of orbital trade beacon,(WIP), will have more function in the future.</description>
+    <description>A bigger version of orbital trade beacon, will have more function in the future.</description>
     <drawerType>MapMeshAndRealTime</drawerType>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <fillPercent>0.70</fillPercent>
@@ -204,10 +205,20 @@
     <building>
       <destroySound>BuildingDestroyed_Metal_Big</destroySound>
     </building>
+    <specialDisplayRadius MayRequire="ludeon.rimworld.biotech">25</specialDisplayRadius>
     <comps>
+      <li Class="AOBAUtilities.CompProperties_Effector">
+        <Effecter>AncientExostriderRemainsPulse</Effecter>
+        <effecterOffset>(0,1,6)</effecterOffset>
+      </li>
+      <li Class="AOBAUtilities.CompProperties_IncidentMaker">
+        <Incident>OrbitalTraderArrival</Incident>
+        <CooldownTicks>720000</CooldownTicks>
+        <WarmupTicks>36000</WarmupTicks>
+      </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>100</basePowerConsumption>
+        <basePowerConsumption>500</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
         <soundAmbientProducingPower>ScannerLongRangeMineral_Ambience</soundAmbientProducingPower>
       </li>

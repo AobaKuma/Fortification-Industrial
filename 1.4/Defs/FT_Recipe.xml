@@ -232,14 +232,6 @@
         </filter>
         <count>20</count>
       </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>WoodLog</li>
-          </thingDefs>
-        </filter>
-        <count>5</count>
-      </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>

@@ -1,15 +1,18 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
-  <!-- 化學工作臺 -->
-
+  
+  <!-- EN: Operate Machine -->
   <FT_Operate.label>Operate Machine</FT_Operate.label>
-  <FT_Operate.verb>Operate</FT_Operate.verb>
+  <!-- EN: Operating at -->
   <FT_Operate.gerund>Operating at</FT_Operate.gerund>
-
+  <!-- EN: Operate -->
+  <FT_Operate.verb>Operate</FT_Operate.verb>
+  
+  <!-- EN: Synthesizing Compound -->
   <FT_Synthesizing.label>Synthesizing Compound</FT_Synthesizing.label>
-  <FT_Synthesizing.verb>smith</FT_Synthesizing.verb>
+  <!-- EN: synthesizing at -->
   <FT_Synthesizing.gerund>synthesizing at</FT_Synthesizing.gerund>
-
-
+  <!-- EN: smith -->
+  <FT_Synthesizing.verb>smith</FT_Synthesizing.verb>
+  
 </LanguageData>

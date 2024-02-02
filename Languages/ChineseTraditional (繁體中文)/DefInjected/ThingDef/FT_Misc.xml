@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Antenna Tower -->
+  <FT_AntennaTower.label>無線電訊號塔</FT_AntennaTower.label>
+  <!-- EN: A bigger version of orbital trade beacon,(WIP), will have more function in the future. -->
+  <FT_AntennaTower.description>一個放大版的軌道交易信標.</FT_AntennaTower.description>
+  
+  <!-- EN: E.N.I.A.C. -->
+  <FT_ENIAC.label>伊尼亞克-真空管電腦</FT_ENIAC.label>
+  <!-- EN: Electronic Numerical Integrator And Computer Or simply call it Eniac, big and highly consume power energy, Increases research speed when placed near hi-tech research bench and unlocks new research projects from reading the Disk.\n	Each research bench can connect to 4 ENIAC. -->
+  <FT_ENIAC.description>電子數值積分器電腦或簡單稱為伊尼亞克,體積大且耗電量驚人,放置在研究台附近時可提高研究速度,並通過讀取磁盤解鎖來自奈良重工的研究項目.\n每個研究台可以連接到 4 台伊尼亞克.</FT_ENIAC.description>
+  
+  <!-- EN: hydrant -->
+  <FT_FirefoamPopper.label>消防栓</FT_FirefoamPopper.label>
+  <!-- EN: When it detects fire, this safety device pops and sprays a fire-retardant foam in a circular field around itself. Can also be triggered manually. -->
+  <FT_FirefoamPopper.description>紅色金屬消防栓,他基本上就是個更適合街道放置的一次性消防滅火裝置.</FT_FirefoamPopper.description>
+  <!-- EN: Trigger {0_label} -->
+  <FT_FirefoamPopper.comps.CompUsable.useLabel>開閥{0_label}</FT_FirefoamPopper.comps.CompUsable.useLabel>
+  
+  <!-- EN: mobile chemfuel generator -->
+  <FT_FuelGenerator.label>可攜式化合燃料發電機</FT_FuelGenerator.label>
+  <!-- EN: Produces power by consuming chemfuel. Must be periodically refueled by hand. -->
+  <FT_FuelGenerator.description>可以移動的燃料發電機.</FT_FuelGenerator.description>
+  
+  <!-- EN: Radio terminal -->
+  <FT_Radio.label>無線電終端</FT_Radio.label>
+  <!-- EN: Allows radio contact with other factions and orbital traders,also when interrogating the frequency band, some interference that may be precious metals can be located,(WIP), will have more function in the future. -->
+  <FT_Radio.description>允許透過無線電通訊聯絡其他陣營與軌道商人,此外透過對影響訊號的頻率分辨,可以定位到可能的稀有金屬位置,(完整功能尚未完成,將來會有更多功能).</FT_Radio.description>
+  
+  <!-- UNUSED -->
+  <FT_Radio.comps.4.useLabel>Summon diabolus threat</FT_Radio.comps.4.useLabel>
+  
+</LanguageData>

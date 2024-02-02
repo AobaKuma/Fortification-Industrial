@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Concrete Barrier -->
+  <FT_Barrier.label>混凝土路障</FT_Barrier.label>
+  <!-- EN: a solid concrete barrier that can hinder vehicles and provide cover -->
+  <FT_Barrier.description>一個實心的混凝土障礙物,可以用於阻滯載具以及提供掩護.</FT_Barrier.description>
+  
+  <!-- EN: Diagonal Concrete Barrier -->
+  <FT_BarrierDiagonal.label>對角混凝土路障</FT_BarrierDiagonal.label>
+  <!-- EN: a solid concrete barrier that can hinder vehicles and provide cover. -->
+  <FT_BarrierDiagonal.description>一個實心的混凝土障礙物,可以用於阻滯載具以及提供掩護.</FT_BarrierDiagonal.description>
+  
+  <!-- EN: Military Sandbag -->
+  <FT_Sandbag.label>軍用沙包</FT_Sandbag.label>
+  <!-- EN: Bags of locally-sourced dirt or sand, stacked for use as cover. they are\n      well-stacked so it is more durable. -->
+  <FT_Sandbag.description>就地填充內容物的掩體沙包袋,用作掩體,另外他們被疊得很密實因此更加的耐用.</FT_Sandbag.description>
+  
+  <!-- EN: Tank Trap -->
+  <FT_TankTrap.label>反坦克龍牙</FT_TankTrap.label>
+  <!-- EN: A solid concrete pillar that can hinder vehicles. -->
+  <FT_TankTrap.description>用於阻滯載具的實心混凝土柱.</FT_TankTrap.description>
+  
+  <!-- EN: Tetrapods -->
+  <FT_Tetrapods.label>消波塊</FT_Tetrapods.label>
+  <!-- EN: A solid concrete pillar designed to lay on the coastline -->
+  <FT_Tetrapods.description>外型奇特的混凝土結構，也許有一天殖民者可以找到它的用途</FT_Tetrapods.description>
+  
+  <!-- EN: Military sandbag wall -->
+  <FT_WallSandbag.label>軍用沙包牆</FT_WallSandbag.label>
+  <!-- EN: Bags of locally-sourced dirt or sand, stacked for use as wall. they are\n      well-stacked so it is more durable. -->
+  <FT_WallSandbag.description>就地填充內容物的掩體沙包袋,用作牆體,另外他們被疊得很密實因此更加的耐用.</FT_WallSandbag.description>
+  
+</LanguageData>

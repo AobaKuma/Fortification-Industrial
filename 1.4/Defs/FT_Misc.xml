@@ -31,7 +31,7 @@
     <blockWind>true</blockWind>
     <fillPercent>1.0</fillPercent>
     <rotatable>true</rotatable>
-	<minifiedDef>MinifiedThing</minifiedDef>
+	  <minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories>
       <li>BuildingsSecurity</li>
     </thingCategories>
@@ -194,7 +194,7 @@
       <Flammability>0.0</Flammability>
     </statBases>
     <size>(2,2)</size>
-    <description>A bigger version of orbital trade beacon, will have more function in the future.</description>
+    <description>A bigger orbital trade beacon that can only place outside. can attract orbital traders so they can navigate to this planet.</description>
     <drawerType>MapMeshAndRealTime</drawerType>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <fillPercent>0.70</fillPercent>
@@ -208,11 +208,13 @@
     <specialDisplayRadius MayRequire="ludeon.rimworld.biotech">25</specialDisplayRadius>
     <comps>
       <li Class="AOBAUtilities.CompProperties_Effector">
-        <Effecter>AncientExostriderRemainsPulse</Effecter>
-        <effecterOffset>(0,1,6)</effecterOffset>
+        <Effecter>FT_SignalPluse</Effecter>
+        <effecterOffset>(1,1,6)</effecterOffset>
       </li>
       <li Class="AOBAUtilities.CompProperties_IncidentMaker">
         <Incident>OrbitalTraderArrival</Incident>
+        <iconPathActive>FT_AntennaTrigger</iconPathActive>
+        <iconPathDeactive>FT_AntennaDisable</iconPathDeactive>
         <CooldownTicks>720000</CooldownTicks>
         <WarmupTicks>36000</WarmupTicks>
       </li>
@@ -387,30 +389,27 @@
       </damageData>
     </graphicData>
     <comps>
-      <li Class="CompProperties_Explosive">
-        <explosiveRadius>9.9</explosiveRadius>
-        <explosiveDamageType>Extinguish</explosiveDamageType>
-        <startWickHitPointsPercent>-1</startWickHitPointsPercent>
-        <startWickOnDamageTaken>
-          <li>Flame</li>
-        </startWickOnDamageTaken>
-        <postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef>
-        <postExplosionSpawnChance>1</postExplosionSpawnChance>
-        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
-        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-        <explosionEffect>ExtinguisherExplosion</explosionEffect>
-        <explosionSound>Explosion_FirefoamPopper</explosionSound>
-      </li>
-      <li Class="CompProperties_Usable">
+      <li Class="AOBAUtilities.CompProperties_FueledUsable">
         <useJob>TriggerObject</useJob>
         <useLabel>Trigger {0_label}</useLabel>
+        <fuelCostsPerUse>10</fuelCostsPerUse>
       </li>
       <li Class="CompProperties_UseEffect">
-        <compClass>CompUseEffect_StartWick</compClass>
+        <compClass>AOBAUtilities.CompUseEffect_Extinguish</compClass>
       </li>
-      <li Class="CompProperties_ProximityFuse">
-        <target>Fire</target>
-        <radius>3</radius>
+      <li Class="CompProperties_Refuelable">
+        <fuelCapacity>50.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </fuelFilter>
+        <showFuelGizmo>true</showFuelGizmo>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+        <initialConfigurableTargetFuelLevel>30</initialConfigurableTargetFuelLevel>
+        <autoRefuelPercent>0.5</autoRefuelPercent>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
       </li>
     </comps>
     <tickerType>Normal</tickerType>
@@ -431,14 +430,13 @@
       <Steel>75</Steel>
       <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
-    <specialDisplayRadius>9.9</specialDisplayRadius>
+    <specialDisplayRadius>4.9</specialDisplayRadius>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <pathCost>30</pathCost>
     <passability>PassThroughOnly</passability>
     <designationCategory>Misc</designationCategory>
     <uiOrder>2070</uiOrder>
     <rotatable>false</rotatable>
-    <designationHotKey>Misc7</designationHotKey>
     <researchPrerequisites>
       <li>Firefoam</li>
     </researchPrerequisites>

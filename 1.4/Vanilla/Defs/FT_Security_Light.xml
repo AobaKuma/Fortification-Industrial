@@ -601,8 +601,8 @@
         <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>
         <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
         <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-        <initialConfigurableTargetFuelLevel>960</initialConfigurableTargetFuelLevel>
-        <autoRefuelPercent>0.1</autoRefuelPercent>
+        <initialConfigurableTargetFuelLevel>400</initialConfigurableTargetFuelLevel>
+        <autoRefuelPercent>0.5</autoRefuelPercent>
       </li>
     </comps>
     <costList>
@@ -718,7 +718,7 @@
         <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>
         <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
         <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-        <initialConfigurableTargetFuelLevel>120</initialConfigurableTargetFuelLevel>
+        <initialConfigurableTargetFuelLevel>60</initialConfigurableTargetFuelLevel>
         <autoRefuelPercent>0.1</autoRefuelPercent>
       </li>
     </comps>
@@ -801,7 +801,7 @@
         <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>
         <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
 				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
-		    <initialConfigurableTargetFuelLevel>20</initialConfigurableTargetFuelLevel>
+		    <initialConfigurableTargetFuelLevel>0</initialConfigurableTargetFuelLevel>
 		    <autoRefuelPercent>0.1</autoRefuelPercent>
       </li>
     </comps>
@@ -909,7 +909,7 @@
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
         <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
-		<forcedMissRadius>0.1</forcedMissRadius>
+		    <forcedMissRadius>0.1</forcedMissRadius>
       </li>
     </verbs>
   </ThingDef>

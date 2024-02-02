@@ -88,4 +88,49 @@
       <collide>true</collide>
     </mote>
   </ThingDef>
+
+  <EffecterDef>
+    <defName>FT_SignalPluse</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+        <fleckDef>FT_SignalPluse</fleckDef>
+        <ticksBetweenMotes>150</ticksBetweenMotes>
+        <spawnLocType>OnSource</spawnLocType>
+        <positionOffset>(0, 0, 0)</positionOffset>
+        <rotationRate>1</rotationRate>
+      </li>
+    </children>
+  </EffecterDef>
+  
+  <FleckDef ParentName="FleckBase_RandomGraphic">
+    <defName>FT_SignalPluse</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <solidTime>0.7</solidTime>
+    <fadeOutTime>0.5</fadeOutTime>
+    <randomGraphics>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>SignalPluse/A</texPath>
+        <shaderType>MoteGlow</shaderType>
+        <color>(1, 0, 0, 0.5)</color>
+        <drawSize>3</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>SignalPluse/B</texPath>
+        <shaderType>MoteGlow</shaderType>
+        <color>(1, 0, 0, 0.5)</color>
+        <drawSize>3</drawSize>
+      </li>
+      <li>
+        <graphicClass>Graphic_Fleck</graphicClass>
+        <texPath>SignalPluse/C</texPath>
+        <shaderType>MoteGlow</shaderType>
+        <color>(1, 0, 0, 0.5)</color>
+        <drawSize>3</drawSize>
+      </li>
+    </randomGraphics>
+  </FleckDef>
 </Defs>

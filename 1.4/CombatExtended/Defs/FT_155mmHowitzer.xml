@@ -44,7 +44,7 @@
 			<dropsCasings>true</dropsCasings>
 			<casingMoteDefname>Fleck_BigShell</casingMoteDefname>
 			<casingFilthDefname>Filth_CannonAmmoCasings</casingFilthDefname>
-			<gravityFactor>30</gravityFactor>
+			<gravityFactor>5</gravityFactor>
 			<shellingProps>
 				<tilesPerTick>0.12</tilesPerTick>
 				<range>60</range>

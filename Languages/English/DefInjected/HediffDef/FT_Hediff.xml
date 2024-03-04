@@ -1,14 +1,21 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
+  
+  <!-- EN: shell shock -->
   <FT_ShellShock.label>shell shock</FT_ShellShock.label>
+  <!-- EN: a psychological disturbance caused by prolonged exposure to active warfare, especially being under bombardment -->
   <FT_ShellShock.description>Shell shock is a mental disorder characterized by symptoms such as fatigue, tremor, confusion, nightmares and impaired sight and hearing. Often diagnosed when a soldier is unable to function and no obvious cause can be identified.</FT_ShellShock.description>
-  <FT_ShellShock.stages.0.label>initial</FT_ShellShock.stages.0.label>
-  <FT_ShellShock.stages.1.label>initial</FT_ShellShock.stages.1.label>
-  <FT_ShellShock.stages.2.label>minor</FT_ShellShock.stages.2.label>
-  <FT_ShellShock.stages.3.label>serious</FT_ShellShock.stages.3.label>
-  <FT_ShellShock.stages.4.label>catatonic</FT_ShellShock.stages.4.label>
-  <FT_ShellShock.stages.5.label>extreme</FT_ShellShock.stages.5.label>
-
-
+  <!-- EN: initial -->
+  <FT_ShellShock.stages.initial-0.label>initial</FT_ShellShock.stages.initial-0.label>
+  <!-- EN: initial -->
+  <FT_ShellShock.stages.initial-1.label>initial</FT_ShellShock.stages.initial-1.label>
+  <!-- EN: minor -->
+  <FT_ShellShock.stages.minor.label>minor</FT_ShellShock.stages.minor.label>
+  <!-- EN: serious -->
+  <FT_ShellShock.stages.serious.label>serious</FT_ShellShock.stages.serious.label>
+  <!-- EN: catatonic -->
+  <FT_ShellShock.stages.catatonic.label>catatonic</FT_ShellShock.stages.catatonic.label>
+  <!-- EN: extreme -->
+  <FT_ShellShock.stages.extreme.label>extreme</FT_ShellShock.stages.extreme.label>
+  
 </LanguageData>

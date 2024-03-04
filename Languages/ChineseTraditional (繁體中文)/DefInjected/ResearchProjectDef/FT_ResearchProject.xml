@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: chemistry -->
+  <FT_Chemistry.label>化學</FT_Chemistry.label>
+  <!-- EN: Build Chemistry Table that can artificially synthesize compounds such as Neutroamine. -->
+  <FT_Chemistry.description>解鎖化學製造桌,能夠從肉類中人工提取並合成中性胺.</FT_Chemistry.description>
+  
+  <!-- EN: Concrete -->
+  <FT_Concrete.label>混凝土</FT_Concrete.label>
+  <!-- EN: crush and smelt stony material to concrete. -->
+  <FT_Concrete.description>解鎖將石料加工成混凝土用於建築與地板鋪設.</FT_Concrete.description>
+  
+  <!-- EN: ENIAC -->
+  <FT_ENIAC.label>真空管電腦</FT_ENIAC.label>
+  <!-- EN: [Interstellar Industries Complex Nara Terminal]\n	[ version="1.0"] [ encoding="utf-8" ]\nLoading....\n\n[To user]\nBeing able to build ENIAC and read this information means that you or your civilization already has the minimum requirements for the realization of the technology in the disc...\n\nOS>:_ -->
+  <FT_ENIAC.description>真空管電子數值計算機,雖然算不上是最好的但可以說是電子科技的里程碑.</FT_ENIAC.description>
+  
+  <!-- EN: heavy artillery -->
+  <FT_HeavyArtillery.label>重型火砲</FT_HeavyArtillery.label>
+  <!-- EN: Using ENIAC to calculate the artillery ballistics table, unlock the design of heavy artilleries. -->
+  <FT_HeavyArtillery.description>使用伊尼亞克計算火炮彈道表,解鎖重型火砲的設計.</FT_HeavyArtillery.description>
+  
+  <!-- EN: Industrial Cannon -->
+  <FT_IndustrialCannon.label>工業火炮</FT_IndustrialCannon.label>
+  <!-- EN: Using reinforced barrel to build AT and AA Guns. -->
+  <FT_IndustrialCannon.description>解鎖使用加固砲管建造防空與反坦克炮.</FT_IndustrialCannon.description>
+  
+  <!-- EN: lathe -->
+  <FT_Lathe.label>車床</FT_Lathe.label>
+  <!-- EN: Build lathe for early-stage compoment and reinforced barrel making. -->
+  <FT_Lathe.description>解鎖車床用於早期工業的零件與炮管生產.</FT_Lathe.description>
+  
+</LanguageData>

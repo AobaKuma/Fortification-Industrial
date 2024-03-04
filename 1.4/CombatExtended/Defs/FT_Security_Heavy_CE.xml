@@ -271,7 +271,7 @@
 				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
 				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_FT_155mmHowitzerShell_HE</defaultProjectile>
+				<defaultProjectile>Bullet_FT_105mmHowitzerShell_HE</defaultProjectile>
 				<warmupTime>4</warmupTime>
 				<minRange>50</minRange>
 				<range>1000</range>
@@ -290,7 +290,7 @@
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>1</magazineSize>
 				<reloadTime>7.5</reloadTime>
-				<ammoSet>AmmoSet_FT_155mmHowitzerShell</ammoSet>
+				<ammoSet>AmmoSet_FT_105mmHowitzerShell</ammoSet>
 			</li>
 			<li Class="Fortification.CompProperties_CastFlecker">
 				<fleck>DustPuffThick</fleck>

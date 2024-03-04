@@ -150,9 +150,10 @@
     </researchPrerequisites>
   </ThingDef>
 
-  <ThingDef ParentName="BuildingBase" MayRequire="oskarpotocki.vfe.mechanoid">
+  <ThingDef ParentName="BuildingBase">
     <defName>FT_DistributionBox</defName>
-    <label>distribution box(wip)</label>
+    <label>distribution box</label>
+    <thingClass>AOBAUtilities.Building_TerminalBox</thingClass>
 	  <description>A metal box on a concrete foundation connects to power networks via conduit to extend the range at which electronics can connect to said conduits. (this feature still wip, so it just a decoration)</description>
     <graphicData>
       <texPath>DistributionBox/building</texPath>
@@ -190,19 +191,22 @@
         <basePowerConsumption>10</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable">
-		</li>
+		  </li>
       <li Class="CompProperties_Breakdownable"/>
-	  <li>
-			<compClass>VFEMech.CompPylon</compClass>
-	  </li>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>0</useDuration>
+        <warmupMote>Mote_ResurrectAbility</warmupMote>
+      </li>
+      <li Class="CompProperties_Targetable">
+        <compClass>AOBAUtilities.CompTargetable_PowerBuilding</compClass>
+      </li>
     </comps>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <pathCost>14</pathCost>
     <designationCategory>Power</designationCategory>
     <rotatable>false</rotatable>
-	  <placeWorkers>
-      <li>VFEMech.PlaceWorker_OnPowerConduit</li>
-    </placeWorkers>
     <researchPrerequisites>
       <li>Electricity</li>
     </researchPrerequisites>

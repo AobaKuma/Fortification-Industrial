@@ -271,7 +271,7 @@
           <recoilAmount>1.26</recoilAmount>
           <verbClass>CombatExtended.Verb_ShootCE</verbClass>
           <hasStandardCommand>True</hasStandardCommand>
-          <defaultProjectile>Bullet_20x110mmHispano_AP</defaultProjectile>
+          <defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
           <warmupTime>4.3</warmupTime>
           <range>78</range>
           <burstShotCount>6</burstShotCount>
@@ -284,7 +284,7 @@
         <AmmoUser>
           <magazineSize>60</magazineSize>
           <reloadTime>9.8</reloadTime>
-          <ammoSet>AmmoSet_20x110mmHispano</ammoSet>
+          <ammoSet>AmmoSet_20x138mmB</ammoSet>
         </AmmoUser>
 				<FireModes>
 					<aiUseBurstMode>FALSE</aiUseBurstMode>

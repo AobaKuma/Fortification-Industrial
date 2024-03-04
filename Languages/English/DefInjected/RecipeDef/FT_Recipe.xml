@@ -1,60 +1,81 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
-  <!-- 工作點 -->
-
-  <FT_Make_ConcreteCompressed.label>pack concrete</FT_Make_ConcreteCompressed.label>
-  <FT_Make_ConcreteCompressed.description>Pack concrete into bags for easier storage and transportation.\n\nThe Thebian Galactic Trading Etiquette (from the 437th edition onwards) dictates that concrete ought to be packed before being involved in any commercial transaction.</FT_Make_ConcreteCompressed.description>
-  <FT_Make_ConcreteCompressed.jobString>Packing concrete.</FT_Make_ConcreteCompressed.jobString>
-
-  <FT_Unpack_ConcreteCompressed.label>unpack concrete</FT_Unpack_ConcreteCompressed.label>
-  <FT_Unpack_ConcreteCompressed.description>Unpack concrete bags.</FT_Unpack_ConcreteCompressed.description>
-  <FT_Unpack_ConcreteCompressed.jobString>Unpacking concrete.</FT_Unpack_ConcreteCompressed.jobString>
-
-
-  <!-- 混凝土攪拌機 -->
-
-  <FT_Make_ConcreteByStonyJunks.label>make concrete from junk</FT_Make_ConcreteByStonyJunks.label>
-  <FT_Make_ConcreteByStonyJunks.description>Crush non-burnable and non-smeltable stony junk into concrete.</FT_Make_ConcreteByStonyJunks.description>
-  <FT_Make_ConcreteByStonyJunks.jobString>making concrete from junk.</FT_Make_ConcreteByStonyJunks.jobString>
-
-  <FT_Make_ConcreteByChunk.label>make concrete from stone chunk</FT_Make_ConcreteByChunk.label>
-  <FT_Make_ConcreteByChunk.description>Crush stone chunks into concrete.</FT_Make_ConcreteByChunk.description>
-  <FT_Make_ConcreteByChunk.jobString>Crushing stone chunks into concrete.</FT_Make_ConcreteByChunk.jobString>
-
-  <FT_Make_ConcreteByBlock.label>make concrete from stone blocks</FT_Make_ConcreteByBlock.label>
-  <FT_Make_ConcreteByBlock.description>Crush stone blocks into cocnrete.</FT_Make_ConcreteByBlock.description>
-  <FT_Make_ConcreteByBlock.jobString>Crushing stone blocks into concrete.</FT_Make_ConcreteByBlock.jobString>
-
-  <FT_Make_ConcreteWood.label>make fiber cement</FT_Make_ConcreteWood.label>
-  <FT_Make_ConcreteWood.description>Mix cloth and concrete into light yet strong concrete planks. Fireproof but less durable than solid concrete.</FT_Make_ConcreteWood.description>
-  <FT_Make_ConcreteWood.jobString>Making fiber cement.</FT_Make_ConcreteWood.jobString>
-
-  <FT_Make_ReinforcedConcrete.label>make reinforced concrete</FT_Make_ReinforcedConcrete.label>
-  <FT_Make_ReinforcedConcrete.description>Mix rebar into raw concrete to get reinforced concrete, an alternative for metallic materials.</FT_Make_ReinforcedConcrete.description>
-  <FT_Make_ReinforcedConcrete.jobString>Making reinforced concrete.</FT_Make_ReinforcedConcrete.jobString>
-
-
-  <!-- 車床 -->
-
-  <FT_Make_ReinforcedBarrel.label>make reinforced barrel</FT_Make_ReinforcedBarrel.label>
-  <FT_Make_ReinforcedBarrel.description>Make a reinforced barrel at the lathe.</FT_Make_ReinforcedBarrel.description>
-  <FT_Make_ReinforcedBarrel.jobString>Making reinforced barrel.</FT_Make_ReinforcedBarrel.jobString>
-
+  
+  <!-- EN: make component -->
   <FT_Make_ComponentIndustrial.label>make component</FT_Make_ComponentIndustrial.label>
+  <!-- EN: Make a component from lathe,take longer time and resources. -->
   <FT_Make_ComponentIndustrial.description>Make a component at the lathe, takes a long time and is less economical than producing it at the Fabrication Bench.</FT_Make_ComponentIndustrial.description>
+  <!-- EN: Making component. -->
   <FT_Make_ComponentIndustrial.jobString>Making a component.</FT_Make_ComponentIndustrial.jobString>
-
-
-  <!-- 化學工作臺 -->
-
-  <FT_Make_Neutroamine.label>synthesize neutroamine</FT_Make_Neutroamine.label>
-  <FT_Make_Neutroamine.description>Synthesize neutroamine from meat.</FT_Make_Neutroamine.description>
-  <FT_Make_Neutroamine.jobString>Synthesizing neutroamine.</FT_Make_Neutroamine.jobString>
-
+  
+  <!-- EN: make Concrete -->
+  <FT_Make_ConcreteByBlock.label>make concrete from stone blocks</FT_Make_ConcreteByBlock.label>
+  <!-- EN: crush blocks and made into concrete. -->
+  <FT_Make_ConcreteByBlock.description>Crush stone blocks into cocnrete.</FT_Make_ConcreteByBlock.description>
+  <!-- EN: making Concrete from material -->
+  <FT_Make_ConcreteByBlock.jobString>Crushing stone blocks into concrete.</FT_Make_ConcreteByBlock.jobString>
+  
+  <!-- EN: make Concrete from chunk -->
+  <FT_Make_ConcreteByChunk.label>make concrete from stone chunk</FT_Make_ConcreteByChunk.label>
+  <!-- EN: crush chunks and made into Concrete. -->
+  <FT_Make_ConcreteByChunk.description>Crush stone chunks into concrete.</FT_Make_ConcreteByChunk.description>
+  <!-- EN: making Concrete from material -->
+  <FT_Make_ConcreteByChunk.jobString>Crushing stone chunks into concrete.</FT_Make_ConcreteByChunk.jobString>
+  
+  <!-- EN: make Concrete from junks -->
+  <FT_Make_ConcreteByStonyJunks.label>make concrete from junk</FT_Make_ConcreteByStonyJunks.label>
+  <!-- EN: crush stony junks and made into concrete. the junk material must not be burnable or smeltable. -->
+  <FT_Make_ConcreteByStonyJunks.description>Crush non-burnable and non-smeltable stony junk into concrete.</FT_Make_ConcreteByStonyJunks.description>
+  <!-- EN: making Concrete from material -->
+  <FT_Make_ConcreteByStonyJunks.jobString>making concrete from junk.</FT_Make_ConcreteByStonyJunks.jobString>
+  
+  <!-- EN: Pack concrete -->
+  <FT_Make_ConcreteCompressed.label>pack concrete</FT_Make_ConcreteCompressed.label>
+  <!-- EN: pack Concrete bag for storage,also trader are willing to buy them. -->
+  <FT_Make_ConcreteCompressed.description>Pack concrete into bags for easier storage and transportation.\n\nThe Thebian Galactic Trading Etiquette (from the 437th edition onwards) dictates that concrete ought to be packed before being involved in any commercial transaction.</FT_Make_ConcreteCompressed.description>
+  <!-- EN: Packing concrete. -->
+  <FT_Make_ConcreteCompressed.jobString>Packing concrete.</FT_Make_ConcreteCompressed.jobString>
+  
+  <!-- EN: make Fiber cement -->
+  <FT_Make_ConcreteWood.label>make fiber cement</FT_Make_ConcreteWood.label>
+  <!-- EN: mixing the cloth and concrete to get the light-weighted concrete plank,fire-proofed but not durable as the soild bricks. -->
+  <FT_Make_ConcreteWood.description>Mix cloth and concrete into light yet strong concrete planks. Fireproof but less durable than solid concrete.</FT_Make_ConcreteWood.description>
+  <!-- EN: making concrete. -->
+  <FT_Make_ConcreteWood.jobString>Making fiber cement.</FT_Make_ConcreteWood.jobString>
+  
+  <!-- EN: synthesize Dye -->
   <FT_Make_Dye.label>synthesize dye</FT_Make_Dye.label>
+  <!-- EN: synthesize Dye from Chemfuel. -->
   <FT_Make_Dye.description>Synthesize natural dye from chemfuel.</FT_Make_Dye.description>
+  <!-- EN: Synthesizing Dye. -->
   <FT_Make_Dye.jobString>Synthesizing dye.</FT_Make_Dye.jobString>
-
-
+  
+  <!-- EN: synthesize Neutroamine -->
+  <FT_Make_Neutroamine.label>synthesize neutroamine</FT_Make_Neutroamine.label>
+  <!-- EN: synthesize neutroamine from meat. -->
+  <FT_Make_Neutroamine.description>Synthesize neutroamine from meat.</FT_Make_Neutroamine.description>
+  <!-- EN: Synthesizing neutroamine. -->
+  <FT_Make_Neutroamine.jobString>Synthesizing neutroamine.</FT_Make_Neutroamine.jobString>
+  
+  <!-- EN: make reinforced barrel -->
+  <FT_Make_ReinforcedBarrel.label>make reinforced barrel</FT_Make_ReinforcedBarrel.label>
+  <!-- EN: Make a reinforced barrel from lathe. -->
+  <FT_Make_ReinforcedBarrel.description>Make a reinforced barrel at the lathe.</FT_Make_ReinforcedBarrel.description>
+  <!-- EN: Making Barrel. -->
+  <FT_Make_ReinforcedBarrel.jobString>Making reinforced barrel.</FT_Make_ReinforcedBarrel.jobString>
+  
+  <!-- EN: prepare steel for concrete -->
+  <FT_Make_ReinforcedConcrete.label>make reinforced concrete</FT_Make_ReinforcedConcrete.label>
+  <!-- EN: mixing the embedded steel bars and concrete to get the Reinforced concrete ,an alternative Materials for Metalic building. -->
+  <FT_Make_ReinforcedConcrete.description>Mix rebar into raw concrete to get reinforced concrete, an alternative for metallic materials.</FT_Make_ReinforcedConcrete.description>
+  <!-- EN: making concrete. -->
+  <FT_Make_ReinforcedConcrete.jobString>Making reinforced concrete.</FT_Make_ReinforcedConcrete.jobString>
+  
+  <!-- EN: Unpack concrete -->
+  <FT_Unpack_ConcreteCompressed.label>unpack concrete</FT_Unpack_ConcreteCompressed.label>
+  <!-- EN: Unpack Concrete bags for usage. -->
+  <FT_Unpack_ConcreteCompressed.description>Unpack concrete bags.</FT_Unpack_ConcreteCompressed.description>
+  <!-- EN: Unpacking concrete. -->
+  <FT_Unpack_ConcreteCompressed.jobString>Unpacking concrete.</FT_Unpack_ConcreteCompressed.jobString>
+  
 </LanguageData>

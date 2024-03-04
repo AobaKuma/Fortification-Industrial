@@ -15,29 +15,29 @@
   <FT_SAPHE.label>半穿甲弹</FT_SAPHE.label>
   <FT_SAPHE.description>介于穿甲弹与高爆弹之间的中间功能弹种</FT_SAPHE.description>
 
-  <AmmoSet_FT_15cmNebelwerfer.label>150mm 火箭弹</AmmoSet_FT_15cmNebelwerfer.label>
+  <AmmoSet_FT_15cmNebelwerfer.label>15cm 火箭弹</AmmoSet_FT_15cmNebelwerfer.label>
 
-  <Ammo_15cmNebelwerfer_HE.label>150mm 火箭弹 (高爆弹)</Ammo_15cmNebelwerfer_HE.label>
-  <Bullet_FT_15cmNebelwerfer_HE.label>150mm 火箭弹 (高爆弹)</Bullet_FT_15cmNebelwerfer_HE.label>
-  <Ammo_15cmNebelwerfer_HE.label>150mm 火箭弹 (高爆弹)</Ammo_15cmNebelwerfer_HE.label>
+  <Ammo_15cmNebelwerfer_HE.label>15cm 火箭弹 (高爆弹)</Ammo_15cmNebelwerfer_HE.label>
+  <Bullet_FT_15cmNebelwerfer_HE.label>15cm 火箭弹 (高爆弹)</Bullet_FT_15cmNebelwerfer_HE.label>
+  <Ammo_15cmNebelwerfer_HE.label>15cm 火箭弹 (高爆弹)</Ammo_15cmNebelwerfer_HE.label>
 
-  <Ammo_15cmNebelwerfer_Smoke.label>150mm 火箭弹 (烟雾弹)</Ammo_15cmNebelwerfer_Smoke.label>
-  <Bullet_15cmNebelwerfer_Smoke.label>150mm 火箭弹 (烟雾弹)</Bullet_15cmNebelwerfer_Smoke.label>
-  <MakeAmmo_15cmNebelwerfer_Smoke.label>制作150mm 火箭弹 (烟雾弹)</MakeAmmo_15cmNebelwerfer_Smoke.label>
-  <MakeAmmo_15cmNebelwerfer_Smoke.description>制作150mm 火箭弹 (烟雾弹)</MakeAmmo_15cmNebelwerfer_Smoke.description>
-  <MakeAmmo_15cmNebelwerfer_Smoke.jobString>制作150mm 火箭弹 (烟雾弹)中</MakeAmmo_15cmNebelwerfer_Smoke.jobString>
+  <Ammo_15cmNebelwerfer_Smoke.label>15cm 火箭弹 (烟雾弹)</Ammo_15cmNebelwerfer_Smoke.label>
+  <Bullet_15cmNebelwerfer_Smoke.label>15cm 火箭弹 (烟雾弹)</Bullet_15cmNebelwerfer_Smoke.label>
+  <MakeAmmo_15cmNebelwerfer_Smoke.label>制作15cm 火箭弹 (烟雾弹)</MakeAmmo_15cmNebelwerfer_Smoke.label>
+  <MakeAmmo_15cmNebelwerfer_Smoke.description>制作15cm 火箭弹 (烟雾弹)</MakeAmmo_15cmNebelwerfer_Smoke.description>
+  <MakeAmmo_15cmNebelwerfer_Smoke.jobString>制作15cm 火箭弹 (烟雾弹)中</MakeAmmo_15cmNebelwerfer_Smoke.jobString>
 
-  <Ammo_15cmNebelwerfer_EMP.label>150mm 火箭弹 (EMP)</Ammo_15cmNebelwerfer_EMP.label>
-  <Bullet_15cmNebelwerfer_EMP.label>150mm 火箭弹 (EMP)</Bullet_15cmNebelwerfer_EMP.label>
-  <MakeAmmo_15cmNebelwerfer_EMP.label>制作150mm 火箭弹 (EMP)</MakeAmmo_15cmNebelwerfer_EMP.label>
-  <MakeAmmo_15cmNebelwerfer_EMP.description>制作150mm 火箭弹 (EMP)</MakeAmmo_15cmNebelwerfer_EMP.description>
-  <MakeAmmo_15cmNebelwerfer_EMP.jobString>制作150mm 火箭弹 (EMP)中</MakeAmmo_15cmNebelwerfer_EMP.jobString>
+  <Ammo_15cmNebelwerfer_EMP.label>15cm 火箭弹 (EMP)</Ammo_15cmNebelwerfer_EMP.label>
+  <Bullet_15cmNebelwerfer_EMP.label>15cm 火箭弹 (EMP)</Bullet_15cmNebelwerfer_EMP.label>
+  <MakeAmmo_15cmNebelwerfer_EMP.label>制作15cm 火箭弹 (EMP)</MakeAmmo_15cmNebelwerfer_EMP.label>
+  <MakeAmmo_15cmNebelwerfer_EMP.description>制作15cm 火箭弹 (EMP)</MakeAmmo_15cmNebelwerfer_EMP.description>
+  <MakeAmmo_15cmNebelwerfer_EMP.jobString>制作15cm 火箭弹 (EMP)中</MakeAmmo_15cmNebelwerfer_EMP.jobString>
 
-  <Ammo_15cmNebelwerfer_Toxic.label>150mm 火箭弹 (毒气弹)</Ammo_15cmNebelwerfer_Toxic.label>
-  <Bullet_15cmNebelwerfer_Toxic.label>150mm 火箭弹 (毒气弹)</Bullet_15cmNebelwerfer_Toxic.label>
-  <MakeAmmo_15cmNebelwerfer_Toxic.label>制作150mm 火箭弹 (毒气弹)</MakeAmmo_15cmNebelwerfer_Toxic.label>
-  <MakeAmmo_15cmNebelwerfer_Toxic.description>制作150mm 火箭弹 (毒气弹)</MakeAmmo_15cmNebelwerfer_Toxic.description>
-  <MakeAmmo_15cmNebelwerfer_Toxic.jobString>制作150mm 火箭弹 (毒气弹)中</MakeAmmo_15cmNebelwerfer_Toxic.jobString>
+  <Ammo_15cmNebelwerfer_Toxic.label>15cm 火箭弹 (毒气弹)</Ammo_15cmNebelwerfer_Toxic.label>
+  <Bullet_15cmNebelwerfer_Toxic.label>15cm 火箭弹 (毒气弹)</Bullet_15cmNebelwerfer_Toxic.label>
+  <MakeAmmo_15cmNebelwerfer_Toxic.label>制作15cm 火箭弹 (毒气弹)</MakeAmmo_15cmNebelwerfer_Toxic.label>
+  <MakeAmmo_15cmNebelwerfer_Toxic.description>制作15cm 火箭弹 (毒气弹)</MakeAmmo_15cmNebelwerfer_Toxic.description>
+  <MakeAmmo_15cmNebelwerfer_Toxic.jobString>制作15cm 火箭弹 (毒气弹)中</MakeAmmo_15cmNebelwerfer_Toxic.jobString>
 
 
   <Ammo_37x223mmR_Canister.label>37x223mmR 战防炮弹 (炮射霰弹)</Ammo_37x223mmR_Canister.label>

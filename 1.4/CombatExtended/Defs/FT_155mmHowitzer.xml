@@ -28,240 +28,9 @@
 		</ammoTypes>
 		<isMortarAmmoSet>true</isMortarAmmoSet>
 	</CombatExtended.AmmoSetDef>
-	
-	<!-- indirect fire-->
-	<ThingDef Name="BaseFT155mmHowitzerShell" ParentName="BaseExplosiveBullet" Abstract="true">
-		<graphicData>
-			<shaderType>TransparentPostLight</shaderType>
-		</graphicData>
-		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>0</speed>
-			<soundExplode>MortarBomb_Explode</soundExplode>
-			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
-			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-			<soundAmbient>MortarRound_Ambient</soundAmbient>
-			<flyOverhead>true</flyOverhead>
-			<dropsCasings>true</dropsCasings>
-			<casingMoteDefname>Fleck_BigShell</casingMoteDefname>
-			<casingFilthDefname>Filth_CannonAmmoCasings</casingFilthDefname>
-			<gravityFactor>5</gravityFactor>
-			<shellingProps>
-				<tilesPerTick>0.12</tilesPerTick>
-				<range>60</range>
-			</shellingProps>
-		</projectile>
-	</ThingDef>
-
-	<ThingDef ParentName="BaseFT155mmHowitzerShell">
-		<defName>Bullet_FT_155mmHowitzerShell_HE</defName>
-		<label>155mm Howitzer shell (HE)</label>
-		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
-		<graphicData>
-			<texPath>Things/Projectile/Cannon/Howitzer/HE</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageDef>Bomb</damageDef>
-			<damageAmountBase>546</damageAmountBase>
-			<explosionRadius>5.5</explosionRadius>
-			<soundExplode>MortarBomb_Explode</soundExplode>
-			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-			<shellingProps>
-				<damage>0.33</damage>
-			</shellingProps>
-		</projectile>
-		<comps>
-			<li Class="CombatExtended.CompProperties_Fragments">
-				<fragments>
-					<Fragment_Large>40</Fragment_Large>
-					<Fragment_Small>80</Fragment_Small>
-				</fragments>
-			</li>
-		</comps>
-	</ThingDef>
-
-	<ThingDef ParentName="BaseFT155mmHowitzerShell">
-		<defName>Bullet_FT_155mmHowitzerShell_Incendiary</defName>
-		<label>155mm Howitzer shell (Incendiary)</label>
-		<graphicData>
-			<texPath>Things/Projectile/Cannon/Howitzer/INC</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageDef>PrometheumFlame</damageDef>
-			<damageAmountBase>31</damageAmountBase>
-			<explosionRadius>9.5</explosionRadius>
-			<flyOverhead>true</flyOverhead>
-			<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
-			<preExplosionSpawnChance>0.3</preExplosionSpawnChance>
-			<soundExplode>MortarIncendiary_Explode</soundExplode>
-			<shellingProps>
-				<damage>0.33</damage>
-			</shellingProps>
-		</projectile>
-		<comps>
-			<li Class="CombatExtended.CompProperties_ExplosiveCE">
-				<damageAmountBase>150</damageAmountBase>
-				<explosiveDamageType>Thermobaric</explosiveDamageType>
-				<explosiveRadius>4</explosiveRadius>
-				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-			</li>
-		</comps>
-	</ThingDef>
-
-	<ThingDef ParentName="BaseFT155mmHowitzerShell">
-		<defName>Bullet_FT_155mmHowitzerShell_EMP</defName>
-		<label>155mm Howitzer shell (EMP)</label>
-		<graphicData>
-			<texPath>Things/Projectile/Cannon/Howitzer/EMP</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageDef>EMP</damageDef>
-			<damageAmountBase>452</damageAmountBase>
-			<flyOverhead>true</flyOverhead>
-			<explosionRadius>9.5</explosionRadius>
-			<shellingProps>
-				<damage>0.23</damage>
-			</shellingProps>
-		</projectile>
-	</ThingDef>
-
-	<ThingDef ParentName="BaseFT155mmHowitzerShell">
-		<defName>Bullet_FT_155mmHowitzerShell_Smoke</defName>
-		<label>155mm Howitzer shell (Smoke)</label>
-		<graphicData>
-			<texPath>Things/Projectile/Cannon/Howitzer/SMK</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageDef>Smoke</damageDef>
-			<suppressionFactor>0.0</suppressionFactor>
-			<dangerFactor>0.0</dangerFactor>
-			<explosionRadius>10.5</explosionRadius>
-			<flyOverhead>true</flyOverhead>
-			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
-			<soundExplode>Explosion_EMP</soundExplode>
-			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-			<soundAmbient>MortarRound_Ambient</soundAmbient>
-			<postExplosionGasType>BlindSmoke</postExplosionGasType>
-			<preExplosionSpawnChance>1</preExplosionSpawnChance>
-			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-			<explosionEffect>ExtinguisherExplosion</explosionEffect>
-		</projectile>
-	</ThingDef>
-	
-	<ThingDef ParentName="BaseFT155mmHowitzerShell" MayRequire="Aoba.Fortress.Industrial.NuclearDawn">
-		<defName>FT_Bullet_NuclearWarhead_CE_II</defName>
-		<label>155mm Howitzer shell (Nuclear)</label>
-		<thingClass>Fortification.ProjectileCE_ExplosiveByComps</thingClass>
-		<graphicData>
-			<texPath>FT_NuclearDawn/Nukes_projectileCE</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-		</graphicData>
-		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-            <damageDef>Stun</damageDef>
-            <explosionDelay>3</explosionDelay>
-            <damageAmountBase>15</damageAmountBase>
-            <armorPenetrationSharp>0</armorPenetrationSharp>
-            <armorPenetrationBlunt>0</armorPenetrationBlunt>
-            <explosionRadius>49.9</explosionRadius>
-            <flyOverhead>true</flyOverhead>
-            <explosionEffect>GiantExplosion</explosionEffect>
-            <soundExplode>Explosion_GiantBomb</soundExplode>
-        </projectile>
-		<modExtensions>
-			<li Class="Fortification.ModExtension_ExpolsionWithEvents">
-				<conditions>
-					<li>
-						<conditionDef>FTND_NuclearFlare</conditionDef>
-						<percent>1</percent>
-						<duration>180000~360000</duration>
-					</li>
-					<li>
-						<conditionDef>FTND_NuclearFlare</conditionDef>
-						<percent>5</percent>
-						<duration>15000~180000</duration>
-					</li>
-					<li>
-						<conditionDef>FTND_NuclearFlare</conditionDef>
-						<percent>25</percent>
-						<duration>2500~15000</duration>
-					</li>
-					<li>
-						<conditionDef>FTND_NuclearFallout</conditionDef>
-						<percent>1</percent>
-						<duration>360000</duration>
-					</li>
-					<li>
-						<conditionDef>FTND_NuclearFallout</conditionDef>
-						<percent>5</percent>
-						<duration>60000~180000</duration>
-					</li>
-					<li>
-						<conditionDef>FTND_NuclearFallout</conditionDef>
-						<percent>25</percent>
-						<duration>15000</duration>
-					</li>
-					<li>
-						<conditionDef>FTND_NuclearWinter</conditionDef>
-						<percent>1</percent>
-						<duration>360000~960000</duration>
-					</li>
-					<li>
-						<conditionDef>FTND_NuclearWinter</conditionDef>
-						<percent>5</percent>
-						<duration>60000~360000</duration>
-					</li>
-					<li>
-						<conditionDef>FTND_Flashstorm</conditionDef>
-						<percent>25</percent>
-						<duration>10000~30000</duration>
-					</li>
-				</conditions>
-			</li>
-			<li Class="Fortification.ModExtension_CompositeExplosion">
-				<compositeExplosions>
-					<li>
-						<!--核爆心-->
-						<countdown>1</countdown>
-						<radius>14.9</radius>
-						<damamgeDef>BombSuper</damamgeDef>
-						<amount>300</amount>
-						<armorPenetration>2</armorPenetration>
-						<explosionSound>MortarBomb_Explode</explosionSound>
-					</li>
-					<li>
-						<countdown>1</countdown>
-						<radius>25.9</radius>
-						<damamgeDef>EMP</damamgeDef>
-						<amount>40</amount>
-						<armorPenetration>2</armorPenetration>
-						<explosionSound>Explosion_EMP</explosionSound>
-					</li>
-					<li>
-						<countdown>2</countdown>
-						<radius>20.9</radius>
-						<damamgeDef>Flame</damamgeDef>
-						<amount>40</amount>
-						<armorPenetration>2</armorPenetration>
-						<explosionSound>MortarBomb_Explode</explosionSound>
-						<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
-						<preExplosionSpawnChance>0.25</preExplosionSpawnChance>
-						<preExplosionSpawnThingCount>50</preExplosionSpawnThingCount>
-						<postExplosionSpawnThingDef>Filth_Fuel</postExplosionSpawnThingDef>
-						<postExplosionSpawnChance>0.75</postExplosionSpawnChance>
-						<postExplosionSpawnThingCount>25</postExplosionSpawnThingCount>
-						<chanceToStartFire>0.25</chanceToStartFire>
-					</li>
-				</compositeExplosions>
-			</li>
-		</modExtensions>
-	</ThingDef>
 
 	<!-- direct fire-->
-	<ThingDef Name="BaseFT155mmHowitzerShellDirectfire" ParentName="BaseExplosiveBullet" Abstract="true">
+	<ThingDef Name="BaseFT155mmHowitzerShell" ParentName="BaseExplosiveBullet" Abstract="true">
 		<graphicData>
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
@@ -272,10 +41,15 @@
 			<dropsCasings>true</dropsCasings>
 			<casingMoteDefname>Fleck_BigShell</casingMoteDefname>
 			<casingFilthDefname>Filth_CannonAmmoCasings</casingFilthDefname>
+			<gravityFactor>10</gravityFactor>
+			<shellingProps>
+				<tilesPerTick>0.15</tilesPerTick>
+				<range>75</range>
+			</shellingProps>
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseFT155mmHowitzerShellDirectfire">
+	<ThingDef Name="BaseFT155mmHowitzerShell_HE" ParentName="BaseFT155mmHowitzerShell">
 		<defName>Bullet_FT_155mmHowitzerShell_HE_directfire</defName>
 		<label>155mm Howitzer shell (HE)</label>
 		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
@@ -300,7 +74,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseFT155mmHowitzerShellDirectfire">
+	<ThingDef Name="BaseFT155mmHowitzerShell_Incendiary" ParentName="BaseFT155mmHowitzerShell">
 		<defName>Bullet_FT_155mmHowitzerShell_Incendiary_directfire</defName>
 		<label>155mm Howitzer shell (Incendiary)</label>
 		<graphicData>
@@ -325,7 +99,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseFT155mmHowitzerShellDirectfire">
+	<ThingDef Name="BaseFT155mmHowitzerShell_EMP" ParentName="BaseFT155mmHowitzerShell">
 		<defName>Bullet_FT_155mmHowitzerShell_EMP_directfire</defName>
 		<label>155mm Howitzer shell (EMP)</label>
 		<graphicData>
@@ -339,7 +113,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseFT155mmHowitzerShellDirectfire">
+	<ThingDef Name="BaseFT155mmHowitzerShell_Smoke" ParentName="BaseFT155mmHowitzerShell">
 		<defName>Bullet_FT_155mmHowitzerShell_Smoke_directfire</defName>
 		<label>155mm Howitzer shell (Smoke)</label>
 		<graphicData>
@@ -362,7 +136,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseFT155mmHowitzerShellDirectfire" MayRequire="Aoba.Fortress.Industrial.NuclearDawn">
+	<ThingDef Name="BaseFT155mmHowitzerShell_Nuclear" ParentName="BaseFT155mmHowitzerShell" MayRequire="Aoba.Fortress.Industrial.NuclearDawn">
 		<defName>FT_Bullet_NuclearWarhead_CE_directfire_II</defName>
 		<label>155mm Howitzer shell (Nuclear)</label>
 		<thingClass>Fortification.ProjectileCE_ExplosiveByComps</thingClass>
@@ -469,6 +243,58 @@
 				</compositeExplosions>
 			</li>
 		</modExtensions>
+	</ThingDef>
+	
+	<!-- indirect fire-->
+
+	<ThingDef ParentName="BaseFT155mmHowitzerShell_HE">
+		<defName>Bullet_FT_155mmHowitzerShell_HE</defName>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<flyOverhead>true</flyOverhead>
+			<shellingProps>
+				<damage>0.33</damage>
+			</shellingProps>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseFT155mmHowitzerShell_Incendiary">
+		<defName>Bullet_FT_155mmHowitzerShell_Incendiary</defName>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<flyOverhead>true</flyOverhead>
+			<shellingProps>
+				<damage>0.33</damage>
+			</shellingProps>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseFT155mmHowitzerShell_EMP">
+		<defName>Bullet_FT_155mmHowitzerShell_EMP</defName>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<flyOverhead>true</flyOverhead>
+			<shellingProps>
+				<damage>0.23</damage>
+			</shellingProps>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseFT155mmHowitzerShell_Smoke">
+		<defName>Bullet_FT_155mmHowitzerShell_Smoke</defName>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<flyOverhead>true</flyOverhead>
+			<shellingProps>
+				<damage>0</damage>
+			</shellingProps>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseFT155mmHowitzerShell_Nuclear" MayRequire="Aoba.Fortress.Industrial.NuclearDawn">
+		<defName>FT_Bullet_NuclearWarhead_CE_II</defName>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <flyOverhead>true</flyOverhead>
+			<shellingProps>
+				<damage>0.5</damage>
+			</shellingProps>
+        </projectile>
 	</ThingDef>
 	
 </Defs>

@@ -13,6 +13,17 @@
 			<Ammo_15cmNebelwerfer_Toxic MayRequire="Ludeon.RimWorld.Biotech">Bullet_FT_15cmNebelwerfer_Toxic</Ammo_15cmNebelwerfer_Toxic>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
+	
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_FT_15cmNebelwerfer_directfire</defName>
+		<label>15cm Nebelwerfer Rockets</label>
+		<ammoTypes>
+			<Ammo_15cmNebelwerfer_HE>Bullet_FT_15cmNebelwerfer_HE_directfire</Ammo_15cmNebelwerfer_HE>
+			<Ammo_15cmNebelwerfer_Smoke>Bullet_FT_15cmNebelwerfer_Smoke_directfire</Ammo_15cmNebelwerfer_Smoke>
+			<Ammo_15cmNebelwerfer_EMP>Bullet_FT_15cmNebelwerfer_EMP_directfire</Ammo_15cmNebelwerfer_EMP>
+			<Ammo_15cmNebelwerfer_Toxic MayRequire="Ludeon.RimWorld.Biotech">Bullet_FT_15cmNebelwerfer_Toxic_directfire</Ammo_15cmNebelwerfer_Toxic>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
 
 	<!-- ==================== Ammo ========================== -->
 
@@ -50,8 +61,7 @@
 		<stackLimit>25</stackLimit>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="15cmNebelwerferBase"
-		MayRequire="Ludeon.RimWorld.Biotech">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="15cmNebelwerferBase" MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>Ammo_15cmNebelwerfer_Toxic</defName>
 		<label>15cm Nebelwerfer Rocket (Toxic)</label>
 		<graphicData>
@@ -69,8 +79,10 @@
 	</ThingDef>
 
 	<!-- ================== Projectiles ================== -->
+	
+	<!-- indirect fire-->
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base130mmType63">
+	<ThingDef Name="BaseFT15cmNebelwerfer_HE" Class="CombatExtended.AmmoDef" ParentName="Base130mmType63">
 		<defName>Bullet_FT_15cmNebelwerfer_HE</defName>
 		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 		<label>15cm Nebelwerfer Rocket (HE)</label>
@@ -84,12 +96,8 @@
 			<damageAmountBase>228</damageAmountBase>
 			<explosionRadius>3.5</explosionRadius>
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-			<shellingProps>
-				<tilesPerTick>0.07</tilesPerTick>
-				<range>16</range>
-				<damage>0.20</damage>
-			</shellingProps>
-			<gravityFactor>50</gravityFactor>
+			<flyOverhead>true</flyOverhead>
+			<gravityFactor>20</gravityFactor>
 		</projectile>
 		<comps>
 			<li Class="CombatExtended.CompProperties_Fragments">
@@ -101,7 +109,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base130mmType63">
+	<ThingDef Name="BaseFT15cmNebelwerfer_Smoke" Class="CombatExtended.AmmoDef" ParentName="Base130mmType63">
 		<defName>Bullet_FT_15cmNebelwerfer_Smoke</defName>
 		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 		<label>15cm Nebelwerfer Rocket (Smoke)</label>
@@ -123,16 +131,12 @@
 			<postExplosionGasType>BlindSmoke</postExplosionGasType>
 			<preExplosionSpawnChance>1</preExplosionSpawnChance>
 			<explosionEffect>ExtinguisherExplosion</explosionEffect>
-			<shellingProps>
-				<tilesPerTick>0.07</tilesPerTick>
-				<range>16</range>
-				<damage>0</damage>
-			</shellingProps>
-			<gravityFactor>50</gravityFactor>
+			<flyOverhead>true</flyOverhead>
+			<gravityFactor>20</gravityFactor>
 		</projectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base130mmType63">
+	<ThingDef Name="BaseFT15cmNebelwerfer_EMP" Class="CombatExtended.AmmoDef" ParentName="Base130mmType63">
 		<defName>Bullet_FT_15cmNebelwerfer_EMP</defName>
 		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 		<label>15cm Nebelwerfer Rocket (EMP)</label>
@@ -147,17 +151,12 @@
 			<explosionRadius>5.5</explosionRadius>
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 			<spreadMult>2.5</spreadMult>
-			<shellingProps>
-				<tilesPerTick>0.07</tilesPerTick>
-				<range>16</range>
-				<damage>0.15</damage>
-			</shellingProps>
-			<gravityFactor>50</gravityFactor>
+			<flyOverhead>true</flyOverhead>
+			<gravityFactor>20</gravityFactor>
 		</projectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base130mmType63"
-		MayRequire="Ludeon.RimWorld.Biotech">
+	<ThingDef Name="BaseFT15cmNebelwerfer_Toxic" Class="CombatExtended.AmmoDef" ParentName="Base130mmType63" MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>Bullet_FT_15cmNebelwerfer_Toxic</defName>
 		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 		<label>15cm Nebelwerfer Rocket (Toxic)</label>
@@ -178,12 +177,58 @@
 			<soundAmbient>MortarRound_Ambient</soundAmbient>
 			<postExplosionSpawnThingDef>Shell_15cmNbW_Toxic_Releasing</postExplosionSpawnThingDef>
 			<postExplosionSpawnThingDefWater>Shell_15cmNbW_Toxic_Releasing_Water</postExplosionSpawnThingDefWater>
+			<flyOverhead>true</flyOverhead>
+			<gravityFactor>20</gravityFactor>
+		</projectile>
+	</ThingDef>
+	
+	<!-- direct fire-->
+	
+	<ThingDef ParentName="BaseFT15cmNebelwerfer_HE">
+		<defName>Bullet_FT_15cmNebelwerfer_HE_directfire</defName>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<flyOverhead>false</flyOverhead>
 			<shellingProps>
 				<tilesPerTick>0.07</tilesPerTick>
 				<range>16</range>
 				<damage>0.20</damage>
 			</shellingProps>
-			<gravityFactor>50</gravityFactor>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseFT15cmNebelwerfer_Smoke">
+		<defName>Bullet_FT_15cmNebelwerfer_Smoke_directfire</defName>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<flyOverhead>false</flyOverhead>
+			<shellingProps>
+				<tilesPerTick>0.07</tilesPerTick>
+				<range>16</range>
+				<damage>0</damage>
+			</shellingProps>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseFT15cmNebelwerfer_EMP">
+		<defName>Bullet_FT_15cmNebelwerfer_EMP_directfire</defName>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<flyOverhead>false</flyOverhead>
+			<shellingProps>
+				<tilesPerTick>0.07</tilesPerTick>
+				<range>16</range>
+				<damage>0.15</damage>
+			</shellingProps>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseFT15cmNebelwerfer_Toxic" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Bullet_FT_15cmNebelwerfer_Toxic_directfire</defName>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<flyOverhead>false</flyOverhead>
+			<shellingProps>
+				<tilesPerTick>0.07</tilesPerTick>
+				<range>16</range>
+				<damage>0.20</damage>
+			</shellingProps>
 		</projectile>
 	</ThingDef>
 

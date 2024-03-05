@@ -7,24 +7,17 @@
     </mods>
 	<match Class="PatchOperationSequence">
 		<operations>
+		<!--HexMortar-->
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="FT_Gun_TurretPrince"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/defaultProjectile</xpath>
+				<xpath>Defs/ThingDef[defName="FT_Gun_TurretHexMortar"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/verbClass</xpath>
 				<value>
-					<defaultProjectile>Bullet_FT_105mmHowitzerShell_HE</defaultProjectile>
+					<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofMortarCE</verbClass>
 				</value>
             </li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="FT_Gun_TurretPrince"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/ammoSet</xpath>
-				<value>
-					<ammoSet>AmmoSet_FT_105mmHowitzerShell</ammoSet>
-				</value>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="FT_TurretHexMortar"]/placeWorkers/li["PlaceWorker_NotUnderRoof"]</xpath>
             </li>
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="FT_Gun_TurretPrince"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/reloadTime</xpath>
-				<value>
-					<reloadTime>5</reloadTime>
-				</value>
-            </li>
+		<!--Prince-->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="FT_Gun_TurretPrince"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/verbClass</xpath>
 				<value>
@@ -34,7 +27,7 @@
 			<li Class="PatchOperationRemove">
 				<xpath>Defs/ThingDef[defName="FT_TurretPrince"]/placeWorkers/li["PlaceWorker_NotUnderRoof"]</xpath>
             </li>
-			
+		<!--Empero-->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="FT_Gun_TurretEmpero"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/defaultProjectile</xpath>
 				<value>

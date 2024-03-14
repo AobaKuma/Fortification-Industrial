@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<ThingDef ParentName="BenchBase" Name="FT_BenchBase" Abstract="True">
+		<thingClass>Building_WorkTable</thingClass>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.20</staticSunShadowHeight>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.8</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>80</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<surfaceType>Item</surfaceType>
+	    <inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<constructEffect>ConstructMetal</constructEffect>
+		<comps>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+					<li MayRequire="Aoba.Fortress.Industrial.Citadel">FT_transformer</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+	</ThingDef>
+
+ <ThingDef ParentName="FT_BenchBase">
+    <defName>FT_TableLathe</defName>
+    <label>Lathe</label>
+    <description>A machine that rotates a workpiece about an axis of rotation to perform various operations.</description>
+    <graphicData>
+      <texPath>Lathe/Lathe</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,3)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+	    <ComponentSpacer>1</ComponentSpacer>
+    </costList>   
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Cleanliness>-2</Cleanliness>
+    </statBases>
+    <size>(3,1)</size> 
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <recipes>
+      <li>FT_Make_ComponentIndustrial</li>
+      <li>FT_Make_ReinforcedBarrel</li>
+    </recipes>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>800</basePowerConsumption>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>FT_Lathe</li>
+    </researchPrerequisites>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <modExtensions>
+      <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="RecipeInheritance.ThingDefExtension">
+        <inheritRecipesFrom>
+          <li>TableSculpting</li>
+        </inheritRecipesFrom>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
+ <ThingDef ParentName="FT_BenchBase">
+    <defName>FT_TableChemistry</defName>
+    <label>Chemistry Table</label>
+    <description>A table that can artificially synthesize compounds such as Neutroamine.</description>
+    <graphicData>
+      <texPath>TableChemistry/TableChemistry</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(5,3)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <costList>
+      <Steel>100</Steel>
+      <Gold>50</Gold>
+      <ComponentIndustrial>5</ComponentIndustrial>
+	    <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-2</Cleanliness>
+    </statBases>
+    <size>(3,1)</size>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <recipes>
+      <li>FT_Make_Neutroamine</li>
+	  <li>FT_Make_Dye</li>
+    </recipes>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>800</basePowerConsumption>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>FT_Chemistry</li>
+    </researchPrerequisites>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+  </ThingDef>
+
+  <!-- 混凝土攪拌機 -->
+
+ <ThingDef ParentName="FT_BenchBase">
+    <defName>FT_TableConcreteMixer</defName>
+    <label>ConcreteMixer</label>
+    <description>A machine that crushes and mixes stony materials into concrete dusts</description>
+    <graphicData>
+      <texPath>ConcreteMixer/FT_ConcreteMixer</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>0.25</Flammability>
+      <Cleanliness>-2</Cleanliness>
+    </statBases>
+	  <recipes>
+		  <li>FT_Make_ConcreteByChunk</li>
+		  <li>FT_Make_ConcreteByBlock</li>	
+		  <li>FT_Make_ConcreteCompressed</li>
+		  <li>FT_Unpack_ConcreteCompressed</li>	
+		  <li>FT_Make_ConcreteByStonyJunks</li>
+	  </recipes>
+    <size>(2,2)</size>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>800</basePowerConsumption>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>FT_Concrete</li>
+    </researchPrerequisites>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+  </ThingDef>
+
+</Defs>	

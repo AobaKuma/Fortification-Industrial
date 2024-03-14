@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>FT_ENIAC</defName>
+    <label>ENIAC</label>
+    <description>[Interstellar Industries Complex Nara Terminal]
+	[ version="1.0"] [ encoding="utf-8" ]
+Loading....
+
+[To user]
+Being able to build ENIAC and read this information means that you or your civilization already has the minimum requirements for the realization of the technology in the disc...
+
+OS>:_</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Electricity</li>
+    </prerequisites>
+  <researchViewX>9.00</researchViewX>
+  <researchViewY>2.90</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>FT_Lathe</defName>
+    <label>lathe</label>
+    <description>Build lathe for early-stage compoment and reinforced barrel making.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Electricity</li>
+      <li>Smithing</li>
+    </prerequisites>
+	<researchViewX>5.00</researchViewX>
+	<researchViewY>3.50</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>FT_HeavyArtillery</defName>
+    <label>heavy artillery</label>
+    <description>Using ENIAC to calculate the artillery ballistics table, unlock the design of heavy artilleries.</description>
+    <baseCost>2000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>FT_IndustrialCannon</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>FT_ENIAC</li>
+    </requiredResearchFacilities>
+  <researchViewX>10.00</researchViewX>
+  <researchViewY>4.80</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>FT_IndustrialCannon</defName>
+    <label>Industrial Cannon</label>
+    <description>Using reinforced barrel to build AT and AA Guns.</description>
+    <baseCost>750</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>BlowbackOperation</li>
+    </prerequisites>
+  <researchViewX>9.00</researchViewX>
+  <researchViewY>4.80</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>FT_Concrete</defName>
+    <label>Concrete</label>
+    <description>crush and smelt stony material to concrete.</description>
+    <baseCost>250</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Electricity</li>
+    </prerequisites>
+  	 <researchViewX>5.00</researchViewX>
+ 	 <researchViewY>4.15</researchViewY>
+    <tags>
+      <li>ClassicStart</li>
+    </tags>
+  </ResearchProjectDef>
+
+    <ResearchProjectDef>
+    <defName>FT_Chemistry</defName>
+    <label>chemistry</label>
+    <description>Build Chemistry Table that can artificially synthesize compounds such as Neutroamine.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>Electricity</li>
+      <li>DrugProduction</li>
+    </prerequisites>
+  <researchViewX>6.00</researchViewX>
+  <researchViewY>0.00</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Harmony\Harmony_Pawn.cs" />
+    <Compile Include="ModExtensions\ModExtension_ThreatModifier.cs" />
     <Compile Include="PatchOperationAddCompIfNeeded.cs" />
     <Compile Include="ThingClasses\Building_SpikeTrap.cs" />
     <Compile Include="ThingClasses\Building_TurretCapacity.cs" />

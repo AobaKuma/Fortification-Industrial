@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+  <StuffAppearanceDef>
+    <defName>Concrete</defName>
+  </StuffAppearanceDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>FT_BlocksConcrete</defName>
+    <label>concrete</label>
+    <description>packs of concrete dust. Concrete is a strong building material but ugly to look at.</description>
+    <graphicData>
+      <texPath>ConcreteBag</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <tradeability>Buyable</tradeability>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <MarketValue>0.9</MarketValue>
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.0</BluntDamageMultiplier>
+      <Beauty>-10</Beauty>
+      <ConstructionSpeedFactor>0.9</ConstructionSpeedFactor>
+      <Mass>0.75</Mass>
+    </statBases>
+    <burnableByRecipe>false</burnableByRecipe>
+    <minRewardCount>10</minRewardCount>
+    <thingCategories>
+      <li>StoneBlocks</li>
+    </thingCategories>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <commonality>0.20</commonality>
+      <color>(150,150,150)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>concrete</stuffAdjective>
+      <appearance>Concrete</appearance>
+      <statFactors>
+        <Beauty>0.1</Beauty>
+        <MarketValue>0.75</MarketValue>
+        <MaxHitPoints>2.0</MaxHitPoints>
+        <Flammability>0</Flammability>
+        <WorkToBuild>2.0</WorkToBuild>
+        <WorkToMake>1</WorkToMake>
+        <DoorOpenSpeed>0.25</DoorOpenSpeed>
+        <BedRestEffectiveness>0.85</BedRestEffectiveness>
+        <MeleeWeapon_CooldownMultiplier>1.30</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>FT_ReinforcedConcreteBag</defName>
+    <label>rebar concrete</label>
+    <description>bags of solid concrete powder with steel bars. Concrete is a strong building material but ugly to look at.</description>
+    <graphicData>
+      <texPath>ReinforcedConcreteBag</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <tradeability>Buyable</tradeability>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <MarketValue>1.25</MarketValue>
+      <SharpDamageMultiplier>0.75</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
+      <Beauty>-10</Beauty>
+      <ConstructionSpeedFactor>0.75</ConstructionSpeedFactor>
+      <Mass>1</Mass>
+    </statBases>
+    <burnableByRecipe>false</burnableByRecipe>
+    <minRewardCount>10</minRewardCount>
+    <thingCategories>
+      <li>StoneBlocks</li>
+    </thingCategories>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <commonality>0</commonality>
+      <color>(150,150,150)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>concrete</stuffAdjective>
+      <appearance>Metal</appearance>
+      <statFactors>
+        <Beauty>0.1</Beauty>
+        <MarketValue>0.75</MarketValue>
+        <MaxHitPoints>2.5</MaxHitPoints>
+        <Flammability>0</Flammability>
+        <WorkToBuild>3.0</WorkToBuild>
+        <WorkToMake>1.2</WorkToMake>
+        <DoorOpenSpeed>0.25</DoorOpenSpeed>
+        <BedRestEffectiveness>0.85</BedRestEffectiveness>
+        <MeleeWeapon_CooldownMultiplier>1.40</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>FT_WoodConcrete</defName>
+    <label>prefab concrete</label>
+    <description>plank-shaped concrete blocks, able to fast building like wood and it is fire-proofed</description>
+    <graphicData>
+      <texPath>WoodConcrete</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <useHitPoints>true</useHitPoints>
+    <tradeability>Buyable</tradeability>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>0.9</MarketValue>
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1</BluntDamageMultiplier>
+      <Beauty>-8</Beauty>
+      <ConstructionSpeedFactor>1.1</ConstructionSpeedFactor>
+      <Mass>0.25</Mass>
+    </statBases>
+    <burnableByRecipe>false</burnableByRecipe>
+    <minRewardCount>10</minRewardCount>
+    <thingCategories>
+      <li>StoneBlocks</li>
+    </thingCategories>
+    <stuffProps>
+      <categories>
+        <li>Woody</li>
+      </categories>
+      <commonality>0</commonality>
+      <color>(150,150,150)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>concrete</stuffAdjective>
+      <appearance>Planks</appearance>
+      <statFactors>
+        <Beauty>0.5</Beauty>
+        <MarketValue>0.25</MarketValue>
+        <MaxHitPoints>1.5</MaxHitPoints>
+        <Flammability>0</Flammability>
+        <WorkToBuild>1</WorkToBuild>
+        <WorkToMake>1</WorkToMake>
+        <DoorOpenSpeed>0.25</DoorOpenSpeed>
+        <BedRestEffectiveness>0.85</BedRestEffectiveness>
+        <MeleeWeapon_CooldownMultiplier>1.30</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+      <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>FT_ConcreteCompressed</defName>
+    <label>Packed Concrete</label>
+    <description>Bags of solid concrete dust.they are packed-ready for storage or trade.</description>
+    <graphicData>
+      <texPath>CompressBag</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <stackLimit>75</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>50</MarketValue>
+      <Mass>50.0</Mass>
+      <Flammability>0.0</Flammability>
+      <DeteriorationRate>0.0</DeteriorationRate>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+</Defs>	

@@ -60,15 +60,12 @@
 				<fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
 			</li>
 			<li Class="CompProperties_Forbiddable" />
-			<li Class="CompProperties_Mannable">
-				<manWorkType>Violent</manWorkType>
-			</li>
 			<li MayRequire="VanillaExpanded.VFESecurity" Class="VFESecurity.CompProperties_LongRangeArtillery">
 				<worldTileRange>35</worldTileRange>
 				<maxForcedMissRadiusFactor>2.5</maxForcedMissRadiusFactor>
 				<gizmoIconTexPath>Things/Building/Artillery/TurretArtillery_Top</gizmoIconTexPath>
 			</li>
-			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+			<li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
 				<randomGraphics>
 					<li>InfantryTurret/FT_HexMortarBase</li>
 					<li>InfantryTurret/FT_HexMortarBase_Sec</li>
@@ -250,15 +247,12 @@
 				<fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
 			</li>
 			<li Class="CompProperties_Forbiddable" />
-			<li Class="CompProperties_Mannable">
-				<manWorkType>Violent</manWorkType>
-			</li>
 			<li MayRequire="VanillaExpanded.VFESecurity" Class="VFESecurity.CompProperties_LongRangeArtillery">
 				<worldTileRange>15</worldTileRange>
 				<maxForcedMissRadiusFactor>2.5</maxForcedMissRadiusFactor>
 				<gizmoIconTexPath>Things/Building/Artillery/TurretArtillery_Top</gizmoIconTexPath>
 			</li>
-			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+			<li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
 				<randomGraphics>
 					<li>InfantryTurret/FT_HexMortarBase</li>
 					<li>InfantryTurret/FT_HexMortarBase_Sec</li>
@@ -436,9 +430,6 @@
 				<fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
 			</li>
 			<li Class="CompProperties_Forbiddable" />
-			<li Class="CompProperties_Mannable">
-				<manWorkType>Violent</manWorkType>
-			</li>
 			<li MayRequire="VanillaExpanded.VFESecurity" Class="VFESecurity.CompProperties_LongRangeArtillery">
 				<worldTileRange>35</worldTileRange>
 				<maxForcedMissRadiusFactor>2.5</maxForcedMissRadiusFactor>

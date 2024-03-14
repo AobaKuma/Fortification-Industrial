@@ -1,5 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+  <ResearchTabDef>
+    <defName>HeavyIndustry</defName>
+    <label>Heavy industry</label>    
+    <generalTitle>Heavy industries</generalTitle>
+    <generalDescription>Heavy industry and those technologies are the basis of mass production and the key to progress of human society.</generalDescription>
+  </ResearchTabDef>
 
   <ResearchProjectDef>
     <defName>FT_ENIAC</defName>

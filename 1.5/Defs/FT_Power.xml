@@ -8,7 +8,7 @@
     <thingClass>RimForge.Buildings.Building_PowerPole</thingClass>
     <graphicData>
       <texPath>PowerPole/building</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>     
+      <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2,2)</drawSize>
       <drawOffset>(0,0,0.5)</drawOffset>
       <drawRotated>true</drawRotated>
@@ -32,7 +32,7 @@
     <size>(1, 1)</size>
     <costList>
       <FT_BlocksConcrete>12</FT_BlocksConcrete>
-	    <Steel>5</Steel>
+      <Steel>5</Steel>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
@@ -65,16 +65,16 @@
     </researchPrerequisites>
   </ThingDef>
 
-<!--含路燈-->
+  <!--含路燈-->
 
-    <ThingDef ParentName="BuildingBase" MayRequire="co.uk.epicguru.rimforgepoles">
+  <ThingDef ParentName="BuildingBase" MayRequire="co.uk.epicguru.rimforgepoles">
     <defName>FT_PowerPole_Lamp</defName>
     <label>power pole (street lamp)</label>
     <description>A concrete power pole, using tin or copper cables to carry an electrical current. Connect to other power poles using the 'link' button, or select multiple power poles and press the 'auto-link' button.</description>
     <thingClass>RimForge.Buildings.Building_PowerPole</thingClass>
     <graphicData>
       <texPath>PowerPole/building_Lamp</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>     
+      <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(2,2)</drawSize>
       <drawOffset>(0,0,0.5)</drawOffset>
       <drawRotated>true</drawRotated>
@@ -83,7 +83,7 @@
         <offset>(0,0,-0.23)</offset>
       </shadowData>
     </graphicData>
-	<rotatable>true</rotatable>
+    <rotatable>true</rotatable>
     <defaultPlacingRot>East</defaultPlacingRot>
     <passability>PassThroughOnly</passability>
     <designationCategory>Power</designationCategory>
@@ -99,31 +99,31 @@
     <size>(1, 1)</size>
     <costList>
       <FT_BlocksConcrete>12</FT_BlocksConcrete>
-	    <Steel>5</Steel>
+      <Steel>5</Steel>
     </costList>
     <comps>
-		<li Class="CompProperties_Power">
-			<compClass>CompPowerTransmitter</compClass>
-			<transmitsPower>true</transmitsPower>
-		</li>
-		<li Class="CompProperties_Breakdownable"/>
-		<li Class="CompProperties_Power">
-			<compClass>CompPowerTrader</compClass>
-			<basePowerConsumption>40</basePowerConsumption>
-			<transmitsPower>true</transmitsPower>
-			<powerUpgrades>
-				<li>
-					<researchProject>ColoredLights</researchProject>
-					<factor>0.5</factor>
-				</li>
-			</powerUpgrades>
-		</li>
-		<li Class="CompProperties_Glower">
-			<glowRadius>15</glowRadius>
-			<glowColor>(370,370,370,0)</glowColor>
-			<colorPickerEnabled>true</colorPickerEnabled>
-			<darklightToggle>true</darklightToggle>
-		</li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTransmitter</compClass>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>40</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>15</glowRadius>
+        <glowColor>(370,370,370,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
     </comps>
     <placeWorkers>
       <li>PlaceWorker_NotUnderRoof</li>
@@ -154,7 +154,7 @@
     <defName>FT_DistributionBox</defName>
     <label>distribution box</label>
     <thingClass>AOBAUtilities.Building_TerminalBox</thingClass>
-	  <description>A metal box on a concrete foundation connects to power networks via conduit to extend the range at which electronics can connect to said conduits. (this feature still wip, so it just a decoration)</description>
+    <description>A metal box on a concrete foundation connects to power networks via conduit to extend the range at which electronics can connect to said conduits. (this feature still wip, so it just a decoration)</description>
     <graphicData>
       <texPath>DistributionBox/building</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -176,7 +176,7 @@
     <drawerType>MapMeshAndRealTime</drawerType>
     <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
     <fillPercent>0.75</fillPercent>
-	  <specialDisplayRadius>18</specialDisplayRadius>
+    <specialDisplayRadius>18</specialDisplayRadius>
     <costList>
       <FT_BlocksConcrete>12</FT_BlocksConcrete>
       <Steel>40</Steel>
@@ -191,8 +191,8 @@
         <basePowerConsumption>10</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable">
-		  </li>
-      <li Class="CompProperties_Breakdownable"/>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
       <li Class="CompProperties_Usable">
         <useJob>UseItem</useJob>
         <useLabel>Use {0_label}</useLabel>

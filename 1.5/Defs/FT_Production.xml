@@ -27,7 +27,7 @@
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>ToolCabinet</li>
-					<li MayRequire="Aoba.Fortress.Industrial.Citadel">FT_transformer</li>
+					<li MayRequireAnyOf="Aoba.Fortress.Industrial.Citadel,Aoba.Fortress.Industrial.Citadel_steam">FT_transformer</li>
 				</linkableFacilities>
 			</li>
 		</comps>
@@ -81,7 +81,7 @@
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
     <modExtensions>
-      <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="RecipeInheritance.ThingDefExtension">
+      <li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam" Class="RecipeInheritance.ThingDefExtension">
         <inheritRecipesFrom>
           <li>TableSculpting</li>
         </inheritRecipesFrom>

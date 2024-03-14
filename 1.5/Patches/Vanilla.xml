@@ -78,22 +78,19 @@
   </Operation>
 
   <Operation Class="PatchOperationConditional">
-    <xpath>*/ThingDef[defName = "SimpleResearchBench"]/comps</xpath>
+    <xpath>*/ThingDef[defName = "SimpleResearchBench"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]</xpath>
     <nomatch Class="PatchOperationAdd">
-      <xpath>*/ThingDef[defName = "SimpleResearchBench"]</xpath>
+      <xpath>*/ThingDef[defName = "SimpleResearchBench"]/comps</xpath>
       <value>
-        <comps>
           <li Class="CompProperties_AffectedByFacilities">
             <linkableFacilities>
               <li>FT_ENIAC</li>
             </linkableFacilities>
           </li>
-        </comps>
       </value>
     </nomatch>
     <match Class="PatchOperationAdd">
-      <xpath>*/ThingDef[defName = "SimpleResearchBench"]/comps/li[@Class =
-        "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+      <xpath>*/ThingDef[defName = "SimpleResearchBench"]/comps/li[@Class = "CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
       <value>
         <li>FT_ENIAC</li>
       </value>

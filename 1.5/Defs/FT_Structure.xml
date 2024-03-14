@@ -61,9 +61,7 @@
         <li>Sandbags</li>
       </linkFlags>
       <asymmetricLink>
-        <linkFlags>
-          <!-- <li>Rock</li> -->
-        </linkFlags>
+        <linkToDoors>false</linkToDoors>
       </asymmetricLink>
     </graphicData>
     <uiIconPath>FT_Sandbag_icon</uiIconPath>
@@ -95,22 +93,14 @@
     <defName>FT_WallSandbag</defName>
     <label>Military sandbag wall</label>
     <thingClass>Building</thingClass>
-    <description>Bags of locally-sourced dirt or sand, stacked for use as wall. they are
-      well-stacked so it is more durable.</description>
+    <description>Bags of locally-sourced dirt or sand, stacked for use as wall. they are well-stacked so it is more durable.</description>
     <graphicData>
       <texPath>FT_SandbagWall</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <linkType>Asymmetric</linkType>
+      <linkType>CornerFiller</linkType>
       <linkFlags>
-        <li>Sandbags</li>
+        <li>Custom5</li>
       </linkFlags>
-      <asymmetricLink>
-        <linkFlags>
-          <li>Wall</li>
-          <!-- <li>Rock</li> -->
-        </linkFlags>
-        <linkToDoors>false</linkToDoors>
-      </asymmetricLink>
     </graphicData>
     <uiIconPath>FT_SandbagWall_icon</uiIconPath>
     <building>

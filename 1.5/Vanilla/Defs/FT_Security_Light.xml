@@ -116,7 +116,7 @@
 		    <autoRefuelPercent>0</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
-	    <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+	    <li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
 		  <randomGraphics>
         <li>ATGun/FT_AntiAirGun_Base</li>
         <li>ATGun/FT_AntiTankGun_Base</li>
@@ -246,7 +246,7 @@
         <autoRefuelPercent>0.1</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
-      <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+      <li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
       <randomGraphics>
         <li>ATGun/FT_AntiAirGun_Base</li>
         <li>InfantryTurret/FT_HexMortarBase</li>
@@ -426,7 +426,7 @@
         <autoRefuelPercent>0.1</autoRefuelPercent>
         <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
       </li>
-      <li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+      <li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
       <randomGraphics>
         <li>ATGun/FT_AntiTankGun_Base</li>
         <li>ATGun/FT_AntiTankGun_Base_Sec</li>

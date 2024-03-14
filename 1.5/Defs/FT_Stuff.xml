@@ -38,7 +38,7 @@
       </categories>
       <commonality>0.20</commonality>
       <color>(150,150,150)</color>
-      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
       <stuffAdjective>concrete</stuffAdjective>
@@ -91,7 +91,7 @@
       </categories>
       <commonality>0</commonality>
       <color>(150,150,150)</color>
-      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
       <stuffAdjective>concrete</stuffAdjective>
@@ -144,7 +144,7 @@
       </categories>
       <commonality>0</commonality>
       <color>(150,150,150)</color>
-      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
       <stuffAdjective>concrete</stuffAdjective>

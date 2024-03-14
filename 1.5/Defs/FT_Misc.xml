@@ -309,9 +309,9 @@
     <blockWind>true</blockWind>
     <castEdgeShadows>false</castEdgeShadows>
     <fillPercent>0.5</fillPercent>
-    <passability>Impassable</passability>
+    <passability>PassThroughOnly</passability>
     <statBases>
-      <MaxHitPoints>250</MaxHitPoints>
+      <MaxHitPoints>150</MaxHitPoints>
       <WorkToBuild>2200</WorkToBuild>
       <Flammability>0.6</Flammability>
       <Mass>10</Mass>

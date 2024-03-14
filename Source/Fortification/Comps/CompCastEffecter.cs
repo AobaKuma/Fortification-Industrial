@@ -30,9 +30,9 @@ namespace Fortification
         {
             base.SubEffectTick(A, B);
         }
-        public override void SubTrigger(TargetInfo A, TargetInfo B, int overrideSpawnTick = -1)
+        public override void SubTrigger(TargetInfo A, TargetInfo B, int overrideSpawnTick = -1, bool force = false)
         {
-            base.SubTrigger(A, B, overrideSpawnTick);
+            base.SubTrigger(A, B, overrideSpawnTick, force);
         }
     }
 }

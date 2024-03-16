@@ -58,6 +58,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comps\CompMinifyToInventory.cs" />
     <Compile Include="Harmony\Harmony_Pawn.cs" />
     <Compile Include="ModExtensions\ModExtension_ThreatModifier.cs" />
     <Compile Include="PatchOperationAddCompIfNeeded.cs" />

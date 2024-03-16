@@ -172,7 +172,7 @@ namespace Fortification
             if (!CanEverExplodeFromDamage)
             {
                 return;
-            }
+            } 
             if (dinfo.Def.ExternalViolenceFor(parent) && dinfo.Amount >= (float)parent.HitPoints && CanExplodeFromDamageType(dinfo.Def))
             {
                 if (parent.MapHeld != null)

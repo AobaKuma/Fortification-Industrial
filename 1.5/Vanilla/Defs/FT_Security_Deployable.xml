@@ -13,7 +13,7 @@
 				<useJob>TriggerObject</useJob>
 				<useLabel>Pick up {0_label}</useLabel>
 			</li>
-			<li>
+			<li Class="CompProperties_UseEffect">
 				<compClass>Fortification.CompMinifyToInventory</compClass>
 			</li>
 		</comps>

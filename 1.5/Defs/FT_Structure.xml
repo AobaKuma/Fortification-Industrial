@@ -224,6 +224,7 @@
     <costList>
       <FT_BlocksConcrete>10</FT_BlocksConcrete>
     </costList>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
     <size>(2,1)</size>
     <blockLight>false</blockLight>
     <uiIconPath>Tetrapods</uiIconPath>

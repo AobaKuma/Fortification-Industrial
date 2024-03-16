@@ -11,6 +11,7 @@
 	<description>
 It has always been a problem to make their settlements secured since human existence, so this is the reason why people in each era have used their own wisdom to build various of fortifications.
 	</description>
+	<modIconPath>UI/NaraLogo</modIconPath>
   	<loadAfter>
 		<li>brrainz.harmony</li>
     	<li>OskarPotocki.VanillaFactionsExpanded.Core</li>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<CombatExtended.AmmoCategoryDef>
+		<defName>FT_HESH</defName>
+		<label>HESH</label>
+		<description>HESH</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>FT_Shrapnel</defName>
+		<label>Shrapnel</label>
+		<description>Shrapnel</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<CombatExtended.AmmoCategoryDef>
+		<defName>FT_Canister</defName>
+		<label>Canister</label>
+		<description>Canister</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<CombatExtended.AmmoCategoryDef>
+		<defName>FT_SAPHE</defName>
+		<label>SAPHE</label>
+		<description>SAPHE</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+</Defs>

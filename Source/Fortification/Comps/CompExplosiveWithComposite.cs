@@ -166,13 +166,13 @@ namespace Fortification
             }
         }
 
-        public override void PostPreApplyDamage(DamageInfo dinfo, out bool absorbed)
+        public override void PostPreApplyDamage(ref DamageInfo dinfo, out bool absorbed)
         {
             absorbed = false;
             if (!CanEverExplodeFromDamage)
             {
                 return;
-            }
+            } 
             if (dinfo.Def.ExternalViolenceFor(parent) && dinfo.Amount >= (float)parent.HitPoints && CanExplodeFromDamageType(dinfo.Def))
             {
                 if (parent.MapHeld != null)

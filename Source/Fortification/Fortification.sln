@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fortification", "Fortification.csproj", "{2221DD4B-DCE6-48F0-A680-6831C514C037}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FortificationCE", "..\FortificationCE\FortificationCE.csproj", "{F04DAF6B-E4E3-410D-9074-D65D1A3078C3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2221DD4B-DCE6-48F0-A680-6831C514C037} = {2221DD4B-DCE6-48F0-A680-6831C514C037}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

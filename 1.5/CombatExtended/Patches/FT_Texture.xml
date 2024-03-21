@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Ammo_37x223mmR_AP"]/graphicData</xpath>
+				<value>
+					<graphicData>
+						<texPath>Ammo/37x223mmR_AP</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+						<drawSize>(1.025)</drawSize>
+					</graphicData>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Ammo_37x223mmR_HE"]/graphicData</xpath>
+				<value>
+					<graphicData>
+						<texPath>Ammo/37x223mmR_HE</texPath>
+						<graphicClass>Graphic_StackCount</graphicClass>
+						<drawSize>(1.025)</drawSize>
+					</graphicData>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

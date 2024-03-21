@@ -215,7 +215,7 @@
         <Incident>OrbitalTraderArrival</Incident>
         <iconPathActive>FT_AntennaTrigger</iconPathActive>
         <iconPathDeactive>FT_AntennaDisable</iconPathDeactive>
-        <CooldownTicks>720000</CooldownTicks>
+        <CooldownTicks>240000</CooldownTicks>
         <WarmupTicks>36000</WarmupTicks>
       </li>
       <li Class="CompProperties_Power">

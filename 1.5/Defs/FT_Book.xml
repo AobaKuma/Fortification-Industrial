@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BookBase">
+    <defName>FT_Schematic</defName>
+    <label>schematic</label>
+    <description>A book which describes technology and methods for using it. Reading schematics can help unlock new technologies.</description>
+    <graphicData>
+      <texPath>Things/Item/Book/Schematic/Schematic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Item/Book/Schematic/Schematic</uiIconPath>
+    <statBases>
+      <MarketValue>175</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Book">
+        <nameMaker>Namer_Schematic</nameMaker>
+        <descriptionMaker>Description_Schematic</descriptionMaker>
+        <ageYearsRange>1~200</ageYearsRange>
+        <openGraphic>
+          <texPath>Things/Item/Book/Schematic/Schematic_Open</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>0.7</drawSize>
+        </openGraphic>
+        <verticalGraphic>
+          <texPath>Things/Item/Book/Schematic/Schematic_Vertical</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <addTopAltitudeBias>true</addTopAltitudeBias>
+        </verticalGraphic>
+        <doers>
+          <li Class="BookOutcomeProperties_GainResearch">
+            <tab>HeavyIndustry</tab>
+            <exclude>
+              <FT_NuclearDawn MayRequire="Aoba.Fortress.Industrial.NuclearDawn"/>
+            </exclude>
+          </li>
+        </doers>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

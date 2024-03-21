@@ -15,4 +15,12 @@
 		<li IfModActive="VanillaExpanded.VFESecurity">1.4/VFESecurity</li>
 		<li IfModActive="imranfish.xmlextensions">1.4/XMLextension</li>
 	</v1.4>
+	<v1.5>
+		<li>/</li>
+		<li>1.5</li>
+		<li IfModActive="CETeam.CombatExtended">1.5/CombatExtended</li>
+		<li IfModNotActive="CETeam.CombatExtended">1.5/Vanilla</li>
+		<li IfModActive="VanillaExpanded.VFESecurity">1.5/VFESecurity</li>
+		<li IfModActive="imranfish.xmlextensions">1.5/XMLextension</li>
+	</v1.5>
 </loadFolders>

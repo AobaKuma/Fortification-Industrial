@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{2221DD4B-DCE6-48F0-A680-6831C514C037}|Fortification.csproj|solutionrelative:comps\\compminifytoinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2221DD4B-DCE6-48F0-A680-6831C514C037}|Fortification.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\fortification industrial\\source\\fortification\\comps\\comppawnturretdeploygizmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2221DD4B-DCE6-48F0-A680-6831C514C037}|Fortification.csproj|C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification Industrial\\Source\\Fortification\\comps\\comppawnturretdeploygizmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2221DD4B-DCE6-48F0-A680-6831C514C037}|Fortification.csproj|solutionrelative:comps\\comppawnturretdeploygizmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -64,7 +64,7 @@
               "RelativeDocumentMoniker": "Comps\\CompMinifyToInventory.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification Industrial\\Source\\Fortification\\Comps\\CompMinifyToInventory.cs",
               "RelativeToolTip": "Comps\\CompMinifyToInventory.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAAA0AAAAJAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAYwA0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-16T10:28:25.89Z",
               "EditorCaption": ""
@@ -79,8 +79,7 @@
               "RelativeToolTip": "Comps\\CompPawnTurretDeployGizmo.cs",
               "ViewState": "AQIAAHcAAAAAAAAAAAAAAIAAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-14T09:14:45.487Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-14T09:14:45.487Z"
             },
             {
               "$type": "Document",
@@ -92,8 +91,7 @@
               "RelativeToolTip": "Comps\\CompExplosiveWithComposite.cs",
               "ViewState": "AQIAAJsAAAAAAAAAAAAAwK4AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-14T02:33:29.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-14T02:33:29.82Z"
             },
             {
               "$type": "Document",
@@ -105,8 +103,7 @@
               "RelativeToolTip": "Comps\\CompCastEffecter.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAA+wCMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-14T02:32:54.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-14T02:32:54.208Z"
             },
             {
               "$type": "Document",

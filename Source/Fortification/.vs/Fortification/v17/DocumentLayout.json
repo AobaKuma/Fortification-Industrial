@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification Industrial\\Source\\Fortification\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2221DD4B-DCE6-48F0-A680-6831C514C037}|Fortification.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\fortification industrial\\source\\fortification\\comps\\compcastflecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2221DD4B-DCE6-48F0-A680-6831C514C037}|Fortification.csproj|solutionrelative:comps\\compcastflecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2221DD4B-DCE6-48F0-A680-6831C514C037}|Fortification.csproj|c:\\program files (x86)\\steam\\steamapps\\common\\rimworld\\mods\\fortification industrial\\source\\fortification\\comps\\compminifytoinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2221DD4B-DCE6-48F0-A680-6831C514C037}|Fortification.csproj|solutionrelative:comps\\compminifytoinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -59,19 +63,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CompCastFlecker.cs",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification Industrial\\Source\\Fortification\\Comps\\CompCastFlecker.cs",
+              "RelativeDocumentMoniker": "Comps\\CompCastFlecker.cs",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification Industrial\\Source\\Fortification\\Comps\\CompCastFlecker.cs",
+              "RelativeToolTip": "Comps\\CompCastFlecker.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAUwDgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T07:40:38.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "CompMinifyToInventory.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification Industrial\\Source\\Fortification\\Comps\\CompMinifyToInventory.cs",
               "RelativeDocumentMoniker": "Comps\\CompMinifyToInventory.cs",
               "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification Industrial\\Source\\Fortification\\Comps\\CompMinifyToInventory.cs",
               "RelativeToolTip": "Comps\\CompMinifyToInventory.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAYwA0AAAAJAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwA0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-16T10:28:25.89Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CompPawnTurretDeployGizmo.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification Industrial\\Source\\Fortification\\Comps\\CompPawnTurretDeployGizmo.cs",
               "RelativeDocumentMoniker": "Comps\\CompPawnTurretDeployGizmo.cs",
@@ -83,7 +100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CompExplosiveWithComposite.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification Industrial\\Source\\Fortification\\Comps\\CompExplosiveWithComposite.cs",
               "RelativeDocumentMoniker": "Comps\\CompExplosiveWithComposite.cs",
@@ -95,7 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CompCastEffecter.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification Industrial\\Source\\Fortification\\Comps\\CompCastEffecter.cs",
               "RelativeDocumentMoniker": "Comps\\CompCastEffecter.cs",
@@ -107,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Verb_NewShoot.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification Industrial\\Source\\Fortification\\Verb_NewShoot.cs",
               "RelativeDocumentMoniker": "Verb_NewShoot.cs",
@@ -119,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PatchOperationAddCompIfNeeded.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification Industrial\\Source\\Fortification\\PatchOperationAddCompIfNeeded.cs",
               "RelativeDocumentMoniker": "PatchOperationAddCompIfNeeded.cs",
@@ -131,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "FortificationCE",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification Industrial\\Source\\FortificationCE\\FortificationCE.csproj",
               "RelativeDocumentMoniker": "..\\FortificationCE\\FortificationCE.csproj",
@@ -142,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Fortification",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification Industrial\\Source\\Fortification\\Fortification.csproj",
               "RelativeDocumentMoniker": "Fortification.csproj",
@@ -153,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "JobDefOf.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification Industrial\\Source\\Fortification\\JobDefOf.cs",
               "RelativeDocumentMoniker": "JobDefOf.cs",
@@ -165,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "CompExplosiveWithCompositeCE.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification Industrial\\Source\\FortificationCE\\CompExplosiveWithCompositeCE.cs",
               "RelativeDocumentMoniker": "..\\FortificationCE\\CompExplosiveWithCompositeCE.cs",
@@ -177,7 +194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "BulletCE_AlongWayDamage.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification Industrial\\Source\\FortificationCE\\BulletCE_AlongWayDamage.cs",
               "RelativeDocumentMoniker": "..\\FortificationCE\\BulletCE_AlongWayDamage.cs",
@@ -189,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "JobDriver_EnterBunkerFacility.cs",
               "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification Industrial\\Source\\Fortification\\JobDriver_EnterBunkerFacility.cs",
               "RelativeDocumentMoniker": "JobDriver_EnterBunkerFacility.cs",

@@ -133,7 +133,7 @@
             <hasStandardCommand>true</hasStandardCommand>
             <defaultProjectile>Bullet_303British_FMJ</defaultProjectile>
             <warmupTime>0.75</warmupTime>
-            <range>60</range>
+            <range>62</range>
             <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
             <burstShotCount>20</burstShotCount>
             <soundCast>GunShotA</soundCast>
@@ -235,7 +235,7 @@
 			<hasStandardCommand>True</hasStandardCommand>
 			<defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
 			<warmupTime>1</warmupTime>
-			<range>75</range>
+			<range>86</range>
 			<burstShotCount>6</burstShotCount>
 			<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
 			<soundCast>Shot_Autocannon</soundCast>
@@ -326,7 +326,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
 				<warmupTime>1</warmupTime>
-				<range>75</range>
+				<range>86</range>
 				<burstShotCount>4</burstShotCount>
 				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
 				<soundCast>Shot_Autocannon</soundCast>

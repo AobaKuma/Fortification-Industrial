@@ -27,6 +27,10 @@
 				<compClass>CompEquippable</compClass>
 			</li>
 		</comps>
+		<weaponTags>
+			<li>DMS_MechWeaponMeduim</li>
+			<li>A_SuppressWeapon</li>
+		</weaponTags>
 		<weaponClasses>
 			<li>Ranged</li>
 		</weaponClasses>

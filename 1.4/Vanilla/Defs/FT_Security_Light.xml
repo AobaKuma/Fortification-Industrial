@@ -641,7 +641,7 @@
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
-        <defaultProjectile>Bullet_Minigun</defaultProjectile>
+        <defaultProjectile>Bullet_MiniTurret</defaultProjectile>
         <warmupTime>0.5</warmupTime>
         <range>30.9</range>
         <minRange>1.9</minRange>

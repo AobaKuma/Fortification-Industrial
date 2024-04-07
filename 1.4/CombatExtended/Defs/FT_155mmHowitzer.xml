@@ -8,7 +8,7 @@
 		<label>155mm Howitzer shells</label>
 		<ammoTypes>
 			<Ammo_155mmHowitzerShell_HE>Bullet_FT_155mmHowitzerShell_HE</Ammo_155mmHowitzerShell_HE>
-			<Ammo_155mmHowitzerShell_HE_HFuzed>Bullet_FT_155mmHowitzerShell_Airburst</Ammo_155mmHowitzerShell_HE_HFuzed>
+			<!--<Ammo_155mmHowitzerShell_HE_HFuzed>Bullet_FT_155mmHowitzerShell_Airburst</Ammo_155mmHowitzerShell_HE_HFuzed>-->
 			<Ammo_155mmHowitzerShell_Incendiary>Bullet_FT_155mmHowitzerShell_Incendiary</Ammo_155mmHowitzerShell_Incendiary>
 			<Ammo_155mmHowitzerShell_EMP>Bullet_FT_155mmHowitzerShell_EMP</Ammo_155mmHowitzerShell_EMP>
 			<Ammo_155mmHowitzerShell_Smoke>Bullet_FT_155mmHowitzerShell_Smoke</Ammo_155mmHowitzerShell_Smoke>
@@ -22,7 +22,7 @@
 		<label>155mm Howitzer shells</label>
 		<ammoTypes>
 			<Ammo_155mmHowitzerShell_HE>Bullet_FT_155mmHowitzerShell_HE_directfire</Ammo_155mmHowitzerShell_HE>
-			<Ammo_155mmHowitzerShell_HE_HFuzed>Bullet_FT_155mmHowitzerShell_Airburst_directfire</Ammo_155mmHowitzerShell_HE_HFuzed>
+			<!--<Ammo_155mmHowitzerShell_HE_HFuzed>Bullet_FT_155mmHowitzerShell_Airburst_directfire</Ammo_155mmHowitzerShell_HE_HFuzed>-->
 			<Ammo_155mmHowitzerShell_Incendiary>Bullet_FT_155mmHowitzerShell_Incendiary_directfire</Ammo_155mmHowitzerShell_Incendiary>
 			<Ammo_155mmHowitzerShell_EMP>Bullet_FT_155mmHowitzerShell_EMP_directfire</Ammo_155mmHowitzerShell_EMP>
 			<Ammo_155mmHowitzerShell_Smoke>Bullet_FT_155mmHowitzerShell_Smoke_directfire</Ammo_155mmHowitzerShell_Smoke>
@@ -76,7 +76,7 @@
 		</comps>
 	</ThingDef>
 	
-	<ThingDef Name="BaseFT155mmHowitzerShell_Airburst" ParentName="BaseFT155mmHowitzerShell">
+	<!--<ThingDef Name="BaseFT155mmHowitzerShell_Airburst" ParentName="BaseFT155mmHowitzerShell">
 		<defName>Bullet_FT_155mmHowitzerShell_Airburst_directfire</defName>
 		<label>155mm Howitzer shell (Airburst)</label>
 		<thingClass>Fortification.ProjectileCE_ClusterBomb</thingClass>
@@ -90,7 +90,6 @@
 			<explosionRadius>5.5</explosionRadius>
 			<soundExplode>MortarBomb_Explode</soundExplode>
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-			<!--aimHeightOffset>2</aimHeightOffset>-->
 		</projectile>
 		<comps Inherit="false">
 			<li Class="CombatExtended.CompProperties_Fragments">
@@ -98,25 +97,17 @@
 					<Fragment_Large>40</Fragment_Large>
 					<Fragment_Small>80</Fragment_Small>
 				</fragments>
-				<!--<fragAngleRange>-15~-5</fragAngleRange>-->
 				<fragXZAngleRange>-20~20</fragXZAngleRange>
 			</li>
 		</comps>
 		<modExtensions Inherit="false">
 			<li Class="Fortification.ModExtension_ClusterBomb">
-				<clusterBurstCount>0</clusterBurstCount><!-- 破片數量 -->
-				<forceMissingRange>6</forceMissingRange><!-- 散射範圍(以母彈目標為圓心擴散) -->
-				<safetyDistance>4.5</safetyDistance><!-- 安全距離 -->
-				<!--<doDismantlExplosion>true</doDismantlExplosion>--><!-- 分裂時爆炸 -->
-				<!--<dismantlExplosionDam>Smoke</dismantlExplosionDam>--><!-- 分裂爆炸的DamageDef -->
-				<!--<dismantlExplosionRadius>0.5</dismantlExplosionRadius>--><!-- 分裂爆炸的範圍 -->
-				<!--<dismantlExplosionDamAmount>0</dismantlExplosionDamAmount>--><!-- 分裂爆炸的傷害 -->
-				<!--<dismantlExplosionArmorPenetration>0</dismantlExplosionArmorPenetration>--><!-- 分裂爆炸傷害的穿甲 -->
-				<!--<dismantlExplosionSound>ExtinguisherExplosion</dismantlExplosionSound>--><!-- 分裂爆炸的音效SoundDef -->
-				<TDDistance>20~25</TDDistance><!--距離目標多遠時分裂(最小/最大距離) -->
+				<forceMissingRange>6</forceMissingRange>
+				<safetyDistance>4.5</safetyDistance>
+				<TDDistance>20~25</TDDistance>
 			</li>
 		</modExtensions>
-	</ThingDef>
+	</ThingDef>-->
 
 	<ThingDef Name="BaseFT155mmHowitzerShell_Incendiary" ParentName="BaseFT155mmHowitzerShell">
 		<defName>Bullet_FT_155mmHowitzerShell_Incendiary_directfire</defName>
@@ -301,7 +292,7 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseFT155mmHowitzerShell_Airburst">
+	<!--<ThingDef ParentName="BaseFT155mmHowitzerShell_Airburst">
 		<defName>Bullet_FT_155mmHowitzerShell_Airburst</defName>
 		<thingClass>CombatExtended.ProjectileCE_HeightFuse</thingClass>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -322,7 +313,7 @@
 		</comps>
 		<modExtensions>
 		</modExtensions>
-	</ThingDef>
+	</ThingDef>-->
 
 	<ThingDef ParentName="BaseFT155mmHowitzerShell_Incendiary">
 		<defName>Bullet_FT_155mmHowitzerShell_Incendiary</defName>

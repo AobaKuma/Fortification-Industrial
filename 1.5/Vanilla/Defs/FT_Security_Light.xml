@@ -575,7 +575,7 @@
       <drawOffset>(0,0,-0.1)</drawOffset>
     </graphicData>
     <statBases>
-      <MaxHitPoints>120</MaxHitPoints>
+      <MaxHitPoints>400</MaxHitPoints>
       <Flammability>0.7</Flammability>
       <WorkToBuild>3300</WorkToBuild>
       <Mass>25</Mass>
@@ -681,7 +681,7 @@
       <drawOffset>(0,0,-0.1)</drawOffset>
     </graphicData>
     <statBases>
-      <MaxHitPoints>120</MaxHitPoints>
+      <MaxHitPoints>250</MaxHitPoints>
       <Flammability>0.7</Flammability>
       <WorkToBuild>3300</WorkToBuild>
       <Mass>23</Mass>
@@ -775,7 +775,7 @@
       <drawOffset>(0,0,-0.1)</drawOffset>
     </graphicData>
     <statBases>
-      <MaxHitPoints>120</MaxHitPoints>
+      <MaxHitPoints>400</MaxHitPoints>
       <Flammability>0.7</Flammability>
       <WorkToBuild>3300</WorkToBuild>
       <Mass>38</Mass>

@@ -17,7 +17,7 @@
     <altitudeLayer>Building</altitudeLayer>
     <rotatable>false</rotatable>
     <statBases>
-      <MaxHitPoints>300</MaxHitPoints>
+      <MaxHitPoints>1000</MaxHitPoints>
       <Flammability>0.0</Flammability>
       <WorkToBuild>1800</WorkToBuild>
       <Beauty>-20</Beauty>

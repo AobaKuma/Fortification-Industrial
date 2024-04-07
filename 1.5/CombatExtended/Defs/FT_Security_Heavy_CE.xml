@@ -8,7 +8,6 @@
 		<defName>FT_TurretHexMortar</defName>
 		<label>Hexagonal Mortar Launcher</label>
 		<description>A manned mortar launcher with six barrel, with some mysterious technology, it can shoot six mortar shells at one time, however, it's not accurate.</description>
-
 		<uiIconPath>InfantryTurret/FT_HexMortar_icon</uiIconPath>
 		<uiIconScale>1.2</uiIconScale>
 		<graphicData>
@@ -40,6 +39,9 @@
 					<!--<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Heavy</li>-->
 					<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Wheel_Sec</li>
 				</randomGraphics>
+			</li>
+			<li MayRequire="3HSTltd.Framework">
+				<compClass>BillDoorsFramework.CompTurretFix</compClass>
 			</li>
 		</comps>
 		<statBases>
@@ -95,7 +97,7 @@
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<soundCast>FT_NebelShot</soundCast>
 				<muzzleFlashScale>39</muzzleFlashScale>
-				<indirectFirePenalty>0.3</indirectFirePenalty>
+				<indirectFirePenalty>0.75</indirectFirePenalty>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
@@ -146,46 +148,67 @@
 				<burstOffsetRange>(2,6)</burstOffsetRange> 
 				<onGroundOverride>true</onGroundOverride>
 			</li>
+			<li MayRequire="3HSTltd.Framework" Class="CombatExtended.CompProperties_FireModes">
+				<aiUseBurstMode>false</aiUseBurstMode>
+			</li>
+			<li MayRequire="3HSTltd.Framework" Class="BillDoorsFramework.CompProperties_SecondaryAmmo">
+				<secondaryVerb>
+					<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofMortarCE</verbClass>
+					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Bullet_FT_15cmNebelwerfer_HE_directfire</defaultProjectile>		
+					<warmupTime>3</warmupTime>
+					<minRange>20</minRange>
+					<range>1000</range>
+					<burstShotCount>6</burstShotCount>
+					<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+					<soundCast>FT_NebelShot</soundCast>
+					<muzzleFlashScale>39</muzzleFlashScale>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+					<recoilPattern>Mounted</recoilPattern>
+					<recoilAmount>0.0</recoilAmount>
+					<circularError>10</circularError>
+					<!--<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>-->
+					<!--<requireLineOfSight>false</requireLineOfSight>-->
+				</secondaryVerb>
+				<secondaryAmmoProps>
+					<magazineSize>6</magazineSize>
+					<reloadOneAtATime>true</reloadOneAtATime>
+					<reloadTime>2.5</reloadTime>
+					<ammoSet>AmmoSet_FT_15cmNebelwerfer_directfire</ammoSet>
+				</secondaryAmmoProps>
+				<mainWeaponLabel>indirect fire</mainWeaponLabel>
+				<secondaryWeaponLabel>direct fire</secondaryWeaponLabel>
+				<description>switch firing mode</description>
+				<mainCommandIcon>Indirect</mainCommandIcon>
+				<secondaryCommandIcon>Direct</secondaryCommandIcon>
+				<secondaryWeaponChargeSpeeds>
+							<li>30</li>
+							<li>50</li>
+							<li>70</li>
+							<li>90</li>
+							<li>110</li>
+							<li>130</li>
+				</secondaryWeaponChargeSpeeds>
+			</li>
 			<li Class="CombatExtended.CompProperties_Charges">
 				<chargeSpeeds>
 							<li>30</li>
-							<li>35</li>
-							<li>40</li>
-							<li>45</li>
 							<li>50</li>
-							<li>55</li>
-							<li>60</li>
-							<li>65</li>
 							<li>70</li>
-							<li>75</li>
-							<li>80</li>
-							<li>85</li>
 							<li>90</li>
-							<li>95</li>
-							<li>100</li>
-							<li>105</li>
 							<li>110</li>
-							<li>115</li>
-							<li>120</li>
-							<li>125</li>
 							<li>130</li>
-							<li>135</li>
-							<li>140</li>
-							<li>145</li>
-							<li>150</li>
-							<li>155</li>
-							<li>160</li>
-							<li>165</li>
-							<li>170</li>
-							<li>175</li>
-							<li>180</li>
-							<li>185</li>
-							<li>190</li>
-							<li>195</li>
-							<li>200</li>
 				</chargeSpeeds>
 			</li>
 		</comps>
+		<modExtensions>
+            <li Class="BillDoorsFramework.ModExtension_VerbNotUnderRoof" MayRequire="3HSTltd.Framework">
+                <appliesInSecondaryMode>false</appliesInSecondaryMode>
+            </li>
+        </modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
@@ -236,7 +259,7 @@
 			<WorkToBuild>3500</WorkToBuild>
 		</statBases>
 		<costList>
-			<Steel>450</Steel>
+			<Steel>550</Steel>
 			<ComponentIndustrial>6</ComponentIndustrial>
 			<ReinforcedBarrel>2</ReinforcedBarrel>
 		</costList>
@@ -279,19 +302,30 @@
 				<soundCast>FT_CannonLaunchB</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>25</muzzleFlashScale>
-				<indirectFirePenalty>0.5</indirectFirePenalty>
+				<indirectFirePenalty>0.75</indirectFirePenalty>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
 				<recoilPattern>Mounted</recoilPattern>
 				<recoilAmount>0.0</recoilAmount>
+				<!--<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>-->
 			</li>
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>1</magazineSize>
-				<reloadTime>7.5</reloadTime>
+				<reloadTime>5</reloadTime>
 				<ammoSet>AmmoSet_FT_105mmHowitzerShell</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_Charges">
+				<chargeSpeeds>
+					<li>55</li>
+					<li>75</li>
+					<li>95</li>
+					<li>115</li>
+					<li>135</li>
+					<li>155</li>
+				</chargeSpeeds>
 			</li>
 			<li Class="Fortification.CompProperties_CastFlecker">
 				<fleck>DustPuffThick</fleck>
@@ -344,6 +378,8 @@
 					</targetParams>
 					<recoilPattern>Mounted</recoilPattern>
 					<recoilAmount>0.0</recoilAmount>
+					<!--<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>-->
+					<!--<requireLineOfSight>false</requireLineOfSight>-->
 				</secondaryVerb>
 				<secondaryAmmoProps>
 					<magazineSize>1</magazineSize>
@@ -355,6 +391,14 @@
 				<description>switch firing mode</description>
 				<mainCommandIcon>Indirect</mainCommandIcon>
 				<secondaryCommandIcon>Direct</secondaryCommandIcon>
+				<secondaryWeaponChargeSpeeds>
+					<li>55</li>
+					<li>75</li>
+					<li>95</li>
+					<li>115</li>
+					<li>135</li>
+					<li>155</li>
+				</secondaryWeaponChargeSpeeds>
 			</li>
 		</comps>
 		<modExtensions>
@@ -404,7 +448,7 @@
 			<WorkToBuild>5000</WorkToBuild>
 		</statBases>
 		<costList>
-			<Steel>500</Steel>
+			<Steel>600</Steel>
 			<ComponentIndustrial>8</ComponentIndustrial>
 			<ReinforcedBarrel>3</ReinforcedBarrel>
 		</costList>
@@ -437,7 +481,7 @@
 		</weaponTags>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
 				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_FT_155mmHowitzerShell_HE_directfire</defaultProjectile>
@@ -452,7 +496,8 @@
 				</targetParams>
 				<recoilPattern>Mounted</recoilPattern>
 				<recoilAmount>0.0</recoilAmount>
-				<indirectFirePenalty MayRequire="3HSTltd.Framework">0.5</indirectFirePenalty>
+				<!--<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>-->
+				<indirectFirePenalty MayRequire="3HSTltd.Framework">0.75</indirectFirePenalty>
 			</li>
 		</verbs>
 		<comps>
@@ -460,6 +505,16 @@
 				<magazineSize>1</magazineSize>
 				<reloadTime>7.5</reloadTime>
 				<ammoSet>AmmoSet_FT_155mmHowitzerShell_directfire</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_Charges">
+				<chargeSpeeds>
+					<li>100</li>
+					<li>120</li>
+					<li>140</li>
+					<li>160</li>
+					<li>180</li>
+					<li>200</li>
+				</chargeSpeeds>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiUseBurstMode>false</aiUseBurstMode>
@@ -512,6 +567,7 @@
 					</targetParams>
 					<recoilPattern>Mounted</recoilPattern>
 					<recoilAmount>0.0</recoilAmount>
+					<!--<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>-->
 				</secondaryVerb>
 				<secondaryAmmoProps>
 					<magazineSize>1</magazineSize>
@@ -523,6 +579,14 @@
 				<description>switch firing mode</description>
 				<mainCommandIcon>Indirect</mainCommandIcon>
 				<secondaryCommandIcon>Direct</secondaryCommandIcon>
+				<secondaryWeaponChargeSpeeds>
+					<li>100</li>
+					<li>120</li>
+					<li>140</li>
+					<li>160</li>
+					<li>180</li>
+					<li>200</li>
+				</secondaryWeaponChargeSpeeds>
 			</li>
 		</comps>
 		<modExtensions>

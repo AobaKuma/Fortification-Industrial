@@ -339,29 +339,14 @@
 		</modExtensions>
   </ThingDef>
 
-  <ThingDef ParentName="BaseBullet">
+   <ThingDef ParentName="BaseBullet">
     <defName>FT_Bullet_AAShell</defName>
     <label>uranium APT shell</label>
-	  <thingClass>Fortification.Projectile_ExplosiveByComps</thingClass>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.2</drawSize>
     </graphicData>
-		<modExtensions>
-			<li Class="Fortification.ModExtension_CompositeExplosion">
-				<compositeExplosions>
-					<li>
-					<countdown>1</countdown>
-					<radius>0.5</radius>
-					<damamgeDef>Bomb</damamgeDef>
-					<amount>5</amount>
-					<armorPenetration>0.3</armorPenetration>
-					<explosionSound>MortarBomb_Explode</explosionSound>
-					</li>
-				</compositeExplosions>
-			</li>
-		</modExtensions>
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>18</damageAmountBase>
@@ -370,11 +355,18 @@
       <speed>93</speed>
       <arcHeightFactor>0.3</arcHeightFactor>
       <shadowSize>0.6</shadowSize>
-	  	<explosionDelay>2</explosionDelay>
-      <soundExplode>Explosion_GiantBomb</soundExplode>
-      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-      <soundAmbient>MortarRound_Ambient</soundAmbient>
     </projectile>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>0.5</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<armorPenetrationBase>0.3</armorPenetrationBase>
+				<damageAmountBase>5</damageAmountBase>
+				<explodeOnDestroyed>true</explodeOnDestroyed>
+				<explodeOnKilled>true</explodeOnKilled>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+		</comps>
   </ThingDef>
 
   <!-- 輕型反坦克炮 -->
@@ -527,26 +519,11 @@
   <ThingDef ParentName="BaseBullet">
     <defName>FT_Bullet_ATShell</defName>
     <label>armor piercing shell</label>
-	  <thingClass>Fortification.Projectile_ExplosiveByComps</thingClass>
     <graphicData>
       <texPath>Things/Projectile/Bullet_Big</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>2</drawSize>
     </graphicData>
-		<modExtensions>
-			<li Class="Fortification.ModExtension_CompositeExplosion">
-				<compositeExplosions>
-					<li>
-					<countdown>1</countdown>
-					<radius>1</radius>
-					<damamgeDef>Bomb</damamgeDef>
-					<amount>50</amount>
-					<armorPenetration>5</armorPenetration>
-					<explosionSound>MortarBomb_Explode</explosionSound>
-					</li>
-				</compositeExplosions>
-			</li>
-		</modExtensions>
     <projectile>
       <damageDef>Bullet</damageDef>
       <damageAmountBase>50</damageAmountBase>
@@ -555,11 +532,18 @@
       <speed>100</speed>
       <arcHeightFactor>0.2</arcHeightFactor>
       <shadowSize>0.6</shadowSize>
-	  	<explosionDelay>2</explosionDelay>
-      <soundExplode>Explosion_GiantBomb</soundExplode>
-      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-      <soundAmbient>MortarRound_Ambient</soundAmbient>
     </projectile>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>1.1</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<armorPenetrationBase>0.5</armorPenetrationBase>
+				<damageAmountBase>50</damageAmountBase>
+				<explodeOnDestroyed>true</explodeOnDestroyed>
+				<explodeOnKilled>true</explodeOnKilled>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+		</comps>
   </ThingDef>
 
   <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">

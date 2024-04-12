@@ -23,6 +23,8 @@ namespace Fortification
                     }
                     castPawn.records?.Increment(RecordDefOf.ShotsFired);
                 }
+                ThingWithComps comps = __instance.EquipmentSource;
+                if (comps == null) return;
                 if (__instance.EquipmentSource?.GetComp<CompCastPushHeat>() is CompCastPushHeat compCastPushHeat)            //射擊加溫
                 {
                     if (compCastPushHeat.EnergyPerCast != 0)

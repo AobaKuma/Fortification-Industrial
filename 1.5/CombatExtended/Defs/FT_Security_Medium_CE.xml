@@ -211,10 +211,10 @@
 				<damageDef>Thermobaric</damageDef>
 				<multiplier>0.75</multiplier>
 			</li>
-			<!--<li>
+			<li>
 				<damageDef>Electrical</damageDef>
 				<multiplier>0</multiplier>
-			</li>-->
+			</li>
 <!--==========-->
 <!--3HSTltd Plasma Weapons-->
 			<li MayRequire="3HSTltd.Weapons.Plasma">

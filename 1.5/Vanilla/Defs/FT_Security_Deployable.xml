@@ -110,7 +110,7 @@
 				</fuelFilter>
 				<fuelIsMortarBarrel>true</fuelIsMortarBarrel>
 				<fuelCapacity>50</fuelCapacity>
-				<fuelMultiplier>50</fuelMultiplier>
+				<fuelMultiplier>25</fuelMultiplier>
 				<initialFuelPercent>1</initialFuelPercent>
 				<showFuelGizmo>true</showFuelGizmo>
 				<minimumFueledThreshold>1</minimumFueledThreshold>

@@ -103,14 +103,14 @@
 			<damageDef>Mining</damageDef>
 			<multiplier>0.1</multiplier>
 		  </li>
-		  <!--<li>
+		  <li>
 			<damageDef>EMP</damageDef>
 			<multiplier>0</multiplier>
 		  </li>
 		  <li>
 			<damageDef>Stun</damageDef>
 			<multiplier>0</multiplier>
-		  </li-->
+		  </li>
 		  <li>
 			<damageDef>Smoke</damageDef>
 			<multiplier>0</multiplier>
@@ -118,7 +118,7 @@
 <!--Biotech DLC -->
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<damageDef>Vaporize</damageDef>
-				<multiplier>1</multiplier>
+				<multiplier>0.75</multiplier>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<damageDef>BulletToxic</damageDef>
@@ -132,10 +132,43 @@
 				<damageDef>Beam</damageDef>
 				<multiplier>0.75</multiplier>
 			</li>
-			<!--<li MayRequire="Ludeon.RimWorld.Biotech">
+			<li MayRequire="Ludeon.RimWorld.Biotech">
 				<damageDef>MechBandShockwave</damageDef>
 				<multiplier>0</multiplier>
-			</li>-->
+			</li>
+<!--Anomaly DLC -->
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<damageDef>Nerve</damageDef>
+				<multiplier>0.1</multiplier>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<damageDef>EnergyBolt</damageDef>
+				<multiplier>0.1</multiplier>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<damageDef>Digested</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<damageDef>ElectricalBurn</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<damageDef>NerveStun</damageDef>
+				<multiplier>0.1</multiplier>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<damageDef>Psychic</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<damageDef>DeadlifeDust</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<damageDef>NociosphereVaporize</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
 <!--==========-->
 <!-- Combat Extended -->
 			<li>

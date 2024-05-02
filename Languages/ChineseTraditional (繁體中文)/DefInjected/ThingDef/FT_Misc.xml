@@ -3,7 +3,7 @@
   
   <!-- EN: Antenna Tower -->
   <FT_AntennaTower.label>無線電訊號塔</FT_AntennaTower.label>
-  <!-- EN: A bigger version of orbital trade beacon,(WIP), will have more function in the future. -->
+  <!-- EN: A bigger orbital trade beacon that can only place outside. can attract orbital traders so they can navigate to this planet. -->
   <FT_AntennaTower.description>一個放大版的軌道交易信標.</FT_AntennaTower.description>
   
   <!-- EN: E.N.I.A.C. -->
@@ -16,6 +16,9 @@
   <!-- EN: When it detects fire, this safety device pops and sprays a fire-retardant foam in a circular field around itself. Can also be triggered manually. -->
   <FT_FirefoamPopper.description>紅色金屬消防栓,他基本上就是個更適合街道放置的一次性消防滅火裝置.</FT_FirefoamPopper.description>
   <!-- EN: Trigger {0_label} -->
+  <FT_FirefoamPopper.comps.CompFueledUsable.useLabel>使用</FT_FirefoamPopper.comps.CompFueledUsable.useLabel>
+  
+  <!-- UNUSED -->
   <FT_FirefoamPopper.comps.CompUsable.useLabel>開閥{0_label}</FT_FirefoamPopper.comps.CompUsable.useLabel>
   
   <!-- EN: mobile chemfuel generator -->
@@ -27,8 +30,7 @@
   <FT_Radio.label>無線電終端</FT_Radio.label>
   <!-- EN: Allows radio contact with other factions and orbital traders,also when interrogating the frequency band, some interference that may be precious metals can be located,(WIP), will have more function in the future. -->
   <FT_Radio.description>允許透過無線電通訊聯絡其他陣營與軌道商人,此外透過對影響訊號的頻率分辨,可以定位到可能的稀有金屬位置,(完整功能尚未完成,將來會有更多功能).</FT_Radio.description>
-  
-  <!-- UNUSED -->
-  <FT_Radio.comps.4.useLabel>Summon diabolus threat</FT_Radio.comps.4.useLabel>
+  <!-- EN: Summon diabolus threat -->
+  <FT_Radio.comps.CompUsable.useLabel>Summon diabolus threat</FT_Radio.comps.CompUsable.useLabel>
   
 </LanguageData>

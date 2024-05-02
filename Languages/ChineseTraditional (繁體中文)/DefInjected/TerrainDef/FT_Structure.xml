@@ -13,7 +13,7 @@
   
   <!-- EN: concrete flagstone -->
   <FT_FlagstoneConcrete.label>混凝土舖路磚</FT_FlagstoneConcrete.label>
-  <!-- EN:  -->
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
   <FT_FlagstoneConcrete.description>粗略切割處理的石地磚，談不上漂亮，但相當適合用來鋪設道路和走道。拆除石板路並不會返還資源。</FT_FlagstoneConcrete.description>
   
   <!-- EN: wood-liked concrete floor -->

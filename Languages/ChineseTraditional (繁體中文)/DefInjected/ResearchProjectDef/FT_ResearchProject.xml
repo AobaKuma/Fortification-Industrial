@@ -4,7 +4,7 @@
   <!-- EN: chemistry -->
   <FT_Chemistry.label>化學</FT_Chemistry.label>
   <!-- EN: Build Chemistry Table that can artificially synthesize compounds such as Neutroamine. -->
-  <FT_Chemistry.description>解鎖化學製造桌,能夠從肉類中人工提取並合成中性胺.</FT_Chemistry.description>
+  <FT_Chemistry.description>解鎖化學製造桌，能夠從肉類中人工提取並合成中性胺。</FT_Chemistry.description>
 
   <FT_Chemistry.generalRules.rulesStrings>
     <li>subject->化學</li>
@@ -23,7 +23,7 @@
   <!-- EN: Concrete -->
   <FT_Concrete.label>混凝土</FT_Concrete.label>
   <!-- EN: crush and smelt stony material to concrete. -->
-  <FT_Concrete.description>解鎖將石料加工成混凝土用於建築與地板鋪設.</FT_Concrete.description>
+  <FT_Concrete.description>解鎖將石料加工成混凝土用於建築與地板鋪設。</FT_Concrete.description>
 
   <FT_Concrete.generalRules.rulesStrings>
     <li>subject->現代混凝土</li>
@@ -41,8 +41,8 @@
   
   <!-- EN: ENIAC -->
   <FT_ENIAC.label>真空管電腦</FT_ENIAC.label>
-  <!-- EN: Electronic Numerical Integrator And Computer, known as ENIAC is a Turing-complete general-purpose digital computer able to solve "a large class of numerical problems" through reprogramming. -->
-  <FT_ENIAC.description>真空管電子數值計算機,雖然算不上是最好的但可以說是電子科技的里程碑.</FT_ENIAC.description>
+  <!-- EN: Electronic Numerical Integrator And Computer， known as ENIAC is a Turing-complete general-purpose digital computer able to solve "a large class of numerical problems" through reprogramming. -->
+  <FT_ENIAC.description>真空管電子數值計算機，雖然算不上是最好的但可以說是電子科技的里程碑。</FT_ENIAC.description>
   <!-- EN: [Interstellar Industries Complex Nara Terminal]\n      [ version="1.5"] [ encoding="UTF-8" ]\n      Loading....\n\n      [To user]\n      Being able to build ENIAC and read this information means that you or your civilization already has the minimum requirements for the realization of the technology in the disc.\n      We look forward to further cooperation with you to create a beautiful industrialized society in the rimworld.\n      OS>:_ -->
   <FT_ENIAC.discoveredLetterText>[奈良星際工業複合體終端]\n [ 版本="1.5"] [編碼="UTF-8" ]\n 正在加載中....\n\n [致用戶]\n 能夠構建ENIAC 並閱讀此內容資訊意味著你或你的文明已經具備實現光碟中科技的最低要求。 \n我們期待與您的進一步合作，用務實的雙手在這片邊緣世界創造一個美好的先進社會。</FT_ENIAC.discoveredLetterText>
   <!-- EN: Data Disk: ENIAC -->
@@ -66,8 +66,8 @@
   
   <!-- EN: heavy artillery -->
   <FT_HeavyArtillery.label>重型火砲</FT_HeavyArtillery.label>
-  <!-- EN: Using ENIAC to calculate the artillery ballistics table, unlock the design of heavy artilleries. -->
-  <FT_HeavyArtillery.description>使用伊尼亞克計算火炮彈道表,解鎖重型火砲的設計.</FT_HeavyArtillery.description>
+  <!-- EN: Using ENIAC to calculate the artillery ballistics table， unlock the design of heavy artilleries. -->
+  <FT_HeavyArtillery.description>使用伊尼亞克計算火炮彈道表，解鎖重型火砲的設計。</FT_HeavyArtillery.description>
 
   <FT_HeavyArtillery.generalRules.rulesStrings>
     <li>subject->外彈道學分析</li>
@@ -86,7 +86,7 @@
   <!-- EN: Industrial Cannon -->
   <FT_IndustrialCannon.label>工業火炮</FT_IndustrialCannon.label>
   <!-- EN: Using reinforced barrel to build AT and AA Guns. -->
-  <FT_IndustrialCannon.description>解鎖使用加固砲管建造防空與反坦克炮.</FT_IndustrialCannon.description>
+  <FT_IndustrialCannon.description>解鎖使用加固砲管建造防空與反坦克炮。</FT_IndustrialCannon.description>
 
   <FT_IndustrialCannon.generalRules.rulesStrings>    
     <li>subject->步兵炮</li>
@@ -105,7 +105,7 @@
   <!-- EN: lathe -->
   <FT_Lathe.label>車床</FT_Lathe.label>
   <!-- EN: Build lathe for early-stage compoment and reinforced barrel making. -->
-  <FT_Lathe.description>解鎖車床用於早期工業的零件與炮管生產.</FT_Lathe.description>
+  <FT_Lathe.description>解鎖車床用於早期工業的零件與炮管生產。</FT_Lathe.description>
 
   <FT_Lathe.generalRules.rulesStrings>
     <li>subject->機床設計大全</li>

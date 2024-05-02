@@ -4,7 +4,7 @@
   <!-- EN: Chemistry Table -->
   <FT_TableChemistry.label>化學製造桌</FT_TableChemistry.label>
   <!-- EN: A table that can artificially synthesize compounds such as Neutroamine. -->
-  <FT_TableChemistry.description>能夠從肉類中人工提取並合成中性胺的加工桌.</FT_TableChemistry.description>
+  <FT_TableChemistry.description>能夠從肉類中人工提取並合成中性胺的加工桌。</FT_TableChemistry.description>
   
   <!-- EN: ConcreteMixer -->
   <FT_TableConcreteMixer.label>混凝土加工機</FT_TableConcreteMixer.label>

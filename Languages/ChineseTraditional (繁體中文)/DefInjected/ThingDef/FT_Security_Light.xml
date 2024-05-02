@@ -21,49 +21,49 @@
   <!-- EN: autocannon -->
   <FT_Gun_Autocannon.label>自動機砲</FT_Gun_Autocannon.label>
   <!-- EN: A self-loading large-bore cannon designed to attach to a turret. -->
-  <FT_Gun_Autocannon.description>一種大口徑的導氣式機砲,被廣泛的使用在工業世界的裝甲載具與航空器上.</FT_Gun_Autocannon.description>
+  <FT_Gun_Autocannon.description>一種大口徑的導氣式機砲，被廣泛的使用在工業世界的裝甲載具與航空器上。</FT_Gun_Autocannon.description>
   <!-- EN: autocannon -->
   <FT_Gun_Autocannon.verbs.Verb_Shoot.label>自動機砲</FT_Gun_Autocannon.verbs.Verb_Shoot.label>
   
   <!-- EN: machine gun 4x mounted -->
   <FT_Gun_QuadMG.label>四聯機槍</FT_Gun_QuadMG.label>
   <!-- EN: what can be better than A fully machine gun be mounted on a turret ? Four of them! -->
-  <FT_Gun_QuadMG.description>有什麼能比一挺機槍來的爽快呢?,四挺!</FT_Gun_QuadMG.description>
+  <FT_Gun_QuadMG.description>有什麼能比一挺機槍來的爽快呢?，四挺!</FT_Gun_QuadMG.description>
   <!-- EN: machine gun 4x mounted -->
   <FT_Gun_QuadMG.verbs.Verb_Shoot.label>四聯機槍</FT_Gun_QuadMG.verbs.Verb_Shoot.label>
   
   <!-- EN: recoilless cannon -->
   <FT_Gun_Recoilless.label>無後座力砲</FT_Gun_Recoilless.label>
   <!-- EN: A Recoilless cannon designed to snipe the heavy-armed target in range. -->
-  <FT_Gun_Recoilless.description>一挺設計用於反裝甲目標的短距無後座力砲.</FT_Gun_Recoilless.description>
+  <FT_Gun_Recoilless.description>一挺設計用於反裝甲目標的短距無後座力砲。</FT_Gun_Recoilless.description>
   <!-- EN: recoilless cannon -->
   <FT_Gun_Recoilless.verbs.Verb_Shoot.label>無後座力砲</FT_Gun_Recoilless.verbs.Verb_Shoot.label>
   
   <!-- EN: Anti Air cannon -->
   <FT_Gun_TurretAA.label>高射砲</FT_Gun_TurretAA.label>
-  <!-- EN: An Autocannon designed to defend the area of skies, but also a nice weapon for ground targets. -->
-  <FT_Gun_TurretAA.description>用於對空攻擊的大口徑機關砲,但用於地面目標也很適合.</FT_Gun_TurretAA.description>
+  <!-- EN: An Autocannon designed to defend the area of skies， but also a nice weapon for ground targets. -->
+  <FT_Gun_TurretAA.description>用於對空攻擊的大口徑機關砲，但用於地面目標也很適合。</FT_Gun_TurretAA.description>
   <!-- EN: Anti Air cannon -->
   <FT_Gun_TurretAA.verbs.Verb_Shoot.label>高射砲</FT_Gun_TurretAA.verbs.Verb_Shoot.label>
   
   <!-- EN: Anti Tank Cannon -->
   <FT_Gun_TurretAT.label>戰防砲</FT_Gun_TurretAT.label>
   <!-- EN: A uranium slug cannon designed to snipe the heavy-armed target in range. -->
-  <FT_Gun_TurretAT.description>一種用於對付裝甲與人員目標的小口徑火砲.</FT_Gun_TurretAT.description>
+  <FT_Gun_TurretAT.description>一種用於對付裝甲與人員目標的小口徑火砲。</FT_Gun_TurretAT.description>
   <!-- EN: Anti Tank Cannon -->
   <FT_Gun_TurretAT.verbs.Verb_Shoot.label>戰防砲</FT_Gun_TurretAT.verbs.Verb_Shoot.label>
   
   <!-- EN: Quad Anti Air cannon -->
   <FT_Gun_TurretQuadAA.label>聯裝高射砲</FT_Gun_TurretQuadAA.label>
-  <!-- EN: An Quad mounted Autocannon designed to defend the area of skies, but also a nice weapon for ground targets. -->
-  <FT_Gun_TurretQuadAA.description>早在人類進入太空時代前便已廣泛使用的大口徑機炮,其製造工藝在經過了一定的改良後隨著那些殖民船輾轉無數的世界並開枝散葉.</FT_Gun_TurretQuadAA.description>
+  <!-- EN: An Quad mounted Autocannon designed to defend the area of skies， but also a nice weapon for ground targets. -->
+  <FT_Gun_TurretQuadAA.description>早在人類進入太空時代前便已廣泛使用的大口徑機炮，其製造工藝在經過了一定的改良後隨著那些殖民船輾轉無數的世界並開枝散葉。</FT_Gun_TurretQuadAA.description>
   <!-- EN: Quad Anti Air cannon -->
   <FT_Gun_TurretQuadAA.verbs.Verb_Shoot.label>聯裝高射砲</FT_Gun_TurretQuadAA.verbs.Verb_Shoot.label>
   
   <!-- EN: Quad Machine gun -->
   <FT_Maxim4M.label>聯裝機槍</FT_Maxim4M.label>
-  <!-- EN: A Tripod with Quadruple machine gun mounted so it Have a good firepower continuity,need a pawn man on it to operate. Requires steel to refurbish its barrels after heavy use. -->
-  <FT_Maxim4M.description>安裝在三角架上的四聯裝機槍,有著良好的火力持續性.大量射擊後需消耗鋼鐵來更換砲管.</FT_Maxim4M.description>
+  <!-- EN: A Tripod with Quadruple machine gun mounted so it Have a good firepower continuity，need a pawn man on it to operate. Requires steel to refurbish its barrels after heavy use. -->
+  <FT_Maxim4M.description>安裝在三角架上的四聯裝機槍，有著良好的火力持續性.大量射擊後需消耗鋼鐵來更換砲管。</FT_Maxim4M.description>
   <!-- EN: Barrel durability -->
   <FT_Maxim4M.comps.CompRefuelable.fuelGizmoLabel>槍管耐久</FT_Maxim4M.comps.CompRefuelable.fuelGizmoLabel>
   <!-- EN: Shots until barrel change -->
@@ -73,8 +73,8 @@
   
   <!-- EN: recoilless gun -->
   <FT_RecoillessGun.label>無後座力砲</FT_RecoillessGun.label>
-  <!-- EN: A Tripod with Recoilless gun mounted.A light-weighted soloution of anti armour operation, Requires ReinforcedBarrel to refurbish its barrels after heavy use. also it needs a pawn to man on it to operate. But notice, do not use it indoors!! -->
-  <FT_RecoillessGun.description>安裝在三角架上的無後座力砲,對於野戰來說比反坦克炮還要易於攜帶,頻繁使用後需要加固砲管來維護.另外請注意,千萬不要在室內使用它.</FT_RecoillessGun.description>
+  <!-- EN: A Tripod with Recoilless gun mounted.A light-weighted soloution of anti armour operation， Requires ReinforcedBarrel to refurbish its barrels after heavy use. also it needs a pawn to man on it to operate. But notice， do not use it indoors!! -->
+  <FT_RecoillessGun.description>安裝在三角架上的無後座力砲，對於野戰來說比反坦克炮還要易於攜帶，頻繁使用後需要加固砲管來維護.另外請注意，千萬不要在室內使用它。</FT_RecoillessGun.description>
   <!-- EN: Barrel durability -->
   <FT_RecoillessGun.comps.CompRefuelable.fuelGizmoLabel>砲管耐久</FT_RecoillessGun.comps.CompRefuelable.fuelGizmoLabel>
   <!-- EN: Shots until barrel change -->
@@ -85,7 +85,7 @@
   <!-- EN: Anti Air Gun -->
   <FT_TurretAA.label>單裝機砲</FT_TurretAA.label>
   <!-- EN: A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field. -->
-  <FT_TurretAA.description>發射大口徑子彈的速射機砲,需要手動操作,其速射性能使其適合用於打擊空中目標以及地面人群.</FT_TurretAA.description>
+  <FT_TurretAA.description>發射大口徑子彈的速射機砲，需要手動操作，其速射性能使其適合用於打擊空中目標以及地面人群。</FT_TurretAA.description>
   <!-- EN: Barrel durability -->
   <FT_TurretAA.comps.CompRefuelable.fuelGizmoLabel>砲管耐久</FT_TurretAA.comps.CompRefuelable.fuelGizmoLabel>
   <!-- EN: Shots until barrel change -->
@@ -96,7 +96,7 @@
   <!-- EN: Anti Tank Gun -->
   <FT_TurretAT.label>反坦克炮</FT_TurretAT.label>
   <!-- EN: A manned rifle cannon that launches solid metal shells.It is accurate makes it useful for attacking groups of enemies in the field or sniping the small fortifications. -->
-  <FT_TurretAT.description>發射實心穿甲彈的線膛砲,需要手動操作.其精確度使其適用於掃蕩人群以及狙擊小型防禦工事.</FT_TurretAT.description>
+  <FT_TurretAT.description>發射實心穿甲彈的線膛砲，需要手動操作.其精確度使其適用於掃蕩人群以及狙擊小型防禦工事。</FT_TurretAT.description>
   <!-- EN: Barrel durability -->
   <FT_TurretAT.comps.CompRefuelable.fuelGizmoLabel>砲管耐久</FT_TurretAT.comps.CompRefuelable.fuelGizmoLabel>
   <!-- EN: Shots until barrel change -->
@@ -107,7 +107,7 @@
   <!-- EN: Quad Anti Air Gun -->
   <FT_TurretQuadAA.label>四聯機炮</FT_TurretQuadAA.label>
   <!-- EN: A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field. -->
-  <FT_TurretQuadAA.description>一種古老的防空機炮設計,採用多聯裝的方式提高火力密度與火力持續性.</FT_TurretQuadAA.description>
+  <FT_TurretQuadAA.description>一種古老的防空機炮設計，採用多聯裝的方式提高火力密度與火力持續性。</FT_TurretQuadAA.description>
   <!-- EN: Barrel durability -->
   <FT_TurretQuadAA.comps.CompRefuelable.fuelGizmoLabel>砲管耐久</FT_TurretQuadAA.comps.CompRefuelable.fuelGizmoLabel>
   <!-- EN: Shots until barrel change -->

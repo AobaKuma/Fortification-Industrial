@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Anti Air cannon -->
+  <FT_Gun_TurretAA.label>高射砲</FT_Gun_TurretAA.label>
+  <!-- EN: An Autocannon designed to defend the area of skies， but also a nice weapon for ground targets. -->
+  <FT_Gun_TurretAA.description>用于对空攻击的大口径机关砲，但用于地面目标也很适合。</FT_Gun_TurretAA.description>
+  <!-- EN: Anti Air cannon -->
+  <FT_Gun_TurretAA.verbs.Verb_ShootCE.label>对空机砲</FT_Gun_TurretAA.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: Anti Tank Cannon -->
+  <FT_Gun_TurretAT.label>战防砲</FT_Gun_TurretAT.label>
+  <!-- EN: A uranium slug cannon designed to snipe the heavy-armed target in range. -->
+  <FT_Gun_TurretAT.description>一种用于对付装甲与人员目标的小口径火砲。</FT_Gun_TurretAT.description>
+  <!-- EN: Anti Tank Cannon -->
+  <FT_Gun_TurretAT.verbs.Verb_ShootCE.label>反坦克加农砲</FT_Gun_TurretAT.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: 76mm anti-tank gun -->
+  <FT_Gun_TurretAT_Plus.label>重型反坦克炮</FT_Gun_TurretAT_Plus.label>
+  <!-- EN: A direct-fire cannon with capability to destroy a heavy armed vehicle. -->
+  <FT_Gun_TurretAT_Plus.description>76毫米口径的长身管反坦克炮，能在远距离歼灭重装甲载具。</FT_Gun_TurretAT_Plus.description>
+  <!-- EN: 76mm anti-tank gun -->
+  <FT_Gun_TurretAT_Plus.verbs.Verb_ShootCE.label>重型反坦克炮</FT_Gun_TurretAT_Plus.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: Quad Anti Air cannon -->
+  <FT_Gun_TurretQuadAA.label>联装高射砲</FT_Gun_TurretQuadAA.label>
+  <!-- EN: An Quad mounted Autocannon designed to defend the area of skies， but also a nice weapon for ground targets. -->
+  <FT_Gun_TurretQuadAA.description>在人类进入太空时代前便已广泛使用的大口径机炮，其制造工艺在经过了一定的改良后随着那些殖民船辗转无数的世界并开枝散叶。</FT_Gun_TurretQuadAA.description>
+  <!-- EN: Quad Anti Air cannon -->
+  <FT_Gun_TurretQuadAA.verbs.Verb_ShootCE.label>联装高射砲</FT_Gun_TurretQuadAA.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: Anti Air Gun -->
+  <FT_TurretAA.label>单装机砲</FT_TurretAA.label>
+  <!-- EN: A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field. -->
+  <FT_TurretAA.description>发射大口径子弹的速射机砲，需要手动操作，其速射性能使其适合用于打击空中目标以及地面人群。</FT_TurretAA.description>
+  
+  <!-- EN: Anti Tank Gun -->
+  <FT_TurretAT.label>反坦克炮</FT_TurretAT.label>
+  <!-- EN: A manned rifle cannon that launches solid metal shells.It is accurate makes it useful for attacking groups of enemies in the field or sniping the small fortifications. -->
+  <FT_TurretAT.description>发射实心穿甲弹的线膛砲，需要手动操作.其精确度使其适用于扫荡人群以及狙击小型防御工事。</FT_TurretAT.description>
+  
+  <!-- EN: 76mm anti-tank gun -->
+  <FT_TurretAT_Plus.label>重型反坦克炮</FT_TurretAT_Plus.label>
+  <!-- EN: A direct-fire cannon with capability to destroy a heavy armed vehicle. -->
+  <FT_TurretAT_Plus.description>76毫米口径的长身管反坦克炮，能在远距离歼灭重装甲载具。</FT_TurretAT_Plus.description>
+  
+  <!-- EN: Quad Anti Air Gun -->
+  <FT_TurretQuadAA.label>四联机炮</FT_TurretQuadAA.label>
+  <!-- EN: A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field. -->
+  <FT_TurretQuadAA.description>一种古老的防空机炮设计，采用多联装的方式提高火力密度与火力持续性。</FT_TurretQuadAA.description>
+  
+</LanguageData>

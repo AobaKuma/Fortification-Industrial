@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-  <FT_BillRequires_Mass>需要总计品质超过{0}</FT_BillRequires_Mass>
-  <FT_BillRequires_MarketValue>需要总计价格超过{0}</FT_BillRequires_MarketValue>
-
-  <FT_CannotPlaceWithoutWall>需要放置于墙体或门上</FT_CannotPlaceWithoutWall>
-  <FT_MustOnACoverBuilding>需要放置在掩体上</FT_MustOnACoverBuilding>
-</LanguageData>

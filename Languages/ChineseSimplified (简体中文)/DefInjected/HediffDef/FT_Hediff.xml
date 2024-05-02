@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: shell shock -->
+  <FT_ShellShock.label>弹震症</FT_ShellShock.label>
+  <!-- EN: a psychological disturbance caused by prolonged exposure to active warfare， especially being under bombardment -->
+  <FT_ShellShock.description>在反复环绕在战火环境中造成的长期精神疾病</FT_ShellShock.description>
+  <!-- EN: initial -->
+  <FT_ShellShock.stages.initial-0.label>隐藏</FT_ShellShock.stages.initial-0.label>
+  <!-- EN: initial -->
+  <FT_ShellShock.stages.initial-1.label>微弱</FT_ShellShock.stages.initial-1.label>
+  <!-- EN: minor -->
+  <FT_ShellShock.stages.minor.label>轻微</FT_ShellShock.stages.minor.label>
+  <!-- EN: serious -->
+  <FT_ShellShock.stages.serious.label>严重</FT_ShellShock.stages.serious.label>
+  <!-- EN: catatonic -->
+  <FT_ShellShock.stages.catatonic.label>应激</FT_ShellShock.stages.catatonic.label>
+  <!-- EN: extreme -->
+  <FT_ShellShock.stages.extreme.label>癫痫</FT_ShellShock.stages.extreme.label>
+  
+</LanguageData>

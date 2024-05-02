@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: machine gun -->
+  <FT_Gun_MG.label>机枪</FT_Gun_MG.label>
+  <!-- EN: An fully automatic gun made to be mounted on a turret. -->
+  <FT_Gun_MG.description>用于阵地与碉堡防御的机枪。</FT_Gun_MG.description>
+  <!-- EN: machine gun -->
+  <FT_Gun_MG.verbs.Verb_Shoot.label>机枪</FT_Gun_MG.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Machine Gun Bunker -->
+  <FT_Turret_BunkerC.label>机枪碉堡</FT_Turret_BunkerC.label>
+  <!-- EN: A stationry turret strengthen with materials. Requires steel to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled， so beware of friendly fire. -->
+  <FT_Turret_BunkerC.description>一种用材料加固防护的固定碉堡，大量射击后需消耗钢铁来更换砲管.损坏时可能会爆炸.它的AI不分敌我，所以请小心它的火力掩护.。</FT_Turret_BunkerC.description>
+  <!-- EN: Barrel durability -->
+  <FT_Turret_BunkerC.comps.CompRefuelable.fuelGizmoLabel>枪管耐久</FT_Turret_BunkerC.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until barrel change -->
+  <FT_Turret_BunkerC.comps.CompRefuelable.fuelLabel>枪管寿命</FT_Turret_BunkerC.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Cannot shoot: Needs new barrel -->
+  <FT_Turret_BunkerC.comps.CompRefuelable.outOfFuelMessage>无法射击: 需要替换枪管</FT_Turret_BunkerC.comps.CompRefuelable.outOfFuelMessage>
+  
+  <!-- EN: Military Machine Gun Nest -->
+  <FT_Turret_BunkerF.label>军用机枪阵地</FT_Turret_BunkerF.label>
+  <!-- EN: A stationry turret strengthen with materials. Requires steel to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled， so beware of friendly fire. -->
+  <FT_Turret_BunkerF.description>一种用纤维材料加固防护的固定机枪阵地，大量射击后需消耗钢铁来更换砲管.损坏时可能会爆炸.它的AI不分敌我，所以请小心它的火力掩护。</FT_Turret_BunkerF.description>
+  <!-- EN: Barrel durability -->
+  <FT_Turret_BunkerF.comps.CompRefuelable.fuelGizmoLabel>枪管耐久</FT_Turret_BunkerF.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until barrel change -->
+  <FT_Turret_BunkerF.comps.CompRefuelable.fuelLabel>枪管寿命</FT_Turret_BunkerF.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Cannot shoot: Needs new barrel -->
+  <FT_Turret_BunkerF.comps.CompRefuelable.outOfFuelMessage>无法射击: 需要替换枪管</FT_Turret_BunkerF.comps.CompRefuelable.outOfFuelMessage>
+  
+  <!-- EN: Machine Gun Nest -->
+  <FT_Turret_BunkerL.label>机枪阵地</FT_Turret_BunkerL.label>
+  <!-- EN: A stationry turret strengthen with materials. Requires steel to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled， so beware of friendly fire. -->
+  <FT_Turret_BunkerL.description>一种用皮革材料加固防护的机枪阵地，大量射击后需消耗钢铁来更换砲管.损坏时可能会爆炸.它的AI不分敌我，所以请小心它的火力掩护。</FT_Turret_BunkerL.description>
+  <!-- EN: Barrel durability -->
+  <FT_Turret_BunkerL.comps.CompRefuelable.fuelGizmoLabel>枪管耐久</FT_Turret_BunkerL.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until barrel change -->
+  <FT_Turret_BunkerL.comps.CompRefuelable.fuelLabel>枪管寿命</FT_Turret_BunkerL.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Cannot shoot: Needs new barrel -->
+  <FT_Turret_BunkerL.comps.CompRefuelable.outOfFuelMessage>无法射击: 需要替换枪管</FT_Turret_BunkerL.comps.CompRefuelable.outOfFuelMessage>
+  
+  <!-- EN: Machine Gun Turret Bunker -->
+  <FT_Turret_BunkerM.label>机枪砲塔碉堡</FT_Turret_BunkerM.label>
+  <!-- EN: A stationry turret strengthen with materials. Requires steel to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled， so beware of friendly fire. -->
+  <FT_Turret_BunkerM.description>一种用材料加固防护的固定砲塔，大量射击后需消耗钢铁来更换砲管.损坏时可能会爆炸.它的AI不分敌我，所以请小心它的火力掩护。</FT_Turret_BunkerM.description>
+  <!-- EN: Barrel durability -->
+  <FT_Turret_BunkerM.comps.CompRefuelable.fuelGizmoLabel>枪管耐久</FT_Turret_BunkerM.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until barrel change -->
+  <FT_Turret_BunkerM.comps.CompRefuelable.fuelLabel>枪管寿命</FT_Turret_BunkerM.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Cannot shoot: Needs new barrel -->
+  <FT_Turret_BunkerM.comps.CompRefuelable.outOfFuelMessage>无法射击: 需要替换枪管</FT_Turret_BunkerM.comps.CompRefuelable.outOfFuelMessage>
+  
+</LanguageData>

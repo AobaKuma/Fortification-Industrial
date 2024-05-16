@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 37x223mmR cartridge (sabot) -->
+  <Ammo_37x223mmR_APDS.label>37x223mmR战防砲弹(脱壳穿甲弹)</Ammo_37x223mmR_APDS.label>
+  <!-- EN: Medium caliber cannon shell used by light， quick-firing anti-tank guns. -->
+  <Ammo_37x223mmR_APDS.description>小口径战防砲砲弹</Ammo_37x223mmR_APDS.description>
+  
+  <!-- EN: 37x223mmR cartridge (AP-HE) -->
+  <Ammo_37x223mmR_AP-HE.label>37x223mmR战防砲弹(穿甲榴弹)</Ammo_37x223mmR_AP-HE.label>
+  <!-- EN: Medium caliber cannon shell used by light， quick-firing anti-tank guns. -->
+  <Ammo_37x223mmR_AP-HE.description>小口径战防砲砲弹</Ammo_37x223mmR_AP-HE.description>
+  
+  <!-- EN: 37x223mmR cartridge (canister) -->
+  <Ammo_37x223mmR_Canister.label>37x223mmR战防砲弹(炮射霰弹)</Ammo_37x223mmR_Canister.label>
+  <!-- EN: Medium caliber cannon shell used by light， quick-firing anti-tank guns. -->
+  <Ammo_37x223mmR_Canister.description>小口径战防砲砲弹</Ammo_37x223mmR_Canister.description>
+  
+  <!-- EN: 37x223mmR cartridge (EMP) -->
+  <Ammo_37x223mmR_EMP.label>37x223mmR战防砲弹(EMP)</Ammo_37x223mmR_EMP.label>
+  <!-- EN: Medium caliber cannon shell used by light， quick-firing anti-tank guns. -->
+  <Ammo_37x223mmR_EMP.description>小口径战防砲砲弹</Ammo_37x223mmR_EMP.description>
+  
+  <!-- EN: 37x223mmR cartridge (HESH) -->
+  <Ammo_37x223mmR_HESH.label>37x223mmR战防砲弹(碎甲弹)</Ammo_37x223mmR_HESH.label>
+  <!-- EN: Medium caliber cannon shell used by light， quick-firing anti-tank guns. -->
+  <Ammo_37x223mmR_HESH.description>小口径战防砲砲弹</Ammo_37x223mmR_HESH.description>
+  
+  <!-- EN: 37x223mmR cartridge (incendiary) -->
+  <Ammo_37x223mmR_Incendiary.label>37x223mmR战防砲弹(烧夷弹)</Ammo_37x223mmR_Incendiary.label>
+  <!-- EN: Medium caliber cannon shell used by light， quick-firing anti-tank guns. -->
+  <Ammo_37x223mmR_Incendiary.description>小口径战防砲砲弹</Ammo_37x223mmR_Incendiary.description>
+  
+  <!-- EN: 37x223mmR cartridge (shrapnel) -->
+  <Ammo_37x223mmR_Shrapnel.label>37x223mmR战防砲弹(榴霰弹)</Ammo_37x223mmR_Shrapnel.label>
+  <!-- EN: Medium caliber cannon shell used by light， quick-firing anti-tank guns. -->
+  <Ammo_37x223mmR_Shrapnel.description>小口径战防砲砲弹</Ammo_37x223mmR_Shrapnel.description>
+  
+  <!-- EN: 37x223mmR shell (AP) -->
+  <Bullet_FT_37x223mmR_AP.label>37x223mmR战防砲弹(穿甲弹)</Bullet_FT_37x223mmR_AP.label>
+  
+  <!-- EN: 37x223mmR shell (APDS) -->
+  <Bullet_FT_37x223mmR_APDS.label>37x223mmR战防砲弹(脱壳穿甲弹)</Bullet_FT_37x223mmR_APDS.label>
+  
+  <!-- EN: 37x223mmR shell (AP-HE) -->
+  <Bullet_FT_37x223mmR_AP-HE.label>37x223mmR战防砲弹(穿甲榴弹)</Bullet_FT_37x223mmR_AP-HE.label>
+  
+  <!-- EN: 37x223mmR shell (Canister) -->
+  <Bullet_FT_37x223mmR_Canister.label>37x223mmR战防砲弹(炮射霰弹)</Bullet_FT_37x223mmR_Canister.label>
+  
+  <!-- EN: 37x223mmR shell (EMP) -->
+  <Bullet_FT_37x223mmR_EMP.label>37x223mmR战防砲弹(EMP)</Bullet_FT_37x223mmR_EMP.label>
+  
+  <!-- EN: 37x223mmR shell (HE) -->
+  <Bullet_FT_37x223mmR_HE.label>37x223mmR战防砲弹(高爆弹)</Bullet_FT_37x223mmR_HE.label>
+  
+  <!-- EN: 37x223mmR shell (HESH) -->
+  <Bullet_FT_37x223mmR_HESH.label>37x223mmR战防砲弹(碎甲弹)</Bullet_FT_37x223mmR_HESH.label>
+  
+  <!-- EN: 37x223mmR shell (incendiary) -->
+  <Bullet_FT_37x223mmR_Incendiary.label>37x223mmR战防砲弹(烧夷弹)</Bullet_FT_37x223mmR_Incendiary.label>
+  
+  <!-- EN: 37x223mmR shell (Shrapnel) -->
+  <Bullet_FT_37x223mmR_Shrapnel.label>37x223mmR战防砲弹(榴霰弹)</Bullet_FT_37x223mmR_Shrapnel.label>
+  
+  <!-- EN: shrapnel pellet -->
+  <Fragment_FT_ShrapnelPellet.label>霰弹破片</Fragment_FT_ShrapnelPellet.label>
+  
+  <!-- EN: spark -->
+  <Fragment_FT_Spark.label>凝固汽油</Fragment_FT_Spark.label>
+  
+</LanguageData>

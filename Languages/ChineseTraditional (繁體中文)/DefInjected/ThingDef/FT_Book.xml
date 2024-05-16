@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: schematic -->
+  <FT_Schematic.label>技術藍圖</FT_Schematic.label>
+  <!-- EN: A book which describes technology and methods for using it. Reading schematics can help unlock new technologies. -->
+  <FT_Schematic.description>一疊用於技術闡述與數據分析的紙本藍圖，透過閱讀這些東西能夠快速理解並應用新的科技與技術</FT_Schematic.description>
+  
+</LanguageData>

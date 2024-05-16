@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- UNUSED -->
+  <FT_BillRequires_Mass>需要总计品质超过{0}</FT_BillRequires_Mass>
+  <FT_BillRequires_MarketValue>需要总计价格超过{0}</FT_BillRequires_MarketValue>
+  <FT_AltitudeLayerOccupied></FT_AltitudeLayerOccupied>
+  <FT_CannotPlaceWithoutWall>需要放置于墙体或门上</FT_CannotPlaceWithoutWall>
+  <FT_MustOnACoverBuilding>需要放置在掩体上</FT_MustOnACoverBuilding>
+  <FT_StopWarmup>中止广播</FT_StopWarmup>
+  <FT_StartWarmup>开始广播</FT_StartWarmup>
+  <FT_NotCooldown>无法启动:尚未冷却</FT_NotCooldown>
+  <FT_WillReadyAt>将完成广播于:</FT_WillReadyAt>
+  <FT_WillCooldownAt>将完成冷却于:</FT_WillCooldownAt>
+  <FT_NoEnoughFuel>燃料不足</FT_NoEnoughFuel>
+  <FT_NotFueled>没有燃料</FT_NotFueled>
+  
+</LanguageData>

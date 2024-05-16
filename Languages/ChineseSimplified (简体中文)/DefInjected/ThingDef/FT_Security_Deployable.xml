@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: mortar -->
+  <FT_Artillery_Mortar.label>迫击砲</FT_Artillery_Mortar.label>
+  <!-- EN: A powerful indirect-firing weapon with ability to rapid deploy. -->
+  <FT_Artillery_Mortar.description>迫击砲，能将砲弹抛越墙体，非常不精准但是射程极远。</FT_Artillery_Mortar.description>
+  <!-- EN: mortar -->
+  <FT_Artillery_Mortar.verbs.Verb_Shoot.label>迫击砲</FT_Artillery_Mortar.verbs.Verb_Shoot.label>
+  
+  <!-- EN: minified turret -->
+  <FT_MinifiedTurret.label>未部属</FT_MinifiedTurret.label>
+  <!-- EN: Pick up {0_label} -->
+  <FT_MinifiedTurret.comps.CompUsable.useLabel>捡起 {0_label}</FT_MinifiedTurret.comps.CompUsable.useLabel>
+  
+  <!-- EN: infantry mortar -->
+  <FT_Turret_Mortar.label>步兵迫击砲</FT_Turret_Mortar.label>
+  <!-- EN: A light-weighted mortar that launches all kinds of mortar shells. Improved firing speed with a simplified design， it has a shorter range but it can be easily carried by infantry. -->
+  <FT_Turret_Mortar.description>一种能发射各种砲弹的轻型迫击砲.以改良的简化结构加快了发射流程并能够机动部属，但减少了砲管寿命与精准度，在进行火力压制时非常的实用。</FT_Turret_Mortar.description>
+  <!-- EN: Pick up {0_label} -->
+  <FT_Turret_Mortar.comps.CompUsable.useLabel>步兵迫击砲</FT_Turret_Mortar.comps.CompUsable.useLabel>
+  <!-- EN: Barrel durability -->
+  <FT_Turret_Mortar.comps.CompRefuelable.fuelGizmoLabel>炮管耐久</FT_Turret_Mortar.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until barrel change -->
+  <FT_Turret_Mortar.comps.CompRefuelable.fuelLabel>砲管寿命</FT_Turret_Mortar.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Cannot shoot: Needs new reinforced barrel -->
+  <FT_Turret_Mortar.comps.CompRefuelable.outOfFuelMessage>无法射击: 需要替换砲管</FT_Turret_Mortar.comps.CompRefuelable.outOfFuelMessage>
+  
+</LanguageData>

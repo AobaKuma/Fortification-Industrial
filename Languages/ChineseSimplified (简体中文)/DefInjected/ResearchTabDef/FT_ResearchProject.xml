@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Heavy industry -->
+  <HeavyIndustry.label>重工业</HeavyIndustry.label>
+  <!-- EN: Heavy industry and those technologies are the basis of mass production and the key to progress of human society. -->
+  <HeavyIndustry.generalDescription>重工业及其技术是工业生产的基础，也是推动人类社会进步的关键。</HeavyIndustry.generalDescription>
+  <!-- EN: Heavy industries -->
+  <HeavyIndustry.generalTitle>重工业</HeavyIndustry.generalTitle>
+  
+</LanguageData>

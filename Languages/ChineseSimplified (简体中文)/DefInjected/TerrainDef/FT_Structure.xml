@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: concrete path -->
+  <FT_Concrete.label>水泥道路</FT_Concrete.label>
+  <!-- EN: easy to lay，but not good-looking. -->
+  <FT_Concrete.description>铺设简单但不是很好看的道路。</FT_Concrete.description>
+  
+  <!-- EN: Concrete tile -->
+  <FT_ConcreteTile.label>混凝土地砖</FT_ConcreteTile.label>
+  <!-- EN: Concrete tiles. Cheap， but neutral in terms of looks and slow to build. -->
+  <FT_ConcreteTile.description>建造相对耗时但是较为美观的混凝土地板，适合用于大型空间。</FT_ConcreteTile.description>
+  
+  <!-- EN: concrete flagstone -->
+  <FT_FlagstoneConcrete.label>混凝土舖路砖</FT_FlagstoneConcrete.label>
+  <!-- EN: Roughly-cut stone tiles. These are not beautiful， but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
+  <FT_FlagstoneConcrete.description>粗略切割处理的石地砖，谈不上漂亮，但相当适合用来铺设道路和走道。拆除石板路并不会返还资源。</FT_FlagstoneConcrete.description>
+  
+  <!-- EN: wood-liked concrete floor -->
+  <FT_PlankFloor.label>仿木水泥地板</FT_PlankFloor.label>
+  <!-- EN: Wood plank flooring for that warm， homey feeling. While it is quick to lay， it is also very flammable. -->
+  <FT_PlankFloor.description>类似于木质地板纹路的水泥地板.易于铺设。</FT_PlankFloor.description>
+  
+  <!-- EN: concrete tile -->
+  <FT_TileStoneConcrete.label>混凝土地砖</FT_TileStoneConcrete.label>
+  <!-- EN: Carefully-cut and fit stone tiles for a castle feeling. They are pretty to look at， but they take a long time to lay. -->
+  <FT_TileStoneConcrete.description>精心裁切的城堡风格石质地砖，外观看起来还不错，但铺设相当费时。</FT_TileStoneConcrete.description>
+  
+</LanguageData>

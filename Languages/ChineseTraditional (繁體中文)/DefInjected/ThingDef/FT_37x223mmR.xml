@@ -3,37 +3,37 @@
   
   <!-- EN: 37x223mmR cartridge (sabot) -->
   <Ammo_37x223mmR_APDS.label>37x223mmR戰防砲彈(脫殼穿甲彈)</Ammo_37x223mmR_APDS.label>
-  <!-- EN: Medium caliber cannon shell used by light, quick-firing anti-tank guns. -->
+  <!-- EN: Medium caliber cannon shell used by light， quick-firing anti-tank guns. -->
   <Ammo_37x223mmR_APDS.description>小口徑戰防砲砲彈</Ammo_37x223mmR_APDS.description>
   
   <!-- EN: 37x223mmR cartridge (AP-HE) -->
   <Ammo_37x223mmR_AP-HE.label>37x223mmR戰防砲彈(穿甲榴彈)</Ammo_37x223mmR_AP-HE.label>
-  <!-- EN: Medium caliber cannon shell used by light, quick-firing anti-tank guns. -->
+  <!-- EN: Medium caliber cannon shell used by light， quick-firing anti-tank guns. -->
   <Ammo_37x223mmR_AP-HE.description>小口徑戰防砲砲彈</Ammo_37x223mmR_AP-HE.description>
   
   <!-- EN: 37x223mmR cartridge (canister) -->
   <Ammo_37x223mmR_Canister.label>37x223mmR戰防砲彈(炮射霰彈)</Ammo_37x223mmR_Canister.label>
-  <!-- EN: Medium caliber cannon shell used by light, quick-firing anti-tank guns. -->
+  <!-- EN: Medium caliber cannon shell used by light， quick-firing anti-tank guns. -->
   <Ammo_37x223mmR_Canister.description>小口徑戰防砲砲彈</Ammo_37x223mmR_Canister.description>
   
   <!-- EN: 37x223mmR cartridge (EMP) -->
   <Ammo_37x223mmR_EMP.label>37x223mmR戰防砲彈(EMP)</Ammo_37x223mmR_EMP.label>
-  <!-- EN: Medium caliber cannon shell used by light, quick-firing anti-tank guns. -->
+  <!-- EN: Medium caliber cannon shell used by light， quick-firing anti-tank guns. -->
   <Ammo_37x223mmR_EMP.description>小口徑戰防砲砲彈</Ammo_37x223mmR_EMP.description>
   
   <!-- EN: 37x223mmR cartridge (HESH) -->
   <Ammo_37x223mmR_HESH.label>37x223mmR戰防砲彈(碎甲彈)</Ammo_37x223mmR_HESH.label>
-  <!-- EN: Medium caliber cannon shell used by light, quick-firing anti-tank guns. -->
+  <!-- EN: Medium caliber cannon shell used by light， quick-firing anti-tank guns. -->
   <Ammo_37x223mmR_HESH.description>小口徑戰防砲砲彈</Ammo_37x223mmR_HESH.description>
   
   <!-- EN: 37x223mmR cartridge (incendiary) -->
   <Ammo_37x223mmR_Incendiary.label>37x223mmR戰防砲彈(燒夷彈)</Ammo_37x223mmR_Incendiary.label>
-  <!-- EN: Medium caliber cannon shell used by light, quick-firing anti-tank guns. -->
+  <!-- EN: Medium caliber cannon shell used by light， quick-firing anti-tank guns. -->
   <Ammo_37x223mmR_Incendiary.description>小口徑戰防砲砲彈</Ammo_37x223mmR_Incendiary.description>
   
   <!-- EN: 37x223mmR cartridge (shrapnel) -->
   <Ammo_37x223mmR_Shrapnel.label>37x223mmR戰防砲彈(榴霰彈)</Ammo_37x223mmR_Shrapnel.label>
-  <!-- EN: Medium caliber cannon shell used by light, quick-firing anti-tank guns. -->
+  <!-- EN: Medium caliber cannon shell used by light， quick-firing anti-tank guns. -->
   <Ammo_37x223mmR_Shrapnel.description>小口徑戰防砲砲彈</Ammo_37x223mmR_Shrapnel.description>
   
   <!-- EN: 37x223mmR shell (AP) -->

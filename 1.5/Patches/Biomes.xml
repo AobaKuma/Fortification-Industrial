@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Biomes! Core</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+			<xpath>Defs</xpath>
+			<value>
+				<TerrainDef ParentName="BiomesCore_FloatingGarden">
+					<defName>FloatinggardenConcrete</defName>
+					<label>concrete chinampa</label>
+					<costList>
+						<FT_BlocksConcrete>1</FT_BlocksConcrete>
+					</costList>
+				</TerrainDef>
+			</value>
+		</match>
+	</Operation>
+</Patch>

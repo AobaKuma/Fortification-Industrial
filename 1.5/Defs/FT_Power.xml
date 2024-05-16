@@ -119,7 +119,7 @@
         </powerUpgrades>
       </li>
       <li Class="CompProperties_Glower">
-        <glowRadius>15</glowRadius>
+        <glowRadius>24</glowRadius>
         <glowColor>(370,370,370,0)</glowColor>
         <colorPickerEnabled>true</colorPickerEnabled>
         <darklightToggle>true</darklightToggle>

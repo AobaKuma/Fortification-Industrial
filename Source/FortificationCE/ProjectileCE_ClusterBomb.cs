@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Verse;
-using Verse.Sound;
+using Fortification;
 
 namespace Fortification
 {
@@ -59,7 +59,7 @@ namespace Fortification
             {
                 ProjectileCE projectile2 = (ProjectileCE)GenSpawn.Spawn(projectile, ExactPosition.ToIntVec3(), Map);
                 float errorRange = Extension.forceMissingRange;
-                List<IntVec3> list = GenRadial.RadialCellsAround(destinationInt.ToIntVec3(), errorRange, useCenter: true).ToList();
+                List<IntVec3> list = GenRadial.RadialCellsAround(new Vector3(Destination.x,0, Destination.y).ToIntVec3(), errorRange, useCenter: true).ToList();
                 IntVec3 intVec2 = list.RandomElement();
                 this.TryGetComp<CompFragments>()?.Throw(intVec2.ToVector3(), Map, this);
                 projectile2.Launch(launcher, new Vector2(ExactPosition.x, ExactPosition.z), shotAngle + Rand.Range(-baseOffsetAngle, baseOffsetAngle), shotAngle + Rand.Range(-baseOffsetAngle, baseOffsetAngle), Height, shotSpeed, ThingMaker.MakeThing(equipmentDef));

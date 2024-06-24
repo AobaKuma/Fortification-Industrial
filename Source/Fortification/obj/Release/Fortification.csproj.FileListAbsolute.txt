@@ -16,3 +16,9 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Fortification Indust
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Source\Fortification\obj\Release\Fortification.pdb
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\1.5\Assemblies\Fortification.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\1.5\Assemblies\Fortification.pdb
+D:\Steam\steamapps\common\RimWorld\Mods\Fortification-Industrial\1.5\Assemblies\Fortification.dll
+D:\Steam\steamapps\common\RimWorld\Mods\Fortification-Industrial\1.5\Assemblies\Fortification.pdb
+D:\Steam\steamapps\common\RimWorld\Mods\Fortification-Industrial\Source\Fortification\obj\Release\Fortification.csproj.AssemblyReference.cache
+D:\Steam\steamapps\common\RimWorld\Mods\Fortification-Industrial\Source\Fortification\obj\Release\Fortification.csproj.CoreCompileInputs.cache
+D:\Steam\steamapps\common\RimWorld\Mods\Fortification-Industrial\Source\Fortification\obj\Release\Fortification.dll
+D:\Steam\steamapps\common\RimWorld\Mods\Fortification-Industrial\Source\Fortification\obj\Release\Fortification.pdb

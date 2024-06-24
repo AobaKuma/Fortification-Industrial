@@ -53,7 +53,7 @@ namespace Fortification
                                 explosion.preExplosionSpawnThingCount,
                                 explosion.chanceToStartFire,
                                 false,
-                                origin.AngleTo(destinationInt),
+                                origin.AngleTo(Destination),
                                 null,
                                 null,
                                 true,

@@ -4,22 +4,20 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F04DAF6B-E4E3-410D-9074-D65D1A3078C3}</ProjectGuid>
+    <ProjectGuid>{938C384F-0BC4-41BA-B221-C1A17181691A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Fortification</RootNamespace>
-    <AssemblyName>FortificationCE</AssemblyName>
+    <RootNamespace>FortificationMedieval</RootNamespace>
+    <AssemblyName>FortificationMedieval</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\1.5\CombatExtended\Assemblies\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -27,7 +25,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\1.4\CombatExtended\Assemblies\</OutputPath>
+    <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -35,18 +33,9 @@
   <ItemGroup>
     <Reference Include="0Harmony">
       <HintPath>..\Reference\0Harmony.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\Reference\Assembly-CSharp.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="CombatExtended">
-      <HintPath>..\..\..\CombatExtended-Anomaly-DLC\Assemblies\CombatExtended.dll</HintPath>
-    </Reference>
-    <Reference Include="Fortification, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\1.5\Assemblies\Fortification.dll</HintPath>
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -57,37 +46,18 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine">
-      <HintPath>..\Reference\UnityEngine.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\Reference\UnityEngine.CoreModule.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>..\Reference\UnityEngine.IMGUIModule.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>..\Reference\UnityEngine.TextRenderingModule.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Building_TurretCapacityCE.cs" />
-    <Compile Include="BulletCE_AlongWayDamage.cs" />
-    <Compile Include="Harmony_ThreatDisabled.cs" />
-    <Compile Include="Harmony_DeployableTurretCompat.cs" />
-    <Compile Include="Harmony_Verb_Shoot.cs" />
-    <Compile Include="ProjectileCE_ClusterBomb.cs" />
     <Compile Include="HarmonyPatches.cs" />
-    <Compile Include="Harmony_TurretGunCE.cs" />
-    <Compile Include="CompExplosiveWithCompositeCE.cs" />
-    <Compile Include="WIP\Projectile_BallisticMissile.cs" />
-    <Compile Include="ProjectileCE_ExplosiveByComps.cs" />
-    <Compile Include="WIP\Verb_NewShoot.cs" />
+    <Compile Include="Harmony_IsMortar.cs" />
+    <Compile Include="Harmony_Verb_Shoot.cs" />
+    <Compile Include="ModExtension_ShootWithFleck.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WIP\Verb_NewShootMortar.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

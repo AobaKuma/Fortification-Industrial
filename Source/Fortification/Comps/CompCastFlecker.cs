@@ -80,8 +80,6 @@ namespace Fortification
             //Log.Message("offset:" + offset);
 
             return caster.DrawPos + offset;
-
-
         }
     }
     public class CompProperties_CastFlecker : CompProperties

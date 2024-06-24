@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FortificationCE", "..\Forti
 		{2221DD4B-DCE6-48F0-A680-6831C514C037} = {2221DD4B-DCE6-48F0-A680-6831C514C037}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FortificationMedieval", "..\FortificationMedieval\FortificationMedieval.csproj", "{938C384F-0BC4-41BA-B221-C1A17181691A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{F04DAF6B-E4E3-410D-9074-D65D1A3078C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F04DAF6B-E4E3-410D-9074-D65D1A3078C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F04DAF6B-E4E3-410D-9074-D65D1A3078C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{938C384F-0BC4-41BA-B221-C1A17181691A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{938C384F-0BC4-41BA-B221-C1A17181691A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{938C384F-0BC4-41BA-B221-C1A17181691A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{938C384F-0BC4-41BA-B221-C1A17181691A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

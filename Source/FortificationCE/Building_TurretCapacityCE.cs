@@ -6,8 +6,6 @@ using CombatExtended;
 using RimWorld;
 using UnityEngine;
 using Verse;
-using Verse.AI;
-using Fortification;
 
 namespace Fortification
 {

@@ -3,7 +3,6 @@ using Fortification;
 using HarmonyLib;
 using RimWorld;
 using Verse;
-using static UnityEngine.GraphicsBuffer;
 
 namespace Fortification
 {

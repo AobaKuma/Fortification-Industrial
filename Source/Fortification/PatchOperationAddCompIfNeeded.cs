@@ -11,11 +11,10 @@ namespace Fortification
 {
     public class PatchOperationAddCompIfNeeded : PatchOperationPathed
     {
-        private XmlContainer value;
 
         protected override bool ApplyWorker(XmlDocument xml)
         {
-            XmlNode node = value.node;
+            XmlNode node = null;
             bool result = false;
             foreach (object item in xml.SelectNodes(xpath))
             {

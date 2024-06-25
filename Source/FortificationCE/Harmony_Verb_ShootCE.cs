@@ -6,7 +6,7 @@ using Verse;
 namespace Fortification
 {
     [HarmonyPatch(typeof(Verb_ShootCE), "TryCastShot", MethodType.Normal)]
-    internal static class Harmony_Verb_Shoot
+    internal static class Harmony_Verb_ShootCE
     {
         public static void Postfix(ref bool __result, Verb_ShootCE __instance)
         {
@@ -22,8 +22,10 @@ namespace Fortification
                         float num2 = __instance.verbProps.AdjustedFullCycleTime(__instance, __instance.CasterPawn);
                         castPawn.skills.Learn(SkillDefOf.Shooting, num * num2);
                     }
-                    castPawn.records.Increment(RecordDefOf.ShotsFired);
+                    castPawn.records?.Increment(RecordDefOf.ShotsFired);
                 }
+                ThingWithComps comps = __instance.EquipmentSource;
+                if (comps == null) return;
                 if (__instance.EquipmentSource?.GetComp<CompCastPushHeat>() is CompCastPushHeat compCastPushHeat)            //射擊加溫
                 {
                     if (compCastPushHeat.EnergyPerCast != 0)

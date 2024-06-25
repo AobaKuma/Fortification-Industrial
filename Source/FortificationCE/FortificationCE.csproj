@@ -42,11 +42,13 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="CombatExtended">
-      <HintPath>..\..\..\CombatExtended-Anomaly-DLC\Assemblies\CombatExtended.dll</HintPath>
+      <HintPath>..\..\..\CombatExtended\Assemblies\CombatExtended.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Fortification, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\1.5\Assemblies\Fortification.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -78,7 +80,7 @@
     <Compile Include="BulletCE_AlongWayDamage.cs" />
     <Compile Include="Harmony_ThreatDisabled.cs" />
     <Compile Include="Harmony_DeployableTurretCompat.cs" />
-    <Compile Include="Harmony_Verb_Shoot.cs" />
+    <Compile Include="Harmony_Verb_ShootCE.cs" />
     <Compile Include="ProjectileCE_ClusterBomb.cs" />
     <Compile Include="HarmonyPatches.cs" />
     <Compile Include="Harmony_TurretGunCE.cs" />

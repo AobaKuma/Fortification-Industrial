@@ -253,7 +253,7 @@
 				<gasType>ToxGas</gasType>
 				<cellsToFill>55</cellsToFill>
 				<durationSeconds>60</durationSeconds>
-				<effecterReleasing>GasReleasing</effecterReleasing>
+				<effecterReleasing>ToxGasReleasing</effecterReleasing>
 			</li>
 			<li Class="CompProperties_DestroyAfterDelay">
 				<delayTicks>30000</delayTicks><!-- 1/2 day -->

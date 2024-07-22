@@ -17,3 +17,9 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Fortification Indust
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\1.4\CombatExtended\Assemblies\FortificationCE.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\1.4\CombatExtended\Assemblies\FortificationCE.pdb
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Fortification Industrial\Source\FortificationCE\obj\Release\Fortific.C28C1F00.Up2Date
+D:\Steam\steamapps\common\RimWorld\Mods\Fortification-Industrial\1.4\CombatExtended\Assemblies\FortificationCE.dll
+D:\Steam\steamapps\common\RimWorld\Mods\Fortification-Industrial\1.4\CombatExtended\Assemblies\FortificationCE.pdb
+D:\Steam\steamapps\common\RimWorld\Mods\Fortification-Industrial\Source\FortificationCE\obj\Release\FortificationCE.csproj.AssemblyReference.cache
+D:\Steam\steamapps\common\RimWorld\Mods\Fortification-Industrial\Source\FortificationCE\obj\Release\FortificationCE.csproj.CoreCompileInputs.cache
+D:\Steam\steamapps\common\RimWorld\Mods\Fortification-Industrial\Source\FortificationCE\obj\Release\FortificationCE.dll
+D:\Steam\steamapps\common\RimWorld\Mods\Fortification-Industrial\Source\FortificationCE\obj\Release\FortificationCE.pdb

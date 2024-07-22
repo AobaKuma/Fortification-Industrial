@@ -14,6 +14,17 @@
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_FT_15cmNebelwerfer_directfire</defName>
+		<label>15cm Nebelwerfer Rockets</label>
+		<ammoTypes>
+			<Ammo_15cmNebelwerfer_HE>Bullet_FT_15cmNebelwerfer_HE_directfire</Ammo_15cmNebelwerfer_HE>
+			<Ammo_15cmNebelwerfer_Smoke>Bullet_FT_15cmNebelwerfer_Smoke_directfire</Ammo_15cmNebelwerfer_Smoke>
+			<Ammo_15cmNebelwerfer_EMP>Bullet_FT_15cmNebelwerfer_EMP_directfire</Ammo_15cmNebelwerfer_EMP>
+			<Ammo_15cmNebelwerfer_Toxic MayRequire="Ludeon.RimWorld.Biotech">Bullet_FT_15cmNebelwerfer_Toxic_directfire</Ammo_15cmNebelwerfer_Toxic>
+	</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
 	<!-- ==================== Ammo ========================== -->
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="15cmNebelwerferBase">
@@ -196,8 +207,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base130mmType63"
-		MayRequire="Ludeon.RimWorld.Biotech">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base130mmType63" MayRequire="Ludeon.RimWorld.Biotech">
 		<defName>Bullet_FT_15cmNebelwerfer_Toxic</defName>
 		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 		<label>15cm Nebelwerfer Rocket (Toxic)</label>
@@ -256,7 +266,8 @@
 				<effecterReleasing>ToxGasReleasing</effecterReleasing>
 			</li>
 			<li Class="CompProperties_DestroyAfterDelay">
-				<delayTicks>30000</delayTicks><!-- 1/2 day -->
+				<delayTicks>30000</delayTicks>
+				<!-- 1/2 day -->
 			</li>
 		</comps>
 	</ThingDef>
@@ -278,6 +289,157 @@
 			<shaderType>Transparent</shaderType>
 		</graphicData>
 	</ThingDef>
+
+	<!-- direct fire  -->
+
+	<ThingDef Name="Base15cmNebelwerferDirect" ParentName="BaseExplosiveBullet" Abstract="true">
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>48</speed>
+			<flyOverhead>false</flyOverhead>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base15cmNebelwerferDirect">
+		<defName>Bullet_FT_15cmNebelwerfer_HE_directfire</defName>
+		<label>15cm Nebelwerfer Rocket (HE)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Rocket/15cm_NbW</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>228</damageAmountBase>
+			<explosionRadius>3.5</explosionRadius>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>15</Fragment_Large>
+					<Fragment_Small>30</Fragment_Small>
+				</fragments>
+			</li>
+			<li Class="AOBAUtilities.CompProperties_Flecker">
+				<fleck>FT_TrailSmoke</fleck>
+				<fleckSize>0.5</fleckSize>
+			</li>
+			<li Class="AOBAUtilities.CompProperties_Flecker">
+				<fleck>FT_ExhaustFlame</fleck>
+				<fleckSize>0.5</fleckSize>
+			</li>
+			<li Class="AOBAUtilities.CompProperties_Flecker">
+				<fleck>FT_ExhaustFlameGlow</fleck>
+				<fleckSize>0.5</fleckSize>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base15cmNebelwerferDirect">
+		<defName>Bullet_FT_15cmNebelwerfer_Smoke_directfire</defName>
+		<label>15cm Nebelwerfer Rocket (Smoke)</label>
+		<graphicData>
+			<texPath>Ammo/15cm_NbW_Projectile_Smoke</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Smoke</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+			<explosionRadius>6.5</explosionRadius>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>Explosion_EMP</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+			<postExplosionGasType>BlindSmoke</postExplosionGasType>
+			<preExplosionSpawnChance>1</preExplosionSpawnChance>
+			<explosionEffect>ExtinguisherExplosion</explosionEffect>
+		</projectile>
+		<comps>
+			<li Class="AOBAUtilities.CompProperties_Flecker">
+				<fleck>FT_TrailSmoke</fleck>
+				<fleckSize>0.5</fleckSize>
+			</li>
+			<li Class="AOBAUtilities.CompProperties_Flecker">
+				<fleck>FT_ExhaustFlame</fleck>
+				<fleckSize>0.5</fleckSize>
+			</li>
+			<li Class="AOBAUtilities.CompProperties_Flecker">
+				<fleck>FT_ExhaustFlameGlow</fleck>
+				<fleckSize>0.5</fleckSize>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base15cmNebelwerferDirect">
+		<defName>Bullet_FT_15cmNebelwerfer_EMP_directfire</defName>
+		<label>15cm Nebelwerfer Rocket (EMP)</label>
+		<graphicData>
+			<texPath>Ammo/15cm_NbW_Projectile_EMP</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>EMP</damageDef>
+			<damageAmountBase>175</damageAmountBase>
+			<soundExplode>Explosion_EMP</soundExplode>
+			<explosionRadius>5.5</explosionRadius>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+		</projectile>
+		<comps>
+			<li Class="AOBAUtilities.CompProperties_Flecker">
+				<fleck>FT_TrailSmoke</fleck>
+				<fleckSize>0.5</fleckSize>
+			</li>
+			<li Class="AOBAUtilities.CompProperties_Flecker">
+				<fleck>FT_ExhaustFlame</fleck>
+				<fleckSize>0.5</fleckSize>
+			</li>
+			<li Class="AOBAUtilities.CompProperties_Flecker">
+				<fleck>FT_ExhaustFlameGlow</fleck>
+				<fleckSize>0.5</fleckSize>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base15cmNebelwerferDirect" MayRequire="Ludeon.RimWorld.Biotech">
+		<defName>Bullet_FT_15cmNebelwerfer_Toxic_directfire</defName>
+		<label>15cm Nebelwerfer Rocket (Toxic)</label>
+		<graphicData>
+			<texPath>Ammo/15cm_NbW_Projectile_Toxic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>ToxGas</damageDef>
+			<damageAmountBase>0</damageAmountBase>
+			<explosionRadius>0.1</explosionRadius>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+			<soundExplode>ToxicShellLanded</soundExplode>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<soundAmbient>MortarRound_Ambient</soundAmbient>
+			<postExplosionSpawnThingDef>Shell_15cmNbW_Toxic_Releasing</postExplosionSpawnThingDef>
+			<postExplosionSpawnThingDefWater>Shell_15cmNbW_Toxic_Releasing_Water</postExplosionSpawnThingDefWater>
+		</projectile>
+		<comps>
+			<li Class="AOBAUtilities.CompProperties_Flecker">
+				<fleck>FT_TrailSmoke</fleck>
+				<fleckSize>0.5</fleckSize>
+			</li>
+			<li Class="AOBAUtilities.CompProperties_Flecker">
+				<fleck>FT_ExhaustFlame</fleck>
+				<fleckSize>0.5</fleckSize>
+			</li>
+			<li Class="AOBAUtilities.CompProperties_Flecker">
+				<fleck>FT_ExhaustFlameGlow</fleck>
+				<fleckSize>0.5</fleckSize>
+			</li>
+		</comps>
+	</ThingDef>
+
 
 	<!-- ==================== Recipes ========================== -->
 

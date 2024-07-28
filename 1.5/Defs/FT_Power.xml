@@ -109,7 +109,7 @@
       <li Class="CompProperties_Breakdownable" />
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>40</basePowerConsumption>
+        <basePowerConsumption>100</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
         <powerUpgrades>
           <li>

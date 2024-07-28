@@ -137,6 +137,40 @@
 				<multiplier>0</multiplier>
 			</li>-->
 <!--==========-->
+<!--Anomaly DLC -->
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<damageDef>Nerve</damageDef>
+				<multiplier>0.1</multiplier>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<damageDef>EnergyBolt</damageDef>
+				<multiplier>0.1</multiplier>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<damageDef>Digested</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<damageDef>ElectricalBurn</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<damageDef>NerveStun</damageDef>
+				<multiplier>0.1</multiplier>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<damageDef>Psychic</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<damageDef>DeadlifeDust</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<damageDef>NociosphereVaporize</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+<!--==========-->
 <!-- Combat Extended -->
 			<li>
 				<damageDef>Beanbag</damageDef>
@@ -182,6 +216,22 @@
 				<damageDef>Electrical</damageDef>
 				<multiplier>0</multiplier>
 			</li>-->
+			<li>
+				<damageDef>Neuralizer</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+			<li>
+				<damageDef>CE_Laser</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<damageDef>NerveBioferrite</damageDef>
+				<multiplier>0.1</multiplier>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Anomaly">
+				<damageDef>BioferriteFlame</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
 <!--==========-->
 <!--3HSTltd Plasma Weapons-->
 			<li MayRequire="3HSTltd.Weapons.Plasma">

@@ -167,9 +167,9 @@
 					<targetParams>
 						<canTargetLocations>true</canTargetLocations>
 					</targetParams>
+					<indirectFirePenalty>1</indirectFirePenalty>
 					<recoilPattern>Mounted</recoilPattern>
 					<recoilAmount>0.0</recoilAmount>
-					<circularError>10</circularError>
 					<!--<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>-->
 					<!--<requireLineOfSight>false</requireLineOfSight>-->
 				</secondaryVerb>
@@ -376,6 +376,7 @@
 					<targetParams>
 						<canTargetLocations>true</canTargetLocations>
 					</targetParams>
+					<indirectFirePenalty>1</indirectFirePenalty>
 					<recoilPattern>Mounted</recoilPattern>
 					<recoilAmount>0.0</recoilAmount>
 					<!--<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>-->
@@ -565,6 +566,7 @@
 					<targetParams>
 						<canTargetLocations>true</canTargetLocations>
 					</targetParams>
+					<indirectFirePenalty>1</indirectFirePenalty>
 					<recoilPattern>Mounted</recoilPattern>
 					<recoilAmount>0.0</recoilAmount>
 					<!--<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>-->

@@ -150,7 +150,7 @@
 		<caseTrue>
 			<Operation Class="PatchOperationSequence">
 				<operations>
-					<li Class="PatchOperationReplace">
+					<!-- <li Class="PatchOperationReplace">
 						<xpath>/Defs/ResearchProjectDef[defName="Electricity"]/researchViewX</xpath>
 						<value>
 							<researchViewX>4.00</researchViewX>
@@ -173,7 +173,7 @@
 						<value>
 							<researchViewY>4.80</researchViewY>
 						</value>
-					</li>
+					</li> -->
 					<li Class="PatchOperationReplace">
 						<xpath>
 							Defs/ResearchProjectDef[defName="MicroelectronicsBasics"]/prerequisites</xpath>
@@ -189,7 +189,7 @@
 		<caseFalse>
 			<Operation Class="PatchOperationSequence">
 				<operations>
-					<li Class="PatchOperationReplace">
+					<!-- <li Class="PatchOperationReplace">
 						<xpath>/Defs/ResearchProjectDef[defName="Electricity"]/researchViewX</xpath>
 						<value>
 							<researchViewX>4.00</researchViewX>
@@ -200,7 +200,7 @@
 						<value>
 							<researchViewY>3.00</researchViewY>
 						</value>
-					</li>
+					</li> -->
 					<li Class="PatchOperationReplace">
 						<xpath>
 							/Defs/ResearchProjectDef[defName="MicroelectronicsBasics"]/prerequisites</xpath>
@@ -222,7 +222,7 @@
 		<caseTrue>
 			<Operation Class="PatchOperationSequence">
 				<operations>
-					<li Class="PatchOperationReplace">
+					<!-- <li Class="PatchOperationReplace">
 						<xpath>/Defs/ResearchProjectDef[defName="FT_Lathe"]/researchViewX</xpath>
 						<value>
 							<researchViewX>5.00</researchViewX>
@@ -233,7 +233,7 @@
 						<value>
 							<researchViewY>3.00</researchViewY>
 						</value>
-					</li>
+					</li> -->
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ResearchProjectDef[defName="Machining"]/prerequisites</xpath>
 						<value>

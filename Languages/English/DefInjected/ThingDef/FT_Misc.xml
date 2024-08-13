@@ -9,7 +9,7 @@
   <!-- EN: E.N.I.A.C. -->
   <FT_ENIAC.label>E.N.I.A.C.</FT_ENIAC.label>
   <!-- EN: Electronic Numerical Integrator And Computer Or simply call it Eniac, big and highly consume power energy, Increases research speed when placed near hi-tech research bench and unlocks new research projects from reading the Disk.\n	Each research bench can connect to 4 ENIAC. -->
-  <FT_ENIAC.description>Short for Electronic Numerical Integrator And Computer, increases research speed by 25% when placed near hi-tech research bench and unlocks new research projects.\n\nEach research bench can connect to up to 4 E.N.I.A.C.s.</FT_ENIAC.description>
+  <FT_ENIAC.description>Electronic Numerical Integrator And Computer, increases research speed by 25% when placed near hi-tech research bench and unlocks new research projects.\n\nEach research bench can connect to up to 4 E.N.I.A.C.s.</FT_ENIAC.description>
   
   <!-- EN: hydrant -->
   <FT_FirefoamPopper.label>hydrant</FT_FirefoamPopper.label>

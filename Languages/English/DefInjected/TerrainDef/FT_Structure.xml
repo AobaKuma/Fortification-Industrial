@@ -14,7 +14,7 @@
   <!-- EN: concrete flagstone -->
   <FT_FlagstoneConcrete.label>concrete flagstone</FT_FlagstoneConcrete.label>
   <!-- EN: Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources. -->
-  <FT_FlagstoneConcrete.description>Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing flagstone yields no resources.</FT_FlagstoneConcrete.description>
+  <FT_FlagstoneConcrete.description>Roughly-cut stone tiles. These are not beautiful, but they make good surfaces for roads and outdoor walkways. Deconstructing yields no resources.</FT_FlagstoneConcrete.description>
   
   <!-- EN: wood-liked concrete floor -->
   <FT_PlankFloor.label>Wood-like concrete floor</FT_PlankFloor.label>

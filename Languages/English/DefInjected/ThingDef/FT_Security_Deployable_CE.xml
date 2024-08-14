@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: mortar -->
+  <!-- EN: Mortar -->
   <FT_Artillery_Mortar.label>mortar</FT_Artillery_Mortar.label>
   <!-- EN: A powerful indirect-firing weapon with ability to rapid deploy. -->
   <FT_Artillery_Mortar.description>A indirect-firing weapon which can be rapidely deployed.</FT_Artillery_Mortar.description>
   <!-- EN: mortar -->
-  <FT_Artillery_Mortar.verbs.Verb_ShootMortarCE.label>mortar</FT_Artillery_Mortar.verbs.Verb_ShootMortarCE.label>
+  <FT_Artillery_Mortar.verbs.Verb_ShootMortarCE.label>Mortar</FT_Artillery_Mortar.verbs.Verb_ShootMortarCE.label>
   
-  <!-- EN: minified turret -->
-  <FT_MinifiedTurret.label>minified turret</FT_MinifiedTurret.label>
+  <!-- EN: Minified turret -->
+  <FT_MinifiedTurret.label>Minified turret</FT_MinifiedTurret.label>
   <!-- EN: Pick up {0_label} -->
   <FT_MinifiedTurret.comps.CompUsable.useLabel>Pick up {0_label}</FT_MinifiedTurret.comps.CompUsable.useLabel>
   
-  <!-- EN: infantry mortar -->
-  <FT_Turret_Mortar.label>infantry mortar</FT_Turret_Mortar.label>
+  <!-- EN: Infantry mortar -->
+  <FT_Turret_Mortar.label>Infantry mortar</FT_Turret_Mortar.label>
   <!-- EN: A light-weighted mortar that launches all kinds of mortar shells. Improved firing speed with a simplified design, it has a shorter range but it can be easily carried by infantry. -->
   <FT_Turret_Mortar.description>A light-weight mortar that launches all kinds of shells. A simplified, faster, but inaccurate design, useful for attacking large static fortifications rather than groups of enemies in the field.</FT_Turret_Mortar.description>
   <!-- EN: Pick up {0_label} -->
   <FT_Turret_Mortar.comps.CompUsable.useLabel>Pick up {0_label}</FT_Turret_Mortar.comps.CompUsable.useLabel>
   
-  <!-- EN: mobile artillery spotter -->
-  <FTC_SpotterLight_Gun.label>mobile artillery spotter</FTC_SpotterLight_Gun.label>
+  <!-- EN: Mobile artillery spotter -->
+  <FTC_SpotterLight_Gun.label>Mobile artillery spotter</FTC_SpotterLight_Gun.label>
   <!-- EN: A manned artillery scope with radio. Useful to coordinate artillery strikes.\n\nUsing this on a target will mark it, removing the indirect fire penalty from any artillery pieces targeting it. Additionally, any directed fire will use the aiming accuracy and efficiency of the spotter, rather than the artillery operator to determine final accuracy. -->
   <FTC_SpotterLight_Gun.description>A manned artillery scope with radio. Useful to coordinate artillery strikes.\n\nUsing this on a target will mark it, removing the indirect fire penalty from any artillery pieces targeting it. Additionally, any directed fire will use the aiming accuracy and efficiency of the spotter, rather than the artillery operator to determine final accuracy.</FTC_SpotterLight_Gun.description>
-  <!-- EN: mobile artillery spotter -->
-  <FTC_SpotterLight_Gun.verbs.Verb_MarkForArtillery.label>mobile artillery spotter</FTC_SpotterLight_Gun.verbs.Verb_MarkForArtillery.label>
+  <!-- EN: Mobile artillery spotter -->
+  <FTC_SpotterLight_Gun.verbs.Verb_MarkForArtillery.label>Mobile artillery spotter</FTC_SpotterLight_Gun.verbs.Verb_MarkForArtillery.label>
   
-  <!-- EN: mobile artillery spotter -->
-  <FTC_SpotterLight_Turret.label>mobile artillery spotter</FTC_SpotterLight_Turret.label>
+  <!-- EN: Mobile artillery spotter -->
+  <FTC_SpotterLight_Turret.label>Mobile artillery spotter</FTC_SpotterLight_Turret.label>
   <!-- EN: A manned artillery scope with radio. Useful to coordinate artillery strikes.\n\nUsing this on a target will mark it, removing the indirect fire penalty from any artillery pieces targeting it. Additionally, any directed fire will use the aiming accuracy and efficiency of the spotter, rather than the artillery operator to determine final accuracy. -->
   <FTC_SpotterLight_Turret.description>A manned artillery scope with radio. Useful to coordinate artillery strikes.\n\nUsing this on a target will mark it, removing the indirect fire penalty from any artillery pieces targeting it. Additionally, any directed fire will use the aiming accuracy and efficiency of the spotter, rather than the artillery operator to determine final accuracy.</FTC_SpotterLight_Turret.description>
   <!-- EN: Pick up {0_label} -->

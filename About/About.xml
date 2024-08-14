@@ -9,7 +9,7 @@
 	</supportedVersions>
 	<packageId>Aoba.Fortress.Industrial</packageId>
 	<description>
-Fortifications have been needed since the dawn of time, it is no different within the rim, securing a settlement is paramount to its survival.
+Fortifications have been needed since the dawn of time, it is no different within the Rim, securing a settlement is paramount to its survival.
 	</description>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/NaraLogo</modIconPath>
   	<loadAfter>

@@ -11,21 +11,21 @@
   <!-- EN: Electronic Numerical Integrator And Computer Or simply call it Eniac, big and highly consume power energy, Increases research speed when placed near hi-tech research bench and unlocks new research projects from reading the Disk.\n	Each research bench can connect to 4 ENIAC. -->
   <FT_ENIAC.description>Electronic Numerical Integrator And Computer, increases research speed by 25% when placed near hi-tech research bench and unlocks new research projects.\n\nEach research bench can connect to up to 4 E.N.I.A.C.s.</FT_ENIAC.description>
   
-  <!-- EN: hydrant -->
-  <FT_FirefoamPopper.label>hydrant</FT_FirefoamPopper.label>
+  <!-- EN: Hydrant -->
+  <FT_FirefoamPopper.label>Hydrant</FT_FirefoamPopper.label>
   <!-- EN: When it detects fire, this safety device pops and sprays a fire-retardant foam in a circular field around itself. Can also be triggered manually. -->
   <FT_FirefoamPopper.description>When it detects fire, this safety device pops and sprays a fire-retardant foam in a circular field around itself. Can also be triggered manually.</FT_FirefoamPopper.description>
   <!-- EN: Trigger {0_label} -->
   <FT_FirefoamPopper.comps.CompUsable.useLabel>Trigger {0_label}</FT_FirefoamPopper.comps.CompUsable.useLabel>
   
-  <!-- EN: mobile chemfuel generator -->
-  <FT_FuelGenerator.label>mobile chemfuel generator</FT_FuelGenerator.label>
+  <!-- EN: Mobile chemfuel generator -->
+  <FT_FuelGenerator.label>Mobile chemfuel generator</FT_FuelGenerator.label>
   <!-- EN: Produces power by consuming chemfuel. Must be periodically refueled by hand. -->
   <FT_FuelGenerator.description>Produces power by consuming chemfuel. Must be periodically refueled by hand.</FT_FuelGenerator.description>
   
   <!-- EN: Radio terminal -->
   <FT_Radio.label>Radio terminal</FT_Radio.label>
   <!-- EN: Allows radio contact with other factions and orbital traders,also when interrogating the frequency band, some interference that may be precious metals can be located,(WIP), will have more function in the future. -->
-  <FT_Radio.description>Allows radio contact with other factions and orbital traders, with the chance of locating precious metals.</FT_Radio.description>
+  <FT_Radio.description>Allows radio contact with other factions and orbital traders, can be used to locate precious metals.</FT_Radio.description>
   
 </LanguageData>

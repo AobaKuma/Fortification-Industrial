@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: entering facility -->
-  <FT_EnterBunkerFacility.reportString>entering facility</FT_EnterBunkerFacility.reportString>
+  <!-- EN: Entering facility -->
+  <FT_EnterBunkerFacility.reportString>Entering facility</FT_EnterBunkerFacility.reportString>
   
   <!-- EN: Listen to the radio. -->
   <FT_UseRadio.reportString>Listening to the radio.</FT_UseRadio.reportString>

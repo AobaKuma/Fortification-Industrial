@@ -2,7 +2,7 @@
 <LanguageData>
   
   <!-- EN: Mortar -->
-  <FT_Artillery_Mortar.label>mortar</FT_Artillery_Mortar.label>
+  <FT_Artillery_Mortar.label>Mortar</FT_Artillery_Mortar.label>
   <!-- EN: A powerful indirect-firing weapon with ability to rapid deploy. -->
   <FT_Artillery_Mortar.description>A indirect-firing weapon which can be rapidely deployed.</FT_Artillery_Mortar.description>
   <!-- EN: mortar -->

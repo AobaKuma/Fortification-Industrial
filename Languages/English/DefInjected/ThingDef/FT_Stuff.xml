@@ -11,7 +11,7 @@
   <!-- EN: Packed Concrete -->
   <FT_ConcreteCompressed.label>packed concrete</FT_ConcreteCompressed.label>
   <!-- EN: Bags of solid concrete dust.they are packed-ready for storage or trade. -->
-  <FT_ConcreteCompressed.description>Bags of solid concrete packed tightly packed for storage or trade.</FT_ConcreteCompressed.description>
+  <FT_ConcreteCompressed.description>Bags of solid concrete, tightly packed for storage or trade.</FT_ConcreteCompressed.description>
   
   <!-- EN: rebar concrete -->
   <FT_ReinforcedConcreteBag.label>rebar concrete</FT_ReinforcedConcreteBag.label>
@@ -23,7 +23,7 @@
   <!-- EN: prefab concrete -->
   <FT_WoodConcrete.label>cement plank</FT_WoodConcrete.label>
   <!-- EN: plank-shaped concrete blocks, able to fast building like wood and it is fire-proofed -->
-  <FT_WoodConcrete.description>A plank-shaped prefab plate,useful for fast building and floor laying.</FT_WoodConcrete.description>
+  <FT_WoodConcrete.description>A plank-shaped prefab plate, useful for fast building and floor laying.</FT_WoodConcrete.description>
   <!-- EN: concrete -->
   <FT_WoodConcrete.stuffProps.stuffAdjective>fiber concrete</FT_WoodConcrete.stuffProps.stuffAdjective>
   

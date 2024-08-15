@@ -47,6 +47,6 @@
   <!-- EN: Quad Anti Air Gun -->
   <FT_TurretQuadAA.label>Quad Anti Air Gun</FT_TurretQuadAA.label>
   <!-- EN: A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field. -->
-  <FT_TurretQuadAA.description>>A manned anti-air autocannon. Useful for attacking aerial targets or groups of enemies in the field.</FT_TurretQuadAA.description>
+  <FT_TurretQuadAA.description>A manned anti-air autocannon. Useful for attacking aerial targets or groups of enemies in the field.</FT_TurretQuadAA.description>
   
 </LanguageData>

@@ -4,12 +4,12 @@
   <!-- EN: Concrete Barrier -->
   <FT_Barrier.label>Concrete barrier</FT_Barrier.label>
   <!-- EN: a solid concrete barrier that can hinder vehicles and provide cover -->
-  <FT_Barrier.description>A solid concrete barrier that can hinder the movement of vehicles and provide cover.</FT_Barrier.description>
+  <FT_Barrier.description>A solid concrete barrier, hinder the movement of vehicles and provide cover.</FT_Barrier.description>
   
   <!-- EN: Diagonal Concrete Barrier -->
   <FT_BarrierDiagonal.label>Diagonal concrete barrier</FT_BarrierDiagonal.label>
   <!-- EN: a solid concrete barrier that can hinder vehicles and provide cover. -->
-  <FT_BarrierDiagonal.description>A solid concrete barrier that can hinder the movement of vehicles and provide cover.</FT_BarrierDiagonal.description>
+  <FT_BarrierDiagonal.description>A solid concrete barrier, hinder the movement of vehicles and provide cover.</FT_BarrierDiagonal.description>
   
   <!-- EN: Military Sandbag -->
   <FT_Sandbag.label>Military sandbag</FT_Sandbag.label>

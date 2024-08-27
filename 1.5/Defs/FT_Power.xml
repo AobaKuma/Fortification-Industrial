@@ -154,7 +154,7 @@
     <defName>FT_DistributionBox</defName>
     <label>distribution box</label>
     <thingClass>AOBAUtilities.Building_TerminalBox</thingClass>
-    <description>A metal box on a concrete foundation connects to power networks via conduit to extend the range at which electronics can connect to said conduits. (this feature still wip, so it just a decoration)</description>
+    <description>A power distribution box, connects to power networks via conduits to extend the connection range of electronics. (this feature still wip, decorative for now).</description>
     <graphicData>
       <texPath>DistributionBox/building</texPath>
       <graphicClass>Graphic_Single</graphicClass>

@@ -4,7 +4,7 @@
   <!-- EN: chemistry -->
   <FT_Chemistry.label>chemistry</FT_Chemistry.label>
   <!-- EN: Build Chemistry Table that can artificially synthesize compounds such as Neutroamine. -->
-  <FT_Chemistry.description>Artificially synthesize basic chemical compounds such as neutroamine or plant dye.</FT_Chemistry.description>
+  <FT_Chemistry.description>Artificially synthesize basic chemical compounds such as Neutroamine or plant dye.</FT_Chemistry.description>
   
   <!-- EN: Concrete -->
   <FT_Concrete.label>concrete</FT_Concrete.label>

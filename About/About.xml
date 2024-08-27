@@ -9,7 +9,7 @@
 	</supportedVersions>
 	<packageId>Aoba.Fortress.Industrial</packageId>
 	<description>
-It has always been a problem to make their settlements secured since human existence, so this is the reason why people in each era have used their own wisdom to build various of fortifications.
+Fortifications have been needed since the dawn of time, it is no different within the Rim, securing a settlement is paramount to its survival.
 	</description>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/NaraLogo</modIconPath>
   	<loadAfter>

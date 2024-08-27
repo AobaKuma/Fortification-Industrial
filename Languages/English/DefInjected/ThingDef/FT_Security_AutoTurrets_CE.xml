@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: machine gun -->
-  <FT_Gun_MG.label>machine gun</FT_Gun_MG.label>
+  <!-- EN: Machine gun -->
+  <FT_Gun_MG.label>Machine gun</FT_Gun_MG.label>
   <!-- EN: An fully automatic gun made to be mounted on a turret. -->
   <FT_Gun_MG.description>A fully automatic gun made to be mounted on a turret.</FT_Gun_MG.description>
-  <!-- EN: machine gun -->
-  <FT_Gun_MG.verbs.Verb_ShootCE.label>machine gun</FT_Gun_MG.verbs.Verb_ShootCE.label>
+  <!-- EN: Machine gun -->
+  <FT_Gun_MG.verbs.Verb_ShootCE.label>Machine gun</FT_Gun_MG.verbs.Verb_ShootCE.label>
   
   <!-- EN: Machine Gun Bunker -->
   <FT_Turret_BunkerC.label>Mini-turret bunker</FT_Turret_BunkerC.label>

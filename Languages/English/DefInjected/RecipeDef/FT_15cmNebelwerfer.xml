@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <!-- EN: make 15cm Nebelwerfer EMP rocket -->
-  <MakeAmmo_15cmNebelwerfer_EMP.label>make 15cm Nebelwerfer rocket (EMP)</MakeAmmo_15cmNebelwerfer_EMP.label>
+  <!-- EN: Make 15cm Nebelwerfer EMP rocket -->
+  <MakeAmmo_15cmNebelwerfer_EMP.label>Make 15cm Nebelwerfer rocket (EMP)</MakeAmmo_15cmNebelwerfer_EMP.label>
   <!-- EN: Craft a 15cm Nebelwerfer EMP rockets. -->
   <MakeAmmo_15cmNebelwerfer_EMP.description>Craft a 15cm Nebelwerfer rocket (EMP).</MakeAmmo_15cmNebelwerfer_EMP.description>
   <!-- EN: Making 15cm Nebelwerfer EMP rockets. -->
   <MakeAmmo_15cmNebelwerfer_EMP.jobString>Making 15cm Nebelwerfer rocket (EMP).</MakeAmmo_15cmNebelwerfer_EMP.jobString>
   
-  <!-- EN: make 15cm Nebelwerfer smoke rocket -->
-  <MakeAmmo_15cmNebelwerfer_Smoke.label>make 15cm Nebelwerfer rocket (Smoke)</MakeAmmo_15cmNebelwerfer_Smoke.label>
+  <!-- EN: Make 15cm Nebelwerfer smoke rocket -->
+  <MakeAmmo_15cmNebelwerfer_Smoke.label>Make 15cm Nebelwerfer rocket (Smoke)</MakeAmmo_15cmNebelwerfer_Smoke.label>
   <!-- EN: Craft a 15cm Nebelwerfer smoke rockets. -->
   <MakeAmmo_15cmNebelwerfer_Smoke.description>Craft a 15cm Nebelwerfer rocket (Smoke).</MakeAmmo_15cmNebelwerfer_Smoke.description>
   <!-- EN: Making 15cm Nebelwerfer smoke rockets. -->

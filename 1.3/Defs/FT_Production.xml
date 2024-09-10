@@ -135,7 +135,7 @@
 
  <ThingDef ParentName="FT_BenchBase">
     <defName>FT_TableConcrete</defName>
-    <label>ConcreteMixer</label>
+    <label>Concrete mixer</label>
     <description>A machine that crushes and mixes stony materials into concrete dusts</description>
     <graphicData>
       <texPath>ConcreteMixer/FT_ConcreteMixer</texPath>

@@ -132,7 +132,7 @@
 			<explosionEffect>ExtinguisherExplosion</explosionEffect>
 			<flyOverhead>true</flyOverhead>
 			<gravityFactor>20</gravityFactor>
-			<spreadMult>2.5</spreadMult>
+			<spreadMult>2</spreadMult>
 		</projectile>
 	</ThingDef>
 
@@ -152,7 +152,7 @@
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 			<flyOverhead>true</flyOverhead>
 			<gravityFactor>20</gravityFactor>
-			<spreadMult>2.5</spreadMult>
+			<spreadMult>1.6</spreadMult>
 		</projectile>
 	</ThingDef>
 
@@ -178,7 +178,7 @@
 			<postExplosionSpawnThingDefWater>Shell_15cmNbW_Toxic_Releasing_Water</postExplosionSpawnThingDefWater>
 			<flyOverhead>true</flyOverhead>
 			<gravityFactor>20</gravityFactor>
-			<spreadMult>2.5</spreadMult>
+			<spreadMult>2</spreadMult>
 		</projectile>
 	</ThingDef>
 	

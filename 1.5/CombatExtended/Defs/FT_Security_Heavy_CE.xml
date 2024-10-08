@@ -78,7 +78,7 @@
 		<statBases>
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 			<SightsEfficiency>0.5</SightsEfficiency>
-			<ShotSpread>1</ShotSpread>
+			<ShotSpread>3.6</ShotSpread>
 		</statBases>
 		<weaponTags>
       		<li>TurretGun</li>
@@ -97,6 +97,7 @@
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<soundCast>FT_NebelShot</soundCast>
 				<muzzleFlashScale>39</muzzleFlashScale>
+				<circularError>10</circularError>
 				<indirectFirePenalty>0.2</indirectFirePenalty>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>

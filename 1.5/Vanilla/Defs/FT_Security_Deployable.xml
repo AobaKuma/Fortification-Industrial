@@ -38,8 +38,6 @@
 
 	<ThingDef Name="FT_BaseCannonBuilding_Deployable" ParentName="FT_BaseCannonBuilding" Abstract="True">
 		<minifiedDef>FT_MinifiedTurret</minifiedDef>
-		<!--================可攜帶性
-    ================-->
 		<thingCategories>
 			<li>BuildingsSecurity</li>
 		</thingCategories>

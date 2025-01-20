@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-
 	<!--================噴煙者================-->
-
 	<ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
 		<defName>FT_TurretHexMortar</defName>
 		<label>Hexagonal Mortar Launcher</label>
@@ -69,7 +67,6 @@
 				<randomGraphics>
 					<li>InfantryTurret/FT_HexMortarBase</li>
 					<li>InfantryTurret/FT_HexMortarBase_Sec</li>
-					<!--<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Heavy</li>-->
 					<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Wheel_Sec</li>
 				</randomGraphics>
 			</li>
@@ -118,7 +115,7 @@
 			<li>
 				<verbClass>Fortification.Verb_NewShoot</verbClass>
 				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-				<warmupTime>10.0</warmupTime>
+				<warmupTime>2.0</warmupTime>
 				<forcedMissRadius>10</forcedMissRadius>
 				<forcedMissRadiusClassicMortars>10</forcedMissRadiusClassicMortars>
 				<isMortar>true</isMortar>
@@ -356,7 +353,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-				<warmupTime>6.0</warmupTime>
+				<warmupTime>3.0</warmupTime>
 				<forcedMissRadius>5</forcedMissRadius>
 				<forcedMissRadiusClassicMortars>8</forcedMissRadiusClassicMortars>
 				<isMortar>true</isMortar>
@@ -526,7 +523,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-				<warmupTime>6.0</warmupTime>
+				<warmupTime>5.0</warmupTime>
 				<forcedMissRadius>2</forcedMissRadius>
 				<forcedMissRadiusClassicMortars>4</forcedMissRadiusClassicMortars>
 				<isMortar>true</isMortar>

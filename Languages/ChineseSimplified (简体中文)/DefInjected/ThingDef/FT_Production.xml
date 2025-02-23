@@ -6,7 +6,7 @@
   <!-- EN: A table that can artificially synthesize compounds such as Neutroamine. -->
   <FT_TableChemistry.description>能够从肉类中人工提取并合成中性胺的加工桌。</FT_TableChemistry.description>
   
-  <!-- EN: ConcreteMixer -->
+  <!-- EN: Concrete mixer -->
   <FT_TableConcreteMixer.label>混凝土加工机</FT_TableConcreteMixer.label>
   <!-- EN: A machine that crushes and mixes stony materials into concrete dusts -->
   <FT_TableConcreteMixer.description>一台能够将石质材料加工成混凝土的重型机器</FT_TableConcreteMixer.description>

@@ -1,53 +1,81 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <TerrainDef>
-    <defName>FT_VFES_TrenchTerrain</defName>
-    <label>fortified trench floor</label>
-    <texturePath>Floor/FT_concreteTile</texturePath>
-    <layerable>true</layerable>
-	<affordances>
-      <li>Light</li>
-      <li>Medium</li>
-      <li>Heavy</li>
-    </affordances>
-    <pathCost>0</pathCost>
-    <fertility>0</fertility>
-    <renderPrecedence>320</renderPrecedence>
-    <modExtensions>
-      <li Class="VFESecurity.TerrainDefExtension">
-        <allowCrouching>true</allowCrouching>
-        <pathCostEntering>50</pathCostEntering>
-        <pathCostLeaving>150</pathCostLeaving>
-        <coverEffectiveness>0.75</coverEffectiveness>
-        <rangeFactor>0.8</rangeFactor>
-      </li>
-    </modExtensions>
-  </TerrainDef>
+	<TerrainDef>
+		<defName>FT_VFES_TrenchTerrain</defName>
+		<label>fortified trench floor</label>
+		<texturePath>Floor/FT_concreteTile</texturePath>
+		<layerable>true</layerable>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+		</affordances>
+		<pathCost>0</pathCost>
+		<fertility>0</fertility>
+		<renderPrecedence>320</renderPrecedence>
+		<modExtensions>
+			<li Class="VFESecurity.TerrainDefExtension">
+				<pathCostEntering>50</pathCostEntering>
+				<pathCostLeaving>150</pathCostLeaving>
+				<coverEffectiveness>0.75</coverEffectiveness>
+				<terrainHediff>FT_VFES_TrenchTerrain</terrainHediff>
+			</li>
+		</modExtensions>
+	</TerrainDef>
 
-  <TerrainDef>
-    <defName>FT_VFES_PlatformTerrain</defName>
-    <label>fortified platform</label>
-    <texturePath>Floor/FT_concreteTile</texturePath>
-    <layerable>true</layerable>
-	<affordances>
-      <li>Light</li>
-      <li>Medium</li>
-      <li>Heavy</li>
-    </affordances>
-    <pathCost>1</pathCost>
-    <fertility>0</fertility>
-    <renderPrecedence>320</renderPrecedence>
-    <modExtensions>
-      <li Class="VFESecurity.TerrainDefExtension">
-        <allowCrouching>true</allowCrouching>
-        <pathCostEntering>75</pathCostEntering>
-        <pathCostLeaving>25</pathCostLeaving>
-        <coverEffectiveness>-0.25</coverEffectiveness>
-        <rangeFactor>1.2</rangeFactor>
-      </li>
-    </modExtensions>
-  </TerrainDef>
+	<HediffDef>
+		<defName>FT_VFES_TrenchTerrain</defName>
+		<label>trench</label>
+		<description>trench.</description>
+		<hediffClass>VFESecurity.HediffDependOnTerrain</hediffClass>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<statFactors>
+					<VEF_VerbRangeFactor>0.8</VEF_VerbRangeFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<TerrainDef>
+		<defName>FT_VFES_PlatformTerrain</defName>
+		<label>fortified platform</label>
+		<texturePath>Floor/FT_concreteTile</texturePath>
+		<layerable>true</layerable>
+		<affordances>
+			<li>Light</li>
+			<li>Medium</li>
+			<li>Heavy</li>
+		</affordances>
+		<pathCost>1</pathCost>
+		<fertility>0</fertility>
+		<renderPrecedence>320</renderPrecedence>
+		<modExtensions>
+			<li Class="VFESecurity.TerrainDefExtension">
+				<pathCostEntering>75</pathCostEntering>
+				<pathCostLeaving>25</pathCostLeaving>
+				<coverEffectiveness>-0.25</coverEffectiveness>
+				<terrainHediff>FT_VFES_PlatformTerrain</terrainHediff>
+			</li>
+		</modExtensions>
+	</TerrainDef>
+
+	<HediffDef>
+		<defName>FT_VFES_PlatformTerrain</defName>
+		<label>platform</label>
+		<description>platform.</description>
+		<hediffClass>VFESecurity.HediffDependOnTerrain</hediffClass>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<statFactors>
+					<VEF_VerbRangeFactor>1.45</VEF_VerbRangeFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
 
 	<ThingDef ParentName="BuildingBase">
 		<defName>FT_Trench</defName>
@@ -113,7 +141,9 @@
 			</li>
 		</damageMultipliers>
 		<clearBuildingArea>false</clearBuildingArea>
-		<researchPrerequisites><li>VWE_TrenchWarfare</li></researchPrerequisites>
+		<researchPrerequisites>
+			<li>VWE_TrenchWarfare</li>
+		</researchPrerequisites>
 		<placeWorkers>
 			<li>AOBAUtilities.PlaceWorker_NoAltitudeLayerOccupy</li>
 		</placeWorkers>
@@ -183,7 +213,9 @@
 			</li>
 		</damageMultipliers>
 		<clearBuildingArea>false</clearBuildingArea>
-		<researchPrerequisites><li>VWE_TrenchWarfare</li></researchPrerequisites>
+		<researchPrerequisites>
+			<li>VWE_TrenchWarfare</li>
+		</researchPrerequisites>
 		<placeWorkers>
 			<li>AOBAUtilities.PlaceWorker_NoAltitudeLayerOccupy</li>
 		</placeWorkers>

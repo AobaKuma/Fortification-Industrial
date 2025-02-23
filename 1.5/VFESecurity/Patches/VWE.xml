@@ -1,22 +1,23 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>Vanilla Weapons Expanded</li>
         </mods>
-		<match Class="PatchOperationSequence">
+        <match Class="PatchOperationSequence">
             <success>Always</success>
-            <operations>	
-				<li Class="PatchOperationReplace">
-                    <xpath>/Defs/TerrainDef[defName="FT_Trench" or defName="FT_Platform"]/researchPrerequisites</xpath>
-                    <value>												
-						<researchPrerequisites>
-							<li>VWE_TrenchWarfare</li>
-						</researchPrerequisites>
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/TerrainDef[defName="FT_Trench" or
+                        defName="FT_Platform"]/researchPrerequisites</xpath>
+                    <value>
+                        <researchPrerequisites>
+                            <li>VWE_TrenchWarfare</li>
+                        </researchPrerequisites>
                     </value>
-                </li>				
+                </li>
             </operations>
         </match>
-	</Operation>
+    </Operation>
 </Patch>

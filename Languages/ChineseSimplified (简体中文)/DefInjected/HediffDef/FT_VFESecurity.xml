@@ -2,13 +2,13 @@
 <LanguageData>
   
   <!-- EN: platform -->
-  <FT_VFES_PlatformTerrain.label>TODO</FT_VFES_PlatformTerrain.label>
+  <FT_VFES_PlatformTerrain.label>平台</FT_VFES_PlatformTerrain.label>
   <!-- EN: platform. -->
-  <FT_VFES_PlatformTerrain.description>TODO</FT_VFES_PlatformTerrain.description>
+  <FT_VFES_PlatformTerrain.description>平台</FT_VFES_PlatformTerrain.description>
   
   <!-- EN: trench -->
-  <FT_VFES_TrenchTerrain.label>TODO</FT_VFES_TrenchTerrain.label>
+  <FT_VFES_TrenchTerrain.label>壕沟</FT_VFES_TrenchTerrain.label>
   <!-- EN: trench. -->
-  <FT_VFES_TrenchTerrain.description>TODO</FT_VFES_TrenchTerrain.description>
+  <FT_VFES_TrenchTerrain.description>壕沟</FT_VFES_TrenchTerrain.description>
   
 </LanguageData>

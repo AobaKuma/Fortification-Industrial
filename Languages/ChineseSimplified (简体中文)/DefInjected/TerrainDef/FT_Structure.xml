@@ -12,9 +12,9 @@
   <FT_ConcreteTile.description>建造相对耗时但是较为美观的混凝土地板，适合用于大型空间。</FT_ConcreteTile.description>
   
   <!-- EN: Fine Concrete Tile -->
-  <FT_FineConcreteTile.label>TODO</FT_FineConcreteTile.label>
+  <FT_FineConcreteTile.label>精致混凝土地砖</FT_FineConcreteTile.label>
   <!-- EN: tiles made by architectural concrete, it looks nice even though they are still concrete. Slow to construct. -->
-  <FT_FineConcreteTile.description>TODO</FT_FineConcreteTile.description>
+  <FT_FineConcreteTile.description>由建筑混凝土制成的光滑地砖，尽管它们仍然是混凝土但看起来很漂亮。不过建造时间很长。</FT_FineConcreteTile.description>
   
   <!-- EN: concrete flagstone -->
   <FT_FlagstoneConcrete.label>混凝土舖路砖</FT_FlagstoneConcrete.label>

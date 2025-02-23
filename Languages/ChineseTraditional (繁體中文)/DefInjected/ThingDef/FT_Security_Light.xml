@@ -3,7 +3,7 @@
   
   <!-- EN: autocannon -->
   <FT_AutoCannon.label>自動機砲</FT_AutoCannon.label>
-  <!-- EN: A Tripod with high caliber machine gun mounted. Requires steel to refurbish its barrels after heavy use.it needs a pawn to man on it to operate. -->
+  <!-- EN: A Tripod with high caliber machine gun mounted. Requires steel to refurbish its\n      barrels after heavy use.it needs a pawn to man on it to operate. -->
   <FT_AutoCannon.description>安裝在三角架上的大口徑機砲.大量射擊後需消耗鋼鐵來更換砲管</FT_AutoCannon.description>
   <!-- EN: Barrel durability -->
   <FT_AutoCannon.comps.CompRefuelable.fuelGizmoLabel>槍管耐久</FT_AutoCannon.comps.CompRefuelable.fuelGizmoLabel>
@@ -41,7 +41,7 @@
   
   <!-- EN: Anti Air cannon -->
   <FT_Gun_TurretAA.label>高射砲</FT_Gun_TurretAA.label>
-  <!-- EN: An Autocannon designed to defend the area of skies， but also a nice weapon for ground targets. -->
+  <!-- EN: An Autocannon designed to defend the area of skies, but also a nice weapon for ground targets. -->
   <FT_Gun_TurretAA.description>用於對空攻擊的大口徑機關砲，但用於地面目標也很適合。</FT_Gun_TurretAA.description>
   <!-- EN: Anti Air cannon -->
   <FT_Gun_TurretAA.verbs.Verb_Shoot.label>高射砲</FT_Gun_TurretAA.verbs.Verb_Shoot.label>
@@ -55,14 +55,14 @@
   
   <!-- EN: Quad Anti Air cannon -->
   <FT_Gun_TurretQuadAA.label>聯裝高射砲</FT_Gun_TurretQuadAA.label>
-  <!-- EN: An Quad mounted Autocannon designed to defend the area of skies， but also a nice weapon for ground targets. -->
-  <FT_Gun_TurretQuadAA.description>早在人類進入太空時代前便已廣泛使用的大口徑機炮，其製造工藝在經過了一定的改良後隨著那些殖民船輾轉無數的世界並開枝散葉。</FT_Gun_TurretQuadAA.description>
+  <!-- EN: An Quad mounted Autocannon designed to defend the area of skies, but also a nice weapon for ground targets. -->
+  <FT_Gun_TurretQuadAA.description>在人類進入太空時代前便已廣泛使用的大口徑機炮，其製造工藝在經過了一定的改良後隨著那些殖民船輾轉無數的世界並開枝散葉。</FT_Gun_TurretQuadAA.description>
   <!-- EN: Quad Anti Air cannon -->
   <FT_Gun_TurretQuadAA.verbs.Verb_Shoot.label>聯裝高射砲</FT_Gun_TurretQuadAA.verbs.Verb_Shoot.label>
   
   <!-- EN: Quad Machine gun -->
   <FT_Maxim4M.label>聯裝機槍</FT_Maxim4M.label>
-  <!-- EN: A Tripod with Quadruple machine gun mounted so it Have a good firepower continuity，need a pawn man on it to operate. Requires steel to refurbish its barrels after heavy use. -->
+  <!-- EN: A Tripod with Quadruple machine gun mounted so it Have a good firepower continuity,need a pawn man on it to operate. Requires steel to refurbish its barrels after heavy use. -->
   <FT_Maxim4M.description>安裝在三角架上的四聯裝機槍，有著良好的火力持續性.大量射擊後需消耗鋼鐵來更換砲管。</FT_Maxim4M.description>
   <!-- EN: Barrel durability -->
   <FT_Maxim4M.comps.CompRefuelable.fuelGizmoLabel>槍管耐久</FT_Maxim4M.comps.CompRefuelable.fuelGizmoLabel>
@@ -73,7 +73,7 @@
   
   <!-- EN: recoilless gun -->
   <FT_RecoillessGun.label>無後座力砲</FT_RecoillessGun.label>
-  <!-- EN: A Tripod with Recoilless gun mounted.A light-weighted soloution of anti armour operation， Requires ReinforcedBarrel to refurbish its barrels after heavy use. also it needs a pawn to man on it to operate. But notice， do not use it indoors!! -->
+  <!-- EN: A Tripod with Recoilless gun mounted.A light-weighted soloution of anti armour\n      operation, Requires ReinforcedBarrel to refurbish its barrels after heavy use. also it needs a\n      pawn to man on it to operate. But notice, do not use it indoors!! -->
   <FT_RecoillessGun.description>安裝在三角架上的無後座力砲，對於野戰來說比反坦克炮還要易於攜帶，頻繁使用後需要加固砲管來維護.另外請注意，千萬不要在室內使用它。</FT_RecoillessGun.description>
   <!-- EN: Barrel durability -->
   <FT_RecoillessGun.comps.CompRefuelable.fuelGizmoLabel>砲管耐久</FT_RecoillessGun.comps.CompRefuelable.fuelGizmoLabel>

@@ -23,6 +23,6 @@
   <!-- EN: A power distribution box, connects to power networks via conduits to extend the connection range of electronics. (this feature still wip, decorative for now). -->
   <FT_DistributionBox.description>安装在混凝土平台上的金属变压器接线盒，目前并无功能。</FT_DistributionBox.description>
   <!-- EN: Use {0_label} -->
-  <FT_DistributionBox.comps.CompUsable.useLabel>使用{0}</FT_DistributionBox.comps.CompUsable.useLabel>
+  <FT_DistributionBox.comps.CompUsable.useLabel>使用{0_label}</FT_DistributionBox.comps.CompUsable.useLabel>
   
 </LanguageData>

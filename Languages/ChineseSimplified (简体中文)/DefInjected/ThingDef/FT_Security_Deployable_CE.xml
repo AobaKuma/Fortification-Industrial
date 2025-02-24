@@ -18,7 +18,7 @@
   <!-- EN: A light-weighted mortar that launches all kinds of mortar shells. Improved firing speed with a simplified design， it has a shorter range but it can be easily carried by infantry. -->
   <FT_Turret_Mortar.description>一种能发射各种砲弹的轻型迫击砲.以改良的简化结构加快了发射流程并能够机动部属，但减少了砲管寿命与精准度，在进行火力压制时非常的实用。</FT_Turret_Mortar.description>
   <!-- EN: Pick up {0_label} -->
-  <FT_Turret_Mortar.comps.CompUsable.useLabel>步兵迫击砲</FT_Turret_Mortar.comps.CompUsable.useLabel>
+  <FT_Turret_Mortar.comps.CompUsable.useLabel>收起步兵迫击砲</FT_Turret_Mortar.comps.CompUsable.useLabel>
   
   <!-- EN: mobile artillery spotter -->
   <FTC_SpotterLight_Gun.label>砲兵镜</FTC_SpotterLight_Gun.label>
@@ -32,6 +32,6 @@
   <!-- EN: A manned artillery scope with radio. Useful to coordinate artillery strikes.\n\nUsing this on a target will mark it， removing the indirect fire penalty from any artillery pieces targeting it. Additionally， any directed fire will use the aiming accuracy and efficiency of the spotter， rather than the artillery operator to determine final accuracy. -->
   <FTC_SpotterLight_Turret.description>一种自带无线电的野战砲兵瞄准镜. 对于协调火砲打击很有用.\n\n在目标上使用此功能将对其进行标记，从而消除任何瞄准该目标的火砲的间接火力惩罚。 此外任何直射火力都将使用观察员的瞄准精度和效率，而不是砲兵操作员来确定最终精度。</FTC_SpotterLight_Turret.description>
   <!-- EN: Pick up {0_label} -->
-  <FTC_SpotterLight_Turret.comps.CompUsable.useLabel>砲兵测距仪</FTC_SpotterLight_Turret.comps.CompUsable.useLabel>
+  <FTC_SpotterLight_Turret.comps.CompUsable.useLabel>收起砲兵测距仪</FTC_SpotterLight_Turret.comps.CompUsable.useLabel>
   
 </LanguageData>

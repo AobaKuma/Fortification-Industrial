@@ -18,7 +18,7 @@
   <!-- EN: A light-weighted mortar that launches all kinds of mortar shells. Improved firing speed with a simplified design, it has a shorter range but it can be easily carried by infantry. -->
   <FT_Turret_Mortar.description>一种能发射各种砲弹的轻型迫击砲.以改良的简化结构加快了发射流程并能够机动部属，但减少了砲管寿命与精准度，在进行火力压制时非常的实用。</FT_Turret_Mortar.description>
   <!-- EN: Pick up {0_label} -->
-  <FT_Turret_Mortar.comps.CompUsable.useLabel>步兵迫击砲</FT_Turret_Mortar.comps.CompUsable.useLabel>
+  <FT_Turret_Mortar.comps.CompUsable.useLabel>收起步兵迫击砲</FT_Turret_Mortar.comps.CompUsable.useLabel>
   <!-- EN: Barrel durability -->
   <FT_Turret_Mortar.comps.CompRefuelable.fuelGizmoLabel>炮管耐久</FT_Turret_Mortar.comps.CompRefuelable.fuelGizmoLabel>
   <!-- EN: Shots until barrel change -->

@@ -2,7 +2,7 @@
 
 <Patch>
 	<Operation Class="PatchOperationSequence">
-        <operations>
+		<operations>
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="VFES_Turret_SentryGun"]/minifiedDef</xpath>
 				<value>
@@ -14,16 +14,14 @@
 				<xpath>Defs/ThingDef[defName="VFES_Turret_SentryGun"]/comps</xpath>
 				<value>
 					<li Class="CompProperties_Usable">
-                    <useJob>TriggerObject</useJob>
-                    <useLabel>Pick up {0_label}</useLabel>
-                </li>
-                <li>
-                    <compClass>Fortification.CompMinifyToInventory</compClass>
-                </li>
+						<useJob>TriggerObject</useJob>
+						<useLabel>Pick up {0_label}</useLabel>
+					</li>
+					<li>
+						<compClass>Fortification.CompMinifyToInventory</compClass>
+					</li>
 				</value>
 			</li>
 		</operations>
 	</Operation>
 </Patch>
-
-            

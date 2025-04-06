@@ -13,7 +13,7 @@
   
   <!-- EN: Military Sandbag -->
   <FT_Sandbag.label>军用沙包</FT_Sandbag.label>
-  <!-- EN: Bags of locally-sourced dirt or sand， stacked for use as cover. they are\n      well-stacked so it is more durable. -->
+  <!-- EN: Bags of locally-sourced dirt or sand, stacked for use as cover. they are\n      well-stacked so it is more durable. -->
   <FT_Sandbag.description>就地填充内容物的掩体沙包袋，用作掩体，另外他们被叠得很密实因此更加的耐用。</FT_Sandbag.description>
   
   <!-- EN: Tank Trap -->
@@ -28,7 +28,7 @@
   
   <!-- EN: Military sandbag wall -->
   <FT_WallSandbag.label>军用沙包墙</FT_WallSandbag.label>
-  <!-- EN: Bags of locally-sourced dirt or sand， stacked for use as wall. they are well-stacked so it is more durable. -->
+  <!-- EN: Bags of locally-sourced dirt or sand, stacked for use as wall. they are well-stacked so it is more durable. -->
   <FT_WallSandbag.description>就地填充内容物的掩体沙包袋，用作墙体，另外他们被叠得很密实因此更加的耐用。</FT_WallSandbag.description>
   
 </LanguageData>

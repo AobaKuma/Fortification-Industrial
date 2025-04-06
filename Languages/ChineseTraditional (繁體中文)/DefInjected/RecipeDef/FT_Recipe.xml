@@ -3,7 +3,7 @@
   
   <!-- EN: make component -->
   <FT_Make_ComponentIndustrial.label>製造零件</FT_Make_ComponentIndustrial.label>
-  <!-- EN: Make a component from lathe，take longer time and resources. -->
+  <!-- EN: Make a component from lathe,take longer time and resources. -->
   <FT_Make_ComponentIndustrial.description>在車床將鋼鐵加工成零件，由於硬件限制因此效率不如精密製作桌</FT_Make_ComponentIndustrial.description>
   <!-- EN: Making component. -->
   <FT_Make_ComponentIndustrial.jobString>正在製作零件</FT_Make_ComponentIndustrial.jobString>
@@ -31,14 +31,14 @@
   
   <!-- EN: Pack concrete -->
   <FT_Make_ConcreteCompressed.label>封裝混凝土</FT_Make_ConcreteCompressed.label>
-  <!-- EN: pack Concrete bag for storage，also trader are willing to buy them. -->
+  <!-- EN: pack Concrete bag for storage,also trader are willing to buy them. -->
   <FT_Make_ConcreteCompressed.description>將混凝土封裝，可以用於儲存以及販售。</FT_Make_ConcreteCompressed.description>
   <!-- EN: Packing concrete. -->
   <FT_Make_ConcreteCompressed.jobString>封裝混凝土中。</FT_Make_ConcreteCompressed.jobString>
   
   <!-- EN: make Fiber cement -->
   <FT_Make_ConcreteWood.label>製作水泥預製板</FT_Make_ConcreteWood.label>
-  <!-- EN: mixing the cloth and concrete to get the light-weighted concrete plank，fire-proofed but not durable as the soild bricks. -->
+  <!-- EN: mixing the cloth and concrete to get the light-weighted concrete plank,fire-proofed but not durable as the soild bricks. -->
   <FT_Make_ConcreteWood.description>用混凝土倒入模具澆築水泥預製板，作為大規模建築用的材料，防火且建造相對省時。</FT_Make_ConcreteWood.description>
   <!-- EN: making concrete. -->
   <FT_Make_ConcreteWood.jobString>澆築預製板中</FT_Make_ConcreteWood.jobString>
@@ -66,7 +66,7 @@
   
   <!-- EN: prepare steel for concrete -->
   <FT_Make_ReinforcedConcrete.label>備料鋼筋混凝土</FT_Make_ReinforcedConcrete.label>
-  <!-- EN: mixing the embedded steel bars and concrete to get the Reinforced concrete ，an alternative Materials for Metalic building. -->
+  <!-- EN: mixing the embedded steel bars and concrete to get the Reinforced concrete ,an alternative Materials for Metalic building. -->
   <FT_Make_ReinforcedConcrete.description>給混凝土準備鋼筋來用於澆築鋼筋混凝土建築。</FT_Make_ReinforcedConcrete.description>
   <!-- EN: making concrete. -->
   <FT_Make_ReinforcedConcrete.jobString>準備材料中</FT_Make_ReinforcedConcrete.jobString>

@@ -22,7 +22,7 @@
   
   <!-- EN: prefab concrete -->
   <FT_WoodConcrete.label>水泥预制板</FT_WoodConcrete.label>
-  <!-- EN: plank-shaped concrete blocks， able to fast building like wood and it is fire-proofed -->
+  <!-- EN: plank-shaped concrete blocks, able to fast building like wood and it is fire-proofed -->
   <FT_WoodConcrete.description>预先凝固成板状用来组合建造的混凝土预制件，作为快速建筑用的材料而言相当优秀，防火且建造工时较少。</FT_WoodConcrete.description>
   <!-- EN: concrete -->
   <FT_WoodConcrete.stuffProps.stuffAdjective>混凝土预制板</FT_WoodConcrete.stuffProps.stuffAdjective>

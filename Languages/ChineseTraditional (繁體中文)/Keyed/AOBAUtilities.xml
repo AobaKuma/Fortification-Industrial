@@ -1,18 +1,27 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<LanguageData>
-  
+<LanguageData> 
   <!-- UNUSED -->
+  <!-- EN: Requires total quality exceeding {0} -->
   <FT_BillRequires_Mass>需要總計品質超過{0}</FT_BillRequires_Mass>
+  <!-- EN: Requires total price to exceed {0} -->
   <FT_BillRequires_MarketValue>需要總計價格超過{0}</FT_BillRequires_MarketValue>
   <FT_AltitudeLayerOccupied></FT_AltitudeLayerOccupied>
+  <!-- EN: Needs to be placed on the wall or door -->
   <FT_CannotPlaceWithoutWall>需要放置於牆體或門上</FT_CannotPlaceWithoutWall>
+  <!-- EN: Needs to be placed on cover -->
   <FT_MustOnACoverBuilding>需要放置在掩體上</FT_MustOnACoverBuilding>
+  <!-- EN: Stop broadcast -->
   <FT_StopWarmup>中止廣播</FT_StopWarmup>
+  <!-- EN: Start broadcast -->
   <FT_StartWarmup>開始廣播</FT_StartWarmup>
+  <!-- EN: Unable to start: not cooled yet -->
   <FT_NotCooldown>無法啟動:尚未冷卻</FT_NotCooldown>
+  <!-- EN: will complete broadcast at: -->
   <FT_WillReadyAt>將完成廣播於:</FT_WillReadyAt>
+  <!-- EN: will complete cooling at: -->
   <FT_WillCooldownAt>將完成冷卻於:</FT_WillCooldownAt>
+  <!-- EN: Not enough fuel -->
   <FT_NoEnoughFuel>燃料不足</FT_NoEnoughFuel>
+  <!-- EN: No fuel -->
   <FT_NotFueled>沒有燃料</FT_NotFueled>
-  
 </LanguageData>

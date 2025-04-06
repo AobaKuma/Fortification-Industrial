@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
   <FT_PowerPole.label>电线杆</FT_PowerPole.label>
@@ -18,8 +18,11 @@
   <FT_PowerPole_Lamp_Frame.label>带灯电线杆(建造中)</FT_PowerPole_Lamp_Frame.label>
   <FT_PowerPole_Lamp_Frame.description>混凝土电线杆，使用锡或铜电缆来传输电流. 使用“链接”按钮连接到其他电源杆，或选择多个电源杆并按“自动链接”按钮。</FT_PowerPole_Lamp_Frame.description>
 
+  <!-- EN: distribution box -->
   <FT_DistributionBox.label>变电箱(WIP)</FT_DistributionBox.label>
+  <!-- EN: A power distribution box, connects to power networks via conduits to extend the connection range of electronics. (this feature still wip, decorative for now). -->
   <FT_DistributionBox.description>安装在混凝土平台上的金属变压器接线盒，目前并无功能。</FT_DistributionBox.description>
-
-
+  <!-- EN: Use {0_label} -->
+  <FT_DistributionBox.comps.CompUsable.useLabel>使用{0_label}</FT_DistributionBox.comps.CompUsable.useLabel>
+  
 </LanguageData>

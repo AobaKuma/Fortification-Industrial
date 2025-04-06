@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\Fortification\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2221DD4B-DCE6-48F0-A680-6831C514C037}|Fortification.csproj|D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\Fortification\\comps\\comppawnturretdeploygizmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2221DD4B-DCE6-48F0-A680-6831C514C037}|Fortification.csproj|solutionrelative:comps\\comppawnturretdeploygizmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2221DD4B-DCE6-48F0-A680-6831C514C037}|Fortification.csproj|D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\Fortification\\comps\\compminifytoinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2221DD4B-DCE6-48F0-A680-6831C514C037}|Fortification.csproj|solutionrelative:comps\\compminifytoinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{938C384F-0BC4-41BA-B221-C1A17181691A}|..\\FortificationMedieval\\FortificationMedieval.csproj|d:\\steam\\steamapps\\common\\rimworld\\mods\\fortification-industrial\\source\\fortificationmedieval\\harmony_verb_shoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -54,6 +46,10 @@
       "RelativeMoniker": "D:0:0:{2221DD4B-DCE6-48F0-A680-6831C514C037}|Fortification.csproj|solutionrelative:comps\\compexplosivewithcomposite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2221DD4B-DCE6-48F0-A680-6831C514C037}|Fortification.csproj|D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\Fortification\\comps\\comppawnturretdeploygizmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2221DD4B-DCE6-48F0-A680-6831C514C037}|Fortification.csproj|solutionrelative:comps\\comppawnturretdeploygizmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2221DD4B-DCE6-48F0-A680-6831C514C037}|Fortification.csproj|D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\Fortification\\thingclasses\\bullet_alongwaydamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2221DD4B-DCE6-48F0-A680-6831C514C037}|Fortification.csproj|solutionrelative:thingclasses\\bullet_alongwaydamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -67,6 +63,10 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{F04DAF6B-E4E3-410D-9074-D65D1A3078C3}|..\\FortificationCE\\FortificationCE.csproj|d:\\steam\\steamapps\\common\\rimworld\\mods\\fortification-industrial\\source\\fortificationce\\wip\\projectile_ballisticmissile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2221DD4B-DCE6-48F0-A680-6831C514C037}|Fortification.csproj|D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\Fortification\\comps\\compminifytoinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2221DD4B-DCE6-48F0-A680-6831C514C037}|Fortification.csproj|solutionrelative:comps\\compminifytoinventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F04DAF6B-E4E3-410D-9074-D65D1A3078C3}|..\\FortificationCE\\FortificationCE.csproj|d:\\steam\\steamapps\\common\\rimworld\\mods\\fortification-industrial\\source\\fortificationce\\harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -107,7 +107,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 21,
           "Children": [
             {
               "$type": "Bookmark",
@@ -115,7 +115,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
+              "Title": "JobDefOf.cs",
+              "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\Fortification\\JobDefOf.cs",
+              "RelativeDocumentMoniker": "JobDefOf.cs",
+              "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\Fortification\\JobDefOf.cs",
+              "RelativeToolTip": "JobDefOf.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T09:05:02.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "Projectile_ExplosiveByComps.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\Fortification\\ThingClasses\\Projectile_ExplosiveByComps.cs",
               "RelativeDocumentMoniker": "ThingClasses\\Projectile_ExplosiveByComps.cs",
@@ -127,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "Bullet_AlongWayDamage.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\Fortification\\ThingClasses\\Bullet_AlongWayDamage.cs",
               "RelativeDocumentMoniker": "ThingClasses\\Bullet_AlongWayDamage.cs",
@@ -139,62 +151,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
               "Title": "CompPawnTurretDeployGizmo.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\Fortification\\Comps\\CompPawnTurretDeployGizmo.cs",
               "RelativeDocumentMoniker": "Comps\\CompPawnTurretDeployGizmo.cs",
               "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\Fortification\\Comps\\CompPawnTurretDeployGizmo.cs",
               "RelativeToolTip": "Comps\\CompPawnTurretDeployGizmo.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAgwHUAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAkwHUAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T09:01:22.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T09:01:22.546Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 17,
               "Title": "CompMinifyToInventory.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\Fortification\\Comps\\CompMinifyToInventory.cs",
               "RelativeDocumentMoniker": "Comps\\CompMinifyToInventory.cs",
               "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\Fortification\\Comps\\CompMinifyToInventory.cs",
               "RelativeToolTip": "Comps\\CompMinifyToInventory.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T09:01:08.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T09:01:08.331Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Harmony_Verb_Shoot.cs",
-              "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\FortificationMedieval\\Harmony_Verb_Shoot.cs",
-              "RelativeDocumentMoniker": "..\\FortificationMedieval\\Harmony_Verb_Shoot.cs",
-              "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\FortificationMedieval\\Harmony_Verb_Shoot.cs",
-              "RelativeToolTip": "..\\FortificationMedieval\\Harmony_Verb_Shoot.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T23:27:15.621Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "JobDefOf.cs",
-              "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\Fortification\\JobDefOf.cs",
-              "RelativeDocumentMoniker": "JobDefOf.cs",
-              "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\Fortification\\JobDefOf.cs",
-              "RelativeToolTip": "JobDefOf.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T09:05:02.762Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "CompExplosiveWithComposite.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\Fortification\\Comps\\CompExplosiveWithComposite.cs",
               "RelativeDocumentMoniker": "Comps\\CompExplosiveWithComposite.cs",
@@ -218,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "Harmony_ThreatDisabled.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\FortificationCE\\Harmony_ThreatDisabled.cs",
               "RelativeDocumentMoniker": "..\\FortificationCE\\Harmony_ThreatDisabled.cs",
@@ -226,11 +207,12 @@
               "RelativeToolTip": "..\\FortificationCE\\Harmony_ThreatDisabled.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T01:47:58.736Z"
+              "WhenOpened": "2024-06-23T01:47:58.736Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "BulletCE_AlongWayDamage.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\FortificationCE\\BulletCE_AlongWayDamage.cs",
               "RelativeDocumentMoniker": "..\\FortificationCE\\BulletCE_AlongWayDamage.cs",
@@ -265,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "Verb_NewShootMortar.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\FortificationCE\\WIP\\Verb_NewShootMortar.cs",
               "RelativeDocumentMoniker": "..\\FortificationCE\\WIP\\Verb_NewShootMortar.cs",
@@ -289,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "Projectile_BallisticMissile.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\FortificationCE\\WIP\\Projectile_BallisticMissile.cs",
               "RelativeDocumentMoniker": "..\\FortificationCE\\WIP\\Projectile_BallisticMissile.cs",
@@ -373,7 +355,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Harmony_Verb_Shoot.cs",
+              "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\FortificationMedieval\\Harmony_Verb_Shoot.cs",
+              "RelativeDocumentMoniker": "..\\FortificationMedieval\\Harmony_Verb_Shoot.cs",
+              "ToolTip": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\FortificationMedieval\\Harmony_Verb_Shoot.cs",
+              "RelativeToolTip": "..\\FortificationMedieval\\Harmony_Verb_Shoot.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T23:27:15.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "CompCastFlecker.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\Fortification\\Comps\\CompCastFlecker.cs",
               "RelativeDocumentMoniker": "Comps\\CompCastFlecker.cs",
@@ -381,11 +376,12 @@
               "RelativeToolTip": "Comps\\CompCastFlecker.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAgwCEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T23:26:32.013Z"
+              "WhenOpened": "2024-06-22T23:26:32.013Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "HarmonyPatches.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\FortificationMedieval\\HarmonyPatches.cs",
               "RelativeDocumentMoniker": "..\\FortificationMedieval\\HarmonyPatches.cs",
@@ -393,11 +389,12 @@
               "RelativeToolTip": "..\\FortificationMedieval\\HarmonyPatches.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T23:24:36.952Z"
+              "WhenOpened": "2024-06-22T23:24:36.952Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "HarmonyPatches.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\Fortification\\Harmony\\HarmonyPatches.cs",
               "RelativeDocumentMoniker": "Harmony\\HarmonyPatches.cs",
@@ -405,11 +402,12 @@
               "RelativeToolTip": "Harmony\\HarmonyPatches.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T23:24:20.48Z"
+              "WhenOpened": "2024-06-22T23:24:20.48Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "ModExtension_ExpolsionWithEvents.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\Fortification\\ModExtensions\\ModExtension_ExpolsionWithEvents.cs",
               "RelativeDocumentMoniker": "ModExtensions\\ModExtension_ExpolsionWithEvents.cs",
@@ -417,11 +415,12 @@
               "RelativeToolTip": "ModExtensions\\ModExtension_ExpolsionWithEvents.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T23:23:41.459Z"
+              "WhenOpened": "2024-06-22T23:23:41.459Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "GameComponent_NuclearWarfare.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\Fortification\\Comps\\GameComponent_NuclearWarfare.cs",
               "RelativeDocumentMoniker": "Comps\\GameComponent_NuclearWarfare.cs",
@@ -429,11 +428,12 @@
               "RelativeToolTip": "Comps\\GameComponent_NuclearWarfare.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAqwDoAAABrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T23:23:36.988Z"
+              "WhenOpened": "2024-06-22T23:23:36.988Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "JobDriver_EnterBunkerFacility.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\Fortification\\JobDriver_EnterBunkerFacility.cs",
               "RelativeDocumentMoniker": "JobDriver_EnterBunkerFacility.cs",
@@ -441,11 +441,12 @@
               "RelativeToolTip": "JobDriver_EnterBunkerFacility.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAuwB4AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T16:13:15.896Z"
+              "WhenOpened": "2024-04-18T16:13:15.896Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "Harmony_Verb_Shoot.cs",
               "DocumentMoniker": "D:\\Steam\\steamapps\\common\\RimWorld\\Mods\\Fortification-Industrial\\Source\\Fortification\\Harmony\\Harmony_Verb_Shoot.cs",
               "RelativeDocumentMoniker": "Harmony\\Harmony_Verb_Shoot.cs",
@@ -453,7 +454,8 @@
               "RelativeToolTip": "Harmony\\Harmony_Verb_Shoot.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAA8wBcAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T06:42:12.933Z"
+              "WhenOpened": "2024-04-12T06:42:12.933Z",
+              "EditorCaption": ""
             }
           ]
         }

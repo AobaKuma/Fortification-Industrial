@@ -5,7 +5,19 @@
   <FT_Chemistry.label>化学</FT_Chemistry.label>
   <!-- EN: Build Chemistry Table that can artificially synthesize compounds such as Neutroamine. -->
   <FT_Chemistry.description>解锁化学制造桌，能够从肉类中人工提取并合成中性胺。</FT_Chemistry.description>
-
+  <!-- EN:
+    <li>subject->chemistry</li>
+    <li>subject->modren alchemy</li>
+    <li>subject->material sorcery</li>
+    <li>subject_story->said that Chemistry is the most cursed subject, bar none</li>
+    <li>subject_story->mentioned that chemical reaction formula for synthesizing neutramines is [censored]</li>
+    <li>subject_story->wrote many messy notes in the margins of the schematic</li>
+    <li>subject_story->said that chemistry is way more science than alchemy, at least it can make gold in real</li>
+    <li>subject_story->warned readers to stay away from anyone holding a torch or pitchfork</li>
+    <li>subject_story->included a complete periodic table of chemical elements, claiming it would save readers from 127 years of detours.</li>
+    <li>subject_gerund->synthesizing neutramines</li>
+    <li>subject_gerund->calculating mix ratio of FSX</li>
+  -->
   <FT_Chemistry.generalRules.rulesStrings>
     <li>subject->化学</li>
     <li>subject->现代炼金术</li>
@@ -24,7 +36,19 @@
   <FT_Concrete.label>混凝土</FT_Concrete.label>
   <!-- EN: crush and smelt stony material to concrete. -->
   <FT_Concrete.description>解锁将石料加工成混凝土用于建筑与地板铺设。</FT_Concrete.description>
-
+  <!-- EN:
+    <li>subject->concrete</li>
+    <li>subject->industrial building material</li>
+    <li>subject->civil engineering</li>
+    <li>subject_story->said that "cement das conk-creet baybee"</li>
+    <li>subject_story->mentioned that concrete will only strong when supported by a flexible frame such as metal or wood.</li>
+    <li>subject_story->wrote many messy notes in the margins of the schematic</li>
+    <li>subject_story->constantly conveys to people that everything can be made of concrete in the colony</li>
+    <li>subject_story->attached a brand logo from Nara Industries</li>
+    <li>subject_story->summarized das conk-creet baybee</li>
+    <li>subject_gerund->carrying cement bags</li>
+    <li>subject_gerund->calculating mix ratio</li>
+  -->
   <FT_Concrete.generalRules.rulesStrings>
     <li>subject->现代混凝土</li>
     <li>subject->工业化建筑材料</li>
@@ -41,13 +65,27 @@
   
   <!-- EN: ENIAC -->
   <FT_ENIAC.label>真空管电脑</FT_ENIAC.label>
-  <!-- EN: Electronic Numerical Integrator And Computer， known as ENIAC is a Turing-complete general-purpose digital computer able to solve "a large class of numerical problems" through reprogramming. -->
+  <!-- EN: Electronic Numerical Integrator And Computer, known as ENIAC is a Turing-complete general-purpose digital computer able to solve "a large class of numerical problems" through reprogramming. -->
   <FT_ENIAC.description>真空管电子数值计算机，虽然算不上是最好的但可以说是电子科技的里程碑。</FT_ENIAC.description>
   <!-- EN: [Interstellar Industries Complex Nara Terminal]\n      [ version="1.5"] [ encoding="UTF-8" ]\n      Loading....\n\n      [To user]\n      Being able to build ENIAC and read this information means that you or your civilization already has the minimum requirements for the realization of the technology in the disc.\n      We look forward to further cooperation with you to create a beautiful industrialized society in the rimworld.\n      OS>:_ -->
   <FT_ENIAC.discoveredLetterText>[奈良星际工业复合体终端]\n [ 版本="1.5"] [编码="UTF-8" ]\n 正在加载中....\n\n [致用户]\n 能够构建ENIAC 并阅读此内容资讯意味着你或你的文明已经具备实现光碟中科技的最低要求。 \n我们期待与您的进一步合作，用务实的双手在这片边缘世界创造一个美好的先进社会。</FT_ENIAC.discoveredLetterText>
   <!-- EN: Data Disk: ENIAC -->
   <FT_ENIAC.discoveredLetterTitle>数据读取: ENIAC</FT_ENIAC.discoveredLetterTitle>
-
+  <!-- EN:
+    <li>subject->electronic computer</li>
+    <li>subject->vacuum tube replace</li>
+    <li>subject->integrator design</li>
+    <li>subject->turing-complete</li>
+    <li>subject->digital computer</li>
+    <li>subject_story->included a strange data disc in the schematic</li>
+    <li>subject_story->repeatedly mentioned that the invention of the vacuum tube was the cornerstone of computer technology</li>
+    <li>subject_story->wrote many messy notes in the margins of the schematic</li>
+    <li>subject_story->constantly conveys to people that computers are omnipotent gods</li>
+    <li>subject_story->attached a brand logo sticker from Nara Industries on machine</li>
+    <li>subject_story->summarized in great detail the manufacturing techniques and processes involved in producing vacuum tube computers.</li>
+    <li>subject_gerund->computer engineering</li>
+    <li>subject_gerund->vacuum tube manufacturing</li>
+  -->
   <FT_ENIAC.generalRules.rulesStrings>
     <li>subject->电子计算机概论</li>
     <li>subject->如何更换真空管</li>
@@ -66,9 +104,21 @@
   
   <!-- EN: heavy artillery -->
   <FT_HeavyArtillery.label>重型火砲</FT_HeavyArtillery.label>
-  <!-- EN: Using ENIAC to calculate the artillery ballistics table， unlock the design of heavy artilleries. -->
+  <!-- EN: Using ENIAC to calculate the artillery ballistics table, unlock the design of heavy artilleries. -->
   <FT_HeavyArtillery.description>使用伊尼亚克计算火炮弹道表，解锁重型火砲的设计。</FT_HeavyArtillery.description>
-
+  <!-- EN:
+    <li>subject->Ballistic</li>
+    <li>subject->Artillery</li>
+    <li>subject->Heavy Cannon</li>
+    <li>subject_story->included a full design blueprint in schematic</li>
+    <li>subject_story->mentioned that the processing accuracy of the barrel will greatly affect the accuracy of artillery</li>
+    <li>subject_story->wrote many messy notes in the margins of the schematic</li>
+    <li>subject_story->constantly conveys to people that a faction's territorial waters are the range of their coastal artillery</li>
+    <li>subject_story->attached a brand logo from Nara Industries on the schematic cover</li>
+    <li>subject_story->summarized that caliber is justice</li>
+    <li>subject_gerund->cannon designing</li>
+    <li>subject_gerund->ballistic table calculating</li>
+  -->
   <FT_HeavyArtillery.generalRules.rulesStrings>
     <li>subject->外弹道学分析</li>
     <li>subject->内弹道学概论</li>
@@ -87,8 +137,20 @@
   <FT_IndustrialCannon.label>工业火炮</FT_IndustrialCannon.label>
   <!-- EN: Using reinforced barrel to build AT and AA Guns. -->
   <FT_IndustrialCannon.description>解锁使用加固砲管建造防空与反坦克炮。</FT_IndustrialCannon.description>
-
-  <FT_IndustrialCannon.generalRules.rulesStrings>    
+  <!-- EN:
+    <li>subject->infantry cannon</li>
+    <li>subject->anti vehicle weaponry</li>
+    <li>subject->interior ballistics</li>
+    <li>subject_story->included a full design blueprint in schematic</li>
+    <li>subject_story->mentioned that the processing accuracy of the barrel will greatly affect the accuracy of artillery</li>
+    <li>subject_story->wrote many messy notes in the margins of the schematic</li>
+    <li>subject_story->constantly conveys to people that one day armored vehicles and tanks will be a threat to base defense </li>
+    <li>subject_story->attached an advertisement from Nara Industries on the schematic cover</li>
+    <li>subject_story->summarized that using AA guns to shoot at infantry, while unethical, does not violate the laws of war</li>
+    <li>subject_gerund->cannon designing</li>
+    <li>subject_gerund->ballistic table calculating</li>
+  -->
+  <FT_IndustrialCannon.generalRules.rulesStrings>
     <li>subject->步兵炮</li>
     <li>subject->反载具武器</li>
     <li>subject->闭膛火炮设计</li>
@@ -106,7 +168,19 @@
   <FT_Lathe.label>车床</FT_Lathe.label>
   <!-- EN: Build lathe for early-stage compoment and reinforced barrel making. -->
   <FT_Lathe.description>解锁车床用于早期工业的零件与炮管生产。</FT_Lathe.description>
-
+  <!-- EN:
+    <li>subject->machine tools</li>
+    <li>subject->metal cutting</li>
+    <li>subject->lathe repair</li>
+    <li>subject_story->included a full design blueprint in schematic</li>
+    <li>subject_story->mentioned that the advent of the lathe can change the way a society's industrial production</li>
+    <li>subject_story->wrote many messy notes in the margins of the schematic</li>
+    <li>subject_story->constantly conveys to people that Advanced production can drive social progress</li>
+    <li>subject_story->attached a brand logo sticker from Nara Industries on machine</li>
+    <li>subject_story->summarized in great detail the importance of processing tungsten steel as a lathe tool</li>
+    <li>subject_gerund->cold metal working</li>
+    <li>subject_gerund->lathe manufacturing</li>
+  -->
   <FT_Lathe.generalRules.rulesStrings>
     <li>subject->机床设计大全</li>
     <li>subject->金属加工</li>

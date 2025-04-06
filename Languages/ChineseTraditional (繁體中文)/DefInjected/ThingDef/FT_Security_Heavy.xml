@@ -17,14 +17,14 @@
   
   <!-- EN: howitzer -->
   <FT_Gun_TurretPrince.label>榴彈砲</FT_Gun_TurretPrince.label>
-  <!-- EN: An artillery that gave up part of the direct-fire capability in pursuit of high precision and light-weighted.\n\n Correctly called 155mm howitzer model NK-33L "Prince" ，It is a lightweight artillery designed to improve maneuverability. -->
+  <!-- EN: An artillery that gave up part of the direct-fire capability in pursuit of high precision and light-weighted.\n\n Correctly called 155mm howitzer model NK-33L "Prince" ,It is a lightweight artillery designed to improve maneuverability. -->
   <FT_Gun_TurretPrince.description>一種為了追求高精度和輕量化而放棄部分直射能力的火砲.\n\n更具體的稱呼是 NK-33L 親王型 155毫米榴彈砲，是一種設計用於機動部屬的輕型火砲。</FT_Gun_TurretPrince.description>
   <!-- EN: howitzer -->
   <FT_Gun_TurretPrince.verbs.Verb_Shoot.label>榴彈砲</FT_Gun_TurretPrince.verbs.Verb_Shoot.label>
   
   <!-- EN: field cannon -->
   <FT_TurretEmpero.label>重型野戰砲</FT_TurretEmpero.label>
-  <!-- EN: an artillery that can only shoot horizontally at close range due to extremely high Muzzle velocity，but it is high accuracy. \n\n Correctly called 155mm caliber howitzer model NK-30 "Empero"，it is a relieable artillery designed for Interstellar Industries Complex Nara， provide the technical support of those pre-industrial world incapable to fight against the mechanoid armies. -->
+  <!-- EN: an artillery that can only shoot horizontally at close range due to extremely high Muzzle velocity,but it is high accuracy. \n\n Correctly called 155mm caliber howitzer model NK-30 "Empero",it is a relieable artillery designed for Interstellar Industries Complex Nara, provide the technical support of those pre-industrial world incapable to fight against the mechanoid armies. -->
   <FT_TurretEmpero.description>一種火砲，由於極高的砲口初速所以只能近距離水平射擊，但精度很高. \n\n更具體的稱呼是 NK-30"帝王型" 155 毫米重型榴彈砲 它是由奈良重工設計的可靠火砲，為那些無法對抗機械軍隊的前工業文明提供技術支持。</FT_TurretEmpero.description>
   <!-- EN: Barrel durability -->
   <FT_TurretEmpero.comps.CompRefuelable.fuelGizmoLabel>砲管耐久</FT_TurretEmpero.comps.CompRefuelable.fuelGizmoLabel>
@@ -35,8 +35,8 @@
   
   <!-- EN: Hexagonal Mortar Launcher -->
   <FT_TurretHexMortar.label>六管發射裝置</FT_TurretHexMortar.label>
-  <!-- EN: A manned mortar launcher with six barrel， with some mysterious technology， it can shoot six mortar shells at one time， however， it's not accurate. -->
-  <FT_TurretHexMortar.description>最早設計用於噴灑化學農藥的多管發射裝置，其技術被奈良重工傳到邊緣世界後廣泛的被用於發射迫擊砲彈，但並不准確。</FT_TurretHexMortar.description>
+  <!-- EN: A manned mortar launcher with six barrel, with some mysterious technology, it can shoot six mortar shells at one time, however, it's not accurate. -->
+  <FT_TurretHexMortar.description>最早設計用於噴灑化學農藥的六管發射器，其技術被奈良重工傳到邊緣世界後廣泛的被用於發射迫擊砲彈，但並不准確。</FT_TurretHexMortar.description>
   <!-- EN: Barrel durability -->
   <FT_TurretHexMortar.comps.CompRefuelable.fuelGizmoLabel>砲管耐久</FT_TurretHexMortar.comps.CompRefuelable.fuelGizmoLabel>
   <!-- EN: Shots until barrel change -->
@@ -46,7 +46,7 @@
   
   <!-- EN: howitzer -->
   <FT_TurretPrince.label>榴彈砲</FT_TurretPrince.label>
-  <!-- EN: An artillery that gave up part of the direct-fire capability in pursuit of high precision and light-weighted.\n\n Correctly called 155mm howitzer model NK-33L "Prince" ，It is a lightweight artillery designed to improve maneuverability. -->
+  <!-- EN: An artillery that gave up part of the direct-fire capability in pursuit of high precision and light-weighted.\n\n Correctly called 155mm howitzer model NK-33L "Prince" ,It is a lightweight artillery designed to improve maneuverability. -->
   <FT_TurretPrince.description>一種為了追求高精度和輕量化而放棄部分直射能力的火砲.\n\n更具體的稱呼是 NK-33L 親王型 105毫米榴彈砲，是一種設計用於機動部屬的輕型榴彈砲。</FT_TurretPrince.description>
   <!-- EN: Barrel durability -->
   <FT_TurretPrince.comps.CompRefuelable.fuelGizmoLabel>砲管耐久</FT_TurretPrince.comps.CompRefuelable.fuelGizmoLabel>

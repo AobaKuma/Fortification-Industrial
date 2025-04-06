@@ -296,7 +296,7 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>82</damageAmountBase>
-			<armorPenetrationSharp>67.5</armorPenetrationSharp>
+			<armorPenetrationSharp>32</armorPenetrationSharp>
 			<armorPenetrationBlunt>3398.44</armorPenetrationBlunt>
 			<secondaryDamage>
 				<li>

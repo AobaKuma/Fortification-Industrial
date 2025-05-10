@@ -142,14 +142,14 @@
             <muzzleFlashScale>9</muzzleFlashScale>
             <recoilPattern>Mounted</recoilPattern>
 		</li>
-		<!--防空数值补偿：瞄准时间降至0.75，后座力75%，射程170%，删除最小射程-->
+		<!--防空数值补偿：瞄准时间降至0.01，后座力75%，射程全图，删除最小射程-->
 		<li Class="CombatExtended.VerbProperties_CIWSSkyfaller">
 			<verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
             <recoilAmount>0.6</recoilAmount>
             <hasStandardCommand>true</hasStandardCommand>
             <defaultProjectile>Bullet_762x54mmR_FMJ</defaultProjectile>
-            <warmupTime>0.75</warmupTime>
-            <range>105</range>
+            <warmupTime>0.01</warmupTime>
+            <range>1000</range>
             <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
             <burstShotCount>20</burstShotCount>
             <soundCast>GunShotA</soundCast>
@@ -263,14 +263,14 @@
 			<muzzleFlashScale>12</muzzleFlashScale>
 			<recoilPattern>Mounted</recoilPattern>
 		</li>
-		<!--防空数值补偿：瞄准时间降至0.75，后座力75%，射程170%，删除最小射程-->
+		<!--防空数值补偿：瞄准时间降至0.01，后座力75%，射程全图，删除最小射程-->
 		<li Class="CombatExtended.VerbProperties_CIWSSkyfaller">
 			<verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
 			<recoilAmount>1.23</recoilAmount>
 			<hasStandardCommand>True</hasStandardCommand>
 			<defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
-			<warmupTime>0.75</warmupTime>
-			<range>146</range>
+			<warmupTime>0.01</warmupTime>
+			<range>2500</range>
 			<burstShotCount>6</burstShotCount>
 			<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
 			<soundCast>Shot_Autocannon</soundCast>
@@ -373,14 +373,14 @@
 				<muzzleFlashScale>12</muzzleFlashScale>
 				<recoilPattern>Mounted</recoilPattern>
 			</li>
-			<!--防空数值补偿：瞄准时间降至0.75，后座力75%，射程170%，删除最小射程-->
+			<!--防空数值补偿：瞄准时间降至0.01，后座力75%，射程全图，删除最小射程-->
 			<li Class="CombatExtended.VerbProperties_CIWSSkyfaller">
 				<verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
 				<recoilAmount>1.16</recoilAmount>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
-				<warmupTime>0.75</warmupTime>
-				<range>146</range>
+				<warmupTime>0.01</warmupTime>
+				<range>2500</range>
 				<burstShotCount>4</burstShotCount>
 				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
 				<soundCast>Shot_Autocannon</soundCast>

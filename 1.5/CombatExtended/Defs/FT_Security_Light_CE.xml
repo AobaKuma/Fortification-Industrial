@@ -102,7 +102,7 @@
 		<ai_combatDangerous>true</ai_combatDangerous>
 		<turretGunDef>FT_Gun_QuadMG</turretGunDef>
 		<turretBurstWarmupTime>0.75</turretBurstWarmupTime>
-		<turretBurstCooldownTime>0.5</turretBurstCooldownTime>
+		<turretBurstCooldownTime>0.04</turretBurstCooldownTime>
     </building>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <researchPrerequisites>
@@ -119,7 +119,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-		<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+		<RangedWeapon_Cooldown>0.04</RangedWeapon_Cooldown>
 		<SightsEfficiency>1.00</SightsEfficiency>
 		<ShotSpread>0.2</ShotSpread>
 		<SwayFactor>1.67</SwayFactor>
@@ -192,6 +192,7 @@
 <!--單裝機砲-->
   <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
     <defName>FT_AutoCannon</defName>
+	<thingClass>CombatExtended.Building_CIWS_CE</thingClass>
     <label>autocannon</label>
     <description>A Tripod with high caliber machine gun mounted. Requires steel to refurbish its barrels after heavy use.it needs a pawn to man on it to operate.</description>
     <uiIconPath>InfantryTurret/FT_AutoCannonGun_icon</uiIconPath>
@@ -221,7 +222,7 @@
 		<ai_combatDangerous>true</ai_combatDangerous>
 		<turretGunDef>FT_Gun_Autocannon</turretGunDef>
 		<turretBurstWarmupTime>1.0</turretBurstWarmupTime>
-		<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+		<turretBurstCooldownTime>0.25</turretBurstCooldownTime>
     </building>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <researchPrerequisites>
@@ -231,7 +232,6 @@
  
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>FT_Gun_Autocannon</defName>
-	<thingClass>CombatExtended.Building_CIWS_CE</thingClass>
     <label>autocannon</label>
     <description>A self-loading large-bore cannon designed to attach to a turret.</description>
     <graphicData>
@@ -240,7 +240,7 @@
       <drawSize>(2,2)</drawSize>
     </graphicData>
     <statBases>
-		<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		<RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
 		<SightsEfficiency>1</SightsEfficiency>
 		<ShotSpread>0.01</ShotSpread>
 		<SwayFactor>1.35</SwayFactor>
@@ -329,7 +329,7 @@
     <building>
 		<ai_combatDangerous>true</ai_combatDangerous>
 		<turretBurstWarmupTime>1.2</turretBurstWarmupTime>
-		<turretBurstCooldownTime>0.75</turretBurstCooldownTime>
+		<turretBurstCooldownTime>0.12</turretBurstCooldownTime>
 		<turretTopDrawSize>3.5</turretTopDrawSize>
 		<turretGunDef>FT_Gun_Autocannon_Twin</turretGunDef>
     </building>
@@ -349,7 +349,7 @@
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<statBases>
-          <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+          <RangedWeapon_Cooldown>0.12</RangedWeapon_Cooldown>
           <SightsEfficiency>1</SightsEfficiency>
           <ShotSpread>0.1</ShotSpread>
           <SwayFactor>1.26</SwayFactor>

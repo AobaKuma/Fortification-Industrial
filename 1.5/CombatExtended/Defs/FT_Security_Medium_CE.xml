@@ -309,7 +309,7 @@
 			<turretGunDef>FT_Gun_TurretAA</turretGunDef>
 			<turretTopDrawSize>4</turretTopDrawSize>
 			<turretBurstWarmupTime>1.25</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
-			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+			<turretBurstCooldownTime>0.14</turretBurstCooldownTime>
 		</building>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 		<costList>
@@ -331,7 +331,7 @@
 		</graphicData>
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<statBases>
-			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.14</RangedWeapon_Cooldown>
 			<SightsEfficiency>2.18</SightsEfficiency>
 			<ShotSpread>0.01</ShotSpread>
 			<SwayFactor>1.38</SwayFactor>
@@ -436,7 +436,7 @@
 			<turretGunDef>FT_Gun_TurretQuadAA</turretGunDef>
 			<turretTopDrawSize>4</turretTopDrawSize>
 			<turretBurstWarmupTime>1.5</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
-			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+			<turretBurstCooldownTime>0.04</turretBurstCooldownTime>
 		</building>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 		<costList>
@@ -458,7 +458,7 @@
 		</graphicData>
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<statBases>
-			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.04</RangedWeapon_Cooldown>
 			<SightsEfficiency>2.18</SightsEfficiency>
 			<ShotSpread>0.10</ShotSpread>
 			<SwayFactor>1.44</SwayFactor>

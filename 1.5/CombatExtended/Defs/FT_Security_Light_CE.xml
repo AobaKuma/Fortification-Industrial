@@ -72,6 +72,7 @@
 <!--聯裝機槍-->
   <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
     <defName>FT_Maxim4M</defName>
+	<thingClass>CombatExtended.Building_CIWS_CE</thingClass>
     <label>Quad Machine gun</label>
     <description>A Tripod with Quadruple machine gun mounted so it Have a good firepower continuity,need a pawn man on it to operate. Requires steel to refurbish its barrels after heavy use.</description>
     <uiIconPath>InfantryTurret/FT_QuadMaximGun_icon</uiIconPath>
@@ -141,6 +142,21 @@
             <muzzleFlashScale>9</muzzleFlashScale>
             <recoilPattern>Mounted</recoilPattern>
 		</li>
+		<!--防空数值补偿：瞄准时间降至0.75，后座力75%，射程170%，删除最小射程-->
+		<li Class="CombatExtended.VerbProperties_CIWSSkyfaller">
+			<verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
+            <recoilAmount>0.6</recoilAmount>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>Bullet_762x54mmR_FMJ</defaultProjectile>
+            <warmupTime>0.75</warmupTime>
+            <range>105</range>
+            <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+            <burstShotCount>20</burstShotCount>
+            <soundCast>GunShotA</soundCast>
+            <soundCastTail>GunTail_Light</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <recoilPattern>Mounted</recoilPattern>
+		</li>
     </verbs>
     <comps>
 		<li Class="CombatExtended.CompProperties_AmmoUser">
@@ -153,6 +169,9 @@
             <aiAimMode>SuppressFire</aiAimMode>
             <aimedBurstShotCount>10</aimedBurstShotCount>
             <noSingleShot>true</noSingleShot>	
+		</li>
+		<li>
+			<compClass>CombatExtended.CompVerbDisabler</compClass>
 		</li>
 	</comps>
 		<modExtensions>
@@ -212,6 +231,7 @@
  
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>FT_Gun_Autocannon</defName>
+	<thingClass>CombatExtended.Building_CIWS_CE</thingClass>
     <label>autocannon</label>
     <description>A self-loading large-bore cannon designed to attach to a turret.</description>
     <graphicData>
@@ -243,6 +263,21 @@
 			<muzzleFlashScale>12</muzzleFlashScale>
 			<recoilPattern>Mounted</recoilPattern>
 		</li>
+		<!--防空数值补偿：瞄准时间降至0.75，后座力75%，射程170%，删除最小射程-->
+		<li Class="CombatExtended.VerbProperties_CIWSSkyfaller">
+			<verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
+			<recoilAmount>1.23</recoilAmount>
+			<hasStandardCommand>True</hasStandardCommand>
+			<defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
+			<warmupTime>0.75</warmupTime>
+			<range>146</range>
+			<burstShotCount>6</burstShotCount>
+			<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+			<soundCast>Shot_Autocannon</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>12</muzzleFlashScale>
+			<recoilPattern>Mounted</recoilPattern>
+		</li>
     </verbs>
     <comps>
 		<li Class="CombatExtended.CompProperties_AmmoUser">
@@ -255,12 +290,16 @@
 			<aiAimMode>Snapshot</aiAimMode>
 			<aimedBurstShotCount>3</aimedBurstShotCount>
 		</li>
+		<li>
+			<compClass>CombatExtended.CompVerbDisabler</compClass>
+		</li>
 	</comps>
   </ThingDef>
   
 <!--拖式機砲-->
   <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
 	<defName>FT_TurretAutoCannon_Twin</defName>
+	<thingClass>CombatExtended.Building_CIWS_CE</thingClass>
 	<label>20mm anti-air gun</label>
 	<description>A rapid-fire cannon with capability to shoot down aircraft.</description>
 	<uiIconPath>InfantryTurret/FT_AutoCannonTurret_icon</uiIconPath>
@@ -334,6 +373,21 @@
 				<muzzleFlashScale>12</muzzleFlashScale>
 				<recoilPattern>Mounted</recoilPattern>
 			</li>
+			<!--防空数值补偿：瞄准时间降至0.75，后座力75%，射程170%，删除最小射程-->
+			<li Class="CombatExtended.VerbProperties_CIWSSkyfaller">
+				<verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
+				<recoilAmount>1.16</recoilAmount>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
+				<warmupTime>0.75</warmupTime>
+				<range>146</range>
+				<burstShotCount>4</burstShotCount>
+				<ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+				<soundCast>Shot_Autocannon</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>12</muzzleFlashScale>
+				<recoilPattern>Mounted</recoilPattern>
+			</li>
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
@@ -346,6 +400,9 @@
 				<aiAimMode>Snapshot</aiAimMode>
 				<aimedBurstShotCount>2</aimedBurstShotCount>
 				<noSingleShot>true</noSingleShot>
+			</li>
+			<li>
+				<compClass>CombatExtended.CompVerbDisabler</compClass>
 			</li>
 		</comps>
 		<modExtensions>

@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>Ammo128x958mmR</defName>
+		<label>128mm cannon shell</label>
+		<parent>AmmoShells</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberCannon</iconPath>
+	</ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_128x958mmR</defName>
+		<label>128mm Cannon shells</label>
+		<ammoTypes>
+			<Ammo_128x958mmR_AP>Bullet_128x958mmR_AP</Ammo_128x958mmR_AP>
+			<Ammo_128x958mmR_APHE>Bullet_128x958mmR_APHE</Ammo_128x958mmR_APHE>
+			<Ammo_128x958mmR_HE>Bullet_128x958mmR_HE</Ammo_128x958mmR_HE>
+			<Ammo_128x958mmR_EMP>Bullet_128x958mmR_EMP</Ammo_128x958mmR_EMP>
+		</ammoTypes>
+		<similarTo>AmmoSet_HeavyCannon</similarTo>
+	</CombatExtended.AmmoSetDef>
+	
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_128x958mmR_HV</defName>
+		<label>128mm Anti-Tank Cannon shells</label>
+		<ammoTypes>
+			<Ammo_128x958mmR_AP>Bullet_128x958mmR_AP_HV</Ammo_128x958mmR_AP>
+			<Ammo_128x958mmR_APHE>Bullet_128x958mmR_APHE_HV</Ammo_128x958mmR_APHE>
+			<Ammo_128x958mmR_HE>Bullet_128x958mmR_HE</Ammo_128x958mmR_HE>
+			<Ammo_128x958mmR_EMP>Bullet_128x958mmR_EMP</Ammo_128x958mmR_EMP>
+		</ammoTypes>
+		<similarTo>AmmoSet_HeavyCannon</similarTo>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="128x958mmRShellBase" ParentName="HeavyAmmoBase" Abstract="True">
+		<description>Large cannon shells, typically used by 128mm heavy flak guns.</description>
+		<thingCategories>
+			<li>Ammo128x958mmR</li>
+		</thingCategories>
+		<stackLimit>25</stackLimit>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_TableMachining</li>
+		</tradeTags>
+		<statBases>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>46.5</Mass>
+			<Bulk>83.92</Bulk>
+		</statBases>
+		<cookOffFlashScale>35</cookOffFlashScale>
+		<cookOffSound>MortarBomb_Explode</cookOffSound>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="128x958mmRShellBase">
+		<defName>Ammo_128x958mmR_AP</defName>
+		<label>128x958mmR cannon shell (AP)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Cannon/Tank/AP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<ammoClass>ArmorPiercing</ammoClass>
+		<detonateProjectile>Bullet_128x958mmR_AP</detonateProjectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="128x958mmRShellBase">
+		<defName>Ammo_128x958mmR_APHE</defName>
+		<label>128x958mmR cannon shell (APHE)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Cannon/Tank/APHE</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<ammoClass>ExplosiveAP</ammoClass>
+		<detonateProjectile>Bullet_128x958mmR_APHE</detonateProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="128x958mmRShellBase">
+		<defName>Ammo_128x958mmR_HE</defName>
+		<label>128x958mmR cannon shell (HE)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Cannon/Tank/HE</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>47.7</Mass>
+			<Bulk>99.69</Bulk>
+		</statBases>
+		<ammoClass>GrenadeHE</ammoClass>
+		<detonateProjectile>Bullet_128x958mmR_HE</detonateProjectile>
+	</ThingDef>
+		
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="128x958mmRShellBase">
+		<defName>Ammo_128x958mmR_EMP</defName>
+		<label>128x958mmR cannon shell (EMP)</label>
+		<graphicData>
+			<texPath>Things/Ammo/Cannon/Tank/EMP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>47.7</Mass>
+			<Bulk>99.69</Bulk>
+		</statBases>
+		<ammoClass>GrenadeEMP</ammoClass>
+		<detonateProjectile>Bullet_128x958mmR_HE</detonateProjectile>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Name="Base128x958mmRBullet" ParentName="BaseExplosiveBullet" Abstract="true">
+		<graphicData>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>159</speed>
+			<flyOverhead>false</flyOverhead>
+			<dropsCasings>true</dropsCasings>
+			<casingMoteDefname>Fleck_BigShell</casingMoteDefname>
+			<casingFilthDefname>Filth_CannonAmmoCasings</casingFilthDefname>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="Base128x958mmRBullet">
+		<defName>Bullet_128x958mmR_AP</defName>
+		<label>128x958mmR cannon shell (AP)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Cannon/AP</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>512</damageAmountBase>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<armorPenetrationSharp>188</armorPenetrationSharp>
+			<armorPenetrationBlunt>195254.4</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="Base128x958mmRBullet">
+		<defName>Bullet_128x958mmR_APHE</defName>
+		<label>128x958mmR cannon shell (APHE)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Cannon/APHE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>813</damageAmountBase>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<armorPenetrationSharp>192</armorPenetrationSharp>
+			<armorPenetrationBlunt>195254.4</armorPenetrationBlunt>
+			<secondaryDamage>
+				<li>
+					<def>Bomb_Secondary</def>
+					<amount>890</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+		<comps>
+			<!--<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>445</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>1.5</explosiveRadius>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>-->
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>8</Fragment_Large>
+					<Fragment_Small>16</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="Base128x958mmRBullet">
+		<defName>Bullet_128x958mmR_HE</defName>
+		<label>128x958mmR cannon shell (HE)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Cannon/HE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>289</damageAmountBase>
+			<explosionRadius>4.9</explosionRadius>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<speed>162</speed>
+		</projectile>
+		<comps>
+			<li MayRequire="DwS.FunctionalAmmunition.Library" Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze" >
+			   <aimHeightOffset>0</aimHeightOffset>
+			   <!-- Require D_FuncAmmoLib.Verb_Shoot @SuppressFire mode, equivalent to projectile/projectile. -->
+			   <safeRange>8</safeRange>     <!-- Defult is 0. If delayRange.min < 0, equivalent to delayRange.min + safeRange.-->
+			   <delayRange>-0.5~0.5</delayRange>      <!-- Defult is 1.5~3.5 -->
+			   <fragAngleRange> 0 </fragAngleRange>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>30</Fragment_Large>
+					<Fragment_Small>80</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+		
+	<ThingDef ParentName="Base128x958mmRBullet">
+		<defName>Bullet_128x958mmR_EMP</defName>
+		<label>128x958mmR cannon shell (EMP)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/Cannon/EMP</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>EMP</damageDef>
+			<damageAmountBase>289</damageAmountBase>
+			<explosionRadius>10</explosionRadius>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<speed>162</speed>
+		</projectile>
+	</ThingDef>
+	
+	<!-- ==================== Pak44 HV ========================== -->
+	
+	<ThingDef ParentName="Base128x958mmRBullet">
+		<defName>Bullet_128x958mmR_AP_HV</defName>
+		<label>128x958mmR cannon shell (AP)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Cannon/AP</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>520</damageAmountBase>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<armorPenetrationSharp>233</armorPenetrationSharp>
+			<armorPenetrationBlunt>195254.4</armorPenetrationBlunt>
+			<speed>162</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="Base128x958mmRBullet">
+		<defName>Bullet_128x958mmR_APHE_HV</defName>
+		<label>128x958mmR cannon shell (APHE)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Cannon/APHE</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>846</damageAmountBase>
+			<soundExplode>MortarBomb_Explode</soundExplode>
+			<armorPenetrationSharp>248</armorPenetrationSharp>
+			<armorPenetrationBlunt>195254.4</armorPenetrationBlunt>
+			<speed>162</speed>
+			<secondaryDamage>
+				<li>
+					<def>Bomb_Secondary</def>
+					<amount>890</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+		<comps>
+			<!--<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>468</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>1.5</explosiveRadius>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>-->
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>8</Fragment_Large>
+					<Fragment_Small>16</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+	
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="CannonAmmoRecipeBase">
+		<defName>MakeAmmo_128x958mmR_AP</defName>
+		<label>make 128x958mmR (AP) cannon shells x2</label>
+		<description>Craft 2 128x958mmR (AP) cannon shells.</description>
+		<jobString>Making 128mm (AP) cannon shells.</jobString>
+		<researchPrerequisite Inherit="False" />
+		<researchPrerequisites>
+			<li>CE_TurretHeavyWeapons</li>
+			<li>CE_Launchers</li>
+		</researchPrerequisites>
+		<workAmount>13000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>210</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_128x958mmR_AP>2</Ammo_128x958mmR_AP>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="CannonAmmoRecipeBase">
+		<defName>MakeAmmo_128x958mmR_APHE</defName>
+		<label>make 128x958mmR (APHE) cannon shells x2</label>
+		<description>Craft 2 128x958mmR (APHE) cannon shells.</description>
+		<jobString>Making 128x958mmR (APHE) cannon shells.</jobString>
+		<researchPrerequisite Inherit="False" />
+		<researchPrerequisites>
+			<li>CE_TurretHeavyWeapons</li>
+			<li>CE_Launchers</li>
+		</researchPrerequisites>
+		<workAmount>14800</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>190</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>ComponentIndustrial</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_128x958mmR_APHE>2</Ammo_128x958mmR_APHE>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="CannonAmmoRecipeBase">
+		<defName>MakeAmmo_128x958mmR_HE</defName>
+		<label>make 128x958mmR (HE) cannon shells x2</label>
+		<description>Craft 2 128x958mmR (HE) cannon shells.</description>
+		<jobString>Making 128x958mmR (HE) cannon shells.</jobString>
+		<workAmount>15400</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>190</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>ComponentIndustrial</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_128x958mmR_HE>2</Ammo_128x958mmR_HE>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="CannonAmmoRecipeBase">
+		<defName>MakeAmmo_128x958mmR_EMP</defName>
+		<label>make 128x958mmR (EMP) cannon shells x2</label>
+		<description>Craft 2 128x958mmR (EMP) cannon shells.</description>
+		<jobString>Making 128x958mmR (EMP) cannon shells.</jobString>
+		<workAmount>15400</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>190</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>16</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_128x958mmR_EMP>2</Ammo_128x958mmR_EMP>
+		</products>
+	</RecipeDef>
+
+</Defs>

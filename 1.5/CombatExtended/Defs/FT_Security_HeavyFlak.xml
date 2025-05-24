@@ -4,13 +4,14 @@
 	<!-- 重型防空炮 -->
 	<ThingDef ParentName="FT_BaseCannonBuilding_WithShieldOrCementBase">
 		<defName>FT_TurretHeavyFlak</defName>
+		<thingClass>CombatExtended.Building_CIWS_CE</thingClass>
 		<label>Heavy flak gun</label>
 		<description>A high caliber flak cannon lay flat to engage ground target.</description>
 		<graphicData>
-			<texPath>ATGun/Flak40_Base</texPath>
+			<texPath>ATGun/Base_Flak40</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(7,7)</drawSize>
-			<drawOffset>(0,0,-0.0)</drawOffset>
+			<drawSize>(6,6)</drawSize>
+			<drawOffset>(0,0,0)</drawOffset>
 		</graphicData>
 		<size>(5,5)</size>
 		<uiIconPath>ATGun/Flak40_UI</uiIconPath>
@@ -35,7 +36,7 @@
 			<turretBurstWarmupTime>3.0</turretBurstWarmupTime>
 			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
 			<ai_combatDangerous>true</ai_combatDangerous>
-			<turretTopDrawSize>9</turretTopDrawSize>
+			<turretTopDrawSize>8</turretTopDrawSize>
 			<turretGunDef>FT_Gun_TurretHeavyFlak</turretGunDef>
 		</building>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
@@ -160,13 +161,14 @@
 	<!-- 雙聯裝重型防空炮 -->
 	<ThingDef ParentName="FT_BaseCannonBuilding_WithShieldOrCementBase">
 		<defName>FT_TurretTwinHeavyFlak</defName>
+		<thingClass>CombatExtended.Building_CIWS_CE</thingClass>
 		<label>Twin Heavy flak gun</label>
 		<description>A pair of high caliber flak been lay flat to engage ground target.</description>
 		<graphicData>
-			<texPath>ATGun/Flak40_Base</texPath>
+			<texPath>ATGun/Base_Flak40</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(7,7)</drawSize>
-			<drawOffset>(0,0,-0.0)</drawOffset>
+			<drawSize>(6,6)</drawSize>
+			<drawOffset>(0,0,0)</drawOffset>
 		</graphicData>
 		<size>(5,5)</size>
 		<uiIconPath>ATGun/Flak40_Sec_UI</uiIconPath>
@@ -191,7 +193,7 @@
 			<turretBurstWarmupTime>3.0</turretBurstWarmupTime>
 			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
 			<ai_combatDangerous>true</ai_combatDangerous>
-			<turretTopDrawSize>9</turretTopDrawSize>
+			<turretTopDrawSize>8</turretTopDrawSize>
 			<turretGunDef>FT_Gun_TurretTwinHeavyFlak</turretGunDef>
 		</building>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
@@ -250,7 +252,7 @@
 				<defaultProjectile>Bullet_128x958mmR_HE</defaultProjectile>
 				<warmupTime>0.1</warmupTime>
 				<range>1000</range>
-				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
 				<burstShotCount>2</burstShotCount>
 				<soundCast>120mm</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -304,20 +306,21 @@
 			</li>
 		</comps>
 		<modExtensions>
-			<li Class="CombatExtended.MultiBarrelExtension">
+			<!-- will mass with targeting -->
+			<!--<li Class="CombatExtended.MultiBarrelExtension">
 				<offsets>
 					<li>-0.68,0.0</li>
 					<li>0.68,0.0</li>
 				</offsets>
-			</li>
-			<!--<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+			</li>-->
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
 				<def>MF_StandardMuzzleFalshTwo</def>
 				<drawSize>(8,6)</drawSize>
 				<offsets>
 					<li>(4.2,0.68)</li>
 					<li>(4.2,-0.68)</li>
 				</offsets>
-			</li>-->
+			</li>
 			<li Class="CombatExtended.GunDrawExtension">
 				<CasingAngleOffset>140</CasingAngleOffset> <!-- 拋彈方向 -->
 				<CasingOffset>(0,-1)</CasingOffset>

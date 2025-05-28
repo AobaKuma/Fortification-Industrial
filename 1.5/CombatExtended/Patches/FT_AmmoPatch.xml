@@ -6,7 +6,7 @@
                 <xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_37x223mmR"]/ammoTypes</xpath>
 				<value>
 						<Ammo_37x223mmR_Canister>Bullet_FT_37x223mmR_Canister</Ammo_37x223mmR_Canister>
-						<Ammo_37x223mmR_Shrapnel>Bullet_FT_37x223mmR_Shrapnel</Ammo_37x223mmR_Shrapnel>
+						<Ammo_37x223mmR_Shrapnel MayRequire="DwS.FunctionalAmmunition.Library">Bullet_FT_37x223mmR_Shrapnel</Ammo_37x223mmR_Shrapnel>
 						<Ammo_37x223mmR_HESH>Bullet_FT_37x223mmR_HESH</Ammo_37x223mmR_HESH>
 						<Ammo_37x223mmR_APDS>Bullet_FT_37x223mmR_APDS</Ammo_37x223mmR_APDS>
 						<Ammo_37x223mmR_EMP>Bullet_FT_37x223mmR_EMP</Ammo_37x223mmR_EMP>

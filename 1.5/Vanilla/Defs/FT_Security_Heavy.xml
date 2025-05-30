@@ -675,7 +675,7 @@
         <ai_AvoidFriendlyFireRadius>4</ai_AvoidFriendlyFireRadius>
         <range>62</range>
         <burstShotCount>1</burstShotCount>
-        <soundCast>FT_CannonLaunchA</soundCast>
+        <soundCast>FT_CannonLaunchC</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>25</muzzleFlashScale>
         <consumeFuelPerShot>1</consumeFuelPerShot>
@@ -815,7 +815,7 @@
         <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
         <range>58</range>
         <burstShotCount>1</burstShotCount>
-        <soundCast>FT_CannonLaunchA</soundCast>
+        <soundCast>FT_CannonLaunchC</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>32</muzzleFlashScale>
         <consumeFuelPerShot>1</consumeFuelPerShot>

@@ -541,5 +541,320 @@
 			</li>
 		</verbs>
 	</ThingDef>
+	
+	<!-- 重型防空炮 -->
+  <ThingDef ParentName="FT_BaseCannonBuilding">
+    <defName>FT_TurretHeavyFlak</defName>
+    <label>Heavy flak gun</label>
+    <description>A high caliber flak cannon lay flat to engage ground target.</description>
+    <uiIconPath>ATGun/Flak40_UI</uiIconPath>
+    <uiIconScale>1.5</uiIconScale>
+    <graphicData>
+      <texPath>ATGun/Flak40_Base</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(7,7)</drawSize>
+      <drawOffset>(0,0,-0.0)</drawOffset>
+    </graphicData>
+    <size>(5,5)</size>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <statBases>
+      <MaxHitPoints>750</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <WorkToBuild>9000</WorkToBuild>
+      <Mass>800</Mass>
+    </statBases>
+    <comps>
+	  <li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>1000</basePowerConsumption>
+	  </li>
+	  <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>425</wickTicks>
+        <explosiveRadius>2.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until barrel change</fuelLabel>
+        <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+        <outOfFuelMessage>Cannot shoot: Needs new reinforced barrel</outOfFuelMessage>
+        <fuelFilter>
+          <thingDefs>
+            <li>ReinforcedBarrel</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelIsMortarBarrel>true</fuelIsMortarBarrel>
+        <fuelCapacity>20</fuelCapacity>    <!-- 40 burst -->
+        <fuelMultiplier>10</fuelMultiplier><!-- 1 barrel=20 ammo -->
+        <initialFuelPercent>1</initialFuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+        <initialConfigurableTargetFuelLevel>10</initialConfigurableTargetFuelLevel>
+        <autoRefuelPercent>0.1</autoRefuelPercent>
+        <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
+      </li>
+    </comps>
+    <building>
+      <turretGunDef>FT_Gun_TurretHeavyFlak</turretGunDef>
+      <turretTopDrawSize>8</turretTopDrawSize>
+      <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
+      <turretBurstCooldownTime>3.0</turretBurstCooldownTime>
+    </building>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <costList>
+      <Steel>500</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <ReinforcedBarrel>2</ReinforcedBarrel>
+    </costList>
+    <researchPrerequisites>
+      <li>FT_IndustrialCannon</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>FT_Gun_TurretHeavyFlak</defName>
+    <label>Heavy Flak gun</label>
+    <description>A high caliber flak cannon lay flat to engage ground target.</description>
+    <graphicData>
+      <texPath>ATGun/Gun_Flak40</texPath>
+    </graphicData>
+    <soundInteract>Artillery_ShellLoaded</soundInteract>
+    <statBases>
+      <AccuracyTouch>0.66</AccuracyTouch>
+      <AccuracyShort>0.78</AccuracyShort>
+      <AccuracyMedium>0.85</AccuracyMedium>
+      <AccuracyLong>0.95</AccuracyLong>
+      <RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+      <Mass>800</Mass>
+    </statBases>
+    <comps>
+      <li Class="Fortification.CompProperties_CastFlecker">
+        <fleck>DustPuff</fleck><!--生成的Fleck,參考原版-->
+        <onGroundOverride>true</onGroundOverride><!--根據砲塔下方地形決定是否產生-->
+        <burstAmount>10</burstAmount><!--一次射擊生成的數量-->
+        <burstSway>110</burstSway><!--噴射角度的左右隨機偏移範圍-->
+        <burstAngle>180</burstAngle><!--生成偏移子彈發射方向的噴射角度(0
+        = 與發射角度同向)-->
+        <fleckSizeRange>(3,5)</fleckSizeRange><!--Fleck的生成大小隨機區間-->
+        <burstSpeedRange>(0.2,0.5)</burstSpeedRange><!--Fleck的飛行速度隨機區間-->
+        <burstOffsetRange>(2,6)</burstOffsetRange> <!--Fleck的生成位置偏移旋轉中心點的距離區間-->
+      </li>
+      <li Class="Fortification.CompProperties_CastFlecker">
+        <fleck>DustPuff</fleck>
+        <onGroundOverride>true</onGroundOverride>
+        <burstAmount>10</burstAmount>
+        <burstSway>70</burstSway>
+        <burstAngle>180</burstAngle>
+        <fleckSizeRange>(3,5)</fleckSizeRange>
+        <burstSpeedRange>(0.2,0.5)</burstSpeedRange>
+        <burstOffsetRange>(2,6)</burstOffsetRange>
+        <rangeScaleFactor>(1,0.1)</rangeScaleFactor>
+      </li>
+      <li Class="Fortification.CompProperties_CastFlecker">
+        <fleck>DustPuff</fleck>
+        <onGroundOverride>true</onGroundOverride>
+        <burstAmount>15</burstAmount>
+        <burstSway>30</burstSway>
+        <burstAngle>0</burstAngle>
+        <fleckSizeRange>(1,2)</fleckSizeRange>
+        <burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
+        <burstOffsetRange>(2,6)</burstOffsetRange>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>FT_Bullet_HeavyFlakShell</defaultProjectile>
+        <requireLineOfSight>true</requireLineOfSight>
+        <isMortar>true</isMortar>
+        <warmupTime>2</warmupTime>
+        <minRange>7.9</minRange>
+        <ai_AvoidFriendlyFireRadius>4</ai_AvoidFriendlyFireRadius>
+        <range>62</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>FT_CannonLaunchC</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>25</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <forcedMissRadius>0.1</forcedMissRadius>
+      </li>
+    </verbs>
+  </ThingDef>
+  
+  <!-- 超重型反坦克炮 -->
+  <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
+    <defName>FT_TurretUltraHeavyAT</defName>
+    <label>Heavy anti-tank gun</label>
+    <description>A high caliber AT gun with capability to destroy most heavily armored vehicle.</description>
+    <uiIconPath>ATGun/Pak44_UI</uiIconPath>
+    <uiIconScale>1.5</uiIconScale>
+    <graphicData>
+      <texPath>ATGun/Pak44_Base</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(8,8)</drawSize>
+      <drawOffset>(0,0,-0.0)</drawOffset>
+    </graphicData>
+    <size>(5,5)</size>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <statBases>
+      <MaxHitPoints>750</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <WorkToBuild>9000</WorkToBuild>
+      <Mass>600</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <wickTicks>425</wickTicks>
+        <explosiveRadius>2.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until barrel change</fuelLabel>
+        <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+        <outOfFuelMessage>Cannot shoot: Needs new reinforced barrel</outOfFuelMessage>
+        <fuelFilter>
+          <thingDefs>
+            <li>ReinforcedBarrel</li>
+          </thingDefs>
+        </fuelFilter>
+        <fuelIsMortarBarrel>true</fuelIsMortarBarrel>
+        <fuelCapacity>20</fuelCapacity>    <!-- 40 burst -->
+        <fuelMultiplier>10</fuelMultiplier><!-- 1 barrel=20 ammo -->
+        <initialFuelPercent>1</initialFuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+        <initialConfigurableTargetFuelLevel>10</initialConfigurableTargetFuelLevel>
+        <autoRefuelPercent>0.1</autoRefuelPercent>
+        <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
+      </li>
+    </comps>
+    <building>
+      <turretGunDef>FT_Gun_TurretUltraHeavyAT</turretGunDef>
+      <turretTopDrawSize>8</turretTopDrawSize>
+      <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
+      <turretBurstCooldownTime>3.0</turretBurstCooldownTime>
+    </building>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <costList>
+      <Steel>500</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <ReinforcedBarrel>2</ReinforcedBarrel>
+    </costList>
+    <researchPrerequisites>
+      <li>FT_IndustrialCannon</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>FT_Gun_TurretUltraHeavyAT</defName>
+    <label>Heavy anti-tank gun</label>
+    <description>A high caliber AT gun with capability to destroy most heavily armored target.</description>
+    <graphicData>
+      <texPath>ATGun/Gun_Pak44</texPath>
+    </graphicData>
+    <soundInteract>Artillery_ShellLoaded</soundInteract>
+    <statBases>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.9</AccuracyMedium>
+      <AccuracyLong>0.95</AccuracyLong>
+      <RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+      <Mass>600</Mass>
+    </statBases>
+    <comps>
+      <li Class="Fortification.CompProperties_CastFlecker">
+        <fleck>DustPuff</fleck><!--生成的Fleck,參考原版-->
+        <onGroundOverride>true</onGroundOverride><!--根據砲塔下方地形決定是否產生-->
+        <burstAmount>10</burstAmount><!--一次射擊生成的數量-->
+        <burstSway>110</burstSway><!--噴射角度的左右隨機偏移範圍-->
+        <burstAngle>180</burstAngle><!--生成偏移子彈發射方向的噴射角度(0
+        = 與發射角度同向)-->
+        <fleckSizeRange>(3,5)</fleckSizeRange><!--Fleck的生成大小隨機區間-->
+        <burstSpeedRange>(0.2,0.5)</burstSpeedRange><!--Fleck的飛行速度隨機區間-->
+        <burstOffsetRange>(2,6)</burstOffsetRange> <!--Fleck的生成位置偏移旋轉中心點的距離區間-->
+      </li>
+      <li Class="Fortification.CompProperties_CastFlecker">
+        <fleck>DustPuff</fleck>
+        <onGroundOverride>true</onGroundOverride>
+        <burstAmount>10</burstAmount>
+        <burstSway>70</burstSway>
+        <burstAngle>180</burstAngle>
+        <fleckSizeRange>(3,5)</fleckSizeRange>
+        <burstSpeedRange>(0.2,0.5)</burstSpeedRange>
+        <burstOffsetRange>(2,6)</burstOffsetRange>
+        <rangeScaleFactor>(1,0.1)</rangeScaleFactor>
+      </li>
+      <li Class="Fortification.CompProperties_CastFlecker">
+        <fleck>DustPuff</fleck>
+        <onGroundOverride>true</onGroundOverride>
+        <burstAmount>15</burstAmount>
+        <burstSway>30</burstSway>
+        <burstAngle>0</burstAngle>
+        <fleckSizeRange>(1,2)</fleckSizeRange>
+        <burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
+        <burstOffsetRange>(2,6)</burstOffsetRange>
+      </li>
+    </comps>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>FT_Bullet_HeavyFlakShell</defaultProjectile>
+        <requireLineOfSight>true</requireLineOfSight>
+        <isMortar>true</isMortar>
+        <warmupTime>2</warmupTime>
+        <minRange>4.9</minRange>
+        <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+        <range>58</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>FT_CannonLaunchC</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>32</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <forcedMissRadius>0.1</forcedMissRadius>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+	<defName>FT_Bullet_HeavyFlakShell</defName>
+	<label>heavy armor piercing shell</label>
+	<graphicData>
+		<texPath>Things/Projectile/Bullet_Big</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>2.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>250</damageAmountBase>
+      <armorPenetrationBase>1.4</armorPenetrationBase>
+      <stoppingPower>10</stoppingPower>
+      <speed>88</speed>
+      <arcHeightFactor>0.2</arcHeightFactor>
+      <shadowSize>0.6</shadowSize>
+    </projectile>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>4.4</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <armorPenetrationBase>0.5</armorPenetrationBase>
+        <damageAmountBase>75</damageAmountBase>
+        <explodeOnDestroyed>true</explodeOnDestroyed>
+        <explodeOnKilled>true</explodeOnKilled>
+        <applyDamageToExplosionCellsNeighbors>false</applyDamageToExplosionCellsNeighbors>
+      </li>
+    </comps>
+  </ThingDef>
 
 </Defs>	

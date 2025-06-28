@@ -118,7 +118,7 @@
       </li>
       <li
         MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam"
-        Class="VEF.Buildings.CompRandomBuildingGraphic">
+        Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
         <randomGraphics>
           <li>ATGun/FT_AntiAirGun_Base</li>
           <li>ATGun/FT_AntiTankGun_Base</li>
@@ -250,7 +250,7 @@
       </li>
       <li
         MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam"
-        Class="VEF.Buildings.CompRandomBuildingGraphic">
+        Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
         <randomGraphics>
           <li>ATGun/FT_AntiAirGun_Base</li>
           <li>InfantryTurret/FT_HexMortarBase</li>
@@ -424,7 +424,7 @@
       </li>
       <li
         MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam"
-        Class="VEF.Buildings.CompRandomBuildingGraphic">
+        Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
         <randomGraphics>
           <li>ATGun/FT_AntiTankGun_Base</li>
           <li>ATGun/FT_AntiTankGun_Base_Sec</li>

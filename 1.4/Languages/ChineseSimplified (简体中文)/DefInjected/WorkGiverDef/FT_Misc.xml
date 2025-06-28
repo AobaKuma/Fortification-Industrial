@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: adjust radio frequency to scan -->
+  <RadioScan.label>调整无线电频率定位可能的矿物位置</RadioScan.label>
+  <!-- EN: scanning at -->
+  <RadioScan.gerund>调频于</RadioScan.gerund>
+  <!-- EN: scan -->
+  <RadioScan.verb>调频</RadioScan.verb>
+  
+</LanguageData>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- UNUSED -->
+  <!-- EN: Operator: -->
+  <FTF_CurrentOperator>操作者:</FTF_CurrentOperator>
+  <!-- EN: Requires operator -->
+  <FTF_RequireOperator>需要操作者</FTF_RequireOperator>
+  <!-- EN: Enter fortification -->
+  <FT_BunkerFacility_EnterText>进入建筑工事</FT_BunkerFacility_EnterText>
+  <!-- EN: Exit fortification -->
+  <FT_BunkerFacility_ExitText>离开建筑工事</FT_BunkerFacility_ExitText>
+  <!-- EN: Not drafted -->
+  <FT_DisabledUndrafted>未征召</FT_DisabledUndrafted>
+  
+</LanguageData>

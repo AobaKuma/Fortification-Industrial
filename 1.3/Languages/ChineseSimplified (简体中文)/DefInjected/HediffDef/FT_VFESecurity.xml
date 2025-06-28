@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: platform -->
+  <FT_VFES_PlatformTerrain.label>平台</FT_VFES_PlatformTerrain.label>
+  <!-- EN: platform. -->
+  <FT_VFES_PlatformTerrain.description>平台</FT_VFES_PlatformTerrain.description>
+  
+  <!-- EN: trench -->
+  <FT_VFES_TrenchTerrain.label>壕沟</FT_VFES_TrenchTerrain.label>
+  <!-- EN: trench. -->
+  <FT_VFES_TrenchTerrain.description>壕沟</FT_VFES_TrenchTerrain.description>
+  
+</LanguageData>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <MakeAmmo_15cmNebelwerfer_EMP.label>製作15cm火箭彈(EMP)</MakeAmmo_15cmNebelwerfer_EMP.label>
+  <MakeAmmo_15cmNebelwerfer_EMP.description>製作15cm火箭彈(EMP)</MakeAmmo_15cmNebelwerfer_EMP.description>
+  <MakeAmmo_15cmNebelwerfer_EMP.jobString>製作15cm火箭彈(EMP)中</MakeAmmo_15cmNebelwerfer_EMP.jobString>
+
+  <MakeAmmo_15cmNebelwerfer_Smoke.label>製作15cm火箭彈(煙霧彈)</MakeAmmo_15cmNebelwerfer_Smoke.label>
+  <MakeAmmo_15cmNebelwerfer_Smoke.description>製作15cm火箭彈(煙霧彈)</MakeAmmo_15cmNebelwerfer_Smoke.description>
+  <MakeAmmo_15cmNebelwerfer_Smoke.jobString>製作15cm火箭彈(煙霧彈)中</MakeAmmo_15cmNebelwerfer_Smoke.jobString>
+
+  <MakeAmmo_15cmNebelwerfer_Toxic.label>製作15cm火箭彈(毒氣彈)</MakeAmmo_15cmNebelwerfer_Toxic.label>
+  <MakeAmmo_15cmNebelwerfer_Toxic.description>製作15cm火箭彈(毒氣彈)</MakeAmmo_15cmNebelwerfer_Toxic.description>
+  <MakeAmmo_15cmNebelwerfer_Toxic.jobString>製作15cm火箭彈(毒氣彈)中</MakeAmmo_15cmNebelwerfer_Toxic.jobString>
+  
+</LanguageData>

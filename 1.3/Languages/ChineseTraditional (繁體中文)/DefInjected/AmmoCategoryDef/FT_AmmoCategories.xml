@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Canister -->
+  <FT_Canister.label>炮射霰彈</FT_Canister.label>
+  <!-- EN: Canister -->
+  <FT_Canister.description>炮射霰彈</FT_Canister.description>
+  
+  <!-- EN: HESH -->
+  <FT_HESH.label>碎甲彈</FT_HESH.label>
+  <!-- EN: HESH -->
+  <FT_HESH.description>碎甲彈</FT_HESH.description>
+  
+  <!-- EN: SAPHE -->
+  <FT_SAPHE.label>半穿甲榴彈</FT_SAPHE.label>
+  <!-- EN: SAPHE -->
+  <FT_SAPHE.description>半穿甲榴彈</FT_SAPHE.description>
+  
+  <!-- EN: Shrapnel -->
+  <FT_Shrapnel.label>榴霰彈</FT_Shrapnel.label>
+  <!-- EN: Shrapnel -->
+  <FT_Shrapnel.description>榴霰彈</FT_Shrapnel.description>
+  
+</LanguageData>

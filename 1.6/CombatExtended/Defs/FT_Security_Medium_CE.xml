@@ -590,7 +590,7 @@
     <ThingDef ParentName="BaseWeaponTurret">
         <defName>FT_Gun_TurretAT</defName>
         <label>Anti Tank Cannon</label>
-        <description>A uranium slug cannon designed to snipe the heavy-armed target in range.</description>
+        <description>A slug cannon designed to snipe the heavy-armed target in range.</description>
         <graphicData>
             <texPath>ATGun/FT_ATGun</texPath>
         </graphicData>

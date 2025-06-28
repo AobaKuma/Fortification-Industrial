@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: autocannon -->
+  <FT_AutoCannon.label>自动机砲</FT_AutoCannon.label>
+  <!-- EN: A Tripod with high caliber machine gun mounted. Requires steel to refurbish its\n      barrels after heavy use.it needs a pawn to man on it to operate. -->
+  <FT_AutoCannon.description>安装在三角架上的大口径机砲.大量射击后需消耗钢铁来更换砲管</FT_AutoCannon.description>
+  <!-- EN: Barrel durability -->
+  <FT_AutoCannon.comps.CompRefuelable.fuelGizmoLabel>枪管耐久</FT_AutoCannon.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until barrel change -->
+  <FT_AutoCannon.comps.CompRefuelable.fuelLabel>枪管寿命</FT_AutoCannon.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Cannot shoot: Needs new barrels -->
+  <FT_AutoCannon.comps.CompRefuelable.outOfFuelMessage>无法射击: 需要替换枪管</FT_AutoCannon.comps.CompRefuelable.outOfFuelMessage>
+  
+  <!-- EN: uranium APT shell -->
+  <FT_Bullet_AAShell.label>铀芯穿甲示踪弹</FT_Bullet_AAShell.label>
+  
+  <!-- EN: armor piercing shell -->
+  <FT_Bullet_ATShell.label>穿甲砲弹</FT_Bullet_ATShell.label>
+  
+  <!-- EN: autocannon -->
+  <FT_Gun_Autocannon.label>自动机砲</FT_Gun_Autocannon.label>
+  <!-- EN: A self-loading large-bore cannon designed to attach to a turret. -->
+  <FT_Gun_Autocannon.description>一种大口径的导气式机砲，被广泛的使用在工业世界的装甲载具与航空器上。</FT_Gun_Autocannon.description>
+  <!-- EN: autocannon -->
+  <FT_Gun_Autocannon.verbs.Verb_Shoot.label>自动机砲</FT_Gun_Autocannon.verbs.Verb_Shoot.label>
+  
+  <!-- EN: machine gun 4x mounted -->
+  <FT_Gun_QuadMG.label>四联机枪</FT_Gun_QuadMG.label>
+  <!-- EN: what can be better than A fully machine gun be mounted on a turret ? Four of them! -->
+  <FT_Gun_QuadMG.description>有什么能比一挺机枪来的爽快呢?，四挺!</FT_Gun_QuadMG.description>
+  <!-- EN: machine gun 4x mounted -->
+  <FT_Gun_QuadMG.verbs.Verb_Shoot.label>四联机枪</FT_Gun_QuadMG.verbs.Verb_Shoot.label>
+  
+  <!-- EN: recoilless cannon -->
+  <FT_Gun_Recoilless.label>无后座力砲</FT_Gun_Recoilless.label>
+  <!-- EN: A Recoilless cannon designed to snipe the heavy-armed target in range. -->
+  <FT_Gun_Recoilless.description>一挺设计用于反装甲目标的短距无后座力砲。</FT_Gun_Recoilless.description>
+  <!-- EN: recoilless cannon -->
+  <FT_Gun_Recoilless.verbs.Verb_Shoot.label>无后座力砲</FT_Gun_Recoilless.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Anti Air cannon -->
+  <FT_Gun_TurretAA.label>高射砲</FT_Gun_TurretAA.label>
+  <!-- EN: An Autocannon designed to defend the area of skies, but also a nice weapon for ground targets. -->
+  <FT_Gun_TurretAA.description>用于对空攻击的大口径机关砲，但用于地面目标也很适合。</FT_Gun_TurretAA.description>
+  <!-- EN: Anti Air cannon -->
+  <FT_Gun_TurretAA.verbs.Verb_Shoot.label>高射砲</FT_Gun_TurretAA.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Anti Tank Cannon -->
+  <FT_Gun_TurretAT.label>战防砲</FT_Gun_TurretAT.label>
+  <!-- EN: A uranium slug cannon designed to snipe the heavy-armed target in range. -->
+  <FT_Gun_TurretAT.description>一种用于对付装甲与人员目标的小口径火砲。</FT_Gun_TurretAT.description>
+  <!-- EN: Anti Tank Cannon -->
+  <FT_Gun_TurretAT.verbs.Verb_Shoot.label>战防砲</FT_Gun_TurretAT.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Quad Anti Air cannon -->
+  <FT_Gun_TurretQuadAA.label>联装高射砲</FT_Gun_TurretQuadAA.label>
+  <!-- EN: An Quad mounted Autocannon designed to defend the area of skies, but also a nice weapon for ground targets. -->
+  <FT_Gun_TurretQuadAA.description>在人类进入太空时代前便已广泛使用的大口径机炮，其制造工艺在经过了一定的改良后随着那些殖民船辗转无数的世界并开枝散叶。</FT_Gun_TurretQuadAA.description>
+  <!-- EN: Quad Anti Air cannon -->
+  <FT_Gun_TurretQuadAA.verbs.Verb_Shoot.label>联装高射砲</FT_Gun_TurretQuadAA.verbs.Verb_Shoot.label>
+  
+  <!-- EN: Quad Machine gun -->
+  <FT_Maxim4M.label>联装机枪</FT_Maxim4M.label>
+  <!-- EN: A Tripod with Quadruple machine gun mounted so it Have a good firepower continuity,need a pawn man on it to operate. Requires steel to refurbish its barrels after heavy use. -->
+  <FT_Maxim4M.description>安装在三角架上的四联装机枪，有着良好的火力持续性.大量射击后需消耗钢铁来更换砲管。</FT_Maxim4M.description>
+  <!-- EN: Barrel durability -->
+  <FT_Maxim4M.comps.CompRefuelable.fuelGizmoLabel>枪管耐久</FT_Maxim4M.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until barrel change -->
+  <FT_Maxim4M.comps.CompRefuelable.fuelLabel>枪管寿命</FT_Maxim4M.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Cannot shoot: Needs new barrels -->
+  <FT_Maxim4M.comps.CompRefuelable.outOfFuelMessage>无法射击: 需要替换枪管</FT_Maxim4M.comps.CompRefuelable.outOfFuelMessage>
+  
+  <!-- EN: recoilless gun -->
+  <FT_RecoillessGun.label>无后座力砲</FT_RecoillessGun.label>
+  <!-- EN: A Tripod with Recoilless gun mounted.A light-weighted soloution of anti armour\n      operation, Requires ReinforcedBarrel to refurbish its barrels after heavy use. also it needs a\n      pawn to man on it to operate. But notice, do not use it indoors!! -->
+  <FT_RecoillessGun.description>安装在三角架上的无后座力砲，对于野战来说比反坦克炮还要易于携带，频繁使用后需要加固砲管来维护.另外请注意，千万不要在室内使用它。</FT_RecoillessGun.description>
+  <!-- EN: Barrel durability -->
+  <FT_RecoillessGun.comps.CompRefuelable.fuelGizmoLabel>砲管耐久</FT_RecoillessGun.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until barrel change -->
+  <FT_RecoillessGun.comps.CompRefuelable.fuelLabel>砲管寿命</FT_RecoillessGun.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Cannot shoot: Needs new barrels -->
+  <FT_RecoillessGun.comps.CompRefuelable.outOfFuelMessage>无法射击: 需要替换砲管</FT_RecoillessGun.comps.CompRefuelable.outOfFuelMessage>
+  
+  <!-- EN: Anti Air Gun -->
+  <FT_TurretAA.label>单装机砲</FT_TurretAA.label>
+  <!-- EN: A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field. -->
+  <FT_TurretAA.description>发射大口径子弹的速射机砲，需要手动操作，其速射性能使其适合用于打击空中目标以及地面人群。</FT_TurretAA.description>
+  <!-- EN: Barrel durability -->
+  <FT_TurretAA.comps.CompRefuelable.fuelGizmoLabel>砲管耐久</FT_TurretAA.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until barrel change -->
+  <FT_TurretAA.comps.CompRefuelable.fuelLabel>枪管寿命</FT_TurretAA.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Cannot shoot: Needs new reinforced barrel -->
+  <FT_TurretAA.comps.CompRefuelable.outOfFuelMessage>无法射击: 需要替换枪管</FT_TurretAA.comps.CompRefuelable.outOfFuelMessage>
+  
+  <!-- EN: Anti Tank Gun -->
+  <FT_TurretAT.label>反坦克炮</FT_TurretAT.label>
+  <!-- EN: A manned rifle cannon that launches solid metal shells.It is accurate makes it useful for attacking groups of enemies in the field or sniping the small fortifications. -->
+  <FT_TurretAT.description>发射实心穿甲弹的线膛砲，需要手动操作.其精确度使其适用于扫荡人群以及狙击小型防御工事。</FT_TurretAT.description>
+  <!-- EN: Barrel durability -->
+  <FT_TurretAT.comps.CompRefuelable.fuelGizmoLabel>砲管耐久</FT_TurretAT.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until barrel change -->
+  <FT_TurretAT.comps.CompRefuelable.fuelLabel>砲管寿命</FT_TurretAT.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Cannot shoot: Needs new reinforced barrel -->
+  <FT_TurretAT.comps.CompRefuelable.outOfFuelMessage>无法射击: 需要替换砲管</FT_TurretAT.comps.CompRefuelable.outOfFuelMessage>
+  
+  <!-- EN: Quad Anti Air Gun -->
+  <FT_TurretQuadAA.label>四联机炮</FT_TurretQuadAA.label>
+  <!-- EN: A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field. -->
+  <FT_TurretQuadAA.description>一种古老的防空机炮设计，采用多联装的方式提高火力密度与火力持续性。</FT_TurretQuadAA.description>
+  <!-- EN: Barrel durability -->
+  <FT_TurretQuadAA.comps.CompRefuelable.fuelGizmoLabel>砲管耐久</FT_TurretQuadAA.comps.CompRefuelable.fuelGizmoLabel>
+  <!-- EN: Shots until barrel change -->
+  <FT_TurretQuadAA.comps.CompRefuelable.fuelLabel>砲管寿命</FT_TurretQuadAA.comps.CompRefuelable.fuelLabel>
+  <!-- EN: Cannot shoot: Needs new reinforced barrel -->
+  <FT_TurretQuadAA.comps.CompRefuelable.outOfFuelMessage>无法射击: 需要替换砲管</FT_TurretQuadAA.comps.CompRefuelable.outOfFuelMessage>
+  
+</LanguageData>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 混凝土路障(預定地) -->
+  <Blueprint_FT_Barrier.label>混凝土路障(預定地)</Blueprint_FT_Barrier.label>
+  
+  <!-- EN: 對角混凝土路障(預定地) -->
+  <Blueprint_FT_BarrierDiagonal.label>對角混凝土路障(預定地)</Blueprint_FT_BarrierDiagonal.label>
+  
+  <!-- EN: 軍用沙包(預定地) -->
+  <Blueprint_FT_Sandbag.label>軍用沙包 (預定地)</Blueprint_FT_Sandbag.label>
+  
+  <!-- EN: 反坦克龍牙(預定地) -->
+  <Blueprint_FT_TankTrap.label>反坦克龍牙(預定地)</Blueprint_FT_TankTrap.label>
+  
+  <!-- EN: 消波塊(預定地) -->
+  <Blueprint_FT_Tetrapods.label>消波塊(預定地)</Blueprint_FT_Tetrapods.label>
+  
+  <!-- EN: 軍用沙包牆(預定地) -->
+  <Blueprint_FT_WallSandbag.label>軍用沙包牆(預定地)</Blueprint_FT_WallSandbag.label>
+  
+  <!-- EN: 混凝土路障(預定地) -->
+  <Blueprint_Install_FT_Barrier.label>混凝土路障(預定地)</Blueprint_Install_FT_Barrier.label>
+  
+  <!-- EN: 對角混凝土路障(預定地) -->
+  <Blueprint_Install_FT_BarrierDiagonal.label>對角混凝土路障(預定地)</Blueprint_Install_FT_BarrierDiagonal.label>
+  
+  <!-- EN: 消波塊(預定地) -->
+  <Blueprint_Install_FT_Tetrapods.label>消波塊 (藍圖)</Blueprint_Install_FT_Tetrapods.label>
+  
+  <!-- EN: 混凝土路障(建造中) -->
+  <Frame_FT_Barrier.label>混凝土路障(建造中)</Frame_FT_Barrier.label>
+  <!-- EN: 一個實心的混凝土障礙物，可以用於阻滯載具以及提供掩護。 -->
+  <Frame_FT_Barrier.description>一個實心的混凝土障礙物，可以用於阻滯載具以及提供掩護。</Frame_FT_Barrier.description>
+  
+  <!-- EN: 對角混凝土路障(建造中) -->
+  <Frame_FT_BarrierDiagonal.label>對角混凝土路障(建造中)</Frame_FT_BarrierDiagonal.label>
+  <!-- EN: 一個實心的混凝土障礙物，可以用於阻滯載具以及提供掩護。 -->
+  <Frame_FT_BarrierDiagonal.description>一個實心的混凝土障礙物，可以用於阻滯載具以及提供掩護。</Frame_FT_BarrierDiagonal.description>
+  
+  <!-- EN: 軍用沙包(建造中) -->
+  <Frame_FT_Sandbag.label>軍用沙包(建造中)</Frame_FT_Sandbag.label>
+  <!-- EN: 就地填充內容物的掩體沙包袋，用作掩體，另外他們被疊得很密實因此更加的耐用。 -->
+  <Frame_FT_Sandbag.description>就地填充內容物的掩體沙包袋，用作掩體，另外他們被疊得很密實因此更加的耐用。</Frame_FT_Sandbag.description>
+  
+  <!-- EN: 反坦克龍牙(建造中) -->
+  <Frame_FT_TankTrap.label>反坦克龍牙(建造中)</Frame_FT_TankTrap.label>
+  <!-- EN: 用於阻滯載具的實心混凝土柱。 -->
+  <Frame_FT_TankTrap.description>用於阻滯載具的實心混凝土柱。</Frame_FT_TankTrap.description>
+  
+  <!-- EN: 消波塊(建造中) -->
+  <Frame_FT_Tetrapods.label>消波塊(建造中)</Frame_FT_Tetrapods.label>
+  <!-- EN: 外型奇特的混凝土結構，也許有一天殖民者可以找到它的用途 -->
+  <Frame_FT_Tetrapods.description>外型奇特的混凝土結構，也許有一天殖民者可以找到它的用途</Frame_FT_Tetrapods.description>
+  
+  <!-- EN: 軍用沙包牆(建造中) -->
+  <Frame_FT_WallSandbag.label>軍用沙包牆(建造中)</Frame_FT_WallSandbag.label>
+  <!-- EN: 就地填充內容物的掩體沙包袋，用作牆體，另外他們被疊得很密實因此更加的耐用。 -->
+  <Frame_FT_WallSandbag.description>就地填充內容物的掩體沙包袋，用作牆體，另外他們被疊得很密實因此更加的耐用。</Frame_FT_WallSandbag.description>
+  
+</LanguageData>

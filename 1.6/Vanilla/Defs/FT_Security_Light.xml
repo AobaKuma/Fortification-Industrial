@@ -699,14 +699,14 @@
                 <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
                 <fuelFilter>
                     <thingDefs>
-                        <li>Uranium</li>
+                        <li>Steel</li>
                     </thingDefs>
                 </fuelFilter>
                 <fuelCapacity>120</fuelCapacity>
                 <initialFuelPercent>1</initialFuelPercent>
                 <showFuelGizmo>true</showFuelGizmo>
                 <minimumFueledThreshold>1</minimumFueledThreshold>
-                <fuelMultiplier>4</fuelMultiplier>
+                <fuelMultiplier>2</fuelMultiplier>
                 <factorByDifficulty>true</factorByDifficulty>
                 <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
                 <outOfFuelMessage>Cannot shoot: Needs new barrels</outOfFuelMessage>

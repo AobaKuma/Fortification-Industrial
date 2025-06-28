@@ -32,7 +32,7 @@
 			<li Class="CompProperties_Mannable">
 				<manWorkType>Violent</manWorkType>
 			</li>
-			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Buildings.CompRandomBuildingGraphic">
 				<randomGraphics>
 					<li>InfantryTurret/FT_HexMortarBase</li>
 					<li>InfantryTurret/FT_HexMortarBase_Sec</li>
@@ -240,7 +240,7 @@
 			<li Class="CompProperties_Mannable">
 				<manWorkType>Violent</manWorkType>
 			</li>
-			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VanillaFurnitureExpanded.CompProperties_RandomBuildingGraphic">
+			<li MayRequire="oskarpotocki.vanillafactionsexpanded.core" Class="VEF.Buildings.CompRandomBuildingGraphic">
 				<randomGraphics>
 					<li>InfantryTurret/FT_HexMortarBase</li>
 					<li>InfantryTurret/FT_HexMortarBase_Sec</li>

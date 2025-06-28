@@ -1,136 +1,137 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Defs>
 
-  <FleckDef ParentName="FleckBase_Thrown"><!-- 火箭尾跡-->
-    <defName>FT_TrailSmoke</defName>
-    <graphicData>
-      <texPath>Things/Mote/Smoke</texPath>
-      <renderInstanced>true</renderInstanced>
-    </graphicData>
-    <altitudeLayer>Projectile</altitudeLayer>
-    <fadeInTime>0.50</fadeInTime>
-    <solidTime>2</solidTime>
-    <fadeOutTime>1.2</fadeOutTime>
-    <growthRate>0.05</growthRate>
-  </FleckDef>
+    <FleckDef ParentName="FleckBase_Thrown"><!-- 火箭尾跡-->
+        <defName>FT_TrailSmoke</defName>
+        <graphicData>
+            <texPath>Things/Mote/Smoke</texPath>
+            <renderInstanced>true</renderInstanced>
+        </graphicData>
+        <altitudeLayer>Projectile</altitudeLayer>
+        <fadeInTime>0.50</fadeInTime>
+        <solidTime>2</solidTime>
+        <fadeOutTime>1.2</fadeOutTime>
+        <growthRate>0.05</growthRate>
+    </FleckDef>
 
-  <FleckDef ParentName="FleckBase_Thrown"><!-- 尾焰-->
-    <defName>FT_ExhaustFlame</defName>
-    <graphicData>
-      <texPath>FlameGlow_A</texPath>
-      <shaderType>TransparentPostLight</shaderType>
-      <renderInstanced>true</renderInstanced>
-    </graphicData>
-    <altitudeLayer>Projectile</altitudeLayer>
-    <solidTime>0.2</solidTime>
-    <fadeOutTime>0.05</fadeOutTime>
-    <growthRate>-4</growthRate>
-  </FleckDef>
+    <FleckDef ParentName="FleckBase_Thrown"><!-- 尾焰-->
+        <defName>FT_ExhaustFlame</defName>
+        <graphicData>
+            <texPath>FlameGlow_A</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+            <renderInstanced>true</renderInstanced>
+        </graphicData>
+        <altitudeLayer>Projectile</altitudeLayer>
+        <solidTime>0.2</solidTime>
+        <fadeOutTime>0.05</fadeOutTime>
+        <growthRate>-4</growthRate>
+    </FleckDef>
 
-  <FleckDef ParentName="FleckBase_Thrown"><!-- 發光-->
-    <defName>FT_ExhaustFlameGlow</defName>
-    <graphicData>
-      <texPath>FlameGlow_A</texPath>
-      <shaderType>MoteGlow</shaderType>
-      <color>(1,0.6,0.6,0.3)</color>
-    </graphicData>
-    <altitudeLayer>Projectile</altitudeLayer>
-    <solidTime>0</solidTime>
-    <fadeOutTime>0.3</fadeOutTime>
-    <growthRate>-3</growthRate>
-  </FleckDef>
+    <FleckDef ParentName="FleckBase_Thrown"><!-- 發光-->
+        <defName>FT_ExhaustFlameGlow</defName>
+        <graphicData>
+            <texPath>FlameGlow_A</texPath>
+            <shaderType>MoteGlow</shaderType>
+            <color>(1,0.6,0.6,0.3)</color>
+        </graphicData>
+        <altitudeLayer>Projectile</altitudeLayer>
+        <solidTime>0</solidTime>
+        <fadeOutTime>0.3</fadeOutTime>
+        <growthRate>-3</growthRate>
+    </FleckDef>
 
-  <EffecterDef>
-    <defName>FT_ArtilleryCastShot</defName>
-    <children>
-      <li>
-        <subEffecterClass>SubEffecter_Sprayer</subEffecterClass>
-        <fleckDef>DustPuff</fleckDef>
-        <chancePerTick>1</chancePerTick>
-        <scale>0.9~1.3</scale>
-        <rotationRate>-30~30</rotationRate>
-        <speed>0.6~1.8</speed>
-      </li>
-      <li>
-        <subEffecterClass>SubEffecter_Sprayer</subEffecterClass>
-        <fleckDef>DustPuff</fleckDef>
-        <spawnLocType>RandomDrawPosOnTarget</spawnLocType>
-        <positionLerpFactor>0.49</positionLerpFactor>
-        <chancePerTick>0.2</chancePerTick>
-        <scale>2.5~3.5</scale>
-      </li>
-      <li>
-        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
-        <moteDef>Mote_CasingEject</moteDef>
-        <spawnLocType>BetweenTouchingCells</spawnLocType>
-        <positionLerpFactor>0.49</positionLerpFactor>
-        <chancePerTick>0.2</chancePerTick>
-        <scale>0.24~0.34</scale>
-        <airTime>0.08~0.16</airTime>
-        <rotationRate>-240~240</rotationRate>
-        <speed>7.2~24</speed>
-        <angle>135~225</angle>
-        <positionRadius>0.02</positionRadius>
-      </li>
-    </children>
-  </EffecterDef>
+    <EffecterDef>
+        <defName>FT_ArtilleryCastShot</defName>
+        <children>
+            <li>
+                <subEffecterClass>SubEffecter_Sprayer</subEffecterClass>
+                <fleckDef>DustPuff</fleckDef>
+                <chancePerTick>1</chancePerTick>
+                <scale>0.9~1.3</scale>
+                <rotationRate>-30~30</rotationRate>
+                <speed>0.6~1.8</speed>
+            </li>
+            <li>
+                <subEffecterClass>SubEffecter_Sprayer</subEffecterClass>
+                <fleckDef>DustPuff</fleckDef>
+                <spawnLocType>RandomDrawPosOnTarget</spawnLocType>
+                <positionLerpFactor>0.49</positionLerpFactor>
+                <chancePerTick>0.2</chancePerTick>
+                <scale>2.5~3.5</scale>
+            </li>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+                <moteDef>Mote_CasingEject</moteDef>
+                <spawnLocType>BetweenTouchingCells</spawnLocType>
+                <positionLerpFactor>0.49</positionLerpFactor>
+                <chancePerTick>0.2</chancePerTick>
+                <scale>0.24~0.34</scale>
+                <airTime>0.08~0.16</airTime>
+                <rotationRate>-240~240</rotationRate>
+                <speed>7.2~24</speed>
+                <angle>135~225</angle>
+                <positionRadius>0.02</positionRadius>
+            </li>
+        </children>
+    </EffecterDef>
 
-  <ThingDef ParentName="MoteBase">
-    <defName>Mote_CasingEject</defName>
-    <graphicData>
-      <texPath>Things/Mote/SparkThrown</texPath>
-    </graphicData>
-    <altitudeLayer>Projectile</altitudeLayer>
-    <mote>
-      <fadeInTime>0.08</fadeInTime>
-      <solidTime>0.33</solidTime>
-      <fadeOutTime>0.85</fadeOutTime>
-      <collide>true</collide>
-    </mote>
-  </ThingDef>
+    <ThingDef ParentName="MoteBase">
+        <defName>Mote_CasingEject</defName>
+        <graphicData>
+            <texPath>Things/Mote/SparkThrown</texPath>
+        </graphicData>
+        <altitudeLayer>Projectile</altitudeLayer>
+        <mote>
+            <fadeInTime>0.08</fadeInTime>
+            <solidTime>0.33</solidTime>
+            <fadeOutTime>0.85</fadeOutTime>
+            <collide>true</collide>
+        </mote>
+    </ThingDef>
 
-  <EffecterDef>
-    <defName>FT_SignalPluse</defName>
-    <children>
-      <li>
-        <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
-        <fleckDef>FT_SignalPluse</fleckDef>
-        <ticksBetweenMotes>150</ticksBetweenMotes>
-        <spawnLocType>OnSource</spawnLocType>
-        <positionOffset>(0, 0, 0)</positionOffset>
-        <rotationRate>1</rotationRate>
-      </li>
-    </children>
-  </EffecterDef>
-  
-  <FleckDef ParentName="FleckBase_RandomGraphic">
-    <defName>FT_SignalPluse</defName>
-    <altitudeLayer>MoteOverhead</altitudeLayer>
-    <fadeInTime>0.1</fadeInTime>
-    <solidTime>0.7</solidTime>
-    <fadeOutTime>0.5</fadeOutTime>
-    <randomGraphics>
-      <li>
-        <graphicClass>Graphic_Fleck</graphicClass>
-        <texPath>SignalPluse/A</texPath>
-        <shaderType>MoteGlow</shaderType>
-        <color>(1, 0, 0, 0.5)</color>
-        <drawSize>3</drawSize>
-      </li>
-      <li>
-        <graphicClass>Graphic_Fleck</graphicClass>
-        <texPath>SignalPluse/B</texPath>
-        <shaderType>MoteGlow</shaderType>
-        <color>(1, 0, 0, 0.5)</color>
-        <drawSize>3</drawSize>
-      </li>
-      <li>
-        <graphicClass>Graphic_Fleck</graphicClass>
-        <texPath>SignalPluse/C</texPath>
-        <shaderType>MoteGlow</shaderType>
-        <color>(1, 0, 0, 0.5)</color>
-        <drawSize>3</drawSize>
-      </li>
-    </randomGraphics>
-  </FleckDef>
+    <EffecterDef>
+        <defName>FT_SignalPluse</defName>
+        <children>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+                <fleckDef>FT_SignalPluse</fleckDef>
+                <ticksBetweenMotes>150</ticksBetweenMotes>
+                <spawnLocType>OnSource</spawnLocType>
+                <positionOffset>(0, 0, 0)</positionOffset>
+                <rotationRate>1</rotationRate>
+            </li>
+        </children>
+    </EffecterDef>
+
+    <FleckDef ParentName="FleckBase_RandomGraphic">
+        <defName>FT_SignalPluse</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <fadeInTime>0.1</fadeInTime>
+        <solidTime>0.7</solidTime>
+        <fadeOutTime>0.5</fadeOutTime>
+        <randomGraphics>
+            <li>
+                <graphicClass>Graphic_Fleck</graphicClass>
+                <texPath>SignalPluse/A</texPath>
+                <shaderType>MoteGlow</shaderType>
+                <color>(1, 0, 0, 0.5)</color>
+                <drawSize>3</drawSize>
+            </li>
+            <li>
+                <graphicClass>Graphic_Fleck</graphicClass>
+                <texPath>SignalPluse/B</texPath>
+                <shaderType>MoteGlow</shaderType>
+                <color>(1, 0, 0, 0.5)</color>
+                <drawSize>3</drawSize>
+            </li>
+            <li>
+                <graphicClass>Graphic_Fleck</graphicClass>
+                <texPath>SignalPluse/C</texPath>
+                <shaderType>MoteGlow</shaderType>
+                <color>(1, 0, 0, 0.5)</color>
+                <drawSize>3</drawSize>
+            </li>
+        </randomGraphics>
+    </FleckDef>
 </Defs>

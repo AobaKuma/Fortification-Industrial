@@ -1,216 +1,216 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-	<ThingDef ParentName="MinifiedThing" Name="FT_MinifiedTurret">
-		<defName>FT_MinifiedTurret</defName>
-		<label>minified turret</label>
-		<thingClass>Fortified.MinifiedThingDeployable</thingClass>
-		<statBases>
-			<Mass>20</Mass>
-		</statBases>
-		<comps>
-			<li Class="CompProperties_Usable">
-				<useJob>TriggerObject</useJob>
-				<useLabel>Pick up {0_label}</useLabel>
-			</li>
-			<li Class="CompProperties_UseEffect">
-				<compClass>Fortified.CompMinifyToInventory</compClass>
-			</li>
-		</comps>
-	</ThingDef>
+    <ThingDef ParentName="MinifiedThing" Name="FT_MinifiedTurret">
+        <defName>FT_MinifiedTurret</defName>
+        <label>minified turret</label>
+        <thingClass>Fortified.MinifiedThingDeployable</thingClass>
+        <statBases>
+            <Mass>20</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>TriggerObject</useJob>
+                <useLabel>Pick up {0_label}</useLabel>
+            </li>
+            <li Class="CompProperties_UseEffect">
+                <compClass>Fortified.CompMinifyToInventory</compClass>
+            </li>
+        </comps>
+    </ThingDef>
 
-	<ThingDef ParentName="FT_MinifiedTurret" Name="FT_MinifiedTurretEquippable" Abstract="true">
-		<equipmentType>Primary</equipmentType>
-		<techLevel>Industrial</techLevel>
-		<comps>
-			<li>
-				<compClass>CompEquippable</compClass>
-			</li>
-		</comps>
-		<weaponTags>
-			<li>DMS_MechWeaponMeduim</li>
-			<li>A_SuppressWeapon</li>
-		</weaponTags>
-		<weaponClasses>
-			<li>Ranged</li>
-		</weaponClasses>
-	</ThingDef>
+    <ThingDef ParentName="FT_MinifiedTurret" Name="FT_MinifiedTurretEquippable" Abstract="true">
+        <equipmentType>Primary</equipmentType>
+        <techLevel>Industrial</techLevel>
+        <comps>
+            <li>
+                <compClass>CompEquippable</compClass>
+            </li>
+        </comps>
+        <weaponTags>
+            <li>DMS_MechWeaponMeduim</li>
+            <li>A_SuppressWeapon</li>
+        </weaponTags>
+        <weaponClasses>
+            <li>Ranged</li>
+        </weaponClasses>
+    </ThingDef>
 
-	<ThingDef Name="FT_BaseCannonBuilding_Deployable" ParentName="FT_BaseCannonBuilding" Abstract="True">
-		<minifiedDef>FT_MinifiedTurret</minifiedDef>
-		<thingCategories>
-			<li>BuildingsSecurity</li>
-		</thingCategories>
-		<statBases>
-			<Mass>50</Mass>
-		</statBases>
-		<building>
-			<ai_combatDangerous>true</ai_combatDangerous>
-			<turretBurstWarmupTime>1.0</turretBurstWarmupTime>
-			<!--================冷卻與瞄準時間================-->
-			<turretBurstCooldownTime>3.0</turretBurstCooldownTime>
-		</building>
-		<comps>
-			<li Class="CompProperties_Usable">
-				<useJob>TriggerObject</useJob>
-				<useLabel>Pick up {0_label}</useLabel>
-			</li>
-			<li>
-				<compClass>Fortified.CompMinifyToInventory</compClass>
-			</li>
-		</comps>
-	</ThingDef>
+    <ThingDef Name="FT_BaseCannonBuilding_Deployable" ParentName="FT_BaseCannonBuilding" Abstract="True">
+        <minifiedDef>FT_MinifiedTurret</minifiedDef>
+        <thingCategories>
+            <li>BuildingsSecurity</li>
+        </thingCategories>
+        <statBases>
+            <Mass>50</Mass>
+        </statBases>
+        <building>
+            <ai_combatDangerous>true</ai_combatDangerous>
+            <turretBurstWarmupTime>1.0</turretBurstWarmupTime>
+            <!--================冷卻與瞄準時間================-->
+            <turretBurstCooldownTime>3.0</turretBurstCooldownTime>
+        </building>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>TriggerObject</useJob>
+                <useLabel>Pick up {0_label}</useLabel>
+            </li>
+            <li>
+                <compClass>Fortified.CompMinifyToInventory</compClass>
+            </li>
+        </comps>
+    </ThingDef>
 
-	<ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
-		<defName>FT_Turret_Mortar</defName>
-		<label>infantry mortar</label>
-		<description>A light-weighted mortar that launches all kinds of mortar shells. Improved firing speed with a simplified design, it has a shorter range but it can be easily carried by infantry.</description>
-		<uiIconPath>FT_Mortar_Icon</uiIconPath>
-		<uiIconScale>0.9</uiIconScale>
-		<graphicData>
-			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>FT_MortarBase</texPath>
-			<drawSize>(2,2)</drawSize>
-		</graphicData>
-		<size>(1,1)</size>
-		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-		<costList>
-			<Steel>20</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
-			<ReinforcedBarrel>1</ReinforcedBarrel>
-		</costList>
-		<interactionCellOffset>(1,0,0)</interactionCellOffset>
-		<!--操作點在右方-->
-		<statBases>
-			<MaxHitPoints>150</MaxHitPoints>
-			<Flammability>0.7</Flammability>
-			<WorkToBuild>100</WorkToBuild>
-			<Mass>20</Mass>
-			<Beauty>-1</Beauty>
-		</statBases>
-		<inspectorTabs>
-			<li>ITab_Shells</li>
-		</inspectorTabs>
-		<comps>
-			<li Class="CompProperties_Explosive">
-				<wickTicks>240</wickTicks>
-				<explosiveRadius>2.9</explosiveRadius>
-				<explosiveDamageType>Bomb</explosiveDamageType>
-			</li>
-			<li Class="CompProperties_Refuelable">
-				<fuelLabel>Shots until barrel change</fuelLabel>
-				<fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
-				<outOfFuelMessage>Cannot shoot: Needs new reinforced barrel</outOfFuelMessage>
-				<fuelFilter>
-					<thingDefs>
-						<li>ReinforcedBarrel</li>
-					</thingDefs>
-				</fuelFilter>
-				<fuelIsMortarBarrel>true</fuelIsMortarBarrel>
-				<fuelCapacity>50</fuelCapacity>
-				<fuelMultiplier>50</fuelMultiplier>
-				<initialFuelPercent>1</initialFuelPercent>
-				<showFuelGizmo>true</showFuelGizmo>
-				<minimumFueledThreshold>1</minimumFueledThreshold>
-				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-				<initialAllowAutoRefuel>true</initialAllowAutoRefuel>
-				<targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
-				<!--重裝填設定-->
-				<initialConfigurableTargetFuelLevel>25</initialConfigurableTargetFuelLevel>
-				<autoRefuelPercent>0.1</autoRefuelPercent>
-				<fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
-			</li>
-		</comps>
-		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<building>
-			<turretGunDef>FT_Artillery_Mortar</turretGunDef>
-			<turretTopDrawSize>1.5</turretTopDrawSize>
-			<turretBurstWarmupTime>2.0</turretBurstWarmupTime>
-			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
-		</building>
-		<researchPrerequisites>
-			<li>Mortars</li>
-		</researchPrerequisites>
-	</ThingDef>
+    <ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
+        <defName>FT_Turret_Mortar</defName>
+        <label>infantry mortar</label>
+        <description>A light-weighted mortar that launches all kinds of mortar shells. Improved firing speed with a simplified design, it has a shorter range but it can be easily carried by infantry.</description>
+        <uiIconPath>FT_Mortar_Icon</uiIconPath>
+        <uiIconScale>0.9</uiIconScale>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>FT_MortarBase</texPath>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+        <costList>
+            <Steel>20</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <ReinforcedBarrel>1</ReinforcedBarrel>
+        </costList>
+        <interactionCellOffset>(1,0,0)</interactionCellOffset>
+        <!--操作點在右方-->
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Flammability>0.7</Flammability>
+            <WorkToBuild>100</WorkToBuild>
+            <Mass>20</Mass>
+            <Beauty>-1</Beauty>
+        </statBases>
+        <inspectorTabs>
+            <li>ITab_Shells</li>
+        </inspectorTabs>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <wickTicks>240</wickTicks>
+                <explosiveRadius>2.9</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+            </li>
+            <li Class="CompProperties_Refuelable">
+                <fuelLabel>Shots until barrel change</fuelLabel>
+                <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+                <outOfFuelMessage>Cannot shoot: Needs new reinforced barrel</outOfFuelMessage>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>ReinforcedBarrel</li>
+                    </thingDefs>
+                </fuelFilter>
+                <fuelIsMortarBarrel>true</fuelIsMortarBarrel>
+                <fuelCapacity>50</fuelCapacity>
+                <fuelMultiplier>50</fuelMultiplier>
+                <initialFuelPercent>1</initialFuelPercent>
+                <showFuelGizmo>true</showFuelGizmo>
+                <minimumFueledThreshold>1</minimumFueledThreshold>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <initialAllowAutoRefuel>true</initialAllowAutoRefuel>
+                <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+                <!--重裝填設定-->
+                <initialConfigurableTargetFuelLevel>25</initialConfigurableTargetFuelLevel>
+                <autoRefuelPercent>0.1</autoRefuelPercent>
+                <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
+            </li>
+        </comps>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <building>
+            <turretGunDef>FT_Artillery_Mortar</turretGunDef>
+            <turretTopDrawSize>1.5</turretTopDrawSize>
+            <turretBurstWarmupTime>2.0</turretBurstWarmupTime>
+            <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+        </building>
+        <researchPrerequisites>
+            <li>Mortars</li>
+        </researchPrerequisites>
+    </ThingDef>
 
-	<ThingDef ParentName="BaseWeaponTurret">
-		<defName>FT_Artillery_Mortar</defName>
-		<label>mortar</label>
-		<description>A powerful indirect-firing weapon with ability to rapid deploy.</description>
-		<recoilPower>3</recoilPower>
-		<graphicData>
-			<texPath>FT_MortarGun</texPath>
-			<drawSize>(2,2)</drawSize>
-		</graphicData>
-		<statBases>
-			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
-		</statBases>
-		<weaponTags>
-			<li>TurretGun</li>
-		</weaponTags>
-		<verbs>
-			<li>
-				<verbClass>Verb_Shoot</verbClass>
-				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-				<warmupTime>6.0</warmupTime>
-				<forcedMissRadius>6</forcedMissRadius>
-				<forcedMissRadiusClassicMortars>10</forcedMissRadiusClassicMortars>
-				<isMortar>true</isMortar>
-				<requireLineOfSight>false</requireLineOfSight>
-				<minRange>9.9</minRange>
-				<range>100</range>
-				<burstShotCount>1</burstShotCount>
-				<soundCast>Mortar_LaunchA</soundCast>
-				<muzzleFlashScale>16</muzzleFlashScale>
-				<consumeFuelPerShot>1</consumeFuelPerShot>
-				<targetParams>
-					<canTargetLocations>true</canTargetLocations>
-				</targetParams>
-			</li>
-		</verbs>
-		<comps>
-			<li Class="CompProperties_ChangeableProjectile" />
-			<li Class="Fortified.CompProperties_CastFlecker">
-				<fleck>DustPuff</fleck>
-				<onGroundOverride>true</onGroundOverride>
-				<burstAmount>15</burstAmount>
-				<burstSway>100</burstSway>
-				<burstAngle>180</burstAngle>
-				<fleckSizeRange>(2,4)</fleckSizeRange>
-				<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
-				<burstOffsetRange>(0,3)</burstOffsetRange>
-				<rangeScaleFactor>(1,0.1)</rangeScaleFactor>
-			</li>
-			<li Class="Fortified.CompProperties_CastFlecker">
-				<fleck>DustPuff</fleck>
-				<onGroundOverride>true</onGroundOverride>
-				<burstAmount>15</burstAmount>
-				<burstSway>30</burstSway>
-				<burstAngle>0</burstAngle>
-				<fleckSizeRange>(1,2)</fleckSizeRange>
-				<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
-				<burstOffsetRange>(1,3)</burstOffsetRange>
-			</li>
-		</comps>
-		<building>
-			<fixedStorageSettings>
-				<filter>
-					<categories>
-						<li>MortarShells</li>
-					</categories>
-				</filter>
-			</fixedStorageSettings>
-			<defaultStorageSettings>
-				<filter>
-					<categories>
-						<li>MortarShells</li>
-					</categories>
-					<disallowedThingDefs>
-						<li>Shell_Firefoam</li>
-						<li>Shell_AntigrainWarhead</li>
-					</disallowedThingDefs>
-				</filter>
-			</defaultStorageSettings>
-		</building>
-	</ThingDef>
+    <ThingDef ParentName="BaseWeaponTurret">
+        <defName>FT_Artillery_Mortar</defName>
+        <label>mortar</label>
+        <description>A powerful indirect-firing weapon with ability to rapid deploy.</description>
+        <recoilPower>3</recoilPower>
+        <graphicData>
+            <texPath>FT_MortarGun</texPath>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+        <statBases>
+            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponTags>
+            <li>TurretGun</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+                <warmupTime>6.0</warmupTime>
+                <forcedMissRadius>6</forcedMissRadius>
+                <forcedMissRadiusClassicMortars>10</forcedMissRadiusClassicMortars>
+                <isMortar>true</isMortar>
+                <requireLineOfSight>false</requireLineOfSight>
+                <minRange>9.9</minRange>
+                <range>100</range>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>Mortar_LaunchA</soundCast>
+                <muzzleFlashScale>16</muzzleFlashScale>
+                <consumeFuelPerShot>1</consumeFuelPerShot>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CompProperties_ChangeableProjectile" />
+            <li Class="Fortified.CompProperties_CastFlecker">
+                <fleck>DustPuff</fleck>
+                <onGroundOverride>true</onGroundOverride>
+                <burstAmount>15</burstAmount>
+                <burstSway>100</burstSway>
+                <burstAngle>180</burstAngle>
+                <fleckSizeRange>(2,4)</fleckSizeRange>
+                <burstSpeedRange>(0.2,0.5)</burstSpeedRange>
+                <burstOffsetRange>(0,3)</burstOffsetRange>
+                <rangeScaleFactor>(1,0.1)</rangeScaleFactor>
+            </li>
+            <li Class="Fortified.CompProperties_CastFlecker">
+                <fleck>DustPuff</fleck>
+                <onGroundOverride>true</onGroundOverride>
+                <burstAmount>15</burstAmount>
+                <burstSway>30</burstSway>
+                <burstAngle>0</burstAngle>
+                <fleckSizeRange>(1,2)</fleckSizeRange>
+                <burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
+                <burstOffsetRange>(1,3)</burstOffsetRange>
+            </li>
+        </comps>
+        <building>
+            <fixedStorageSettings>
+                <filter>
+                    <categories>
+                        <li>MortarShells</li>
+                    </categories>
+                </filter>
+            </fixedStorageSettings>
+            <defaultStorageSettings>
+                <filter>
+                    <categories>
+                        <li>MortarShells</li>
+                    </categories>
+                    <disallowedThingDefs>
+                        <li>Shell_Firefoam</li>
+                        <li>Shell_AntigrainWarhead</li>
+                    </disallowedThingDefs>
+                </filter>
+            </defaultStorageSettings>
+        </building>
+    </ThingDef>
 </Defs>

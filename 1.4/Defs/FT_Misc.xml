@@ -209,7 +209,7 @@
     <comps>
       <li Class="AOBAUtilities.CompProperties_Effector">
         <Effecter>FT_SignalPluse</Effecter>
-        <effecterOffset>(1,1,6)</effecterOffset>
+        <offset>(0.5,1,6)</offset>
       </li>
       <li Class="AOBAUtilities.CompProperties_IncidentMaker">
         <Incident>OrbitalTraderArrival</Incident>

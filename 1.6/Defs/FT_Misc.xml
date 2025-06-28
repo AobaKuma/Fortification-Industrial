@@ -213,7 +213,7 @@
         <comps>
             <li Class="Fortified.CompProperties_Effector">
                 <effecter>FT_SignalPluse</effecter>
-                <offset>(1,1,6)</offset>
+                <offset>(0.5,1,6)</offset>
             </li>
             <li Class="Fortified.CompProperties_IncidentMaker">
                 <Incident>OrbitalTraderArrival</Incident>

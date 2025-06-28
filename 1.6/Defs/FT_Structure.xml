@@ -3,7 +3,6 @@
 <Defs>
 
     <!-- Base -->
-
     <ThingDef Name="FT_SandBag_Base" Abstract="True">
         <category>Building</category>
         <thingClass>Building</thingClass>
@@ -51,9 +50,7 @@
         <defName>FT_Sandbag</defName>
         <label>Military Sandbag</label>
         <thingClass>Building</thingClass>
-        <description>
-            Bags of locally-sourced dirt or sand, stacked for use as cover. they are
-            well-stacked so it is more durable.
+        <description>Bags of locally-sourced dirt or sand, stacked for use as cover. they are well-stacked so it is more durable.
         </description>
         <graphicData>
             <texPath>FT_Sandbag</texPath>
@@ -79,6 +76,7 @@
             <Flammability>0</Flammability>
             <Beauty>0</Beauty>
         </statBases>
+        <drawStyleCategory>Walls</drawStyleCategory>
         <costStuffCount>7</costStuffCount>
         <altitudeLayer>Building</altitudeLayer>
         <passability>PassThroughOnly</passability>
@@ -115,6 +113,7 @@
             <Flammability>0</Flammability>
             <Beauty>0</Beauty>
         </statBases>
+        <drawStyleCategory>Walls</drawStyleCategory>
         <blockWind>true</blockWind>
         <holdsRoof>true</holdsRoof>
         <costStuffCount>10</costStuffCount>
@@ -531,6 +530,4 @@
             <FT_WoodConcrete>3</FT_WoodConcrete>
         </costList>
     </TerrainDef>
-
-
 </Defs>

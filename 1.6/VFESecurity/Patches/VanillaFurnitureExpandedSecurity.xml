@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="VFES_Turret_SentryGun"]/minifiedDef</xpath>
+				<value>
+					<minifiedDef>FT_MinifiedTurret</minifiedDef>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="VFES_Turret_SentryGun"]/comps</xpath>
+				<value>
+					<li Class="CompProperties_Usable">
+						<useJob>TriggerObject</useJob>
+						<useLabel>Pick up {0_label}</useLabel>
+					</li>
+					<li>
+						<compClass>Fortified.CompMinifyToInventory</compClass>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

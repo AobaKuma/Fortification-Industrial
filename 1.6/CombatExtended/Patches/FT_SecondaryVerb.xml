@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  
+	<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Bill Doors' Framework</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+		<!--HexMortar-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="FT_Gun_TurretHexMortar"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/verbClass</xpath>
+				<value>
+					<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofMortarCE</verbClass>
+				</value>
+            </li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="FT_TurretHexMortar"]/placeWorkers/li["PlaceWorker_NotUnderRoof"]</xpath>
+            </li>
+		<!--Prince-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="FT_Gun_TurretPrince"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/verbClass</xpath>
+				<value>
+					<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofMortarCE</verbClass>
+				</value>
+            </li>
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="FT_TurretPrince"]/placeWorkers/li["PlaceWorker_NotUnderRoof"]</xpath>
+            </li>
+		<!--Empero-->
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="FT_Gun_TurretEmpero"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/defaultProjectile</xpath>
+				<value>
+					<defaultProjectile>Bullet_FT_155mmHowitzerShell_HE</defaultProjectile>
+				</value>
+            </li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="FT_Gun_TurretEmpero"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/minRange</xpath>
+				<value>
+					<minRange>50</minRange>
+				</value>
+            </li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="FT_Gun_TurretEmpero"]/verbs/li[@Class="CombatExtended.VerbPropertiesCE"]/verbClass</xpath>
+				<value>
+					<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofMortarCE</verbClass>
+				</value>
+            </li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="FT_Gun_TurretEmpero"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/ammoSet</xpath>
+				<value>
+					<ammoSet>AmmoSet_FT_155mmHowitzerShell</ammoSet>
+				</value>
+            </li>
+		</operations>
+	</match>
+</Operation>
+
+</Patch>

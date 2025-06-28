@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <ThingDef ParentName="BuildingBase" Name="FT_MGNest" Abstract="True">
+    <description>A stationry turret strengthen with materials. Requires steel to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+		<texPath>MGBunker/FT_MGBunker_Leathery</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(2.5,2.5)</drawSize>
+	    <drawOffset>(0,0,0)</drawOffset>
+    </graphicData>
+    <size>(3,3)</size>
+    <uiIconPath>MGBunker/FT_MGBunker_Leathery</uiIconPath>
+    <uiIconScale>0.90</uiIconScale>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+      <WorkToBuild>1800</WorkToBuild>
+      <Beauty>-20</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Refuelable">
+        <fuelLabel>Shots until barrel change</fuelLabel>
+        <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+        <outOfFuelMessage>Cannot shoot: Needs new barrel</outOfFuelMessage>
+        <fuelFilter><thingDefs><li>Steel</li></thingDefs></fuelFilter>
+        <fuelCapacity>240</fuelCapacity>       <!-- 40 bursts -->
+        <fuelMultiplier>8</fuelMultiplier> <!-- 1 steel=8ammo -->
+        <initialFuelPercent>1</initialFuelPercent>
+        <showFuelGizmo>true</showFuelGizmo>
+        <minimumFueledThreshold>1</minimumFueledThreshold>
+        <factorByDifficulty>true</factorByDifficulty>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+		    <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
+		    <initialConfigurableTargetFuelLevel>240</initialConfigurableTargetFuelLevel>
+		    <autoRefuelPercent>0.1</autoRefuelPercent>
+      </li>
+    </comps>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <costStuffCount>150</costStuffCount>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <building>
+      <combatPower>80</combatPower>   <!-- same as a scavenger -->
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>FT_Gun_MG</turretGunDef>
+      <turretBurstCooldownTime>4.8</turretBurstCooldownTime>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>GunTurrets</li>
+    </researchPrerequisites>
+  </ThingDef>
+  
+  <ThingDef ParentName="FT_MGNest">
+	<defName>FT_Turret_BunkerL</defName>
+    <label>Machine Gun Nest</label>
+    <graphicData>
+      <texPath>MGBunker/FT_MGBunker_Leathery</texPath>
+    </graphicData>
+    <uiIconPath>MGBunker/FT_MGBunker_Leathery</uiIconPath>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+      <WorkToBuild>1800</WorkToBuild>
+      <Beauty>-10</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="FT_MGNest">
+    <defName>FT_Turret_BunkerM</defName>
+    <label>Machine Gun Turret Bunker</label>
+    <graphicData>
+      <texPath>MGBunker/FT_MGBunker_Metal</texPath>
+    </graphicData>
+    <uiIconPath>MGBunker/FT_MGBunker_Metal</uiIconPath>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+      <WorkToBuild>1800</WorkToBuild>
+      <Beauty>-10</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="FT_MGNest">
+    <defName>FT_Turret_BunkerC</defName>
+    <label>Machine Gun Bunker</label>
+    <graphicData>
+      <texPath>MGBunker/FT_MGBunker_Concrete</texPath>
+    </graphicData>
+    <uiIconPath>MGBunker/FT_MGBunker_Concrete</uiIconPath>
+    <statBases>
+      <MaxHitPoints>450</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+      <WorkToBuild>2400</WorkToBuild>
+      <Beauty>-10</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+  </ThingDef>
+  
+  <ThingDef ParentName="FT_MGNest">
+    <defName>FT_Turret_BunkerF</defName>
+    <label>Military Machine Gun Nest</label>
+    <graphicData>
+      <texPath>MGBunker/FT_MGBunker_Fabric</texPath>
+    </graphicData>
+    <uiIconPath>MGBunker/FT_MGBunker_Fabric</uiIconPath>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+      <WorkToBuild>1800</WorkToBuild>
+      <Beauty>-5</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+	  <colorPerStuff>
+      <li>
+        <stuff>Cloth</stuff>
+        <color>(139,122,87)</color>
+      </li>
+      <li>
+        <stuff>Synthread</stuff>
+        <color>(110,114,77)</color>
+      </li>
+    </colorPerStuff>	
+	</ThingDef>
+	
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>FT_Gun_MG</defName>
+    <label>machine gun</label>
+    <description>An fully automatic gun made to be mounted on a turret.</description>
+    <graphicData>
+      <texPath>None</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.77</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.45</AccuracyMedium>
+      <AccuracyLong>0.24</AccuracyLong>
+      <RangedWeapon_Cooldown>4.8</RangedWeapon_Cooldown>
+      <Mass>5</Mass>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_MiniTurret</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>30.9</range>
+        <minRange>1.9</minRange>
+        <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+        <burstShotCount>6</burstShotCount>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <consumeFuelPerShot>1</consumeFuelPerShot>
+      </li>
+    </verbs>
+  </ThingDef>
+</Defs>	

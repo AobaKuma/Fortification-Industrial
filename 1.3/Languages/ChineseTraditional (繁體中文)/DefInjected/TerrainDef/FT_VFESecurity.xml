@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: fortified platform -->
+  <FT_VFES_PlatformTerrain.label>強化平台</FT_VFES_PlatformTerrain.label>
+  
+  <!-- EN: fortified trench floor -->
+  <FT_VFES_TrenchTerrain.label>強化壕溝</FT_VFES_TrenchTerrain.label>
+  
+</LanguageData>

@@ -1,0 +1,7 @@
+D:\Steam\steamapps\common\RimWorld\Mods\Fortification-Industrial\Source\FortificationCE\obj\Debug\FortificationCE.csproj.AssemblyReference.cache
+D:\Steam\steamapps\common\RimWorld\Mods\Fortification-Industrial\Source\FortificationCE\obj\Debug\FortificationCE.csproj.CoreCompileInputs.cache
+D:\Steam\steamapps\common\RimWorld\Mods\Fortification-Industrial\1.5\CombatExtended\Assemblies\FortificationCE.dll
+D:\Steam\steamapps\common\RimWorld\Mods\Fortification-Industrial\1.5\CombatExtended\Assemblies\FortificationCE.pdb
+D:\Steam\steamapps\common\RimWorld\Mods\Fortification-Industrial\Source\FortificationCE\obj\Debug\Fortific.C28C1F00.Up2Date
+D:\Steam\steamapps\common\RimWorld\Mods\Fortification-Industrial\Source\FortificationCE\obj\Debug\FortificationCE.dll
+D:\Steam\steamapps\common\RimWorld\Mods\Fortification-Industrial\Source\FortificationCE\obj\Debug\FortificationCE.pdb

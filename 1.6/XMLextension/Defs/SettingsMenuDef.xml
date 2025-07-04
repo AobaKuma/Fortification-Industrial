@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<XmlExtensions.SettingsMenuDef>
+		<defName>FTFI_SettingMenu</defName>
+		<modId>Aoba.Fortress.Industrial</modId>
+		<label>Fortifications - Industrial</label>
+		<settings>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>All changes needs a restart to apply!</text>
+				<anchor>Middle</anchor>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>RemoveRebarConcrete</key>
+				<label>Remove rebar concrete in-game</label>
+				<defaultValue>false</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>RemoveFiberConcrete</key>
+				<label>Remove fiber concrete plank in-game</label>
+				<defaultValue>false</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>CoreTechtree_Eniac</key>
+				<label>Remove Eniac as research Prerequisite</label>
+				<defaultValue>false</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>CoreTechtree_Lathe</key>
+				<label>Remove Lathe as research Prerequisite</label>
+				<defaultValue>false</defaultValue>
+			</li>
+		</settings>
+	</XmlExtensions.SettingsMenuDef>
+</Defs>

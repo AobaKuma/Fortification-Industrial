@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Canister -->
+  <FT_Canister.label>Canister</FT_Canister.label>
+  <!-- EN: Canister -->
+  <FT_Canister.description>Canister</FT_Canister.description>
+  
+  <!-- EN: HESH -->
+  <FT_HESH.label>HESH</FT_HESH.label>
+  <!-- EN: HESH -->
+  <FT_HESH.description>HESH</FT_HESH.description>
+  
+  <!-- EN: SAPHE -->
+  <FT_SAPHE.label>SAPHE</FT_SAPHE.label>
+  <!-- EN: SAPHE -->
+  <FT_SAPHE.description>SAPHE</FT_SAPHE.description>
+  
+  <!-- EN: Shrapnel -->
+  <FT_Shrapnel.label>Shrapnel</FT_Shrapnel.label>
+  <!-- EN: Shrapnel -->
+  <FT_Shrapnel.description>Shrapnel</FT_Shrapnel.description>
+  
+</LanguageData>

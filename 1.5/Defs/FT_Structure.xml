@@ -3,7 +3,6 @@
 <Defs>
 
   <!-- Base -->
-
   <ThingDef Name="FT_SandBag_Base" Abstract="True">
     <category>Building</category>
     <thingClass>Building</thingClass>

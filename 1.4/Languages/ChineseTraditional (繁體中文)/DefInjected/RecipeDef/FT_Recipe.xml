@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make component -->
+  <FT_Make_ComponentIndustrial.label>製造零件</FT_Make_ComponentIndustrial.label>
+  <!-- EN: Make a component from lathe,take longer time and resources. -->
+  <FT_Make_ComponentIndustrial.description>在車床將鋼鐵加工成零件，由於硬件限制因此效率不如精密製作桌</FT_Make_ComponentIndustrial.description>
+  <!-- EN: Making component. -->
+  <FT_Make_ComponentIndustrial.jobString>正在製作零件</FT_Make_ComponentIndustrial.jobString>
+  
+  <!-- EN: make Concrete -->
+  <FT_Make_ConcreteByBlock.label>將石磚加工成混凝土</FT_Make_ConcreteByBlock.label>
+  <!-- EN: crush blocks and made into concrete. -->
+  <FT_Make_ConcreteByBlock.description>將石磚加工成混凝土。</FT_Make_ConcreteByBlock.description>
+  <!-- EN: making Concrete from material -->
+  <FT_Make_ConcreteByBlock.jobString>加工石料中</FT_Make_ConcreteByBlock.jobString>
+  
+  <!-- EN: make Concrete from chunk -->
+  <FT_Make_ConcreteByChunk.label>將石塊加工成混凝土</FT_Make_ConcreteByChunk.label>
+  <!-- EN: crush chunks and made into Concrete. -->
+  <FT_Make_ConcreteByChunk.description>將石塊加工成混凝土。</FT_Make_ConcreteByChunk.description>
+  <!-- EN: making Concrete from material -->
+  <FT_Make_ConcreteByChunk.jobString>加工石料中</FT_Make_ConcreteByChunk.jobString>
+  
+  <!-- EN: make Concrete from junks -->
+  <FT_Make_ConcreteByStonyJunks.label>將石質材料回收混凝土</FT_Make_ConcreteByStonyJunks.label>
+  <!-- EN: crush stony junks and made into concrete. the junk material must not be burnable or smeltable. -->
+  <FT_Make_ConcreteByStonyJunks.description>將不可燃且不可熔煉的裝備回收作為混凝土材料。</FT_Make_ConcreteByStonyJunks.description>
+  <!-- EN: making Concrete from material -->
+  <FT_Make_ConcreteByStonyJunks.jobString>回收資源中</FT_Make_ConcreteByStonyJunks.jobString>
+  
+  <!-- EN: Pack concrete -->
+  <FT_Make_ConcreteCompressed.label>封裝混凝土</FT_Make_ConcreteCompressed.label>
+  <!-- EN: pack Concrete bag for storage,also trader are willing to buy them. -->
+  <FT_Make_ConcreteCompressed.description>將混凝土封裝，可以用於儲存以及販售。</FT_Make_ConcreteCompressed.description>
+  <!-- EN: Packing concrete. -->
+  <FT_Make_ConcreteCompressed.jobString>封裝混凝土中。</FT_Make_ConcreteCompressed.jobString>
+  
+  <!-- EN: make Fiber cement -->
+  <FT_Make_ConcreteWood.label>製作水泥預製板</FT_Make_ConcreteWood.label>
+  <!-- EN: mixing the cloth and concrete to get the light-weighted concrete plank,fire-proofed but not durable as the soild bricks. -->
+  <FT_Make_ConcreteWood.description>用混凝土倒入模具澆築水泥預製板，作為大規模建築用的材料，防火且建造相對省時。</FT_Make_ConcreteWood.description>
+  <!-- EN: making concrete. -->
+  <FT_Make_ConcreteWood.jobString>澆築預製板中</FT_Make_ConcreteWood.jobString>
+  
+  <!-- EN: synthesize Dye -->
+  <FT_Make_Dye.label>人工合成染料</FT_Make_Dye.label>
+  <!-- EN: synthesize Dye from Chemfuel. -->
+  <FT_Make_Dye.description>用化合燃料合成染料</FT_Make_Dye.description>
+  <!-- EN: Synthesizing Dye. -->
+  <FT_Make_Dye.jobString>合成染料中</FT_Make_Dye.jobString>
+  
+  <!-- EN: synthesize Neutroamine -->
+  <FT_Make_Neutroamine.label>合成中性胺</FT_Make_Neutroamine.label>
+  <!-- EN: synthesize neutroamine from meat. -->
+  <FT_Make_Neutroamine.description>從肉類資源中合成中性胺。</FT_Make_Neutroamine.description>
+  <!-- EN: Synthesizing neutroamine. -->
+  <FT_Make_Neutroamine.jobString>化學合成中。</FT_Make_Neutroamine.jobString>
+  
+  <!-- EN: make reinforced barrel -->
+  <FT_Make_ReinforcedBarrel.label>製造精密砲管</FT_Make_ReinforcedBarrel.label>
+  <!-- EN: Make a reinforced barrel from lathe. -->
+  <FT_Make_ReinforcedBarrel.description>在車床製造精密砲管。</FT_Make_ReinforcedBarrel.description>
+  <!-- EN: Making Barrel. -->
+  <FT_Make_ReinforcedBarrel.jobString>切削砲管中。</FT_Make_ReinforcedBarrel.jobString>
+  
+  <!-- EN: prepare steel for concrete -->
+  <FT_Make_ReinforcedConcrete.label>備料鋼筋混凝土</FT_Make_ReinforcedConcrete.label>
+  <!-- EN: mixing the embedded steel bars and concrete to get the Reinforced concrete ,an alternative Materials for Metalic building. -->
+  <FT_Make_ReinforcedConcrete.description>給混凝土準備鋼筋來用於澆築鋼筋混凝土建築。</FT_Make_ReinforcedConcrete.description>
+  <!-- EN: making concrete. -->
+  <FT_Make_ReinforcedConcrete.jobString>準備材料中</FT_Make_ReinforcedConcrete.jobString>
+  
+  <!-- EN: Unpack concrete -->
+  <FT_Unpack_ConcreteCompressed.label>分裝混凝土</FT_Unpack_ConcreteCompressed.label>
+  <!-- EN: Unpack Concrete bags for usage. -->
+  <FT_Unpack_ConcreteCompressed.description>分裝混凝土用於建築。</FT_Unpack_ConcreteCompressed.description>
+  <!-- EN: Unpacking concrete. -->
+  <FT_Unpack_ConcreteCompressed.jobString>分裝混凝土中。</FT_Unpack_ConcreteCompressed.jobString>
+  
+</LanguageData>

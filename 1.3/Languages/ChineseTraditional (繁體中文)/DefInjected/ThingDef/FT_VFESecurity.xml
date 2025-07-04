@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: fortified platform -->
+  <FT_Platform.label>混凝土平臺</FT_Platform.label>
+  <!-- EN: A clean concrete platform on which to gain some range advantage. But there's no cover and it takes a little time to climb on the platform. -->
+  <FT_Platform.description>混凝土構築的乾淨平臺，可以站在上面射擊並獲得射程上的優勢.但除了爬上平臺需要一點時間攀爬外的問題以外站在上面幾乎沒有多少掩蔽。</FT_Platform.description>
+  
+  <!-- EN: fortified trench -->
+  <FT_Trench.label>混凝土戰壕</FT_Trench.label>
+  <!-- EN: A trench facility reinforced with reinforced concrete, capable of being constructed in most of terrain, with good drainage and neatly poured walls. Although it takes a little time to climb out of it, the soldiers inside can get good cover. -->
+  <FT_Trench.description>使用鋼筋混凝土加固的壕溝設施，能夠在不可挖掘的地形建造，有著良好的排水系統與整潔的澆築牆體. 雖然離開掩體需要一點時間攀爬但在裡面的士兵可以獲得良好的掩蔽。</FT_Trench.description>
+  
+</LanguageData>

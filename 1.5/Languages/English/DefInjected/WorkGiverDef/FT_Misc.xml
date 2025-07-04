@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: adjust radio frequency to scan -->
+  <RadioScan.label>adjust radio frequency to scan</RadioScan.label>
+  <!-- EN: scanning at -->
+  <RadioScan.gerund>scanning at</RadioScan.gerund>
+  <!-- EN: scan -->
+  <RadioScan.verb>scan</RadioScan.verb>
+  
+</LanguageData>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Anti Air cannon -->
+  <FT_Gun_TurretAA.label>Anti-Air autocannon</FT_Gun_TurretAA.label>
+  <!-- EN: An Autocannon designed to defend the area of skies, but also a nice weapon for ground targets. -->
+  <FT_Gun_TurretAA.description>A manned anti-air autocannon. Useful for attacking aerial targets or groups of enemies in the field.</FT_Gun_TurretAA.description>
+  <!-- EN: Anti Air cannon -->
+  <FT_Gun_TurretAA.verbs.Verb_ShootCE.label>Anti-Air autocannon</FT_Gun_TurretAA.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: Anti Tank Cannon -->
+  <FT_Gun_TurretAT.label>Anti-Tank cannon</FT_Gun_TurretAT.label>
+  <!-- EN: A uranium slug cannon designed to snipe the heavy-armed target in range. -->
+  <FT_Gun_TurretAT.description>A manned anti-tank cannon. Its accuracy and armor penetration make it ideal against heavily armored targets.</FT_Gun_TurretAT.description>
+  <!-- EN: Anti Tank Cannon -->
+  <FT_Gun_TurretAT.verbs.Verb_ShootCE.label>Anti Tank Cannon</FT_Gun_TurretAT.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: 76mm anti-tank gun -->
+  <FT_Gun_TurretAT_Plus.label>76mm anti-tank gun</FT_Gun_TurretAT_Plus.label>
+  <!-- EN: A direct-fire cannon with capability to destroy a heavy armed vehicle. -->
+  <FT_Gun_TurretAT_Plus.description>A direct-fire cannon capable of destroying heavily armoured vehicles.</FT_Gun_TurretAT_Plus.description>
+  <!-- EN: 76mm anti-tank gun -->
+  <FT_Gun_TurretAT_Plus.verbs.Verb_ShootCE.label>76mm anti-tank gun</FT_Gun_TurretAT_Plus.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: Quad Anti Air cannon -->
+  <FT_Gun_TurretQuadAA.label>Quad Anti Air cannon</FT_Gun_TurretQuadAA.label>
+  <!-- EN: An Quad mounted Autocannon designed to defend the area of skies, but also a nice weapon for ground targets. -->
+  <FT_Gun_TurretQuadAA.description>An Quad mounted Autocannon designed for air defence, work just as well against ground targets.</FT_Gun_TurretQuadAA.description>
+  <!-- EN: Quad Anti Air cannon -->
+  <FT_Gun_TurretQuadAA.verbs.Verb_ShootCE.label>Quad AA</FT_Gun_TurretQuadAA.verbs.Verb_ShootCE.label>
+  
+  <!-- EN: Anti Air Gun -->
+  <FT_TurretAA.label>Anti-Air gun</FT_TurretAA.label>
+  <!-- EN: A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field. -->
+  <FT_TurretAA.description>A manned anti-air autocannon. Useful for attacking aerial targets or groups of enemies in the field.</FT_TurretAA.description>
+  
+  <!-- EN: Anti Tank Gun -->
+  <FT_TurretAT.label>Anti-Tank gun</FT_TurretAT.label>
+  <!-- EN: A manned rifle cannon that launches solid metal shells.It is accurate makes it useful for attacking groups of enemies in the field or sniping the small fortifications. -->
+  <FT_TurretAT.description>A manned anti-tank cannon. Its accuracy and armor penetration make it ideal against heavily armored targets.</FT_TurretAT.description>
+  
+  <!-- EN: 76mm anti-tank gun -->
+  <FT_TurretAT_Plus.label>76mm anti-tank gun</FT_TurretAT_Plus.label>
+  <!-- EN: A direct-fire cannon with capability to destroy a heavy armed vehicle. -->
+  <FT_TurretAT_Plus.description>A direct-fire cannon capable of destroying heavily armoured vehicles.</FT_TurretAT_Plus.description>
+  
+  <!-- EN: Quad Anti Air Gun -->
+  <FT_TurretQuadAA.label>Quad Anti Air Gun</FT_TurretQuadAA.label>
+  <!-- EN: A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field. -->
+  <FT_TurretQuadAA.description>A manned anti-air autocannon. Useful for attacking aerial targets or groups of enemies in the field.</FT_TurretQuadAA.description>
+  
+</LanguageData>

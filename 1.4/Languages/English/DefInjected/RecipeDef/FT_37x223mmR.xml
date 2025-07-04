@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Make 37x223mmR (sabot) cartridge x25 -->
+  <MakeAmmo_37x223mmR_APDS.label>Make 37x223mmR (sabot) cartridge x25</MakeAmmo_37x223mmR_APDS.label>
+  <!-- EN: Craft 25 37x223mmR (sabot) cartridges. -->
+  <MakeAmmo_37x223mmR_APDS.description>Craft 25 37x223mmR (sabot) cartridges.</MakeAmmo_37x223mmR_APDS.description>
+  <!-- EN: Making 37x223mmR (sabot) cartridges. -->
+  <MakeAmmo_37x223mmR_APDS.jobString>Making 37x223mmR (sabot) cartridges.</MakeAmmo_37x223mmR_APDS.jobString>
+  
+  <!-- EN: Make 37x223mmR (AP-HE) cartridge x25 -->
+  <MakeAmmo_37x223mmR_AP-HE.label>Make 37x223mmR (AP-HE) cartridge x25</MakeAmmo_37x223mmR_AP-HE.label>
+  <!-- EN: Craft 25 37x223mmR (AP-HE) cartridges. -->
+  <MakeAmmo_37x223mmR_AP-HE.description>Craft 25 37x223mmR (AP-HE) cartridges.</MakeAmmo_37x223mmR_AP-HE.description>
+  <!-- EN: Making 37x223mmR (AP-HE) cartridges. -->
+  <MakeAmmo_37x223mmR_AP-HE.jobString>Making 37x223mmR (AP-HE) cartridges.</MakeAmmo_37x223mmR_AP-HE.jobString>
+  
+  <!-- EN: Make 37x223mmR (canister) cartridge x25 -->
+  <MakeAmmo_37x223mmR_Canister.label>Make 37x223mmR (canister) cartridge x25</MakeAmmo_37x223mmR_Canister.label>
+  <!-- EN: Craft 25 37x223mmR (canister) cartridges. -->
+  <MakeAmmo_37x223mmR_Canister.description>Craft 25 37x223mmR (canister) cartridges.</MakeAmmo_37x223mmR_Canister.description>
+  <!-- EN: Making 37x223mmR (canister) cartridges. -->
+  <MakeAmmo_37x223mmR_Canister.jobString>Making 37x223mmR (canister) cartridges.</MakeAmmo_37x223mmR_Canister.jobString>
+  
+  <!-- EN: Make 37x223mmR (EMP) cartridge x25 -->
+  <MakeAmmo_37x223mmR_EMP.label>Make 37x223mmR (EMP) cartridge x25</MakeAmmo_37x223mmR_EMP.label>
+  <!-- EN: Craft 25 37x223mmR (EMP) cartridges. -->
+  <MakeAmmo_37x223mmR_EMP.description>Craft 25 37x223mmR (EMP) cartridges.</MakeAmmo_37x223mmR_EMP.description>
+  <!-- EN: Making 37x223mmR (EMP) cartridges. -->
+  <MakeAmmo_37x223mmR_EMP.jobString>Making 37x223mmR (EMP) cartridges.</MakeAmmo_37x223mmR_EMP.jobString>
+  
+  <!-- EN: Make 37x223mmR (HESH) cartridge x25 -->
+  <MakeAmmo_37x223mmR_HESH.label>Make 37x223mmR (HESH) cartridge x25</MakeAmmo_37x223mmR_HESH.label>
+  <!-- EN: Craft 25 37x223mmR (HESH) cartridges. -->
+  <MakeAmmo_37x223mmR_HESH.description>Craft 25 37x223mmR (HESH) cartridges.</MakeAmmo_37x223mmR_HESH.description>
+  <!-- EN: Making 37x223mmR (HESH) cartridges. -->
+  <MakeAmmo_37x223mmR_HESH.jobString>Making 37x223mmR (HESH) cartridges.</MakeAmmo_37x223mmR_HESH.jobString>
+  
+  <!-- EN: Make 37x223mmR (incendiary) cartridge x25 -->
+  <MakeAmmo_37x223mmR_Incendiary.label>Make 37x223mmR (incendiary) cartridge x25</MakeAmmo_37x223mmR_Incendiary.label>
+  <!-- EN: Craft 25 37x223mmR (incendiary) cartridges. -->
+  <MakeAmmo_37x223mmR_Incendiary.description>Craft 25 37x223mmR (incendiary) cartridges.</MakeAmmo_37x223mmR_Incendiary.description>
+  <!-- EN: Making 37x223mmR (incendiary) cartridges. -->
+  <MakeAmmo_37x223mmR_Incendiary.jobString>Making 37x223mmR (incendiary) cartridges.</MakeAmmo_37x223mmR_Incendiary.jobString>
+  
+  <!-- EN: Make 37x223mmR (shrapnel) cartridge x25 -->
+  <MakeAmmo_37x223mmR_Shrapnel.label>Make 37x223mmR (shrapnel) cartridge x25</MakeAmmo_37x223mmR_Shrapnel.label>
+  <!-- EN: Craft 25 37x223mmR (shrapnel) cartridges. -->
+  <MakeAmmo_37x223mmR_Shrapnel.description>Craft 25 37x223mmR (shrapnel) cartridges.</MakeAmmo_37x223mmR_Shrapnel.description>
+  <!-- EN: Making 37x223mmR (shrapnel) cartridges. -->
+  <MakeAmmo_37x223mmR_Shrapnel.jobString>Making 37x223mmR (shrapnel) cartridges.</MakeAmmo_37x223mmR_Shrapnel.jobString>
+  
+</LanguageData>

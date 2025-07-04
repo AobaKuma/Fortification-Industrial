@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Concrete barrier (blueprint) -->
+  <Blueprint_FT_Barrier.label>Concrete barrier (blueprint)</Blueprint_FT_Barrier.label>
+  
+  <!-- EN: Diagonal concrete barrier (blueprint) -->
+  <Blueprint_FT_BarrierDiagonal.label>Diagonal concrete barrier (blueprint)</Blueprint_FT_BarrierDiagonal.label>
+  
+  <!-- EN: Military sandbag (blueprint) -->
+  <Blueprint_FT_Sandbag.label>Military Sandbag (blueprint)</Blueprint_FT_Sandbag.label>
+  
+  <!-- EN: Tank trap (blueprint) -->
+  <Blueprint_FT_TankTrap.label>Tank trap (blueprint)</Blueprint_FT_TankTrap.label>
+  
+  <!-- EN: Tetrapods (blueprint) -->
+  <Blueprint_FT_Tetrapods.label>Tetrapods (blueprint)</Blueprint_FT_Tetrapods.label>
+  
+  <!-- EN: Military sandbag wall (blueprint) -->
+  <Blueprint_FT_WallSandbag.label>Military sandbag wall (blueprint)</Blueprint_FT_WallSandbag.label>
+  
+  <!-- EN: Concrete barrier (blueprint) -->
+  <Blueprint_Install_FT_Barrier.label>Concrete barrier (blueprint)</Blueprint_Install_FT_Barrier.label>
+  
+  <!-- EN: Diagonal concrete barrier (blueprint) -->
+  <Blueprint_Install_FT_BarrierDiagonal.label>Diagonal concrete barrier (blueprint)</Blueprint_Install_FT_BarrierDiagonal.label>
+  
+  <!-- EN: Tetrapods (blueprint) -->
+  <Blueprint_Install_FT_Tetrapods.label>Tetrapods (blueprint)</Blueprint_Install_FT_Tetrapods.label>
+  
+  <!-- EN: Concrete barrier (building) -->
+  <Frame_FT_Barrier.label>Concrete barrier (building)</Frame_FT_Barrier.label>
+  <!-- EN: A solid concrete barrier that can hinder the movement of vehicles and provide cover. -->
+  <Frame_FT_Barrier.description>A solid concrete barrier that can hinder the movement of vehicles and provide cover.</Frame_FT_Barrier.description>
+  
+  <!-- EN: Diagonal concrete barrier (building) -->
+  <Frame_FT_BarrierDiagonal.label>Diagonal concrete barrier (building)</Frame_FT_BarrierDiagonal.label>
+  <!-- EN: A solid concrete barrier that can hinder the movement of vehicles and provide cover. -->
+  <Frame_FT_BarrierDiagonal.description>A solid concrete barrier that can hinder the movement of vehicles and provide cover.</Frame_FT_BarrierDiagonal.description>
+  
+  <!-- EN: Military sandbag (building) -->
+  <Frame_FT_Sandbag.label>Military Sandbag (building)</Frame_FT_Sandbag.label>
+  <!-- EN: Bags of locally-sourced dirt or sand, stacked for use as cover. More professional-looking than basic sandbags. -->
+  <Frame_FT_Sandbag.description>Bags of locally-sourced dirt or sand, stacked for use as cover. More professional-looking than basic sandbags.</Frame_FT_Sandbag.description>
+  
+  <!-- EN: Tank trap (building) -->
+  <Frame_FT_TankTrap.label>Tank trap (building)</Frame_FT_TankTrap.label>
+  <!-- EN: A solid concrete pillar meant to hinder the movement of vehicles. -->
+  <Frame_FT_TankTrap.description>A solid concrete pillar meant to hinder the movement of vehicles.</Frame_FT_TankTrap.description>
+  
+  <!-- EN: Tetrapods (building) -->
+  <Frame_FT_Tetrapods.label>Tetrapods (building)</Frame_FT_Tetrapods.label>
+  <!-- EN: A solid concrete pillar designed to hinder naval landings. -->
+  <Frame_FT_Tetrapods.description>A solid concrete pillar designed to hinder naval landings.</Frame_FT_Tetrapods.description>
+  
+  <!-- EN: Military sandbag wall (building) -->
+  <Frame_FT_WallSandbag.label>Military sandbag wall (building)</Frame_FT_WallSandbag.label>
+  <!-- EN: Bags of locally-sourced dirt or sand, stacked for use as wall. -->
+  <Frame_FT_WallSandbag.description>Bags of locally-sourced dirt or sand, stacked for use as wall.</Frame_FT_WallSandbag.description>
+  
+</LanguageData>

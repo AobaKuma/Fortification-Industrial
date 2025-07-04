@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Chemistry Table -->
+  <FT_TableChemistry.label>Chemistry table</FT_TableChemistry.label>
+  <!-- EN: A table that can artificially synthesize compounds such as Neutroamine. -->
+  <FT_TableChemistry.description>An electrically-powered workstation that can artificially synthesize chemical compounds.</FT_TableChemistry.description>
+  
+  <!-- EN: ConcreteMixer -->
+  <FT_TableConcreteMixer.label>Concrete mixer</FT_TableConcreteMixer.label>
+  <!-- EN: A machine that crushes and mixes stony materials into concrete dusts -->
+  <FT_TableConcreteMixer.description>A machine that crushes and mixes stony materials into concrete dusts</FT_TableConcreteMixer.description>
+  
+  <!-- EN: Lathe -->
+  <FT_TableLathe.label>Electric lathe</FT_TableLathe.label>
+  <!-- EN: A machine that rotates a workpiece about an axis of rotation to perform various operations. -->
+  <FT_TableLathe.description>An electrically-powered piece of equipment that allows the production of simple mechanical parts.</FT_TableLathe.description>
+  
+</LanguageData>

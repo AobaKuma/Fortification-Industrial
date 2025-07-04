@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: chemistry -->
+  <FT_Chemistry.label>化學</FT_Chemistry.label>
+  <!-- EN: Build Chemistry Table that can artificially synthesize compounds such as Neutroamine. -->
+  <FT_Chemistry.description>解鎖化學製造桌，能夠從肉類中人工提取並合成中性胺。</FT_Chemistry.description>
+  <!-- EN:
+    <li>subject->chemistry</li>
+    <li>subject->modren alchemy</li>
+    <li>subject->material sorcery</li>
+    <li>subject_story->said that Chemistry is the most cursed subject, bar none</li>
+    <li>subject_story->mentioned that chemical reaction formula for synthesizing neutramines is [censored]</li>
+    <li>subject_story->wrote many messy notes in the margins of the schematic</li>
+    <li>subject_story->said that chemistry is way more science than alchemy, at least it can make gold in real</li>
+    <li>subject_story->warned readers to stay away from anyone holding a torch or pitchfork</li>
+    <li>subject_story->included a complete periodic table of chemical elements, claiming it would save readers from 127 years of detours.</li>
+    <li>subject_gerund->synthesizing neutramines</li>
+    <li>subject_gerund->calculating mix ratio of FSX</li>
+  -->
+  <FT_Chemistry.generalRules.rulesStrings>
+    <li>subject->化學</li>
+    <li>subject->現代煉金術</li>
+    <li>subject->材料學巫術</li>
+    <li>subject_story->自己是真的腦子有病才來讀化學系</li>
+    <li>subject_story->提到了合成中性胺的化學合成式是[被塗抹]</li>
+    <li>subject_story->在圖紙的邊緣寫了很多雜亂的註解與筆記</li>
+    <li>subject_story->說化學至少比煉金術更科學，至少它可以真的用炸藥來製造微量的黃金</li>
+    <li>subject_story->警告讀者遠離任何拿著火把或乾草叉的人群</li>
+    <li>subject_story->在書中紀錄了完整的化學元素週期表，聲稱這可以讓讀者少走127年的彎路</li>
+    <li>subject_gerund->人工合成中性胺</li>
+    <li>subject_gerund->計算含胺乳化炸藥的原料混合比例</li>
+  </FT_Chemistry.generalRules.rulesStrings>
+  
+  <!-- EN: Concrete -->
+  <FT_Concrete.label>混凝土</FT_Concrete.label>
+  <!-- EN: crush and smelt stony material to concrete. -->
+  <FT_Concrete.description>解鎖將石料加工成混凝土用於建築與地板鋪設。</FT_Concrete.description>
+  <!-- EN:
+    <li>subject->concrete</li>
+    <li>subject->industrial building material</li>
+    <li>subject->civil engineering</li>
+    <li>subject_story->said that "cement das conk-creet baybee"</li>
+    <li>subject_story->mentioned that concrete will only strong when supported by a flexible frame such as metal or wood.</li>
+    <li>subject_story->wrote many messy notes in the margins of the schematic</li>
+    <li>subject_story->constantly conveys to people that everything can be made of concrete in the colony</li>
+    <li>subject_story->attached a brand logo from Nara Industries</li>
+    <li>subject_story->summarized das conk-creet baybee</li>
+    <li>subject_gerund->carrying cement bags</li>
+    <li>subject_gerund->calculating mix ratio</li>
+  -->
+  <FT_Concrete.generalRules.rulesStrings>
+    <li>subject->現代混凝土</li>
+    <li>subject->工業化建築材料</li>
+    <li>subject->土木工程</li>
+    <li>subject_story->曾表示"水泥? 不，這可是混凝土啊! 寶貝兒。"</li>
+    <li>subject_story->提到混凝土只有在配合由金屬或木材等抗拉材料支撐的結構澆築時才真的堅固</li>
+    <li>subject_story->在圖紙的邊緣寫了很多雜亂的註解與筆記</li>
+    <li>subject_story->不斷向人們傳達城市裡的一切都可以用混凝土製成，從牆壁到雕塑到家裡的花盆與衣櫃</li>
+    <li>subject_story->在書中的某一頁印了一個奈良重工的商標佔據了整個版面</li>
+    <li>subject_story->總結了甚麼是混凝土，其組成的原料與比例的歷史演變</li>
+    <li>subject_gerund->在工地上打灰</li>
+    <li>subject_gerund->計算材料混合的黃金比例</li>
+  </FT_Concrete.generalRules.rulesStrings>
+  
+  <!-- EN: ENIAC -->
+  <FT_ENIAC.label>真空管電腦</FT_ENIAC.label>
+  <!-- EN: Electronic Numerical Integrator And Computer, known as ENIAC is a Turing-complete general-purpose digital computer able to solve "a large class of numerical problems" through reprogramming. -->
+  <FT_ENIAC.description>真空管電子數值計算機，雖然算不上是最好的但可以說是電子科技的里程碑。</FT_ENIAC.description>
+  <!-- EN: [Interstellar Industries Complex Nara Terminal]\n      [ version="1.5"] [ encoding="UTF-8" ]\n      Loading....\n\n      [To user]\n      Being able to build ENIAC and read this information means that you or your civilization already has the minimum requirements for the realization of the technology in the disc.\n      We look forward to further cooperation with you to create a beautiful industrialized society in the rimworld.\n      OS>:_ -->
+  <FT_ENIAC.discoveredLetterText>[奈良星際工業複合體終端]\n [ 版本="1.5"] [編碼="UTF-8" ]\n 正在加載中....\n\n [致用戶]\n 能夠構建ENIAC 並閱讀此內容資訊意味著你或你的文明已經具備實現光碟中科技的最低要求。 \n我們期待與您的進一步合作，用務實的雙手在這片邊緣世界創造一個美好的先進社會。</FT_ENIAC.discoveredLetterText>
+  <!-- EN: Data Disk: ENIAC -->
+  <FT_ENIAC.discoveredLetterTitle>數據讀取: ENIAC</FT_ENIAC.discoveredLetterTitle>
+  <!-- EN:
+    <li>subject->electronic computer</li>
+    <li>subject->vacuum tube replace</li>
+    <li>subject->integrator design</li>
+    <li>subject->turing-complete</li>
+    <li>subject->digital computer</li>
+    <li>subject_story->included a strange data disc in the schematic</li>
+    <li>subject_story->repeatedly mentioned that the invention of the vacuum tube was the cornerstone of computer technology</li>
+    <li>subject_story->wrote many messy notes in the margins of the schematic</li>
+    <li>subject_story->constantly conveys to people that computers are omnipotent gods</li>
+    <li>subject_story->attached a brand logo sticker from Nara Industries on machine</li>
+    <li>subject_story->summarized in great detail the manufacturing techniques and processes involved in producing vacuum tube computers.</li>
+    <li>subject_gerund->computer engineering</li>
+    <li>subject_gerund->vacuum tube manufacturing</li>
+  -->
+  <FT_ENIAC.generalRules.rulesStrings>
+    <li>subject->電子計算機概論</li>
+    <li>subject->如何更換真空管</li>
+    <li>subject->積分器設計學</li>
+    <li>subject->圖靈完備</li>
+    <li>subject->數位電腦</li>
+    <li>subject_story->在書中隨附了一張奇怪的磁碟片，並且附上了讀取設備的設計圖</li>
+    <li>subject_story->多次提到真空管的發明是對於電腦技術的重大基石</li>
+    <li>subject_story->試圖建議每一位學生選修計算機概論課程</li>
+    <li>subject_story->在圖紙的邊緣寫了很多雜亂的註解與筆記</li>
+    <li>subject_story->在機器的外殼上貼了奈良重工的商標</li>
+    <li>subject_story->詳細總結了生產與設計真空管計算機的技術和流程</li>
+    <li>subject_gerund->計算積分器工程</li>
+    <li>subject_gerund->真空管生產流程</li>
+  </FT_ENIAC.generalRules.rulesStrings>
+  
+  <!-- EN: heavy artillery -->
+  <FT_HeavyArtillery.label>重型火砲</FT_HeavyArtillery.label>
+  <!-- EN: Using ENIAC to calculate the artillery ballistics table, unlock the design of heavy artilleries. -->
+  <FT_HeavyArtillery.description>使用伊尼亞克計算火炮彈道表，解鎖重型火砲的設計。</FT_HeavyArtillery.description>
+  <!-- EN:
+    <li>subject->Ballistic</li>
+    <li>subject->Artillery</li>
+    <li>subject->Heavy Cannon</li>
+    <li>subject_story->included a full design blueprint in schematic</li>
+    <li>subject_story->mentioned that the processing accuracy of the barrel will greatly affect the accuracy of artillery</li>
+    <li>subject_story->wrote many messy notes in the margins of the schematic</li>
+    <li>subject_story->constantly conveys to people that a faction's territorial waters are the range of their coastal artillery</li>
+    <li>subject_story->attached a brand logo from Nara Industries on the schematic cover</li>
+    <li>subject_story->summarized that caliber is justice</li>
+    <li>subject_gerund->cannon designing</li>
+    <li>subject_gerund->ballistic table calculating</li>
+  -->
+  <FT_HeavyArtillery.generalRules.rulesStrings>
+    <li>subject->外彈道學分析</li>
+    <li>subject->內彈道學概論</li>
+    <li>subject->重型火砲設計</li>
+    <li>subject_story->在圖紙中展示了完整的技術設計</li>
+    <li>subject_story->提到砲管的加工精度會大大影響火砲的精確度</li>
+    <li>subject_story->在圖紙的邊緣寫了很多雜亂的註解與筆記</li>
+    <li>subject_story->不斷向人們傳達一個派系的領海範圍往往就是他們岸防火砲的射程</li>
+    <li>subject_story->在圖紙封面印了奈良重工的商標</li>
+    <li>subject_story->總結了口徑即為正義，射程即為真理</li>
+    <li>subject_gerund->線膛砲設計</li>
+    <li>subject_gerund->火炮射表計算</li>
+  </FT_HeavyArtillery.generalRules.rulesStrings>
+  
+  <!-- EN: Industrial Cannon -->
+  <FT_IndustrialCannon.label>工業火炮</FT_IndustrialCannon.label>
+  <!-- EN: Using reinforced barrel to build AT and AA Guns. -->
+  <FT_IndustrialCannon.description>解鎖使用加固砲管建造防空與反坦克炮。</FT_IndustrialCannon.description>
+  <!-- EN:
+    <li>subject->infantry cannon</li>
+    <li>subject->anti vehicle weaponry</li>
+    <li>subject->interior ballistics</li>
+    <li>subject_story->included a full design blueprint in schematic</li>
+    <li>subject_story->mentioned that the processing accuracy of the barrel will greatly affect the accuracy of artillery</li>
+    <li>subject_story->wrote many messy notes in the margins of the schematic</li>
+    <li>subject_story->constantly conveys to people that one day armored vehicles and tanks will be a threat to base defense </li>
+    <li>subject_story->attached an advertisement from Nara Industries on the schematic cover</li>
+    <li>subject_story->summarized that using AA guns to shoot at infantry, while unethical, does not violate the laws of war</li>
+    <li>subject_gerund->cannon designing</li>
+    <li>subject_gerund->ballistic table calculating</li>
+  -->
+  <FT_IndustrialCannon.generalRules.rulesStrings>
+    <li>subject->步兵炮</li>
+    <li>subject->反載具武器</li>
+    <li>subject->閉膛火炮設計</li>
+    <li>subject_story->在圖紙中展示了完整的技術設計</li>
+    <li>subject_story->提到槍管在射擊中過熱可能會導致非預期的擊發與膛炸</li>
+    <li>subject_story->在圖紙的邊緣寫了很多雜亂的註解與筆記</li>
+    <li>subject_story->不斷向人們傳達總有一天戰車等裝甲載具的出現將對現有的基地防禦體系構成威脅</li>
+    <li>subject_story->原理圖上附有奈良工業公司的置入性行銷</li>
+    <li>subject_story->總結說，平放防空機炮進行火力壓制可能不道德，但通常並不違反戰爭法</li>
+    <li>subject_gerund->戰防砲設計</li>
+    <li>subject_gerund->輕量化武器結構設計</li>
+  </FT_IndustrialCannon.generalRules.rulesStrings>
+  
+  <!-- EN: lathe -->
+  <FT_Lathe.label>車床</FT_Lathe.label>
+  <!-- EN: Build lathe for early-stage compoment and reinforced barrel making. -->
+  <FT_Lathe.description>解鎖車床用於早期工業的零件與炮管生產。</FT_Lathe.description>
+  <!-- EN:
+    <li>subject->machine tools</li>
+    <li>subject->metal cutting</li>
+    <li>subject->lathe repair</li>
+    <li>subject_story->included a full design blueprint in schematic</li>
+    <li>subject_story->mentioned that the advent of the lathe can change the way a society's industrial production</li>
+    <li>subject_story->wrote many messy notes in the margins of the schematic</li>
+    <li>subject_story->constantly conveys to people that Advanced production can drive social progress</li>
+    <li>subject_story->attached a brand logo sticker from Nara Industries on machine</li>
+    <li>subject_story->summarized in great detail the importance of processing tungsten steel as a lathe tool</li>
+    <li>subject_gerund->cold metal working</li>
+    <li>subject_gerund->lathe manufacturing</li>
+  -->
+  <FT_Lathe.generalRules.rulesStrings>
+    <li>subject->機床設計大全</li>
+    <li>subject->金屬加工</li>
+    <li>subject->車床維修</li>
+    <li>subject_story->在圖紙中展示了完整的技術設計</li>
+    <li>subject_story->提到車床的出現可以完全改變一個社會的製造業生產方式</li>
+    <li>subject_story->在圖紙的邊緣寫了很多雜亂的註解與筆記</li>
+    <li>subject_story->不斷向人們傳達只要生產力增長夠快，社會利益分配不均的衝突就與永遠追不上利益膨脹的速度</li>
+    <li>subject_story->在機器的外殼上貼了奈良重工的商標</li>
+    <li>subject_story->非常詳細地總結了使用鎢鋼作為車床刀具的重要性</li>
+    <li>subject_story->在操作車床時被飛濺的鐵屑燙傷</li>
+    <li>subject_gerund->旋轉金屬加工</li>
+    <li>subject_gerund->工業車床製造</li>
+  </FT_Lathe.generalRules.rulesStrings>
+  
+</LanguageData>

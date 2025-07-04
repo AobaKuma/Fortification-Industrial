@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: entering facility -->
+  <FT_EnterBunkerFacility.reportString>進入建築工事</FT_EnterBunkerFacility.reportString>
+  
+  <!-- EN: Listen to the radio. -->
+  <FT_UseRadio.reportString>收聽電台廣播</FT_UseRadio.reportString>
+  
+</LanguageData>

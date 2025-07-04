@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded - Architect</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/TerrainDef[defName="VFEArch_PlayerBrokenAsphalt"]/costList</xpath>
+                    <value>
+                        <costList>
+                            <FT_BlocksConcrete>1</FT_BlocksConcrete>
+                        </costList>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/TerrainDef[defName="VFEArch_Asphalt"]/costList</xpath>
+                    <value>
+                        <costList>
+                            <FT_BlocksConcrete>2</FT_BlocksConcrete>
+                        </costList>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/TerrainDef[defName="VFEArch_ConcreteFoundation"]/costList</xpath>
+                    <value>
+                        <costList>
+                            <FT_BlocksConcrete>5</FT_BlocksConcrete>
+                        </costList>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

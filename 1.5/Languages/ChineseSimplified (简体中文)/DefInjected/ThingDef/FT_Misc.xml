@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Antenna Tower -->
+  <FT_AntennaTower.label>无线电讯号塔</FT_AntennaTower.label>
+  <!-- EN: A bigger orbital trade beacon that can only place outside. can attract orbital traders so they can navigate to this planet. -->
+  <FT_AntennaTower.description>一个放大版的轨道交易信标。</FT_AntennaTower.description>
+  
+  <!-- EN: E.N.I.A.C. -->
+  <FT_ENIAC.label>真空管电脑</FT_ENIAC.label>
+  <!-- EN: Electronic Numerical Integrator And Computer Or simply call it Eniac, big and highly consume power energy, Increases research speed when placed near hi-tech research bench and unlocks new research projects from reading the Disk.\n	Each research bench can connect to 4 ENIAC. -->
+  <FT_ENIAC.description>电子数值积分器电脑或简单称为ENIAC，体积大且耗电量惊人。放置在研究台附近时可提高研究速度，并通过读取磁盘解锁来自奈良重工的研究项目.\n每个研究台可以连接到 4 台伊尼亚克。</FT_ENIAC.description>
+  
+  <!-- EN: hydrant -->
+  <FT_FirefoamPopper.label>消防栓</FT_FirefoamPopper.label>
+  <!-- EN: When it detects fire, this safety device pops and sprays a fire-retardant foam in a circular field around itself. Can also be triggered manually. -->
+  <FT_FirefoamPopper.description>红色金属消防栓，他基本上就是个更适合街道放置的一次性消防灭火装置。</FT_FirefoamPopper.description>
+  <!-- EN: Trigger {0_label} -->
+  <FT_FirefoamPopper.comps.CompFueledUsable.useLabel>使用</FT_FirefoamPopper.comps.CompFueledUsable.useLabel>
+  
+  <!-- UNUSED -->
+  <FT_FirefoamPopper.comps.CompUsable.useLabel>开阀{0_label}</FT_FirefoamPopper.comps.CompUsable.useLabel>
+  
+  <!-- EN: mobile chemfuel generator -->
+  <FT_FuelGenerator.label>可携式化合燃料发电机</FT_FuelGenerator.label>
+  <!-- EN: Produces power by consuming chemfuel. Must be periodically refueled by hand. -->
+  <FT_FuelGenerator.description>可以移动的燃料发电机。</FT_FuelGenerator.description>
+  
+  <!-- EN: Radio terminal -->
+  <FT_Radio.label>无线电终端</FT_Radio.label>
+  <!-- EN: Allows radio contact with other factions and orbital traders,also when interrogating the frequency band, some interference that may be precious metals can be located,(WIP), will have more function in the future. -->
+  <FT_Radio.description>允许透过无线电通讯联络其他阵营与轨道商人，此外透过对影响讯号的频率分辨，可以定位到可能的稀有金属位置，(完整功能尚未完成，将来会有更多功能)。</FT_Radio.description>
+  <!-- EN: Summon diabolus threat -->
+  <FT_Radio.comps.CompUsable.useLabel>Summon diabolus threat</FT_Radio.comps.CompUsable.useLabel>
+  
+</LanguageData>

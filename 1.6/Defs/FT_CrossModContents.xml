@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <TerrainDef MayRequire="vanillaexpanded.vfearchitect">
+        <description>
+            Stone Bridges are structures that can be built on water. Bridges allow more rapid movement across water. Once built, they can support many structures, including heavy structures and any type of wall. Bridges allow for easier building in swampy biomes.
+
+            Can be made out of any stone blocks.
+        </description>
+        <texturePath>StoneBridge/StoneBridge</texturePath>
+        <layerable>true</layerable>
+        <bridge>true</bridge>
+        <isPaintable>true</isPaintable>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+        </affordances>
+        <researchPrerequisites>
+            <li>Stonecutting</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+        <designationCategory>Structure</designationCategory>
+        <fertility>0</fertility>
+        <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+        <edgeType>Hard</edgeType>
+        <renderPrecedence>400</renderPrecedence>
+        <autoRebuildable>true</autoRebuildable>
+        <statBases>
+            <WorkToBuild>2500</WorkToBuild>
+            <Flammability>0</Flammability>
+            <Beauty>1</Beauty>
+        </statBases>
+        <tags>
+            <li>Floor</li>
+        </tags>
+        <destroyOnBombDamageThreshold>50</destroyOnBombDamageThreshold>
+        <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+        <destroyEffect>Bridge_Collapse</destroyEffect>
+        <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+        <designatorDropdown>VFEArch_StoneBridge</designatorDropdown>
+        <modExtensions>
+            <li Class="VFEArchitect.TerrainExtension_CustomBridgeProps">
+                <loopPath>StoneBridge/StoneBridgeProps_Loop</loopPath>
+                <rightPath>StoneBridge/StoneBridgeProps_Right</rightPath>
+            </li>
+        </modExtensions>
+
+        <defName>VFEArch_BridgeConcrete</defName>
+        <label>concrete bridge</label>
+        <color>(160,160,160)</color>
+        <uiIconPath>StoneBridge/StoneBridgeSandstone_MenuIcon</uiIconPath>
+        <costList>
+            <FT_BlocksConcrete>12</FT_BlocksConcrete>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef MayRequire="vanillaexpanded.vfearchitect" ParentName="FloorBase">
+        <texturePath>Terrains/Parquet</texturePath>
+        <renderPrecedence>228</renderPrecedence>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <statBases>
+            <WorkToBuild>3000</WorkToBuild>
+            <Beauty>2</Beauty>
+            <Flammability>0</Flammability>
+        </statBases>
+        <constructEffect>ConstructWood</constructEffect>
+        <designatorDropdown>VFEArch_WoodenParquet</designatorDropdown>
+        <isPaintable>true</isPaintable>
+
+        <defName>VFEArch_WoodenParquetConcrete</defName>
+        <description>using concrete prefab plank for that beautifully laid down flooring. Whilst beautiful, it takes a long time to lay down but non-flammable.</description>
+        <label>concrete parquet</label>
+        <costList Inherit="False">
+            <FT_WoodConcrete>12</FT_WoodConcrete>
+        </costList>
+        <color>(150,150,150)</color>
+    </TerrainDef>
+
+    <TerrainDef MayRequire="vanillaexpanded.vfearchitect" ParentName="FloorBase">
+        <defName>VFEArch_WoodPlankFloorConcrete</defName>
+        <label>plank concrete floor</label>
+        <renderPrecedence>250</renderPrecedence>
+        <description>concrete prefab plank flooring instead of wooden, for that warm, homey feeling(not really). While it is still quick to lay,but non-flammable.</description>
+        <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+        <burnedDef>BurnedWoodPlankFloor</burnedDef>
+        <color>(150,150,150)</color>
+        <statBases>
+            <WorkToBuild>85</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+        <costList>
+            <FT_WoodConcrete>3</FT_WoodConcrete>
+        </costList>
+        <constructEffect>ConstructWood</constructEffect>
+        <designatorDropdown>VFEArch_WoodFloor</designatorDropdown>
+    </TerrainDef>
+
+    <TerrainDef MayRequire="vanillaexpanded.vfearchitect" ParentName="FloorBase">
+        <renderPrecedence>220</renderPrecedence>
+        <description>Fancy, polished stone tiles for an elegant, mansion-like look. Don’t take nearly as long to lay down as the finer stone floors, but require a lot of resources. They are incredibly beautiful to look at.</description>
+        <texturePath>Terrains/PolishedStoneFloor</texturePath>
+        <statBases>
+            <WorkToBuild>1500</WorkToBuild>
+            <Beauty>2</Beauty>
+        </statBases>
+        <designatorDropdown>VFEArch_PolishedStoneFloor</designatorDropdown>
+        <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+        <researchPrerequisites>
+            <li>Stonecutting</li>
+        </researchPrerequisites>
+        <isPaintable>true</isPaintable>
+
+        <defName>VFEArch_PolishedStoneFloorConcrete</defName>
+        <label>concrete polished stone floor</label>
+        <color>(150,150,150)</color>
+        <costList>
+            <FT_BlocksConcrete>12</FT_BlocksConcrete>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef MayRequire="vanillaexpanded.vfearchitect" ParentName="FloorBase">
+        <renderPrecedence>220</renderPrecedence>
+        <description>Large slabs of stone laid at random for that temple-like look. Beautiful to look at, they take a lot of work to place down and use up large amounts of resources.</description>
+        <texturePath>Terrains/StoneSlabs</texturePath>
+        <statBases>
+            <WorkToBuild>5000</WorkToBuild>
+            <Beauty>3</Beauty>
+        </statBases>
+        <designatorDropdown>VFEArch_StoneSlabs</designatorDropdown>
+        <researchPrerequisites>
+            <li>Stonecutting</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+        <isPaintable>true</isPaintable>
+
+        <defName>VFEArch_SlabsConcrete</defName>
+        <label>concrete slabs</label>
+        <color>(150,150,150)</color>
+        <costList>
+            <FT_BlocksConcrete>8</FT_BlocksConcrete>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef MayRequire="vanillaexpanded.vfearchitect" ParentName="FloorBase">
+        <renderPrecedence>220</renderPrecedence>
+        <description>Random-size stone tiles for a rustical, castle feeling. Take less time to construct than ordinary stone tiles and don’t require stone cutting expertise, but lack the beauty of the polished design.</description>
+        <texturePath>Terrains/Cobblestone</texturePath>
+        <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+        <statBases>
+            <WorkToBuild>200</WorkToBuild>
+            <Beauty>0</Beauty>
+        </statBases>
+        <designatorDropdown>VFEArch_CobblestoneFloor</designatorDropdown>
+        <isPaintable>true</isPaintable>
+
+        <defName>VFEArch_CobblestoneFloorConcrete</defName>
+        <label>concrete cobblestone floor</label>
+        <color>(150,150,150)</color>
+        <costList>
+            <FT_BlocksConcrete>4</FT_BlocksConcrete>
+        </costList>
+    </TerrainDef>
+
+    <TerrainDef MayRequire="vanillaexpanded.vfearchitect">
+        <description>Steel Bridges are structures that can be built on water. Bridges allow more rapid movement across water. Once built, they can support many structures, including heavy structures and any other type of wall. Steel bridges are extremely durable. Bridges allow for easier building in swampy biomes.</description>
+        <texturePath>SteelBridge/SteelBridge</texturePath>
+        <uiIconPath>SteelBridge/SteelBridge_MenuIcon</uiIconPath>
+        <layerable>true</layerable>
+        <bridge>true</bridge>
+        <isPaintable>true</isPaintable>
+        <affordances>
+            <li>Light</li>
+            <li>Medium</li>
+            <li>Heavy</li>
+        </affordances>
+        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+        <designationCategory>Structure</designationCategory>
+        <fertility>0</fertility>
+        <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+        <edgeType>Hard</edgeType>
+        <renderPrecedence>400</renderPrecedence>
+        <autoRebuildable>true</autoRebuildable>
+        <statBases>
+            <WorkToBuild>2500</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+        <tags>
+            <li>Floor</li>
+        </tags>
+        <destroyOnBombDamageThreshold>50</destroyOnBombDamageThreshold>
+        <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+        <destroyEffect>Bridge_Collapse</destroyEffect>
+        <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+        <modExtensions>
+            <li Class="VFEArchitect.TerrainExtension_CustomBridgeProps">
+                <loopPath>SteelBridge/SteelBridgeProps_Loop</loopPath>
+                <rightPath>SteelBridge/SteelBridgeProps_Right</rightPath>
+            </li>
+        </modExtensions>
+
+        <defName>VFEArch_BridgeSteelConcrete</defName>
+        <label>reinforced concrete bridge</label>
+        <costList>
+            <FT_ReinforcedConcreteBag>6</FT_ReinforcedConcreteBag>
+        </costList>
+    </TerrainDef>
+</Defs>

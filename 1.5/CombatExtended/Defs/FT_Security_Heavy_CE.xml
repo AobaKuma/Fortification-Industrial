@@ -309,7 +309,7 @@
 				</targetParams>
 				<recoilPattern>Mounted</recoilPattern>
 				<recoilAmount>0.0</recoilAmount>
-				<!--<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>-->
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
 			</li>
 		</verbs>
 		<comps>
@@ -318,7 +318,7 @@
 				<reloadTime>5</reloadTime>
 				<ammoSet>AmmoSet_FT_105mmHowitzerShell</ammoSet>
 			</li>
-			<li Class="CombatExtended.CompProperties_Charges">
+			<!--<li Class="CombatExtended.CompProperties_Charges">
 				<chargeSpeeds>
 					<li>55</li>
 					<li>75</li>
@@ -327,7 +327,7 @@
 					<li>135</li>
 					<li>155</li>
 				</chargeSpeeds>
-			</li>
+			</li>-->
 			<li Class="Fortification.CompProperties_CastFlecker">
 				<fleck>DustPuffThick</fleck>
 				<burstAmount>10</burstAmount>
@@ -393,14 +393,14 @@
 				<description>switch firing mode</description>
 				<mainCommandIcon>Indirect</mainCommandIcon>
 				<secondaryCommandIcon>Direct</secondaryCommandIcon>
-				<secondaryWeaponChargeSpeeds>
+				<!--<secondaryWeaponChargeSpeeds>
 					<li>55</li>
 					<li>75</li>
 					<li>95</li>
 					<li>115</li>
 					<li>135</li>
 					<li>155</li>
-				</secondaryWeaponChargeSpeeds>
+				</secondaryWeaponChargeSpeeds>-->
 			</li>
 		</comps>
 		<modExtensions>
@@ -498,7 +498,7 @@
 				</targetParams>
 				<recoilPattern>Mounted</recoilPattern>
 				<recoilAmount>0.0</recoilAmount>
-				<!--<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>-->
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
 				<indirectFirePenalty>0.2</indirectFirePenalty>
 			</li>
 		</verbs>
@@ -508,7 +508,7 @@
 				<reloadTime>7.5</reloadTime>
 				<ammoSet>AmmoSet_FT_155mmHowitzerShell_directfire</ammoSet>
 			</li>
-			<li Class="CombatExtended.CompProperties_Charges">
+			<!--<li Class="CombatExtended.CompProperties_Charges">
 				<chargeSpeeds>
 					<li>100</li>
 					<li>120</li>
@@ -517,7 +517,7 @@
 					<li>180</li>
 					<li>200</li>
 				</chargeSpeeds>
-			</li>
+			</li>-->
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiUseBurstMode>false</aiUseBurstMode>
 			</li>
@@ -582,14 +582,14 @@
 				<description>switch firing mode</description>
 				<mainCommandIcon>Indirect</mainCommandIcon>
 				<secondaryCommandIcon>Direct</secondaryCommandIcon>
-				<secondaryWeaponChargeSpeeds>
+				<!--<secondaryWeaponChargeSpeeds>
 					<li>100</li>
 					<li>120</li>
 					<li>140</li>
 					<li>160</li>
 					<li>180</li>
 					<li>200</li>
-				</secondaryWeaponChargeSpeeds>
+				</secondaryWeaponChargeSpeeds>-->
 			</li>
 		</comps>
 		<modExtensions>

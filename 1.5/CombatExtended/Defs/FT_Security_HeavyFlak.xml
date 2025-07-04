@@ -11,11 +11,11 @@
 			<texPath>ATGun/Base_Flak40</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(6,6)</drawSize>
-			<drawOffset>(0,0,0)</drawOffset>
+			<drawOffset>(0,-0.01,0)</drawOffset>
 		</graphicData>
 		<size>(5,5)</size>
 		<uiIconPath>ATGun/Flak40_UI</uiIconPath>
-		<uiIconScale>1.5</uiIconScale>
+		<uiIconScale>1.25</uiIconScale>
 		<statBases>
 			<Bulk>1500</Bulk>
 			<Mass>1850</Mass>

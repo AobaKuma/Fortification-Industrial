@@ -8,7 +8,7 @@
 		<label>105mm Howitzer shells</label>
 		<ammoTypes>
 			<Ammo_105mmHowitzerShell_HE>Bullet_FT_105mmHowitzerShell_HE_directfire</Ammo_105mmHowitzerShell_HE>
-			<!--<Ammo_105mmHowitzerShell_HE_HFuzed>Bullet_FT_105mmHowitzerShell_Airburst_directfire</Ammo_105mmHowitzerShell_HE_HFuzed>-->
+			<Ammo_105mmHowitzerShell_HE_HFuzed MayRequire="DwS.FunctionalAmmunition.Library">Bullet_FT_105mmHowitzerShell_Airburst_directfire</Ammo_105mmHowitzerShell_HE_HFuzed>
 			<Ammo_105mmHowitzerShell_Incendiary>Bullet_FT_105mmHowitzerShell_Incendiary_directfire</Ammo_105mmHowitzerShell_Incendiary>
 			<Ammo_105mmHowitzerShell_EMP>Bullet_FT_105mmHowitzerShell_EMP_directfire</Ammo_105mmHowitzerShell_EMP>
 			<Ammo_105mmHowitzerShell_Smoke>Bullet_FT_105mmHowitzerShell_Smoke_directfire</Ammo_105mmHowitzerShell_Smoke>
@@ -21,7 +21,7 @@
 		<label>105mm Howitzer shells</label>
 		<ammoTypes>
 			<Ammo_105mmHowitzerShell_HE>Bullet_FT_105mmHowitzerShell_HE</Ammo_105mmHowitzerShell_HE>
-			<!--<Ammo_105mmHowitzerShell_HE_HFuzed>Bullet_FT_105mmHowitzerShell_Airburst</Ammo_105mmHowitzerShell_HE_HFuzed>-->
+			<Ammo_105mmHowitzerShell_HE_HFuzed MayRequire="DwS.FunctionalAmmunition.Library">Bullet_FT_105mmHowitzerShell_Airburst</Ammo_105mmHowitzerShell_HE_HFuzed>
 			<Ammo_105mmHowitzerShell_Incendiary>Bullet_FT_105mmHowitzerShell_Incendiary</Ammo_105mmHowitzerShell_Incendiary>
 			<Ammo_105mmHowitzerShell_EMP>Bullet_FT_105mmHowitzerShell_EMP</Ammo_105mmHowitzerShell_EMP>
 			<Ammo_105mmHowitzerShell_Smoke>Bullet_FT_105mmHowitzerShell_Smoke</Ammo_105mmHowitzerShell_Smoke>
@@ -35,7 +35,7 @@
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<speed>0</speed>
+			<speed>75</speed>
 			<soundExplode>MortarBomb_Explode</soundExplode>
 			<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
 			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
@@ -67,20 +67,26 @@
 			<soundExplode>MortarBomb_Explode</soundExplode>
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 		</projectile>
-		<comps>
+		<comps Inherit="false">
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
 					<Fragment_Large>40</Fragment_Large>
 					<Fragment_Small>44</Fragment_Small>
 				</fragments>
 			</li>
+			<li Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze" >
+			   <aimHeightOffset>2.8</aimHeightOffset>
+			   <safeRange>14</safeRange>     <!-- Defult is 0. If delayRange.min < 0, equivalent to delayRange.min + safeRange.-->
+			   <delayRange>1</delayRange>      <!-- Defult is 1.5~3.5 -->
+			   <fragAngleRange>0</fragAngleRange>
+			</li>
 		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseFT105mmHowitzerShell">
+	<ThingDef ParentName="BaseFT105mmHowitzerShell" MayRequire="DwS.FunctionalAmmunition.Library">
 		<defName>Bullet_FT_105mmHowitzerShell_Airburst_directfire</defName>
 		<label>105mm Howitzer shell (Airburst)</label>
-		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<thingClass>D_FuncAmmoLib.Projectile</thingClass>
 		<graphicData>
 			<texPath>Things/Projectile/Cannon/Howitzer/AB</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -90,7 +96,8 @@
 			<damageAmountBase>0</damageAmountBase>
 			<explosionRadius>3</explosionRadius>
 			<soundExplode>MortarBomb_Explode</soundExplode>
-			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>			
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>	
+			<aimHeightOffset>10</aimHeightOffset>			
 		</projectile>
 		<comps Inherit="false">
 			<li Class="CombatExtended.CompProperties_Fragments">
@@ -98,7 +105,13 @@
 					<Fragment_Large>40</Fragment_Large>
 					<Fragment_Small>44</Fragment_Small>
 				</fragments>
-				<fragAngleRange>-89~-10</fragAngleRange>
+				<fragAngleRange>-90~-40</fragAngleRange>
+			</li>
+			<li Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze" >
+			   <aimHeightOffset>10</aimHeightOffset>
+			   <safeRange>14</safeRange>     <!-- Defult is 0. If delayRange.min < 0, equivalent to delayRange.min + safeRange.-->
+			   <delayRange>1</delayRange>      <!-- Defult is 1.5~3.5 -->
+			   <fragAngleRange>0</fragAngleRange>
 			</li>
 		</comps>
 	</ThingDef>
@@ -118,12 +131,18 @@
 			<preExplosionSpawnChance>0.25</preExplosionSpawnChance>
 			<soundExplode>MortarIncendiary_Explode</soundExplode>
 		</projectile>
-		<comps>
+		<comps Inherit="false">
 			<li Class="CombatExtended.CompProperties_ExplosiveCE">
 				<damageAmountBase>120</damageAmountBase>
 				<explosiveDamageType>Thermobaric</explosiveDamageType>
 				<explosiveRadius>2.5</explosiveRadius>
 				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+			<li MayRequire="DwS.FunctionalAmmunition.Library" Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze">
+				<aimHeightOffset>2.8</aimHeightOffset>     <!-- Defult is 1.2,require D_FuncAmmoLib.Verb_Shoot_AB -->
+				<safeRange>14</safeRange>     <!-- Defult is 0. If delayRange.min < 0, equivalent to delayRange.min + safeRange.-->
+				<delayRange>1</delayRange>      <!-- Defult is 1.5~3.5 -->
+				<fragAngleRange>0</fragAngleRange>      <!-- If airburst, modify fragment angle (0 will not modify). Defult is 0 -->
 			</li>
 		</comps>
 	</ThingDef>
@@ -142,6 +161,14 @@
 			<armorPenetrationBlunt>0</armorPenetrationBlunt>
 			<explosionRadius>6.5</explosionRadius>
 		</projectile>
+		<comps>
+			<li MayRequire="DwS.FunctionalAmmunition.Library" Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze">
+				<aimHeightOffset>2.8</aimHeightOffset>     <!-- Defult is 1.2,require D_FuncAmmoLib.Verb_Shoot_AB -->
+				<safeRange>14</safeRange>     <!-- Defult is 0. If delayRange.min < 0, equivalent to delayRange.min + safeRange.-->
+				<delayRange>1</delayRange>      <!-- Defult is 1.5~3.5 -->
+				<fragAngleRange>0</fragAngleRange>      <!-- If airburst, modify fragment angle (0 will not modify). Defult is 0 -->
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef Name="BaseFT105mmHowitzerShell_Smoke" ParentName="BaseFT105mmHowitzerShell">
@@ -167,6 +194,14 @@
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 			<explosionEffect>ExtinguisherExplosion</explosionEffect>
 		</projectile>
+		<comps>
+			<li MayRequire="DwS.FunctionalAmmunition.Library" Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze">
+				<aimHeightOffset>2.8</aimHeightOffset>     <!-- Defult is 1.2,require D_FuncAmmoLib.Verb_Shoot_AB -->
+				<safeRange>14</safeRange>     <!-- Defult is 0. If delayRange.min < 0, equivalent to delayRange.min + safeRange.-->
+				<delayRange>1</delayRange>      <!-- Defult is 1.5~3.5 -->
+				<fragAngleRange>0</fragAngleRange>      <!-- If airburst, modify fragment angle (0 will not modify). Defult is 0 -->
+			</li>
+		</comps>
 	</ThingDef>
 	
 	<!-- indirect fire-->
@@ -177,10 +212,19 @@
 			<shellingProps>
 				<damage>0.26</damage>
 			</shellingProps>	
+			<gravityFactor>30</gravityFactor>
 		</projectile>
+		<comps Inherit="false">
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>40</Fragment_Large>
+					<Fragment_Small>44</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
 	</ThingDef>
 	
-	<ThingDef ParentName="BaseFT105mmHowitzerShell">
+	<ThingDef ParentName="BaseFT105mmHowitzerShell" MayRequire="DwS.FunctionalAmmunition.Library">
 		<defName>Bullet_FT_105mmHowitzerShell_Airburst</defName>
 		<label>105mm Howitzer shell (Airburst)</label>
 		<thingClass>CombatExtended.ProjectileCE_HeightFuse</thingClass>
@@ -199,6 +243,7 @@
 			<shellingProps>
 				<damage>0.26</damage>
 			</shellingProps>		
+			<gravityFactor>30</gravityFactor>
 		</projectile>
 		<comps Inherit="false">
 			<li Class="CombatExtended.CompProperties_Fragments">
@@ -217,8 +262,17 @@
 			<flyOverhead>true</flyOverhead>
 			<shellingProps>
 				<damage>0.26</damage>
-			</shellingProps>	
+			</shellingProps>
+			<gravityFactor>30</gravityFactor>			
 		</projectile>
+		<comps Inherit="false">
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>120</damageAmountBase>
+				<explosiveDamageType>Thermobaric</explosiveDamageType>
+				<explosiveRadius>2.5</explosiveRadius>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseFT105mmHowitzerShell_EMP">
@@ -228,6 +282,7 @@
 			<shellingProps>
 				<damage>0.18</damage>
 			</shellingProps>	
+			<gravityFactor>30</gravityFactor>
 		</projectile>
 	</ThingDef>
 
@@ -238,6 +293,7 @@
 			<shellingProps>
 				<damage>0</damage>
 			</shellingProps>
+			<gravityFactor>30</gravityFactor>
 		</projectile>
 	</ThingDef>
 	

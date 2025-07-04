@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- 重型防空炮 -->
+	<ThingDef ParentName="FT_BaseCannonBuilding_WithShieldOrCementBase">
+		<defName>FT_TurretHeavyFlak</defName>
+		<thingClass>CombatExtended.Building_CIWS_CE</thingClass>
+		<label>Heavy flak gun</label>
+		<description>A high caliber flak cannon lay flat to engage ground target.</description>
+		<graphicData>
+			<texPath>ATGun/Base_Flak40</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(6,6)</drawSize>
+			<drawOffset>(0,-0.01,0)</drawOffset>
+		</graphicData>
+		<size>(5,5)</size>
+		<uiIconPath>ATGun/Flak40_UI</uiIconPath>
+		<uiIconScale>1.25</uiIconScale>
+		<statBases>
+			<Bulk>1500</Bulk>
+			<Mass>1850</Mass>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>9000</WorkToBuild>
+			<ShootingAccuracyTurret>1.25</ShootingAccuracyTurret>
+			<AimingAccuracy>1.25</AimingAccuracy>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>1000</basePowerConsumption>
+		  </li>
+		  <li Class="CompProperties_Flickable"/>
+		</comps>
+		<building>
+			<turretBurstWarmupTime>3.0</turretBurstWarmupTime>
+			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretTopDrawSize>8</turretTopDrawSize>
+			<turretGunDef>FT_Gun_TurretHeavyFlak</turretGunDef>
+		</building>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<costList>
+			<Steel>500</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ReinforcedBarrel>2</ReinforcedBarrel>
+		</costList>
+		<researchPrerequisites>
+			<li>FT_HeavyArtillery</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>FT_Gun_TurretHeavyFlak</defName>
+		<label>Heavy Flak gun</label>
+		<description>A high caliber flak cannon lay flat to engage ground target.</description>
+		<graphicData>
+			<texPath>ATGun/Gun_Flak40</texPath>
+			<drawOffset>(0,0,0)</drawOffset>
+		</graphicData>
+		<uiIconPath>ATGun/Gun_Flak40</uiIconPath>
+		<uiIconScale>1.2</uiIconScale>
+		<statBases>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<SightsEfficiency>2.5</SightsEfficiency>
+			<ShotSpread>0.01</ShotSpread>
+			<SwayFactor>1.34</SwayFactor>
+		</statBases>
+		<weaponTags>
+			<li>TurretGun</li>
+		</weaponTags>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<recoilAmount>0</recoilAmount>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_128x958mmR_HE</defaultProjectile>
+				<warmupTime>3</warmupTime>
+				<minRange>8</minRange>
+				<range>110</range>
+				<soundCast>120mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>32</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<recoilPattern>Mounted</recoilPattern>
+			</li>
+			<li Class="CombatExtended.VerbProperties_CIWSSkyfaller">
+				<verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
+				<recoilAmount>0</recoilAmount>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_128x958mmR_HE</defaultProjectile>
+				<warmupTime>0.1</warmupTime>
+				<range>1000</range>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>120mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>32</muzzleFlashScale>
+				<recoilPattern>Mounted</recoilPattern>
+				<holdFireLabel>HoldCloseInSkyfallersFire</holdFireLabel>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>2</reloadTime>
+				<ammoSet>AmmoSet_128x958mmR</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+			<li Class="Fortification.CompProperties_CastFlecker">
+				<fleck>DustPuff</fleck><!--生成的Fleck,參考原版-->
+				<onGroundOverride>true</onGroundOverride><!--根據砲塔下方地形決定是否產生-->
+				<burstAmount>20</burstAmount><!--一次射擊生成的數量-->
+				<burstSway>110</burstSway><!--噴射角度的左右隨機偏移範圍-->
+				<burstAngle>180</burstAngle><!--生成偏移子彈發射方向的噴射角度(0
+				= 與發射角度同向)-->
+				<fleckSizeRange>(3,5)</fleckSizeRange><!--Fleck的生成大小隨機區間-->
+				<burstSpeedRange>(0.2,0.5)</burstSpeedRange><!--Fleck的飛行速度隨機區間-->
+				<burstOffsetRange>(2,6)</burstOffsetRange> <!--Fleck的生成位置偏移旋轉中心點的距離區間-->
+			</li>
+			<li Class="Fortification.CompProperties_CastFlecker">
+				<fleck>DustPuff</fleck>
+				<onGroundOverride>true</onGroundOverride>
+				<burstAmount>20</burstAmount>
+				<burstSway>70</burstSway>
+				<burstAngle>180</burstAngle>
+				<fleckSizeRange>(3,5)</fleckSizeRange>
+				<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
+				<burstOffsetRange>(2,6)</burstOffsetRange>
+				<rangeScaleFactor>(1,0.1)</rangeScaleFactor>
+			</li>
+			<li Class="Fortification.CompProperties_CastFlecker">
+				<fleck>DustPuff</fleck>
+				<onGroundOverride>true</onGroundOverride>
+				<burstAmount>25</burstAmount>
+				<burstSway>30</burstSway>
+				<burstAngle>0</burstAngle>
+				<fleckSizeRange>(1,2)</fleckSizeRange>
+				<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
+				<burstOffsetRange>(2,6)</burstOffsetRange>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(8,6)</drawSize>
+				<offsets>
+					<li>(4.2,0)</li>
+				</offsets>
+			</li>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingAngleOffset>140</CasingAngleOffset> <!-- 拋彈方向 -->
+				<CasingOffset>(0,-1)</CasingOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<!-- 超重型反坦克炮 -->
+	<ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
+		<defName>FT_TurretUltraHeavyAT</defName>
+		<label>Heavy anti-tank gun</label>
+		<description>A high caliber AT gun with capability to destroy most heavily armored target.</description>
+		<graphicData>
+			<texPath>ATGun/Pak44_Base</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(8,8)</drawSize>
+			<drawOffset>(0,0,-0.0)</drawOffset>
+		</graphicData>
+		<size>(5,5)</size>
+		<uiIconPath>ATGun/Pak44_UI</uiIconPath>
+		<uiIconScale>1.5</uiIconScale>
+		<statBases>
+			<Bulk>1500</Bulk>
+			<Mass>1850</Mass>
+			<MaxHitPoints>1500</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>9000</WorkToBuild>
+			<ShootingAccuracyTurret>1.25</ShootingAccuracyTurret>
+			<AimingAccuracy>1.25</AimingAccuracy>
+		</statBases>
+		<building>
+			<turretBurstWarmupTime>3.0</turretBurstWarmupTime>
+			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+			<ai_combatDangerous>true</ai_combatDangerous>
+			<turretTopDrawSize>8</turretTopDrawSize>
+			<turretGunDef>FT_Gun_TurretUltraHeavyAT</turretGunDef>
+		</building>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<costList>
+			<Steel>500</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<ReinforcedBarrel>2</ReinforcedBarrel>
+		</costList>
+		<researchPrerequisites>
+			<li>FT_HeavyArtillery</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>FT_Gun_TurretUltraHeavyAT</defName>
+		<label>Heavy anti-tank gun</label>
+		<description>A high caliber AT gun with capability to destroy most heavily armored target.</description>
+		<graphicData>
+			<texPath>ATGun/Gun_Pak44</texPath>
+			<drawOffset>(0,0,0)</drawOffset>
+		</graphicData>
+		<uiIconPath>ATGun/Gun_Pak44</uiIconPath>
+		<uiIconScale>1.2</uiIconScale>
+		<statBases>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<SightsEfficiency>2.5</SightsEfficiency>
+			<ShotSpread>0.01</ShotSpread>
+			<SwayFactor>1.34</SwayFactor>
+		</statBases>
+		<weaponTags>
+			<li>TurretGun</li>
+		</weaponTags>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<recoilAmount>0</recoilAmount>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_128x958mmR_HE</defaultProjectile>
+				<warmupTime>3</warmupTime>
+				<minRange>5</minRange>
+				<range>110</range>
+				<soundCast>120mm</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>32</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<recoilPattern>Mounted</recoilPattern>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>1</magazineSize>
+				<reloadTime>6.8</reloadTime>
+				<ammoSet>AmmoSet_128x958mmR_HV</ammoSet>
+			</li>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+			<li Class="Fortification.CompProperties_CastFlecker">
+				<fleck>DustPuff</fleck><!--生成的Fleck,參考原版-->
+				<onGroundOverride>true</onGroundOverride><!--根據砲塔下方地形決定是否產生-->
+				<burstAmount>20</burstAmount><!--一次射擊生成的數量-->
+				<burstSway>110</burstSway><!--噴射角度的左右隨機偏移範圍-->
+				<burstAngle>180</burstAngle><!--生成偏移子彈發射方向的噴射角度(0
+				= 與發射角度同向)-->
+				<fleckSizeRange>(3,5)</fleckSizeRange><!--Fleck的生成大小隨機區間-->
+				<burstSpeedRange>(0.2,0.5)</burstSpeedRange><!--Fleck的飛行速度隨機區間-->
+				<burstOffsetRange>(2,6)</burstOffsetRange> <!--Fleck的生成位置偏移旋轉中心點的距離區間-->
+			</li>
+			<li Class="Fortification.CompProperties_CastFlecker">
+				<fleck>DustPuff</fleck>
+				<onGroundOverride>true</onGroundOverride>
+				<burstAmount>20</burstAmount>
+				<burstSway>70</burstSway>
+				<burstAngle>180</burstAngle>
+				<fleckSizeRange>(3,5)</fleckSizeRange>
+				<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
+				<burstOffsetRange>(2,6)</burstOffsetRange>
+				<rangeScaleFactor>(1,0.1)</rangeScaleFactor>
+			</li>
+			<li Class="Fortification.CompProperties_CastFlecker">
+				<fleck>DustPuff</fleck>
+				<onGroundOverride>true</onGroundOverride>
+				<burstAmount>25</burstAmount>
+				<burstSway>30</burstSway>
+				<burstAngle>0</burstAngle>
+				<fleckSizeRange>(1,2)</fleckSizeRange>
+				<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
+				<burstOffsetRange>(2,6)</burstOffsetRange>
+			</li>
+		</comps>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(8,6)</drawSize>
+				<offsets>
+					<li>(4.2,0)</li>
+				</offsets>
+			</li>
+			<li Class="CombatExtended.GunDrawExtension">
+				<CasingAngleOffset>140</CasingAngleOffset> <!-- 拋彈方向 -->
+				<CasingOffset>(0,-1)</CasingOffset>
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+</Defs>

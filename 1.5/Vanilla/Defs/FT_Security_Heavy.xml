@@ -671,7 +671,7 @@
         <requireLineOfSight>true</requireLineOfSight>
         <isMortar>true</isMortar>
         <warmupTime>2</warmupTime>
-        <minRange>7.9</minRange>
+        <minRange>9.9</minRange>
         <ai_AvoidFriendlyFireRadius>4</ai_AvoidFriendlyFireRadius>
         <range>62</range>
         <burstShotCount>1</burstShotCount>
@@ -688,7 +688,7 @@
   </ThingDef>
   
   <!-- 超重型反坦克炮 -->
-  <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
+  <ThingDef ParentName="FT_BaseCannonBuilding">
     <defName>FT_TurretUltraHeavyAT</defName>
     <label>Heavy anti-tank gun</label>
     <description>A high caliber AT gun with capability to destroy most heavily armored vehicle.</description>
@@ -811,7 +811,7 @@
         <requireLineOfSight>true</requireLineOfSight>
         <isMortar>true</isMortar>
         <warmupTime>2</warmupTime>
-        <minRange>4.9</minRange>
+        <minRange>9.9</minRange>
         <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
         <range>58</range>
         <burstShotCount>1</burstShotCount>

@@ -294,7 +294,7 @@
             <Mass>450</Mass>
         </statBases>
         <comps>
-            <li MayRequire="oskarpotocki.vanillafactionsexpanded.core"
+            <li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam"
                 Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
                 <randomGraphics>
                     <li>ATGun/FT_AntiAirGun_Base</li>
@@ -421,7 +421,7 @@
             <Mass>1509</Mass>
         </statBases>
         <comps>
-            <li MayRequire="oskarpotocki.vanillafactionsexpanded.core"
+            <li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam"
                 Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
                 <randomGraphics>
                     <li>ATGun/FT_AntiAirGun_Base</li>
@@ -560,7 +560,7 @@
             <Mass>814</Mass>
         </statBases>
         <comps>
-            <li MayRequire="oskarpotocki.vanillafactionsexpanded.core"
+            <li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam"
                 Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
                 <randomGraphics>
                     <li>ATGun/FT_AntiTankGun_Base</li>
@@ -695,7 +695,7 @@
             <AimingAccuracy>1.25</AimingAccuracy>
         </statBases>
         <comps>
-            <li MayRequire="oskarpotocki.vanillafactionsexpanded.core"
+            <li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam"
                 Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
                 <randomGraphics>
                     <li>InfantryTurret/FT_HexMortarBase</li>

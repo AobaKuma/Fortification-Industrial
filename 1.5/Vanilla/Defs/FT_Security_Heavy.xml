@@ -550,10 +550,10 @@
     <uiIconPath>ATGun/Flak40_UI</uiIconPath>
     <uiIconScale>1.5</uiIconScale>
     <graphicData>
-      <texPath>ATGun/Flak40_Base</texPath>
+      <texPath>ATGun/Base_Flak40</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(7,7)</drawSize>
-      <drawOffset>(0,0,-0.0)</drawOffset>
+      <drawSize>(6,6)</drawSize>
+      <drawOffset>(0,-0.1,0)</drawOffset>
     </graphicData>
     <size>(5,5)</size>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>

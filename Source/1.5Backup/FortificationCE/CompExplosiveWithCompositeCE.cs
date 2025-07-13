@@ -5,7 +5,6 @@ using CombatExtended;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
-using Fortification;
 
 namespace Fortification
 {

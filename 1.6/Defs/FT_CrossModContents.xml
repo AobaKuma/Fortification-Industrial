@@ -2,11 +2,9 @@
 
 <Defs>
     <TerrainDef MayRequire="vanillaexpanded.vfearchitect">
-        <description>
-            Stone Bridges are structures that can be built on water. Bridges allow more rapid movement across water. Once built, they can support many structures, including heavy structures and any type of wall. Bridges allow for easier building in swampy biomes.
+        <description>Stone Bridges are structures that can be built on water. Bridges allow more rapid movement across water. Once built, they can support many structures, including heavy structures and any type of wall. Bridges allow for easier building in swampy biomes.
 
-            Can be made out of any stone blocks.
-        </description>
+            Can be made out of any stone blocks.</description>
         <texturePath>StoneBridge/StoneBridge</texturePath>
         <layerable>true</layerable>
         <bridge>true</bridge>
@@ -45,7 +43,6 @@
                 <rightPath>StoneBridge/StoneBridgeProps_Right</rightPath>
             </li>
         </modExtensions>
-
         <defName>VFEArch_BridgeConcrete</defName>
         <label>concrete bridge</label>
         <color>(160,160,160)</color>
@@ -67,7 +64,6 @@
         <constructEffect>ConstructWood</constructEffect>
         <designatorDropdown>VFEArch_WoodenParquet</designatorDropdown>
         <isPaintable>true</isPaintable>
-
         <defName>VFEArch_WoodenParquetConcrete</defName>
         <description>using concrete prefab plank for that beautifully laid down flooring. Whilst beautiful, it takes a long time to lay down but non-flammable.</description>
         <label>concrete parquet</label>
@@ -198,7 +194,6 @@
                 <rightPath>SteelBridge/SteelBridgeProps_Right</rightPath>
             </li>
         </modExtensions>
-
         <defName>VFEArch_BridgeSteelConcrete</defName>
         <label>reinforced concrete bridge</label>
         <costList>

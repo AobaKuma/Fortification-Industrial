@@ -28,7 +28,7 @@
             </li>
         </comps>
         <weaponTags>
-            <li>DMS_MechWeaponMeduim</li>
+            <li>DMS_MechWeaponMedium</li>
             <li>A_SuppressWeapon</li>
         </weaponTags>
         <weaponClasses>

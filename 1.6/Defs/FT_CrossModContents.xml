@@ -2,9 +2,7 @@
 
 <Defs>
     <TerrainDef MayRequire="vanillaexpanded.vfearchitect">
-        <description>Stone Bridges are structures that can be built on water. Bridges allow more rapid movement across water. Once built, they can support many structures, including heavy structures and any type of wall. Bridges allow for easier building in swampy biomes.
-
-            Can be made out of any stone blocks.</description>
+        <description>Stone Bridges are structures that can be built on water. Bridges allow more rapid movement across water. Once built, they can support many structures, including heavy structures and any type of wall. Bridges allow for easier building in swampy biomes.\n\nCan be made out of any stone blocks.</description>
         <texturePath>StoneBridge/StoneBridge</texturePath>
         <layerable>true</layerable>
         <bridge>true</bridge>

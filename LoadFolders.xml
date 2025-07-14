@@ -26,9 +26,9 @@
 	<v1.6>
 		<li>/</li>
 		<li>1.6</li>
-		<!-- <li IfModActive="CETeam.CombatExtended,CETeam.CombatExtended_steam">1.6/CombatExtended</li> -->
+		<li IfModActive="CETeam.CombatExtended,CETeam.CombatExtended_steam">1.6/CombatExtended</li>
 		<li IfModNotActive="CETeam.CombatExtended,CETeam.CombatExtended_steam">1.6/Vanilla</li>
-		<li IfModActive="VanillaExpanded.VFESecurity">1.6/VFESecurity</li>
+		<!-- <li IfModActive="VanillaExpanded.VFESecurity">1.6/VFESecurity</li> -->
 		<li IfModActive="imranfish.xmlextensions">1.6/XMLextension</li>
 	</v1.6>
 </loadFolders>

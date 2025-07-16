@@ -170,7 +170,7 @@
 	<ThingDef Name="BaseFT155mmHowitzerShell_Nuclear" ParentName="BaseFT155mmHowitzerShell" MayRequire="Aoba.Fortress.Industrial.NuclearDawn">
 		<defName>FT_Bullet_NuclearWarhead_CE_directfire_II</defName>
 		<label>155mm Howitzer shell (Nuclear)</label>
-		<thingClass>Fortified.ProjectileCE_ExplosiveByComps</thingClass>
+		<thingClass>FortifiedCE.ProjectileCE_ExplosiveByComps</thingClass>
 		<graphicData>
 			<texPath>FT_NuclearDawn/Nukes_projectileCE</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -188,7 +188,7 @@
 			<soundExplode>Explosion_GiantBomb</soundExplode>
 		</projectile>
 		<modExtensions>
-			<li Class="Fortified.ModExtension_ExpolsionWithEvents">
+			<li Class="Fortified.ModExtension_ExpolsionWithConditions">
 				<conditions>
 					<li>
 						<conditionDef>FTND_NuclearFlare</conditionDef>

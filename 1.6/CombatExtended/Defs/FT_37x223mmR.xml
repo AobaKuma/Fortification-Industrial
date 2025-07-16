@@ -197,7 +197,7 @@
 
 	<ThingDef ParentName="Base37x223mmRBullet">
 		<defName>Bullet_FT_37x223mmR_Shrapnel</defName>
-		<thingClass>Fortified.ProjectileCE_ClusterBomb</thingClass>
+		<thingClass>FortifiedCE.ProjectileCE_ClusterBomb</thingClass>
 		<label>37x223mmR shell (Shrapnel)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<!--<aimHeightOffset>3</aimHeightOffset>-->
@@ -355,7 +355,7 @@
 			<screenShakeFactor>0</screenShakeFactor>
 		</projectile>
 		<comps>
-			<li Class="Fortified.CompProperties_Flecker">
+			<!-- 暫時取消<li Class="Fortified.CompProperties_Flecker">
 				<fleck>FT_TrailSmoke</fleck>
 				<fleckSize>0.2</fleckSize>
 			</li>
@@ -366,7 +366,7 @@
 			<li Class="Fortified.CompProperties_Flecker">
 				<fleck>FT_ExhaustFlameGlow</fleck>
 				<fleckSize>0.2</fleckSize>
-			</li>
+			</li> -->
 		</comps>
 	</ThingDef>
 

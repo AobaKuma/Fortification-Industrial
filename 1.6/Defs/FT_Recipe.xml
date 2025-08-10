@@ -3,7 +3,6 @@
 <Defs>
 
     <!-- 工作點 -->
-
     <RecipeDef>
         <defName>FT_Make_ConcreteCompressed</defName>
         <label>Pack concrete</label>
@@ -79,7 +78,6 @@
     </RecipeDef>
 
     <!-- 混凝土攪拌機 -->
-
     <RecipeDef Name="MakeConcreteBase" Abstract="True">
         <jobString>making Concrete from material</jobString>
         <workAmount>600</workAmount>
@@ -209,7 +207,6 @@
             <FT_BlocksConcrete>25</FT_BlocksConcrete>
         </products>
     </RecipeDef>
-
 
     <RecipeDef>
         <defName>FT_Make_ConcreteWood</defName>
@@ -375,6 +372,7 @@
         <effectWorking>Cook</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>5000</workAmount>
+        <allowMixingIngredients>true</allowMixingIngredients>
         <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
         <ingredients>
             <li>
@@ -391,13 +389,11 @@
                 <li>MeatRaw</li>
             </categories>
         </fixedIngredientFilter>
-
         <defaultIngredientFilter>
             <categories>
                 <li>MeatRaw</li>
             </categories>
         </defaultIngredientFilter>
-
         <products>
             <Neutroamine>5</Neutroamine>
         </products>
@@ -444,7 +440,6 @@
         </skillRequirements>
         <workSkill>Crafting</workSkill>
     </RecipeDef>
-
 
     <WorkGiverDef>
         <defName>FT_Operate</defName>

@@ -222,6 +222,9 @@
                 <CooldownTicks>240000</CooldownTicks>
                 <WarmupTicks>36000</WarmupTicks>
             </li>
+            <li Class="Fortified.CompProperties_SubRelay">
+                <relayRange>25</relayRange>
+            </li>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
                 <basePowerConsumption>500</basePowerConsumption>

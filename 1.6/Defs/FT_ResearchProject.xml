@@ -14,16 +14,14 @@
         <description>Electronic Numerical Integrator And Computer, known as ENIAC is a Turing-complete general-purpose digital computer able to solve "a large class of numerical problems" through reprogramming.</description>
         <baseCost>1000</baseCost>
         <discoveredLetterTitle>Data Disk: ENIAC</discoveredLetterTitle>
-        <discoveredLetterText>
-            [Interstellar Industries Complex Nara Terminal]
+        <discoveredLetterText>[Interstellar Industries Complex Nara Terminal]
             [ version="1.5"] [ encoding="UTF-8" ]
             Loading....
 
             [To user]
             Being able to build ENIAC and read this information means that you or your civilization already has the minimum requirements for the realization of the technology in the disc.
             We look forward to further cooperation with you to create a beautiful industrialized society in the rimworld.
-            OS>:_
-        </discoveredLetterText>
+            OS>:_</discoveredLetterText>
         <discoveredLetterDisabledWhen>
             <bigThreatsDisabled>true</bigThreatsDisabled>
         </discoveredLetterDisabledWhen>

@@ -129,7 +129,7 @@
         </weaponTags>
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
-                <recoilAmount>0.8</recoilAmount>
+                <recoilAmount>0.41</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_762x54mmR_FMJ</defaultProjectile>
@@ -145,7 +145,7 @@
             <!--防空数值补偿：瞄准时间降至0.01，后座力75%，射程全图，删除最小射程-->
             <li Class="CombatExtended.VerbProperties_CIWSSkyfaller">
                 <verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
-                <recoilAmount>0.6</recoilAmount>
+                <recoilAmount>0.41</recoilAmount>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_762x54mmR_FMJ</defaultProjectile>
                 <warmupTime>0.01</warmupTime>
@@ -250,7 +250,7 @@
         </weaponTags>
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
-                <recoilAmount>1.65</recoilAmount>
+                <recoilAmount>0.3</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>True</hasStandardCommand>
                 <defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
@@ -266,7 +266,7 @@
             <!--防空数值补偿：瞄准时间降至0.01，后座力75%，射程全图，删除最小射程-->
             <li Class="CombatExtended.VerbProperties_CIWSSkyfaller">
                 <verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
-                <recoilAmount>1.23</recoilAmount>
+                <recoilAmount>0.3</recoilAmount>
                 <hasStandardCommand>True</hasStandardCommand>
                 <defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
                 <warmupTime>0.01</warmupTime>
@@ -361,7 +361,7 @@
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-                <recoilAmount>1.55</recoilAmount>
+                <recoilAmount>0.28</recoilAmount>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
                 <warmupTime>1</warmupTime>
@@ -376,7 +376,7 @@
             <!--防空数值补偿：瞄准时间降至0.01，后座力75%，射程全图，删除最小射程-->
             <li Class="CombatExtended.VerbProperties_CIWSSkyfaller">
                 <verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
-                <recoilAmount>1.16</recoilAmount>
+                <recoilAmount>0.28</recoilAmount>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
                 <warmupTime>0.01</warmupTime>

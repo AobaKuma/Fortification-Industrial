@@ -191,7 +191,7 @@
 			<speed>162</speed>
 		</projectile>
 		<comps>
-			<li MayRequire="DwS.FunctionalAmmunition.Library" Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze" >
+			<li Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze" MayRequire="DwS.FunctionalAmmunition.Library">
 			   <aimHeightOffset>0</aimHeightOffset>
 			   <!-- Require D_FuncAmmoLib.Verb_Shoot @SuppressFire mode, equivalent to projectile/projectile. -->
 			   <safeRange>8</safeRange>     <!-- Defult is 0. If delayRange.min < 0, equivalent to delayRange.min + safeRange.-->

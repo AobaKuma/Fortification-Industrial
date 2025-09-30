@@ -74,7 +74,7 @@
 					<Fragment_Small>44</Fragment_Small>
 				</fragments>
 			</li>
-			<li Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze" >
+			<li Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze" MayRequire="DwS.FunctionalAmmunition.Library">
 			   <aimHeightOffset>2.8</aimHeightOffset>
 			   <safeRange>14</safeRange>     <!-- Defult is 0. If delayRange.min < 0, equivalent to delayRange.min + safeRange.-->
 			   <delayRange>1</delayRange>      <!-- Defult is 1.5~3.5 -->
@@ -107,7 +107,7 @@
 				</fragments>
 				<fragAngleRange>-90~-40</fragAngleRange>
 			</li>
-			<li Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze" >
+			<li Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze" MayRequire="DwS.FunctionalAmmunition.Library">
 			   <aimHeightOffset>10</aimHeightOffset>
 			   <safeRange>14</safeRange>     <!-- Defult is 0. If delayRange.min < 0, equivalent to delayRange.min + safeRange.-->
 			   <delayRange>1</delayRange>      <!-- Defult is 1.5~3.5 -->
@@ -138,7 +138,7 @@
 				<explosiveRadius>2.5</explosiveRadius>
 				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 			</li>
-			<li MayRequire="DwS.FunctionalAmmunition.Library" Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze">
+			<li Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze" MayRequire="DwS.FunctionalAmmunition.Library">
 				<aimHeightOffset>2.8</aimHeightOffset>     <!-- Defult is 1.2,require D_FuncAmmoLib.Verb_Shoot_AB -->
 				<safeRange>14</safeRange>     <!-- Defult is 0. If delayRange.min < 0, equivalent to delayRange.min + safeRange.-->
 				<delayRange>1</delayRange>      <!-- Defult is 1.5~3.5 -->
@@ -162,7 +162,7 @@
 			<explosionRadius>6.5</explosionRadius>
 		</projectile>
 		<comps>
-			<li MayRequire="DwS.FunctionalAmmunition.Library" Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze">
+			<li Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze" MayRequire="DwS.FunctionalAmmunition.Library">
 				<aimHeightOffset>2.8</aimHeightOffset>     <!-- Defult is 1.2,require D_FuncAmmoLib.Verb_Shoot_AB -->
 				<safeRange>14</safeRange>     <!-- Defult is 0. If delayRange.min < 0, equivalent to delayRange.min + safeRange.-->
 				<delayRange>1</delayRange>      <!-- Defult is 1.5~3.5 -->
@@ -195,7 +195,7 @@
 			<explosionEffect>ExtinguisherExplosion</explosionEffect>
 		</projectile>
 		<comps>
-			<li MayRequire="DwS.FunctionalAmmunition.Library" Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze">
+			<li Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze" MayRequire="DwS.FunctionalAmmunition.Library">
 				<aimHeightOffset>2.8</aimHeightOffset>     <!-- Defult is 1.2,require D_FuncAmmoLib.Verb_Shoot_AB -->
 				<safeRange>14</safeRange>     <!-- Defult is 0. If delayRange.min < 0, equivalent to delayRange.min + safeRange.-->
 				<delayRange>1</delayRange>      <!-- Defult is 1.5~3.5 -->

@@ -110,7 +110,7 @@
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiAimMode>AimedShot</aiAimMode>
 			</li>
-			<li Class="Fortification.CompProperties_CastFlecker">
+			<li Class="Fortified.CompProperties_CastFlecker">
 				<fleck>DustPuff</fleck><!--生成的Fleck,參考原版-->
 				<onGroundOverride>true</onGroundOverride><!--根據砲塔下方地形決定是否產生-->
 				<burstAmount>20</burstAmount><!--一次射擊生成的數量-->
@@ -121,7 +121,7 @@
 				<burstSpeedRange>(0.2,0.5)</burstSpeedRange><!--Fleck的飛行速度隨機區間-->
 				<burstOffsetRange>(2,6)</burstOffsetRange> <!--Fleck的生成位置偏移旋轉中心點的距離區間-->
 			</li>
-			<li Class="Fortification.CompProperties_CastFlecker">
+			<li Class="Fortified.CompProperties_CastFlecker">
 				<fleck>DustPuff</fleck>
 				<onGroundOverride>true</onGroundOverride>
 				<burstAmount>20</burstAmount>
@@ -132,7 +132,7 @@
 				<burstOffsetRange>(2,6)</burstOffsetRange>
 				<rangeScaleFactor>(1,0.1)</rangeScaleFactor>
 			</li>
-			<li Class="Fortification.CompProperties_CastFlecker">
+			<li Class="Fortified.CompProperties_CastFlecker">
 				<fleck>DustPuff</fleck>
 				<onGroundOverride>true</onGroundOverride>
 				<burstAmount>25</burstAmount>
@@ -245,7 +245,7 @@
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aiAimMode>AimedShot</aiAimMode>
 			</li>
-			<li Class="Fortification.CompProperties_CastFlecker">
+			<li Class="Fortified.CompProperties_CastFlecker">
 				<fleck>DustPuff</fleck><!--生成的Fleck,參考原版-->
 				<onGroundOverride>true</onGroundOverride><!--根據砲塔下方地形決定是否產生-->
 				<burstAmount>20</burstAmount><!--一次射擊生成的數量-->
@@ -256,7 +256,7 @@
 				<burstSpeedRange>(0.2,0.5)</burstSpeedRange><!--Fleck的飛行速度隨機區間-->
 				<burstOffsetRange>(2,6)</burstOffsetRange> <!--Fleck的生成位置偏移旋轉中心點的距離區間-->
 			</li>
-			<li Class="Fortification.CompProperties_CastFlecker">
+			<li Class="Fortified.CompProperties_CastFlecker">
 				<fleck>DustPuff</fleck>
 				<onGroundOverride>true</onGroundOverride>
 				<burstAmount>20</burstAmount>
@@ -267,7 +267,7 @@
 				<burstOffsetRange>(2,6)</burstOffsetRange>
 				<rangeScaleFactor>(1,0.1)</rangeScaleFactor>
 			</li>
-			<li Class="Fortification.CompProperties_CastFlecker">
+			<li Class="Fortified.CompProperties_CastFlecker">
 				<fleck>DustPuff</fleck>
 				<onGroundOverride>true</onGroundOverride>
 				<burstAmount>25</burstAmount>

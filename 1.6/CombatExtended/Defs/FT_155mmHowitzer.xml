@@ -223,7 +223,7 @@
 			<soundExplode>Explosion_GiantBomb</soundExplode>
 		</projectile>
 		<modExtensions>
-			<li Class="Fortification.ModExtension_ExpolsionWithConditions">
+			<li Class="Fortified.ModExtension_ExpolsionWithConditions">
 				<conditions>
 					<li>
 						<conditionDef>FTND_NuclearFlare</conditionDef>
@@ -272,7 +272,7 @@
 					</li>
 				</conditions>
 			</li>
-			<li Class="Fortification.ModExtension_CompositeExplosion">
+			<li Class="Fortified.ModExtension_CompositeExplosion">
 				<compositeExplosions>
 					<li>
 						<!--核爆心-->

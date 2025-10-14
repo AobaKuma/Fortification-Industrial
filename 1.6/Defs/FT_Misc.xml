@@ -429,7 +429,7 @@
             <MaxHitPoints>50</MaxHitPoints>
             <WorkToBuild>1500</WorkToBuild>
             <Mass>10</Mass>
-            <Flammability>1.0</Flammability>
+            <Flammability>0</Flammability>
             <Beauty>-8</Beauty>
         </statBases>
         <fillPercent>0.30</fillPercent>

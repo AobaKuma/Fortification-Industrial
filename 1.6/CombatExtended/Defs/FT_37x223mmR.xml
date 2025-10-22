@@ -11,7 +11,7 @@
 			<Ammo_37x223mmR_HE>Bullet_FT_37x223mmR_HE</Ammo_37x223mmR_HE>
 			<Ammo_37x223mmR_Canister>Bullet_FT_37x223mmR_Canister</Ammo_37x223mmR_Canister>
 			<Ammo_37x223mmR_Shrapnel>Bullet_FT_37x223mmR_Shrapnel</Ammo_37x223mmR_Shrapnel>
-			<Ammo_37x223mmR_HESH>Bullet_FT_37x223mmR_HESH</Ammo_37x223mmR_HESH>
+			<!--<Ammo_37x223mmR_HESH>Bullet_FT_37x223mmR_HESH</Ammo_37x223mmR_HESH>--><!--HESH需要足夠口徑才有用-->
 			<Ammo_37x223mmR_APDS>Bullet_FT_37x223mmR_APDS</Ammo_37x223mmR_APDS>
 			<Ammo_37x223mmR_EMP>Bullet_FT_37x223mmR_EMP</Ammo_37x223mmR_EMP>
 			<Ammo_37x223mmR_AP-HE>Bullet_FT_37x223mmR_AP-HE</Ammo_37x223mmR_AP-HE>
@@ -53,7 +53,7 @@
 		<cookOffProjectile>Bullet_FT_37x223mmR_Canister</cookOffProjectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo37x223mmRBase">
+	<!--<ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo37x223mmRBase">
 		<defName>Ammo_37x223mmR_HESH</defName>
 		<label>37x223mmR cartridge (HESH)</label>
 		<graphicData>
@@ -67,7 +67,7 @@
 		</statBases>
 		<ammoClass>FT_HESH</ammoClass>
 		<cookOffProjectile>Bullet_FT_37x223mmR_HESH</cookOffProjectile>
-	</ThingDef>
+	</ThingDef>-->
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo37x223mmRBase">
 		<defName>Ammo_37x223mmR_APDS</defName>
@@ -242,9 +242,8 @@
 		</modExtensions>
 	</ThingDef>
 
-	<ThingDef ParentName="Base37x223mmRBullet">
+	<!--<ThingDef ParentName="Base37x223mmRBullet">
 		<defName>Bullet_FT_37x223mmR_HESH</defName>
-		<!--<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>-->
 		<label>37x223mmR shell (HESH)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<speed>125</speed>
@@ -262,7 +261,7 @@
 				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 			</li>
 		</comps>
-	</ThingDef>
+	</ThingDef>-->
 
 	<ThingDef ParentName="Base37x223mmRBullet">
 		<defName>Bullet_FT_37x223mmR_APDS</defName>
@@ -468,7 +467,7 @@
 		<workAmount>9000</workAmount>
 	</RecipeDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<!--<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_37x223mmR_HESH</defName>
 		<label>make 37x223mmR (HESH) cartridge x25</label>
 		<description>Craft 25 37x223mmR (HESH) cartridges.</description>
@@ -514,7 +513,7 @@
 			<Crafting>4</Crafting>
 		</skillRequirements>
 		<workAmount>9000</workAmount>
-	</RecipeDef>
+	</RecipeDef>-->
 
 	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_37x223mmR_APDS</defName>

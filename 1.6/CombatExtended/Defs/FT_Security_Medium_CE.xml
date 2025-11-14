@@ -273,7 +273,7 @@
     <!-- 單裝防空炮 -->
     <ThingDef ParentName="FT_BaseCannonBuilding_WithShieldOrCementBase">
         <defName>FT_TurretAA</defName>
-        <thingClass>CombatExtended.Building_CIWS_CE</thingClass>
+        <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
         <label>Anti Air Gun</label>
         <description>A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field.</description>
         <uiIconPath>ATGun/FT_AntiAirGun</uiIconPath>
@@ -303,7 +303,21 @@
                     <li>FT_ConcreteArtilleryBase/TurretArtillery_Base_AA</li>
                 </randomGraphics>
             </li>
+			<li Class="CombatExtended.CompProperties_FireArc">
+				<spanRange>10~360</spanRange>
+				<maxSpanDeviation>180</maxSpanDeviation>
+			</li>
         </comps>
+        <modExtensions>
+			<li Class="CombatExtended.NonSnapTurretExtension">
+				<speed>2</speed>
+				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
+        </modExtensions>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
         <building>
             <turretGunDef>FT_Gun_TurretAA</turretGunDef>
             <turretTopDrawSize>4</turretTopDrawSize>
@@ -312,10 +326,19 @@
         </building>
         <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
         <costList>
-            <Steel>350</Steel>
+            <Steel>425</Steel>
             <ComponentIndustrial>5</ComponentIndustrial>
-            <ReinforcedBarrel>1</ReinforcedBarrel>
+			<!--<ReinforcedBarrel>1</ReinforcedBarrel>-->
         </costList>
+		<costListForDifficulty>
+			<difficultyVar>classicMortars</difficultyVar>
+			<invert>true</invert>
+			<costList>
+				<Steel>350</Steel>
+				<ComponentIndustrial>5</ComponentIndustrial>
+				<ReinforcedBarrel>1</ReinforcedBarrel>
+			</costList>
+		</costListForDifficulty>
         <researchPrerequisites>
             <li>FT_IndustrialCannon</li>
         </researchPrerequisites>
@@ -344,7 +367,7 @@
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
-                <warmupTime>1.25</warmupTime>
+                <warmupTime>0.62</warmupTime>
                 <minRange>3.9</minRange>
                 <range>90</range>
                 <burstShotCount>4</burstShotCount>
@@ -352,21 +375,6 @@
                 <soundCast>Shot_Autocannon</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>12</muzzleFlashScale>
-                <recoilPattern>Mounted</recoilPattern>
-            </li>
-            <!--防空数值补偿：瞄准时间降至0.01，后座力75%，射程全图，删除最小射程-->
-            <li Class="CombatExtended.VerbProperties_CIWSSkyfaller">
-                <verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
-                <recoilAmount>0.28</recoilAmount>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
-                <warmupTime>0.01</warmupTime>
-                <range>2500</range>
-                <burstShotCount>4</burstShotCount>
-                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-                <soundCast>Shot_Autocannon</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
-                <muzzleFlashScale>18</muzzleFlashScale>
                 <recoilPattern>Mounted</recoilPattern>
             </li>
         </verbs>
@@ -391,16 +399,13 @@
                 <burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
                 <burstOffsetRange>(1,3)</burstOffsetRange>
             </li>
-            <li>
-                <compClass>CombatExtended.CompVerbDisabler</compClass>
-            </li>
         </comps>
     </ThingDef>
 
     <!-- 四聯防空炮 -->
     <ThingDef ParentName="FT_BaseCannonBuilding_WithShieldOrCementBase">
         <defName>FT_TurretQuadAA</defName>
-        <thingClass>CombatExtended.Building_CIWS_CE</thingClass>
+        <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
         <label>Quad Anti Air Gun</label>
         <description>A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field.</description>
         <uiIconPath>ATGun/FT_AntiAirGun_Vierling</uiIconPath>
@@ -430,7 +435,21 @@
                     <li>FT_ConcreteArtilleryBase/TurretArtillery_Base_AA</li>
                 </randomGraphics>
             </li>
+			<li Class="CombatExtended.CompProperties_FireArc">
+				<spanRange>10~360</spanRange>
+				<maxSpanDeviation>180</maxSpanDeviation>
+			</li>
         </comps>
+        <modExtensions>
+			<li Class="CombatExtended.NonSnapTurretExtension">
+				<speed>1.85</speed>
+				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
+        </modExtensions>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
         <building>
             <turretGunDef>FT_Gun_TurretQuadAA</turretGunDef>
             <turretTopDrawSize>4</turretTopDrawSize>
@@ -439,10 +458,19 @@
         </building>
         <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
         <costList>
-            <Steel>400</Steel>
+            <Steel>700</Steel>
             <ComponentIndustrial>20</ComponentIndustrial>
-            <ReinforcedBarrel>4</ReinforcedBarrel>
+            <!--<ReinforcedBarrel>4</ReinforcedBarrel>-->
         </costList>
+		<costListForDifficulty>
+			<difficultyVar>classicMortars</difficultyVar>
+			<invert>true</invert>
+			<costList>
+				<Steel>400</Steel>
+				<ComponentIndustrial>20</ComponentIndustrial>
+				<ReinforcedBarrel>4</ReinforcedBarrel>
+			</costList>
+		</costListForDifficulty>
         <researchPrerequisites>
             <li>FT_IndustrialCannon</li>
         </researchPrerequisites>
@@ -471,24 +499,9 @@
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
-                <warmupTime>1.5</warmupTime>
+                <warmupTime>0.75</warmupTime>
                 <minRange>3.9</minRange>
                 <range>90</range>
-                <burstShotCount>8</burstShotCount>
-                <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
-                <soundCast>Shot_Autocannon</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
-                <muzzleFlashScale>18</muzzleFlashScale>
-                <recoilPattern>Mounted</recoilPattern>
-            </li>
-            <!--防空数值补偿：瞄准时间降至0.01，后座力75%，射程全图，删除最小射程-->
-            <li Class="CombatExtended.VerbProperties_CIWSSkyfaller">
-                <verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
-                <recoilAmount>0.26</recoilAmount>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
-                <warmupTime>0.01</warmupTime>
-                <range>2500</range>
                 <burstShotCount>8</burstShotCount>
                 <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
                 <soundCast>Shot_Autocannon</soundCast>
@@ -518,9 +531,6 @@
                 <fleckSizeRange>(1,2)</fleckSizeRange>
                 <burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
                 <burstOffsetRange>(1,3.5)</burstOffsetRange>
-            </li>
-            <li>
-                <compClass>CombatExtended.CompVerbDisabler</compClass>
             </li>
         </comps>
         <modExtensions>
@@ -569,7 +579,21 @@
                     <li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Wheel_Sec</li>
                 </randomGraphics>
             </li>
+			<li Class="CombatExtended.CompProperties_FireArc">
+				<spanRange>10~360</spanRange>
+				<maxSpanDeviation>180</maxSpanDeviation>
+			</li>
         </comps>
+        <modExtensions>
+			<li Class="CombatExtended.NonSnapTurretExtension">
+				<speed>1.5</speed>
+				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
+        </modExtensions>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
         <building>
             <turretGunDef>FT_Gun_TurretAT</turretGunDef>
             <turretTopDrawSize>4</turretTopDrawSize>
@@ -578,10 +602,19 @@
         </building>
         <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
         <costList>
-            <Steel>425</Steel>
+            <Steel>500</Steel>
             <ComponentIndustrial>4</ComponentIndustrial>
-            <ReinforcedBarrel>1</ReinforcedBarrel>
+            <!--<ReinforcedBarrel>1</ReinforcedBarrel>-->
         </costList>
+		<costListForDifficulty>
+			<difficultyVar>classicMortars</difficultyVar>
+			<invert>true</invert>
+			<costList>
+				<Steel>425</Steel>
+				<ComponentIndustrial>4</ComponentIndustrial>
+				<ReinforcedBarrel>1</ReinforcedBarrel>
+			</costList>
+		</costListForDifficulty>
         <researchPrerequisites>
             <li>FT_IndustrialCannon</li>
         </researchPrerequisites>
@@ -609,7 +642,7 @@
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_FT_37x223mmR_Canister</defaultProjectile>
-                <warmupTime>1.5</warmupTime>
+                <warmupTime>0.75</warmupTime>
                 <minRange>3.9</minRange>
                 <range>90</range>
                 <soundCast>FT_CannonLaunchA</soundCast>
@@ -704,7 +737,21 @@
                     <li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Wheel_Sec</li>
                 </randomGraphics>
             </li>
+			<li Class="CombatExtended.CompProperties_FireArc">
+				<spanRange>10~360</spanRange>
+				<maxSpanDeviation>180</maxSpanDeviation>
+			</li>
         </comps>
+        <modExtensions>
+			<li Class="CombatExtended.NonSnapTurretExtension">
+				<speed>0.5</speed>
+				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
+        </modExtensions>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
         <building>
             <turretBurstWarmupTime>3.0</turretBurstWarmupTime>
             <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
@@ -714,10 +761,19 @@
         </building>
         <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
         <costList>
-            <Steel>500</Steel>
+            <Steel>725</Steel>
             <ComponentIndustrial>6</ComponentIndustrial>
-            <ReinforcedBarrel>2</ReinforcedBarrel>
+            <!--<ReinforcedBarrel>2</ReinforcedBarrel>-->
         </costList>
+		<costListForDifficulty>
+			<difficultyVar>classicMortars</difficultyVar>
+			<invert>true</invert>
+			<costList>
+				<Steel>500</Steel>
+				<ComponentIndustrial>6</ComponentIndustrial>
+				<ReinforcedBarrel>2</ReinforcedBarrel>
+			</costList>
+		</costListForDifficulty>
         <researchPrerequisites>
             <li>FT_HeavyArtillery</li>
         </researchPrerequisites>
@@ -748,7 +804,7 @@
                 <recoilAmount>0</recoilAmount>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_762x385mmRCannonShell_HEAT</defaultProjectile>
-                <warmupTime>3</warmupTime>
+                <warmupTime>1.5</warmupTime>
                 <minRange>5</minRange>
                 <range>110</range>
                 <soundCast>120mm</soundCast>

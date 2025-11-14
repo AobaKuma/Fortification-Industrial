@@ -72,7 +72,7 @@
     <!--聯裝機槍-->
     <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
         <defName>FT_Maxim4M</defName>
-        <thingClass>CombatExtended.Building_CIWS_CE</thingClass>
+        <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
         <label>Quad Machine gun</label>
         <description>A Tripod with Quadruple machine gun mounted so it Have a good firepower continuity,need a pawn man on it to operate. Requires steel to refurbish its barrels after heavy use.</description>
         <uiIconPath>InfantryTurret/FT_QuadMaximGun_icon</uiIconPath>
@@ -91,7 +91,21 @@
             <Bulk>100</Bulk>
         </statBases>
         <comps>
+			<li Class="CombatExtended.CompProperties_FireArc">
+				<spanRange>10~360</spanRange>
+				<maxSpanDeviation>180</maxSpanDeviation>
+			</li>
         </comps>
+        <modExtensions>
+			<li Class="CombatExtended.NonSnapTurretExtension">
+				<speed>3</speed>
+				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
+        </modExtensions>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
         <costList>
             <Steel>160</Steel>
             <ComponentIndustrial>16</ComponentIndustrial>
@@ -133,23 +147,8 @@
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_762x54mmR_FMJ</defaultProjectile>
-                <warmupTime>0.75</warmupTime>
+                <warmupTime>0.38</warmupTime>
                 <range>62</range>
-                <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
-                <burstShotCount>20</burstShotCount>
-                <soundCast>GunShotA</soundCast>
-                <soundCastTail>GunTail_Light</soundCastTail>
-                <muzzleFlashScale>9</muzzleFlashScale>
-                <recoilPattern>Mounted</recoilPattern>
-            </li>
-            <!--防空数值补偿：瞄准时间降至0.01，后座力75%，射程全图，删除最小射程-->
-            <li Class="CombatExtended.VerbProperties_CIWSSkyfaller">
-                <verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
-                <recoilAmount>0.41</recoilAmount>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Bullet_762x54mmR_FMJ</defaultProjectile>
-                <warmupTime>0.01</warmupTime>
-                <range>1000</range>
                 <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
                 <burstShotCount>20</burstShotCount>
                 <soundCast>GunShotA</soundCast>
@@ -170,9 +169,6 @@
                 <aimedBurstShotCount>10</aimedBurstShotCount>
                 <noSingleShot>true</noSingleShot>
             </li>
-            <li>
-                <compClass>CombatExtended.CompVerbDisabler</compClass>
-            </li>
         </comps>
         <modExtensions>
             <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
@@ -192,7 +188,7 @@
     <!--單裝機砲-->
     <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
         <defName>FT_AutoCannon</defName>
-        <thingClass>CombatExtended.Building_CIWS_CE</thingClass>
+        <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
         <label>autocannon</label>
         <description>A Tripod with high caliber machine gun mounted. Requires steel to refurbish its barrels after heavy use.it needs a pawn to man on it to operate.</description>
         <uiIconPath>InfantryTurret/FT_AutoCannonGun_icon</uiIconPath>
@@ -211,11 +207,36 @@
             <Bulk>334</Bulk>
             <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
         </statBases>
+        <comps>
+			<li Class="CombatExtended.CompProperties_FireArc">
+				<spanRange>10~360</spanRange>
+				<maxSpanDeviation>180</maxSpanDeviation>
+			</li>
+        </comps>
+        <modExtensions>
+			<li Class="CombatExtended.NonSnapTurretExtension">
+				<speed>3</speed>
+				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
+        </modExtensions>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
         <costList>
-            <Steel>120</Steel>
+            <Steel>195</Steel>
             <ComponentIndustrial>4</ComponentIndustrial>
-            <ReinforcedBarrel>1</ReinforcedBarrel>
+            <!--<ReinforcedBarrel>1</ReinforcedBarrel>-->
         </costList>
+		<costListForDifficulty>
+			<difficultyVar>classicMortars</difficultyVar>
+			<invert>true</invert>
+			<costList>
+				<Steel>120</Steel>
+				<ComponentIndustrial>4</ComponentIndustrial>
+				<ReinforcedBarrel>1</ReinforcedBarrel>
+			</costList>
+		</costListForDifficulty>
         <interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <building>
             <turretTopDrawSize>2.5</turretTopDrawSize>
@@ -254,23 +275,8 @@
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>True</hasStandardCommand>
                 <defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
-                <warmupTime>1</warmupTime>
+                <warmupTime>0.58</warmupTime>
                 <range>86</range>
-                <burstShotCount>6</burstShotCount>
-                <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
-                <soundCast>Shot_Autocannon</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
-                <muzzleFlashScale>12</muzzleFlashScale>
-                <recoilPattern>Mounted</recoilPattern>
-            </li>
-            <!--防空数值补偿：瞄准时间降至0.01，后座力75%，射程全图，删除最小射程-->
-            <li Class="CombatExtended.VerbProperties_CIWSSkyfaller">
-                <verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
-                <recoilAmount>0.3</recoilAmount>
-                <hasStandardCommand>True</hasStandardCommand>
-                <defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
-                <warmupTime>0.01</warmupTime>
-                <range>2500</range>
                 <burstShotCount>6</burstShotCount>
                 <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
                 <soundCast>Shot_Autocannon</soundCast>
@@ -289,9 +295,6 @@
                 <aiUseBurstMode>FALSE</aiUseBurstMode>
                 <aiAimMode>Snapshot</aiAimMode>
                 <aimedBurstShotCount>3</aimedBurstShotCount>
-            </li>
-            <li>
-                <compClass>CombatExtended.CompVerbDisabler</compClass>
             </li>
         </comps>
     </ThingDef>
@@ -320,11 +323,36 @@
             <ShootingAccuracyTurret>1.0</ShootingAccuracyTurret>
             <AimingAccuracy>1.0</AimingAccuracy>
         </statBases>
+        <comps>
+			<li Class="CombatExtended.CompProperties_FireArc">
+				<spanRange>10~360</spanRange>
+				<maxSpanDeviation>180</maxSpanDeviation>
+			</li>
+        </comps>
+        <modExtensions>
+			<li Class="CombatExtended.NonSnapTurretExtension">
+				<speed>2</speed>
+				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
+        </modExtensions>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
         <costList>
-            <Steel>180</Steel>
+            <Steel>330</Steel>
             <ComponentIndustrial>9</ComponentIndustrial>
-            <ReinforcedBarrel>2</ReinforcedBarrel>
+            <!--<ReinforcedBarrel>2</ReinforcedBarrel>-->
         </costList>
+		<costListForDifficulty>
+			<difficultyVar>classicMortars</difficultyVar>
+			<invert>true</invert>
+			<costList>
+				<Steel>180</Steel>
+				<ComponentIndustrial>9</ComponentIndustrial>
+				<ReinforcedBarrel>2</ReinforcedBarrel>
+			</costList>
+		</costListForDifficulty>
         <interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <building>
             <ai_combatDangerous>true</ai_combatDangerous>
@@ -364,7 +392,7 @@
                 <recoilAmount>0.28</recoilAmount>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
-                <warmupTime>1</warmupTime>
+                <warmupTime>0.67</warmupTime>
                 <range>86</range>
                 <burstShotCount>4</burstShotCount>
                 <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
@@ -438,12 +466,37 @@
             <Mass>210</Mass>
             <Bulk>340</Bulk>
         </statBases>
+        <comps>
+			<li Class="CombatExtended.CompProperties_FireArc">
+				<spanRange>10~360</spanRange>
+				<maxSpanDeviation>180</maxSpanDeviation>
+			</li>
+        </comps>
+        <modExtensions>
+			<li Class="CombatExtended.NonSnapTurretExtension">
+				<speed>1.5</speed>
+				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
+        </modExtensions>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
         <interactionCellOffset>(-1,0,-1)</interactionCellOffset>
         <costList>
-            <Steel>150</Steel>
-            <ReinforcedBarrel>1</ReinforcedBarrel>
+            <Steel>225</Steel>
+            <!--<ReinforcedBarrel>1</ReinforcedBarrel>-->
             <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
+		<costListForDifficulty>
+			<difficultyVar>classicMortars</difficultyVar>
+			<invert>true</invert>
+			<costList>
+				<Steel>150</Steel>
+				<ComponentIndustrial>5</ComponentIndustrial>
+				<ReinforcedBarrel>1</ReinforcedBarrel>
+			</costList>
+		</costListForDifficulty>
         <building>
             <turretGunDef>FT_Gun_Recoilless</turretGunDef>
             <turretTopDrawSize>2.5</turretTopDrawSize>
@@ -476,11 +529,10 @@
         </weaponTags>
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
-                <recoilAmount>0.7</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_105x607mmRShell_HEAT</defaultProjectile>
-                <warmupTime>2</warmupTime>
+                <warmupTime>1.25</warmupTime>
                 <minRange>3.9</minRange>
                 <range>75</range>
                 <soundCast>FT_CannonLaunchA</soundCast>

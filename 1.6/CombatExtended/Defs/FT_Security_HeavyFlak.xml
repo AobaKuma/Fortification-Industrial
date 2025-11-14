@@ -4,12 +4,14 @@
 	<!-- 重型防空炮 -->
 	<ThingDef ParentName="FT_BaseCannonBuilding_WithShieldOrCementBase">
 		<defName>FT_TurretHeavyFlak</defName>
-		<thingClass>CombatExtended.Building_CIWS_CE</thingClass>
+		<thingClass>CombatExtended.Building_TurretGunCE</thingClass>
 		<label>Heavy flak gun</label>
 		<description>A high caliber flak cannon lay flat to engage ground target.</description>
 		<graphicData>
-			<texPath>ATGun/Base_Flak40</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
+			<texPath>ATGun/Base_Flak40_A</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawRotated>false</drawRotated>
+			<allowFlip>false</allowFlip>
 			<drawSize>(6,6)</drawSize>
 			<drawOffset>(0,-0.01,0)</drawOffset>
 		</graphicData>
@@ -26,12 +28,33 @@
 			<AimingAccuracy>1.25</AimingAccuracy>
 		</statBases>
 		<comps>
+            <li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam"
+                Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
+                <randomGraphics>
+                    <li>ATGun/Base_Flak40_A</li>
+                    <li>ATGun/Base_Flak40_B</li>
+                </randomGraphics>
+            </li>
 		  <li Class="CompProperties_Power">
 			<compClass>CompPowerTrader</compClass>
 			<basePowerConsumption>1000</basePowerConsumption>
 		  </li>
 		  <li Class="CompProperties_Flickable"/>
-		</comps>
+			<li Class="CombatExtended.CompProperties_FireArc">
+				<spanRange>10~360</spanRange>
+				<maxSpanDeviation>180</maxSpanDeviation>
+			</li>
+        </comps>
+        <modExtensions>
+			<li Class="CombatExtended.NonSnapTurretExtension">
+				<speed>1</speed>
+				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
+        </modExtensions>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
 		<building>
 			<turretBurstWarmupTime>3.0</turretBurstWarmupTime>
 			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
@@ -41,10 +64,19 @@
 		</building>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 		<costList>
-			<Steel>500</Steel>
+			<Steel>650</Steel>
 			<ComponentIndustrial>6</ComponentIndustrial>
-			<ReinforcedBarrel>2</ReinforcedBarrel>
+			<!--<ReinforcedBarrel>2</ReinforcedBarrel>-->
 		</costList>
+		<costListForDifficulty>
+			<difficultyVar>classicMortars</difficultyVar>
+			<invert>true</invert>
+			<costList>
+				<Steel>500</Steel>
+				<ComponentIndustrial>6</ComponentIndustrial>
+				<ReinforcedBarrel>2</ReinforcedBarrel>
+			</costList>
+		</costListForDifficulty>
 		<researchPrerequisites>
 			<li>FT_HeavyArtillery</li>
 		</researchPrerequisites>
@@ -75,7 +107,7 @@
 				<recoilAmount>0</recoilAmount>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_128x958mmR_HE</defaultProjectile>
-				<warmupTime>3</warmupTime>
+				<warmupTime>1.25</warmupTime>
 				<minRange>8</minRange>
 				<range>110</range>
 				<soundCast>120mm</soundCast>
@@ -85,20 +117,6 @@
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
 				<recoilPattern>Mounted</recoilPattern>
-			</li>
-			<li Class="CombatExtended.VerbProperties_CIWSSkyfaller">
-				<verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
-				<recoilAmount>0</recoilAmount>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_128x958mmR_HE</defaultProjectile>
-				<warmupTime>0.1</warmupTime>
-				<range>1000</range>
-				<burstShotCount>1</burstShotCount>
-				<soundCast>120mm</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
-				<muzzleFlashScale>32</muzzleFlashScale>
-				<recoilPattern>Mounted</recoilPattern>
-				<holdFireLabel>HoldCloseInSkyfallersFire</holdFireLabel>
 			</li>
 		</verbs>
 		<comps>
@@ -181,6 +199,22 @@
 			<ShootingAccuracyTurret>1.25</ShootingAccuracyTurret>
 			<AimingAccuracy>1.25</AimingAccuracy>
 		</statBases>
+		<comps>
+			<li Class="CombatExtended.CompProperties_FireArc">
+				<spanRange>10~360</spanRange>
+				<maxSpanDeviation>180</maxSpanDeviation>
+			</li>
+        </comps>
+        <modExtensions>
+			<li Class="CombatExtended.NonSnapTurretExtension">
+				<speed>0.3</speed>
+				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
+        </modExtensions>
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
 		<building>
 			<turretBurstWarmupTime>3.0</turretBurstWarmupTime>
 			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
@@ -190,10 +224,19 @@
 		</building>
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 		<costList>
-			<Steel>500</Steel>
+			<Steel>650</Steel>
 			<ComponentIndustrial>6</ComponentIndustrial>
-			<ReinforcedBarrel>2</ReinforcedBarrel>
+			<!--<ReinforcedBarrel>2</ReinforcedBarrel>-->
 		</costList>
+		<costListForDifficulty>
+			<difficultyVar>classicMortars</difficultyVar>
+			<invert>true</invert>
+			<costList>
+				<Steel>500</Steel>
+				<ComponentIndustrial>6</ComponentIndustrial>
+				<ReinforcedBarrel>2</ReinforcedBarrel>
+			</costList>
+		</costListForDifficulty>
 		<researchPrerequisites>
 			<li>FT_HeavyArtillery</li>
 		</researchPrerequisites>
@@ -224,7 +267,7 @@
 				<recoilAmount>0</recoilAmount>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_128x958mmR_HE</defaultProjectile>
-				<warmupTime>3</warmupTime>
+				<warmupTime>1.5</warmupTime>
 				<minRange>5</minRange>
 				<range>110</range>
 				<soundCast>120mm</soundCast>

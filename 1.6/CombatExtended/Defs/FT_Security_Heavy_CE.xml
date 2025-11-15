@@ -6,8 +6,8 @@
 
 	<ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
 		<defName>FT_TurretHexMortar</defName>
-		<label>Hexagonal Mortar Launcher</label>
-		<description>A manned mortar launcher with six barrel, with some mysterious technology, it can shoot six mortar shells at one time, however, it's not accurate.</description>
+		<label>Hexagonal multiple rocket Launcher</label>
+		<description>待修正</description>
 		<uiIconPath>InfantryTurret/FT_HexMortar_icon</uiIconPath>
 		<uiIconScale>1.2</uiIconScale>
 		<graphicData>
@@ -80,8 +80,8 @@
 
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>FT_Gun_TurretHexMortar</defName>
-		<label>multi-barrel mortar</label>
-		<description>Mortar launcher. Lobs bombs over walls. Very inaccurate but long-ranged.</description>
+		<label>multi-barrel rocket Launcher</label>
+		<description>待修正</description>
 		<recoilPower>6</recoilPower>
 		<graphicData>
 			<texPath>InfantryTurret/FT_HexMortarGun</texPath>

@@ -256,7 +256,6 @@
 			</li>
         </modExtensions>
 		<placeWorkers>
-			<li>PlaceWorker_ShowTurretRadius</li>
 			<li>PlaceWorker_TurretTop</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>

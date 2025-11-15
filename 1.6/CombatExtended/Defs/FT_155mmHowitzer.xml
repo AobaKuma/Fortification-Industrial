@@ -325,6 +325,7 @@
 		<defName>Bullet_FT_155mmHowitzerShell_HE</defName>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<flyOverhead>true</flyOverhead>
+			<speed>0</speed>
 			<shellingProps>
 				<damage>0.33</damage>
 			</shellingProps>
@@ -356,6 +357,7 @@
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 			<aimHeightOffset>12</aimHeightOffset>
 			<flyOverhead>true</flyOverhead>
+			<speed>0</speed>
 			<shellingProps>
 				<damage>0.33</damage>
 			</shellingProps>
@@ -376,6 +378,7 @@
 		<defName>Bullet_FT_155mmHowitzerShell_Incendiary</defName>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<flyOverhead>true</flyOverhead>
+			<speed>0</speed>
 			<shellingProps>
 				<damage>0.33</damage>
 			</shellingProps>
@@ -395,6 +398,7 @@
 		<defName>Bullet_FT_155mmHowitzerShell_EMP</defName>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<flyOverhead>true</flyOverhead>
+			<speed>0</speed>
 			<shellingProps>
 				<damage>0.23</damage>
 			</shellingProps>
@@ -406,6 +410,7 @@
 		<defName>Bullet_FT_155mmHowitzerShell_Smoke</defName>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<flyOverhead>true</flyOverhead>
+			<speed>0</speed>
 			<shellingProps>
 				<damage>0</damage>
 			</shellingProps>
@@ -417,6 +422,7 @@
 		<defName>FT_Bullet_NuclearWarhead_CE_II</defName>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
             <flyOverhead>true</flyOverhead>
+			<speed>0</speed>
 			<shellingProps>
 				<damage>0.5</damage>
 			</shellingProps>

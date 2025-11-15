@@ -40,10 +40,22 @@
 					<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Wheel_Sec</li>
 				</randomGraphics>
 			</li>
-			<li MayRequire="3HSTltd.Framework">
-				<compClass>BillDoorsFramework.CompTurretFix</compClass>
+			<li Class="CombatExtended.CompProperties_FireArc">
+				<spanRange>10~360</spanRange>
+				<maxSpanDeviation>180</maxSpanDeviation>
 			</li>
-		</comps>
+        </comps>
+        <modExtensions>
+			<li Class="CombatExtended.NonSnapTurretExtension">
+				<speed>1.25</speed>
+				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
+        </modExtensions>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
 		<statBases>
 			<MaxHitPoints>1000</MaxHitPoints>
 			<Flammability>0</Flammability>
@@ -77,28 +89,27 @@
 		</graphicData>
 		<statBases>
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
-			<SightsEfficiency>0.5</SightsEfficiency>
-			<ShotSpread>3.6</ShotSpread>
+			<SightsEfficiency>2.5</SightsEfficiency>
+			<ShotSpread>1.5</ShotSpread>
 		</statBases>
 		<weaponTags>
       		<li>TurretGun</li>
 		</weaponTags>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass><!--射角最高45度-->
 				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 				<hasStandardCommand>true</hasStandardCommand>
 				<requireLineOfSight>false</requireLineOfSight>
-				<defaultProjectile>Bullet_FT_15cmNebelwerfer_HE</defaultProjectile>
-				<warmupTime>3</warmupTime>
-				<minRange>40</minRange>
-				<range>1000</range>
+				<defaultProjectile>Bullet_FT_15cmNebelwerfer_HE_directfire</defaultProjectile>
+				<warmupTime>1.25</warmupTime>
+				<minRange>14.9</minRange>
+				<range>118.5</range>
 				<burstShotCount>6</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
 				<soundCast>FT_NebelShot</soundCast>
 				<muzzleFlashScale>39</muzzleFlashScale>
 				<circularError>10</circularError>
-				<indirectFirePenalty>0.2</indirectFirePenalty>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
@@ -111,7 +122,7 @@
 				<magazineSize>6</magazineSize>
 				<reloadOneAtATime>true</reloadOneAtATime>
 				<reloadTime>2.5</reloadTime>
-				<ammoSet>AmmoSet_FT_15cmNebelwerfer</ammoSet>
+				<ammoSet>AmmoSet_FT_15cmNebelwerfer_directfire</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aimedBurstShotCount>3</aimedBurstShotCount>
@@ -149,66 +160,8 @@
 				<burstOffsetRange>(2,6)</burstOffsetRange> 
 				<onGroundOverride>true</onGroundOverride>
 			</li>
-			<li MayRequire="3HSTltd.Framework" Class="CombatExtended.CompProperties_FireModes">
-				<aiUseBurstMode>false</aiUseBurstMode>
-			</li>
-			<li MayRequire="3HSTltd.Framework" Class="BillDoorsFramework.CompProperties_SecondaryAmmo">
-				<secondaryVerb>
-					<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofMortarCE</verbClass>
-					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-					<hasStandardCommand>true</hasStandardCommand>
-					<defaultProjectile>Bullet_FT_15cmNebelwerfer_HE_directfire</defaultProjectile>		
-					<warmupTime>3</warmupTime>
-					<minRange>20</minRange>
-					<range>1000</range>
-					<burstShotCount>6</burstShotCount>
-					<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-					<soundCast>FT_NebelShot</soundCast>
-					<muzzleFlashScale>39</muzzleFlashScale>
-					<targetParams>
-						<canTargetLocations>true</canTargetLocations>
-					</targetParams>
-					<indirectFirePenalty>0</indirectFirePenalty>
-					<recoilPattern>Mounted</recoilPattern>
-					<recoilAmount>0.0</recoilAmount>
-					<!--<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>-->
-					<!--<requireLineOfSight>false</requireLineOfSight>-->
-				</secondaryVerb>
-				<secondaryAmmoProps>
-					<magazineSize>6</magazineSize>
-					<reloadOneAtATime>true</reloadOneAtATime>
-					<reloadTime>2.5</reloadTime>
-					<ammoSet>AmmoSet_FT_15cmNebelwerfer_directfire</ammoSet>
-				</secondaryAmmoProps>
-				<mainWeaponLabel>indirect fire</mainWeaponLabel>
-				<secondaryWeaponLabel>direct fire</secondaryWeaponLabel>
-				<description>switch firing mode</description>
-				<mainCommandIcon>Indirect</mainCommandIcon>
-				<secondaryCommandIcon>Direct</secondaryCommandIcon>
-				<secondaryWeaponChargeSpeeds>
-							<li>30</li>
-							<li>50</li>
-							<li>70</li>
-							<li>90</li>
-							<li>110</li>
-							<li>130</li>
-				</secondaryWeaponChargeSpeeds>
-			</li>
-			<li Class="CombatExtended.CompProperties_Charges">
-				<chargeSpeeds>
-							<li>30</li>
-							<li>50</li>
-							<li>70</li>
-							<li>90</li>
-							<li>110</li>
-							<li>130</li>
-				</chargeSpeeds>
-			</li>
 		</comps>
 		<modExtensions>
-            <li Class="BillDoorsFramework.ModExtension_VerbNotUnderRoof" MayRequire="3HSTltd.Framework">
-                <appliesInSecondaryMode>false</appliesInSecondaryMode>
-            </li>
         </modExtensions>
 	</ThingDef>
 
@@ -227,11 +180,6 @@
 		<size>(3,3)</size>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<fillPercent>0.85</fillPercent>
-		<placeWorkers>
-			<li>PlaceWorker_NotUnderRoof</li>
-			<li>PlaceWorker_TurretTop</li>
-			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
-		</placeWorkers>
 		<researchPrerequisites>
 			<li>FT_HeavyArtillery</li>
 		</researchPrerequisites>
@@ -248,10 +196,22 @@
 					<li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Wheel_Sec</li>
 				</randomGraphics>
 			</li>
-			<li MayRequire="3HSTltd.Framework">
-				<compClass>BillDoorsFramework.CompTurretFix</compClass>
+			<li Class="CombatExtended.CompProperties_FireArc">
+				<spanRange>10~60</spanRange>
+				<maxSpanDeviation>135</maxSpanDeviation>
 			</li>
-		</comps>
+        </comps>
+        <modExtensions>
+			<li Class="CombatExtended.NonSnapTurretExtension">
+				<speed>0.5</speed>
+				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
+        </modExtensions>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
 		<statBases>
 			<Bulk>2500</Bulk>
 			<Mass>7154</Mass>
@@ -285,8 +245,6 @@
 		<statBases>
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 			<SightsEfficiency>2.5</SightsEfficiency>
-			<ShotSpread MayRequire="3HSTltd.Framework">0.01</ShotSpread>
-			<SwayFactor MayRequire="3HSTltd.Framework">0.05</SwayFactor>
 		</statBases>
 		<weaponTags>
       		<li>TurretGun</li>
@@ -319,13 +277,11 @@
 				<ammoSet>AmmoSet_FT_105mmHowitzerShell</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_Charges">
-				<chargeSpeeds>
-					<li>55</li>
-					<li>75</li>
-					<li>95</li>
-					<li>115</li>
-					<li>135</li>
-					<li>155</li>
+				<chargeSpeeds><!--105mm大约4种尺寸发射药包--><!--弹速下限30-->
+					<li>50</li><!--S-->
+					<li>80</li><!--M-->
+					<li>110</li><!--L-->
+					<li>140</li><!--XL-->
 				</chargeSpeeds>
 			</li>
 			<li Class="Fortified.CompProperties_CastFlecker">
@@ -359,54 +315,8 @@
 				<burstOffsetRange>(2,6)</burstOffsetRange> 
 				<onGroundOverride>true</onGroundOverride>
 			</li>
-			<li MayRequire="3HSTltd.Framework" Class="CombatExtended.CompProperties_FireModes">
-				<aiUseBurstMode>false</aiUseBurstMode>
-			</li>
-			<li MayRequire="3HSTltd.Framework" Class="BillDoorsFramework.CompProperties_SecondaryAmmo">
-				<secondaryVerb>
-					<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofMortarCE</verbClass>
-					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-					<hasStandardCommand>true</hasStandardCommand>
-					<defaultProjectile>Bullet_FT_105mmHowitzerShell_HE_directfire</defaultProjectile>
-					<warmupTime>4</warmupTime>
-					<minRange>14.9</minRange>
-					<range>1000</range>
-					<soundCast>FT_CannonLaunchB</soundCast>
-					<soundCastTail>GunTail_Heavy</soundCastTail>
-					<muzzleFlashScale>25</muzzleFlashScale>
-					<targetParams>
-						<canTargetLocations>true</canTargetLocations>
-					</targetParams>
-					<indirectFirePenalty>0</indirectFirePenalty>
-					<recoilPattern>Mounted</recoilPattern>
-					<recoilAmount>0.0</recoilAmount>
-					<!--<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>-->
-					<!--<requireLineOfSight>false</requireLineOfSight>-->
-				</secondaryVerb>
-				<secondaryAmmoProps>
-					<magazineSize>1</magazineSize>
-					<reloadTime>5</reloadTime>
-					<ammoSet>AmmoSet_FT_105mmHowitzerShell_directfire</ammoSet>
-				</secondaryAmmoProps>
-				<mainWeaponLabel>indirect fire</mainWeaponLabel>
-				<secondaryWeaponLabel>direct fire</secondaryWeaponLabel>
-				<description>switch firing mode</description>
-				<mainCommandIcon>Indirect</mainCommandIcon>
-				<secondaryCommandIcon>Direct</secondaryCommandIcon>
-				<secondaryWeaponChargeSpeeds>
-					<li>55</li>
-					<li>75</li>
-					<li>95</li>
-					<li>115</li>
-					<li>135</li>
-					<li>155</li>
-				</secondaryWeaponChargeSpeeds>
-			</li>
 		</comps>
 		<modExtensions>
-            <li Class="BillDoorsFramework.ModExtension_VerbNotUnderRoof" MayRequire="3HSTltd.Framework">
-                <appliesInSecondaryMode>false</appliesInSecondaryMode>
-            </li>
         </modExtensions>
 	</ThingDef>
 	
@@ -426,10 +336,6 @@
 		<size>(3,3)</size>
 		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
 		<fillPercent>0.85</fillPercent>
-		<placeWorkers>
-			<li>PlaceWorker_TurretTop</li>
-			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
-		</placeWorkers>
 		<researchPrerequisites>
 			<li>FT_HeavyArtillery</li>
 		</researchPrerequisites>
@@ -438,10 +344,22 @@
 			<li Class="CompProperties_Mannable">
 				<manWorkType>Violent</manWorkType>
 			</li>
-			<li MayRequire="3HSTltd.Framework">
-				<compClass>BillDoorsFramework.CompTurretFix</compClass>
+			<li Class="CombatExtended.CompProperties_FireArc">
+				<spanRange>10~60</spanRange>
+				<maxSpanDeviation>135</maxSpanDeviation>
 			</li>
-		</comps>
+        </comps>
+        <modExtensions>
+			<li Class="CombatExtended.NonSnapTurretExtension">
+				<speed>0.5</speed>
+				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
+        </modExtensions>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
+		</placeWorkers>
 		<statBases>
 			<Bulk>5000</Bulk>
 			<Mass>13880</Mass>
@@ -475,20 +393,18 @@
 		<statBases>
 			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
 			<SightsEfficiency>2.5</SightsEfficiency>
-			<ShotSpread>0.01</ShotSpread>
-			<SwayFactor>0.05</SwayFactor>
 		</statBases>
 		<weaponTags>
       		<li>TurretGun</li>
 		</weaponTags>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
-				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
 				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_FT_155mmHowitzerShell_HE_directfire</defaultProjectile>
+				<defaultProjectile>Bullet_FT_155mmHowitzerShell_HE</defaultProjectile>
 				<warmupTime>4</warmupTime>
-				<minRange>14.9</minRange>
+				<minRange>60</minRange>
 				<range>1000</range>
 				<soundCast>FT_CannonLaunchC</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -506,20 +422,19 @@
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>1</magazineSize>
 				<reloadTime>7.5</reloadTime>
-				<ammoSet>AmmoSet_FT_155mmHowitzerShell_directfire</ammoSet>
+				<ammoSet>AmmoSet_FT_155mmHowitzerShell</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_Charges">
-				<chargeSpeeds>
-					<li>100</li>
-					<li>120</li>
-					<li>140</li>
-					<li>160</li>
-					<li>180</li>
-					<li>200</li>
+				<chargeSpeeds><!--105mm大约8段发射药包--><!--弹速下限30-->
+					<li>60</li><!--1-->
+					<li>80</li><!--2-->
+					<li>100</li><!--3-->
+					<li>120</li><!--4-->
+					<li>140</li><!--5-->
+					<li>160</li><!--6-->
+					<li>180</li><!--7-->
+					<li>200</li><!--8-->
 				</chargeSpeeds>
-			</li>
-			<li Class="CombatExtended.CompProperties_FireModes">
-				<aiUseBurstMode>false</aiUseBurstMode>
 			</li>
 			<li Class="Fortified.CompProperties_CastFlecker">
 				<fleck>DustPuffThick</fleck>
@@ -552,50 +467,8 @@
 				<burstOffsetRange>(2,6)</burstOffsetRange> 
 				<onGroundOverride>true</onGroundOverride>
 			</li>
-			<li MayRequire="3HSTltd.Framework" Class="BillDoorsFramework.CompProperties_SecondaryAmmo">
-				<secondaryVerb>
-					<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofMortarCE</verbClass>
-					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-					<hasStandardCommand>true</hasStandardCommand>
-					<defaultProjectile>Bullet_FT_155mmHowitzerShell_HE_directfire</defaultProjectile>
-					<warmupTime>4</warmupTime>
-					<minRange>14.9</minRange>
-					<range>1000</range>
-					<soundCast>FT_CannonLaunchC</soundCast>
-					<soundCastTail>GunTail_Heavy</soundCastTail>
-					<muzzleFlashScale>32</muzzleFlashScale>
-					<targetParams>
-						<canTargetLocations>true</canTargetLocations>
-					</targetParams>
-					<indirectFirePenalty>0</indirectFirePenalty>
-					<recoilPattern>Mounted</recoilPattern>
-					<recoilAmount>0.0</recoilAmount>
-					<!--<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>-->
-				</secondaryVerb>
-				<secondaryAmmoProps>
-					<magazineSize>1</magazineSize>
-					<reloadTime>7.5</reloadTime>
-					<ammoSet>AmmoSet_FT_155mmHowitzerShell_directfire</ammoSet>
-				</secondaryAmmoProps>
-				<mainWeaponLabel>indirect fire</mainWeaponLabel>
-				<secondaryWeaponLabel>direct fire</secondaryWeaponLabel>
-				<description>switch firing mode</description>
-				<mainCommandIcon>Indirect</mainCommandIcon>
-				<secondaryCommandIcon>Direct</secondaryCommandIcon>
-				<secondaryWeaponChargeSpeeds>
-					<li>100</li>
-					<li>120</li>
-					<li>140</li>
-					<li>160</li>
-					<li>180</li>
-					<li>200</li>
-				</secondaryWeaponChargeSpeeds>
-			</li>
 		</comps>
 		<modExtensions>
-            <li Class="BillDoorsFramework.ModExtension_VerbNotUnderRoof" MayRequire="3HSTltd.Framework">
-                <appliesInSecondaryMode>false</appliesInSecondaryMode>
-            </li>
         </modExtensions>
 	</ThingDef>
 

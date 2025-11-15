@@ -101,6 +101,18 @@
 		<researchPrerequisites>
 			<li>Mortars</li>
 		</researchPrerequisites>
+        <comps>
+			<li Class="CombatExtended.CompProperties_FireArc">
+				<spanRange>10~360</spanRange>
+				<maxSpanDeviation>180</maxSpanDeviation>
+			</li>
+        </comps>
+        <modExtensions>
+			<li Class="CombatExtended.NonSnapTurretExtension">
+				<speed>4</speed>
+				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
+        </modExtensions>
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
 			<li>PlaceWorker_TurretTop</li>
@@ -119,7 +131,7 @@
 		</graphicData>
 		<statBases>
 			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
-			<SightsEfficiency>0.5</SightsEfficiency>
+			<SightsEfficiency>1.0</SightsEfficiency>
 		</statBases>
 		<weaponTags>
 			<li>TurretGun</li>
@@ -132,7 +144,7 @@
 				<defaultProjectile>Bullet_60mmMortarShell_HE</defaultProjectile>
 				<warmupTime>3.5</warmupTime>
 				<minRange>20</minRange>
-				<range>500</range>
+				<range>118.5</range>
 				<burstShotCount>1</burstShotCount>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<soundCast>Mortar_LaunchA</soundCast>
@@ -158,42 +170,12 @@
 				<aiAimMode>Snapshot</aiAimMode>
 			</li>
 			<li Class="CombatExtended.CompProperties_Charges">
-				<chargeSpeeds>
-					<li>30</li>
-					<li>35</li>
-					<li>40</li>
-					<li>45</li>
-					<li>50</li>
-					<li>55</li>
-					<li>60</li>
-					<li>65</li>
-					<li>70</li>
-					<li>75</li>
-					<li>80</li>
-					<li>85</li>
-					<li>90</li>
-					<li>95</li>
-					<li>100</li>
-					<li>105</li>
-					<li>110</li>
-					<li>115</li>
-					<li>120</li>
-					<li>125</li>
-					<li>130</li>
-					<li>135</li>
-					<li>140</li>
-					<li>145</li>
-					<li>150</li>
-					<li>155</li>
-					<li>160</li>
-					<li>165</li>
-					<li>170</li>
-					<li>175</li>
-					<li>180</li>
-					<li>185</li>
-					<li>190</li>
-					<li>195</li>
-					<li>200</li>
+				<chargeSpeeds><!--60mm大约0~4个发射药圈--><!--弹速下限30-->
+					<li>30</li><!--0-->
+					<li>40</li><!--1-->
+					<li>50</li><!--2-->
+					<li>60</li><!--3-->
+					<li>70</li><!--4-->
 				</chargeSpeeds>
 			</li>
 			<li Class="Fortified.CompProperties_CastFlecker">
@@ -261,7 +243,20 @@
 		<researchPrerequisites>
 			<li>Mortars</li>
 		</researchPrerequisites>
+        <comps>
+			<li Class="CombatExtended.CompProperties_FireArc">
+				<spanRange>10~360</spanRange>
+				<maxSpanDeviation>180</maxSpanDeviation>
+			</li>
+        </comps>
+        <modExtensions>
+			<li Class="CombatExtended.NonSnapTurretExtension">
+				<speed>4</speed>
+				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
+        </modExtensions>
 		<placeWorkers>
+			<li>PlaceWorker_ShowTurretRadius</li>
 			<li>PlaceWorker_TurretTop</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>

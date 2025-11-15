@@ -209,6 +209,7 @@
 		<defName>Bullet_FT_105mmHowitzerShell_HE</defName>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<flyOverhead>true</flyOverhead>
+			<speed>0</speed>
 			<shellingProps>
 				<damage>0.26</damage>
 			</shellingProps>	
@@ -239,6 +240,7 @@
 			<soundExplode>MortarBomb_Explode</soundExplode>
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 			<flyOverhead>true</flyOverhead>
+			<speed>0</speed>
 			<aimHeightOffset>12</aimHeightOffset>
 			<shellingProps>
 				<damage>0.26</damage>
@@ -260,6 +262,7 @@
 		<defName>Bullet_FT_105mmHowitzerShell_Incendiary</defName>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<flyOverhead>true</flyOverhead>
+			<speed>0</speed>
 			<shellingProps>
 				<damage>0.26</damage>
 			</shellingProps>
@@ -279,6 +282,7 @@
 		<defName>Bullet_FT_105mmHowitzerShell_EMP</defName>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<flyOverhead>true</flyOverhead>
+			<speed>0</speed>
 			<shellingProps>
 				<damage>0.18</damage>
 			</shellingProps>	
@@ -290,6 +294,7 @@
 		<defName>Bullet_FT_105mmHowitzerShell_Smoke</defName>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<flyOverhead>true</flyOverhead>
+			<speed>0</speed>
 			<shellingProps>
 				<damage>0</damage>
 			</shellingProps>

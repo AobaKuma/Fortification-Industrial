@@ -47,7 +47,7 @@
         </comps>
         <modExtensions>
 			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>1</speed>
+				<speed>0.167</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
         </modExtensions>
@@ -56,7 +56,7 @@
 			<li>PlaceWorker_ShowTurretRadius</li>
 		</placeWorkers>
 		<building>
-			<turretBurstWarmupTime>3.0</turretBurstWarmupTime>
+			<turretBurstWarmupTime>1.25</turretBurstWarmupTime>
 			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretTopDrawSize>8</turretTopDrawSize>
@@ -108,7 +108,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_128x958mmR_HE</defaultProjectile>
 				<warmupTime>1.25</warmupTime>
-				<minRange>8</minRange>
+				<minRange>7.5</minRange>
 				<range>110</range>
 				<soundCast>120mm</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -207,7 +207,7 @@
         </comps>
         <modExtensions>
 			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>0.3</speed>
+				<speed>0.1</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
         </modExtensions>
@@ -216,7 +216,7 @@
 			<li>PlaceWorker_ShowTurretRadius</li>
 		</placeWorkers>
 		<building>
-			<turretBurstWarmupTime>3.0</turretBurstWarmupTime>
+			<turretBurstWarmupTime>1.5</turretBurstWarmupTime>
 			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretTopDrawSize>8</turretTopDrawSize>
@@ -268,7 +268,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_128x958mmR_HE</defaultProjectile>
 				<warmupTime>1.5</warmupTime>
-				<minRange>5</minRange>
+				<minRange>5.5</minRange>
 				<range>110</range>
 				<soundCast>120mm</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>

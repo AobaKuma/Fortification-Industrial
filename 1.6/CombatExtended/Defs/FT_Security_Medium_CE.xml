@@ -310,7 +310,7 @@
         </comps>
         <modExtensions>
 			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>2</speed>
+				<speed>0.75</speed><!--1=60度/秒-->
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
         </modExtensions>
@@ -321,7 +321,7 @@
         <building>
             <turretGunDef>FT_Gun_TurretAA</turretGunDef>
             <turretTopDrawSize>4</turretTopDrawSize>
-            <turretBurstWarmupTime>1.25</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
+            <turretBurstWarmupTime>0.62</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
             <turretBurstCooldownTime>0.14</turretBurstCooldownTime>
         </building>
         <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
@@ -442,7 +442,7 @@
         </comps>
         <modExtensions>
 			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>1.85</speed>
+				<speed>0.75</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
         </modExtensions>
@@ -453,7 +453,7 @@
         <building>
             <turretGunDef>FT_Gun_TurretQuadAA</turretGunDef>
             <turretTopDrawSize>4</turretTopDrawSize>
-            <turretBurstWarmupTime>1.5</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
+            <turretBurstWarmupTime>0.75</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
             <turretBurstCooldownTime>0.04</turretBurstCooldownTime>
         </building>
         <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
@@ -586,7 +586,7 @@
         </comps>
         <modExtensions>
 			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>1.5</speed>
+				<speed>0.6</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
         </modExtensions>
@@ -597,7 +597,7 @@
         <building>
             <turretGunDef>FT_Gun_TurretAT</turretGunDef>
             <turretTopDrawSize>4</turretTopDrawSize>
-            <turretBurstWarmupTime>1.5</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
+            <turretBurstWarmupTime>0.75</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
             <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
         </building>
         <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
@@ -744,7 +744,7 @@
         </comps>
         <modExtensions>
 			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>0.5</speed>
+				<speed>0.437</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
         </modExtensions>
@@ -753,7 +753,7 @@
 			<li>PlaceWorker_ShowTurretRadius</li>
 		</placeWorkers>
         <building>
-            <turretBurstWarmupTime>3.0</turretBurstWarmupTime>
+            <turretBurstWarmupTime>1.5</turretBurstWarmupTime>
             <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
             <ai_combatDangerous>true</ai_combatDangerous>
             <turretTopDrawSize>4</turretTopDrawSize>
@@ -805,7 +805,7 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_762x385mmRCannonShell_HEAT</defaultProjectile>
                 <warmupTime>1.5</warmupTime>
-                <minRange>5</minRange>
+                <minRange>4.5</minRange>
                 <range>110</range>
                 <soundCast>120mm</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>

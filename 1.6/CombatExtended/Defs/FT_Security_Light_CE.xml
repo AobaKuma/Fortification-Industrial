@@ -98,7 +98,7 @@
         </comps>
         <modExtensions>
 			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>3</speed>
+				<speed>0.833</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
         </modExtensions>
@@ -115,7 +115,7 @@
             <turretTopDrawSize>2</turretTopDrawSize>
             <ai_combatDangerous>true</ai_combatDangerous>
             <turretGunDef>FT_Gun_QuadMG</turretGunDef>
-            <turretBurstWarmupTime>0.75</turretBurstWarmupTime>
+            <turretBurstWarmupTime>0.38</turretBurstWarmupTime>
             <turretBurstCooldownTime>0.04</turretBurstCooldownTime>
         </building>
         <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
@@ -215,7 +215,7 @@
         </comps>
         <modExtensions>
 			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>3</speed>
+				<speed>1</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
         </modExtensions>
@@ -242,7 +242,7 @@
             <turretTopDrawSize>2.5</turretTopDrawSize>
             <ai_combatDangerous>true</ai_combatDangerous>
             <turretGunDef>FT_Gun_Autocannon</turretGunDef>
-            <turretBurstWarmupTime>1.0</turretBurstWarmupTime>
+            <turretBurstWarmupTime>0.58</turretBurstWarmupTime>
             <turretBurstCooldownTime>0.25</turretBurstCooldownTime>
         </building>
         <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
@@ -302,7 +302,7 @@
     <!--拖式機砲-->
     <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
         <defName>FT_TurretAutoCannon_Twin</defName>
-        <thingClass>CombatExtended.Building_CIWS_CE</thingClass>
+        <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
         <label>20mm anti-air gun</label>
         <description>A rapid-fire cannon with capability to shoot down aircraft.</description>
         <uiIconPath>InfantryTurret/FT_AutoCannonTurret_icon</uiIconPath>
@@ -331,7 +331,7 @@
         </comps>
         <modExtensions>
 			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>2</speed>
+				<speed>0.75</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
         </modExtensions>
@@ -356,7 +356,7 @@
         <interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <building>
             <ai_combatDangerous>true</ai_combatDangerous>
-            <turretBurstWarmupTime>1.2</turretBurstWarmupTime>
+            <turretBurstWarmupTime>0.67</turretBurstWarmupTime>
             <turretBurstCooldownTime>0.12</turretBurstCooldownTime>
             <turretTopDrawSize>3.5</turretTopDrawSize>
             <turretGunDef>FT_Gun_Autocannon_Twin</turretGunDef>
@@ -401,21 +401,6 @@
                 <muzzleFlashScale>12</muzzleFlashScale>
                 <recoilPattern>Mounted</recoilPattern>
             </li>
-            <!--防空数值补偿：瞄准时间降至0.01，后座力75%，射程全图，删除最小射程-->
-            <li Class="CombatExtended.VerbProperties_CIWSSkyfaller">
-                <verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
-                <recoilAmount>0.28</recoilAmount>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
-                <warmupTime>0.01</warmupTime>
-                <range>2500</range>
-                <burstShotCount>4</burstShotCount>
-                <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
-                <soundCast>Shot_Autocannon</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
-                <muzzleFlashScale>12</muzzleFlashScale>
-                <recoilPattern>Mounted</recoilPattern>
-            </li>
         </verbs>
         <comps>
             <li Class="CombatExtended.CompProperties_AmmoUser">
@@ -428,9 +413,6 @@
                 <aiAimMode>Snapshot</aiAimMode>
                 <aimedBurstShotCount>2</aimedBurstShotCount>
                 <noSingleShot>true</noSingleShot>
-            </li>
-            <li>
-                <compClass>CombatExtended.CompVerbDisabler</compClass>
             </li>
         </comps>
         <modExtensions>
@@ -474,7 +456,7 @@
         </comps>
         <modExtensions>
 			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>1.5</speed>
+				<speed>0.917</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
         </modExtensions>
@@ -482,7 +464,7 @@
 			<li>PlaceWorker_TurretTop</li>
 			<li>PlaceWorker_ShowTurretRadius</li>
 		</placeWorkers>
-        <interactionCellOffset>(-1,0,-1)</interactionCellOffset>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <costList>
             <Steel>225</Steel>
             <!--<ReinforcedBarrel>1</ReinforcedBarrel>-->
@@ -500,7 +482,7 @@
         <building>
             <turretGunDef>FT_Gun_Recoilless</turretGunDef>
             <turretTopDrawSize>2.5</turretTopDrawSize>
-            <turretBurstWarmupTime>2.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
+            <turretBurstWarmupTime>1.25</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
             <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
         </building>
         <constructionSkillPrerequisite>8</constructionSkillPrerequisite>

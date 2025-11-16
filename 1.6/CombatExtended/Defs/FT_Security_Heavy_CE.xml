@@ -47,7 +47,7 @@
         </comps>
         <modExtensions>
 			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>1.25</speed>
+				<speed>0.583</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
         </modExtensions>
@@ -70,8 +70,8 @@
 		</costList>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
-			<turretBurstWarmupTime>3.0</turretBurstWarmupTime>
-			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+			<turretBurstWarmupTime>1.25</turretBurstWarmupTime>
+			<turretBurstCooldownTime>0.5</turretBurstCooldownTime>
 			<turretTopDrawSize>3</turretTopDrawSize>
 			<turretGunDef>FT_Gun_TurretHexMortar</turretGunDef>
 			<spawnedConceptLearnOpportunity>CE_MortarDirectFire</spawnedConceptLearnOpportunity>
@@ -88,7 +88,7 @@
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 		<statBases>
-			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
 			<SightsEfficiency>2.5</SightsEfficiency>
 			<ShotSpread>1.5</ShotSpread>
 		</statBases>
@@ -103,7 +103,7 @@
 				<requireLineOfSight>false</requireLineOfSight>
 				<defaultProjectile>Bullet_FT_15cmNebelwerfer_HE_directfire</defaultProjectile>
 				<warmupTime>1.25</warmupTime>
-				<minRange>14.9</minRange>
+				<minRange>14.5</minRange>
 				<range>118.5</range>
 				<burstShotCount>6</burstShotCount>
 				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
@@ -203,7 +203,7 @@
         </comps>
         <modExtensions>
 			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>0.5</speed>
+				<speed>0.155</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
         </modExtensions>
@@ -256,7 +256,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_FT_105mmHowitzerShell_HE</defaultProjectile>
 				<warmupTime>4</warmupTime>
-				<minRange>50</minRange>
+				<minRange>49.5</minRange>
 				<range>1000</range>
 				<soundCast>FT_CannonLaunchB</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -351,7 +351,7 @@
         </comps>
         <modExtensions>
 			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>0.5</speed>
+				<speed>0.113</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
         </modExtensions>
@@ -404,7 +404,7 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_FT_155mmHowitzerShell_HE</defaultProjectile>
 				<warmupTime>4</warmupTime>
-				<minRange>60</minRange>
+				<minRange>59.5</minRange>
 				<range>1000</range>
 				<soundCast>FT_CannonLaunchC</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>

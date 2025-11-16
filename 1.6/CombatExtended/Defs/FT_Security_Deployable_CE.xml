@@ -95,8 +95,8 @@
 		<building>
 			<turretGunDef>FT_Artillery_Mortar</turretGunDef>
 			<turretTopDrawSize>1.5</turretTopDrawSize>
-			<turretBurstWarmupTime>2.0</turretBurstWarmupTime>
-			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+			<turretBurstWarmupTime>3.0</turretBurstWarmupTime>
+			<turretBurstCooldownTime>0.5</turretBurstCooldownTime>
 		</building>
 		<researchPrerequisites>
 			<li>Mortars</li>
@@ -109,7 +109,7 @@
         </comps>
         <modExtensions>
 			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>4</speed>
+				<speed>1.667</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
         </modExtensions>
@@ -130,7 +130,7 @@
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<statBases>
-			<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
 			<SightsEfficiency>1.0</SightsEfficiency>
 		</statBases>
 		<weaponTags>
@@ -139,10 +139,9 @@
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
 				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
-				<recoilAmount>1.5</recoilAmount>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_60mmMortarShell_HE</defaultProjectile>
-				<warmupTime>3.5</warmupTime>
+				<warmupTime>3</warmupTime>
 				<minRange>20</minRange>
 				<range>118.5</range>
 				<burstShotCount>1</burstShotCount>
@@ -251,7 +250,7 @@
         </comps>
         <modExtensions>
 			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>4</speed>
+				<speed>1.75</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
         </modExtensions>
@@ -271,7 +270,7 @@
 		</graphicData>
 		<statBases>
 			<SightsEfficiency>5.0</SightsEfficiency>
-			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
 			<li>TurretGun</li>

@@ -464,7 +464,7 @@
 			<li>PlaceWorker_TurretTop</li>
 			<li>PlaceWorker_ShowTurretRadius</li>
 		</placeWorkers>
-        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <interactionCellOffset>(-1,0,0)</interactionCellOffset>
         <costList>
             <Steel>225</Steel>
             <!--<ReinforcedBarrel>1</ReinforcedBarrel>-->

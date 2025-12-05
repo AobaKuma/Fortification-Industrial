@@ -10,7 +10,7 @@
 			<Ammo_37x223mmR_AP>Bullet_FT_37x223mmR_AP</Ammo_37x223mmR_AP>
 			<Ammo_37x223mmR_HE>Bullet_FT_37x223mmR_HE</Ammo_37x223mmR_HE>
 			<Ammo_37x223mmR_Canister>Bullet_FT_37x223mmR_Canister</Ammo_37x223mmR_Canister>
-			<Ammo_37x223mmR_Shrapnel>Bullet_FT_37x223mmR_Shrapnel</Ammo_37x223mmR_Shrapnel>
+			<Ammo_37x223mmR_Shrapnel MayRequire="DwS.FunctionalAmmunition.Library">Bullet_FT_37x223mmR_Shrapnel</Ammo_37x223mmR_Shrapnel>
 			<!--<Ammo_37x223mmR_HESH>Bullet_FT_37x223mmR_HESH</Ammo_37x223mmR_HESH>--><!--HESH需要足夠口徑才有用-->
 			<Ammo_37x223mmR_APDS>Bullet_FT_37x223mmR_APDS</Ammo_37x223mmR_APDS>
 			<Ammo_37x223mmR_EMP>Bullet_FT_37x223mmR_EMP</Ammo_37x223mmR_EMP>
@@ -37,7 +37,7 @@
 		<cookOffProjectile>Bullet_FT_37x223mmR_Canister</cookOffProjectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo37x223mmRBase">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo37x223mmRBase" MayRequire="DwS.FunctionalAmmunition.Library">
 		<defName>Ammo_37x223mmR_Shrapnel</defName>
 		<label>37x223mmR cartridge (shrapnel)</label>
 		<graphicData>
@@ -191,13 +191,19 @@
 			<armorPenetrationSharp>17.2</armorPenetrationSharp>
 			<armorPenetrationBlunt>27.9</armorPenetrationBlunt>
 -->
-			<spreadMult>200</spreadMult>
+			<spreadMult>300</spreadMult>
+			<effectiveRangeMultiplier>0.5</effectiveRangeMultiplier>
 		</projectile>
+		<comps>
+            <li MayRequire="DwS.FunctionalAmmunition.Library" Class="D_FuncAmmoLib.CompProperties_TicksCrashPorjectile">
+			    <LifeTicksSet>40</LifeTicksSet>
+		    </li>
+        </comps>
 	</ThingDef>
 
-	<ThingDef ParentName="Base37x223mmRBullet">
+	<ThingDef ParentName="Base37x223mmRBullet" MayRequire="DwS.FunctionalAmmunition.Library">
 		<defName>Bullet_FT_37x223mmR_Shrapnel</defName>
-		<thingClass>FortifiedCE.ProjectileCE_ClusterBomb</thingClass>
+		<thingClass>D_FuncAmmoLib.Projectile</thingClass>
 		<label>37x223mmR shell (Shrapnel)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<!--<aimHeightOffset>3</aimHeightOffset>-->
@@ -213,33 +219,15 @@
 					<Fragment_FT_ShrapnelPellet>122</Fragment_FT_ShrapnelPellet>
 				</fragments>
 				<!--<fragAngleRange>-25~-10</fragAngleRange>-->
-				<fragXZAngleRange>-10~10</fragXZAngleRange>
+				<fragXZAngleRange>-12~12</fragXZAngleRange>
+			</li>
+			<li Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze">
+				<aimHeightOffset>0.86</aimHeightOffset>     <!-- Defult is 1.2,require D_FuncAmmoLib.Verb_Shoot_AB -->
+				<safeRange>15</safeRange>     <!-- Defult is 0. If delayRange.min < 0, equivalent to delayRange.min + safeRange.-->
+				<delayRange>-10~-8</delayRange>      <!-- Defult is 1.5~3.5 -->
+				<fragAngleRange>-3~3</fragAngleRange>      <!-- If airburst, modify fragment angle (0 will not modify). Defult is 0 -->
 			</li>
 		</comps>
-		<modExtensions>
-			<li Class="Fortified.ModExtension_ClusterBomb">
-				<clusterBurstCount>0</clusterBurstCount>
-				<!-- 破片數量 -->
-				<forceMissingRange>6</forceMissingRange>
-				<!-- 散射範圍(以母彈目標為圓心擴散) -->
-				<safetyDistance>3.9</safetyDistance>
-				<!-- 安全距離 -->
-				<!--<doDismantlExplosion>true</doDismantlExplosion>-->
-				<!-- 分裂時爆炸 -->
-				<!--<dismantlExplosionDam>Smoke</dismantlExplosionDam>-->
-				<!-- 分裂爆炸的DamageDef -->
-				<!--<dismantlExplosionRadius>0.5</dismantlExplosionRadius>-->
-				<!-- 分裂爆炸的範圍 -->
-				<!--<dismantlExplosionDamAmount>0</dismantlExplosionDamAmount>-->
-				<!-- 分裂爆炸的傷害 -->
-				<!--<dismantlExplosionArmorPenetration>0</dismantlExplosionArmorPenetration>-->
-				<!-- 分裂爆炸傷害的穿甲 -->
-				<!--<dismantlExplosionSound>ExtinguisherExplosion</dismantlExplosionSound>-->
-				<!-- 分裂爆炸的音效SoundDef -->
-				<TDDistance>10~15</TDDistance>
-				<!--距離目標多遠時分裂(最小/最大距離) -->
-			</li>
-		</modExtensions>
 	</ThingDef>
 
 	<!--<ThingDef ParentName="Base37x223mmRBullet">
@@ -371,7 +359,7 @@
 
 	<!-- ==================== Pellets ========================== -->
 
-	<ThingDef ParentName="BaseFragment">
+	<ThingDef ParentName="BaseFragment" MayRequire="DwS.FunctionalAmmunition.Library">
 		<defName>Fragment_FT_ShrapnelPellet</defName>
 		<label>shrapnel pellet</label>
 		<graphicData>
@@ -386,6 +374,11 @@
 			<armorPenetrationBlunt>27.9</armorPenetrationBlunt>
 			<gravityFactor>5</gravityFactor>
 		</projectile>
+		<comps>
+            <li Class="D_FuncAmmoLib.CompProperties_TicksCrashPorjectile">
+			    <LifeTicksSet>15</LifeTicksSet>
+		    </li>
+        </comps>
 	</ThingDef>
 
 	<!-- ==================== Recipes ========================== -->
@@ -419,7 +412,7 @@
 		<workAmount>8880</workAmount>
 	</RecipeDef>
 
-	<RecipeDef ParentName="AmmoRecipeBase">
+	<RecipeDef ParentName="AmmoRecipeBase" MayRequire="DwS.FunctionalAmmunition.Library">
 		<defName>MakeAmmo_37x223mmR_Shrapnel</defName>
 		<label>make 37x223mmR (shrapnel) cartridge x25</label>
 		<description>Craft 25 37x223mmR (shrapnel) cartridges.</description>

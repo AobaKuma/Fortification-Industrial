@@ -41,7 +41,7 @@
 				</randomGraphics>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireArc">
-				<spanRange>10~360</spanRange>
+				<spanRange>10~180</spanRange>
 				<maxSpanDeviation>180</maxSpanDeviation>
 			</li>
         </comps>
@@ -81,7 +81,7 @@
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>FT_Gun_TurretHexMortar</defName>
 		<label>multi-barrel rocket launcher</label>
-		<description>Rocket artillery launcher with multiple launch tubes arranged for rapid salvo fire. Inaccurate, but devastating against clustered targets.</description>
+		<description>A multi-barreled rocket artillery launcher, arranged for rapid salvo fire.</description>
 		<recoilPower>6</recoilPower>
 		<graphicData>
 			<texPath>InfantryTurret/FT_HexMortarGun</texPath>
@@ -197,7 +197,7 @@
 				</randomGraphics>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireArc">
-				<spanRange>10~60</spanRange>
+				<spanRange>10~80</spanRange>
 				<maxSpanDeviation>135</maxSpanDeviation>
 			</li>
         </comps>
@@ -348,7 +348,7 @@
 				<manWorkType>Violent</manWorkType>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireArc">
-				<spanRange>10~60</spanRange>
+				<spanRange>10~80</spanRange>
 				<maxSpanDeviation>135</maxSpanDeviation>
 			</li>
         </comps>

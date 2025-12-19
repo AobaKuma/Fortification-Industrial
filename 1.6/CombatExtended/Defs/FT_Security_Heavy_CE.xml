@@ -28,10 +28,6 @@
 			<li>FT_HeavyArtillery</li>
 		</researchPrerequisites>
 		<comps>
-			<li Class="CompProperties_Forbiddable" />
-			<li Class="CompProperties_Mannable">
-				<manWorkType>Violent</manWorkType>
-			</li>
 			<li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam" Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
 				<randomGraphics>
 					<li>InfantryTurret/FT_HexMortarBase</li>
@@ -184,10 +180,6 @@
 			<li>FT_HeavyArtillery</li>
 		</researchPrerequisites>
 		<comps>
-			<li Class="CompProperties_Forbiddable" />
-			<li Class="CompProperties_Mannable">
-				<manWorkType>Violent</manWorkType>
-			</li>
 			<li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam" Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
 				<randomGraphics>
 					<li>InfantryTurret/FT_HexMortarBase</li>
@@ -343,10 +335,6 @@
 			<li>FT_HeavyArtillery</li>
 		</researchPrerequisites>
 		<comps>
-			<li Class="CompProperties_Forbiddable" />
-			<li Class="CompProperties_Mannable">
-				<manWorkType>Violent</manWorkType>
-			</li>
 			<li Class="CombatExtended.CompProperties_FireArc">
 				<spanRange>10~80</spanRange>
 				<maxSpanDeviation>135</maxSpanDeviation>

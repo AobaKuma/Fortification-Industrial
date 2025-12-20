@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Concrete barrier (blueprint) -->
+  <Blueprint_FT_Barrier.label>concrete barrier (blueprint)</Blueprint_FT_Barrier.label>
+  
+  <!-- EN: Diagonal concrete barrier (blueprint) -->
+  <Blueprint_FT_BarrierDiagonal.label>diagonal concrete barrier (blueprint)</Blueprint_FT_BarrierDiagonal.label>
+  
+  <!-- EN: Military sandbag (blueprint) -->
+  <Blueprint_FT_Sandbag.label>military sandbag (blueprint)</Blueprint_FT_Sandbag.label>
+  
+  <!-- EN: Tank trap (blueprint) -->
+  <Blueprint_FT_TankTrap.label>tank trap (blueprint)</Blueprint_FT_TankTrap.label>
+  
+  <!-- EN: Tetrapods (blueprint) -->
+  <Blueprint_FT_Tetrapods.label>tetrapod (blueprint)</Blueprint_FT_Tetrapods.label>
+  
+  <!-- EN: Military sandbag wall (blueprint) -->
+  <Blueprint_FT_WallSandbag.label>military sandbag wall (blueprint)</Blueprint_FT_WallSandbag.label>
+  
+  <!-- EN: Concrete barrier (blueprint) -->
+  <Blueprint_Install_FT_Barrier.label>concrete barrier (blueprint)</Blueprint_Install_FT_Barrier.label>
+  
+  <!-- EN: Diagonal concrete barrier (blueprint) -->
+  <Blueprint_Install_FT_BarrierDiagonal.label>diagonal concrete barrier (blueprint)</Blueprint_Install_FT_BarrierDiagonal.label>
+  
+  <!-- EN: Tetrapods (blueprint) -->
+  <Blueprint_Install_FT_Tetrapods.label>tetrapod (blueprint)</Blueprint_Install_FT_Tetrapods.label>
+  
+  <!-- EN: Concrete barrier (building) -->
+  <Frame_FT_Barrier.label>concrete barrier (building)</Frame_FT_Barrier.label>
+  <!-- EN: A solid concrete barrier that can hinder the movement of vehicles and provide cover. -->
+  
+  <!-- EN: Diagonal concrete barrier (building) -->
+  <Frame_FT_BarrierDiagonal.label>diagonal concrete barrier (building)</Frame_FT_BarrierDiagonal.label>
+  
+  <!-- EN: Military sandbag (building) -->
+  <Frame_FT_Sandbag.label>military Sandbag (building)</Frame_FT_Sandbag.label>
+  
+  <!-- EN: Tank trap (building) -->
+  <Frame_FT_TankTrap.label>tank trap (building)</Frame_FT_TankTrap.label>
+  <!-- EN: A solid concrete pillar meant to hinder the movement of vehicles. -->
+  
+  <!-- EN: Tetrapods (building) -->
+  <Frame_FT_Tetrapods.label>tetrapod (building)</Frame_FT_Tetrapods.label>
+  
+  <!-- EN: Military sandbag wall (building) -->
+  <Frame_FT_WallSandbag.label>military sandbag wall (building)</Frame_FT_WallSandbag.label>
+  
+</LanguageData>

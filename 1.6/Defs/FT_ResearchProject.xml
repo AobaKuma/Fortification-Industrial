@@ -11,7 +11,7 @@
     <ResearchProjectDef>
         <defName>FT_ENIAC</defName>
         <label>ENIAC</label>
-        <description>Electronic Numerical Integrator And Computer, known as ENIAC is a Turing-complete general-purpose digital computer able to solve "a large class of numerical problems" through reprogramming.</description>
+        <description>Electronic Numerical Integrator And Computer, also known as ENIAC is an early Turing-complete general-purpose digital computer able to solve "a large class of numerical problems" through reprogramming. Crude and power-hungry but indispensable for research purposes.</description>
         <baseCost>1000</baseCost>
         <discoveredLetterTitle>Data Disk: ENIAC</discoveredLetterTitle>
         <discoveredLetterText>[Interstellar Industries Complex Nara Terminal]
@@ -55,8 +55,8 @@
 
     <ResearchProjectDef>
         <defName>FT_Lathe</defName>
-        <label>lathe</label>
-        <description>Build lathe for early-stage compoment and reinforced barrel making.</description>
+        <label>industrial lathe</label>
+        <description>Build lathes for crafting components without the need for advanced fabrication tools and create previously uncraftable reinforced barrels for use in various defensive weapons.</description>
         <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
         <tab>HeavyIndustry</tab>
@@ -88,7 +88,7 @@
     <ResearchProjectDef>
         <defName>FT_HeavyArtillery</defName>
         <label>heavy artillery</label>
-        <description>Using ENIAC to calculate the artillery ballistics table, unlock the design of heavy artilleries.</description>
+        <description>Construct heavy artillery pieces to enhance the firepower of your defenses even further.</description>
         <baseCost>2000</baseCost>
         <techLevel>Industrial</techLevel>
         <tab>HeavyIndustry</tab>
@@ -121,8 +121,8 @@
 
     <ResearchProjectDef>
         <defName>FT_IndustrialCannon</defName>
-        <label>Industrial Cannon</label>
-        <description>Using reinforced barrel to build AT and AA Guns.</description>
+        <label>industrial cannons</label>
+        <description>Make use of reinforced barrels to construct anti-tank guns and anti-aircraft guns.</description>
         <baseCost>750</baseCost>
         <techLevel>Industrial</techLevel>
         <tab>HeavyIndustry</tab>
@@ -152,8 +152,8 @@
 
     <ResearchProjectDef>
         <defName>FT_Concrete</defName>
-        <label>Concrete</label>
-        <description>crush and smelt stony material to concrete.</description>
+        <label>concrete</label>
+        <description>Research industrial concrete, a very durable stony material used for various engineering applications and infrastructure.</description>
         <baseCost>250</baseCost>
         <techLevel>Industrial</techLevel>
         <tab>HeavyIndustry</tab>
@@ -187,7 +187,7 @@
     <ResearchProjectDef>
         <defName>FT_Chemistry</defName>
         <label>chemistry</label>
-        <description>Build Chemistry Table that can artificially synthesize compounds such as Neutroamine.</description>
+        <description>Build a chemistry table for artifically synthesizing complex compounds such as neutroamine for use in various industrial applications.</description>
         <baseCost>500</baseCost>
         <techLevel>Industrial</techLevel>
         <tab>HeavyIndustry</tab>

@@ -189,7 +189,7 @@
 				</randomGraphics>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireArc">
-				<spanRange>10~80</spanRange>
+				<spanRange>10~60</spanRange>
 				<maxSpanDeviation>135</maxSpanDeviation>
 			</li>
         </comps>
@@ -336,7 +336,7 @@
 		</researchPrerequisites>
 		<comps>
 			<li Class="CombatExtended.CompProperties_FireArc">
-				<spanRange>10~80</spanRange>
+				<spanRange>10~60</spanRange>
 				<maxSpanDeviation>135</maxSpanDeviation>
 			</li>
         </comps>

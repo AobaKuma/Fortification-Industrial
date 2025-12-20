@@ -73,8 +73,8 @@
     <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
         <defName>FT_Maxim4M</defName>
         <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
-        <label>Quad Machine gun</label>
-        <description>A Tripod with Quadruple machine gun mounted so it Have a good firepower continuity,need a pawn man on it to operate. Requires steel to refurbish its barrels after heavy use.</description>
+        <label>quad-mounted machine gun</label>
+        <description>Antique machine guns in a linked quadruple configuration mounted on a tripod. Features an overall very high capacity of 800 rounds for sustained suppressive fire.</description>
         <uiIconPath>InfantryTurret/FT_QuadMaximGun_icon</uiIconPath>
         <uiIconScale>1</uiIconScale>
         <graphicData>
@@ -126,8 +126,8 @@
 
     <ThingDef ParentName="BaseWeaponTurret">
         <defName>FT_Gun_QuadMG</defName>
-        <label>machine gun 4x mounted</label>
-        <description>what can be better than A fully machine gun be mounted on a turret ? Four of them!</description>
+        <label>quadruple machine guns</label>
+        <description>Four Maxim machine guns linked together.</description>
         <graphicData>
             <texPath>InfantryTurret/FT_QuadMaximGun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -190,7 +190,7 @@
         <defName>FT_AutoCannon</defName>
         <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
         <label>autocannon</label>
-        <description>A Tripod with high caliber machine gun mounted. Requires steel to refurbish its barrels after heavy use.it needs a pawn to man on it to operate.</description>
+        <description>A 20mm autocannon mounted on a tripod.</description>
         <uiIconPath>InfantryTurret/FT_AutoCannonGun_icon</uiIconPath>
         <uiIconScale>1.2</uiIconScale>
         <graphicData>
@@ -224,19 +224,9 @@
 			<li>PlaceWorker_ShowTurretRadius</li>
 		</placeWorkers>
         <costList>
-            <Steel>195</Steel>
-            <ComponentIndustrial>4</ComponentIndustrial>
-            <!--<ReinforcedBarrel>1</ReinforcedBarrel>-->
+            <Steel>210</Steel>
+            <ComponentIndustrial>7</ComponentIndustrial>
         </costList>
-		<costListForDifficulty>
-			<difficultyVar>classicMortars</difficultyVar>
-			<invert>true</invert>
-			<costList>
-				<Steel>120</Steel>
-				<ComponentIndustrial>4</ComponentIndustrial>
-				<ReinforcedBarrel>1</ReinforcedBarrel>
-			</costList>
-		</costListForDifficulty>
         <interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <building>
             <turretTopDrawSize>2.5</turretTopDrawSize>
@@ -254,28 +244,29 @@
     <ThingDef ParentName="BaseWeaponTurret">
         <defName>FT_Gun_Autocannon</defName>
         <label>autocannon</label>
-        <description>A self-loading large-bore cannon designed to attach to a turret.</description>
+        <description>A 20mm autocannon on a tripod.</description>
         <graphicData>
             <texPath>InfantryTurret/FT_AutoCannonGun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(2,2)</drawSize>
         </graphicData>
         <statBases>
-            <RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
             <SightsEfficiency>1</SightsEfficiency>
             <ShotSpread>0.01</ShotSpread>
             <SwayFactor>1.35</SwayFactor>
+			<RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
+			<Mass>60</Mass>
         </statBases>
         <weaponTags>
             <li>TurretGun</li>
         </weaponTags>
         <verbs>
             <li Class="CombatExtended.VerbPropertiesCE">
-                <recoilAmount>0.3</recoilAmount>
+                <recoilAmount>0.93</recoilAmount>
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>True</hasStandardCommand>
                 <defaultProjectile>Bullet_20x138mmB_AP</defaultProjectile>
-                <warmupTime>0.58</warmupTime>
+                <warmupTime>1.1</warmupTime>
                 <range>86</range>
                 <burstShotCount>6</burstShotCount>
                 <ticksBetweenBurstShots>15</ticksBetweenBurstShots>
@@ -303,8 +294,8 @@
     <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
         <defName>FT_TurretAutoCannon_Twin</defName>
         <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
-        <label>20mm anti-air gun</label>
-        <description>A rapid-fire cannon with capability to shoot down aircraft.</description>
+        <label>twin anti-air autocannon</label>
+        <description>A twin-barreled autocannon mounted on a towed emplacement, designed for defense against low-flying aircraft.</description>
         <uiIconPath>InfantryTurret/FT_AutoCannonTurret_icon</uiIconPath>
         <uiIconScale>1</uiIconScale>
         <graphicData>
@@ -369,8 +360,8 @@
 
     <ThingDef ParentName="BaseWeaponTurret">
         <defName>FT_Gun_Autocannon_Twin</defName>
-        <label>autocannon</label>
-        <description>A self-loading large-bore cannon designed to attach to a turret.</description>
+        <label>twin-barreled autocannon</label>
+        <description>A 20mm twin-barreled autocannon mounted on a towed carriage.</description>
         <graphicData>
             <texPath>InfantryTurret/FT_Lahti_I-40</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -431,8 +422,8 @@
 
     <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
         <defName>FT_RecoillessGun</defName>
-        <label>recoilless gun</label>
-        <description>Tripod with Recoilless gun mounted. A light-weighted soloution of anti armour operation, Requires ReinforcedBarrel to refurbish its barrels after heavy use. also it needs a pawn to man on it to operate. But notice, do not use it indoors!!</description>
+        <label>recoilless rifle</label>
+        <description>A 105mm recoilless rifle mounted on a tripod. Lightweight anti-armor solution.</description>
         <uiIconPath>InfantryTurret/FT_RecoillessGun_icon</uiIconPath>
         <uiIconScale>1.2</uiIconScale>
         <graphicData>
@@ -493,8 +484,8 @@
 
     <ThingDef ParentName="BaseWeaponTurret">
         <defName>FT_Gun_Recoilless</defName>
-        <label>recoilless cannon</label>
-        <description>A Recoilless cannon designed to snipe the heavy-armed target in range.</description>
+        <label>recoilless rifle</label>
+        <description>An M40 105mm recoilless rifle mounted on a tripod.</description>
         <graphicData>
             <texPath>InfantryTurret/FT_RecoillessGun</texPath>
             <drawSize>(3,3)</drawSize>

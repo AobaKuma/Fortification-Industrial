@@ -2,7 +2,7 @@
 
 <Defs>
     <ThingDef ParentName="BuildingBase" Name="FT_MGNest" Abstract="True">
-        <description>A stationry turret strengthen with materials. Requires steel to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+        <description>An automatic turret equipped with a full powered cartridge machine gun, encased within a fortified defense structure. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
         <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
         <graphicData>
@@ -72,7 +72,8 @@
 
     <ThingDef ParentName="FT_MGNest">
         <defName>FT_Turret_BunkerL</defName>
-        <label>Machine Gun Nest</label>
+        <label>auto-turret sandbag nest</label>
+		<description>An automatic turret equipped with a full powered cartridge machine gun, encased within a basic defensive position. Constructed from leathery materials. \nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
         <graphicData>
             <texPath>MGBunker/FT_MGBunker_Leathery</texPath>
         </graphicData>
@@ -91,7 +92,8 @@
 
     <ThingDef ParentName="FT_MGNest">
         <defName>FT_Turret_BunkerM</defName>
-        <label>Machine Gun Turret Bunker</label>
+        <label>auto-turret bunker</label>
+		<description>An automatic turret equipped with a full powered cartridge machine gun, encased within a reinforced defensive emplacement. Constructed from metallic materials. \nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
         <graphicData>
             <texPath>MGBunker/FT_MGBunker_Metal</texPath>
         </graphicData>
@@ -110,7 +112,8 @@
 
     <ThingDef ParentName="FT_MGNest">
         <defName>FT_Turret_BunkerC</defName>
-        <label>Machine Gun Bunker</label>
+        <label>auto-turret bunker</label>
+		<description>An automatic turret equipped with a full powered cartridge machine gun, encased within a reinforced defensive emplacement. Constructed from stone materials.\nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
         <graphicData>
             <texPath>MGBunker/FT_MGBunker_Concrete</texPath>
         </graphicData>
@@ -129,7 +132,8 @@
 
     <ThingDef ParentName="FT_MGNest">
         <defName>FT_Turret_BunkerF</defName>
-        <label>Military Machine Gun Nest</label>
+        <label>auto-turret military sandbag nest</label>
+		<description>An automatic turret equipped with a full powered cartridge machine gun, encased within a basic defensive position. Constructed from fabric materials. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
         <graphicData>
             <texPath>MGBunker/FT_MGBunker_Fabric</texPath>
         </graphicData>
@@ -158,8 +162,8 @@
 
     <ThingDef ParentName="BaseWeaponTurret">
         <defName>FT_Gun_MG</defName>
-        <label>machine gun</label>
-        <description>An fully automatic gun made to be mounted on a turret.</description>
+        <label>medium turret gun</label>
+        <description>Full powered cartridge automated gun inside a defensive structure.</description>
         <graphicData>
             <texPath>None</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -179,10 +183,10 @@
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
-                <warmupTime>1.5</warmupTime>
-                <range>50</range>
-                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-                <burstShotCount>8</burstShotCount>
+                <warmupTime>1.62</warmupTime>
+                <range>55</range>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <burstShotCount>10</burstShotCount>
                 <soundCast>GunShotA</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>6</muzzleFlashScale>
@@ -191,7 +195,7 @@
         </verbs>
         <comps>
             <li Class="CombatExtended.CompProperties_AmmoUser">
-                <magazineSize>240</magazineSize>
+                <magazineSize>160</magazineSize>
                 <reloadTime>7.8</reloadTime>
                 <ammoSet>AmmoSet_762x51mmNATO</ammoSet>
             </li>

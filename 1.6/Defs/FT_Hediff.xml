@@ -5,7 +5,7 @@
         <defName>FT_ShellShock</defName>
         <hediffClass>HediffWithComps</hediffClass>
         <label>shell shock</label>
-        <description>a psychological disturbance caused by prolonged exposure to active warfare, especially being under bombardment</description>
+        <description>A psychological trauma caused by prolonged exposure to explosions and intense combat. Victims experience reduced focus, delayed reactions, and impaired combat effectiveness.</description>
         <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
         <lethalSeverity>1</lethalSeverity>
         <comps>

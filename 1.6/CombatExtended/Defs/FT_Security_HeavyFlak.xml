@@ -6,7 +6,7 @@
 		<defName>FT_TurretHeavyFlak</defName>
 		<thingClass>CombatExtended.Building_TurretGunCE</thingClass>
 		<label>Heavy flak gun</label>
-		<description>A high caliber flak cannon lay flat to engage ground target.</description>
+		<description>Old school heavy anti-aircraft gun. Ineffective against modern aviation but still popular in pre-industrial worlds against hardened targets like bunkers and vehicles.</description>
 		<graphicData>
 			<texPath>ATGun/Base_Flak40_A</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -35,11 +35,6 @@
                     <li>ATGun/Base_Flak40_B</li>
                 </randomGraphics>
             </li>
-		  <li Class="CompProperties_Power">
-			<compClass>CompPowerTrader</compClass>
-			<basePowerConsumption>1000</basePowerConsumption>
-		  </li>
-		  <li Class="CompProperties_Flickable"/>
 			<li Class="CombatExtended.CompProperties_FireArc">
 				<spanRange>10~360</spanRange>
 				<maxSpanDeviation>180</maxSpanDeviation>
@@ -85,7 +80,8 @@
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>FT_Gun_TurretHeavyFlak</defName>
 		<label>Heavy Flak gun</label>
-		<description>A high caliber flak cannon lay flat to engage ground target.</description>
+		<description>128mm Flak cannon on a stationary emplacement.</description>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<graphicData>
 			<texPath>ATGun/Gun_Flak40</texPath>
 			<drawOffset>(0,0,0)</drawOffset>
@@ -180,7 +176,7 @@
 	<ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
 		<defName>FT_TurretUltraHeavyAT</defName>
 		<label>Heavy anti-tank gun</label>
-		<description>A high caliber AT gun with capability to destroy most heavily armored target.</description>
+		<description>An old school heavy anti-tank gun. Highly effective against heavily armored targets, it still is one of the more popular choices for rimworlders fighting against mechanized opponents despite being an antiquated design.</description>
 		<graphicData>
 			<texPath>ATGun/Pak44_Base</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -245,7 +241,7 @@
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>FT_Gun_TurretUltraHeavyAT</defName>
 		<label>Heavy anti-tank gun</label>
-		<description>A high caliber AT gun with capability to destroy most heavily armored target.</description>
+		<description>128mm anti-tank cannon on a stationary emplacement.</description>
 		<graphicData>
 			<texPath>ATGun/Gun_Pak44</texPath>
 			<drawOffset>(0,0,0)</drawOffset>

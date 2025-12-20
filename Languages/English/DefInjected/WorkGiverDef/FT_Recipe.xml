@@ -2,17 +2,17 @@
 <LanguageData>
   
   <!-- EN: Operate Machine -->
-  <FT_Operate.label>Operate Machine</FT_Operate.label>
+  <FT_Operate.label>operate machine</FT_Operate.label>
   <!-- EN: Operating at -->
-  <FT_Operate.gerund>Operating at</FT_Operate.gerund>
+  <FT_Operate.gerund>operating at</FT_Operate.gerund>
   <!-- EN: Operate -->
-  <FT_Operate.verb>Operate</FT_Operate.verb>
+  <FT_Operate.verb>operate</FT_Operate.verb>
   
   <!-- EN: Synthesizing Compound -->
-  <FT_Synthesizing.label>Synthesizing Compound</FT_Synthesizing.label>
+  <FT_Synthesizing.label>synthesizing compound</FT_Synthesizing.label>
   <!-- EN: Synthesizing at -->
   <FT_Synthesizing.gerund>Synthesizing at</FT_Synthesizing.gerund>
   <!-- EN: Smith -->
-  <FT_Synthesizing.verb>Smith</FT_Synthesizing.verb>
+  <FT_Synthesizing.verb>smith</FT_Synthesizing.verb>
   
 </LanguageData>

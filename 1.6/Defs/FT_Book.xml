@@ -4,7 +4,7 @@
     <ThingDef ParentName="BookBase">
         <defName>FT_Schematic</defName>
         <label>schematic</label>
-        <description>A book which describes technology and methods for using it. Reading schematics can help unlock new technologies.</description>
+        <description>A book which describes technology and methods for creating and using it. Reading schematics can help unlock new technologies.</description>
         <graphicData>
             <texPath>Things/Item/Book/Schematic/Schematic</texPath>
             <graphicClass>Graphic_Single</graphicClass>

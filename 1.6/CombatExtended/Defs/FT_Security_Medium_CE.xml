@@ -274,8 +274,8 @@
     <ThingDef ParentName="FT_BaseCannonBuilding_WithShieldOrCementBase">
         <defName>FT_TurretAA</defName>
         <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
-        <label>Anti Air Gun</label>
-        <description>A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field.</description>
+        <label>anti-air gun</label>
+        <description>A single-barrel autocannon designed for short-range air defense. Effective against low-flying aircraft and lightly armored surface targets.</description>
         <uiIconPath>ATGun/FT_AntiAirGun</uiIconPath>
         <uiIconScale>1.2</uiIconScale>
         <graphicData>
@@ -346,8 +346,8 @@
 
     <ThingDef ParentName="BaseWeaponTurret">
         <defName>FT_Gun_TurretAA</defName>
-        <label>Anti Air cannon</label>
-        <description>An Autocannon designed to defend the area of skies, but also a nice weapon for ground targets.</description>
+        <label>anti-air gun</label>
+        <description>A 20mm autocannon mounted on a stationary emplacement.</description>
         <graphicData>
             <texPath>ATGun/FT_AAGun</texPath>
         </graphicData>
@@ -406,8 +406,8 @@
     <ThingDef ParentName="FT_BaseCannonBuilding_WithShieldOrCementBase">
         <defName>FT_TurretQuadAA</defName>
         <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
-        <label>Quad Anti Air Gun</label>
-        <description>A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field.</description>
+        <label>quad anti-air gun</label>
+        <description>A quad-barrel anti-air autocannon designed for short-range air defense. Effective against low-flying aircraft and lightly armored surface targets.</description>
         <uiIconPath>ATGun/FT_AntiAirGun_Vierling</uiIconPath>
         <uiIconScale>1.2</uiIconScale>
         <graphicData>
@@ -478,8 +478,8 @@
 
     <ThingDef ParentName="BaseWeaponTurret">
         <defName>FT_Gun_TurretQuadAA</defName>
-        <label>Quad Anti Air cannon</label>
-        <description>An Quad mounted Autocannon designed to defend the area of skies, but also a nice weapon for ground targets.</description>
+        <label>quad anti-air gun</label>
+        <description>Quad-mounted 20mm autocannons mounted on a stationary emplacement.</description>
         <graphicData>
             <texPath>ATGun/FT_AAGun_Vierling</texPath>
         </graphicData>
@@ -551,8 +551,8 @@
     <!-- 輕型反坦克炮 -->
     <ThingDef ParentName="FT_BaseCannonBuilding_WithShieldOrCementBase">
         <defName>FT_TurretAT</defName>
-        <label>Anti Tank Gun</label>
-        <description>A manned rifle cannon that launches solid metal shells.It is accurate makes it useful for attacking groups of enemies in the field or sniping the small fortifications.</description>
+        <label>37mm anti-tank gun</label>
+        <description>A versatile, light anti-tank cannon capable of firing a variety of high-velocity rounds.</description>
         <uiIconPath>ATGun/FT_AntiTankGun</uiIconPath>
         <uiIconScale>1.2</uiIconScale>
         <graphicData>
@@ -622,8 +622,8 @@
 
     <ThingDef ParentName="BaseWeaponTurret">
         <defName>FT_Gun_TurretAT</defName>
-        <label>Anti Tank Cannon</label>
-        <description>A slug cannon designed to snipe the heavy-armed target in range.</description>
+        <label>37mm anti-tank gun</label>
+        <description>A 37mm anti-tank cannon mounted on a stationary emplacement.</description>
         <graphicData>
             <texPath>ATGun/FT_ATGun</texPath>
         </graphicData>
@@ -708,7 +708,7 @@
     <ThingDef ParentName="FT_BaseCannonBuilding_WithShieldOrCementBase">
         <defName>FT_TurretAT_Plus</defName>
         <label>76mm anti-tank gun</label>
-        <description>A direct-fire cannon with capability to destroy a heavy armed vehicle.</description>
+        <description>A medium caliber anti-tank gun capable of penetrating thick armor at long ranges.</description>
         <graphicData>
             <texPath>InfantryTurret/FT_HexMortarBase</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
@@ -782,7 +782,7 @@
     <ThingDef ParentName="BaseWeaponTurret">
         <defName>FT_Gun_TurretAT_Plus</defName>
         <label>76mm anti-tank gun</label>
-        <description>A direct-fire cannon with capability to destroy a heavy armed vehicle.</description>
+        <description>A 76mm anti-tank cannon mounted on a stationary emplacement.</description>
         <graphicData>
             <texPath>InfantryTurret/FT_AntiTankGunPlus</texPath>
             <drawOffset>(0,0,0)</drawOffset>

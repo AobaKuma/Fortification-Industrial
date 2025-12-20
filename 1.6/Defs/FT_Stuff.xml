@@ -9,7 +9,7 @@
     <ThingDef ParentName="ResourceBase">
         <defName>FT_BlocksConcrete</defName>
         <label>concrete</label>
-        <description>packs of concrete dust. Concrete is a strong building material but ugly to look at.</description>
+        <description>Bags of concrete dust. Concrete is a very durable building material used in many industrial applications, but ugly to look at.</description>
         <graphicData>
             <texPath>ConcreteBag</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -62,7 +62,7 @@
     <ThingDef ParentName="ResourceBase">
         <defName>FT_ReinforcedConcreteBag</defName>
         <label>rebar concrete</label>
-        <description>bags of solid concrete powder with steel bars. Concrete is a strong building material but ugly to look at.</description>
+        <description>Heavy bags of concrete dust reinforced with steel bars. Rebar concrete is a stronger building material than concrete, but ugly to look at.</description>
         <graphicData>
             <texPath>ReinforcedConcreteBag</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -78,7 +78,7 @@
             <BluntDamageMultiplier>1.1</BluntDamageMultiplier>
             <Beauty>-10</Beauty>
             <ConstructionSpeedFactor>0.75</ConstructionSpeedFactor>
-            <Mass>1</Mass>
+            <Mass>1.25</Mass>
         </statBases>
         <burnableByRecipe>false</burnableByRecipe>
         <minRewardCount>10</minRewardCount>
@@ -115,7 +115,7 @@
     <ThingDef ParentName="ResourceBase">
         <defName>FT_WoodConcrete</defName>
         <label>prefab concrete</label>
-        <description>plank-shaped concrete blocks, able to fast building like wood and it is fire-proofed</description>
+        <description>Plank-shaped concrete blocks that allow for fast construction like wood, but fireproof and durable.</description>
         <graphicData>
             <texPath>WoodConcrete</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -167,8 +167,8 @@
 
     <ThingDef ParentName="ResourceBase">
         <defName>FT_ConcreteCompressed</defName>
-        <label>Packed Concrete</label>
-        <description>Bags of solid concrete dust.they are packed-ready for storage or trade.</description>
+        <label>packed concrete</label>
+        <description>Compressed bags of solid concrete dust. They are packed together for more efficient storage. Traders may be interested in this.</description>
         <graphicData>
             <texPath>CompressBag</texPath>
             <graphicClass>Graphic_Single</graphicClass>

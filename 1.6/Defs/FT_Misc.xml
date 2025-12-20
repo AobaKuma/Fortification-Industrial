@@ -103,8 +103,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>FT_ENIAC</defName>
         <label>ENIAC</label>
-        <description> Also known as the Electronic Numerical Integrator And Computer, it is a massive early electronic computer used for complex calculations. Consumes enormous amounts of power.\nIncreases research speed when placed near hi-tech research bench and unlocks new research projects from reading the Disk. Each hi-tech research bench can connect up to 4 ENIACs.
-        </description>
+        <description>Also known as the Electronic Numerical Integrator And Computer, it is a massive early electronic computer used for complex calculations. Consumes enormous amounts of power.\nIncreases research speed when placed near hi-tech research bench and unlocks new research projects from reading the Disk. Each hi-tech research bench can connect up to 4 ENIACs.</description>
         <graphicData>
             <texPath>Eniac</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
@@ -292,7 +291,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>FT_Radio</defName>
         <label>radio terminal</label>
-        <description>Allows radio contact with other factions and orbital traders. When placed on unroofed tiles, it can search for minerals like a long-range mineral scanner.\nMust be directly connected to conduits to power it up.>
+        <description>Allows radio contact with other factions and orbital traders. When placed on unroofed tiles, it can search for minerals like a long-range mineral scanner.\nMust be directly connected to conduits to power it up.</description>
         <thingClass>Building_CommsConsole</thingClass>
         <graphicData>
             <texPath>Radio/Radio</texPath>

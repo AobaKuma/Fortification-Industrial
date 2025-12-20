@@ -50,8 +50,7 @@
         <defName>FT_Sandbag</defName>
         <label>military sandbag</label>
         <thingClass>Building</thingClass>
-        <description>Bags of locally-sourced dirt or sand, stacked for use as cover. More well-stacked than regular sandbags, resulting in additional integrity.
-        </description>
+        <description>Bags of locally-sourced dirt or sand, stacked for use as cover. More well-stacked than regular sandbags, resulting in additional integrity.</description>
         <graphicData>
             <texPath>FT_Sandbag</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -135,7 +134,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>FT_TankTrap</defName>
         <label>tank trap</label>
-        <description>A pyramidal anti-tank obstacle to impede the movement of tanks and mechanised infantry.</description>
+        <description>A pyramidal anti-tank obstacle built to impede the movement of tanks and mechanised infantry.</description>
         <designatorDropdown>FT_ConcreteBarriers</designatorDropdown>
         <thingClass>Building</thingClass>
         <category>Building</category>

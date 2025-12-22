@@ -372,7 +372,7 @@
     </RecipeDef>
 	
 	<RecipeDef>
-        <defName>FT_Make_ComponentIndustrial</defName>
+        <defName>FT_Make_ComponentIndustrial_Bulk</defName>
 		<label>make component x4</label>
 		<description>Machines four components on a lathe. Requires more time and resources than standard fabrication.</description>
 		<jobString>Machining component.</jobString>

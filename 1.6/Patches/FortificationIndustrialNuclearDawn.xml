@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Fortification Industrial -Nuclear Dawn</li>
+    </mods>
+
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="FT_TurretEmpero"]/description</xpath>
+      <value>
+        <description>A heavy artillery piece for indirect fire at extreme ranges. Due to the very high muzzle velocity of the weapon system, it has a large minimum range.\nCan fire nuclear warhead shells. Practice extreme caution when using these.\n\nThe 155 mm howitzer NK-30 “Empero” is a reliable artillery system developed by Interstellar Industries Complex Nara to provide support for pre-industrial worlds unable to withstand mechanoid invasions.</description>
+      </value>
+    </match>
+
+  </Operation>
+
+</Patch>

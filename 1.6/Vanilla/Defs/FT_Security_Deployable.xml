@@ -64,7 +64,7 @@
     <ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
         <defName>FT_Turret_Mortar</defName>
         <label>infantry mortar</label>
-        <description>A light-weighted mortar that launches all kinds of mortar shells. Improved firing speed with a simplified design, it has a shorter range but it can be easily carried by infantry.</description>
+        <description>A compact and lightweight field mortar for indirect fire. It has a shorter range compared to larger caliber equivalents, but has increased rate of fire and portability.</description>
         <uiIconPath>FT_Mortar_Icon</uiIconPath>
         <uiIconScale>0.9</uiIconScale>
         <graphicData>

@@ -4,9 +4,8 @@
     <!--================噴煙者================-->
     <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
         <defName>FT_TurretHexMortar</defName>
-        <label>Hexagonal Mortar Launcher</label>
-        <description>A manned mortar launcher with six barrel, with some mysterious technology, it can shoot six mortar shells at one time, however, it's not accurate.</description>
-
+        <label>multi-barrel mortar launcher</label>
+        <description>A manned mortar launcher with six barrels, and with some mysterious technology, it can shoot six mortar shells at one time, however, it's not accurate.</description>
         <uiIconPath>InfantryTurret/FT_HexMortar_icon</uiIconPath>
         <uiIconScale>1.2</uiIconScale>
         <graphicData>
@@ -193,8 +192,8 @@
 
     <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
         <defName>FT_TurretPrince</defName>
-        <label>howitzer</label>
-        <description>An artillery that gave up part of the direct-fire capability in pursuit of high precision and light-weighted.\n\n Correctly called 155mm howitzer model NK-33L "Prince" ,It is a lightweight artillery designed to improve maneuverability.</description>
+		<label>field howitzer</label>
+		<description>A lightweight howitzer for indirect fire at extended ranges. Due to the high muzzle velocity of the weapon system, it has a fairly large minimum range. \n\nDesignated the NK-33L “Prince”, it was developed by Interstellar Industries Complex Nara where mobility and precision are needed in uneven, difficult terrain.</description>
         <uiIconPath>Prince/Prince_Icon</uiIconPath>
         <uiIconScale>1.2</uiIconScale>
         <graphicData>
@@ -294,8 +293,8 @@
 
     <ThingDef ParentName="BaseWeaponTurret">
         <defName>FT_Gun_TurretPrince</defName>
-        <label>howitzer</label>
-        <description>An artillery that gave up part of the direct-fire capability in pursuit of high precision and light-weighted.\n\n Correctly called 155mm howitzer model NK-33L "Prince" ,It is a lightweight artillery designed to improve maneuverability.</description>
+		<label>heavy howitzer</label>
+		<description>A heavy artillery piece for indirect fire at extreme ranges. Due to the very high muzzle velocity of the weapon system, it has a large minimum range. \n\nThe 155 mm howitzer NK-30 “Empero” is a reliable artillery system developed by Interstellar Industries Complex Nara to provide support for pre-industrial worlds unable to withstand mechanoid invasions.</description>
         <graphicData>
             <texPath>Prince/Duke_Gun</texPath>
         </graphicData>

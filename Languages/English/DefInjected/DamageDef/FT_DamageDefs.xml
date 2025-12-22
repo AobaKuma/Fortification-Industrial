@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<LanguageData>
-  
-  <!-- EN: shock wave -->
-  <HESH_ShockWave.label>shockwave</HESH_ShockWave.label>
-  <!-- EN: {0} 被衝擊波震碎了 -->
-  <HESH_ShockWave.deathMessage>{0} has been scattered into unrecognizable pieces.</HESH_ShockWave.deathMessage>
-  
-</LanguageData>

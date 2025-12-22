@@ -4,13 +4,13 @@
   <FT_BillRequires_Mass>Requires total quality exceeding {0}</FT_BillRequires_Mass>
   <FT_BillRequires_MarketValue>Requires total price to exceed {0}</FT_BillRequires_MarketValue>
   <FT_AltitudeLayerOccupied></FT_AltitudeLayerOccupied>
-  <FT_CannotPlaceWithoutWall>Needs to be placed on the wall or door</FT_CannotPlaceWithoutWall>
-  <FT_MustOnACoverBuilding>Needs to be placed on cover</FT_MustOnACoverBuilding>
+  <FT_CannotPlaceWithoutWall>Needs to be placed on the wall or door.</FT_CannotPlaceWithoutWall>
+  <FT_MustOnACoverBuilding>Needs to be placed on cover.</FT_MustOnACoverBuilding>
   <FT_StopWarmup>Stop broadcast</FT_StopWarmup>
   <FT_StartWarmup>Start broadcast</FT_StartWarmup>
-  <FT_NotCooldown>Unable to start broadcast: not cooled down yet.</FT_NotCooldown>
-  <FT_WillReadyAt>Will complete broadcast in:</FT_WillReadyAt>
-  <FT_WillCooldownAt>Will complete cooling in:</FT_WillCooldownAt>
+  <FT_NotCooldown>Unable to start: cooldown in progress</FT_NotCooldown>
+  <FT_WillReadyAt>Will complete broadcast at:</FT_WillReadyAt>
+  <FT_WillCooldownAt>Will complete cooling down at:</FT_WillCooldownAt>
   <FT_NoEnoughFuel>Not enough fuel</FT_NoEnoughFuel>
   <FT_NotFueled>No fuel</FT_NotFueled>
 </LanguageData>

@@ -78,15 +78,16 @@
 		<defName>FT_Gun_TurretHexMortar</defName>
 		<label>multi-barrel rocket launcher</label>
 		<description>A multi-barreled rocket artillery launcher, arranged for rapid salvo fire.</description>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<recoilPower>6</recoilPower>
 		<graphicData>
 			<texPath>InfantryTurret/FT_HexMortarGun</texPath>
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 		<statBases>
-			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
-			<SightsEfficiency>2.5</SightsEfficiency>
-			<ShotSpread>1.5</ShotSpread>
+			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+			<SightsEfficiency>1</SightsEfficiency>
+			<ShotSpread>5.5</ShotSpread>
 		</statBases>
 		<weaponTags>
       		<li>TurretGun</li>
@@ -98,19 +99,18 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<requireLineOfSight>false</requireLineOfSight>
 				<defaultProjectile>Bullet_FT_15cmNebelwerfer_HE_directfire</defaultProjectile>
-				<warmupTime>1.25</warmupTime>
+				<warmupTime>3.25</warmupTime>
 				<minRange>14.5</minRange>
 				<range>118.5</range>
 				<burstShotCount>6</burstShotCount>
-				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>70</ticksBetweenBurstShots>
 				<soundCast>FT_NebelShot</soundCast>
 				<muzzleFlashScale>39</muzzleFlashScale>
-				<circularError>10</circularError>
+				<!-- <circularError>1</circularError> -->
+				<indirectFirePenalty>0.2</indirectFirePenalty>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
-				</targetParams>
-				<recoilPattern>Mounted</recoilPattern>
-				<recoilAmount>0.0</recoilAmount>
+				</targetParams>	
 			</li>
 		</verbs>
 		<comps>
@@ -123,7 +123,15 @@
 			<li Class="CombatExtended.CompProperties_FireModes">
 				<aimedBurstShotCount>3</aimedBurstShotCount>
 				<aiUseBurstMode>true</aiUseBurstMode>
-				<aiAimMode>SuppressFire</aiAimMode>
+			</li>
+			<li Class="CombatExtended.CompProperties_Charges">
+				<chargeSpeeds>
+					<li>20</li>
+					<li>30</li>
+					<li>40</li>
+					<li>50</li>
+					<li>55</li>
+				</chargeSpeeds>
 			</li>
 			<li Class="Fortified.CompProperties_CastFlecker"> <!-- 尾煙-->
 				<fleck>DustPuffThick</fleck>
@@ -163,7 +171,7 @@
 
 	<ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
 		<defName>FT_TurretPrince</defName>
-		<label>light howitzer</label>
+		<label>field howitzer</label>
 		<description>A lightweight 105 mm howitzer for indirect fire at extended ranges. Due to the high muzzle velocity of the weapon system, it has a fairly large minimum range. \n\nDesignated the NK-33L “Prince”, it was developed by Interstellar Industries Complex Nara where mobility and precision are needed in uneven, difficult terrain.</description>
 		<uiIconPath>Prince/Prince_Icon</uiIconPath>
 		<uiIconScale>1.2</uiIconScale>
@@ -319,7 +327,7 @@
 	<ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
 		<defName>FT_TurretEmpero</defName>
 		<label>heavy howitzer</label>
-		<description>A heavy artillery piece for indirect fire at extreme ranges. Due to the very high muzzle velocity of the weapon system, it has a large minimum range. \n\nThe 155 mm howitzer NK-30 “Emperor” is a reliable artillery system developed by Interstellar Industries Complex Nara to provide support for pre-industrial worlds unable to withstand mechanoid invasions.</description>
+		<description>A heavy artillery piece for indirect fire at extreme ranges. Due to the very high muzzle velocity of the weapon system, it has a large minimum range. \n\nThe 155 mm howitzer NK-30 “Empero” is a reliable artillery system developed by Interstellar Industries Complex Nara to provide support for pre-industrial worlds unable to withstand mechanoid invasions.</description>
 		<uiIconPath>Empero/Empero_Icon</uiIconPath>
 		<uiIconScale>1.75</uiIconScale>
 		<graphicData>

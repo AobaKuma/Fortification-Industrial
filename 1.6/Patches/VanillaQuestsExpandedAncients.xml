@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Quests Expanded - Ancients</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+			
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VQEA_ArchogenInjector"]/comps/li[@Class ="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+                    <value>
+                        <li>FT_ENIAC</li>
+                    </value>
+                </li>
+			
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName="FT_ENIAC"]</xpath>
+                    <value>
+					<li Class="VanillaQuestsExpandedAncients.ArchiteLabFacilityExtension">
+					<successWeightOffset>2</successWeightOffset>
+					<comaTicksOffset>-120000</comaTicksOffset>
+					<rejectionWeightOffset>-10</rejectionWeightOffset>
+					</li>
+                    </value>
+                </li>
+				
+				 <li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="FT_ENIAC"]/description</xpath>
+					<value>
+					<description>Also known as the Electronic Numerical Integrator And Computer, it is a massive early electronic computer used for complex calculations. Consumes enormous amounts of power.\n\nIncreases research speed when placed near hi-tech research bench and unlocks new research projects from reading the Disk. Each hi-tech research bench can connect up to 4 ENIACs.\n\nImproves the success chance of archite injections by +2, reduces the duration of the injection coma by 2 days and decreases the rejection chance of the injection procedure by 10 when linked to an archogen injector</description>
+					</value>
+				</li>
+				
+            </operations>
+        </match>
+    </Operation>
+</Patch>

@@ -79,7 +79,7 @@
 
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>FT_Gun_TurretHeavyFlak</defName>
-		<label>Heavy Flak gun</label>
+		<label>heavy flak gun</label>
 		<description>128mm Flak cannon on a stationary emplacement.</description>
 		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<graphicData>

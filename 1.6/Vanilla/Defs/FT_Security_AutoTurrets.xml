@@ -2,7 +2,7 @@
 
 <Defs>
     <ThingDef ParentName="BuildingBase" Name="FT_MGNest" Abstract="True">
-        <description>A stationry turret strengthen with materials. Requires steel to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+        <description>An automatic turret equipped with a full powered cartridge machine gun, encased within a fortified defense structure. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
         <thingClass>Building_TurretGun</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
         <graphicData>
@@ -82,7 +82,8 @@
 
     <ThingDef ParentName="FT_MGNest">
         <defName>FT_Turret_BunkerL</defName>
-        <label>Machine Gun Nest</label>
+        <label>auto-turret sandbag nest</label>
+		<description>An automatic turret encased within a basic defensive position. Constructed from leathery materials. \nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
         <graphicData>
             <texPath>MGBunker/FT_MGBunker_Leathery</texPath>
         </graphicData>
@@ -100,8 +101,8 @@
     </ThingDef>
 
     <ThingDef ParentName="FT_MGNest">
-        <defName>FT_Turret_BunkerM</defName>
-        <label>Machine Gun Turret Bunker</label>
+        <label>auto-turret bunker</label>
+		<description>An automatic turret encased within a reinforced defensive position. Constructed from metallic materials. \nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
         <graphicData>
             <texPath>MGBunker/FT_MGBunker_Metal</texPath>
         </graphicData>
@@ -120,7 +121,8 @@
 
     <ThingDef ParentName="FT_MGNest">
         <defName>FT_Turret_BunkerC</defName>
-        <label>Machine Gun Bunker</label>
+        <label>auto-turret bunker</label>
+		<description>An automatic turret encased within a reinforced defensive position. Constructed from stone materials.\nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
         <graphicData>
             <texPath>MGBunker/FT_MGBunker_Concrete</texPath>
         </graphicData>
@@ -138,8 +140,8 @@
     </ThingDef>
 
     <ThingDef ParentName="FT_MGNest">
-        <defName>FT_Turret_BunkerF</defName>
-        <label>Military Machine Gun Nest</label>
+        <label>auto-turret military sandbag nest</label>
+		<description>An automatic turret encased within a basic defensive position. Constructed from fabric materials. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
         <graphicData>
             <texPath>MGBunker/FT_MGBunker_Fabric</texPath>
         </graphicData>
@@ -169,7 +171,7 @@
     <ThingDef ParentName="BaseWeaponTurret">
         <defName>FT_Gun_MG</defName>
         <label>machine gun</label>
-        <description>An fully automatic gun made to be mounted on a turret.</description>
+        <description>A fully automatic gun made to be mounted on a turret.</description>
         <graphicData>
             <texPath>None</texPath>
             <graphicClass>Graphic_Single</graphicClass>

@@ -93,7 +93,7 @@
     <ThingDef ParentName="FT_MGNest">
         <defName>FT_Turret_BunkerM</defName>
         <label>auto-turret bunker</label>
-		<description>An automatic turret equipped with a full powered cartridge machine gun, encased within a reinforced defensive emplacement. Constructed from metallic materials. \nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+		<description>An automatic turret equipped with a full powered cartridge machine gun, encased within a reinforced defensive position. Constructed from metallic materials. \nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
         <graphicData>
             <texPath>MGBunker/FT_MGBunker_Metal</texPath>
         </graphicData>
@@ -113,7 +113,7 @@
     <ThingDef ParentName="FT_MGNest">
         <defName>FT_Turret_BunkerC</defName>
         <label>auto-turret bunker</label>
-		<description>An automatic turret equipped with a full powered cartridge machine gun, encased within a reinforced defensive emplacement. Constructed from stone materials.\nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+		<description>An automatic turret equipped with a full powered cartridge machine gun, encased within a reinforced defensive position. Constructed from stone materials.\nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
         <graphicData>
             <texPath>MGBunker/FT_MGBunker_Concrete</texPath>
         </graphicData>

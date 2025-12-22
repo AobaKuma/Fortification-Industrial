@@ -264,7 +264,7 @@
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>FTC_SpotterLight_Gun</defName>
 		<label>portable artillery spotter</label>
-		<description>A manned artillery scope with a radio. Useful to coordinate artillery strikes.\n\nUsing this on a target will mark it, removing the indirect fire penalty from any artillery pieces targeting it. Additionally, any directed fire will use the aiming accuracy and efficiency of the spotter, rather than the artillery operator to determine final accuracy.</description>
+		<description>A manned artillery scope with radio. Useful to coordinate artillery strikes.\n\nUsing this on a target will mark it, removing the indirect fire penalty from any artillery pieces targeting it. Additionally, any directed fire will use the aiming accuracy and efficiency of the spotter, rather than the artillery operator to determine final accuracy.</description>
 		<graphicData>
 			<texPath>ArtilleryRangeFinder_Gun</texPath>
 			<drawSize>1</drawSize>

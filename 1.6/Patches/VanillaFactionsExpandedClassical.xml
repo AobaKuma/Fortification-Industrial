@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Factions Expanded - Classical</li>
+    </mods>
+
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VFEC_BlocksConcrete"]/label</xpath>
+          <value>
+            <label>roman concrete blocks</label>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/TerrainDef[defName="VFEC_TileConcrete"]/label</xpath>
+          <value>
+            <label>roman concrete tile</label>
+          </value>
+        </li>
+
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/TerrainDef[defName="VFEC_FlagstoneConcrete"]/label</xpath>
+          <value>
+            <label>roman concrete flagstone</label>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

@@ -68,6 +68,7 @@
 			<explosionRadius>5.5</explosionRadius>
 			<soundExplode>MortarBomb_Explode</soundExplode>
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<preExplosionSpawnSingleThingDef>CraterMedium</preExplosionSpawnSingleThingDef>
 		</projectile>
 		<comps Inherit="false">
 			<li Class="CombatExtended.CompProperties_Fragments">
@@ -132,6 +133,7 @@
 			<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
 			<preExplosionSpawnChance>0.20</preExplosionSpawnChance>
 			<soundExplode>MortarIncendiary_Explode</soundExplode>
+			<preExplosionSpawnSingleThingDef>CraterMedium</preExplosionSpawnSingleThingDef>
 		</projectile>
 		<comps Inherit="false">
 			<li Class="CombatExtended.CompProperties_ExplosiveCE">
@@ -160,6 +162,7 @@
 			<damageDef>EMP</damageDef>
 			<damageAmountBase>452</damageAmountBase>
 			<explosionRadius>9.5</explosionRadius>
+			
 		</projectile>
 		<comps Inherit="false">
 			<li MayRequire="DwS.FunctionalAmmunition.Library" Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze">
@@ -221,6 +224,7 @@
 			<!--<flyOverhead>true</flyOverhead>-->
 			<explosionEffect>GiantExplosion</explosionEffect>
 			<soundExplode>Explosion_GiantBomb</soundExplode>
+			<preExplosionSpawnSingleThingDef>CraterLarge</preExplosionSpawnSingleThingDef>
 		</projectile>
 		<modExtensions>
 			<li Class="Fortified.ModExtension_ExpolsionWithConditions">

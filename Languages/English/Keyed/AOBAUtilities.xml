@@ -8,9 +8,9 @@
   <FT_MustOnACoverBuilding>Needs to be placed on cover.</FT_MustOnACoverBuilding>
   <FT_StopWarmup>Stop broadcast</FT_StopWarmup>
   <FT_StartWarmup>Start broadcast</FT_StartWarmup>
-  <FT_NotCooldown>Unable to start: cooldown in progress</FT_NotCooldown>
-  <FT_WillReadyAt>Will complete broadcast at:</FT_WillReadyAt>
-  <FT_WillCooldownAt>Will complete cooling down at:</FT_WillCooldownAt>
+  <FT_NotCooldown>Cannot start broadcast: cooldown in progress</FT_NotCooldown>
+  <FT_WillReadyAt>Will complete broadcast in:</FT_WillReadyAt>
+  <FT_WillCooldownAt>Will complete cooling down in:</FT_WillCooldownAt>
   <FT_NoEnoughFuel>Not enough fuel</FT_NoEnoughFuel>
   <FT_NotFueled>No fuel</FT_NotFueled>
 </LanguageData>

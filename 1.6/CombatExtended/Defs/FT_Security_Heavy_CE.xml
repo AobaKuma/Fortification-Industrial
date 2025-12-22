@@ -78,6 +78,7 @@
 		<defName>FT_Gun_TurretHexMortar</defName>
 		<label>multi-barrel rocket launcher</label>
 		<description>A multi-barreled rocket artillery launcher, arranged for rapid salvo fire.</description>
+		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<recoilPower>6</recoilPower>
 		<graphicData>
 			<texPath>InfantryTurret/FT_HexMortarGun</texPath>
@@ -102,7 +103,7 @@
 				<minRange>14.5</minRange>
 				<range>118.5</range>
 				<burstShotCount>6</burstShotCount>
-				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>70</ticksBetweenBurstShots>
 				<soundCast>FT_NebelShot</soundCast>
 				<muzzleFlashScale>39</muzzleFlashScale>
 				<circularError>10</circularError>

@@ -196,7 +196,7 @@
             <Flammability>0.0</Flammability>
         </statBases>
         <size>(2,2)</size>
-        <description>A bigger orbital trade beacon that can be only placed outside. Can attract orbital trader ships by sending out hyperwave broadcasts off-world.</description>
+        <description>The antenna tower serves as both trade beacon and mechanoid command relay.\n\nThe inner circle responsible for acting as trade beacon while the outer circle is the radius of command range. In addition, it can broadcast signals to attract orbital trader ships toward your colony.</description>
         <drawerType>MapMeshAndRealTime</drawerType>
         <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
         <fillPercent>0.70</fillPercent>

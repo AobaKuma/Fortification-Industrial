@@ -70,8 +70,8 @@
     <!-- 單裝防空炮 -->
     <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
         <defName>FT_TurretAA</defName>
-        <label>Anti Air Gun</label>
-        <description>A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field.</description>
+        <label>anti-air gun</label>
+        <description>A single-barrel autocannon designed for short-range air defense. Effective against low-flying aircraft and lightly armored surface targets.</description>
         <uiIconPath>ATGun/FT_AntiAirGun</uiIconPath>
         <uiIconScale>1.2</uiIconScale>
         <graphicData>
@@ -202,8 +202,8 @@
     <!-- 四聯防空炮 -->
     <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
         <defName>FT_TurretQuadAA</defName>
-        <label>Quad Anti Air Gun</label>
-        <description>A manned autocannon that launches solid metal bullets.It is rapid fired makes it useful for attacking aerial target or enemies in the field.</description>
+        <label>quad anti-air gun</label>
+        <description>A quad-barrel anti-air autocannon designed for short-range air defense. Effective against low-flying aircraft and lightly armored surface targets.</description>
         <uiIconPath>ATGun/FT_AntiAirGun_Vierling</uiIconPath>
         <uiIconScale>1.2</uiIconScale>
         <graphicData>
@@ -376,8 +376,8 @@
     <!-- 輕型反坦克炮 -->
     <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
         <defName>FT_TurretAT</defName>
-        <label>Anti Tank Gun</label>
-        <description>A manned rifle cannon that launches solid metal shells.It is accurate makes it useful for attacking groups of enemies in the field or sniping the small fortifications.</description>
+        <label>anti-tank gun</label>
+        <description>A manned rifled cannon that fires solid metal shells. Its accuracy makes it effective against enemy groups in the open and small field fortifications.</description>
         <uiIconPath>ATGun/FT_AntiTankGun</uiIconPath>
         <uiIconScale>1.2</uiIconScale>
         <graphicData>
@@ -452,8 +452,8 @@
 
     <ThingDef ParentName="BaseWeaponTurret">
         <defName>FT_Gun_TurretAT</defName>
-        <label>Anti Tank Cannon</label>
-        <description>A uranium slug cannon designed to snipe the heavy-armed target in range.</description>
+        <label>anti-tank cannon</label>
+        <description>A manned cannon firing dense uranium slugs, designed to engage heavily armored targets at long range.</description>
         <graphicData>
             <texPath>ATGun/FT_ATGun</texPath>
         </graphicData>
@@ -555,8 +555,8 @@
 
     <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
         <defName>FT_Maxim4M</defName>
-        <label>Quad Machine gun</label>
-        <description>A Tripod with Quadruple machine gun mounted so it Have a good firepower continuity,need a pawn man on it to operate. Requires steel to refurbish its barrels after heavy use.</description>
+        <label>quad machine gun</label>
+        <description>A tripod-mounted quad machine gun operated by a pawn. Provides sustained firepower and requires steel to refurbish its barrels after heavy use.</description>
         <uiIconPath>InfantryTurret/FT_QuadMaximGun_icon</uiIconPath>
         <uiIconScale>0.8</uiIconScale>
         <graphicData>

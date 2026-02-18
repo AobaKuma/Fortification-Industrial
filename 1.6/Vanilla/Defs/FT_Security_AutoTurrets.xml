@@ -101,6 +101,7 @@
     </ThingDef>
 
     <ThingDef ParentName="FT_MGNest">
+        <defName>FT_Turret_BunkerM</defName>
         <label>auto-turret bunker</label>
 		<description>An automatic turret encased within a reinforced defensive position. Constructed from metallic materials. \nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
         <graphicData>
@@ -140,6 +141,7 @@
     </ThingDef>
 
     <ThingDef ParentName="FT_MGNest">
+        <defName>FT_Turret_BunkerF</defName>
         <label>auto-turret military sandbag nest</label>
 		<description>An automatic turret encased within a basic defensive position. Constructed from fabric materials. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
         <graphicData>

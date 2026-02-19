@@ -15,7 +15,7 @@
             <drawOffset>(0,0,-0.1)</drawOffset>
         </graphicData>
         <size>(3,3)</size>
-        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <interactionCellOffset>(-1,0,-1)</interactionCellOffset>
         <fillPercent>0.4</fillPercent>
         <inspectorTabs>
             <li>ITab_Shells</li>
@@ -56,12 +56,17 @@
                 <autoRefuelPercent>0.83</autoRefuelPercent>
                 <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
             </li>
-            <li Class="CompProperties_Forbiddable" />
-            <li MayRequire="VanillaExpanded.VFESecurity" Class="VFESecurity.CompProperties_LongRangeArtillery">
-                <worldTileRange>35</worldTileRange>
-                <maxForcedMissRadiusFactor>2.5</maxForcedMissRadiusFactor>
-                <gizmoIconTexPath>Things/Building/Artillery/TurretArtillery_Top</gizmoIconTexPath>
-            </li>
+			<li MayRequire="VanillaExpanded.VFESecurity" Class="VFESecurity.CompProperties_WorldArtillery">
+				<worldMapAttackRange>35</worldMapAttackRange>
+				<firingMode>GroundToGround</firingMode>
+			</li>
+			<li MayRequire="VanillaExpanded.VFESecurity" Class="VFESecurity.CompProperties_DualMannable">
+				<manWorkType>Violent</manWorkType>
+				<planetLayerWhitelist>
+				  <li>Surface</li>
+				</planetLayerWhitelist>
+				<secondaryInteractionCellOffset>(1, 0, -1)</secondaryInteractionCellOffset>
+			</li>
             <li
                 MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam"
                 Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
@@ -203,7 +208,7 @@
             <drawOffset>(0,-0.01,0)</drawOffset>
         </graphicData>
         <size>(3,3)</size>
-        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <interactionCellOffset>(-1,0,-1)</interactionCellOffset>
         <fillPercent>0.4</fillPercent>
         <inspectorTabs>
             <li>ITab_Shells</li>
@@ -244,12 +249,17 @@
                 <autoRefuelPercent>0.5</autoRefuelPercent>
                 <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
             </li>
-            <li Class="CompProperties_Forbiddable" />
-            <li MayRequire="VanillaExpanded.VFESecurity" Class="VFESecurity.CompProperties_LongRangeArtillery">
-                <worldTileRange>15</worldTileRange>
-                <maxForcedMissRadiusFactor>2.5</maxForcedMissRadiusFactor>
-                <gizmoIconTexPath>Things/Building/Artillery/TurretArtillery_Top</gizmoIconTexPath>
-            </li>
+			<li MayRequire="VanillaExpanded.VFESecurity" Class="VFESecurity.CompProperties_WorldArtillery">
+				<worldMapAttackRange>15</worldMapAttackRange>
+				<firingMode>GroundToGround</firingMode>
+			</li>
+			<li MayRequire="VanillaExpanded.VFESecurity" Class="VFESecurity.CompProperties_DualMannable">
+				<manWorkType>Violent</manWorkType>
+				<planetLayerWhitelist>
+				  <li>Surface</li>
+				</planetLayerWhitelist>
+				<secondaryInteractionCellOffset>(1, 0, -1)</secondaryInteractionCellOffset>
+			</li>
             <li
                 MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam"
                 Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
@@ -361,7 +371,7 @@
                 <forcedMissRadiusClassicMortars>8</forcedMissRadiusClassicMortars>
                 <isMortar>true</isMortar>
                 <requireLineOfSight>false</requireLineOfSight>
-                <minRange>49.9</minRange>
+                <minRange>4.9</minRange>
                 <range>500</range>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>FT_CannonLaunchB</soundCast>
@@ -388,7 +398,7 @@
             <drawOffset>(0,-0.01,0)</drawOffset>
         </graphicData>
         <size>(3,3)</size>
-        <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+        <interactionCellOffset>(-1,0,-2)</interactionCellOffset>
         <fillPercent>0.4</fillPercent>
         <inspectorTabs>
             <li>ITab_Shells</li>
@@ -429,12 +439,17 @@
                 <autoRefuelPercent>0.5</autoRefuelPercent>
                 <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
             </li>
-            <li Class="CompProperties_Forbiddable" />
-            <li MayRequire="VanillaExpanded.VFESecurity" Class="VFESecurity.CompProperties_LongRangeArtillery">
-                <worldTileRange>35</worldTileRange>
-                <maxForcedMissRadiusFactor>2.5</maxForcedMissRadiusFactor>
-                <gizmoIconTexPath>Things/Building/Artillery/TurretArtillery_Top</gizmoIconTexPath>
-            </li>
+			<li MayRequire="VanillaExpanded.VFESecurity" Class="VFESecurity.CompProperties_WorldArtillery">
+				<worldMapAttackRange>50</worldMapAttackRange>
+				<firingMode>GroundToGround</firingMode>
+			</li>
+			<li MayRequire="VanillaExpanded.VFESecurity" Class="VFESecurity.CompProperties_DualMannable">
+				<manWorkType>Violent</manWorkType>
+				<planetLayerWhitelist>
+				  <li>Surface</li>
+				</planetLayerWhitelist>
+				<secondaryInteractionCellOffset>(1, 0, -2)</secondaryInteractionCellOffset>
+			</li>
         </comps>
         <statBases>
             <Mass>500</Mass>
@@ -531,7 +546,7 @@
                 <forcedMissRadiusClassicMortars>4</forcedMissRadiusClassicMortars>
                 <isMortar>true</isMortar>
                 <requireLineOfSight>true</requireLineOfSight>
-                <minRange>4.9</minRange>
+                <minRange>5.9</minRange>
                 <range>500</range>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>FT_CannonLaunchC</soundCast>

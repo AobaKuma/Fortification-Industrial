@@ -25,9 +25,6 @@
         </statBases>
         <comps>
             <li Class="CompProperties_Forbiddable" />
-            <li Class="CompProperties_Mannable">
-                <manWorkType>Violent</manWorkType>
-            </li>
         </comps>
         <damageMultipliers>
             <li>
@@ -149,8 +146,8 @@
 
     <ThingDef ParentName="BaseWeaponTurret">
         <defName>FT_Gun_TurretAA</defName>
-        <label>Anti Air cannon</label>
-        <description>An Autocannon designed to defend the area of skies, but also a nice weapon for ground targets.</description>
+        <label>anti air cannon</label>
+        <description>A single-barrel anti-air autocannon designed for short-range air defense. Effective against low-flying aircraft and lightly armored surface targets.</description>
         <graphicData>
             <texPath>ATGun/FT_AAGun</texPath>
         </graphicData>
@@ -281,8 +278,8 @@
 
     <ThingDef ParentName="BaseWeaponTurret">
         <defName>FT_Gun_TurretQuadAA</defName>
-        <label>Quad Anti Air cannon</label>
-        <description>An Quad mounted Autocannon designed to defend the area of skies, but also a nice weapon for ground targets.</description>
+        <label>quad anti air cannon</label>
+        <description>A quad mounted anti-aircraft autocannon designed to provide high-volume, short-range, and rapid-traverse air defense against low-flying strafing aircraft, but also is effective as a ground support platform.</description>
         <graphicData>
             <texPath>ATGun/FT_AAGun_Vierling</texPath>
         </graphicData>
@@ -662,10 +659,7 @@
     <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
         <defName>FT_AutoCannon</defName>
         <label>autocannon</label>
-        <description>
-            A Tripod with high caliber machine gun mounted. Requires steel to refurbish its
-            barrels after heavy use.it needs a pawn to man on it to operate.
-        </description>
+        <description>A single barrel autocannon mounted on a tripod. Needs to be manned in order to fire. Requires steel to refurbish its barrels after heavy use.</description>
         <uiIconPath>InfantryTurret/FT_AutoCannonGun_icon</uiIconPath>
         <uiIconScale>1.2</uiIconScale>
         <graphicData>
@@ -759,11 +753,7 @@
     <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
         <defName>FT_RecoillessGun</defName>
         <label>recoilless gun</label>
-        <description>
-            A Tripod with Recoilless gun mounted.A light-weighted soloution of anti armour
-            operation, Requires ReinforcedBarrel to refurbish its barrels after heavy use. also it needs a
-            pawn to man on it to operate. But notice, do not use it indoors!!
-        </description>
+        <description>A recoilless gun mounted on a tripod. Mainly used for hardened targets such as vehicles and armored mechs. Needs to be manned in order to fire. Requires reinforced barrels to refurbish its barrel after heavy use.</description>
         <uiIconPath>InfantryTurret/FT_RecoillessGun_icon</uiIconPath>
         <uiIconScale>1.2</uiIconScale>
         <graphicData>

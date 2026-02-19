@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="FT_TurretHexMortar"]</xpath>
+    <value>
+      <thingClass>VFESecurity.Building_Artillery</thingClass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="FT_TurretPrince"]</xpath>
+    <value>
+      <thingClass>VFESecurity.Building_Artillery</thingClass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="FT_TurretEmpero"]</xpath>
+    <value>
+      <thingClass>VFESecurity.Building_Artillery</thingClass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="FT_Gun_TurretHexMortar"]/verbs/li/verbClass</xpath>
+    <value>
+      <verbClass>VFESecurity.Verb_ShootWithWorldTargeting</verbClass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="FT_Gun_TurretPrince"]/verbs/li/verbClass</xpath>
+    <value>
+      <verbClass>VFESecurity.Verb_ShootWithWorldTargeting</verbClass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="FT_Gun_TurretEmpero"]/verbs/li/verbClass</xpath>
+    <value>
+      <verbClass>VFESecurity.Verb_ShootWithWorldTargeting</verbClass>
+    </value>
+  </Operation>
+
+</Patch>

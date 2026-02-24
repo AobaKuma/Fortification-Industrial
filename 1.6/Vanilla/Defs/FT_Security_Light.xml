@@ -25,6 +25,9 @@
         </statBases>
         <comps>
             <li Class="CompProperties_Forbiddable" />
+            <li Class="CompProperties_Mannable">
+                <manWorkType>Violent</manWorkType>
+            </li>
         </comps>
         <damageMultipliers>
             <li>

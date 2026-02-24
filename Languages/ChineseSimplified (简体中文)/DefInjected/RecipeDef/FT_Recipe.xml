@@ -1,6 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: make component x4 -->
+  <FT_Make_ComponentIndustrial_Bulk.label>批量制造零件（×4）</FT_Make_ComponentIndustrial_Bulk.label>
+  <!-- EN: Machines four components on a lathe. Requires more time and resources than standard fabrication. -->
+  <FT_Make_ComponentIndustrial_Bulk.description>在车床将钢铁批量加工成零件，由于硬件限制因此效率不如精密制作桌</FT_Make_ComponentIndustrial_Bulk.description>
+  <!-- EN: Machining component. -->
+  <FT_Make_ComponentIndustrial_Bulk.jobString>正在批量制作零件</FT_Make_ComponentIndustrial_Bulk.jobString>
+  
   <!-- EN: make component -->
   <FT_Make_ComponentIndustrial.label>制造零件</FT_Make_ComponentIndustrial.label>
   <!-- EN: Make a component from lathe,take longer time and resources. -->

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: concrete bridge -->
+  <VFEArch_BridgeConcrete.label>混凝土橋</VFEArch_BridgeConcrete.label>
+
+  <!-- EN: concrete parquet -->
+  <VFEArch_WoodenParquetConcrete.label>混凝土鑲木地板</VFEArch_WoodenParquetConcrete.label>
+  <!-- EN: using concrete prefab plank for that beautifully laid down flooring. Whilst beautiful, it takes a long time to lay down but non-flammable. -->
+  <VFEArch_WoodenParquetConcrete.description>使用混凝土預製板鋪設的美觀地板，儘管美觀但鋪設時間較長，且不可燃。</VFEArch_WoodenParquetConcrete.description>
+
+  <!-- EN: plank concrete floor -->
+  <VFEArch_WoodPlankFloorConcrete.label>混凝土木板地板</VFEArch_WoodPlankFloorConcrete.label>
+  <!-- EN: concrete prefab plank flooring instead of wooden, for that warm, homey feeling(not really). While it is still quick to lay,but non-flammable. -->
+  <VFEArch_WoodPlankFloorConcrete.description>以混凝土預製板代替木材的地板，鋪設快速，且不可燃。</VFEArch_WoodPlankFloorConcrete.description>
+
+  <!-- EN: concrete polished stone floor -->
+  <VFEArch_PolishedStoneFloorConcrete.label>混凝土磨光石地板</VFEArch_PolishedStoneFloorConcrete.label>
+
+  <!-- EN: concrete slabs -->
+  <VFEArch_SlabsConcrete.label>混凝土石板地</VFEArch_SlabsConcrete.label>
+
+  <!-- EN: concrete cobblestone floor -->
+  <VFEArch_CobblestoneFloorConcrete.label>混凝土鵝卵石地板</VFEArch_CobblestoneFloorConcrete.label>
+
+  <!-- EN: reinforced concrete bridge -->
+  <VFEArch_BridgeSteelConcrete.label>鋼筋混凝土橋</VFEArch_BridgeSteelConcrete.label>
+
+</LanguageData>

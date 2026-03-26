@@ -124,7 +124,7 @@
 				<aimedBurstShotCount>3</aimedBurstShotCount>
 				<aiUseBurstMode>true</aiUseBurstMode>
 			</li>
-			<li Class="CombatExtended.CompProperties_Charges">
+			<!--<li Class="CombatExtended.CompProperties_Charges">
 				<chargeSpeeds>
 					<li>20</li>
 					<li>30</li>
@@ -132,7 +132,7 @@
 					<li>50</li>
 					<li>55</li>
 				</chargeSpeeds>
-			</li>
+			</li>-->
 			<li Class="Fortified.CompProperties_CastFlecker"> <!-- 尾煙-->
 				<fleck>DustPuffThick</fleck>
 				<burstAmount>10</burstAmount>

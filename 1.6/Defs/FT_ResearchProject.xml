@@ -20,8 +20,7 @@
 
             [To user]
             Being able to build ENIAC and read this information means that you or your civilization already has the minimum requirements for the realization of the technology in the disc.
-            We look forward to further cooperation with you to create a beautiful industrialized society in the rimworld.
-            OS>:_</discoveredLetterText>
+            We look forward to further cooperation with you to create a beautiful industrialized society in the rimworld.\n\n OS>:_</discoveredLetterText>
         <discoveredLetterDisabledWhen>
             <bigThreatsDisabled>true</bigThreatsDisabled>
         </discoveredLetterDisabledWhen>
@@ -140,7 +139,7 @@
                 <li>subject_story->included a full design blueprint in schematic</li>
                 <li>subject_story->mentioned that the processing accuracy of the barrel will greatly affect the accuracy of artillery</li>
                 <li>subject_story->wrote many messy notes in the margins of the schematic</li>
-                <li>subject_story->constantly conveys to people that one day armored vehicles and tanks will be a threat to base defense </li>
+                <li>subject_story->constantly conveys to people that one day armored vehicles and tanks will be a threat to base defense</li>
                 <li>subject_story->attached an advertisement from Nara Industries on the schematic cover</li>
                 <li>subject_story->summarized that using AA guns to shoot at infantry, while unethical, does not violate the laws of war</li>
 
@@ -200,17 +199,17 @@
         <generalRules>
             <rulesStrings>
                 <li>subject->chemistry</li>
-                <li>subject->modren alchemy</li>
+                <li>subject->modern alchemy</li>
                 <li>subject->material sorcery</li>
 
                 <li>subject_story->said that Chemistry is the most cursed subject, bar none</li>
-                <li>subject_story->mentioned that chemical reaction formula for synthesizing neutramines is [censored]</li>
+                <li>subject_story->mentioned that chemical reaction formula for synthesizing neutroamine is [censored]</li>
                 <li>subject_story->wrote many messy notes in the margins of the schematic</li>
                 <li>subject_story->said that chemistry is way more science than alchemy, at least it can make gold in real</li>
                 <li>subject_story->warned readers to stay away from anyone holding a torch or pitchfork</li>
                 <li>subject_story->included a complete periodic table of chemical elements, claiming it would save readers from 127 years of detours.</li>
 
-                <li>subject_gerund->synthesizing neutramines</li>
+                <li>subject_gerund->synthesizing neutroamine</li>
                 <li>subject_gerund->calculating mix ratio of FSX</li>
             </rulesStrings>
         </generalRules>

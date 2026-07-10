@@ -32,7 +32,7 @@
           <li Class="BookOutcomeProperties_GainResearch">
             <tab>HeavyIndustry</tab>
             <exclude>
-              <FT_NuclearDawn MayRequire="Aoba.Fortress.Industrial.NuclearDawn"/>
+              <FT_NuclearDawn MayRequire="Aoba.Fortress.Industrial.NuclearDawn" />
             </exclude>
           </li>
         </doers>

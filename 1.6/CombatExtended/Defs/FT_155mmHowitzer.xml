@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!-- ==================== AmmoSet ========================== -->
@@ -85,7 +85,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="BaseFT155mmHowitzerShell" MayRequire="DwS.FunctionalAmmunition.Library">
 		<defName>Bullet_FT_155mmHowitzerShell_Airburst_directfire</defName>
 		<label>155mm Howitzer shell (Airburst)</label>
@@ -104,10 +104,10 @@
 		</projectile>
 		<comps Inherit="false">
 			<li Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze" MayRequire="DwS.FunctionalAmmunition.Library">
-			   <aimHeightOffset>10</aimHeightOffset>
-			   <safeRange>14</safeRange>     <!-- Defult is 0. If delayRange.min < 0, equivalent to delayRange.min + safeRange.-->
-			   <delayRange>1</delayRange>      <!-- Defult is 1.5~3.5 -->
-			   <fragAngleRange>0</fragAngleRange>
+				<aimHeightOffset>10</aimHeightOffset>
+				<safeRange>14</safeRange>     <!-- Defult is 0. If delayRange.min < 0, equivalent to delayRange.min + safeRange.-->
+				<delayRange>1</delayRange>      <!-- Defult is 1.5~3.5 -->
+				<fragAngleRange>0</fragAngleRange>
 			</li>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
@@ -162,7 +162,7 @@
 			<damageDef>EMP</damageDef>
 			<damageAmountBase>452</damageAmountBase>
 			<explosionRadius>9.5</explosionRadius>
-			
+
 		</projectile>
 		<comps Inherit="false">
 			<li MayRequire="DwS.FunctionalAmmunition.Library" Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze">
@@ -204,7 +204,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
+
 	<ThingDef Name="BaseFT155mmHowitzerShell_Nuclear" ParentName="BaseFT155mmHowitzerShell" MayRequire="Aoba.Fortress.Industrial.NuclearDawn">
 		<defName>FT_Bullet_NuclearWarhead_CE_directfire_II</defName>
 		<label>155mm Howitzer shell (Nuclear)</label>
@@ -322,7 +322,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
+
 	<!-- indirect fire-->
 
 	<ThingDef ParentName="BaseFT155mmHowitzerShell_HE">
@@ -344,7 +344,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="BaseFT155mmHowitzerShell">
 		<defName>Bullet_FT_155mmHowitzerShell_Airburst</defName>
 		<label>155mm Howitzer shell (Airburst)</label>
@@ -421,17 +421,17 @@
 			<gravityFactor>30</gravityFactor>
 		</projectile>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="BaseFT155mmHowitzerShell_Nuclear" MayRequire="Aoba.Fortress.Industrial.NuclearDawn">
 		<defName>FT_Bullet_NuclearWarhead_CE_II</defName>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-            <flyOverhead>true</flyOverhead>
+			<flyOverhead>true</flyOverhead>
 			<speed>0</speed>
 			<shellingProps>
 				<damage>0.5</damage>
 			</shellingProps>
 			<gravityFactor>30</gravityFactor>
-        </projectile>
+		</projectile>
 	</ThingDef>
-	
+
 </Defs>

@@ -303,21 +303,21 @@
                     <li>FT_ConcreteArtilleryBase/TurretArtillery_Base_AA</li>
                 </randomGraphics>
             </li>
-			<li Class="CombatExtended.CompProperties_FireArc">
-				<spanRange>10~360</spanRange>
-				<maxSpanDeviation>180</maxSpanDeviation>
-			</li>
+            <li Class="CombatExtended.CompProperties_FireArc">
+                <spanRange>10~360</spanRange>
+                <maxSpanDeviation>180</maxSpanDeviation>
+            </li>
         </comps>
         <modExtensions>
-			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>0.75</speed><!--1=60度/秒-->
-				<angleWeightMultiplier>2</angleWeightMultiplier>
-			</li>
+            <li Class="CombatExtended.NonSnapTurretExtension">
+                <speed>0.75</speed><!--1=60度/秒-->
+                <angleWeightMultiplier>2</angleWeightMultiplier>
+            </li>
         </modExtensions>
-		<placeWorkers>
-			<li>PlaceWorker_TurretTop</li>
-			<li>PlaceWorker_ShowTurretRadius</li>
-		</placeWorkers>
+        <placeWorkers>
+            <li>PlaceWorker_TurretTop</li>
+            <li>PlaceWorker_ShowTurretRadius</li>
+        </placeWorkers>
         <building>
             <turretGunDef>FT_Gun_TurretAA</turretGunDef>
             <turretTopDrawSize>4</turretTopDrawSize>
@@ -328,17 +328,17 @@
         <costList>
             <Steel>425</Steel>
             <ComponentIndustrial>5</ComponentIndustrial>
-			<!--<ReinforcedBarrel>1</ReinforcedBarrel>-->
+            <!--<ReinforcedBarrel>1</ReinforcedBarrel>-->
         </costList>
-		<costListForDifficulty>
-			<difficultyVar>classicMortars</difficultyVar>
-			<invert>true</invert>
-			<costList>
-				<Steel>350</Steel>
-				<ComponentIndustrial>5</ComponentIndustrial>
-				<ReinforcedBarrel>1</ReinforcedBarrel>
-			</costList>
-		</costListForDifficulty>
+        <costListForDifficulty>
+            <difficultyVar>classicMortars</difficultyVar>
+            <invert>true</invert>
+            <costList>
+                <Steel>350</Steel>
+                <ComponentIndustrial>5</ComponentIndustrial>
+                <ReinforcedBarrel>1</ReinforcedBarrel>
+            </costList>
+        </costListForDifficulty>
         <researchPrerequisites>
             <li>FT_IndustrialCannon</li>
         </researchPrerequisites>
@@ -435,21 +435,21 @@
                     <li>FT_ConcreteArtilleryBase/TurretArtillery_Base_AA</li>
                 </randomGraphics>
             </li>
-			<li Class="CombatExtended.CompProperties_FireArc">
-				<spanRange>10~360</spanRange>
-				<maxSpanDeviation>180</maxSpanDeviation>
-			</li>
+            <li Class="CombatExtended.CompProperties_FireArc">
+                <spanRange>10~360</spanRange>
+                <maxSpanDeviation>180</maxSpanDeviation>
+            </li>
         </comps>
         <modExtensions>
-			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>0.75</speed>
-				<angleWeightMultiplier>2</angleWeightMultiplier>
-			</li>
+            <li Class="CombatExtended.NonSnapTurretExtension">
+                <speed>0.75</speed>
+                <angleWeightMultiplier>2</angleWeightMultiplier>
+            </li>
         </modExtensions>
-		<placeWorkers>
-			<li>PlaceWorker_TurretTop</li>
-			<li>PlaceWorker_ShowTurretRadius</li>
-		</placeWorkers>
+        <placeWorkers>
+            <li>PlaceWorker_TurretTop</li>
+            <li>PlaceWorker_ShowTurretRadius</li>
+        </placeWorkers>
         <building>
             <turretGunDef>FT_Gun_TurretQuadAA</turretGunDef>
             <turretTopDrawSize>4</turretTopDrawSize>
@@ -462,15 +462,15 @@
             <ComponentIndustrial>20</ComponentIndustrial>
             <!--<ReinforcedBarrel>4</ReinforcedBarrel>-->
         </costList>
-		<costListForDifficulty>
-			<difficultyVar>classicMortars</difficultyVar>
-			<invert>true</invert>
-			<costList>
-				<Steel>400</Steel>
-				<ComponentIndustrial>20</ComponentIndustrial>
-				<ReinforcedBarrel>4</ReinforcedBarrel>
-			</costList>
-		</costListForDifficulty>
+        <costListForDifficulty>
+            <difficultyVar>classicMortars</difficultyVar>
+            <invert>true</invert>
+            <costList>
+                <Steel>400</Steel>
+                <ComponentIndustrial>20</ComponentIndustrial>
+                <ReinforcedBarrel>4</ReinforcedBarrel>
+            </costList>
+        </costListForDifficulty>
         <researchPrerequisites>
             <li>FT_IndustrialCannon</li>
         </researchPrerequisites>
@@ -579,21 +579,21 @@
                     <li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Wheel_Sec</li>
                 </randomGraphics>
             </li>
-			<li Class="CombatExtended.CompProperties_FireArc">
-				<spanRange>10~360</spanRange>
-				<maxSpanDeviation>180</maxSpanDeviation>
-			</li>
+            <li Class="CombatExtended.CompProperties_FireArc">
+                <spanRange>10~360</spanRange>
+                <maxSpanDeviation>180</maxSpanDeviation>
+            </li>
         </comps>
         <modExtensions>
-			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>0.6</speed>
-				<angleWeightMultiplier>2</angleWeightMultiplier>
-			</li>
+            <li Class="CombatExtended.NonSnapTurretExtension">
+                <speed>0.6</speed>
+                <angleWeightMultiplier>2</angleWeightMultiplier>
+            </li>
         </modExtensions>
-		<placeWorkers>
-			<li>PlaceWorker_TurretTop</li>
-			<li>PlaceWorker_ShowTurretRadius</li>
-		</placeWorkers>
+        <placeWorkers>
+            <li>PlaceWorker_TurretTop</li>
+            <li>PlaceWorker_ShowTurretRadius</li>
+        </placeWorkers>
         <building>
             <turretGunDef>FT_Gun_TurretAT</turretGunDef>
             <turretTopDrawSize>4</turretTopDrawSize>
@@ -606,15 +606,15 @@
             <ComponentIndustrial>4</ComponentIndustrial>
             <!--<ReinforcedBarrel>1</ReinforcedBarrel>-->
         </costList>
-		<costListForDifficulty>
-			<difficultyVar>classicMortars</difficultyVar>
-			<invert>true</invert>
-			<costList>
-				<Steel>425</Steel>
-				<ComponentIndustrial>4</ComponentIndustrial>
-				<ReinforcedBarrel>1</ReinforcedBarrel>
-			</costList>
-		</costListForDifficulty>
+        <costListForDifficulty>
+            <difficultyVar>classicMortars</difficultyVar>
+            <invert>true</invert>
+            <costList>
+                <Steel>425</Steel>
+                <ComponentIndustrial>4</ComponentIndustrial>
+                <ReinforcedBarrel>1</ReinforcedBarrel>
+            </costList>
+        </costListForDifficulty>
         <researchPrerequisites>
             <li>FT_IndustrialCannon</li>
         </researchPrerequisites>
@@ -737,21 +737,21 @@
                     <li>FT_ConcreteArtilleryBase/TurretArtillery_Base_Wheel_Sec</li>
                 </randomGraphics>
             </li>
-			<li Class="CombatExtended.CompProperties_FireArc">
-				<spanRange>10~360</spanRange>
-				<maxSpanDeviation>180</maxSpanDeviation>
-			</li>
+            <li Class="CombatExtended.CompProperties_FireArc">
+                <spanRange>10~360</spanRange>
+                <maxSpanDeviation>180</maxSpanDeviation>
+            </li>
         </comps>
         <modExtensions>
-			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>0.437</speed>
-				<angleWeightMultiplier>2</angleWeightMultiplier>
-			</li>
+            <li Class="CombatExtended.NonSnapTurretExtension">
+                <speed>0.437</speed>
+                <angleWeightMultiplier>2</angleWeightMultiplier>
+            </li>
         </modExtensions>
-		<placeWorkers>
-			<li>PlaceWorker_TurretTop</li>
-			<li>PlaceWorker_ShowTurretRadius</li>
-		</placeWorkers>
+        <placeWorkers>
+            <li>PlaceWorker_TurretTop</li>
+            <li>PlaceWorker_ShowTurretRadius</li>
+        </placeWorkers>
         <building>
             <turretBurstWarmupTime>1.5</turretBurstWarmupTime>
             <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
@@ -765,15 +765,15 @@
             <ComponentIndustrial>6</ComponentIndustrial>
             <!--<ReinforcedBarrel>2</ReinforcedBarrel>-->
         </costList>
-		<costListForDifficulty>
-			<difficultyVar>classicMortars</difficultyVar>
-			<invert>true</invert>
-			<costList>
-				<Steel>500</Steel>
-				<ComponentIndustrial>6</ComponentIndustrial>
-				<ReinforcedBarrel>2</ReinforcedBarrel>
-			</costList>
-		</costListForDifficulty>
+        <costListForDifficulty>
+            <difficultyVar>classicMortars</difficultyVar>
+            <invert>true</invert>
+            <costList>
+                <Steel>500</Steel>
+                <ComponentIndustrial>6</ComponentIndustrial>
+                <ReinforcedBarrel>2</ReinforcedBarrel>
+            </costList>
+        </costListForDifficulty>
         <researchPrerequisites>
             <li>FT_HeavyArtillery</li>
         </researchPrerequisites>

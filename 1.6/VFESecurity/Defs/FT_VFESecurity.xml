@@ -2,7 +2,7 @@
 
 <Defs>
 
-    <!-- 
+	<!-- 
 	<TerrainDef>
         <defName>FT_VFES_TrenchTerrain</defName>
         <label>fortified trench floor</label>
@@ -55,49 +55,48 @@
         </modExtensions>
     </TerrainDef> 
 	-->
-	
-    <HediffDef>
-        <defName>FT_VFES_TrenchTerrain</defName>
-        <label>in a trench</label>
-        <description>This person is standing in a trench or other defensive structure.</description>
-        <hediffClass>VFESecurity.HediffDependsOnBuilding</hediffClass>
-        <stages>
-            <li>
-                <becomeVisible>false</becomeVisible>
+
+	<HediffDef>
+		<defName>FT_VFES_TrenchTerrain</defName>
+		<label>in a trench</label>
+		<description>This person is standing in a trench or other defensive structure.</description>
+		<hediffClass>VFESecurity.HediffDependsOnBuilding</hediffClass>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
 				<statOffsets>
-				  <VEF_RangedDodgeChance>0.3</VEF_RangedDodgeChance>
+					<VEF_RangedDodgeChance>0.3</VEF_RangedDodgeChance>
 				</statOffsets>
-                <statFactors>
-                    <VEF_VerbRangeFactor>0.8</VEF_VerbRangeFactor>
-                </statFactors>
+				<statFactors>
+					<VEF_VerbRangeFactor>0.8</VEF_VerbRangeFactor>
+				</statFactors>
 				<damageFactors>
-				  <Bomb>0.4</Bomb>
+					<Bomb>0.4</Bomb>
 				</damageFactors>
-            </li>
-        </stages>
-    </HediffDef>
+			</li>
+		</stages>
+	</HediffDef>
 
-    <HediffDef>
-        <defName>FT_VFES_PlatformTerrain</defName>
-        <label>on a platform</label>
-        <description>This person is standing on a platform or other structure.</description>
-        <hediffClass>VFESecurity.HediffDependsOnBuilding</hediffClass>
-        <stages>
-            <li>
-                <becomeVisible>false</becomeVisible>
+	<HediffDef>
+		<defName>FT_VFES_PlatformTerrain</defName>
+		<label>on a platform</label>
+		<description>This person is standing on a platform or other structure.</description>
+		<hediffClass>VFESecurity.HediffDependsOnBuilding</hediffClass>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
 				<statOffsets>
-				  <VEF_RangedDodgeChance>-0.3</VEF_RangedDodgeChance>
+					<VEF_RangedDodgeChance>-0.3</VEF_RangedDodgeChance>
 				</statOffsets>
-                <statFactors>
-                    <VEF_VerbRangeFactor>1.4</VEF_VerbRangeFactor>
-                </statFactors>
-            </li>
-        </stages>
-    </HediffDef>
-	
+				<statFactors>
+					<VEF_VerbRangeFactor>1.4</VEF_VerbRangeFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
 
 
-	  <!-- Fortified Trench -->
+	<!-- Fortified Trench -->
 	<ThingDef ParentName="BuildingBase">
 		<defName>FT_Trench</defName>
 		<label>fortified trench</label>
@@ -163,7 +162,7 @@
 		</damageMultipliers>
 		<clearBuildingArea>false</clearBuildingArea>
 		<researchPrerequisites>
-			<li>VWE_TrenchWarfare</li>
+			<li>FT_Concrete</li>
 		</researchPrerequisites>
 		<modExtensions>
 			<li Class="VFESecurity.HediffOnBuildingExtension">
@@ -240,7 +239,7 @@
 		</damageMultipliers>
 		<clearBuildingArea>false</clearBuildingArea>
 		<researchPrerequisites>
-			<li>VWE_TrenchWarfare</li>
+			<li>FT_Concrete</li>
 		</researchPrerequisites>
 		<modExtensions>
 			<li Class="VFESecurity.HediffOnBuildingExtension">

@@ -193,12 +193,12 @@
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
     <repairEffect>ConstructMetal</repairEffect>
-		<modExtensions>
-			<li MayRequireAnyOf="SmashPhil.VehicleFramework,SmashPhil.VehicleFramework_steam" Class="Vehicles.CustomCostDefModExtension">
-				<cost>10086</cost>
-        <vehicles/>
-			</li>
-		</modExtensions>
+    <modExtensions>
+      <li MayRequireAnyOf="SmashPhil.VehicleFramework,SmashPhil.VehicleFramework_steam" Class="Vehicles.CustomCostDefModExtension">
+        <cost>10086</cost>
+        <vehicles />
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -223,7 +223,7 @@
     <costList>
       <FT_BlocksConcrete>10</FT_BlocksConcrete>
     </costList>
-		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+    <disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
     <size>(2,1)</size>
     <blockLight>false</blockLight>
     <uiIconPath>Tetrapods</uiIconPath>
@@ -335,11 +335,11 @@
     <designationCategory>Security</designationCategory>
     <staticSunShadowHeight>0.00</staticSunShadowHeight>
     <modExtensions>
-			<li MayRequireAnyOf="SmashPhil.VehicleFramework,SmashPhil.VehicleFramework_steam" Class="Vehicles.CustomCostDefModExtension">
-				<cost>10086</cost>
-        <vehicles/>
-			</li>
-		</modExtensions>
+      <li MayRequireAnyOf="SmashPhil.VehicleFramework,SmashPhil.VehicleFramework_steam" Class="Vehicles.CustomCostDefModExtension">
+        <cost>10086</cost>
+        <vehicles />
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -408,11 +408,11 @@
     <designationCategory>Security</designationCategory>
     <staticSunShadowHeight>0.00</staticSunShadowHeight>
     <modExtensions>
-			<li MayRequireAnyOf="SmashPhil.VehicleFramework,SmashPhil.VehicleFramework_steam" Class="Vehicles.CustomCostDefModExtension">
-				<cost>10086</cost>
-        <vehicles/>
-			</li>
-		</modExtensions>
+      <li MayRequireAnyOf="SmashPhil.VehicleFramework,SmashPhil.VehicleFramework_steam" Class="Vehicles.CustomCostDefModExtension">
+        <cost>10086</cost>
+        <vehicles />
+      </li>
+    </modExtensions>
   </ThingDef>
   <!--		Floors 地板		!-->
   <DesignatorDropdownGroupDef>

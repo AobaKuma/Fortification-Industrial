@@ -33,16 +33,16 @@
             </li>
             <li Class="CompProperties_Flickable" />
             <li Class="CompProperties_Breakdownable" />
-			<li Class="CombatExtended.CompProperties_FireArc">
-				<spanRange>10~360</spanRange>
-				<maxSpanDeviation>180</maxSpanDeviation>
-			</li>
+            <li Class="CombatExtended.CompProperties_FireArc">
+                <spanRange>10~360</spanRange>
+                <maxSpanDeviation>180</maxSpanDeviation>
+            </li>
         </comps>
         <modExtensions>
-			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>2</speed>
-				<angleWeightMultiplier>2</angleWeightMultiplier>
-			</li>
+            <li Class="CombatExtended.NonSnapTurretExtension">
+                <speed>2</speed>
+                <angleWeightMultiplier>2</angleWeightMultiplier>
+            </li>
         </modExtensions>
         <passability>PassThroughOnly</passability>
         <pathCost>50</pathCost>
@@ -73,7 +73,7 @@
     <ThingDef ParentName="FT_MGNest">
         <defName>FT_Turret_BunkerL</defName>
         <label>auto-turret sandbag nest</label>
-		<description>An automatic turret equipped with a full powered cartridge machine gun, encased within a basic defensive position. Constructed from leathery materials. \nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+        <description>An automatic turret equipped with a full powered cartridge machine gun, encased within a basic defensive position. Constructed from leathery materials. \nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
         <graphicData>
             <texPath>MGBunker/FT_MGBunker_Leathery</texPath>
         </graphicData>
@@ -93,7 +93,7 @@
     <ThingDef ParentName="FT_MGNest">
         <defName>FT_Turret_BunkerM</defName>
         <label>auto-turret bunker</label>
-		<description>An automatic turret equipped with a full powered cartridge machine gun, encased within a reinforced defensive position. Constructed from metallic materials. \nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+        <description>An automatic turret equipped with a full powered cartridge machine gun, encased within a reinforced defensive position. Constructed from metallic materials. \nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
         <graphicData>
             <texPath>MGBunker/FT_MGBunker_Metal</texPath>
         </graphicData>
@@ -113,7 +113,7 @@
     <ThingDef ParentName="FT_MGNest">
         <defName>FT_Turret_BunkerC</defName>
         <label>auto-turret bunker</label>
-		<description>An automatic turret equipped with a full powered cartridge machine gun, encased within a reinforced defensive position. Constructed from stone materials.\nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+        <description>An automatic turret equipped with a full powered cartridge machine gun, encased within a reinforced defensive position. Constructed from stone materials.\nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
         <graphicData>
             <texPath>MGBunker/FT_MGBunker_Concrete</texPath>
         </graphicData>
@@ -133,7 +133,7 @@
     <ThingDef ParentName="FT_MGNest">
         <defName>FT_Turret_BunkerF</defName>
         <label>auto-turret military sandbag nest</label>
-		<description>An automatic turret equipped with a full powered cartridge machine gun, encased within a basic defensive position. Constructed from fabric materials. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+        <description>An automatic turret equipped with a full powered cartridge machine gun, encased within a basic defensive position. Constructed from fabric materials. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
         <graphicData>
             <texPath>MGBunker/FT_MGBunker_Fabric</texPath>
         </graphicData>

@@ -81,7 +81,7 @@
 			<ShotSpread>3.6</ShotSpread>
 		</statBases>
 		<weaponTags>
-      		<li>TurretGun</li>
+			<li>TurretGun</li>
 		</weaponTags>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -125,7 +125,7 @@
 				<burstAngle>180</burstAngle>
 				<fleckSizeRange>(3,5)</fleckSizeRange>
 				<burstSpeedRange>(1,2)</burstSpeedRange>
-				<burstOffsetRange>(2,6)</burstOffsetRange> 
+				<burstOffsetRange>(2,6)</burstOffsetRange>
 				<onGroundOverride>true</onGroundOverride>
 			</li>
 			<li Class="Fortification.CompProperties_CastFlecker"><!-- 噴火-->
@@ -135,7 +135,7 @@
 				<burstAngle>180</burstAngle>
 				<fleckSizeRange>(3,5)</fleckSizeRange>
 				<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
-				<burstOffsetRange>(2,6)</burstOffsetRange> 
+				<burstOffsetRange>(2,6)</burstOffsetRange>
 				<rangeScaleFactor>(1,0.1)</rangeScaleFactor>
 				<onGroundOverride>true</onGroundOverride>
 			</li>
@@ -146,7 +146,7 @@
 				<burstAngle>0</burstAngle>
 				<fleckSizeRange>(1,2)</fleckSizeRange>
 				<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
-				<burstOffsetRange>(2,6)</burstOffsetRange> 
+				<burstOffsetRange>(2,6)</burstOffsetRange>
 				<onGroundOverride>true</onGroundOverride>
 			</li>
 			<li MayRequire="3HSTltd.Framework" Class="CombatExtended.CompProperties_FireModes">
@@ -157,7 +157,7 @@
 					<verbClass>BillDoorsFramework.Verb_ShootNotUnderRoofMortarCE</verbClass>
 					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
 					<hasStandardCommand>true</hasStandardCommand>
-					<defaultProjectile>Bullet_FT_15cmNebelwerfer_HE_directfire</defaultProjectile>		
+					<defaultProjectile>Bullet_FT_15cmNebelwerfer_HE_directfire</defaultProjectile>
 					<warmupTime>3</warmupTime>
 					<minRange>20</minRange>
 					<range>1000</range>
@@ -186,30 +186,30 @@
 				<mainCommandIcon>Indirect</mainCommandIcon>
 				<secondaryCommandIcon>Direct</secondaryCommandIcon>
 				<secondaryWeaponChargeSpeeds>
-							<li>30</li>
-							<li>50</li>
-							<li>70</li>
-							<li>90</li>
-							<li>110</li>
-							<li>130</li>
+					<li>30</li>
+					<li>50</li>
+					<li>70</li>
+					<li>90</li>
+					<li>110</li>
+					<li>130</li>
 				</secondaryWeaponChargeSpeeds>
 			</li>
 			<li Class="CombatExtended.CompProperties_Charges">
 				<chargeSpeeds>
-							<li>30</li>
-							<li>50</li>
-							<li>70</li>
-							<li>90</li>
-							<li>110</li>
-							<li>130</li>
+					<li>30</li>
+					<li>50</li>
+					<li>70</li>
+					<li>90</li>
+					<li>110</li>
+					<li>130</li>
 				</chargeSpeeds>
 			</li>
 		</comps>
 		<modExtensions>
-            <li Class="BillDoorsFramework.ModExtension_VerbNotUnderRoof" MayRequire="3HSTltd.Framework">
-                <appliesInSecondaryMode>false</appliesInSecondaryMode>
-            </li>
-        </modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_VerbNotUnderRoof" MayRequire="3HSTltd.Framework">
+				<appliesInSecondaryMode>false</appliesInSecondaryMode>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 	<ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
@@ -289,7 +289,7 @@
 			<SwayFactor MayRequire="3HSTltd.Framework">0.05</SwayFactor>
 		</statBases>
 		<weaponTags>
-      		<li>TurretGun</li>
+			<li>TurretGun</li>
 		</weaponTags>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -335,7 +335,7 @@
 				<burstAngle>180</burstAngle>
 				<fleckSizeRange>(3,5)</fleckSizeRange>
 				<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
-				<burstOffsetRange>(2,6)</burstOffsetRange> 
+				<burstOffsetRange>(2,6)</burstOffsetRange>
 				<onGroundOverride>true</onGroundOverride>
 			</li>
 			<li Class="Fortification.CompProperties_CastFlecker">
@@ -345,7 +345,7 @@
 				<burstAngle>180</burstAngle>
 				<fleckSizeRange>(3,5)</fleckSizeRange>
 				<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
-				<burstOffsetRange>(2,6)</burstOffsetRange> 
+				<burstOffsetRange>(2,6)</burstOffsetRange>
 				<rangeScaleFactor>(1,0.1)</rangeScaleFactor>
 				<onGroundOverride>true</onGroundOverride>
 			</li>
@@ -356,7 +356,7 @@
 				<burstAngle>0</burstAngle>
 				<fleckSizeRange>(1,2)</fleckSizeRange>
 				<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
-				<burstOffsetRange>(2,6)</burstOffsetRange> 
+				<burstOffsetRange>(2,6)</burstOffsetRange>
 				<onGroundOverride>true</onGroundOverride>
 			</li>
 			<li MayRequire="3HSTltd.Framework" Class="CombatExtended.CompProperties_FireModes">
@@ -404,12 +404,12 @@
 			</li>
 		</comps>
 		<modExtensions>
-            <li Class="BillDoorsFramework.ModExtension_VerbNotUnderRoof" MayRequire="3HSTltd.Framework">
-                <appliesInSecondaryMode>false</appliesInSecondaryMode>
-            </li>
-        </modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_VerbNotUnderRoof" MayRequire="3HSTltd.Framework">
+				<appliesInSecondaryMode>false</appliesInSecondaryMode>
+			</li>
+		</modExtensions>
 	</ThingDef>
-	
+
 
 	<ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
 		<defName>FT_TurretEmpero</defName>
@@ -479,7 +479,7 @@
 			<SwayFactor>0.05</SwayFactor>
 		</statBases>
 		<weaponTags>
-      		<li>TurretGun</li>
+			<li>TurretGun</li>
 		</weaponTags>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -528,7 +528,7 @@
 				<burstAngle>180</burstAngle>
 				<fleckSizeRange>(3,5)</fleckSizeRange>
 				<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
-				<burstOffsetRange>(2,6)</burstOffsetRange> 
+				<burstOffsetRange>(2,6)</burstOffsetRange>
 				<onGroundOverride>true</onGroundOverride>
 			</li>
 			<li Class="Fortification.CompProperties_CastFlecker">
@@ -538,7 +538,7 @@
 				<burstAngle>180</burstAngle>
 				<fleckSizeRange>(3,5)</fleckSizeRange>
 				<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
-				<burstOffsetRange>(2,6)</burstOffsetRange> 
+				<burstOffsetRange>(2,6)</burstOffsetRange>
 				<rangeScaleFactor>(1,0.1)</rangeScaleFactor>
 				<onGroundOverride>true</onGroundOverride>
 			</li>
@@ -549,7 +549,7 @@
 				<burstAngle>0</burstAngle>
 				<fleckSizeRange>(1,2)</fleckSizeRange>
 				<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
-				<burstOffsetRange>(2,6)</burstOffsetRange> 
+				<burstOffsetRange>(2,6)</burstOffsetRange>
 				<onGroundOverride>true</onGroundOverride>
 			</li>
 			<li MayRequire="3HSTltd.Framework" Class="BillDoorsFramework.CompProperties_SecondaryAmmo">
@@ -593,10 +593,10 @@
 			</li>
 		</comps>
 		<modExtensions>
-            <li Class="BillDoorsFramework.ModExtension_VerbNotUnderRoof" MayRequire="3HSTltd.Framework">
-                <appliesInSecondaryMode>false</appliesInSecondaryMode>
-            </li>
-        </modExtensions>
+			<li Class="BillDoorsFramework.ModExtension_VerbNotUnderRoof" MayRequire="3HSTltd.Framework">
+				<appliesInSecondaryMode>false</appliesInSecondaryMode>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
 </Defs>	

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!-- ==================== AmmoSet ========================== -->
@@ -195,10 +195,10 @@
 			<effectiveRangeMultiplier>0.5</effectiveRangeMultiplier>
 		</projectile>
 		<comps>
-            <li MayRequire="DwS.FunctionalAmmunition.Library" Class="D_FuncAmmoLib.CompProperties_TicksCrashPorjectile">
-			    <LifeTicksSet>40</LifeTicksSet>
-		    </li>
-        </comps>
+			<li MayRequire="DwS.FunctionalAmmunition.Library" Class="D_FuncAmmoLib.CompProperties_TicksCrashPorjectile">
+				<LifeTicksSet>40</LifeTicksSet>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="Base37x223mmRBullet" MayRequire="DwS.FunctionalAmmunition.Library">
@@ -375,10 +375,10 @@
 			<gravityFactor>5</gravityFactor>
 		</projectile>
 		<comps>
-            <li Class="D_FuncAmmoLib.CompProperties_TicksCrashPorjectile">
-			    <LifeTicksSet>15</LifeTicksSet>
-		    </li>
-        </comps>
+			<li Class="D_FuncAmmoLib.CompProperties_TicksCrashPorjectile">
+				<LifeTicksSet>15</LifeTicksSet>
+			</li>
+		</comps>
 	</ThingDef>
 
 	<!-- ==================== Recipes ========================== -->

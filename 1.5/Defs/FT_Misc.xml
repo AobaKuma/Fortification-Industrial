@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
 
@@ -7,7 +7,7 @@
     <driverClass>Fortification.JobDriver_EnterBunkerFacility</driverClass>
     <reportString>entering facility</reportString>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
-	<joyDuration>250</joyDuration>
+    <joyDuration>250</joyDuration>
   </JobDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -31,7 +31,7 @@
     <blockWind>true</blockWind>
     <fillPercent>1.0</fillPercent>
     <rotatable>true</rotatable>
-	  <minifiedDef>MinifiedThing</minifiedDef>
+    <minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories>
       <li>BuildingsSecurity</li>
     </thingCategories>
@@ -78,7 +78,7 @@
         <compClass>CompHeatPusherPowered</compClass>
         <heatPerSecond>6</heatPerSecond>
       </li>
-      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Breakdownable" />
       <li Class="CompProperties_Explosive">
         <explosiveRadius>0</explosiveRadius>
         <explosiveExpandPerFuel>0.95</explosiveExpandPerFuel>
@@ -99,19 +99,21 @@
     </researchPrerequisites>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
   </ThingDef>
-  
+
   <ThingDef ParentName="BuildingBase">
     <defName>FT_ENIAC</defName>
     <label>E.N.I.A.C.</label>
     <description>Electronic Numerical Integrator And Computer Or simply call it Eniac, big and highly consume power energy, Increases research speed when placed near hi-tech research bench and unlocks new research projects from reading the Disk.
-	Each research bench can connect to 4 ENIAC.</description>
+      Each research bench can connect to 4 ENIAC.</description>
     <graphicData>
       <texPath>Eniac</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(6.25,6.5)</drawSize>
     </graphicData>
     <uiIconScale>0.85</uiIconScale>
-    <researchPrerequisites><li>FT_ENIAC</li></researchPrerequisites>
+    <researchPrerequisites>
+      <li>FT_ENIAC</li>
+    </researchPrerequisites>
     <size>(4,2)</size>
     <rotatable>true</rotatable>
     <altitudeLayer>Building</altitudeLayer>
@@ -136,35 +138,35 @@
       <ComponentIndustrial>18</ComponentIndustrial>
     </costList>
     <coversFloor>true</coversFloor>
-	<holdsRoof>true</holdsRoof>
+    <holdsRoof>true</holdsRoof>
     <building>
       <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
     </building>
     <comps>
-		<li Class="CompProperties_Facility"> 
-			<statOffsets>
-				<ResearchSpeedFactor>0.25</ResearchSpeedFactor>
-				<VFEA_FailChance MayRequire="VanillaExpanded.VFEA">-0.15</VFEA_FailChance>
-				<VFEA_InjectingTimeFactor MayRequire="VanillaExpanded.VFEA">0.25</VFEA_InjectingTimeFactor>
-			</statOffsets>
-			<maxSimultaneous>4</maxSimultaneous>
-			<maxDistance>16</maxDistance>
-		</li>
-		<li Class="CompProperties_Breakdownable"/>
-		<li Class="CompProperties_Power">
-			<compClass>CompPowerTrader</compClass>
-			<shortCircuitInRain>true</shortCircuitInRain>
-			<basePowerConsumption>5000</basePowerConsumption>
-		</li>
-		<li Class="CompProperties_Flickable"/>
-		<li Class="CompProperties_HeatPusher">
-			<compClass>CompHeatPusherPowered</compClass>
-			<heatPerSecond>50</heatPerSecond>
-			<heatPushMaxTemperature>200</heatPushMaxTemperature>
-		</li>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <ResearchSpeedFactor>0.25</ResearchSpeedFactor>
+          <VFEA_FailChance MayRequire="VanillaExpanded.VFEA">-0.15</VFEA_FailChance>
+          <VFEA_InjectingTimeFactor MayRequire="VanillaExpanded.VFEA">0.25</VFEA_InjectingTimeFactor>
+        </statOffsets>
+        <maxSimultaneous>4</maxSimultaneous>
+        <maxDistance>16</maxDistance>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>5000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>50</heatPerSecond>
+        <heatPushMaxTemperature>200</heatPushMaxTemperature>
+      </li>
     </comps>
     <placeWorkers>
-		<li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
     </placeWorkers>
     <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
   </ThingDef>
@@ -178,7 +180,7 @@
       <texPath>FT_Antenna</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,8)</drawSize>
-	    <drawOffset>(0,1,2.85)</drawOffset>
+      <drawOffset>(0,1,2.85)</drawOffset>
       <shadowData>
         <volume>(0.3, 0.2, 0.3)</volume>
         <offset>(0,0,-0.1)</offset>
@@ -224,8 +226,8 @@
         <transmitsPower>true</transmitsPower>
         <soundAmbientProducingPower>ScannerLongRangeMineral_Ambience</soundAmbientProducingPower>
       </li>
-      <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
     </comps>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <designationCategory>Misc</designationCategory>
@@ -240,12 +242,12 @@
       <li>FT_ENIAC</li>
     </researchPrerequisites>
   </ThingDef>
-  
+
   <JoyKindDef>
     <defName>FT_RadioTuning</defName>
     <label>Radio listening</label>
   </JoyKindDef>
-  
+
   <JoyGiverDef>
     <defName>ListenRadio</defName>
     <giverClass>JoyGiver_ViewArt</giverClass>
@@ -256,7 +258,7 @@
       <li>Hearing</li>
     </requiredCapacities>
   </JoyGiverDef>
-  
+
   <JobDef>
     <defName>FT_UseRadio</defName>
     <driverClass>JobDriver_ViewArt</driverClass>
@@ -268,8 +270,8 @@
     <joyKind>FT_RadioTuning</joyKind>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
-  
- <WorkGiverDef>
+
+  <WorkGiverDef>
     <defName>RadioScan</defName>
     <label>adjust radio frequency to scan</label>
     <giverClass>WorkGiver_OperateScanner</giverClass>
@@ -301,7 +303,7 @@
         <volume>(0.5,0.5,0.5)</volume>
       </shadowData>
     </graphicData>
-	  <minifiedDef>MinifiedThing</minifiedDef>
+    <minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories>
       <li>BuildingsSecurity</li>
     </thingCategories>
@@ -337,9 +339,9 @@
         <soundAmbientProducingPower>Television_Ambience</soundAmbientProducingPower>
         <basePowerConsumption>50</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_Breakdownable"/>
-	  <li Class="CompProperties_LongRangeMineralScanner">
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_LongRangeMineralScanner">
         <scanSpeedStat>ResearchSpeed</scanSpeedStat>
         <scanFindMtbDays>8</scanFindMtbDays>
         <scanFindGuaranteedDays>12</scanFindGuaranteedDays>
@@ -369,7 +371,7 @@
       <li>FT_ENIAC</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
-	<tickerType MayRequire="Ludeon.RimWorld.Biotech">Normal</tickerType><!-- used by call bossgroup -->
+    <tickerType MayRequire="Ludeon.RimWorld.Biotech">Normal</tickerType><!-- used by call bossgroup -->
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -379,7 +381,7 @@
     <graphicData>
       <texPath>hydrant</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawOffset>(0,0,0.22)</drawOffset>  
+      <drawOffset>(0,0,0.22)</drawOffset>
       <shadowData>
         <volume>(0.25, 0.35, 0.25)</volume>
         <offset>(0,0,-0.1)</offset>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
   <FleckDef ParentName="FleckBase_Thrown"><!-- 火箭尾跡-->
@@ -102,7 +102,7 @@
       </li>
     </children>
   </EffecterDef>
-  
+
   <FleckDef ParentName="FleckBase_RandomGraphic">
     <defName>FT_SignalPluse</defName>
     <altitudeLayer>MoteOverhead</altitudeLayer>

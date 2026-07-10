@@ -27,7 +27,7 @@
 		</graphicData>
 		<equipmentType>Primary</equipmentType>
 		<techLevel>Industrial</techLevel>
-		<weaponTags/>
+		<weaponTags />
 		<comps>
 			<li>
 				<compClass>CompEquippable</compClass>
@@ -102,18 +102,18 @@
 		<researchPrerequisites>
 			<li>Mortars</li>
 		</researchPrerequisites>
-        <comps>
+		<comps>
 			<li Class="CombatExtended.CompProperties_FireArc">
 				<spanRange>10~360</spanRange>
 				<maxSpanDeviation>180</maxSpanDeviation>
 			</li>
-        </comps>
-        <modExtensions>
+		</comps>
+		<modExtensions>
 			<li Class="CombatExtended.NonSnapTurretExtension">
 				<speed>1.667</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
-        </modExtensions>
+		</modExtensions>
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
 			<li>PlaceWorker_TurretTop</li>
@@ -243,18 +243,18 @@
 		<researchPrerequisites>
 			<li>Mortars</li>
 		</researchPrerequisites>
-        <comps>
+		<comps>
 			<li Class="CombatExtended.CompProperties_FireArc">
 				<spanRange>10~360</spanRange>
 				<maxSpanDeviation>180</maxSpanDeviation>
 			</li>
-        </comps>
-        <modExtensions>
+		</comps>
+		<modExtensions>
 			<li Class="CombatExtended.NonSnapTurretExtension">
 				<speed>1.75</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
-        </modExtensions>
+		</modExtensions>
 		<placeWorkers>
 			<li>PlaceWorker_TurretTop</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>

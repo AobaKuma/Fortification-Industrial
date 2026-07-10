@@ -13,7 +13,7 @@
 			<Ammo_15cmNebelwerfer_Toxic MayRequire="Ludeon.RimWorld.Biotech">Bullet_FT_15cmNebelwerfer_Toxic</Ammo_15cmNebelwerfer_Toxic>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
-	
+
 	<CombatExtended.AmmoSetDef>
 		<defName>AmmoSet_FT_15cmNebelwerfer_directfire</defName>
 		<label>15cm Nebelwerfer Rockets</label>
@@ -79,7 +79,7 @@
 	</ThingDef>
 
 	<!-- ================== Projectiles ================== -->
-	
+
 	<!-- indirect fire-->
 
 	<ThingDef Name="BaseFT15cmNebelwerfer_HE" Class="CombatExtended.AmmoDef" ParentName="Base130mmType63">
@@ -181,9 +181,9 @@
 			<spreadMult>1.5</spreadMult>
 		</projectile>
 	</ThingDef>
-	
+
 	<!-- direct fire-->
-	
+
 	<ThingDef ParentName="BaseFT15cmNebelwerfer_HE">
 		<defName>Bullet_FT_15cmNebelwerfer_HE_directfire</defName>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -315,7 +315,7 @@
 			<Ammo_15cmNebelwerfer_Smoke>6</Ammo_15cmNebelwerfer_Smoke>
 		</products>
 	</RecipeDef>
-	
+
 	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_15cmNebelwerfer_EMP</defName>
 		<label>make 15cm Nebelwerfer EMP rocket</label>

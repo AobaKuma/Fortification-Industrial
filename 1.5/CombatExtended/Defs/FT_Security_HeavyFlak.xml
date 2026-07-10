@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!-- 重型防空炮 -->
@@ -26,11 +26,11 @@
 			<AimingAccuracy>1.25</AimingAccuracy>
 		</statBases>
 		<comps>
-		  <li Class="CompProperties_Power">
-			<compClass>CompPowerTrader</compClass>
-			<basePowerConsumption>1000</basePowerConsumption>
-		  </li>
-		  <li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>1000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
 		</comps>
 		<building>
 			<turretBurstWarmupTime>3.0</turretBurstWarmupTime>
@@ -157,7 +157,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	
+
 	<!-- 超重型反坦克炮 -->
 	<ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
 		<defName>FT_TurretUltraHeavyAT</defName>
@@ -292,5 +292,5 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	
+
 </Defs>

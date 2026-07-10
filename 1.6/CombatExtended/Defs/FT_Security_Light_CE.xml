@@ -91,21 +91,21 @@
             <Bulk>100</Bulk>
         </statBases>
         <comps>
-			<li Class="CombatExtended.CompProperties_FireArc">
-				<spanRange>10~360</spanRange>
-				<maxSpanDeviation>180</maxSpanDeviation>
-			</li>
+            <li Class="CombatExtended.CompProperties_FireArc">
+                <spanRange>10~360</spanRange>
+                <maxSpanDeviation>180</maxSpanDeviation>
+            </li>
         </comps>
         <modExtensions>
-			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>0.833</speed>
-				<angleWeightMultiplier>2</angleWeightMultiplier>
-			</li>
+            <li Class="CombatExtended.NonSnapTurretExtension">
+                <speed>0.833</speed>
+                <angleWeightMultiplier>2</angleWeightMultiplier>
+            </li>
         </modExtensions>
-		<placeWorkers>
-			<li>PlaceWorker_TurretTop</li>
-			<li>PlaceWorker_ShowTurretRadius</li>
-		</placeWorkers>
+        <placeWorkers>
+            <li>PlaceWorker_TurretTop</li>
+            <li>PlaceWorker_ShowTurretRadius</li>
+        </placeWorkers>
         <costList>
             <Steel>160</Steel>
             <ComponentIndustrial>16</ComponentIndustrial>
@@ -208,21 +208,21 @@
             <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
         </statBases>
         <comps>
-			<li Class="CombatExtended.CompProperties_FireArc">
-				<spanRange>10~360</spanRange>
-				<maxSpanDeviation>180</maxSpanDeviation>
-			</li>
+            <li Class="CombatExtended.CompProperties_FireArc">
+                <spanRange>10~360</spanRange>
+                <maxSpanDeviation>180</maxSpanDeviation>
+            </li>
         </comps>
         <modExtensions>
-			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>1</speed>
-				<angleWeightMultiplier>2</angleWeightMultiplier>
-			</li>
+            <li Class="CombatExtended.NonSnapTurretExtension">
+                <speed>1</speed>
+                <angleWeightMultiplier>2</angleWeightMultiplier>
+            </li>
         </modExtensions>
-		<placeWorkers>
-			<li>PlaceWorker_TurretTop</li>
-			<li>PlaceWorker_ShowTurretRadius</li>
-		</placeWorkers>
+        <placeWorkers>
+            <li>PlaceWorker_TurretTop</li>
+            <li>PlaceWorker_ShowTurretRadius</li>
+        </placeWorkers>
         <costList>
             <Steel>210</Steel>
             <ComponentIndustrial>7</ComponentIndustrial>
@@ -254,8 +254,8 @@
             <SightsEfficiency>1</SightsEfficiency>
             <ShotSpread>0.01</ShotSpread>
             <SwayFactor>1.35</SwayFactor>
-			<RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
-			<Mass>60</Mass>
+            <RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
+            <Mass>60</Mass>
         </statBases>
         <weaponTags>
             <li>TurretGun</li>
@@ -315,35 +315,35 @@
             <AimingAccuracy>1.0</AimingAccuracy>
         </statBases>
         <comps>
-			<li Class="CombatExtended.CompProperties_FireArc">
-				<spanRange>10~360</spanRange>
-				<maxSpanDeviation>180</maxSpanDeviation>
-			</li>
+            <li Class="CombatExtended.CompProperties_FireArc">
+                <spanRange>10~360</spanRange>
+                <maxSpanDeviation>180</maxSpanDeviation>
+            </li>
         </comps>
         <modExtensions>
-			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>0.75</speed>
-				<angleWeightMultiplier>2</angleWeightMultiplier>
-			</li>
+            <li Class="CombatExtended.NonSnapTurretExtension">
+                <speed>0.75</speed>
+                <angleWeightMultiplier>2</angleWeightMultiplier>
+            </li>
         </modExtensions>
-		<placeWorkers>
-			<li>PlaceWorker_TurretTop</li>
-			<li>PlaceWorker_ShowTurretRadius</li>
-		</placeWorkers>
+        <placeWorkers>
+            <li>PlaceWorker_TurretTop</li>
+            <li>PlaceWorker_ShowTurretRadius</li>
+        </placeWorkers>
         <costList>
             <Steel>330</Steel>
             <ComponentIndustrial>9</ComponentIndustrial>
             <!--<ReinforcedBarrel>2</ReinforcedBarrel>-->
         </costList>
-		<costListForDifficulty>
-			<difficultyVar>classicMortars</difficultyVar>
-			<invert>true</invert>
-			<costList>
-				<Steel>180</Steel>
-				<ComponentIndustrial>9</ComponentIndustrial>
-				<ReinforcedBarrel>2</ReinforcedBarrel>
-			</costList>
-		</costListForDifficulty>
+        <costListForDifficulty>
+            <difficultyVar>classicMortars</difficultyVar>
+            <invert>true</invert>
+            <costList>
+                <Steel>180</Steel>
+                <ComponentIndustrial>9</ComponentIndustrial>
+                <ReinforcedBarrel>2</ReinforcedBarrel>
+            </costList>
+        </costListForDifficulty>
         <interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <building>
             <ai_combatDangerous>true</ai_combatDangerous>
@@ -440,36 +440,36 @@
             <Bulk>340</Bulk>
         </statBases>
         <comps>
-			<li Class="CombatExtended.CompProperties_FireArc">
-				<spanRange>10~360</spanRange>
-				<maxSpanDeviation>180</maxSpanDeviation>
-			</li>
+            <li Class="CombatExtended.CompProperties_FireArc">
+                <spanRange>10~360</spanRange>
+                <maxSpanDeviation>180</maxSpanDeviation>
+            </li>
         </comps>
         <modExtensions>
-			<li Class="CombatExtended.NonSnapTurretExtension">
-				<speed>0.917</speed>
-				<angleWeightMultiplier>2</angleWeightMultiplier>
-			</li>
+            <li Class="CombatExtended.NonSnapTurretExtension">
+                <speed>0.917</speed>
+                <angleWeightMultiplier>2</angleWeightMultiplier>
+            </li>
         </modExtensions>
-		<placeWorkers>
-			<li>PlaceWorker_TurretTop</li>
-			<li>PlaceWorker_ShowTurretRadius</li>
-		</placeWorkers>
+        <placeWorkers>
+            <li>PlaceWorker_TurretTop</li>
+            <li>PlaceWorker_ShowTurretRadius</li>
+        </placeWorkers>
         <interactionCellOffset>(-1,0,0)</interactionCellOffset>
         <costList>
             <Steel>225</Steel>
             <!--<ReinforcedBarrel>1</ReinforcedBarrel>-->
             <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
-		<costListForDifficulty>
-			<difficultyVar>classicMortars</difficultyVar>
-			<invert>true</invert>
-			<costList>
-				<Steel>150</Steel>
-				<ComponentIndustrial>5</ComponentIndustrial>
-				<ReinforcedBarrel>1</ReinforcedBarrel>
-			</costList>
-		</costListForDifficulty>
+        <costListForDifficulty>
+            <difficultyVar>classicMortars</difficultyVar>
+            <invert>true</invert>
+            <costList>
+                <Steel>150</Steel>
+                <ComponentIndustrial>5</ComponentIndustrial>
+                <ReinforcedBarrel>1</ReinforcedBarrel>
+            </costList>
+        </costListForDifficulty>
         <building>
             <turretGunDef>FT_Gun_Recoilless</turretGunDef>
             <turretTopDrawSize>2.5</turretTopDrawSize>

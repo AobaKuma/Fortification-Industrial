@@ -303,9 +303,9 @@
     <!-- 車床 -->
     <RecipeDef>
         <defName>FT_Make_ReinforcedBarrel</defName>
-		<label>make reinforced barrel</label>
-		<description>Machines a reinforced gun barrel designed to withstand high pressures using a lathe.</description>
-		<jobString>Machining a reinforced barrel.</jobString>
+        <label>make reinforced barrel</label>
+        <description>Machines a reinforced gun barrel designed to withstand high pressures using a lathe.</description>
+        <jobString>Machining a reinforced barrel.</jobString>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <effectWorking>Cook</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
@@ -339,9 +339,9 @@
 
     <RecipeDef>
         <defName>FT_Make_ComponentIndustrial</defName>
-		<label>make component</label>
-		<description>Machines a component on a lathe. Requires more time and resources than standard fabrication.</description>
-		<jobString>Machining component.</jobString>
+        <label>make component</label>
+        <description>Machines a component on a lathe. Requires more time and resources than standard fabrication.</description>
+        <jobString>Machining component.</jobString>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <effectWorking>Cook</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
@@ -370,12 +370,12 @@
         </skillRequirements>
         <workSkill>Crafting</workSkill>
     </RecipeDef>
-	
-	<RecipeDef>
+
+    <RecipeDef>
         <defName>FT_Make_ComponentIndustrial_Bulk</defName>
-		<label>make component x4</label>
-		<description>Machines four components on a lathe. Requires more time and resources than standard fabrication.</description>
-		<jobString>Machining component.</jobString>
+        <label>make component x4</label>
+        <description>Machines four components on a lathe. Requires more time and resources than standard fabrication.</description>
+        <jobString>Machining component.</jobString>
         <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
         <effectWorking>Cook</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>

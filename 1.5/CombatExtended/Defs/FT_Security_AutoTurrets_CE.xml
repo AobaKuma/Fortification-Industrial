@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
   <ThingDef ParentName="BuildingBase" Name="FT_MGNest" Abstract="True">
@@ -9,7 +9,7 @@
       <texPath>MGBunker/FT_MGBunker_Leathery</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2.5,2.5)</drawSize>
-	    <drawOffset>(0,0,0)</drawOffset>
+      <drawOffset>(0,0,0)</drawOffset>
     </graphicData>
     <size>(3,3)</size>
     <uiIconPath>MGBunker/FT_MGBunker_Leathery</uiIconPath>
@@ -22,17 +22,17 @@
       <WorkToBuild>1800</WorkToBuild>
       <Beauty>-20</Beauty>
       <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
-	  <AimingAccuracy>1.0</AimingAccuracy>
+      <AimingAccuracy>1.0</AimingAccuracy>
     </statBases>
     <tickerType>Normal</tickerType>
     <comps>
-      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Forbiddable" />
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>200</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
     </comps>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>
@@ -59,9 +59,9 @@
       <li>GunTurrets</li>
     </researchPrerequisites>
   </ThingDef>
-  
+
   <ThingDef ParentName="FT_MGNest">
-	<defName>FT_Turret_BunkerL</defName>
+    <defName>FT_Turret_BunkerL</defName>
     <label>Machine Gun Nest</label>
     <graphicData>
       <texPath>MGBunker/FT_MGBunker_Leathery</texPath>
@@ -78,7 +78,7 @@
       <li>Leathery</li>
     </stuffCategories>
   </ThingDef>
-  
+
   <ThingDef ParentName="FT_MGNest">
     <defName>FT_Turret_BunkerM</defName>
     <label>Machine Gun Turret Bunker</label>
@@ -97,7 +97,7 @@
       <li>Metallic</li>
     </stuffCategories>
   </ThingDef>
-  
+
   <ThingDef ParentName="FT_MGNest">
     <defName>FT_Turret_BunkerC</defName>
     <label>Machine Gun Bunker</label>
@@ -116,7 +116,7 @@
       <li>Stony</li>
     </stuffCategories>
   </ThingDef>
-  
+
   <ThingDef ParentName="FT_MGNest">
     <defName>FT_Turret_BunkerF</defName>
     <label>Military Machine Gun Nest</label>
@@ -134,7 +134,7 @@
     <stuffCategories>
       <li>Fabric</li>
     </stuffCategories>
-	  <colorPerStuff>
+    <colorPerStuff>
       <li>
         <stuff>Cloth</stuff>
         <color>(139,122,87)</color>
@@ -143,9 +143,9 @@
         <stuff>Synthread</stuff>
         <color>(110,114,77)</color>
       </li>
-    </colorPerStuff>	
-	</ThingDef>
-	
+    </colorPerStuff>
+  </ThingDef>
+
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>FT_Gun_MG</defName>
     <label>machine gun</label>
@@ -155,41 +155,41 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-		<SightsEfficiency>1</SightsEfficiency>
-		<ShotSpread>0.05</ShotSpread>
-		<SwayFactor>0.90</SwayFactor>
-		<RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+      <SightsEfficiency>1</SightsEfficiency>
+      <ShotSpread>0.05</ShotSpread>
+      <SwayFactor>0.90</SwayFactor>
+      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
     </statBases>
-	<weaponTags>
-		<li>TurretGun</li>
-	</weaponTags>
+    <weaponTags>
+      <li>TurretGun</li>
+    </weaponTags>
     <verbs>
-		<li Class="CombatExtended.VerbPropertiesCE">
-          <recoilAmount>0.7</recoilAmount>
-          <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-          <hasStandardCommand>true</hasStandardCommand>
-          <defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
-          <warmupTime>1.5</warmupTime>
-          <range>50</range>
-          <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-          <burstShotCount>8</burstShotCount>
-          <soundCast>GunShotA</soundCast>
-          <soundCastTail>GunTail_Medium</soundCastTail>
-          <muzzleFlashScale>6</muzzleFlashScale>
-          <recoilPattern>Mounted</recoilPattern>
-		</li>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>0.7</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
+        <warmupTime>1.5</warmupTime>
+        <range>50</range>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <burstShotCount>8</burstShotCount>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>6</muzzleFlashScale>
+        <recoilPattern>Mounted</recoilPattern>
+      </li>
     </verbs>
     <comps>
-		<li Class="CombatExtended.CompProperties_AmmoUser">
-			<magazineSize>240</magazineSize>
-			<reloadTime>7.8</reloadTime>
-			<ammoSet>AmmoSet_762x51mmNATO</ammoSet>   
-		</li>
-		<li Class="CombatExtended.CompProperties_FireModes">
-			<aiAimMode>AimedShot</aiAimMode>
-			<aimedBurstShotCount>4</aimedBurstShotCount>
-			<noSingleShot>true</noSingleShot>
-		</li>
-	</comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>240</magazineSize>
+        <reloadTime>7.8</reloadTime>
+        <ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+        <aimedBurstShotCount>4</aimedBurstShotCount>
+        <noSingleShot>true</noSingleShot>
+      </li>
+    </comps>
   </ThingDef>
 </Defs>	

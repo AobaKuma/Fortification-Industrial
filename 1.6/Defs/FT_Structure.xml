@@ -425,7 +425,7 @@
     <TerrainDef ParentName="FloorBase">
         <defName>FT_Concrete</defName>
         <label>concrete path</label>
-		<description>Concrete laid down as pathways for pedestrians and vehicles. Quick to lay, but neutral in terms of looks.</description>
+        <description>Concrete laid down as pathways for pedestrians and vehicles. Quick to lay, but neutral in terms of looks.</description>
         <costList>
             <FT_BlocksConcrete>2</FT_BlocksConcrete>
         </costList>

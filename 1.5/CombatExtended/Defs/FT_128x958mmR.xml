@@ -7,7 +7,7 @@
 		<parent>AmmoShells</parent>
 		<iconPath>UI/Icons/ThingCategories/CaliberCannon</iconPath>
 	</ThingCategoryDef>
-	
+
 	<!-- ==================== AmmoSet ========================== -->
 
 	<CombatExtended.AmmoSetDef>
@@ -21,7 +21,7 @@
 		</ammoTypes>
 		<similarTo>AmmoSet_HeavyCannon</similarTo>
 	</CombatExtended.AmmoSetDef>
-	
+
 	<CombatExtended.AmmoSetDef>
 		<defName>AmmoSet_128x958mmR_HV</defName>
 		<label>128mm Anti-Tank Cannon shells</label>
@@ -65,7 +65,7 @@
 		<ammoClass>ArmorPiercing</ammoClass>
 		<detonateProjectile>Bullet_128x958mmR_AP</detonateProjectile>
 	</ThingDef>
-	
+
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="128x958mmRShellBase">
 		<defName>Ammo_128x958mmR_APHE</defName>
 		<label>128x958mmR cannon shell (APHE)</label>
@@ -91,7 +91,7 @@
 		<ammoClass>GrenadeHE</ammoClass>
 		<detonateProjectile>Bullet_128x958mmR_HE</detonateProjectile>
 	</ThingDef>
-		
+
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="128x958mmRShellBase">
 		<defName>Ammo_128x958mmR_EMP</defName>
 		<label>128x958mmR cannon shell (EMP)</label>
@@ -137,7 +137,7 @@
 			<armorPenetrationBlunt>195254.4</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="Base128x958mmRBullet">
 		<defName>Bullet_128x958mmR_APHE</defName>
 		<label>128x958mmR cannon shell (APHE)</label>
@@ -191,12 +191,12 @@
 			<speed>162</speed>
 		</projectile>
 		<comps>
-			<li MayRequire="DwS.FunctionalAmmunition.Library" Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze" >
-			   <aimHeightOffset>0</aimHeightOffset>
-			   <!-- Require D_FuncAmmoLib.Verb_Shoot @SuppressFire mode, equivalent to projectile/projectile. -->
-			   <safeRange>8</safeRange>     <!-- Defult is 0. If delayRange.min < 0, equivalent to delayRange.min + safeRange.-->
-			   <delayRange>-0.5~0.5</delayRange>      <!-- Defult is 1.5~3.5 -->
-			   <fragAngleRange> 0 </fragAngleRange>
+			<li MayRequire="DwS.FunctionalAmmunition.Library" Class="D_FuncAmmoLib.CompProperties_ProgrammableFuze">
+				<aimHeightOffset>0</aimHeightOffset>
+				<!-- Require D_FuncAmmoLib.Verb_Shoot @SuppressFire mode, equivalent to projectile/projectile. -->
+				<safeRange>8</safeRange>     <!-- Defult is 0. If delayRange.min < 0, equivalent to delayRange.min + safeRange.-->
+				<delayRange>-0.5~0.5</delayRange>      <!-- Defult is 1.5~3.5 -->
+				<fragAngleRange>0</fragAngleRange>
 			</li>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
@@ -206,7 +206,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-		
+
 	<ThingDef ParentName="Base128x958mmRBullet">
 		<defName>Bullet_128x958mmR_EMP</defName>
 		<label>128x958mmR cannon shell (EMP)</label>
@@ -224,9 +224,9 @@
 			<speed>162</speed>
 		</projectile>
 	</ThingDef>
-	
+
 	<!-- ==================== Pak44 HV ========================== -->
-	
+
 	<ThingDef ParentName="Base128x958mmRBullet">
 		<defName>Bullet_128x958mmR_AP_HV</defName>
 		<label>128x958mmR cannon shell (AP)</label>
@@ -243,7 +243,7 @@
 			<speed>162</speed>
 		</projectile>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="Base128x958mmRBullet">
 		<defName>Bullet_128x958mmR_APHE_HV</defName>
 		<label>128x958mmR cannon shell (APHE)</label>
@@ -280,7 +280,7 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
+
 
 	<!-- ==================== Recipes ========================== -->
 
@@ -314,7 +314,7 @@
 			<Ammo_128x958mmR_AP>2</Ammo_128x958mmR_AP>
 		</products>
 	</RecipeDef>
-	
+
 	<RecipeDef ParentName="CannonAmmoRecipeBase">
 		<defName>MakeAmmo_128x958mmR_APHE</defName>
 		<label>make 128x958mmR (APHE) cannon shells x2</label>

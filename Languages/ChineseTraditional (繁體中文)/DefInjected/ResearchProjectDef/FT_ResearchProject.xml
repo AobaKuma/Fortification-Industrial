@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  
+
   <!-- EN: chemistry -->
   <FT_Chemistry.label>化學</FT_Chemistry.label>
   <!-- EN: Build Chemistry Table that can artificially synthesize compounds such as Neutroamine. -->
@@ -31,7 +31,7 @@
     <li>subject_gerund->人工合成中性胺</li>
     <li>subject_gerund->計算含胺乳化炸藥的原料混合比例</li>
   </FT_Chemistry.generalRules.rulesStrings>
-  
+
   <!-- EN: Concrete -->
   <FT_Concrete.label>混凝土</FT_Concrete.label>
   <!-- EN: crush and smelt stony material to concrete. -->
@@ -62,7 +62,7 @@
     <li>subject_gerund->在工地上打灰</li>
     <li>subject_gerund->計算材料混合的黃金比例</li>
   </FT_Concrete.generalRules.rulesStrings>
-  
+
   <!-- EN: ENIAC -->
   <FT_ENIAC.label>真空管電腦</FT_ENIAC.label>
   <!-- EN: Electronic Numerical Integrator And Computer, known as ENIAC is a Turing-complete general-purpose digital computer able to solve "a large class of numerical problems" through reprogramming. -->
@@ -101,7 +101,7 @@
     <li>subject_gerund->計算積分器工程</li>
     <li>subject_gerund->真空管生產流程</li>
   </FT_ENIAC.generalRules.rulesStrings>
-  
+
   <!-- EN: heavy artillery -->
   <FT_HeavyArtillery.label>重型火砲</FT_HeavyArtillery.label>
   <!-- EN: Using ENIAC to calculate the artillery ballistics table, unlock the design of heavy artilleries. -->
@@ -132,7 +132,7 @@
     <li>subject_gerund->線膛砲設計</li>
     <li>subject_gerund->火炮射表計算</li>
   </FT_HeavyArtillery.generalRules.rulesStrings>
-  
+
   <!-- EN: Industrial Cannon -->
   <FT_IndustrialCannon.label>工業火炮</FT_IndustrialCannon.label>
   <!-- EN: Using reinforced barrel to build AT and AA Guns. -->
@@ -163,7 +163,7 @@
     <li>subject_gerund->戰防砲設計</li>
     <li>subject_gerund->輕量化武器結構設計</li>
   </FT_IndustrialCannon.generalRules.rulesStrings>
-  
+
   <!-- EN: lathe -->
   <FT_Lathe.label>車床</FT_Lathe.label>
   <!-- EN: Build lathe for early-stage compoment and reinforced barrel making. -->
@@ -195,5 +195,5 @@
     <li>subject_gerund->旋轉金屬加工</li>
     <li>subject_gerund->工業車床製造</li>
   </FT_Lathe.generalRules.rulesStrings>
-  
+
 </LanguageData>

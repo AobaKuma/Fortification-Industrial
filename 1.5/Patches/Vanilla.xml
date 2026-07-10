@@ -82,11 +82,11 @@
     <nomatch Class="PatchOperationAdd">
       <xpath>*/ThingDef[defName = "SimpleResearchBench"]/comps</xpath>
       <value>
-          <li Class="CompProperties_AffectedByFacilities">
-            <linkableFacilities>
-              <li>FT_ENIAC</li>
-            </linkableFacilities>
-          </li>
+        <li Class="CompProperties_AffectedByFacilities">
+          <linkableFacilities>
+            <li>FT_ENIAC</li>
+          </linkableFacilities>
+        </li>
       </value>
     </nomatch>
     <match Class="PatchOperationAdd">
@@ -97,7 +97,7 @@
     </match>
   </Operation>
 
-    <!-- 原版混凝土地板的材料修改 -->
+  <!-- 原版混凝土地板的材料修改 -->
   <Operation Class="PatchOperationSequence">
     <operations>
       <li Class="PatchOperationReplace">

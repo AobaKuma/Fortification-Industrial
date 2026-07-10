@@ -304,7 +304,7 @@
     <ThingDef ParentName="BaseWeaponTurret">
         <defName>FT_Gun_TurretPrince</defName>
 		<label>heavy howitzer</label>
-		<description>A heavy artillery piece for indirect fire at extreme ranges. Due to the very high muzzle velocity of the weapon system, it has a large minimum range. \n\nThe 155 mm howitzer NK-30 “Empero” is a reliable artillery system developed by Interstellar Industries Complex Nara to provide support for pre-industrial worlds unable to withstand mechanoid invasions.</description>
+		<description>A lightweight howitzer for indirect fire at extended ranges. Due to the high muzzle velocity of the weapon system, it has a fairly large minimum range. \n\nDesignated the NK-33L “Prince”, it was developed by Interstellar Industries Complex Nara where mobility and precision are needed in uneven, difficult terrain.</description>
         <graphicData>
             <texPath>Prince/Duke_Gun</texPath>
         </graphicData>
@@ -388,7 +388,7 @@
     <ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
         <defName>FT_TurretEmpero</defName>
         <label>field cannon</label>
-        <description>an artillery that can only shoot horizontally at close range due to extremely high Muzzle velocity,but it is high accuracy. \n\n Correctly called 155mm caliber howitzer model NK-30 "Empero",it is a relieable artillery designed for Interstellar Industries Complex Nara, provide the technical support of those pre-industrial world incapable to fight against the mechanoid armies.</description>
+        <description>An artillery piece that can only fire horizontally at close range due to its extremely high muzzle velocity, but it is highly accurate. \n\nCorrectly designated the 155 mm howitzer NK-30 "Empero", it is a reliable artillery system developed by Interstellar Industries Complex Nara to provide technical support for pre-industrial worlds unable to withstand mechanoid invasions.</description>
         <uiIconPath>Empero/Empero_Icon</uiIconPath>
         <uiIconScale>1.75</uiIconScale>
         <graphicData>

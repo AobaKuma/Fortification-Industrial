@@ -616,7 +616,7 @@
     <ThingDef ParentName="BaseWeaponTurret">
         <defName>FT_Gun_QuadMG</defName>
         <label>machine gun 4x mounted</label>
-        <description>what can be better than A fully machine gun be mounted on a turret ? Four of them!</description>
+        <description>What could be better than a fully automatic machine gun mounted on a turret? Four of them!</description>
         <graphicData>
             <texPath>InfantryTurret/FT_QuadMaximGun</texPath>
             <graphicClass>Graphic_Single</graphicClass>

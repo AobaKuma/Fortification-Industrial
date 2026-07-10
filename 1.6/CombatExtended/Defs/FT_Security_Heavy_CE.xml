@@ -40,13 +40,13 @@
 				<spanRange>10~180</spanRange>
 				<maxSpanDeviation>180</maxSpanDeviation>
 			</li>
-        </comps>
-        <modExtensions>
+		</comps>
+		<modExtensions>
 			<li Class="CombatExtended.NonSnapTurretExtension">
 				<speed>0.583</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
-        </modExtensions>
+		</modExtensions>
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
 			<li>PlaceWorker_TurretTop</li>
@@ -90,7 +90,7 @@
 			<ShotSpread>5.5</ShotSpread>
 		</statBases>
 		<weaponTags>
-      		<li>TurretGun</li>
+			<li>TurretGun</li>
 		</weaponTags>
 		<verbs>
 			<li Class="CombatExtended.VerbPropertiesCE">
@@ -110,7 +110,7 @@
 				<indirectFirePenalty>0.2</indirectFirePenalty>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
-				</targetParams>	
+				</targetParams>
 			</li>
 		</verbs>
 		<comps>
@@ -140,7 +140,7 @@
 				<burstAngle>180</burstAngle>
 				<fleckSizeRange>(3,5)</fleckSizeRange>
 				<burstSpeedRange>(1,2)</burstSpeedRange>
-				<burstOffsetRange>(2,6)</burstOffsetRange> 
+				<burstOffsetRange>(2,6)</burstOffsetRange>
 				<onGroundOverride>true</onGroundOverride>
 			</li>
 			<li Class="Fortified.CompProperties_CastFlecker"><!-- 噴火-->
@@ -150,7 +150,7 @@
 				<burstAngle>180</burstAngle>
 				<fleckSizeRange>(3,5)</fleckSizeRange>
 				<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
-				<burstOffsetRange>(2,6)</burstOffsetRange> 
+				<burstOffsetRange>(2,6)</burstOffsetRange>
 				<rangeScaleFactor>(1,0.1)</rangeScaleFactor>
 				<onGroundOverride>true</onGroundOverride>
 			</li>
@@ -161,12 +161,11 @@
 				<burstAngle>0</burstAngle>
 				<fleckSizeRange>(1,2)</fleckSizeRange>
 				<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
-				<burstOffsetRange>(2,6)</burstOffsetRange> 
+				<burstOffsetRange>(2,6)</burstOffsetRange>
 				<onGroundOverride>true</onGroundOverride>
 			</li>
 		</comps>
-		<modExtensions>
-        </modExtensions>
+		<modExtensions />
 	</ThingDef>
 
 	<ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
@@ -200,13 +199,13 @@
 				<spanRange>10~60</spanRange>
 				<maxSpanDeviation>135</maxSpanDeviation>
 			</li>
-        </comps>
-        <modExtensions>
+		</comps>
+		<modExtensions>
 			<li Class="CombatExtended.NonSnapTurretExtension">
 				<speed>0.155</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
-        </modExtensions>
+		</modExtensions>
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
 			<li>PlaceWorker_TurretTop</li>
@@ -248,7 +247,7 @@
 			<SightsEfficiency>1.0</SightsEfficiency>
 		</statBases>
 		<weaponTags>
-      		<li>TurretGun</li>
+			<li>TurretGun</li>
 			<li>Artillery_BaseDestroyer</li>
 		</weaponTags>
 		<verbs>
@@ -294,7 +293,7 @@
 				<burstAngle>180</burstAngle>
 				<fleckSizeRange>(3,5)</fleckSizeRange>
 				<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
-				<burstOffsetRange>(2,6)</burstOffsetRange> 
+				<burstOffsetRange>(2,6)</burstOffsetRange>
 				<onGroundOverride>true</onGroundOverride>
 			</li>
 			<li Class="Fortified.CompProperties_CastFlecker">
@@ -304,7 +303,7 @@
 				<burstAngle>180</burstAngle>
 				<fleckSizeRange>(3,5)</fleckSizeRange>
 				<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
-				<burstOffsetRange>(2,6)</burstOffsetRange> 
+				<burstOffsetRange>(2,6)</burstOffsetRange>
 				<rangeScaleFactor>(1,0.1)</rangeScaleFactor>
 				<onGroundOverride>true</onGroundOverride>
 			</li>
@@ -315,14 +314,13 @@
 				<burstAngle>0</burstAngle>
 				<fleckSizeRange>(1,2)</fleckSizeRange>
 				<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
-				<burstOffsetRange>(2,6)</burstOffsetRange> 
+				<burstOffsetRange>(2,6)</burstOffsetRange>
 				<onGroundOverride>true</onGroundOverride>
 			</li>
 		</comps>
-		<modExtensions>
-        </modExtensions>
+		<modExtensions />
 	</ThingDef>
-	
+
 
 	<ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
 		<defName>FT_TurretEmpero</defName>
@@ -347,13 +345,13 @@
 				<spanRange>10~60</spanRange>
 				<maxSpanDeviation>135</maxSpanDeviation>
 			</li>
-        </comps>
-        <modExtensions>
+		</comps>
+		<modExtensions>
 			<li Class="CombatExtended.NonSnapTurretExtension">
 				<speed>0.113</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
-        </modExtensions>
+		</modExtensions>
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
 			<li>PlaceWorker_TurretTop</li>
@@ -395,7 +393,7 @@
 			<SightsEfficiency>0.5</SightsEfficiency>
 		</statBases>
 		<weaponTags>
-      		<li>TurretGun</li>
+			<li>TurretGun</li>
 			<li>Artillery_BaseDestroyer</li>
 		</weaponTags>
 		<verbs>
@@ -443,7 +441,7 @@
 				<burstAngle>180</burstAngle>
 				<fleckSizeRange>(3,5)</fleckSizeRange>
 				<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
-				<burstOffsetRange>(2,6)</burstOffsetRange> 
+				<burstOffsetRange>(2,6)</burstOffsetRange>
 				<onGroundOverride>true</onGroundOverride>
 			</li>
 			<li Class="Fortified.CompProperties_CastFlecker">
@@ -453,7 +451,7 @@
 				<burstAngle>180</burstAngle>
 				<fleckSizeRange>(3,5)</fleckSizeRange>
 				<burstSpeedRange>(0.2,0.5)</burstSpeedRange>
-				<burstOffsetRange>(2,6)</burstOffsetRange> 
+				<burstOffsetRange>(2,6)</burstOffsetRange>
 				<rangeScaleFactor>(1,0.1)</rangeScaleFactor>
 				<onGroundOverride>true</onGroundOverride>
 			</li>
@@ -464,12 +462,11 @@
 				<burstAngle>0</burstAngle>
 				<fleckSizeRange>(1,2)</fleckSizeRange>
 				<burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
-				<burstOffsetRange>(2,6)</burstOffsetRange> 
+				<burstOffsetRange>(2,6)</burstOffsetRange>
 				<onGroundOverride>true</onGroundOverride>
 			</li>
 		</comps>
-		<modExtensions>
-        </modExtensions>
+		<modExtensions />
 	</ThingDef>
 
 </Defs>	

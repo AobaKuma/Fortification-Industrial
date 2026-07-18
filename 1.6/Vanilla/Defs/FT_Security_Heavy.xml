@@ -117,6 +117,10 @@
             <li>Artillery_BaseDestroyer</li>
             <li>TurretGun</li>
         </weaponTags>
+        <statBases>
+            <RangedWeapon_Cooldown>30.0</RangedWeapon_Cooldown>
+            <Mass>200</Mass>
+        </statBases>
         <verbs>
             <li>
                 <verbClass>Fortified.Verb_MultiShoot</verbClass>

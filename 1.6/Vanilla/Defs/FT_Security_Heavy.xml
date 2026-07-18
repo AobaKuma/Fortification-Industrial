@@ -288,7 +288,7 @@
             <turretBurstWarmupTime>3.0</turretBurstWarmupTime>
             <turretBurstCooldownTime>10.0</turretBurstCooldownTime>
             <turretTopDrawSize>4</turretTopDrawSize>
-            <turretTopOffset>(0,0.5)</turretTopOffset>
+            <!--<turretTopOffset>(0,0.5)</turretTopOffset>-->
             <turretTopLoadedGraphic>
                 <texPath>Prince/Prince_Gun</texPath>
             </turretTopLoadedGraphic>

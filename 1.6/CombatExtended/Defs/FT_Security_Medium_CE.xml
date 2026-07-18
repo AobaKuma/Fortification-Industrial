@@ -102,6 +102,10 @@
                 <damageDef>Mining</damageDef>
                 <multiplier>0.1</multiplier>
             </li>
+            <li>
+                <damageDef>Vaporize</damageDef>
+                <multiplier>1</multiplier>
+            </li>
             <!--<li>
 			<damageDef>EMP</damageDef>
 			<multiplier>0</multiplier>
@@ -114,12 +118,7 @@
                 <damageDef>Smoke</damageDef>
                 <multiplier>0</multiplier>
             </li>
-            <!--Biotech
-			DLC -->
-            <li MayRequire="Ludeon.RimWorld.Biotech">
-                <damageDef>Vaporize</damageDef>
-                <multiplier>1</multiplier>
-            </li>
+<!--BiotechDLC -->
             <li MayRequire="Ludeon.RimWorld.Biotech">
                 <damageDef>BulletToxic</damageDef>
                 <multiplier>0.75</multiplier>
@@ -137,9 +136,7 @@
 				<damageDef>MechBandShockwave</damageDef>
 				<multiplier>0</multiplier>
 			</li>-->
-            <!--==========-->
-            <!--Anomaly
-			DLC -->
+<!--AnomalyDLC -->
             <li MayRequire="Ludeon.RimWorld.Anomaly">
                 <damageDef>Nerve</damageDef>
                 <multiplier>0.1</multiplier>
@@ -172,8 +169,36 @@
                 <damageDef>NociosphereVaporize</damageDef>
                 <multiplier>0.75</multiplier>
             </li>
-            <!--==========-->
-            <!-- Combat Extended -->
+<!--Odyssey DLC -->
+			<li MayRequire="Ludeon.RimWorld.Odyssey">
+				<damageDef>PorcupineBite</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">
+				<damageDef>PorcupineScratch</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">
+				<damageDef>VacuumBurn</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">
+				<damageDef>MiningBomb</damageDef>
+				<multiplier>1</multiplier>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">
+				<damageDef>Bullet_TraitTox</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">
+				<damageDef>Bullet_TraitIncendiary</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">
+				<damageDef>BeamBypassShields</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+<!-- Combat Extended -->
             <li>
                 <damageDef>Beanbag</damageDef>
                 <multiplier>0</multiplier>
@@ -234,9 +259,7 @@
                 <damageDef>BioferriteFlame</damageDef>
                 <multiplier>0.75</multiplier>
             </li>
-            <!--==========-->
-            <!--3HSTltd
-			Plasma Weapons-->
+<!--3HSTltdPlasma Weapons-->
             <li MayRequire="3HSTltd.Weapons.Plasma">
                 <damageDef>LizionExplosion</damageDef>
                 <multiplier>0.75</multiplier>
@@ -249,9 +272,7 @@
                 <damageDef>LizionPlasmaFlamer</damageDef>
                 <multiplier>0.75</multiplier>
             </li>
-            <!--==========-->
-            <!--3HSTltd
-			Rail Guns-->
+<!--3HSTltdRail Guns-->
             <li MayRequire="3HSTltd.Weapons.Base">
                 <damageDef>DamageDef_Shockwave</damageDef>
                 <multiplier>0.75</multiplier>
@@ -260,14 +281,135 @@
                 <damageDef>BDRG_HighCalRailgun</damageDef>
                 <multiplier>0.75</multiplier>
             </li>
-            <!--==========-->
-            <!--FT
-			HESH-->
+<!--FTHESH-->
             <li>
                 <damageDef>HESH_ShockWave</damageDef>
                 <multiplier>0.75</multiplier>
             </li>
-        </damageMultipliers>
+<!--Kiiro Race-->
+			<li MayRequire="Ancot.KiiroRace">
+				<damageDef>Kiiro_ParalyticPoison</damageDef>
+				<multiplier>0.1</multiplier>
+			</li>
+			<li MayRequire="Ancot.KiiroRace">
+				<damageDef>Kiiro_DeadlyPoison</damageDef>
+				<multiplier>0.1</multiplier>
+			</li>
+<!--Kiiro CE-->
+			<li MayRequire="Lemontea.KiiroCEPatch">
+				<damageDef>KiiroBullet</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+<!--Milira Race-->
+			<li MayRequire="Ancot.MiliraRace">
+				<damageDef>Milira_SlashCharged</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+			<li MayRequire="Ancot.MiliraRace">
+				<damageDef>Milira_ParticleBomb</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+			<li MayRequire="Ancot.MiliraRace">
+				<damageDef>Milira_ParticleBombBig</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+			<li MayRequire="Ancot.MiliraRace">
+				<damageDef>Milira_ParticleBullet</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+			<li MayRequire="Ancot.MiliraRace">
+				<damageDef>Milira_PlasmaBomb</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+			<li MayRequire="Ancot.MiliraRace">
+				<damageDef>Milira_PlasmaBombBig</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+			<li MayRequire="Ancot.MiliraRace">
+				<damageDef>Milira_PlasmaBullet</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+			<li MayRequire="Ancot.MiliraRace">
+				<damageDef>Milira_PlasmaBullet_Vulnerable</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+			<li MayRequire="Ancot.MiliraRace">
+				<damageDef>Milira_PlasmaBomb_TwoHandSword</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+			<li MayRequire="Ancot.MiliraRace">
+				<damageDef>Milira_RailGunBullet</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+			<li MayRequire="Ancot.MiliraRace">
+				<damageDef>Milira_KineticBomb</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li MayRequire="Ancot.MiliraRace">
+				<damageDef>Milira_Ray</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+<!--Milira Addon: Fianchetto Variation-->
+			<li MayRequire="rabiosus.funnelmilian">
+				<damageDef>Milira_FunnelBit_C_HeavyLaser</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+			<li MayRequire="rabiosus.funnelmilian">
+				<damageDef>Milira_FunnelBit_C_SuperLaser</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+			<li MayRequire="rabiosus.funnelmilian">
+				<damageDef>Milira_FunnelBit_D_cut</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+<!--NewRatkinPlus-->
+			<li MayRequire="Solaris.RatkinRaceMod">
+				<damageDef>RK_EMP</damageDef>
+				<multiplier>0</multiplier>
+			</li>
+			<li MayRequire="Solaris.RatkinRaceMod">
+				<damageDef>RK_Damage_PickaxeStab</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+<!--Ratkin Anomaly+-->
+			<li MayRequire="fxz.ratkinanomaly.update">
+				<damageDef>RA_Scissors</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li MayRequire="fxz.ratkinanomaly.update">
+				<damageDef>RA_WatchDamage</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+<!--Monolyn Race-->
+			<li MayRequire="ASEL.MonolynRace">
+				<damageDef>MNElctricalBurn</damageDef>
+				<multiplier>0.25</multiplier>
+			</li>
+			<li MayRequire="ASEL.MonolynRace">
+				<damageDef>MNPurification</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+			<li MayRequire="ASEL.MonolynRace">
+				<damageDef>PurificationBurn</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+			<li MayRequire="ASEL.MonolynRace">
+				<damageDef>MNVaporize</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li MayRequire="ASEL.MonolynRace">
+				<damageDef>MNBlunt</damageDef>
+				<multiplier>0.5</multiplier>
+			</li>
+			<li MayRequire="ASEL.MonolynRace">
+				<damageDef>MNGravityBlunt</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+			<li MayRequire="ASEL.MonolynRace">
+				<damageDef>MNGravityInertial</damageDef>
+				<multiplier>0.75</multiplier>
+			</li>
+		</damageMultipliers>
     </ThingDef>
 
     <!-- 單裝防空炮 -->

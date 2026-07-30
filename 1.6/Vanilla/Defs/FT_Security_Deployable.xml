@@ -126,7 +126,7 @@
             <turretGunDef>FT_Artillery_Mortar</turretGunDef>
             <turretTopDrawSize>1.5</turretTopDrawSize>
             <turretBurstWarmupTime>2.0</turretBurstWarmupTime>
-            <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+            <turretBurstCooldownTime>2.0</turretBurstCooldownTime>
         </building>
         <researchPrerequisites>
             <li>Mortars</li>
@@ -143,7 +143,7 @@
             <drawSize>(2,2)</drawSize>
         </graphicData>
         <statBases>
-            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
         </statBases>
         <weaponTags>
             <li>TurretGun</li>
@@ -152,7 +152,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-                <warmupTime>6.0</warmupTime>
+                <warmupTime>2.0</warmupTime>
                 <forcedMissRadius>6</forcedMissRadius>
                 <forcedMissRadiusClassicMortars>10</forcedMissRadiusClassicMortars>
                 <isMortar>true</isMortar>

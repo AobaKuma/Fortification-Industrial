@@ -578,7 +578,7 @@
             <armorPenetrationBase>1.4</armorPenetrationBase>
             <stoppingPower>10</stoppingPower>
             <speed>88</speed>
-            <arcHeightFactor>0.2</arcHeightFactor>
+            <!--<arcHeightFactor>0.2</arcHeightFactor>-->
             <shadowSize>0.6</shadowSize>
         </projectile>
         <comps>

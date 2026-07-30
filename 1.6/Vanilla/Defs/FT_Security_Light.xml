@@ -130,8 +130,8 @@
         <building>
             <turretGunDef>FT_Gun_TurretAA</turretGunDef>
             <turretTopDrawSize>4</turretTopDrawSize>
-            <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
-            <turretBurstCooldownTime>5.0</turretBurstCooldownTime>
+            <turretBurstWarmupTime>0.5</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
+            <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
             <buildingTags>
                 <li>Artillery_MannedMortar</li>
             </buildingTags>
@@ -158,9 +158,9 @@
         <statBases>
             <AccuracyTouch>0.35</AccuracyTouch>
             <AccuracyShort>0.67</AccuracyShort>
-            <AccuracyMedium>0.85</AccuracyMedium>
-            <AccuracyLong>1.0</AccuracyLong>
-            <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+            <AccuracyMedium>0.9</AccuracyMedium>
+            <AccuracyLong>0.8</AccuracyLong>
+            <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
             <Mass>120</Mass>
         </statBases>
         <verbs>
@@ -174,7 +174,7 @@
                 <range>45</range>
                 <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
                 <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-                <burstShotCount>8</burstShotCount>
+                <burstShotCount>4</burstShotCount>
                 <soundCast>Shot_Autocannon</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>12</muzzleFlashScale>
@@ -262,8 +262,8 @@
         <building>
             <turretGunDef>FT_Gun_TurretQuadAA</turretGunDef>
             <turretTopDrawSize>4</turretTopDrawSize>
-            <turretBurstWarmupTime>1.5</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
-            <turretBurstCooldownTime>5.0</turretBurstCooldownTime>
+            <turretBurstWarmupTime>0.75</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
+            <turretBurstCooldownTime>1.5</turretBurstCooldownTime>
             <buildingTags>
                 <li>Artillery_MannedMortar</li>
             </buildingTags>
@@ -290,9 +290,9 @@
         <statBases>
             <AccuracyTouch>0.35</AccuracyTouch>
             <AccuracyShort>0.67</AccuracyShort>
-            <AccuracyMedium>0.85</AccuracyMedium>
-            <AccuracyLong>1.0</AccuracyLong>
-            <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+            <AccuracyMedium>0.9</AccuracyMedium>
+            <AccuracyLong>0.8</AccuracyLong>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
         </statBases>
         <verbs>
             <li>
@@ -305,7 +305,7 @@
                 <range>45</range>
                 <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
                 <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-                <burstShotCount>16</burstShotCount>
+                <burstShotCount>8</burstShotCount>
                 <soundCast>Shot_Autocannon</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>12</muzzleFlashScale>
@@ -357,8 +357,9 @@
             <armorPenetrationBase>0.45</armorPenetrationBase>
             <stoppingPower>4</stoppingPower>
             <speed>93</speed>
-            <arcHeightFactor>0.3</arcHeightFactor>
+            <!--<arcHeightFactor>0.3</arcHeightFactor>-->
             <shadowSize>0.6</shadowSize>
+			<screenShakeFactor>0</screenShakeFactor>
         </projectile>
         <comps>
             <li Class="CompProperties_Explosive">
@@ -436,7 +437,7 @@
         <building>
             <turretGunDef>FT_Gun_TurretAT</turretGunDef>
             <turretTopDrawSize>4</turretTopDrawSize>
-            <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
+            <turretBurstWarmupTime>2.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
             <turretBurstCooldownTime>3.0</turretBurstCooldownTime>
         </building>
         <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
@@ -463,7 +464,7 @@
             <AccuracyShort>1.00</AccuracyShort>
             <AccuracyMedium>1.00</AccuracyMedium>
             <AccuracyLong>0.99</AccuracyLong>
-            <RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
             <Mass>120</Mass>
         </statBases>
         <comps>
@@ -537,8 +538,9 @@
             <armorPenetrationBase>0.75</armorPenetrationBase>
             <stoppingPower>10</stoppingPower>
             <speed>100</speed>
-            <arcHeightFactor>0.2</arcHeightFactor>
+            <!--<arcHeightFactor>0.2</arcHeightFactor>-->
             <shadowSize>0.6</shadowSize>
+			<screenShakeFactor>0</screenShakeFactor>
         </projectile>
         <comps>
             <li Class="CompProperties_Explosive">
@@ -605,7 +607,8 @@
             <turretTopDrawSize>2</turretTopDrawSize>
             <ai_combatDangerous>true</ai_combatDangerous>
             <turretGunDef>FT_Gun_QuadMG</turretGunDef>
-            <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+			<turretBurstWarmupTime>0.5</turretBurstWarmupTime>
+            <turretBurstCooldownTime>1.0</turretBurstCooldownTime><!--冲锋手枪0.9-->
         </building>
         <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
         <researchPrerequisites>
@@ -626,17 +629,17 @@
             <AccuracyShort>0.68</AccuracyShort>
             <AccuracyMedium>0.65</AccuracyMedium>
             <AccuracyLong>0.54</AccuracyLong>
-            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown><!--冲锋手枪0.9-->
             <Mass>15</Mass>
         </statBases>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <defaultProjectile>Bullet_MiniTurret</defaultProjectile>
-                <warmupTime>0.5</warmupTime>
+                <warmupTime>0.5</warmupTime><!--防空机枪，瞄准给低点--><!--冲锋手枪0.5-->
                 <range>30.9</range>
                 <minRange>1.9</minRange>
-                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <ticksBetweenBurstShots>2</ticksBetweenBurstShots><!--特化旋转机枪1800rpm-->
                 <burstShotCount>20</burstShotCount>
                 <soundCast>GunShotA</soundCast>
                 <soundCastTail>GunTail_Light</soundCastTail>
@@ -688,7 +691,8 @@
             <turretTopDrawSize>2.5</turretTopDrawSize>
             <ai_combatDangerous>true</ai_combatDangerous>
             <turretGunDef>FT_Gun_Autocannon</turretGunDef>
-            <turretBurstCooldownTime>2.6</turretBurstCooldownTime>
+			<turretBurstWarmupTime>1.0</turretBurstWarmupTime>
+            <turretBurstCooldownTime>2</turretBurstCooldownTime>
         </building>
         <comps>
             <li Class="CompProperties_Refuelable">
@@ -732,14 +736,14 @@
             <AccuracyShort>0.90</AccuracyShort>
             <AccuracyMedium>0.83</AccuracyMedium>
             <AccuracyLong>0.75</AccuracyLong>
-            <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
             <Mass>40</Mass>
         </statBases>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <defaultProjectile>Bullet_AutocannonTurret</defaultProjectile>
-                <warmupTime>0</warmupTime>
+                <warmupTime>1</warmupTime><!--填0游戏中会自动变成1-->
                 <minRange>1.9</minRange>
                 <range>34.9</range>
                 <ticksBetweenBurstShots>17</ticksBetweenBurstShots>
@@ -771,7 +775,7 @@
             <WorkToBuild>3300</WorkToBuild>
             <Mass>38</Mass>
             <Beauty>-2</Beauty>
-            <ShootingAccuracyTurret>0.90</ShootingAccuracyTurret>
+            <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
         </statBases>
         <comps>
             <li Class="CompProperties_Refuelable">
@@ -828,7 +832,7 @@
             <AccuracyShort>0.95</AccuracyShort>
             <AccuracyMedium>0.92</AccuracyMedium>
             <AccuracyLong>0.90</AccuracyLong>
-            <RangedWeapon_Cooldown>8.0</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
             <Mass>120</Mass>
         </statBases>
         <comps>

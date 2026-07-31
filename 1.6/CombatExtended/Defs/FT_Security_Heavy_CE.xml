@@ -66,8 +66,8 @@
 		</costList>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
-			<turretBurstWarmupTime>1.25</turretBurstWarmupTime>
-			<turretBurstCooldownTime>0.5</turretBurstCooldownTime>
+			<turretBurstWarmupTime>3.25</turretBurstWarmupTime>
+			<turretBurstCooldownTime>1</turretBurstCooldownTime>
 			<turretTopDrawSize>3</turretTopDrawSize>
 			<turretGunDef>FT_Gun_TurretHexMortar</turretGunDef>
 			<spawnedConceptLearnOpportunity>CE_MortarDirectFire</spawnedConceptLearnOpportunity>
@@ -85,7 +85,7 @@
 			<drawSize>(4,4)</drawSize>
 		</graphicData>
 		<statBases>
-			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
 			<SightsEfficiency>1</SightsEfficiency>
 			<ShotSpread>5.5</ShotSpread>
 		</statBases>
@@ -100,8 +100,8 @@
 				<requireLineOfSight>false</requireLineOfSight>
 				<defaultProjectile>Bullet_FT_15cmNebelwerfer_HE_directfire</defaultProjectile>
 				<warmupTime>3.25</warmupTime>
-				<minRange>14.5</minRange>
-				<range>118.5</range>
+				<minRange>29.9</minRange>
+				<range>1000</range>
 				<burstShotCount>6</burstShotCount>
 				<ticksBetweenBurstShots>70</ticksBetweenBurstShots>
 				<soundCast>FT_NebelShot</soundCast>
@@ -243,7 +243,7 @@
 			<drawOffset>(5,0,0)</drawOffset>
 		</graphicData>
 		<statBases>
-			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
 			<SightsEfficiency>1.0</SightsEfficiency>
 		</statBases>
 		<weaponTags>
@@ -389,7 +389,7 @@
 			<drawOffset>(5,0,0)</drawOffset>
 		</graphicData>
 		<statBases>
-			<RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 			<SightsEfficiency>0.5</SightsEfficiency>
 		</statBases>
 		<weaponTags>
@@ -423,7 +423,7 @@
 				<ammoSet>AmmoSet_FT_155mmHowitzerShell</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_Charges">
-				<chargeSpeeds><!--105mm大约8段发射药包--><!--弹速下限30-->
+				<chargeSpeeds><!--155mm大约8段发射药包--><!--弹速下限30-->
 					<li>60</li><!--1-->
 					<li>80</li><!--2-->
 					<li>100</li><!--3-->

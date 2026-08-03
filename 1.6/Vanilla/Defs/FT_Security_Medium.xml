@@ -129,11 +129,6 @@
                 <damageDef>Beam</damageDef>
                 <multiplier>0.75</multiplier>
             </li>
-            <!--<li
-			MayRequire="Ludeon.RimWorld.Biotech">
-				<damageDef>MechBandShockwave</damageDef>
-				<multiplier>0</multiplier>
-			</li>-->
 <!--AnomalyDLC -->
             <li MayRequire="Ludeon.RimWorld.Anomaly">
                 <damageDef>Nerve</damageDef>
@@ -196,67 +191,6 @@
 				<damageDef>BeamBypassShields</damageDef>
 				<multiplier>0.75</multiplier>
 			</li>
-<!-- Combat Extended -->
-            <li>
-                <damageDef>Beanbag</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li>
-                <damageDef>Taser</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li>
-                <damageDef>Fragment</damageDef>
-                <multiplier>0.5</multiplier>
-            </li>
-            <li>
-                <damageDef>PrometheumFlame</damageDef>
-                <multiplier>0.25</multiplier>
-            </li>
-            <li>
-                <damageDef>Bomb_Secondary</damageDef>
-                <multiplier>0.75</multiplier>
-            </li>
-            <li>
-                <damageDef>Flame_Secondary</damageDef>
-                <multiplier>0.25</multiplier>
-            </li>
-            <li>
-                <damageDef>ArrowVenom</damageDef>
-                <multiplier>0.1</multiplier>
-            </li>
-            <li>
-                <damageDef>ArrowFire</damageDef>
-                <multiplier>0.1</multiplier>
-            </li>
-            <li>
-                <damageDef>Tranquilizer</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li>
-                <damageDef>Thermobaric</damageDef>
-                <multiplier>0.75</multiplier>
-            </li>
-            <!--<li>
-				<damageDef>Electrical</damageDef>
-				<multiplier>0</multiplier>
-			</li>-->
-            <li>
-                <damageDef>Neuralizer</damageDef>
-                <multiplier>0.75</multiplier>
-            </li>
-            <li>
-                <damageDef>CE_Laser</damageDef>
-                <multiplier>0.75</multiplier>
-            </li>
-            <li MayRequire="Ludeon.RimWorld.Anomaly">
-                <damageDef>NerveBioferrite</damageDef>
-                <multiplier>0.1</multiplier>
-            </li>
-            <li MayRequire="Ludeon.RimWorld.Anomaly">
-                <damageDef>BioferriteFlame</damageDef>
-                <multiplier>0.75</multiplier>
-            </li>
 <!--3HSTltdPlasma Weapons-->
             <li MayRequire="3HSTltd.Weapons.Plasma">
                 <damageDef>LizionExplosion</damageDef>
@@ -277,11 +211,6 @@
             </li>
             <li MayRequire="3HSTltd.Weapons.Base">
                 <damageDef>BDRG_HighCalRailgun</damageDef>
-                <multiplier>0.75</multiplier>
-            </li>
-<!--FTHESH-->
-            <li>
-                <damageDef>HESH_ShockWave</damageDef>
                 <multiplier>0.75</multiplier>
             </li>
 <!--Kiiro Race-->

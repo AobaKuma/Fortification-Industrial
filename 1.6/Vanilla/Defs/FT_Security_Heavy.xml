@@ -91,7 +91,7 @@
         </costList>
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
         <building>
-            <turretBurstWarmupTime>2.0</turretBurstWarmupTime>
+            <turretBurstWarmupTime>3.0</turretBurstWarmupTime>
             <turretBurstCooldownTime>30.0</turretBurstCooldownTime>
             <turretTopDrawSize>3</turretTopDrawSize>
             <turretGunDef>FT_Gun_TurretHexMortar</turretGunDef>
@@ -125,7 +125,7 @@
             <li>
                 <verbClass>Fortified.Verb_MultiShoot</verbClass>
                 <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-                <warmupTime>2.0</warmupTime>
+                <warmupTime>3.0</warmupTime>
                 <forcedMissRadius>10</forcedMissRadius>
                 <forcedMissRadiusClassicMortars>10</forcedMissRadiusClassicMortars>
                 <isMortar>true</isMortar>
@@ -289,7 +289,7 @@
         </costList>
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
         <building>
-            <turretBurstWarmupTime>3.0</turretBurstWarmupTime>
+            <turretBurstWarmupTime>4.0</turretBurstWarmupTime>
             <turretBurstCooldownTime>10.0</turretBurstCooldownTime>
             <turretTopDrawSize>4</turretTopDrawSize>
             <!--<turretTopOffset>(0,0.5)</turretTopOffset>-->
@@ -370,7 +370,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-                <warmupTime>3.0</warmupTime>
+                <warmupTime>4.0</warmupTime>
                 <forcedMissRadius>5</forcedMissRadius>
                 <forcedMissRadiusClassicMortars>8</forcedMissRadiusClassicMortars>
                 <isMortar>true</isMortar>

@@ -198,6 +198,10 @@
                     <categories>
                         <li>MortarShells</li>
                     </categories>
+                    <disallowedThingDefs>
+                        <li MayRequire="Aoba.Fortress.Industrial.NuclearDawn">FT_Shell_NuclearWarhead</li>
+                        <li>Shell_AntigrainWarhead</li>
+                    </disallowedThingDefs>
                 </filter>
             </fixedStorageSettings>
             <defaultStorageSettings>
@@ -207,6 +211,7 @@
                     </categories>
                     <disallowedThingDefs>
                         <li>Shell_Firefoam</li>
+                        <li MayRequire="Aoba.Fortress.Industrial.NuclearDawn">FT_Shell_NuclearWarhead</li>
                         <li>Shell_AntigrainWarhead</li>
                     </disallowedThingDefs>
                 </filter>

@@ -80,10 +80,8 @@
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
         </placeWorkers>
         <modExtensions>
-            <li
-                MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam"
-                Class="VEF.Buildings.RecipeInheritanceExtension">
-                <inheritRecipesFrom>
+			<li Class="Fortified.ModExtension_RecipeInheritance">
+				<inheritRecipesFrom>
                     <li>TableSculpting</li>
                 </inheritRecipesFrom>
             </li>

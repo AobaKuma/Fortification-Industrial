@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <!-- Illumination flare: any FI or vanilla mortar can load it. The projectile is the
+         framework's FFF_FlareShell (bursts high over the target and burns for a while). -->
+    <ThingDef ParentName="MakeableShellBase">
+        <defName>FT_Shell_Flare</defName>
+        <label>flare shell</label>
+        <description>A mortar shell carrying a parachute flare. It bursts high above the target and lights up a wide area for a short time. Does no damage.</description>
+        <possessionCount>2</possessionCount>
+        <graphicData>
+            <!-- placeholder: the vanilla smoke shell, tinted -->
+            <texPath>Things/Item/Resource/Shell/Shell_Smoke</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(255,215,120)</color>
+        </graphicData>
+        <projectileWhenLoaded>FFF_FlareShell</projectileWhenLoaded>
+        <costList>
+            <Steel>15</Steel>
+            <Chemfuel>5</Chemfuel>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>FT_NightFighting</researchPrerequisite>
+            <displayPriority>115</displayPriority>
+        </recipeMaker>
+    </ThingDef>
+
+</Defs>

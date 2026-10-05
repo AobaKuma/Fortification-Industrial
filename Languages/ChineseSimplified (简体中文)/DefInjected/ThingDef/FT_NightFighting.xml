@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: searchlight -->
+  <FT_Searchlight.label>探照灯</FT_Searchlight.label>
+  <!-- EN: A powerful electric lamp on a pedestal that floods a wide area with light, so defenders can see attackers at night. -->
+  <FT_Searchlight.description>装在底座上的大功率电灯，能照亮一大片区域，让守军在夜里看清来犯的敌人。</FT_Searchlight.description>
+  
+  <!-- EN: flare shell -->
+  <FT_Shell_Flare.label>照明弹</FT_Shell_Flare.label>
+  <!-- EN: A mortar shell carrying a parachute flare. It bursts high above the target and lights up a wide area for a short time. Does no damage. -->
+  <FT_Shell_Flare.description>带降落伞照明弹的迫击炮弹。在目标上空高处爆开，短时间内照亮一大片区域。不造成伤害。</FT_Shell_Flare.description>
+  
+</LanguageData>

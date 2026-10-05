@@ -261,4 +261,19 @@
 			</Operation>
 		</caseFalse>
 	</Operation>
+	<!--================彈震症：原版高爆迫擊砲彈======================-->
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>Aoba.Fortress.Industrial</modId>
+		<key>ShellShock_VanillaMortarShells</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationReplace">
+				<success>Always</success>
+				<xpath>Defs/ThingDef[defName="Bullet_Shell_HighExplosive"]/projectile/damageDef</xpath>
+				<value>
+					<damageDef>FT_Bomb_Concussive</damageDef>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
 </Patch>

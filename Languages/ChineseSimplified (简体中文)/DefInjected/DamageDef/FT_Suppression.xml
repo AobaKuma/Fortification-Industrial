@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: suppressive fire -->
+  <FT_Bullet_Suppressive.label>压制射击</FT_Bullet_Suppressive.label>
+  
+  <!-- EN: {0} has been shot to death. -->
+  <FT_Bullet_Suppressive.deathMessage>{0}被射杀了。</FT_Bullet_Suppressive.deathMessage>
+  
+  <!-- EN: concussive blast -->
+  <FT_Bomb_Concussive.label>震荡爆炸</FT_Bomb_Concussive.label>
+  
+  <!-- EN: {0} has died in an explosion. -->
+  <FT_Bomb_Concussive.deathMessage>{0}死于爆炸。</FT_Bomb_Concussive.deathMessage>
+  
+</LanguageData>

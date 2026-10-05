@@ -29,6 +29,11 @@
 				<label>Remove Lathe as research prerequisite.</label>
 				<defaultValue>false</defaultValue>
 			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>ShellShock_VanillaMortarShells</key>
+				<label>Vanilla high-explosive mortar shells also cause shell shock (affects every mortar in the game).</label>
+				<defaultValue>false</defaultValue>
+			</li>
 		</settings>
 	</XmlExtensions.SettingsMenuDef>
 </Defs>

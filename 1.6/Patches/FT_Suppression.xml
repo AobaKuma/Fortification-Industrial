@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <!-- Mechanoids don't get shell shock. -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[@Name="BaseMechanoid"]/statBases</xpath>
+        <value>
+            <FT_ShellShockSensitivity>0</FT_ShellShockSensitivity>
+        </value>
+    </Operation>
+
+</Patch>

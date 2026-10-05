@@ -82,7 +82,7 @@
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
-                <defaultProjectile>Bullet_MiniTurret</defaultProjectile>
+                <defaultProjectile>FT_Bullet_MachineGun</defaultProjectile>
                 <warmupTime>0</warmupTime>
                 <range>30.9</range>
                 <minRange>1.9</minRange>
@@ -95,4 +95,20 @@
             </li>
         </verbs>
     </ThingDef>
+
+    <!-- Mini-turret bullet stats; the hits add shell shock (FT_Suppression.xml). -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>FT_Bullet_MachineGun</defName>
+        <label>machine gun bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>FT_Bullet_Suppressive</damageDef>
+            <damageAmountBase>12</damageAmountBase>
+            <speed>70</speed>
+        </projectile>
+    </ThingDef>
+
 </Defs>

@@ -73,7 +73,7 @@
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
-                <defaultProjectile>Bullet_MiniTurret</defaultProjectile>
+                <defaultProjectile>FT_Bullet_MachineGun</defaultProjectile>
                 <warmupTime>0.5</warmupTime><!--防空机枪，瞄准给低点--><!--冲锋手枪0.5-->
                 <range>30.9</range>
                 <minRange>1.9</minRange>

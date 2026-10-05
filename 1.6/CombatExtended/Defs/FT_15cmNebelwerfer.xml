@@ -92,7 +92,7 @@
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<speed>55</speed>
-			<damageDef>Bomb</damageDef>
+			<damageDef>FT_Bomb_Concussive</damageDef>
 			<damageAmountBase>228</damageAmountBase>
 			<explosionRadius>3.5</explosionRadius>
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>

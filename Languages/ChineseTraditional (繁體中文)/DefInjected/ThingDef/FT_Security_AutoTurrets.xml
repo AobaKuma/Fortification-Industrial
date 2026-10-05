@@ -69,4 +69,7 @@
   <!-- EN: Cannot shoot: Needs new barrel -->
   <FT_Turret_BunkerM.comps.CompRefuelable.outOfFuelMessage>無法射擊: 需要替換槍管</FT_Turret_BunkerM.comps.CompRefuelable.outOfFuelMessage>
   
+  <!-- EN: machine gun bullet -->
+  <FT_Bullet_MachineGun.label>機槍子彈</FT_Bullet_MachineGun.label>
+  
 </LanguageData>

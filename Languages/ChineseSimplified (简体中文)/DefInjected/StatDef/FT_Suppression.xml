@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: shell shock sensitivity -->
+  <FT_ShellShockSensitivity.label>弹震敏感度</FT_ShellShockSensitivity.label>
+  
+  <!-- EN: A multiplier on how much shell shock this creature gets from machine-gun fire and heavy explosions. Machines feel nothing. -->
+  <FT_ShellShockSensitivity.description>机枪火力与重型爆炸对此生物造成弹震症的倍率。机械体不受影响。</FT_ShellShockSensitivity.description>
+  
+</LanguageData>

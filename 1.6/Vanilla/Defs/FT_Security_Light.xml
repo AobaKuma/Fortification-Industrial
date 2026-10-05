@@ -20,6 +20,8 @@
 
     <ThingDef ParentName="FT_Maxim4M_Common">
         <defName>FT_Maxim4M</defName>
+        <!-- light enough to pack up and carry (framework deployable, same as the infantry mortar) -->
+        <minifiedDef>FT_MinifiedTurret</minifiedDef>
         <label>quad machine gun</label>
         <description>A tripod-mounted quad machine gun operated by a pawn. Provides sustained firepower and requires steel to refurbish its barrels after heavy use.</description>
         <uiIconScale>0.8</uiIconScale>
@@ -50,6 +52,13 @@
                 <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
                 <initialConfigurableTargetFuelLevel>400</initialConfigurableTargetFuelLevel>
                 <autoRefuelPercent>0.5</autoRefuelPercent>
+            </li>
+            <li Class="CompProperties_Usable">
+                <useJob>TriggerObject</useJob>
+                <useLabel>Pick up {0_label}</useLabel>
+            </li>
+            <li>
+                <compClass>Fortified.CompMinifyToInventory</compClass>
             </li>
         </comps>
         <building>
@@ -159,6 +168,8 @@
 
     <ThingDef ParentName="FT_RecoillessGun_Common">
         <defName>FT_RecoillessGun</defName>
+        <!-- light enough to pack up and carry (framework deployable, same as the infantry mortar) -->
+        <minifiedDef>FT_MinifiedTurret</minifiedDef>
         <label>recoilless gun</label>
         <description>A recoilless gun mounted on a tripod. Mainly used for hardened targets such as vehicles and armored mechs. Needs to be manned in order to fire. Requires reinforced barrels to refurbish its barrel after heavy use.</description>
         <statBases>
@@ -188,6 +199,13 @@
                 <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>              <!--重裝填設定-->
                 <initialConfigurableTargetFuelLevel>0</initialConfigurableTargetFuelLevel>
                 <autoRefuelPercent>0.1</autoRefuelPercent>
+            </li>
+            <li Class="CompProperties_Usable">
+                <useJob>TriggerObject</useJob>
+                <useLabel>Pick up {0_label}</useLabel>
+            </li>
+            <li>
+                <compClass>Fortified.CompMinifyToInventory</compClass>
             </li>
         </comps>
         <interactionCellOffset>(-1,0,-1)</interactionCellOffset>

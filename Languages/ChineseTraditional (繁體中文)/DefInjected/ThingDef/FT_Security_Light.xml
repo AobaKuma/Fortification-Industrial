@@ -115,4 +115,9 @@
   <!-- EN: Cannot shoot: Needs new reinforced barrel -->
   <FT_TurretQuadAA.comps.CompRefuelable.outOfFuelMessage>無法射擊: 需要替換砲管</FT_TurretQuadAA.comps.CompRefuelable.outOfFuelMessage>
   
+  <!-- EN: Pick up {0_label} -->
+  <FT_Maxim4M.comps.CompUsable.useLabel>收起{0_label}</FT_Maxim4M.comps.CompUsable.useLabel>
+  <!-- EN: Pick up {0_label} -->
+  <FT_RecoillessGun.comps.CompUsable.useLabel>收起{0_label}</FT_RecoillessGun.comps.CompUsable.useLabel>
+  
 </LanguageData>

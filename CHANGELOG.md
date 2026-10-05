@@ -26,6 +26,16 @@
 
 ---
 
+### Framework features
+
+- **Shell types (vanilla)**: the anti-tank gun and recoilless gun switch between armor-piercing and high-explosive, the anti-air gun between AP tracer and airburst (the quad AA gun defaults to airburst), and the field cannon between armor-piercing, heavy high-explosive and smoke. Switching uses the turret's ammo gizmo, is instant apart from a short reload pause, uses no ammo items and does not change barrel wear. The field cannon's AP shell blast is reduced (75 dmg / radius 4.4 to 50 / 2.4) so the new HE shell has a role. CE keeps its real ammo.
+- **Crewed machine gun bunker**: a colonist climbs in and works the gun from inside, protected by the structure. No power, no breakdowns and one component, but it does nothing without a crew. The automatic bunker stays as the hands-off option. Both modes.
+- **Packable light guns (vanilla)**: the quad machine gun and recoilless gun can be picked up into a colonist's inventory and redeployed, like the infantry mortar. In CE they are too heavy (80 / 210 kg) and stay fixed.
+- **Info cards**: new "Special mechanics" entries explain barrel wear, hand-loaded shells, shell types, suppression, concrete grades and sandbag cover.
+- **Sandbag cover**: sandbags and sandbag walls take half damage from bullets and a quarter from arrows; explosives are unchanged.
+
+---
+
 ### Changes & Fixes
 
 #### Turrets (vanilla)

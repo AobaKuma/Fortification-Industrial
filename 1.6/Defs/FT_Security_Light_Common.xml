@@ -157,7 +157,7 @@
         </graphicData>
         <statBases>
             <MaxHitPoints>400</MaxHitPoints>
-            <WorkToBuild>3300</WorkToBuild>
+            <WorkToBuild>1500</WorkToBuild>
         </statBases>
         <costList>
             <ComponentIndustrial>5</ComponentIndustrial>

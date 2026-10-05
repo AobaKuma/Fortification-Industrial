@@ -1,204 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-    <ThingDef Name="FT_BaseCannonBuilding_WithShieldOrCementBase" ParentName="FT_BaseCannonBuilding" Abstract="True">
-        <minifiedDef>MinifiedThing</minifiedDef>  <!--================可攜帶性================-->
-        <thingCategories>
-            <li>BuildingsSecurity</li>
-        </thingCategories>
+    <ThingDef Name="FT_BaseCannonBuilding_WithShieldOrCementBase" ParentName="FT_BaseCannonBuilding_WithShieldOrCementBase_Common" Abstract="True">
         <statBases>
             <Bulk>1000</Bulk>
-            <ShootingAccuracyTurret>1.0</ShootingAccuracyTurret>
             <AimingAccuracy>1.0</AimingAccuracy>
         </statBases>
         <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
         <building>
-            <ai_combatDangerous>true</ai_combatDangerous>
-            <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
             <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
         </building>
         <damageMultipliers>
-            <li>
-                <damageDef>Cut</damageDef>
-                <multiplier>0.5</multiplier>
-            </li>
-            <li>
-                <damageDef>Crush</damageDef>
-                <multiplier>0.5</multiplier>
-            </li>
-            <li>
-                <damageDef>Stab</damageDef>
-                <multiplier>0.5</multiplier>
-            </li>
-            <li>
-                <damageDef>Scratch</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li>
-                <damageDef>ScratchToxic</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li>
-                <damageDef>Bite</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li>
-                <damageDef>ToxicBite</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li>
-                <damageDef>Blunt</damageDef>
-                <multiplier>0.5</multiplier>
-            </li>
-            <li>
-                <damageDef>Poke</damageDef>
-                <multiplier>0.5</multiplier>
-            </li>
-            <li>
-                <damageDef>Bomb</damageDef>
-                <multiplier>0.75</multiplier>
-            </li>
-            <li>
-                <damageDef>BombSuper</damageDef>
-                <multiplier>0.75</multiplier>
-            </li>
-            <li>
-                <damageDef>Demolish</damageDef>
-                <multiplier>0.75</multiplier>
-            </li>
-            <li>
-                <damageDef>Thump</damageDef>
-                <multiplier>1</multiplier>
-            </li>
-            <li>
-                <damageDef>Bullet</damageDef>
-                <multiplier>0.75</multiplier>
-            </li>
-            <li>
-                <damageDef>Arrow</damageDef>
-                <multiplier>0.1</multiplier>
-            </li>
-            <li>
-                <damageDef>ArrowHighVelocity</damageDef>
-                <multiplier>0.1</multiplier>
-            </li>
-            <li>
-                <damageDef>Flame</damageDef>
-                <multiplier>0.25</multiplier>
-            </li>
-            <li>
-                <damageDef>Burn</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li>
-                <damageDef>Frostbite</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li>
-                <damageDef>TornadoScratch</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li>
-                <damageDef>Mining</damageDef>
-                <multiplier>0.1</multiplier>
-            </li>
-            <li>
-                <damageDef>Vaporize</damageDef>
-                <multiplier>1</multiplier>
-            </li>
-            <!--<li>
-			<damageDef>EMP</damageDef>
-			<multiplier>0</multiplier>
-		  </li>
-		  <li>
-			<damageDef>Stun</damageDef>
-			<multiplier>0</multiplier>
-		  </li-->
-            <li>
-                <damageDef>Smoke</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-<!--BiotechDLC -->
-            <li MayRequire="Ludeon.RimWorld.Biotech">
-                <damageDef>BulletToxic</damageDef>
-                <multiplier>0.75</multiplier>
-            </li>
-            <li MayRequire="Ludeon.RimWorld.Biotech">
-                <damageDef>AcidBurn</damageDef>
-                <multiplier>0.5</multiplier>
-            </li>
-            <li MayRequire="Ludeon.RimWorld.Biotech">
-                <damageDef>Beam</damageDef>
-                <multiplier>0.75</multiplier>
-            </li>
-            <!--<li
-			MayRequire="Ludeon.RimWorld.Biotech">
-				<damageDef>MechBandShockwave</damageDef>
-				<multiplier>0</multiplier>
-			</li>-->
-<!--AnomalyDLC -->
-            <li MayRequire="Ludeon.RimWorld.Anomaly">
-                <damageDef>Nerve</damageDef>
-                <multiplier>0.1</multiplier>
-            </li>
-            <li MayRequire="Ludeon.RimWorld.Anomaly">
-                <damageDef>EnergyBolt</damageDef>
-                <multiplier>0.1</multiplier>
-            </li>
-            <li MayRequire="Ludeon.RimWorld.Anomaly">
-                <damageDef>Digested</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li MayRequire="Ludeon.RimWorld.Anomaly">
-                <damageDef>ElectricalBurn</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li MayRequire="Ludeon.RimWorld.Anomaly">
-                <damageDef>NerveStun</damageDef>
-                <multiplier>0.1</multiplier>
-            </li>
-            <li MayRequire="Ludeon.RimWorld.Anomaly">
-                <damageDef>Psychic</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li MayRequire="Ludeon.RimWorld.Anomaly">
-                <damageDef>DeadlifeDust</damageDef>
-                <multiplier>0</multiplier>
-            </li>
-            <li MayRequire="Ludeon.RimWorld.Anomaly">
-                <damageDef>NociosphereVaporize</damageDef>
-                <multiplier>0.75</multiplier>
-            </li>
-<!--Odyssey DLC -->
-			<li MayRequire="Ludeon.RimWorld.Odyssey">
-				<damageDef>PorcupineBite</damageDef>
-				<multiplier>0</multiplier>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Odyssey">
-				<damageDef>PorcupineScratch</damageDef>
-				<multiplier>0</multiplier>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Odyssey">
-				<damageDef>VacuumBurn</damageDef>
-				<multiplier>0</multiplier>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Odyssey">
-				<damageDef>MiningBomb</damageDef>
-				<multiplier>1</multiplier>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Odyssey">
-				<damageDef>Bullet_TraitTox</damageDef>
-				<multiplier>0.75</multiplier>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Odyssey">
-				<damageDef>Bullet_TraitIncendiary</damageDef>
-				<multiplier>0.75</multiplier>
-			</li>
-			<li MayRequire="Ludeon.RimWorld.Odyssey">
-				<damageDef>BeamBypassShields</damageDef>
-				<multiplier>0.75</multiplier>
-			</li>
-<!-- Combat Extended -->
+            <!-- Combat Extended -->
             <li>
                 <damageDef>Beanbag</damageDef>
                 <multiplier>0</multiplier>
@@ -259,185 +72,26 @@
                 <damageDef>BioferriteFlame</damageDef>
                 <multiplier>0.75</multiplier>
             </li>
-<!--3HSTltdPlasma Weapons-->
-            <li MayRequire="3HSTltd.Weapons.Plasma">
-                <damageDef>LizionExplosion</damageDef>
-                <multiplier>0.75</multiplier>
-            </li>
-            <li MayRequire="3HSTltd.Weapons.Plasma">
-                <damageDef>LizionPlasma</damageDef>
-                <multiplier>0.75</multiplier>
-            </li>
-            <li MayRequire="3HSTltd.Weapons.Plasma">
-                <damageDef>LizionPlasmaFlamer</damageDef>
-                <multiplier>0.75</multiplier>
-            </li>
-<!--3HSTltdRail Guns-->
-            <li MayRequire="3HSTltd.Weapons.Base">
-                <damageDef>DamageDef_Shockwave</damageDef>
-                <multiplier>0.75</multiplier>
-            </li>
-            <li MayRequire="3HSTltd.Weapons.Base">
-                <damageDef>BDRG_HighCalRailgun</damageDef>
-                <multiplier>0.75</multiplier>
-            </li>
 <!--FTHESH-->
             <li>
                 <damageDef>HESH_ShockWave</damageDef>
                 <multiplier>0.75</multiplier>
             </li>
-<!--Kiiro Race-->
-			<li MayRequire="Ancot.KiiroRace">
-				<damageDef>Kiiro_ParalyticPoison</damageDef>
-				<multiplier>0.1</multiplier>
-			</li>
-			<li MayRequire="Ancot.KiiroRace">
-				<damageDef>Kiiro_DeadlyPoison</damageDef>
-				<multiplier>0.1</multiplier>
-			</li>
-<!--Kiiro CE-->
-			<li MayRequire="Lemontea.KiiroCEPatch">
-				<damageDef>KiiroBullet</damageDef>
-				<multiplier>0.75</multiplier>
-			</li>
-<!--Milira Race-->
-			<li MayRequire="Ancot.MiliraRace">
-				<damageDef>Milira_SlashCharged</damageDef>
-				<multiplier>0.75</multiplier>
-			</li>
-			<li MayRequire="Ancot.MiliraRace">
-				<damageDef>Milira_ParticleBomb</damageDef>
-				<multiplier>0.75</multiplier>
-			</li>
-			<li MayRequire="Ancot.MiliraRace">
-				<damageDef>Milira_ParticleBombBig</damageDef>
-				<multiplier>0.75</multiplier>
-			</li>
-			<li MayRequire="Ancot.MiliraRace">
-				<damageDef>Milira_ParticleBullet</damageDef>
-				<multiplier>0.75</multiplier>
-			</li>
-			<li MayRequire="Ancot.MiliraRace">
-				<damageDef>Milira_PlasmaBomb</damageDef>
-				<multiplier>0.75</multiplier>
-			</li>
-			<li MayRequire="Ancot.MiliraRace">
-				<damageDef>Milira_PlasmaBombBig</damageDef>
-				<multiplier>0.75</multiplier>
-			</li>
-			<li MayRequire="Ancot.MiliraRace">
-				<damageDef>Milira_PlasmaBullet</damageDef>
-				<multiplier>0.75</multiplier>
-			</li>
-			<li MayRequire="Ancot.MiliraRace">
-				<damageDef>Milira_PlasmaBullet_Vulnerable</damageDef>
-				<multiplier>0.75</multiplier>
-			</li>
-			<li MayRequire="Ancot.MiliraRace">
-				<damageDef>Milira_PlasmaBomb_TwoHandSword</damageDef>
-				<multiplier>0.75</multiplier>
-			</li>
-			<li MayRequire="Ancot.MiliraRace">
-				<damageDef>Milira_RailGunBullet</damageDef>
-				<multiplier>0.75</multiplier>
-			</li>
-			<li MayRequire="Ancot.MiliraRace">
-				<damageDef>Milira_KineticBomb</damageDef>
-				<multiplier>0.5</multiplier>
-			</li>
-			<li MayRequire="Ancot.MiliraRace">
-				<damageDef>Milira_Ray</damageDef>
-				<multiplier>0.75</multiplier>
-			</li>
-<!--Milira Addon: Fianchetto Variation-->
-			<li MayRequire="rabiosus.funnelmilian">
-				<damageDef>Milira_FunnelBit_C_HeavyLaser</damageDef>
-				<multiplier>0.75</multiplier>
-			</li>
-			<li MayRequire="rabiosus.funnelmilian">
-				<damageDef>Milira_FunnelBit_C_SuperLaser</damageDef>
-				<multiplier>0.75</multiplier>
-			</li>
-			<li MayRequire="rabiosus.funnelmilian">
-				<damageDef>Milira_FunnelBit_D_cut</damageDef>
-				<multiplier>0.75</multiplier>
-			</li>
-<!--NewRatkinPlus-->
-			<li MayRequire="Solaris.RatkinRaceMod">
-				<damageDef>RK_EMP</damageDef>
-				<multiplier>0</multiplier>
-			</li>
-			<li MayRequire="Solaris.RatkinRaceMod">
-				<damageDef>RK_Damage_PickaxeStab</damageDef>
-				<multiplier>0.5</multiplier>
-			</li>
-<!--Ratkin Anomaly+-->
-			<li MayRequire="fxz.ratkinanomaly.update">
-				<damageDef>RA_Scissors</damageDef>
-				<multiplier>0.5</multiplier>
-			</li>
-			<li MayRequire="fxz.ratkinanomaly.update">
-				<damageDef>RA_WatchDamage</damageDef>
-				<multiplier>0.5</multiplier>
-			</li>
-<!--Monolyn Race-->
-			<li MayRequire="ASEL.MonolynRace">
-				<damageDef>MNElctricalBurn</damageDef>
-				<multiplier>0.25</multiplier>
-			</li>
-			<li MayRequire="ASEL.MonolynRace">
-				<damageDef>MNPurification</damageDef>
-				<multiplier>0.75</multiplier>
-			</li>
-			<li MayRequire="ASEL.MonolynRace">
-				<damageDef>PurificationBurn</damageDef>
-				<multiplier>0.75</multiplier>
-			</li>
-			<li MayRequire="ASEL.MonolynRace">
-				<damageDef>MNVaporize</damageDef>
-				<multiplier>0.5</multiplier>
-			</li>
-			<li MayRequire="ASEL.MonolynRace">
-				<damageDef>MNBlunt</damageDef>
-				<multiplier>0.5</multiplier>
-			</li>
-			<li MayRequire="ASEL.MonolynRace">
-				<damageDef>MNGravityBlunt</damageDef>
-				<multiplier>0.75</multiplier>
-			</li>
-			<li MayRequire="ASEL.MonolynRace">
-				<damageDef>MNGravityInertial</damageDef>
-				<multiplier>0.75</multiplier>
-			</li>
 		</damageMultipliers>
     </ThingDef>
 
     <!-- 單裝防空炮 -->
-    <ThingDef ParentName="FT_BaseCannonBuilding_WithShieldOrCementBase">
+    <ThingDef ParentName="FT_TurretAA_Common">
         <defName>FT_TurretAA</defName>
         <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
-        <label>anti-air gun</label>
-        <description>A single-barrel autocannon designed for short-range air defense. Effective against low-flying aircraft and lightly armored surface targets.</description>
-        <uiIconPath>ATGun/FT_AntiAirGun</uiIconPath>
-        <uiIconScale>1.2</uiIconScale>
-        <graphicData>
-            <texPath>ATGun/FT_AntiAirGun_Base</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(3.25,3.25)</drawSize>
-            <drawOffset>(0,0,0)</drawOffset>
-        </graphicData>
-        <size>(3,3)</size>
-        <interactionCellOffset>(1,0,-1)</interactionCellOffset><!--操作點在右下方-->
         <statBases>   <!--================血量與重量工作量================-->
             <MaxHitPoints>1000</MaxHitPoints>
             <Flammability>0</Flammability>
-            <WorkToBuild>3000</WorkToBuild>
             <Bulk>1000</Bulk>
             <Mass>450</Mass>
         </statBases>
         <comps>
-            <li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam"
-                Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
+            <li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam" Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
                 <randomGraphics>
                     <li>ATGun/FT_AntiAirGun_Base</li>
                     <li>ATGun/FT_AntiTankGun_Base</li>
@@ -461,15 +115,11 @@
             <li>PlaceWorker_ShowTurretRadius</li>
         </placeWorkers>
         <building>
-            <turretGunDef>FT_Gun_TurretAA</turretGunDef>
-            <turretTopDrawSize>4</turretTopDrawSize>
             <turretBurstWarmupTime>0.62</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
             <turretBurstCooldownTime>0.14</turretBurstCooldownTime>
         </building>
-        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
         <costList>
             <Steel>425</Steel>
-            <ComponentIndustrial>5</ComponentIndustrial>
             <!--<ReinforcedBarrel>1</ReinforcedBarrel>-->
         </costList>
         <costListForDifficulty>
@@ -481,19 +131,12 @@
                 <ReinforcedBarrel>1</ReinforcedBarrel>
             </costList>
         </costListForDifficulty>
-        <researchPrerequisites>
-            <li>FT_IndustrialCannon</li>
-        </researchPrerequisites>
     </ThingDef>
 
-    <ThingDef ParentName="BaseWeaponTurret">
+    <ThingDef ParentName="FT_Gun_TurretAA_Common">
         <defName>FT_Gun_TurretAA</defName>
         <label>anti-air gun</label>
         <description>A 20mm autocannon mounted on a stationary emplacement.</description>
-        <graphicData>
-            <texPath>ATGun/FT_AAGun</texPath>
-        </graphicData>
-        <soundInteract>Artillery_ShellLoaded</soundInteract>
         <statBases>
             <RangedWeapon_Cooldown>0.14</RangedWeapon_Cooldown>
             <SightsEfficiency>2.18</SightsEfficiency>
@@ -531,45 +174,21 @@
                 <aiAimMode>Snapshot</aiAimMode>
                 <aimedBurstShotCount>2</aimedBurstShotCount>
             </li>
-            <li Class="Fortified.CompProperties_CastFlecker">
-                <fleck>DustPuff</fleck>
-                <onGroundOverride>true</onGroundOverride>
-                <burstAmount>10</burstAmount>
-                <burstSway>30</burstSway>
-                <burstAngle>0</burstAngle>
-                <fleckSizeRange>(1,2)</fleckSizeRange>
-                <burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
-                <burstOffsetRange>(1,3)</burstOffsetRange>
-            </li>
         </comps>
     </ThingDef>
 
     <!-- 四聯防空炮 -->
-    <ThingDef ParentName="FT_BaseCannonBuilding_WithShieldOrCementBase">
+    <ThingDef ParentName="FT_TurretQuadAA_Common">
         <defName>FT_TurretQuadAA</defName>
         <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
-        <label>quad anti-air gun</label>
-        <description>A quad-barrel anti-air autocannon designed for short-range air defense. Effective against low-flying aircraft and lightly armored surface targets.</description>
-        <uiIconPath>ATGun/FT_AntiAirGun_Vierling</uiIconPath>
-        <uiIconScale>1.2</uiIconScale>
-        <graphicData>
-            <texPath>InfantryTurret/FT_HexMortarBase</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(3.25,3.25)</drawSize>
-            <drawOffset>(0,0,0)</drawOffset>
-        </graphicData>
-        <size>(3,3)</size>
-        <interactionCellOffset>(0,0,-1)</interactionCellOffset><!--操作點在下方-->
         <statBases>   <!--================血量與重量工作量================-->
             <MaxHitPoints>1000</MaxHitPoints>
             <Flammability>0</Flammability>
-            <WorkToBuild>7000</WorkToBuild>
             <Bulk>1000</Bulk>
             <Mass>1509</Mass>
         </statBases>
         <comps>
-            <li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam"
-                Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
+            <li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam" Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
                 <randomGraphics>
                     <li>ATGun/FT_AntiAirGun_Base</li>
                     <li>InfantryTurret/FT_HexMortarBase</li>
@@ -593,15 +212,11 @@
             <li>PlaceWorker_ShowTurretRadius</li>
         </placeWorkers>
         <building>
-            <turretGunDef>FT_Gun_TurretQuadAA</turretGunDef>
-            <turretTopDrawSize>4</turretTopDrawSize>
             <turretBurstWarmupTime>0.75</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
             <turretBurstCooldownTime>0.04</turretBurstCooldownTime>
         </building>
-        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
         <costList>
             <Steel>700</Steel>
-            <ComponentIndustrial>20</ComponentIndustrial>
             <!--<ReinforcedBarrel>4</ReinforcedBarrel>-->
         </costList>
         <costListForDifficulty>
@@ -613,19 +228,12 @@
                 <ReinforcedBarrel>4</ReinforcedBarrel>
             </costList>
         </costListForDifficulty>
-        <researchPrerequisites>
-            <li>FT_IndustrialCannon</li>
-        </researchPrerequisites>
     </ThingDef>
 
-    <ThingDef ParentName="BaseWeaponTurret">
+    <ThingDef ParentName="FT_Gun_TurretQuadAA_Common">
         <defName>FT_Gun_TurretQuadAA</defName>
         <label>quad anti-air gun</label>
         <description>Quad-mounted 20mm autocannons mounted on a stationary emplacement.</description>
-        <graphicData>
-            <texPath>ATGun/FT_AAGun_Vierling</texPath>
-        </graphicData>
-        <soundInteract>Artillery_ShellLoaded</soundInteract>
         <statBases>
             <RangedWeapon_Cooldown>0.04</RangedWeapon_Cooldown>
             <SightsEfficiency>2.18</SightsEfficiency>
@@ -664,46 +272,14 @@
                 <aimedBurstShotCount>4</aimedBurstShotCount>
                 <noSingleShot>true</noSingleShot>
             </li>
-            <li Class="Fortified.CompProperties_CastFlecker">
-                <fleck>DustPuff</fleck>
-                <onGroundOverride>true</onGroundOverride>
-                <burstAmount>10</burstAmount>
-                <burstSway>40</burstSway>
-                <burstAngle>0</burstAngle>
-                <fleckSizeRange>(1,2)</fleckSizeRange>
-                <burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
-                <burstOffsetRange>(1,3.5)</burstOffsetRange>
-            </li>
         </comps>
-        <modExtensions>
-            <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
-                <def>MF_StandardMuzzleFalshTwo</def>
-                <drawSize>(2,2)</drawSize>
-                <offsets>
-                    <li>(1.35,0.3)</li>
-                    <li>(1.25,-0.3)</li>
-                    <li>(1.25,0.3)</li>
-                    <li>(1.35,-0.3)</li>
-                </offsets>
-                <isAlternately>true</isAlternately>
-            </li>
-        </modExtensions>
     </ThingDef>
 
     <!-- 輕型反坦克炮 -->
-    <ThingDef ParentName="FT_BaseCannonBuilding_WithShieldOrCementBase">
+    <ThingDef ParentName="FT_TurretAT_Common">
         <defName>FT_TurretAT</defName>
         <label>37mm anti-tank gun</label>
         <description>A versatile, light anti-tank cannon capable of firing a variety of high-velocity rounds.</description>
-        <uiIconPath>ATGun/FT_AntiTankGun</uiIconPath>
-        <uiIconScale>1.2</uiIconScale>
-        <graphicData>
-            <texPath>ATGun/FT_AntiTankGun_Base</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(3.25,3.25)</drawSize>
-            <drawOffset>(0,0,-0.1)</drawOffset>
-        </graphicData>
-        <size>(3,3)</size>
         <statBases>
             <MaxHitPoints>1000</MaxHitPoints>
             <Flammability>0</Flammability>
@@ -712,8 +288,7 @@
             <Mass>814</Mass>
         </statBases>
         <comps>
-            <li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam"
-                Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
+            <li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam" Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
                 <randomGraphics>
                     <li>ATGun/FT_AntiTankGun_Base</li>
                     <li>ATGun/FT_AntiTankGun_Base_Sec</li>
@@ -737,15 +312,11 @@
             <li>PlaceWorker_ShowTurretRadius</li>
         </placeWorkers>
         <building>
-            <turretGunDef>FT_Gun_TurretAT</turretGunDef>
-            <turretTopDrawSize>4</turretTopDrawSize>
             <turretBurstWarmupTime>0.75</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
             <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
         </building>
-        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
         <costList>
             <Steel>500</Steel>
-            <ComponentIndustrial>4</ComponentIndustrial>
             <!--<ReinforcedBarrel>1</ReinforcedBarrel>-->
         </costList>
         <costListForDifficulty>
@@ -757,19 +328,12 @@
                 <ReinforcedBarrel>1</ReinforcedBarrel>
             </costList>
         </costListForDifficulty>
-        <researchPrerequisites>
-            <li>FT_IndustrialCannon</li>
-        </researchPrerequisites>
     </ThingDef>
 
-    <ThingDef ParentName="BaseWeaponTurret">
+    <ThingDef ParentName="FT_Gun_TurretAT_Common">
         <defName>FT_Gun_TurretAT</defName>
         <label>37mm anti-tank gun</label>
         <description>A 37mm anti-tank cannon mounted on a stationary emplacement.</description>
-        <graphicData>
-            <texPath>ATGun/FT_ATGun</texPath>
-        </graphicData>
-        <soundInteract>Artillery_ShellLoaded</soundInteract>
         <statBases>
             <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
             <SightsEfficiency>2.18</SightsEfficiency>
@@ -805,38 +369,6 @@
             <li Class="CombatExtended.CompProperties_FireModes">
                 <aiAimMode>AimedShot</aiAimMode>
             </li>
-            <li Class="Fortified.CompProperties_CastFlecker">
-                <fleck>DustPuff</fleck><!--生成的Fleck,參考原版-->
-                <onGroundOverride>true</onGroundOverride><!--根據砲塔下方地形決定是否產生-->
-                <burstAmount>10</burstAmount><!--一次射擊生成的數量-->
-                <burstSway>110</burstSway><!--噴射角度的左右隨機偏移範圍-->
-                <burstAngle>180</burstAngle><!--生成偏移子彈發射方向的噴射角度(0
-				= 與發射角度同向)-->
-                <fleckSizeRange>(3,5)</fleckSizeRange><!--Fleck的生成大小隨機區間-->
-                <burstSpeedRange>(0.2,0.5)</burstSpeedRange><!--Fleck的飛行速度隨機區間-->
-                <burstOffsetRange>(2,6)</burstOffsetRange> <!--Fleck的生成位置偏移旋轉中心點的距離區間-->
-            </li>
-            <li Class="Fortified.CompProperties_CastFlecker">
-                <fleck>DustPuff</fleck>
-                <onGroundOverride>true</onGroundOverride>
-                <burstAmount>10</burstAmount>
-                <burstSway>70</burstSway>
-                <burstAngle>180</burstAngle>
-                <fleckSizeRange>(3,5)</fleckSizeRange>
-                <burstSpeedRange>(0.2,0.5)</burstSpeedRange>
-                <burstOffsetRange>(2,6)</burstOffsetRange>
-                <rangeScaleFactor>(1,0.1)</rangeScaleFactor>
-            </li>
-            <li Class="Fortified.CompProperties_CastFlecker">
-                <fleck>DustPuff</fleck>
-                <onGroundOverride>true</onGroundOverride>
-                <burstAmount>15</burstAmount>
-                <burstSway>30</burstSway>
-                <burstAngle>0</burstAngle>
-                <fleckSizeRange>(1,2)</fleckSizeRange>
-                <burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
-                <burstOffsetRange>(2,6)</burstOffsetRange>
-            </li>
         </comps>
         <modExtensions>
             <li Class="CombatExtended.GunDrawExtension">
@@ -870,8 +402,7 @@
             <AimingAccuracy>1.25</AimingAccuracy>
         </statBases>
         <comps>
-            <li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam"
-                Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
+            <li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam" Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
                 <randomGraphics>
                     <li>InfantryTurret/FT_HexMortarBase</li>
                     <li>InfantryTurret/FT_HexMortarBase_Sec</li>

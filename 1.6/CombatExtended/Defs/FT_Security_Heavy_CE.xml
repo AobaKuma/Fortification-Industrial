@@ -4,19 +4,10 @@
 
 	<!--================噴煙者================-->
 
-	<ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
+	<ThingDef ParentName="FT_TurretHexMortar_Common">
 		<defName>FT_TurretHexMortar</defName>
 		<label>multi-barrel rocket launcher</label>
 		<description>A manned, stationary rocket artillery system for indirect saturation fire. Launches short, high-dispersion rocket salvos.</description>
-		<uiIconPath>InfantryTurret/FT_HexMortar_icon</uiIconPath>
-		<uiIconScale>1.2</uiIconScale>
-		<graphicData>
-			<texPath>InfantryTurret/FT_HexMortarBase</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(3.25,3.25)</drawSize>
-			<drawOffset>(0,0,-0.1)</drawOffset>
-		</graphicData>
-		<size>(3,3)</size>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<fillPercent>0.85</fillPercent>
 		<placeWorkers>
@@ -24,9 +15,6 @@
 			<li>PlaceWorker_TurretTop</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
 		</placeWorkers>
-		<researchPrerequisites>
-			<li>FT_HeavyArtillery</li>
-		</researchPrerequisites>
 		<comps>
 			<li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam" Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
 				<randomGraphics>
@@ -55,21 +43,12 @@
 		<statBases>
 			<MaxHitPoints>1000</MaxHitPoints>
 			<Flammability>0</Flammability>
-			<WorkToBuild>3000</WorkToBuild>
 			<Bulk>1500</Bulk>
 			<Mass>510</Mass>
 		</statBases>
-		<costList>
-			<Steel>425</Steel>
-			<ComponentIndustrial>5</ComponentIndustrial>
-			<ReinforcedBarrel>6</ReinforcedBarrel>
-		</costList>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
 			<turretBurstWarmupTime>3.25</turretBurstWarmupTime>
 			<turretBurstCooldownTime>1</turretBurstCooldownTime>
-			<turretTopDrawSize>3</turretTopDrawSize>
-			<turretGunDef>FT_Gun_TurretHexMortar</turretGunDef>
 			<spawnedConceptLearnOpportunity>CE_MortarDirectFire</spawnedConceptLearnOpportunity>
 		</building>
 	</ThingDef>
@@ -165,27 +144,14 @@
 				<onGroundOverride>true</onGroundOverride>
 			</li>
 		</comps>
-		<modExtensions />
+		<modExtensions/>
 	</ThingDef>
 
-	<ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
+	<ThingDef ParentName="FT_TurretPrince_Common">
 		<defName>FT_TurretPrince</defName>
-		<label>field howitzer</label>
 		<description>A lightweight 105 mm howitzer for indirect fire at extended ranges. Due to the high muzzle velocity of the weapon system, it has a fairly large minimum range. \n\nDesignated the NK-33L “Prince”, it was developed by Interstellar Industries Complex Nara where mobility and precision are needed in uneven, difficult terrain.</description>
-		<uiIconPath>Prince/Prince_Icon</uiIconPath>
-		<uiIconScale>1.2</uiIconScale>
-		<graphicData>
-			<texPath>InfantryTurret/FT_HexMortarBase</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(4,4)</drawSize>
-			<drawOffset>(0,-0.01,0)</drawOffset>
-		</graphicData>
-		<size>(3,3)</size>
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<fillPercent>0.85</fillPercent>
-		<researchPrerequisites>
-			<li>FT_HeavyArtillery</li>
-		</researchPrerequisites>
 		<comps>
 			<li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam" Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
 				<randomGraphics>
@@ -206,40 +172,25 @@
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
 		</modExtensions>
-		<placeWorkers>
-			<li>PlaceWorker_NotUnderRoof</li>
-			<li>PlaceWorker_TurretTop</li>
-			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
-		</placeWorkers>
 		<statBases>
 			<Bulk>2500</Bulk>
 			<Mass>7154</Mass>
-			<MaxHitPoints>1000</MaxHitPoints>
 			<Flammability>0</Flammability>
-			<WorkToBuild>3500</WorkToBuild>
 		</statBases>
 		<costList>
 			<Steel>550</Steel>
-			<ComponentIndustrial>6</ComponentIndustrial>
-			<ReinforcedBarrel>2</ReinforcedBarrel>
 		</costList>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
-			<turretBurstWarmupTime>4.0</turretBurstWarmupTime>
 			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
-			<turretTopDrawSize>4</turretTopDrawSize>
-			<turretGunDef>FT_Gun_TurretPrince</turretGunDef>
 			<spawnedConceptLearnOpportunity>CE_MortarDirectFire</spawnedConceptLearnOpportunity>
 		</building>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseWeaponTurret">
+	<ThingDef ParentName="FT_Gun_TurretPrince_Common">
 		<defName>FT_Gun_TurretPrince</defName>
 		<label>105mm howitzer</label>
 		<description>Artillery cannon chambered for 105mm howitzer shells.</description>
-		<soundInteract>Artillery_ShellLoaded</soundInteract>
 		<graphicData>
-			<texPath>Prince/Duke_Gun</texPath>
 			<drawOffset>(5,0,0)</drawOffset>
 		</graphicData>
 		<statBases>
@@ -318,28 +269,16 @@
 				<onGroundOverride>true</onGroundOverride>
 			</li>
 		</comps>
-		<modExtensions />
+		<modExtensions/>
 	</ThingDef>
 
 
-	<ThingDef ParentName="FT_BaseCannonBuilding_Mobile">
+	<ThingDef ParentName="FT_TurretEmpero_Common">
 		<defName>FT_TurretEmpero</defName>
 		<label>heavy howitzer</label>
 		<description>A heavy artillery piece for indirect fire at extreme ranges. Due to the very high muzzle velocity of the weapon system, it has a large minimum range. \n\nThe 155 mm howitzer NK-30 “Empero” is a reliable artillery system developed by Interstellar Industries Complex Nara to provide support for pre-industrial worlds unable to withstand mechanoid invasions.</description>
-		<uiIconPath>Empero/Empero_Icon</uiIconPath>
-		<uiIconScale>1.75</uiIconScale>
-		<graphicData>
-			<texPath>Empero/Empero_Base_Old</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(5,5)</drawSize>
-			<drawOffset>(0,-0.01,0)</drawOffset>
-		</graphicData>
-		<size>(3,3)</size>
 		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
 		<fillPercent>0.85</fillPercent>
-		<researchPrerequisites>
-			<li>FT_HeavyArtillery</li>
-		</researchPrerequisites>
 		<comps>
 			<li Class="CombatExtended.CompProperties_FireArc">
 				<spanRange>10~60</spanRange>
@@ -352,42 +291,25 @@
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
 		</modExtensions>
-		<placeWorkers>
-			<li>PlaceWorker_NotUnderRoof</li>
-			<li>PlaceWorker_TurretTop</li>
-			<li>PlaceWorker_PreventInteractionSpotOverlap</li>
-		</placeWorkers>
 		<statBases>
 			<Bulk>5000</Bulk>
 			<Mass>13880</Mass>
-			<MaxHitPoints>1000</MaxHitPoints>
 			<Flammability>0</Flammability>
-			<WorkToBuild>5000</WorkToBuild>
 		</statBases>
 		<costList>
 			<Steel>600</Steel>
-			<ComponentIndustrial>8</ComponentIndustrial>
-			<ReinforcedBarrel>3</ReinforcedBarrel>
 		</costList>
-		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<building>
 			<turretBurstWarmupTime>4.0</turretBurstWarmupTime>
 			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
-			<turretTopDrawSize>7</turretTopDrawSize>
-			<turretGunDef>FT_Gun_TurretEmpero</turretGunDef>
 			<spawnedConceptLearnOpportunity>CE_MortarDirectFire</spawnedConceptLearnOpportunity>
 		</building>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseWeaponTurret">
+	<ThingDef ParentName="FT_Gun_TurretEmpero_Common">
 		<defName>FT_Gun_TurretEmpero</defName>
 		<label>155mm howitzer</label>
 		<description>A powerful 155mm artillery cannon.</description>
-		<soundInteract>Artillery_ShellLoaded</soundInteract>
-		<graphicData>
-			<texPath>Empero/Empero_Gun</texPath>
-			<drawOffset>(5,0,0)</drawOffset>
-		</graphicData>
 		<statBases>
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 			<SightsEfficiency>0.5</SightsEfficiency>
@@ -466,7 +388,7 @@
 				<onGroundOverride>true</onGroundOverride>
 			</li>
 		</comps>
-		<modExtensions />
+		<modExtensions/>
 	</ThingDef>
 
 </Defs>	

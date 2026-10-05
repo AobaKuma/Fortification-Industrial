@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Shared by 1.6/Vanilla and 1.6/CombatExtended: nodes that are identical in both versions. -->
+<Defs>
+
+    <ThingDef Name="FT_TurretHexMortar_Common" ParentName="FT_BaseCannonBuilding_Mobile" Abstract="True">
+        <uiIconPath>InfantryTurret/FT_HexMortar_icon</uiIconPath>
+        <uiIconScale>1.2</uiIconScale>
+        <graphicData>
+            <texPath>InfantryTurret/FT_HexMortarBase</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3.25,3.25)</drawSize>
+            <drawOffset>(0,0,-0.1)</drawOffset>
+        </graphicData>
+        <size>(3,3)</size>
+        <researchPrerequisites>
+            <li>FT_HeavyArtillery</li>
+        </researchPrerequisites>
+        <statBases>
+            <WorkToBuild>3000</WorkToBuild>
+        </statBases>
+        <costList>
+            <Steel>425</Steel>
+            <ComponentIndustrial>5</ComponentIndustrial>
+            <ReinforcedBarrel>6</ReinforcedBarrel>
+        </costList>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <building>
+            <turretTopDrawSize>3</turretTopDrawSize>
+            <turretGunDef>FT_Gun_TurretHexMortar</turretGunDef>
+        </building>
+    </ThingDef>
+
+    <ThingDef Name="FT_TurretPrince_Common" ParentName="FT_BaseCannonBuilding_Mobile" Abstract="True">
+        <label>field howitzer</label>
+        <uiIconPath>Prince/Prince_Icon</uiIconPath>
+        <uiIconScale>1.2</uiIconScale>
+        <graphicData>
+            <texPath>InfantryTurret/FT_HexMortarBase</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(4,4)</drawSize>
+            <drawOffset>(0,-0.01,0)</drawOffset>
+        </graphicData>
+        <size>(3,3)</size>
+        <placeWorkers>
+            <li>PlaceWorker_NotUnderRoof</li>
+            <li>PlaceWorker_TurretTop</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>FT_HeavyArtillery</li>
+        </researchPrerequisites>
+        <statBases>
+            <MaxHitPoints>1000</MaxHitPoints>
+            <WorkToBuild>3500</WorkToBuild>
+        </statBases>
+        <costList>
+            <ComponentIndustrial>6</ComponentIndustrial>
+            <ReinforcedBarrel>2</ReinforcedBarrel>
+        </costList>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <building>
+            <turretBurstWarmupTime>4.0</turretBurstWarmupTime>
+            <turretTopDrawSize>4</turretTopDrawSize>
+            <turretGunDef>FT_Gun_TurretPrince</turretGunDef>
+        </building>
+    </ThingDef>
+
+    <ThingDef Name="FT_Gun_TurretPrince_Common" ParentName="BaseWeaponTurret" Abstract="True">
+        <graphicData>
+            <texPath>Prince/Duke_Gun</texPath>
+        </graphicData>
+        <soundInteract>Artillery_ShellLoaded</soundInteract>
+    </ThingDef>
+
+    <ThingDef Name="FT_TurretEmpero_Common" ParentName="FT_BaseCannonBuilding_Mobile" Abstract="True">
+        <uiIconPath>Empero/Empero_Icon</uiIconPath>
+        <uiIconScale>1.75</uiIconScale>
+        <graphicData>
+            <texPath>Empero/Empero_Base_Old</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(5,5)</drawSize>
+            <drawOffset>(0,-0.01,0)</drawOffset>
+        </graphicData>
+        <size>(3,3)</size>
+        <placeWorkers>
+            <li>PlaceWorker_NotUnderRoof</li>
+            <li>PlaceWorker_TurretTop</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>FT_HeavyArtillery</li>
+        </researchPrerequisites>
+        <statBases>
+            <MaxHitPoints>1000</MaxHitPoints>
+            <WorkToBuild>5000</WorkToBuild>
+        </statBases>
+        <costList>
+            <ComponentIndustrial>8</ComponentIndustrial>
+            <ReinforcedBarrel>3</ReinforcedBarrel>
+        </costList>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <building>
+            <turretTopDrawSize>7</turretTopDrawSize>
+            <turretGunDef>FT_Gun_TurretEmpero</turretGunDef>
+        </building>
+    </ThingDef>
+
+    <ThingDef Name="FT_Gun_TurretEmpero_Common" ParentName="BaseWeaponTurret" Abstract="True">
+        <graphicData>
+            <texPath>Empero/Empero_Gun</texPath>
+            <drawOffset>(5,0,0)</drawOffset>
+        </graphicData>
+        <soundInteract>Artillery_ShellLoaded</soundInteract>
+    </ThingDef>
+</Defs>

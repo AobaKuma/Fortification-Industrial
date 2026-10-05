@@ -1,38 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-    <ThingDef ParentName="BuildingBase" Name="FT_MGNest" Abstract="True">
-        <description>An automatic turret equipped with a full powered cartridge machine gun, encased within a fortified defense structure. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+    <ThingDef ParentName="FT_MGNest_Common" Name="FT_MGNest" Abstract="True">
         <thingClass>CombatExtended.Building_TurretGunCE</thingClass>
-        <drawerType>MapMeshAndRealTime</drawerType>
-        <graphicData>
-            <texPath>MGBunker/FT_MGBunker_Leathery</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(2.5,2.5)</drawSize>
-            <drawOffset>(0,0,0)</drawOffset>
-        </graphicData>
-        <size>(3,3)</size>
-        <uiIconPath>MGBunker/FT_MGBunker_Leathery</uiIconPath>
-        <uiIconScale>0.90</uiIconScale>
-        <altitudeLayer>Building</altitudeLayer>
-        <rotatable>false</rotatable>
         <statBases>
-            <MaxHitPoints>1000</MaxHitPoints>
             <Flammability>0</Flammability>
-            <WorkToBuild>1800</WorkToBuild>
-            <Beauty>-20</Beauty>
-            <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
             <AimingAccuracy>1.0</AimingAccuracy>
         </statBases>
-        <tickerType>Normal</tickerType>
         <comps>
-            <li Class="CompProperties_Forbiddable" />
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
-                <basePowerConsumption>200</basePowerConsumption>
-            </li>
-            <li Class="CompProperties_Flickable" />
-            <li Class="CompProperties_Breakdownable" />
             <li Class="CombatExtended.CompProperties_FireArc">
                 <spanRange>10~360</spanRange>
                 <maxSpanDeviation>180</maxSpanDeviation>
@@ -44,130 +19,48 @@
                 <angleWeightMultiplier>2</angleWeightMultiplier>
             </li>
         </modExtensions>
-        <passability>PassThroughOnly</passability>
-        <pathCost>50</pathCost>
         <fillPercent>0.85</fillPercent>
-        <hasTooltip>true</hasTooltip>
-        <costStuffCount>150</costStuffCount>
-        <costList>
-            <Steel>150</Steel>
-            <ComponentIndustrial>3</ComponentIndustrial>
-        </costList>
-        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-        <designationCategory>Security</designationCategory>
-        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
         <building>
-            <combatPower>80</combatPower>   <!-- same as a scavenger -->
-            <ai_combatDangerous>true</ai_combatDangerous>
-            <turretGunDef>FT_Gun_MG</turretGunDef>
             <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
         </building>
-        <placeWorkers>
-            <li>PlaceWorker_ShowTurretRadius</li>
-        </placeWorkers>
-        <researchPrerequisites>
-            <li>GunTurrets</li>
-        </researchPrerequisites>
     </ThingDef>
 
-    <ThingDef ParentName="FT_MGNest">
+    <ThingDef ParentName="FT_Turret_BunkerL_Common">
         <defName>FT_Turret_BunkerL</defName>
-        <label>auto-turret sandbag nest</label>
         <description>An automatic turret equipped with a full powered cartridge machine gun, encased within a basic defensive position. Constructed from leathery materials. \nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
-        <graphicData>
-            <texPath>MGBunker/FT_MGBunker_Leathery</texPath>
-        </graphicData>
-        <uiIconPath>MGBunker/FT_MGBunker_Leathery</uiIconPath>
         <statBases>
-            <MaxHitPoints>300</MaxHitPoints>
             <Flammability>0</Flammability>
-            <WorkToBuild>1800</WorkToBuild>
-            <Beauty>-10</Beauty>
-            <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
         </statBases>
-        <stuffCategories>
-            <li>Leathery</li>
-        </stuffCategories>
     </ThingDef>
 
-    <ThingDef ParentName="FT_MGNest">
+    <ThingDef ParentName="FT_Turret_BunkerM_Common">
         <defName>FT_Turret_BunkerM</defName>
-        <label>auto-turret bunker</label>
         <description>An automatic turret equipped with a full powered cartridge machine gun, encased within a reinforced defensive position. Constructed from metallic materials. \nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
-        <graphicData>
-            <texPath>MGBunker/FT_MGBunker_Metal</texPath>
-        </graphicData>
-        <uiIconPath>MGBunker/FT_MGBunker_Metal</uiIconPath>
         <statBases>
-            <MaxHitPoints>500</MaxHitPoints>
             <Flammability>0</Flammability>
-            <WorkToBuild>1800</WorkToBuild>
-            <Beauty>-10</Beauty>
-            <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
         </statBases>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
     </ThingDef>
 
-    <ThingDef ParentName="FT_MGNest">
+    <ThingDef ParentName="FT_Turret_BunkerC_Common">
         <defName>FT_Turret_BunkerC</defName>
-        <label>auto-turret bunker</label>
         <description>An automatic turret equipped with a full powered cartridge machine gun, encased within a reinforced defensive position. Constructed from stone materials.\nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
-        <graphicData>
-            <texPath>MGBunker/FT_MGBunker_Concrete</texPath>
-        </graphicData>
-        <uiIconPath>MGBunker/FT_MGBunker_Concrete</uiIconPath>
         <statBases>
-            <MaxHitPoints>450</MaxHitPoints>
             <Flammability>0</Flammability>
-            <WorkToBuild>2400</WorkToBuild>
-            <Beauty>-10</Beauty>
-            <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
         </statBases>
-        <stuffCategories>
-            <li>Stony</li>
-        </stuffCategories>
     </ThingDef>
 
-    <ThingDef ParentName="FT_MGNest">
+    <ThingDef ParentName="FT_Turret_BunkerF_Common">
         <defName>FT_Turret_BunkerF</defName>
-        <label>auto-turret military sandbag nest</label>
         <description>An automatic turret equipped with a full powered cartridge machine gun, encased within a basic defensive position. Constructed from fabric materials. Its dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
-        <graphicData>
-            <texPath>MGBunker/FT_MGBunker_Fabric</texPath>
-        </graphicData>
-        <uiIconPath>MGBunker/FT_MGBunker_Fabric</uiIconPath>
         <statBases>
-            <MaxHitPoints>400</MaxHitPoints>
             <Flammability>0</Flammability>
-            <WorkToBuild>1800</WorkToBuild>
-            <Beauty>-5</Beauty>
-            <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
         </statBases>
-        <stuffCategories>
-            <li>Fabric</li>
-        </stuffCategories>
-        <colorPerStuff>
-            <li>
-                <stuff>Cloth</stuff>
-                <color>(139,122,87)</color>
-            </li>
-            <li>
-                <stuff>Synthread</stuff>
-                <color>(110,114,77)</color>
-            </li>
-        </colorPerStuff>
     </ThingDef>
 
-    <ThingDef ParentName="BaseWeaponTurret">
+    <ThingDef ParentName="FT_Gun_MG_Common">
         <defName>FT_Gun_MG</defName>
         <label>medium turret gun</label>
         <description>Full powered cartridge automated gun inside a defensive structure.</description>
-        <graphicData>
-            <texPath>None</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
         <statBases>
             <SightsEfficiency>1</SightsEfficiency>
             <ShotSpread>0.05</ShotSpread>

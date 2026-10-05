@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Shared by 1.6/Vanilla and 1.6/CombatExtended: nodes that are identical in both versions. -->
+<Defs>
+
+    <ThingDef Name="FT_BaseCannonBuilding_Common" ParentName="BuildingBase" Abstract="True">
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <hasInteractionCell>True</hasInteractionCell>
+        <hasTooltip>true</hasTooltip>
+        <interactionCellOffset>(-1,0,-1)</interactionCellOffset>
+        <stealable>false</stealable>
+        <rotatable>true</rotatable>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <tickerType>Normal</tickerType>
+        <designationCategory>Security</designationCategory>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_Mannable">
+                <manWorkType>Violent</manWorkType>
+            </li>
+        </comps>
+        <damageMultipliers>
+            <li>
+                <damageDef>EMP</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li>
+                <damageDef>Stun</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">
+                <damageDef>MechBandShockwave</damageDef>
+                <multiplier>0</multiplier>
+            </li>
+        </damageMultipliers>
+        <placeWorkers>
+            <li>PlaceWorker_TurretTop</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <uiIconScale>1.1</uiIconScale>
+    </ThingDef>
+
+    <ThingDef Name="FT_BaseCannonBuilding_Mobile_Common" ParentName="FT_BaseCannonBuilding" Abstract="True">
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <!--================可攜帶性
+    ================-->
+        <thingCategories>
+            <li>BuildingsSecurity</li>
+        </thingCategories>
+        <statBases>
+            <ShootingAccuracyTurret>1.0</ShootingAccuracyTurret>
+        </statBases>
+        <building>
+            <ai_combatDangerous>true</ai_combatDangerous>
+            <turretBurstWarmupTime>1.0</turretBurstWarmupTime>
+            <!--================冷卻與瞄準時間================-->
+        </building>
+    </ThingDef>
+
+    <ThingDef Name="FT_Maxim4M_Common" ParentName="FT_BaseCannonBuilding_Mobile" Abstract="True">
+        <uiIconPath>InfantryTurret/FT_QuadMaximGun_icon</uiIconPath>
+        <graphicData>
+            <texPath>InfantryTurret/FT_Tripod</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1.3,1.3)</drawSize>
+            <drawOffset>(0,0,-0.1)</drawOffset>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>400</MaxHitPoints>
+            <WorkToBuild>3300</WorkToBuild>
+        </statBases>
+        <costList>
+            <Steel>160</Steel>
+            <ComponentIndustrial>16</ComponentIndustrial>
+        </costList>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <building>
+            <turretTopDrawSize>2</turretTopDrawSize>
+            <ai_combatDangerous>true</ai_combatDangerous>
+            <turretGunDef>FT_Gun_QuadMG</turretGunDef>
+        </building>
+        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+        <researchPrerequisites>
+            <li>BlowbackOperation</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef Name="FT_Gun_QuadMG_Common" ParentName="BaseWeaponTurret" Abstract="True">
+        <graphicData>
+            <texPath>InfantryTurret/FT_QuadMaximGun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <modExtensions>
+            <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+                <def>MF_StandardMuzzleFalsh</def>
+                <drawSize>(0.5,0.5)</drawSize>
+                <offsets>
+                    <li>(0.96,0.304)</li>
+                    <li>(0.96,0.125)</li>
+                    <li>(0.96,-0.125)</li>
+                    <li>(0.96,-0.304)</li>
+                </offsets>
+                <isAlternately>true</isAlternately>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef Name="FT_AutoCannon_Common" ParentName="FT_BaseCannonBuilding_Mobile" Abstract="True">
+        <label>autocannon</label>
+        <uiIconPath>InfantryTurret/FT_AutoCannonGun_icon</uiIconPath>
+        <uiIconScale>1.2</uiIconScale>
+        <graphicData>
+            <texPath>InfantryTurret/FT_Tripod</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1.3,1.3)</drawSize>
+            <drawOffset>(0,0,-0.1)</drawOffset>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <WorkToBuild>3300</WorkToBuild>
+        </statBases>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <building>
+            <turretTopDrawSize>2.5</turretTopDrawSize>
+            <ai_combatDangerous>true</ai_combatDangerous>
+            <turretGunDef>FT_Gun_Autocannon</turretGunDef>
+        </building>
+        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+        <researchPrerequisites>
+            <li>GasOperation</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef Name="FT_Gun_Autocannon_Common" ParentName="BaseWeaponTurret" Abstract="True">
+        <label>autocannon</label>
+        <graphicData>
+            <texPath>InfantryTurret/FT_AutoCannonGun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef Name="FT_RecoillessGun_Common" ParentName="FT_BaseCannonBuilding_Mobile" Abstract="True">
+        <uiIconPath>InfantryTurret/FT_RecoillessGun_icon</uiIconPath>
+        <uiIconScale>1.2</uiIconScale>
+        <graphicData>
+            <texPath>InfantryTurret/FT_Tripod</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1.2,1.2)</drawSize>
+            <drawOffset>(0,0,-0.1)</drawOffset>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>400</MaxHitPoints>
+            <WorkToBuild>3300</WorkToBuild>
+        </statBases>
+        <costList>
+            <ComponentIndustrial>5</ComponentIndustrial>
+        </costList>
+        <building>
+            <turretGunDef>FT_Gun_Recoilless</turretGunDef>
+            <turretTopDrawSize>2.5</turretTopDrawSize>
+        </building>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <researchPrerequisites>
+            <li>FT_IndustrialCannon</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef Name="FT_Gun_Recoilless_Common" ParentName="BaseWeaponTurret" Abstract="True">
+        <graphicData>
+            <texPath>InfantryTurret/FT_RecoillessGun</texPath>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <soundInteract>Artillery_ShellLoaded</soundInteract>
+        <comps>
+            <li Class="Fortified.CompProperties_CastFlecker">
+                <!-- 向後噴-->
+                <fleck>FT_ExhaustFlame</fleck>
+                <burstAmount>10</burstAmount>
+                <burstSway>5</burstSway>
+                <burstAngle>180</burstAngle>
+                <fleckSizeRange>(1,2)</fleckSizeRange>
+                <burstSpeedRange>(2,2.5)</burstSpeedRange>
+                <burstOffsetRange>(2,2.5)</burstOffsetRange>
+                <onGroundOverride>true</onGroundOverride>
+            </li>
+            <li Class="Fortified.CompProperties_CastFlecker">
+                <!-- 向後噴-->
+                <fleck>FT_ExhaustFlameGlow</fleck>
+                <burstAmount>10</burstAmount>
+                <burstSway>5</burstSway>
+                <burstAngle>180</burstAngle>
+                <fleckSizeRange>(1,2)</fleckSizeRange>
+                <burstSpeedRange>(2,2.5)</burstSpeedRange>
+                <burstOffsetRange>(2,2.5)</burstOffsetRange>
+                <onGroundOverride>true</onGroundOverride>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

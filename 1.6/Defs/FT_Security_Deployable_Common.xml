@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Shared by 1.6/Vanilla and 1.6/CombatExtended: nodes that are identical in both versions. -->
+<Defs>
+
+    <ThingDef Name="FT_MinifiedTurret_Common" ParentName="MinifiedThing" Abstract="True">
+        <label>minified turret</label>
+        <thingClass>Fortified.MinifiedThingDeployable</thingClass>
+        <statBases>
+            <Mass>20</Mass>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>TriggerObject</useJob>
+                <useLabel>Pick up {0_label}</useLabel>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef Name="FT_MinifiedTurretEquippable_Common" ParentName="FT_MinifiedTurret" Abstract="True">
+        <equipmentType>Primary</equipmentType>
+        <techLevel>Industrial</techLevel>
+        <comps>
+            <li>
+                <compClass>CompEquippable</compClass>
+            </li>
+        </comps>
+        <weaponClasses>
+            <li>Ranged</li>
+        </weaponClasses>
+    </ThingDef>
+
+    <ThingDef Name="FT_BaseCannonBuilding_Deployable_Common" ParentName="FT_BaseCannonBuilding" Abstract="True">
+        <minifiedDef>FT_MinifiedTurret</minifiedDef>
+        <thingCategories>
+            <li>BuildingsSecurity</li>
+        </thingCategories>
+        <statBases>
+            <Mass>50</Mass>
+        </statBases>
+        <building>
+            <ai_combatDangerous>true</ai_combatDangerous>
+            <turretBurstWarmupTime>1.0</turretBurstWarmupTime>
+        </building>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>TriggerObject</useJob>
+                <useLabel>Pick up {0_label}</useLabel>
+            </li>
+            <li>
+                <compClass>Fortified.CompMinifyToInventory</compClass>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef Name="FT_Turret_Mortar_Common" ParentName="FT_BaseCannonBuilding_Deployable" Abstract="True">
+        <uiIconPath>FT_Mortar_Icon</uiIconPath>
+        <uiIconScale>0.9</uiIconScale>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>FT_MortarBase</texPath>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+        <costList>
+            <Steel>20</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <ReinforcedBarrel>1</ReinforcedBarrel>
+        </costList>
+        <interactionCellOffset>(1,0,0)</interactionCellOffset>
+        <statBases>
+            <Mass>20</Mass>
+        </statBases>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <building>
+            <turretGunDef>FT_Artillery_Mortar</turretGunDef>
+            <turretTopDrawSize>1.5</turretTopDrawSize>
+        </building>
+        <researchPrerequisites>
+            <li>Mortars</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef Name="FT_Artillery_Mortar_Common" ParentName="BaseWeaponTurret" Abstract="True">
+        <recoilPower>3</recoilPower>
+        <graphicData>
+            <texPath>FT_MortarGun</texPath>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+        <weaponTags>
+            <li>TurretGun</li>
+        </weaponTags>
+        <comps>
+            <li Class="Fortified.CompProperties_CastFlecker">
+                <fleck>DustPuff</fleck>
+                <onGroundOverride>true</onGroundOverride>
+                <burstAmount>15</burstAmount>
+                <burstSway>100</burstSway>
+                <burstAngle>180</burstAngle>
+                <fleckSizeRange>(2,4)</fleckSizeRange>
+                <burstSpeedRange>(0.2,0.5)</burstSpeedRange>
+                <burstOffsetRange>(0,3)</burstOffsetRange>
+                <rangeScaleFactor>(1,0.1)</rangeScaleFactor>
+            </li>
+            <li Class="Fortified.CompProperties_CastFlecker">
+                <fleck>DustPuff</fleck>
+                <onGroundOverride>true</onGroundOverride>
+                <burstAmount>15</burstAmount>
+                <burstSway>30</burstSway>
+                <burstAngle>0</burstAngle>
+                <fleckSizeRange>(1,2)</fleckSizeRange>
+                <burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
+                <burstOffsetRange>(1,3)</burstOffsetRange>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

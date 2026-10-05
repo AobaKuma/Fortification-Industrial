@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+  <!-- Without CE the field howitzer is the indirect-fire gun that loads mortar shells, so the
+       nuclear shells from Nuclear Dawn go there. The CE version of this patch targets the
+       155mm Empero instead. -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Fortification Industrial -Nuclear Dawn</li>
+    </mods>
+
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef[defName="FT_TurretPrince"]/description</xpath>
+      <value>
+        <description>A lightweight howitzer for indirect fire at extended ranges. Due to the high muzzle velocity of the weapon system, it has a fairly large minimum range.\nCan fire nuclear warhead shells. Practice extreme caution when using these.\n\nDesignated the NK-33L “Prince”, it was developed by Interstellar Industries Complex Nara where mobility and precision are needed in uneven, difficult terrain.</description>
+      </value>
+    </match>
+
+  </Operation>
+
+</Patch>

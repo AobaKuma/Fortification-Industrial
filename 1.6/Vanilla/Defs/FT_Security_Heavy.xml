@@ -320,7 +320,7 @@
                 <forcedMissRadiusClassicMortars>8</forcedMissRadiusClassicMortars>
                 <isMortar>true</isMortar>
                 <requireLineOfSight>false</requireLineOfSight>
-                <minRange>4.9</minRange>
+                <minRange>19.9</minRange>
                 <range>500</range>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>FT_CannonLaunchB</soundCast>
@@ -340,9 +340,6 @@
         <description>An artillery piece that can only fire horizontally at close range due to its extremely high muzzle velocity, but it is highly accurate. \n\nCorrectly designated the 155 mm howitzer NK-30 "Empero", it is a reliable artillery system developed by Interstellar Industries Complex Nara to provide technical support for pre-industrial worlds unable to withstand mechanoid invasions.</description>
         <interactionCellOffset>(-1,0,-2)</interactionCellOffset>
         <fillPercent>0.4</fillPercent>
-        <inspectorTabs>
-            <li>ITab_Shells</li>
-        </inspectorTabs>
         <comps>
             <li Class="CompProperties_Explosive">
                 <wickTicks>240</wickTicks>
@@ -371,10 +368,6 @@
                 <autoRefuelPercent>0.5</autoRefuelPercent>
                 <fuelIconPath>Things/Item/Resource/ReinforcedBarrel/ReinforcedBarrel</fuelIconPath>
             </li>
-			<li MayRequire="VanillaExpanded.VFESecurity" Class="VFESecurity.CompProperties_WorldArtillery">
-				<worldMapAttackRange>50</worldMapAttackRange>
-				<firingMode>GroundToGround</firingMode>
-			</li>
 			<li MayRequire="VanillaExpanded.VFESecurity" Class="VFESecurity.CompProperties_DualMannable">
 				<manWorkType>Violent</manWorkType>
 				<planetLayerWhitelist>
@@ -396,8 +389,6 @@
             <turretBurstCooldownTime>10.0</turretBurstCooldownTime>
             <buildingTags>
                 <li>Artillery</li>
-                <li>Artillery_BaseDestroyer</li>
-                <li>Artillery_MannedMortar</li>
             </buildingTags>
         </building>
     </ThingDef>
@@ -407,6 +398,10 @@
         <label>field cannon</label>
         <description>A powerful direct-firing cannon with high accuracy.</description>
         <statBases>
+            <AccuracyTouch>0.50</AccuracyTouch>
+            <AccuracyShort>0.80</AccuracyShort>
+            <AccuracyMedium>0.90</AccuracyMedium>
+            <AccuracyLong>0.80</AccuracyLong>
             <RangedWeapon_Cooldown>10.0</RangedWeapon_Cooldown>
             <Mass>205</Mass>
         </statBases>
@@ -439,35 +434,16 @@
                 <burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
                 <burstOffsetRange>(2,6)</burstOffsetRange>
             </li>
-            <li Class="CompProperties_ChangeableProjectile"/>
         </comps>
-        <building>
-            <fixedStorageSettings>
-                <filter>
-                    <categories>
-                        <li>MortarShells</li>
-                    </categories>
-                </filter>
-            </fixedStorageSettings>
-            <defaultStorageSettings>
-                <filter>
-                    <categories>
-                        <li>MortarShells</li>
-                    </categories>
-                </filter>
-            </defaultStorageSettings>
-        </building>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
+                <defaultProjectile>FT_Bullet_HeavyFlakShell</defaultProjectile>
                 <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
                 <warmupTime>5.0</warmupTime>
-                <forcedMissRadius>2</forcedMissRadius>
-                <forcedMissRadiusClassicMortars>4</forcedMissRadiusClassicMortars>
-                <isMortar>true</isMortar>
                 <requireLineOfSight>true</requireLineOfSight>
                 <minRange>5.9</minRange>
-                <range>500</range>
+                <range>59.9</range>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>FT_CannonLaunchC</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>

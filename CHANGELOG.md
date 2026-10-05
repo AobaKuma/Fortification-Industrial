@@ -13,6 +13,16 @@
 - **Recipe inheritance switched to the framework**: the lathe now uses `Fortified.ModExtension_RecipeInheritance` instead of the VEF extension.
 - Removed the `Source/1.5Backup` project and its reference DLLs from the repository.
 - Removed the obsolete VFE Security `CustomVerb.xml` patch.
+- **Vanilla and CE turret defs share their common parts**: nodes identical in both versions now live in `1.6/Defs/FT_Security_*_Common.xml`, so they are changed in one place. Checked with the new `_Tools/DefDiff` script to resolve to exactly the same defs as before.
+
+---
+
+### Turret roles (vanilla unless noted)
+
+- **Field howitzer vs. field cannon now match their descriptions**: the field howitzer is the indirect gun (minimum range 4.9 to 19.9); the field cannon is a direct-fire AP cannon (range 500 to 59.9, needs line of sight, no mortar scatter, fires a 250-damage armor-piercing shell with a small blast instead of mortar shells). The cannon no longer stores shells, is no longer used as a siege mortar and loses VFE Security world artillery. With Nuclear Dawn, nuclear shells are noted on the field howitzer. CE is unchanged.
+- **Auto-turret nests merged from four into two**: the *sandbag nest* (fabric or leather, 350 HP, quick and cheap, tinted by its material) and the *bunker* (stone or metal, 500 HP, masonry or armored texture depending on the material). The old four remain as "(legacy)" so existing buildings survive, but can no longer be built. Both modes.
+- **Suppression**: machine-gun hits and heavy-shell blasts now inflict shell shock on every pawn they hurt, friend or foe; mechanoids are immune. Vanilla: auto-turret and quad machine guns, field cannon shell. CE: FI's 105mm, 155mm, 15cm Nebelwerfer and 128mm HE shells. An XML Extensions option (off by default) extends it to vanilla HE mortar shells.
+- **Build times**: recoilless gun 3300 to 1500 (both modes), anti-tank gun 1000 to 3000.
 
 ---
 

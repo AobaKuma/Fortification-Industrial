@@ -57,6 +57,13 @@
             <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
         </stuffProps>
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <modExtensions>
+            <li Class="Fortified.InfoDisplayExtension">
+                <infos>
+                    <li>FT_Info_ConcreteGrades</li>
+                </infos>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase">
@@ -110,6 +117,13 @@
             <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <modExtensions>
+            <li Class="Fortified.InfoDisplayExtension">
+                <infos>
+                    <li>FT_Info_ConcreteGrades</li>
+                </infos>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase">
@@ -163,6 +177,13 @@
             <canSuggestUseDefaultStuff>false</canSuggestUseDefaultStuff>
         </stuffProps>
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <modExtensions>
+            <li Class="Fortified.InfoDisplayExtension">
+                <infos>
+                    <li>FT_Info_ConcreteGrades</li>
+                </infos>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase">

@@ -28,8 +28,7 @@
 			<AimingAccuracy>1.25</AimingAccuracy>
 		</statBases>
 		<comps>
-			<li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam"
-				Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
+			<li MayRequireAnyOf="oskarpotocki.vanillafactionsexpanded.core,oskarpotocki.vanillafactionsexpanded.core_steam" Class="VEF.Buildings.CompProperties_RandomBuildingGraphic">
 				<randomGraphics>
 					<li>ATGun/Base_Flak40_A</li>
 					<li>ATGun/Base_Flak40_B</li>
@@ -44,6 +43,11 @@
 			<li Class="CombatExtended.NonSnapTurretExtension">
 				<speed>0.167</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
+			<li Class="Fortified.InfoDisplayExtension">
+				<infos>
+					<li>FT_Info_Suppression</li>
+				</infos>
 			</li>
 		</modExtensions>
 		<placeWorkers>
@@ -205,6 +209,11 @@
 			<li Class="CombatExtended.NonSnapTurretExtension">
 				<speed>0.1</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
+			<li Class="Fortified.InfoDisplayExtension">
+				<infos>
+					<li>FT_Info_Suppression</li>
+				</infos>
 			</li>
 		</modExtensions>
 		<placeWorkers>

@@ -66,6 +66,13 @@
             <Steel>350</Steel>
             <ReinforcedBarrel>1</ReinforcedBarrel>
         </costList>
+        <modExtensions>
+            <li Class="Fortified.InfoDisplayExtension">
+                <infos>
+                    <li>FT_Info_TurretAmmoSwitch</li>
+                </infos>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="FT_Gun_TurretAA_Common">
@@ -182,6 +189,13 @@
             <Steel>400</Steel>
             <ReinforcedBarrel>4</ReinforcedBarrel>
         </costList>
+        <modExtensions>
+            <li Class="Fortified.InfoDisplayExtension">
+                <infos>
+                    <li>FT_Info_TurretAmmoSwitch</li>
+                </infos>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="FT_Gun_TurretQuadAA_Common">
@@ -329,6 +343,13 @@
             <Steel>425</Steel>
             <ReinforcedBarrel>1</ReinforcedBarrel>
         </costList>
+        <modExtensions>
+            <li Class="Fortified.InfoDisplayExtension">
+                <infos>
+                    <li>FT_Info_TurretAmmoSwitch</li>
+                </infos>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="FT_Gun_TurretAT_Common">

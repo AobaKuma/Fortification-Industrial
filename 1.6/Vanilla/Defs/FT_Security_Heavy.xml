@@ -78,6 +78,13 @@
                 <li>Artillery_MannedMortar</li>
             </buildingTags>
         </building>
+        <modExtensions>
+            <li Class="Fortified.InfoDisplayExtension">
+                <infos>
+                    <li>FT_Info_ShellLoading</li>
+                </infos>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="BaseArtilleryWeapon">
@@ -252,6 +259,13 @@
                 <li>Artillery_MannedMortar</li>
             </buildingTags>
         </building>
+        <modExtensions>
+            <li Class="Fortified.InfoDisplayExtension">
+                <infos>
+                    <li>FT_Info_ShellLoading</li>
+                </infos>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="FT_Gun_TurretPrince_Common">
@@ -391,6 +405,14 @@
                 <li>Artillery</li>
             </buildingTags>
         </building>
+        <modExtensions>
+            <li Class="Fortified.InfoDisplayExtension">
+                <infos>
+                    <li>FT_Info_TurretAmmoSwitch</li>
+                    <li>FT_Info_Suppression</li>
+                </infos>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="FT_Gun_TurretEmpero_Common">

@@ -33,6 +33,14 @@
         <building>
             <turretBurstCooldownTime>4.8</turretBurstCooldownTime>
         </building>
+        <modExtensions>
+            <li Class="Fortified.InfoDisplayExtension">
+                <infos>
+                    <li>FT_Info_BarrelWear</li>
+                    <li>FT_Info_Suppression</li>
+                </infos>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="FT_Turret_GarrisonBunker_Common">

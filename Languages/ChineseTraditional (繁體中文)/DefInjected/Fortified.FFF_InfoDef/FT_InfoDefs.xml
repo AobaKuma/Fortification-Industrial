@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: barrel wear -->
+  <FT_Info_BarrelWear.label>槍管磨耗</FT_Info_BarrelWear.label>
+  <!-- EN: Every shot wears the barrel down. When it is worn out the gun stops firing until a colonist fits a new one: machine guns use steel, cannons and mortars use reinforced barrels made at the lathe. The barrel gizmo shows the shots left and lets you choose how early the barrel is replaced. -->
+  <FT_Info_BarrelWear.description>每次射擊都會磨耗槍管。槍管耗盡後砲塔會停火，直到殖民者換上新的：機槍用鋼鐵，火砲與迫擊砲用車床製作的強化砲管。槍管按鈕會顯示剩餘發數，並可設定何時提前更換。</FT_Info_BarrelWear.description>
+  
+  <!-- EN: hand-loaded shells -->
+  <FT_Info_ShellLoading.label>手動裝填砲彈</FT_Info_ShellLoading.label>
+  <!-- EN: Fires mortar shells that the crew loads by hand. The loaded shell decides the effect: high-explosive, incendiary, EMP, smoke and so on. Keep shells stocked nearby and set which ones may be used in the gun's storage settings. -->
+  <FT_Info_ShellLoading.description>發射由砲組手動裝填的迫擊砲彈。效果取決於裝入的砲彈：高爆、燃燒、EMP、煙霧等。請在附近備妥砲彈，並在砲的存放設定中選擇允許使用哪些砲彈。</FT_Info_ShellLoading.description>
+  
+  <!-- EN: shell types -->
+  <FT_Info_TurretAmmoSwitch.label>彈種</FT_Info_TurretAmmoSwitch.label>
+  <!-- EN: This gun can switch shell type with its ammo gizmo, for example armor-piercing against machines and high-explosive or airburst against infantry. Switching is instant, followed by a short pause to reload. Only the projectile changes: no ammo items are used and barrel wear is the same for every type. -->
+  <FT_Info_TurretAmmoSwitch.description>可用彈種按鈕切換砲彈種類，例如用穿甲彈對付機械體、用高爆彈或空爆彈對付步兵。切換是即時的，之後會短暫停火重新裝填。只改變發射的彈頭：不消耗彈藥物品，每種彈種的槍管磨耗都一樣。</FT_Info_TurretAmmoSwitch.description>
+  
+  <!-- EN: suppression -->
+  <FT_Info_Suppression.label>壓制</FT_Info_Suppression.label>
+  <!-- EN: Hits from this weapon, and its heavy shell blasts, give shell shock to every creature they hurt, friend or foe. Shell shock builds up under sustained fire, bringing pain, dulled senses and eventually mental breaks; it wears off over about a day. Machines are immune. Keep your own people out of the fire zone. -->
+  <FT_Info_Suppression.description>此武器的命中與重型砲彈的爆炸，會讓所有被傷到的生物罹患彈震症，不分敵我。持續受到火力會讓彈震症累積，帶來疼痛、意識遲鈍，最後導致精神崩潰；大約一天後消退。機械體不受影響。請讓自己人遠離火力範圍。</FT_Info_Suppression.description>
+  
+  <!-- EN: concrete grades -->
+  <FT_Info_ConcreteGrades.label>混凝土等級</FT_Info_ConcreteGrades.label>
+  <!-- EN: Concrete comes in three grades for different jobs.\n- Concrete: cheap and plentiful, twice the hit points of the base structure but twice as slow to build. For long walls.\n- Prefab concrete: 1.5 times the hit points and builds as fast as wood. For quick works under pressure.\n- Rebar concrete: 2.5 times the hit points, three times the build time. For positions that must hold. -->
+  <FT_Info_ConcreteGrades.description>混凝土分為三種等級，各有用途。\n- 混凝土：便宜量多，生命值是基礎結構的兩倍，但建造時間也是兩倍。適合長城牆。\n- 預製混凝土：生命值 1.5 倍，建造速度和木材一樣快。適合在壓力下搶建工事。\n- 鋼筋混凝土：生命值 2.5 倍，建造時間三倍。適合必須死守的陣地。</FT_Info_ConcreteGrades.description>
+  
+  <!-- EN: sandbag cover -->
+  <FT_Info_SandbagCover.label>沙包掩體</FT_Info_SandbagCover.label>
+  <!-- EN: Packed earth soaks up small-arms fire: bullets do half damage to it and arrows only a quarter. Explosives and heavy shells hit it at full strength. -->
+  <FT_Info_SandbagCover.description>壓實的泥土能吸收輕兵器火力：子彈只造成一半傷害，箭矢只有四分之一。爆炸物與重型砲彈則會造成完整傷害。</FT_Info_SandbagCover.description>
+  
+</LanguageData>

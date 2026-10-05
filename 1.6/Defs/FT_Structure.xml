@@ -43,6 +43,31 @@
         <filthLeaving>SandbagRubble</filthLeaving>
         <designationCategory>Security</designationCategory>
         <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+        <modExtensions>
+            <li Class="Fortified.InfoDisplayExtension">
+                <infos>
+                    <li>FT_Info_SandbagCover</li>
+                </infos>
+            </li>
+        </modExtensions>
+        <damageMultipliers>
+            <li>
+                <damageDef>Bullet</damageDef>
+                <multiplier>0.5</multiplier>
+            </li>
+            <li>
+                <damageDef>FT_Bullet_Suppressive</damageDef>
+                <multiplier>0.5</multiplier>
+            </li>
+            <li>
+                <damageDef>Arrow</damageDef>
+                <multiplier>0.25</multiplier>
+            </li>
+            <li>
+                <damageDef>ArrowHighVelocity</damageDef>
+                <multiplier>0.25</multiplier>
+            </li>
+        </damageMultipliers>
     </ThingDef>
     <!-- Sandbag -->
 
@@ -193,10 +218,9 @@
         <designationCategory>Security</designationCategory>
         <repairEffect>ConstructMetal</repairEffect>
         <modExtensions>
-            <li MayRequireAnyOf="SmashPhil.VehicleFramework,SmashPhil.VehicleFramework_steam"
-                Class="Vehicles.CustomCostDefModExtension">
+            <li MayRequireAnyOf="SmashPhil.VehicleFramework,SmashPhil.VehicleFramework_steam" Class="Vehicles.CustomCostDefModExtension">
                 <cost>10086</cost>
-                <vehicles />
+                <vehicles/>
             </li>
         </modExtensions>
     </ThingDef>
@@ -335,10 +359,9 @@
         <designationCategory>Security</designationCategory>
         <staticSunShadowHeight>0.00</staticSunShadowHeight>
         <modExtensions>
-            <li MayRequireAnyOf="SmashPhil.VehicleFramework,SmashPhil.VehicleFramework_steam"
-                Class="Vehicles.CustomCostDefModExtension">
+            <li MayRequireAnyOf="SmashPhil.VehicleFramework,SmashPhil.VehicleFramework_steam" Class="Vehicles.CustomCostDefModExtension">
                 <cost>10086</cost>
-                <vehicles />
+                <vehicles/>
             </li>
         </modExtensions>
     </ThingDef>
@@ -409,10 +432,9 @@
         <designationCategory>Security</designationCategory>
         <staticSunShadowHeight>0.00</staticSunShadowHeight>
         <modExtensions>
-            <li MayRequireAnyOf="SmashPhil.VehicleFramework,SmashPhil.VehicleFramework_steam"
-                Class="Vehicles.CustomCostDefModExtension">
+            <li MayRequireAnyOf="SmashPhil.VehicleFramework,SmashPhil.VehicleFramework_steam" Class="Vehicles.CustomCostDefModExtension">
                 <cost>10086</cost>
-                <vehicles />
+                <vehicles/>
             </li>
         </modExtensions>
     </ThingDef>

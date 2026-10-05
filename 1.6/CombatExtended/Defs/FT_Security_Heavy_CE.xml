@@ -34,6 +34,11 @@
 				<speed>0.583</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
+			<li Class="Fortified.InfoDisplayExtension">
+				<infos>
+					<li>FT_Info_Suppression</li>
+				</infos>
+			</li>
 		</modExtensions>
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
@@ -171,6 +176,11 @@
 				<speed>0.155</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
 			</li>
+			<li Class="Fortified.InfoDisplayExtension">
+				<infos>
+					<li>FT_Info_Suppression</li>
+				</infos>
+			</li>
 		</modExtensions>
 		<statBases>
 			<Bulk>2500</Bulk>
@@ -289,6 +299,11 @@
 			<li Class="CombatExtended.NonSnapTurretExtension">
 				<speed>0.113</speed>
 				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
+			<li Class="Fortified.InfoDisplayExtension">
+				<infos>
+					<li>FT_Info_Suppression</li>
+				</infos>
 			</li>
 		</modExtensions>
 		<statBases>

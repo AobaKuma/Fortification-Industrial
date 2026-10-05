@@ -7,6 +7,13 @@
         <statBases>
             <Beauty>-2</Beauty>
         </statBases>
+        <modExtensions>
+            <li Class="Fortified.InfoDisplayExtension">
+                <infos>
+                    <li>FT_Info_BarrelWear</li>
+                </infos>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef Name="FT_BaseCannonBuilding_Mobile" ParentName="FT_BaseCannonBuilding_Mobile_Common" Abstract="True">
@@ -65,6 +72,13 @@
             <turretBurstWarmupTime>0.5</turretBurstWarmupTime>
             <turretBurstCooldownTime>1.0</turretBurstCooldownTime><!--冲锋手枪0.9-->
         </building>
+        <modExtensions>
+            <li Class="Fortified.InfoDisplayExtension">
+                <infos>
+                    <li>FT_Info_Suppression</li>
+                </infos>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="FT_Gun_QuadMG_Common">
@@ -217,6 +231,13 @@
             <turretBurstWarmupTime>1.0</turretBurstWarmupTime>   <!--================冷卻與瞄準時間================-->
             <turretBurstCooldownTime>5.0</turretBurstCooldownTime>
         </building>
+        <modExtensions>
+            <li Class="Fortified.InfoDisplayExtension">
+                <infos>
+                    <li>FT_Info_TurretAmmoSwitch</li>
+                </infos>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="FT_Gun_Recoilless_Common">

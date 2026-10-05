@@ -72,6 +72,13 @@
             <turretBurstWarmupTime>2.0</turretBurstWarmupTime>
             <turretBurstCooldownTime>2.0</turretBurstCooldownTime>
         </building>
+        <modExtensions>
+            <li Class="Fortified.InfoDisplayExtension">
+                <infos>
+                    <li>FT_Info_ShellLoading</li>
+                </infos>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="FT_Artillery_Mortar_Common">

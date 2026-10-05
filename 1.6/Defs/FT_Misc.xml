@@ -2,14 +2,6 @@
 
 <Defs>
 
-    <JobDef>
-        <defName>FT_EnterBunkerFacility</defName>
-        <driverClass>Fortified.JobDriver_EnterBunkerFacility</driverClass>
-        <reportString>Entering facility</reportString>
-        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
-        <joyDuration>250</joyDuration>
-    </JobDef>
-
     <ThingDef ParentName="BuildingBase">
         <defName>FT_FuelGenerator</defName>
         <label>mobile chemfuel powered generator</label>

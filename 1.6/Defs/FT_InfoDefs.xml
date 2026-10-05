@@ -31,7 +31,7 @@
     <Fortified.FFF_InfoDef>
         <defName>FT_Info_Suppression</defName>
         <label>suppression</label>
-        <description>Hits from this weapon, and its heavy shell blasts, give shell shock to every creature they hurt, friend or foe. Shell shock builds up under sustained fire, bringing pain, dulled senses and eventually mental breaks; it wears off over about a day. Machines are immune. Keep your own people out of the fire zone.</description>
+        <description>Hits from this weapon, and its heavy shell blasts, give shell shock to every creature they hurt, friend or foe. Shell shock builds up under sustained fire, bringing pain, dulled senses and eventually mental breaks; in the first and the acute stage the victim moves faster in a panic. It wears off over about a day. Machines are immune. Keep your own people out of the fire zone.</description>
         <displayPriority>1070</displayPriority>
         <hyperlinks>
             <HediffDef>FT_ShellShock</HediffDef>

@@ -23,6 +23,7 @@
 - **Auto-turret nests merged from four into two**: the *sandbag nest* (fabric or leather, 350 HP, quick and cheap, tinted by its material) and the *bunker* (stone or metal, 500 HP, masonry or armored texture depending on the material). The old four remain as "(legacy)" so existing buildings survive, but can no longer be built. Both modes.
 - **Suppression**: machine-gun hits and heavy-shell blasts now inflict shell shock on every pawn they hurt, friend or foe; mechanoids are immune. Vanilla: auto-turret and quad machine guns, field cannon shell. CE: FI's 105mm, 155mm, 15cm Nebelwerfer and 128mm HE shells. An XML Extensions option (off by default) extends it to vanilla HE mortar shells.
 - **Build times**: recoilless gun 3300 to 1500 (both modes), anti-tank gun 1000 to 3000.
+- **Quad machine gun toned down**: it keeps its 20-round, 1800 rpm bursts but waits 4.2 s instead of 1 s between them, cutting single-target damage from about 113 to about 45 per second. It stays the suppression gun rather than the highest damage turret on the map.
 
 ---
 

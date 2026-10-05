@@ -35,6 +35,38 @@
         </building>
     </ThingDef>
 
+    <ThingDef ParentName="FT_Turret_GarrisonBunker_Common">
+        <defName>FT_Turret_GarrisonBunker</defName>
+        <thingClass>Fortified.Building_TurretCapacity</thingClass>
+        <comps>
+            <li Class="CompProperties_Refuelable">
+                <fuelLabel>Shots until barrel change</fuelLabel>
+                <fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+                <outOfFuelMessage>Cannot shoot: Needs new barrel</outOfFuelMessage>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </fuelFilter>
+                <fuelCapacity>240</fuelCapacity>
+                <fuelMultiplier>8</fuelMultiplier>
+                <initialFuelPercent>1</initialFuelPercent>
+                <showFuelGizmo>true</showFuelGizmo>
+                <minimumFueledThreshold>1</minimumFueledThreshold>
+                <factorByDifficulty>true</factorByDifficulty>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+                <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+                <initialConfigurableTargetFuelLevel>240</initialConfigurableTargetFuelLevel>
+                <autoRefuelPercent>0.1</autoRefuelPercent>
+            </li>
+        </comps>
+        <building>
+            <!-- a crew fires faster than the auto nest's 4.8 s -->
+            <turretBurstCooldownTime>3.5</turretBurstCooldownTime>
+        </building>
+    </ThingDef>
+
     <ThingDef ParentName="FT_Turret_BunkerL_Common">
         <defName>FT_Turret_BunkerL</defName>
         <description>An automatic turret encased within a basic defensive position. Constructed from leathery materials. \nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>

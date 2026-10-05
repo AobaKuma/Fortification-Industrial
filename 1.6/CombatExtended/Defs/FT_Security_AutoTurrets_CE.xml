@@ -25,6 +25,17 @@
         </building>
     </ThingDef>
 
+    <ThingDef ParentName="FT_Turret_GarrisonBunker_Common">
+        <defName>FT_Turret_GarrisonBunker</defName>
+        <thingClass>FortifiedCE.Building_TurretCapacityCE</thingClass>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireArc">
+                <spanRange>10~360</spanRange>
+                <maxSpanDeviation>180</maxSpanDeviation>
+            </li>
+        </comps>
+    </ThingDef>
+
     <ThingDef ParentName="FT_Turret_BunkerL_Common">
         <defName>FT_Turret_BunkerL</defName>
         <description>An automatic turret equipped with a full powered cartridge machine gun, encased within a basic defensive position. Constructed from leathery materials. \nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>

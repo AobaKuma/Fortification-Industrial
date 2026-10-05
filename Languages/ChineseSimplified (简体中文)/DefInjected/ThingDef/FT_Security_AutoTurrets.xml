@@ -18,6 +18,14 @@
   <FT_Turret_Bunker.comps.CompRefuelable.outOfFuelMessage>无法射击: 需要替换枪管</FT_Turret_Bunker.comps.CompRefuelable.outOfFuelMessage>
 
   
+  <!-- EN: crewed machine gun bunker -->
+  <FT_Turret_GarrisonBunker.label>有人机枪碉堡</FT_Turret_GarrisonBunker.label>
+  <!-- EN: A machine gun inside a solid emplacement, worked by a colonist from inside. ... -->
+  <FT_Turret_GarrisonBunker.description>由殖民者在内部操作的机枪工事。不需要电力或AI核心，因此零件比自动碉堡少，也不会误伤友军，但没有人进驻时不会开火。操作者受到工事保护，只有在又饿又累且附近没有敌人时才会出来。石材与混凝土会建成砖石碉堡，金属则建成装甲碉堡。</FT_Turret_GarrisonBunker.description>
+  <FT_Turret_GarrisonBunker.comps.CompRefuelable.fuelGizmoLabel>枪管耐久</FT_Turret_GarrisonBunker.comps.CompRefuelable.fuelGizmoLabel>
+  <FT_Turret_GarrisonBunker.comps.CompRefuelable.fuelLabel>枪管寿命</FT_Turret_GarrisonBunker.comps.CompRefuelable.fuelLabel>
+  <FT_Turret_GarrisonBunker.comps.CompRefuelable.outOfFuelMessage>无法射击: 需要替换枪管</FT_Turret_GarrisonBunker.comps.CompRefuelable.outOfFuelMessage>
+  
   <!-- EN: machine gun -->
   <FT_Gun_MG.label>机枪</FT_Gun_MG.label>
   <!-- EN: An fully automatic gun made to be mounted on a turret. -->

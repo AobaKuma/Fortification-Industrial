@@ -192,6 +192,40 @@
         </stuffCategories>
     </ThingDef>
 
+    <!-- Crewed bunker: a colonist climbs in and works the gun (framework Building_TurretCapacity,
+         thingClass set per mode). No AI core and no power, but useless without a crew. -->
+    <ThingDef Name="FT_Turret_GarrisonBunker_Common" ParentName="FT_MGNest" Abstract="True">
+        <label>crewed machine gun bunker</label>
+        <description>A machine gun inside a solid emplacement, worked by a colonist from inside. It needs no power or AI core, so it is cheaper in components than the automatic bunker and never shoots its own side by mistake, but it does nothing without a crew. The crew is protected by the structure and leaves when starving and exhausted, unless enemies are still around. Stone and concrete give a masonry bunker, metal an armored one.</description>
+        <graphicData>
+            <texPath>MGBunker/Bunker</texPath>
+            <graphicClass>Graphic_Appearances</graphicClass>
+        </graphicData>
+        <uiIconPath>MGBunker/FT_MGBunker_Concrete</uiIconPath>
+        <hasInteractionCell>true</hasInteractionCell>
+        <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+        <statBases>
+            <MaxHitPoints>600</MaxHitPoints>
+            <WorkToBuild>2400</WorkToBuild>
+            <Beauty>-10</Beauty>
+            <ShootingAccuracyTurret>0.98</ShootingAccuracyTurret>
+        </statBases>
+        <stuffCategories>
+            <li>Stony</li>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costList Inherit="False">
+            <Steel>100</Steel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <comps Inherit="False">
+            <li Class="CompProperties_Forbiddable"/>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+    </ThingDef>
+
     <ThingDef Name="FT_Gun_MG_Common" ParentName="BaseWeaponTurret" Abstract="True">
         <graphicData>
             <texPath>None</texPath>

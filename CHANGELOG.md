@@ -37,6 +37,14 @@
 
 ---
 
+### New content
+
+- **Automated concrete plant**: a 3x3 machine that makes concrete from stone chunks and blocks with no worker. It draws ingredients from linked *concrete hoppers* (new storage building) and drops the concrete next to itself. Research: automated concrete production.
+- **Night fighting**: a powered *searchlight* (glow radius 20) and, without CE, a *flare shell* any mortar can fire to light up the target area. Research: night fighting.
+- New buildings use placeholder textures for now.
+
+---
+
 ### Changes & Fixes
 
 #### Turrets (vanilla)

@@ -28,39 +28,33 @@ def is_list(node):
     return len(kids) > 0 and all(c.tag == 'li' for c in kids)
 
 def merge(cur, child):
-    """RimWorld XmlInheritance.RecursiveNodeCopyOverwriteElements (simplified but faithful
-    for the constructs FI uses)."""
+    """Port of Verse.XmlInheritance.RecursiveNodeCopyOverwriteElements."""
     if child.get('Inherit', '').lower() == 'false':
-        new = copy.deepcopy(child); new.attrib.pop('Inherit', None)
-        return new
-    for k, v in child.attrib.items():
-        cur.set(k, v)
+        for c in list(cur): cur.remove(c)
+        cur.text = child.text
+        for c in child: cur.append(copy.deepcopy(c))
+        for k, v in child.attrib.items():
+            if k != 'Inherit': cur.set(k, v)
+        return cur
+    cur.attrib.clear()                      # child attributes replace the parent's
+    for k, v in child.attrib.items(): cur.set(k, v)
     ckids = [c for c in child if isinstance(c.tag, str)]
-    if not ckids:
-        # text node (or empty) overrides
+    if (child.text or '').strip() and not ckids:   # text value overrides everything
         for c in list(cur): cur.remove(c)
         cur.text = child.text
         return cur
-    if is_list(child):
-        # li nodes are appended (unless cur has text content only)
+    if not ckids:                           # empty node: keep parent's elements, drop its text
         if not [c for c in cur if isinstance(c.tag, str)]:
             cur.text = None
-        for c in ckids: cur.append(copy.deepcopy(c))
         return cur
-    if not [c for c in cur if isinstance(c.tag, str)]:
-        cur.text = None
     for c in ckids:
-        existing = None
-        for e in cur:
-            if e.tag == c.tag:
-                existing = e; break
-        if existing is None:
-            cur.append(copy.deepcopy(c))
+        if c.tag == 'li':                   # list items are always appended
+            cur.append(copy.deepcopy(c)); continue
+        existing = cur.find(c.tag)
+        if existing is not None:
+            merge(existing, c)
         else:
-            idx = list(cur).index(existing)
-            res = merge(existing, c)
-            if res is not existing:
-                cur.remove(existing); cur.insert(idx, res)
+            cur.append(copy.deepcopy(c))
     return cur
 
 def resolve_all(defs):

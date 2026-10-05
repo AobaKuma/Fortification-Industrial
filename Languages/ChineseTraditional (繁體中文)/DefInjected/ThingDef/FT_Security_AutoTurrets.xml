@@ -1,6 +1,23 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
+  <!-- EN: auto-turret sandbag nest -->
+  <FT_Turret_SandbagNest.label>沙包機槍巢</FT_Turret_SandbagNest.label>
+  <!-- EN: An automatic machine gun behind a ring of filled sacks. ... -->
+  <FT_Turret_SandbagNest.description>由沙袋圍成的自動機槍陣地。造價低、搭建快，但在火力下撐不了多久。可用布料或皮革建造，材料也決定它的顏色。\n它的AI不分敵我，所以請小心它的火力掩護。</FT_Turret_SandbagNest.description>
+  <FT_Turret_SandbagNest.comps.CompRefuelable.fuelGizmoLabel>槍管耐久</FT_Turret_SandbagNest.comps.CompRefuelable.fuelGizmoLabel>
+  <FT_Turret_SandbagNest.comps.CompRefuelable.fuelLabel>槍管壽命</FT_Turret_SandbagNest.comps.CompRefuelable.fuelLabel>
+  <FT_Turret_SandbagNest.comps.CompRefuelable.outOfFuelMessage>無法射擊: 需要替換槍管</FT_Turret_SandbagNest.comps.CompRefuelable.outOfFuelMessage>
+  
+  <!-- EN: auto-turret bunker -->
+  <FT_Turret_Bunker.label>機槍碉堡</FT_Turret_Bunker.label>
+  <!-- EN: An automatic machine gun inside a solid emplacement. ... -->
+  <FT_Turret_Bunker.description>設在堅固工事中的自動機槍。建造費時，但非常耐打。石材與混凝土會建成磚石碉堡，金屬則建成裝甲碉堡。\n它的AI不分敵我，所以請小心它的火力掩護。</FT_Turret_Bunker.description>
+  <FT_Turret_Bunker.comps.CompRefuelable.fuelGizmoLabel>槍管耐久</FT_Turret_Bunker.comps.CompRefuelable.fuelGizmoLabel>
+  <FT_Turret_Bunker.comps.CompRefuelable.fuelLabel>槍管壽命</FT_Turret_Bunker.comps.CompRefuelable.fuelLabel>
+  <FT_Turret_Bunker.comps.CompRefuelable.outOfFuelMessage>無法射擊: 需要替換槍管</FT_Turret_Bunker.comps.CompRefuelable.outOfFuelMessage>
+
+  
   <!-- EN: machine gun -->
   <FT_Gun_MG.label>機槍</FT_Gun_MG.label>
   <!-- EN: An fully automatic gun made to be mounted on a turret. -->
@@ -9,7 +26,7 @@
   <FT_Gun_MG.verbs.Verb_Shoot.label>機槍</FT_Gun_MG.verbs.Verb_Shoot.label>
   
   <!-- EN: Machine Gun Bunker -->
-  <FT_Turret_BunkerC.label>機槍碉堡</FT_Turret_BunkerC.label>
+  <FT_Turret_BunkerC.label>機槍碉堡（舊版）</FT_Turret_BunkerC.label>
   <!-- EN: A stationry turret strengthen with materials. Requires steel to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire. -->
   <FT_Turret_BunkerC.description>一種用材料加固防護的固定碉堡，大量射擊後需消耗鋼鐵來更換砲管.損壞時可能會爆炸.它的AI不分敵我，所以請小心它的火力掩護.。</FT_Turret_BunkerC.description>
   <!-- EN: Barrel durability -->
@@ -20,7 +37,7 @@
   <FT_Turret_BunkerC.comps.CompRefuelable.outOfFuelMessage>無法射擊: 需要替換槍管</FT_Turret_BunkerC.comps.CompRefuelable.outOfFuelMessage>
   
   <!-- EN: Military Machine Gun Nest -->
-  <FT_Turret_BunkerF.label>軍用機槍陣地</FT_Turret_BunkerF.label>
+  <FT_Turret_BunkerF.label>軍用機槍陣地（舊版）</FT_Turret_BunkerF.label>
   <!-- EN: A stationry turret strengthen with materials. Requires steel to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire. -->
   <FT_Turret_BunkerF.description>一種用纖維材料加固防護的固定機槍陣地，大量射擊後需消耗鋼鐵來更換砲管.損壞時可能會爆炸.它的AI不分敵我，所以請小心它的火力掩護。</FT_Turret_BunkerF.description>
   <!-- EN: Barrel durability -->
@@ -31,7 +48,7 @@
   <FT_Turret_BunkerF.comps.CompRefuelable.outOfFuelMessage>無法射擊: 需要替換槍管</FT_Turret_BunkerF.comps.CompRefuelable.outOfFuelMessage>
   
   <!-- EN: Machine Gun Nest -->
-  <FT_Turret_BunkerL.label>機槍陣地</FT_Turret_BunkerL.label>
+  <FT_Turret_BunkerL.label>機槍陣地（舊版）</FT_Turret_BunkerL.label>
   <!-- EN: A stationry turret strengthen with materials. Requires steel to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire. -->
   <FT_Turret_BunkerL.description>一種用皮革材料加固防護的機槍陣地，大量射擊後需消耗鋼鐵來更換砲管.損壞時可能會爆炸.它的AI不分敵我，所以請小心它的火力掩護。</FT_Turret_BunkerL.description>
   <!-- EN: Barrel durability -->
@@ -42,7 +59,7 @@
   <FT_Turret_BunkerL.comps.CompRefuelable.outOfFuelMessage>無法射擊: 需要替換槍管</FT_Turret_BunkerL.comps.CompRefuelable.outOfFuelMessage>
   
   <!-- EN: Machine Gun Turret Bunker -->
-  <FT_Turret_BunkerM.label>機槍砲塔碉堡</FT_Turret_BunkerM.label>
+  <FT_Turret_BunkerM.label>機槍砲塔碉堡（舊版）</FT_Turret_BunkerM.label>
   <!-- EN: A stationry turret strengthen with materials. Requires steel to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire. -->
   <FT_Turret_BunkerM.description>一種用材料加固防護的固定砲塔，大量射擊後需消耗鋼鐵來更換砲管.損壞時可能會爆炸.它的AI不分敵我，所以請小心它的火力掩護。</FT_Turret_BunkerM.description>
   <!-- EN: Barrel durability -->

@@ -58,7 +58,8 @@
     </ThingDef>
 
     <ThingDef Name="FT_Turret_BunkerL_Common" ParentName="FT_MGNest" Abstract="True">
-        <label>auto-turret sandbag nest</label>
+        <label>auto-turret sandbag nest (legacy)</label>
+        <designationCategory IsNull="True"/>
         <graphicData>
             <texPath>MGBunker/FT_MGBunker_Leathery</texPath>
         </graphicData>
@@ -75,7 +76,8 @@
     </ThingDef>
 
     <ThingDef Name="FT_Turret_BunkerM_Common" ParentName="FT_MGNest" Abstract="True">
-        <label>auto-turret bunker</label>
+        <label>auto-turret bunker (legacy)</label>
+        <designationCategory IsNull="True"/>
         <graphicData>
             <texPath>MGBunker/FT_MGBunker_Metal</texPath>
         </graphicData>
@@ -92,7 +94,8 @@
     </ThingDef>
 
     <ThingDef Name="FT_Turret_BunkerC_Common" ParentName="FT_MGNest" Abstract="True">
-        <label>auto-turret bunker</label>
+        <label>auto-turret bunker (legacy)</label>
+        <designationCategory IsNull="True"/>
         <graphicData>
             <texPath>MGBunker/FT_MGBunker_Concrete</texPath>
         </graphicData>
@@ -109,7 +112,8 @@
     </ThingDef>
 
     <ThingDef Name="FT_Turret_BunkerF_Common" ParentName="FT_MGNest" Abstract="True">
-        <label>auto-turret military sandbag nest</label>
+        <label>auto-turret military sandbag nest (legacy)</label>
+        <designationCategory IsNull="True"/>
         <graphicData>
             <texPath>MGBunker/FT_MGBunker_Fabric</texPath>
         </graphicData>
@@ -133,6 +137,59 @@
                 <color>(110,114,77)</color>
             </li>
         </colorPerStuff>
+    </ThingDef>
+
+    <!-- The two auto-turret nests. The four per-material versions above are kept only so
+         existing buildings survive; they can no longer be built. -->
+    <ThingDef ParentName="FT_MGNest">
+        <defName>FT_Turret_SandbagNest</defName>
+        <label>auto-turret sandbag nest</label>
+        <description>An automatic machine gun behind a ring of filled sacks. Cheap and quick to put up, but it will not hold for long under fire. Built from fabric or leather, which also sets its color.\nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+        <graphicData>
+            <texPath>MGBunker/FT_MGBunker_Fabric</texPath>
+        </graphicData>
+        <uiIconPath>MGBunker/FT_MGBunker_Fabric</uiIconPath>
+        <statBases>
+            <MaxHitPoints>350</MaxHitPoints>
+            <WorkToBuild>1200</WorkToBuild>
+            <Beauty>-5</Beauty>
+        </statBases>
+        <costStuffCount>100</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <colorPerStuff>
+            <li>
+                <stuff>Cloth</stuff>
+                <color>(139,122,87)</color>
+            </li>
+            <li>
+                <stuff>Synthread</stuff>
+                <color>(110,114,77)</color>
+            </li>
+        </colorPerStuff>
+    </ThingDef>
+
+    <ThingDef ParentName="FT_MGNest">
+        <defName>FT_Turret_Bunker</defName>
+        <label>auto-turret bunker</label>
+        <description>An automatic machine gun inside a solid emplacement. Slow to build but takes a lot of punishment. Stone and concrete give a masonry bunker, metal an armored one.\nIts dumb AI brain can't be directly controlled, so beware of friendly fire.</description>
+        <graphicData>
+            <!-- one texture per stuff appearance: Bricks / Concrete / Smooth = masonry, Metal = armored -->
+            <texPath>MGBunker/Bunker</texPath>
+            <graphicClass>Graphic_Appearances</graphicClass>
+        </graphicData>
+        <uiIconPath>MGBunker/FT_MGBunker_Concrete</uiIconPath>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <WorkToBuild>2400</WorkToBuild>
+            <Beauty>-10</Beauty>
+        </statBases>
+        <stuffCategories>
+            <li>Stony</li>
+            <li>Metallic</li>
+        </stuffCategories>
     </ThingDef>
 
     <ThingDef Name="FT_Gun_MG_Common" ParentName="BaseWeaponTurret" Abstract="True">

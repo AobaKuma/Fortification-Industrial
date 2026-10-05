@@ -214,5 +214,34 @@
             </rulesStrings>
         </generalRules>
     </ResearchProjectDef>
+    <ResearchProjectDef>
+        <defName>FT_AutoConcrete</defName>
+        <label>automated concrete production</label>
+        <description>Build a concrete plant that feeds itself from a linked hopper and runs without a worker.</description>
+        <baseCost>1200</baseCost>
+        <techLevel>Industrial</techLevel>
+        <tab>HeavyIndustry</tab>
+        <prerequisites>
+            <li>FT_Concrete</li>
+            <li>FT_ENIAC</li>
+        </prerequisites>
+        <researchViewX>2.00</researchViewX>
+        <researchViewY>4.20</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef>
+        <defName>FT_NightFighting</defName>
+        <label>night fighting</label>
+        <description>Searchlights and illumination flare shells, so your guns can see what they are shooting at after dark.</description>
+        <baseCost>800</baseCost>
+        <techLevel>Industrial</techLevel>
+        <tab>HeavyIndustry</tab>
+        <prerequisites>
+            <li>FT_ENIAC</li>
+            <li>Mortars</li>
+        </prerequisites>
+        <researchViewX>3.00</researchViewX>
+        <researchViewY>2.20</researchViewY>
+    </ResearchProjectDef>
 
 </Defs>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: automated concrete plant -->
+  <FT_AutoConcretePlant.label>自动混凝土工厂</FT_AutoConcretePlant.label>
+  <!-- EN: A large crusher and mixer that turns stone chunks and blocks into concrete on its own. It takes its ingredients from linked concrete hoppers and drops the finished concrete next to itself; nobody has to work it. Set up bills as usual, keep the hoppers stocked, and keep the power on. -->
+  <FT_AutoConcretePlant.description>能自行把石块与砖块碾碎搅拌成混凝土的大型机器。它从连接的混凝土储料斗取料，并把成品放在旁边，不需要任何人操作。照常设定工作单，保持储料斗有料、电力不断即可。</FT_AutoConcretePlant.description>
+  
+  <!-- EN: concrete hopper -->
+  <FT_ConcreteHopper.label>混凝土储料斗</FT_ConcreteHopper.label>
+  <!-- EN: A sturdy bin for stone chunks, stone blocks and concrete. An automated concrete plant within range draws its ingredients straight from it. -->
+  <FT_ConcreteHopper.description>存放石块、石砖与混凝土的坚固料仓。范围内的自动混凝土工厂会直接从这里取料。</FT_ConcreteHopper.description>
+  
+</LanguageData>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Automated concrete plant (Fortified Building_WorkTableAutonomous) and the hopper that feeds it.
+     The plant pulls ingredients straight out of linked hoppers (ModExtension_MaterialSource) and
+     ejects the product, so a hopper kept stocked by haulers is all it needs.
+     Textures are placeholders. -->
+<Defs>
+
+    <ThingDef ParentName="FT_BenchBase">
+        <defName>FT_AutoConcretePlant</defName>
+        <label>automated concrete plant</label>
+        <description>A large crusher and mixer that turns stone chunks and blocks into concrete on its own. It takes its ingredients from linked concrete hoppers and drops the finished concrete next to itself; nobody has to work it. Set up bills as usual, keep the hoppers stocked, and keep the power on.</description>
+        <thingClass>Fortified.Building_WorkTableAutonomous</thingClass>
+        <graphicData>
+            <texPath>Placeholder/FT_AutoConcretePlant</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <size>(3,3)</size>
+        <rotatable>false</rotatable>
+        <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+        <costList>
+            <Steel>300</Steel>
+            <ComponentIndustrial>6</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <WorkToBuild>6000</WorkToBuild>
+            <MaxHitPoints>350</MaxHitPoints>
+            <Flammability>0.25</Flammability>
+            <Cleanliness>-4</Cleanliness>
+        </statBases>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <comps Inherit="False">
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <basePowerConsumption>1500</basePowerConsumption>
+                <idlePowerDraw>150</idlePowerDraw>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Breakdownable"/>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li>FT_ConcreteHopper</li>
+                </linkableFacilities>
+            </li>
+        </comps>
+        <researchPrerequisites>
+            <li>FT_AutoConcrete</li>
+        </researchPrerequisites>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <modExtensions>
+            <li Class="Fortified.ModExtension_AutoWorkTable">
+                <workTime>300</workTime>
+                <pullFromLinkedStorage>true</pullFromLinkedStorage>
+                <autoEjectProducts>true</autoEjectProducts>
+                <skills>
+                    <Crafting>8</Crafting>
+                </skills>
+            </li>
+            <li Class="Fortified.ModExtension_RecipeInheritance">
+                <inheritRecipesFrom>
+                    <li>FT_TableConcreteMixer</li>
+                </inheritRecipesFrom>
+                <disallowedRecipes>
+                    <li>FT_Make_ConcreteByStonyJunks</li>
+                </disallowedRecipes>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>FT_ConcreteHopper</defName>
+        <label>concrete hopper</label>
+        <description>A sturdy bin for stone chunks, stone blocks and concrete. An automated concrete plant within range draws its ingredients straight from it.</description>
+        <thingClass>Building_Storage</thingClass>
+        <graphicData>
+            <texPath>Placeholder/FT_ConcreteHopper</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(2,1)</drawSize>
+        </graphicData>
+        <size>(2,1)</size>
+        <rotatable>false</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <fillPercent>0.5</fillPercent>
+        <castEdgeShadows>true</castEdgeShadows>
+        <surfaceType>Item</surfaceType>
+        <canOverlapZones>false</canOverlapZones>
+        <designationCategory>Production</designationCategory>
+        <inspectorTabs>
+            <li>ITab_Storage</li>
+        </inspectorTabs>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToBuild>1200</WorkToBuild>
+            <Flammability>0</Flammability>
+            <Mass>30</Mass>
+        </statBases>
+        <costList>
+            <Steel>80</Steel>
+        </costList>
+        <building>
+            <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+            <ignoreStoredThingsBeauty>true</ignoreStoredThingsBeauty>
+            <maxItemsInCell>4</maxItemsInCell>
+            <blueprintClass>Blueprint_Storage</blueprintClass>
+            <fixedStorageSettings>
+                <filter>
+                    <categories>
+                        <li>StoneChunks</li>
+                        <li>StoneBlocks</li>
+                    </categories>
+                    <thingDefs>
+                        <li>FT_BlocksConcrete</li>
+                        <li>FT_ConcreteCompressed</li>
+                    </thingDefs>
+                </filter>
+            </fixedStorageSettings>
+            <defaultStorageSettings>
+                <priority>Important</priority>
+                <filter>
+                    <categories>
+                        <li>StoneChunks</li>
+                    </categories>
+                </filter>
+            </defaultStorageSettings>
+        </building>
+        <comps>
+            <li Class="CompProperties_Facility">
+                <maxSimultaneous>1</maxSimultaneous>
+                <maxDistance>8</maxDistance>
+            </li>
+        </comps>
+        <researchPrerequisites>
+            <li>FT_AutoConcrete</li>
+        </researchPrerequisites>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+        <modExtensions>
+            <li Class="Fortified.ModExtension_MaterialSource"/>
+        </modExtensions>
+    </ThingDef>
+
+</Defs>

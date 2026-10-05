@@ -195,5 +195,15 @@
     <li>subject_gerund->旋转金属加工</li>
     <li>subject_gerund->工业车床制造</li>
   </FT_Lathe.generalRules.rulesStrings>
-
+  
+  <!-- EN: automated concrete production -->
+  <FT_AutoConcrete.label>自动化混凝土生产</FT_AutoConcrete.label>
+  <!-- EN: Build a concrete plant that feeds itself from a linked hopper and runs without a worker. -->
+  <FT_AutoConcrete.description>建造能从连接的储料斗自行取料、无需工人操作的混凝土工厂。</FT_AutoConcrete.description>
+  
+  <!-- EN: night fighting -->
+  <FT_NightFighting.label>夜战</FT_NightFighting.label>
+  <!-- EN: Searchlights and illumination flare shells, so your guns can see what they are shooting at after dark. -->
+  <FT_NightFighting.description>探照灯与照明弹，让你的炮在天黑后也看得见目标。</FT_NightFighting.description>
+  
 </LanguageData>

@@ -25,4 +25,22 @@
   <!-- EN: 155mm Howitzer shell (Smoke) -->
   <Bullet_FT_155mmHowitzerShell_Smoke_directfire.label>155mm砲彈(煙霧彈)</Bullet_FT_155mmHowitzerShell_Smoke_directfire.label>
   
+  <!-- EN: 155mm Howitzer shell (Airburst) -->
+  <Bullet_FT_155mmHowitzerShell_Airburst.label>155mm砲彈(空爆彈)</Bullet_FT_155mmHowitzerShell_Airburst.label>
+  
+  <!-- EN: 155mm Howitzer shell (Airburst) -->
+  <Bullet_FT_155mmHowitzerShell_Airburst_directfire.label>155mm砲彈(空爆彈)</Bullet_FT_155mmHowitzerShell_Airburst_directfire.label>
+  
+  <!-- EN: 155mm Howitzer shell (Anti) -->
+  <Bullet_FT_155mmHowitzerShell_Anti.label>155mm砲彈(反粒子彈)</Bullet_FT_155mmHowitzerShell_Anti.label>
+  
+  <!-- EN: 155mm Howitzer shell (Anti) -->
+  <Bullet_FT_155mmHowitzerShell_Anti_directfire.label>155mm砲彈(反粒子彈)</Bullet_FT_155mmHowitzerShell_Anti_directfire.label>
+  
+  <!-- EN: 155mm Howitzer shell (Nuclear) -->
+  <FT_Bullet_NuclearWarhead_CE_II.label>155mm砲彈(核彈)</FT_Bullet_NuclearWarhead_CE_II.label>
+  
+  <!-- EN: 155mm Howitzer shell (Nuclear) -->
+  <FT_Bullet_NuclearWarhead_CE_directfire_II.label>155mm砲彈(核彈)</FT_Bullet_NuclearWarhead_CE_directfire_II.label>
+  
 </LanguageData>

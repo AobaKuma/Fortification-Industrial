@@ -25,4 +25,10 @@
   <!-- EN: 105mm Howitzer shell (Smoke) -->
   <Bullet_FT_105mmHowitzerShell_Smoke_directfire.label>105mm砲弹(烟雾弹)</Bullet_FT_105mmHowitzerShell_Smoke_directfire.label>
   
+  <!-- EN: 105mm Howitzer shell (Airburst) -->
+  <Bullet_FT_105mmHowitzerShell_Airburst.label>105mm砲弹(空爆弹)</Bullet_FT_105mmHowitzerShell_Airburst.label>
+  
+  <!-- EN: 105mm Howitzer shell (Airburst) -->
+  <Bullet_FT_105mmHowitzerShell_Airburst_directfire.label>105mm砲弹(空爆弹)</Bullet_FT_105mmHowitzerShell_Airburst_directfire.label>
+  
 </LanguageData>

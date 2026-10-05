@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: make 128x958mmR (AP) cannon shells x2 -->
+  <MakeAmmo_128x958mmR_AP.label>制作128x958mmR砲弹(穿甲弹) x2</MakeAmmo_128x958mmR_AP.label>
+  
+  <!-- EN: Craft 2 128x958mmR (AP) cannon shells. -->
+  <MakeAmmo_128x958mmR_AP.description>制作128x958mmR砲弹(穿甲弹)</MakeAmmo_128x958mmR_AP.description>
+  
+  <!-- EN: Making 128x958mmR (AP) cannon shells. -->
+  <MakeAmmo_128x958mmR_AP.jobString>制作128x958mmR砲弹(穿甲弹)中</MakeAmmo_128x958mmR_AP.jobString>
+  
+  <!-- EN: make 128x958mmR (APHE) cannon shells x2 -->
+  <MakeAmmo_128x958mmR_APHE.label>制作128x958mmR砲弹(穿甲榴弹) x2</MakeAmmo_128x958mmR_APHE.label>
+  
+  <!-- EN: Craft 2 128x958mmR (APHE) cannon shells. -->
+  <MakeAmmo_128x958mmR_APHE.description>制作128x958mmR砲弹(穿甲榴弹)</MakeAmmo_128x958mmR_APHE.description>
+  
+  <!-- EN: Making 128x958mmR (APHE) cannon shells. -->
+  <MakeAmmo_128x958mmR_APHE.jobString>制作128x958mmR砲弹(穿甲榴弹)中</MakeAmmo_128x958mmR_APHE.jobString>
+  
+  <!-- EN: make 128x958mmR (EMP) cannon shells x2 -->
+  <MakeAmmo_128x958mmR_EMP.label>制作128x958mmR砲弹(EMP) x2</MakeAmmo_128x958mmR_EMP.label>
+  
+  <!-- EN: Craft 2 128x958mmR (EMP) cannon shells. -->
+  <MakeAmmo_128x958mmR_EMP.description>制作128x958mmR砲弹(EMP)</MakeAmmo_128x958mmR_EMP.description>
+  
+  <!-- EN: Making 128x958mmR (EMP) cannon shells. -->
+  <MakeAmmo_128x958mmR_EMP.jobString>制作128x958mmR砲弹(EMP)中</MakeAmmo_128x958mmR_EMP.jobString>
+  
+  <!-- EN: make 128x958mmR (HE) cannon shells x2 -->
+  <MakeAmmo_128x958mmR_HE.label>制作128x958mmR砲弹(高爆弹) x2</MakeAmmo_128x958mmR_HE.label>
+  
+  <!-- EN: Craft 2 128x958mmR (HE) cannon shells. -->
+  <MakeAmmo_128x958mmR_HE.description>制作128x958mmR砲弹(高爆弹)</MakeAmmo_128x958mmR_HE.description>
+  
+  <!-- EN: Making 128x958mmR (HE) cannon shells. -->
+  <MakeAmmo_128x958mmR_HE.jobString>制作128x958mmR砲弹(高爆弹)中</MakeAmmo_128x958mmR_HE.jobString>
+  
+</LanguageData>

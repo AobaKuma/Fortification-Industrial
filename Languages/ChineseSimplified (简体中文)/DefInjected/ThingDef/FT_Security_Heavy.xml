@@ -55,4 +55,7 @@
   <!-- EN: Cannot shoot: Needs new reinforced barrel -->
   <FT_TurretPrince.comps.CompRefuelable.outOfFuelMessage>无法射击: 需要替换砲管</FT_TurretPrince.comps.CompRefuelable.outOfFuelMessage>
   
+  <!-- EN: heavy armor piercing shell -->
+  <FT_Bullet_HeavyFlakShell.label>重型穿甲砲弹</FT_Bullet_HeavyFlakShell.label>
+  
 </LanguageData>

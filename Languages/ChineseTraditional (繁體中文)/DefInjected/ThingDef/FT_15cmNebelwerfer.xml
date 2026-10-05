@@ -21,4 +21,31 @@
 
   <Bullet_15cmNebelwerfer_Smoke.label>15cm火箭彈(煙霧彈)</Bullet_15cmNebelwerfer_Smoke.label>
 
+  <!-- EN: 15cm Nebelwerfer Rocket (EMP) -->
+  <Bullet_FT_15cmNebelwerfer_EMP.label>15cm火箭彈(EMP)</Bullet_FT_15cmNebelwerfer_EMP.label>
+  
+  <!-- EN: 15cm Nebelwerfer Rocket (EMP) -->
+  <Bullet_FT_15cmNebelwerfer_EMP_directfire.label>15cm火箭彈(EMP)</Bullet_FT_15cmNebelwerfer_EMP_directfire.label>
+  
+  <!-- EN: 15cm Nebelwerfer Rocket (HE) -->
+  <Bullet_FT_15cmNebelwerfer_HE_directfire.label>15cm火箭彈(高爆彈)</Bullet_FT_15cmNebelwerfer_HE_directfire.label>
+  
+  <!-- EN: 15cm Nebelwerfer Rocket (Smoke) -->
+  <Bullet_FT_15cmNebelwerfer_Smoke.label>15cm火箭彈(煙霧彈)</Bullet_FT_15cmNebelwerfer_Smoke.label>
+  
+  <!-- EN: 15cm Nebelwerfer Rocket (Smoke) -->
+  <Bullet_FT_15cmNebelwerfer_Smoke_directfire.label>15cm火箭彈(煙霧彈)</Bullet_FT_15cmNebelwerfer_Smoke_directfire.label>
+  
+  <!-- EN: 15cm Nebelwerfer Rocket (Toxic) -->
+  <Bullet_FT_15cmNebelwerfer_Toxic.label>15cm火箭彈(毒氣彈)</Bullet_FT_15cmNebelwerfer_Toxic.label>
+  
+  <!-- EN: 15cm Nebelwerfer Rocket (Toxic) -->
+  <Bullet_FT_15cmNebelwerfer_Toxic_directfire.label>15cm火箭彈(毒氣彈)</Bullet_FT_15cmNebelwerfer_Toxic_directfire.label>
+  
+  <!-- EN: 15cmNbW tox shell -->
+  <Shell_15cmNbW_Toxic_Releasing.label>15cm毒氣彈殼</Shell_15cmNbW_Toxic_Releasing.label>
+  
+  <!-- EN: 15cmNbW tox shell -->
+  <Shell_15cmNbW_Toxic_Releasing_Water.label>15cm毒氣彈殼</Shell_15cmNbW_Toxic_Releasing_Water.label>
+  
 </LanguageData>

@@ -16,10 +16,7 @@
   <!-- EN: When it detects fire, this safety device pops and sprays a fire-retardant foam in a circular field around itself. Can also be triggered manually. -->
   <FT_FirefoamPopper.description>红色金属消防栓，他基本上就是个更适合街道放置的一次性消防灭火装置。</FT_FirefoamPopper.description>
   <!-- EN: Trigger {0_label} -->
-  <FT_FirefoamPopper.comps.CompFueledUsable.useLabel>使用</FT_FirefoamPopper.comps.CompFueledUsable.useLabel>
-  
-  <!-- UNUSED -->
-  <FT_FirefoamPopper.comps.CompUsable.useLabel>开阀{0_label}</FT_FirefoamPopper.comps.CompUsable.useLabel>
+  <FT_FirefoamPopper.comps.CompFueledUsable.useLabel>开阀{0_label}</FT_FirefoamPopper.comps.CompFueledUsable.useLabel>
   
   <!-- EN: mobile chemfuel generator -->
   <FT_FuelGenerator.label>可携式化合燃料发电机</FT_FuelGenerator.label>

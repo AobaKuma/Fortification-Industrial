@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: 128x958mmR cannon shell (AP) -->
+  <Ammo_128x958mmR_AP.label>128x958mmR砲彈(穿甲彈)</Ammo_128x958mmR_AP.label>
+  
+  <!-- EN: Large cannon shells, typically used by 128mm heavy flak guns. -->
+  <Ammo_128x958mmR_AP.description>大型砲彈，通常用於128mm重型高射砲。</Ammo_128x958mmR_AP.description>
+  
+  <!-- EN: 128x958mmR cannon shell (APHE) -->
+  <Ammo_128x958mmR_APHE.label>128x958mmR砲彈(穿甲榴彈)</Ammo_128x958mmR_APHE.label>
+  
+  <!-- EN: Large cannon shells, typically used by 128mm heavy flak guns. -->
+  <Ammo_128x958mmR_APHE.description>大型砲彈，通常用於128mm重型高射砲。</Ammo_128x958mmR_APHE.description>
+  
+  <!-- EN: 128x958mmR cannon shell (EMP) -->
+  <Ammo_128x958mmR_EMP.label>128x958mmR砲彈(EMP)</Ammo_128x958mmR_EMP.label>
+  
+  <!-- EN: Large cannon shells, typically used by 128mm heavy flak guns. -->
+  <Ammo_128x958mmR_EMP.description>大型砲彈，通常用於128mm重型高射砲。</Ammo_128x958mmR_EMP.description>
+  
+  <!-- EN: 128x958mmR cannon shell (HE) -->
+  <Ammo_128x958mmR_HE.label>128x958mmR砲彈(高爆彈)</Ammo_128x958mmR_HE.label>
+  
+  <!-- EN: Large cannon shells, typically used by 128mm heavy flak guns. -->
+  <Ammo_128x958mmR_HE.description>大型砲彈，通常用於128mm重型高射砲。</Ammo_128x958mmR_HE.description>
+  
+  <!-- EN: 128x958mmR cannon shell (AP) -->
+  <Bullet_128x958mmR_AP.label>128x958mmR砲彈(穿甲彈)</Bullet_128x958mmR_AP.label>
+  
+  <!-- EN: 128x958mmR cannon shell (AP) -->
+  <Bullet_128x958mmR_AP_HV.label>128x958mmR砲彈(穿甲彈)</Bullet_128x958mmR_AP_HV.label>
+  
+  <!-- EN: 128x958mmR cannon shell (APHE) -->
+  <Bullet_128x958mmR_APHE.label>128x958mmR砲彈(穿甲榴彈)</Bullet_128x958mmR_APHE.label>
+  
+  <!-- EN: 128x958mmR cannon shell (APHE) -->
+  <Bullet_128x958mmR_APHE_HV.label>128x958mmR砲彈(穿甲榴彈)</Bullet_128x958mmR_APHE_HV.label>
+  
+  <!-- EN: 128x958mmR cannon shell (EMP) -->
+  <Bullet_128x958mmR_EMP.label>128x958mmR砲彈(EMP)</Bullet_128x958mmR_EMP.label>
+  
+  <!-- EN: 128x958mmR cannon shell (HE) -->
+  <Bullet_128x958mmR_HE.label>128x958mmR砲彈(高爆彈)</Bullet_128x958mmR_HE.label>
+  
+</LanguageData>

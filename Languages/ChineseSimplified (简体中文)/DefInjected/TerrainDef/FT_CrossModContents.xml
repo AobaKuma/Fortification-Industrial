@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
   <!-- EN: concrete bridge -->
@@ -26,4 +26,19 @@
   <!-- EN: reinforced concrete bridge -->
   <VFEArch_BridgeSteelConcrete.label>钢筋混凝土桥</VFEArch_BridgeSteelConcrete.label>
 
+  <!-- EN: Stone Bridges are structures that can be built on water... -->
+  <VFEArch_BridgeConcrete.description>以混凝土建造、可架设在水面上的桥梁，能加快渡水移动。建成后可承载许多建筑，包括重型建筑与任何墙壁，让沼泽地带的建设更容易。</VFEArch_BridgeConcrete.description>
+  
+  <!-- EN: Steel Bridges are structures that can be built on water... -->
+  <VFEArch_BridgeSteelConcrete.description>以钢筋混凝土建造、可架设在水面上的桥梁，能加快渡水移动。建成后可承载许多建筑，包括重型建筑与任何墙壁，且极为耐用，让沼泽地带的建设更容易。</VFEArch_BridgeSteelConcrete.description>
+  
+  <!-- EN: Random-size stone tiles for a rustical, castle feeling... -->
+  <VFEArch_CobblestoneFloorConcrete.description>大小不一的混凝土砖，营造粗犷的城堡风格。铺设比一般石砖快，也不需要切石技术，但不如磨光款式美观。</VFEArch_CobblestoneFloorConcrete.description>
+  
+  <!-- EN: Fancy, polished stone tiles for an elegant, mansion-like look... -->
+  <VFEArch_PolishedStoneFloorConcrete.description>精致的磨光混凝土地砖，营造优雅的宅邸风格。铺设时间远少于高级石地板，但需要大量材料，外观非常美观。</VFEArch_PolishedStoneFloorConcrete.description>
+  
+  <!-- EN: Large slabs of stone laid at random for that temple-like look... -->
+  <VFEArch_SlabsConcrete.description>随意铺设的大块混凝土石板，营造神殿般的风格。外观美观，但铺设费工，且需要大量材料。</VFEArch_SlabsConcrete.description>
+  
 </LanguageData>

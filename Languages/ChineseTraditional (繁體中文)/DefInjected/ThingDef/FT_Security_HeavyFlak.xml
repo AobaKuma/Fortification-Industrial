@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Heavy flak gun -->
+  <FT_TurretHeavyFlak.label>重型高射砲</FT_TurretHeavyFlak.label>
+  
+  <!-- EN: Old school heavy anti-aircraft gun. Ineffective against modern aviation but still popular in pre-industrial worlds against hardened targets like bunkers and vehicles. -->
+  <FT_TurretHeavyFlak.description>老式重型高射砲。對現代航空器已無效，但在前工業世界中仍常用來對付碉堡與載具等堅固目標。</FT_TurretHeavyFlak.description>
+  
+  <!-- EN: heavy flak gun -->
+  <FT_Gun_TurretHeavyFlak.label>重型高射砲</FT_Gun_TurretHeavyFlak.label>
+  
+  <!-- EN: 128mm Flak cannon on a stationary emplacement. -->
+  <FT_Gun_TurretHeavyFlak.description>安裝在固定砲座上的128mm高射砲。</FT_Gun_TurretHeavyFlak.description>
+  
+  <!-- EN: Heavy anti-tank gun -->
+  <FT_TurretUltraHeavyAT.label>重型反坦克砲</FT_TurretUltraHeavyAT.label>
+  
+  <!-- EN: An old school heavy anti-tank gun. Highly effective against heavily armored targets, it still is one of the more popular choices for rimworlders fighting against mechanized opponents despite being an antiquated design. -->
+  <FT_TurretUltraHeavyAT.description>老式重型反坦克砲。對重裝甲目標極為有效；儘管設計過時，仍是邊緣世界居民對抗機械化敵人的熱門選擇之一。</FT_TurretUltraHeavyAT.description>
+  
+  <!-- EN: Heavy anti-tank gun -->
+  <FT_Gun_TurretUltraHeavyAT.label>重型反坦克砲</FT_Gun_TurretUltraHeavyAT.label>
+  
+  <!-- EN: 128mm anti-tank cannon on a stationary emplacement. -->
+  <FT_Gun_TurretUltraHeavyAT.description>安裝在固定砲座上的128mm反坦克砲。</FT_Gun_TurretUltraHeavyAT.description>
+  
+</LanguageData>

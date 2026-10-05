@@ -1,5 +1,51 @@
 # Changelog
 
+## Unreleased (since release-20260223)
+> All additions and changes since release-20260223
+
+---
+
+### Maintenance
+
+- **1.3-1.5 builds frozen**: the RimWorld 1.3, 1.4 and 1.5 folders are kept as-is and no longer updated. All new work targets 1.6; `About.xml` now says so.
+- **Removed duplicate `FT_EnterBunkerFacility` JobDef**: Fortified Feature Framework already provides `FFF_EnterBunkerFacility` with the same job driver.
+- **Load order**: `DwS.FunctionalAmmunition.Library` added to `loadAfter`, since the CE howitzer and 37mm shells already use its programmable fuzes via `MayRequire`.
+- **Recipe inheritance switched to the framework**: the lathe now uses `Fortified.ModExtension_RecipeInheritance` instead of the VEF extension.
+- Removed the `Source/1.5Backup` project and its reference DLLs from the repository.
+- Removed the obsolete VFE Security `CustomVerb.xml` patch.
+
+---
+
+### Changes & Fixes
+
+#### Turrets (vanilla)
+
+- **Shielded and cement-base cannons gain damage resistances**: anti-air, quad anti-air and anti-tank guns take reduced damage from bullets and explosives and ignore burn, frostbite and similar damage. CE-only damage types were removed from the vanilla list.
+- **Anti-air guns rebalanced**: shorter warmup and cooldown, smaller bursts (8 to 4 shots, quad 16 to 8), higher medium-range and lower long-range accuracy.
+- **Anti-tank gun**: warmup raised from 1 to 2 seconds.
+- **Quad machine gun**: 0.5 s burst warmup added.
+- **Infantry mortar**: aim time cut from 6 to 2 seconds, cooldown raised from 1 to 2 seconds. It can no longer load nuclear or antigrain shells.
+- **Heavy artillery**: multi-barrel mortar warmup raised from 2 to 3 seconds and field howitzer from 3 to 4 seconds. The multi-barrel mortar now shows its 30-second cooldown on the info card.
+- **Base cannon emplacements can be manned** (PR #16, [@Rosnok](https://github.com/Rosnok)).
+- Fixed the field howitzer's turret top being drawn off-center.
+- Displayed stats now match the values the turrets actually use.
+
+#### Combat Extended
+
+- **Medium turrets gain matching damage resistances**, including entries for Odyssey, Milira and Monolyn damage types. The turret heads are no longer drawn off-center.
+- **155mm howitzer**: new antigrain shell. The shells no longer drop casings and fly slightly faster.
+- **Heavy artillery retuned**: multi-barrel mortar range is now 29.9 to 1000 with a longer warmup; heavy gun cooldowns shortened.
+- Multi-barrel mortar no longer uses CE propellant charges.
+- **15cm Nebelwerfer**: spread changed per warhead (HE no extra spread, EMP 1.25, toxic 1.5).
+
+#### Language & Text
+
+- **Chinese translations complete for 1.6**: every 1.6 def string now has Simplified and Traditional Chinese text, including the 128mm heavy flak / heavy anti-tank guns and their shells, airburst / antigrain / nuclear howitzer shells, the remaining Nebelwerfer rockets and the VFE Architect concrete floors.
+- Fixed the 37mm AP-HE recipe translation key and the Simplified Chinese hydrant use label.
+- Spelling and wording fixes in research, artillery and turret descriptions.
+
+---
+
 ## release-20260223 (2026-02-23)
 > All additions and changes since release-20251123
 

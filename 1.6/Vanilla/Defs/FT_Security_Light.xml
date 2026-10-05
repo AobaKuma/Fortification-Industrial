@@ -244,10 +244,30 @@
                 <burstSpeedRange>(1,8)</burstSpeedRange>
                 <burstOffsetRange>(7,11)</burstOffsetRange>
             </li>
+            <li Class="Fortified.CompProperties_AmmoSwitch">
+                <includeDefaultAmmo>false</includeDefaultAmmo>
+                <defaultIndex>0</defaultIndex>
+                <switchCooldown>120</switchCooldown>
+                <soundSwitch>Artillery_ShellLoaded</soundSwitch>
+                <ammos>
+                    <li>
+                        <label>armor-piercing</label>
+                        <description>Solid shot with a small bursting charge. Best against armor and machines.</description>
+                        <projectileDef>FT_Bullet_ATShell</projectileDef>
+                        <iconPath>UI/Ammoswitch/Shell_Sabot</iconPath>
+                    </li>
+                    <li>
+                        <label>high-explosive</label>
+                        <description>Thin-walled shell with a large charge. Little penetration, but the blast catches groups of infantry.</description>
+                        <projectileDef>FT_Bullet_ATShell_HE</projectileDef>
+                        <iconPath>UI/Ammoswitch/Shell_HE</iconPath>
+                    </li>
+                </ammos>
+            </li>
         </comps>
         <verbs>
             <li>
-                <verbClass>Verb_Shoot</verbClass>
+                <verbClass>Fortified.Verb_Shoot_AmmoSwitch</verbClass>
                 <defaultProjectile>FT_Bullet_ATShell</defaultProjectile>
                 <warmupTime>1</warmupTime>
                 <minRange>3.9</minRange>

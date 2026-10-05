@@ -80,9 +80,31 @@
             <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
             <Mass>120</Mass>
         </statBases>
+        <comps>
+            <li Class="Fortified.CompProperties_AmmoSwitch">
+                <includeDefaultAmmo>false</includeDefaultAmmo>
+                <defaultIndex>0</defaultIndex>
+                <switchCooldown>90</switchCooldown>
+                <soundSwitch>Artillery_ShellLoaded</soundSwitch>
+                <ammos>
+                    <li>
+                        <label>armor-piercing tracer</label>
+                        <description>Uranium-cored tracer rounds for direct hits.</description>
+                        <projectileDef>FT_Bullet_AAShell</projectileDef>
+                        <iconPath>UI/Ammoswitch/Shell_Sabot</iconPath>
+                    </li>
+                    <li>
+                        <label>airburst</label>
+                        <description>Time-fused rounds that burst just short of the target and spray fragments over an area. Weak against armor.</description>
+                        <projectileDef>FT_Bullet_AAShell_Airburst</projectileDef>
+                        <iconPath>UI/Ammoswitch/Shell_AirBurst</iconPath>
+                    </li>
+                </ammos>
+            </li>
+        </comps>
         <verbs>
             <li>
-                <verbClass>Verb_Shoot</verbClass>
+                <verbClass>Fortified.Verb_Shoot_AmmoSwitch</verbClass>
                 <defaultProjectile>FT_Bullet_AAShell</defaultProjectile>
                 <requireLineOfSight>true</requireLineOfSight>
                 <isMortar>false</isMortar>
@@ -173,9 +195,31 @@
             <AccuracyLong>0.8</AccuracyLong>
             <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
         </statBases>
+        <comps>
+            <li Class="Fortified.CompProperties_AmmoSwitch">
+                <includeDefaultAmmo>false</includeDefaultAmmo>
+                <defaultIndex>0</defaultIndex>
+                <switchCooldown>90</switchCooldown>
+                <soundSwitch>Artillery_ShellLoaded</soundSwitch>
+                <ammos>
+                    <li>
+                        <label>airburst</label>
+                        <description>Time-fused rounds that burst just short of the target and spray fragments over an area. Weak against armor.</description>
+                        <projectileDef>FT_Bullet_AAShell_Airburst</projectileDef>
+                        <iconPath>UI/Ammoswitch/Shell_AirBurst</iconPath>
+                    </li>
+                    <li>
+                        <label>armor-piercing tracer</label>
+                        <description>Uranium-cored tracer rounds for direct hits.</description>
+                        <projectileDef>FT_Bullet_AAShell</projectileDef>
+                        <iconPath>UI/Ammoswitch/Shell_Sabot</iconPath>
+                    </li>
+                </ammos>
+            </li>
+        </comps>
         <verbs>
             <li>
-                <verbClass>Verb_Shoot</verbClass>
+                <verbClass>Fortified.Verb_Shoot_AmmoSwitch</verbClass>
                 <defaultProjectile>FT_Bullet_AAShell</defaultProjectile>
                 <requireLineOfSight>true</requireLineOfSight>
                 <isMortar>false</isMortar>
@@ -299,9 +343,31 @@
             <RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
             <Mass>120</Mass>
         </statBases>
+        <comps>
+            <li Class="Fortified.CompProperties_AmmoSwitch">
+                <includeDefaultAmmo>false</includeDefaultAmmo>
+                <defaultIndex>0</defaultIndex>
+                <switchCooldown>120</switchCooldown>
+                <soundSwitch>Artillery_ShellLoaded</soundSwitch>
+                <ammos>
+                    <li>
+                        <label>armor-piercing</label>
+                        <description>Solid shot with a small bursting charge. Best against armor and machines.</description>
+                        <projectileDef>FT_Bullet_ATShell</projectileDef>
+                        <iconPath>UI/Ammoswitch/Shell_Sabot</iconPath>
+                    </li>
+                    <li>
+                        <label>high-explosive</label>
+                        <description>Thin-walled shell with a large charge. Little penetration, but the blast catches groups of infantry.</description>
+                        <projectileDef>FT_Bullet_ATShell_HE</projectileDef>
+                        <iconPath>UI/Ammoswitch/Shell_HE</iconPath>
+                    </li>
+                </ammos>
+            </li>
+        </comps>
         <verbs>
             <li>
-                <verbClass>Verb_Shoot</verbClass>
+                <verbClass>Fortified.Verb_Shoot_AmmoSwitch</verbClass>
                 <defaultProjectile>FT_Bullet_ATShell</defaultProjectile>
                 <requireLineOfSight>true</requireLineOfSight>
                 <isMortar>true</isMortar>
@@ -346,6 +412,66 @@
                 <explosiveDamageType>Bomb</explosiveDamageType>
                 <armorPenetrationBase>0.5</armorPenetrationBase>
                 <damageAmountBase>50</damageAmountBase>
+                <explodeOnDestroyed>true</explodeOnDestroyed>
+                <explodeOnKilled>true</explodeOnKilled>
+                <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+            </li>
+        </comps>
+    </ThingDef>
+    <!-- Ammo-switch alternatives (vanilla only; CE uses real ammo). -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>FT_Bullet_ATShell_HE</defName>
+        <label>high-explosive shell</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>2</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>20</damageAmountBase>
+            <armorPenetrationBase>0.2</armorPenetrationBase>
+            <stoppingPower>2</stoppingPower>
+            <speed>90</speed>
+            <shadowSize>0.6</shadowSize>
+            <screenShakeFactor>0</screenShakeFactor>
+        </projectile>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>2.4</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <armorPenetrationBase>0.1</armorPenetrationBase>
+                <damageAmountBase>35</damageAmountBase>
+                <explodeOnDestroyed>true</explodeOnDestroyed>
+                <explodeOnKilled>true</explodeOnKilled>
+                <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>FT_Bullet_AAShell_Airburst</defName>
+        <label>airburst shell</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>8</damageAmountBase>
+            <armorPenetrationBase>0.15</armorPenetrationBase>
+            <stoppingPower>2</stoppingPower>
+            <speed>93</speed>
+            <shadowSize>0.6</shadowSize>
+            <screenShakeFactor>0</screenShakeFactor>
+        </projectile>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>1.5</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <armorPenetrationBase>0.1</armorPenetrationBase>
+                <damageAmountBase>10</damageAmountBase>
                 <explodeOnDestroyed>true</explodeOnDestroyed>
                 <explodeOnKilled>true</explodeOnKilled>
                 <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>

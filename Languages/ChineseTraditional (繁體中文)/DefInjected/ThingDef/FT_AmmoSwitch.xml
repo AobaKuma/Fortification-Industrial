@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: armor-piercing -->
+  <FT_Gun_TurretAT.comps.CompAmmoSwitch.ammos.0.label>穿甲彈</FT_Gun_TurretAT.comps.CompAmmoSwitch.ammos.0.label>
+  <!-- EN: Solid shot with a small bursting charge. Best against armor and machines. -->
+  <FT_Gun_TurretAT.comps.CompAmmoSwitch.ammos.0.description>帶少量炸藥的實心彈，最適合對付裝甲與機械體。</FT_Gun_TurretAT.comps.CompAmmoSwitch.ammos.0.description>
+  <!-- EN: high-explosive -->
+  <FT_Gun_TurretAT.comps.CompAmmoSwitch.ammos.1.label>高爆彈</FT_Gun_TurretAT.comps.CompAmmoSwitch.ammos.1.label>
+  <!-- EN: Thin-walled shell with a large charge. Little penetration, but the blast catches groups of infantry. -->
+  <FT_Gun_TurretAT.comps.CompAmmoSwitch.ammos.1.description>薄殼大裝藥的砲彈。穿透力低，但爆炸能波及成群的步兵。</FT_Gun_TurretAT.comps.CompAmmoSwitch.ammos.1.description>
+  
+  <!-- EN: armor-piercing -->
+  <FT_Gun_Recoilless.comps.CompAmmoSwitch.ammos.0.label>穿甲彈</FT_Gun_Recoilless.comps.CompAmmoSwitch.ammos.0.label>
+  <!-- EN: Solid shot with a small bursting charge. Best against armor and machines. -->
+  <FT_Gun_Recoilless.comps.CompAmmoSwitch.ammos.0.description>帶少量炸藥的實心彈，最適合對付裝甲與機械體。</FT_Gun_Recoilless.comps.CompAmmoSwitch.ammos.0.description>
+  <!-- EN: high-explosive -->
+  <FT_Gun_Recoilless.comps.CompAmmoSwitch.ammos.1.label>高爆彈</FT_Gun_Recoilless.comps.CompAmmoSwitch.ammos.1.label>
+  <!-- EN: Thin-walled shell with a large charge. Little penetration, but the blast catches groups of infantry. -->
+  <FT_Gun_Recoilless.comps.CompAmmoSwitch.ammos.1.description>薄殼大裝藥的砲彈。穿透力低，但爆炸能波及成群的步兵。</FT_Gun_Recoilless.comps.CompAmmoSwitch.ammos.1.description>
+  
+  <!-- EN: armor-piercing tracer -->
+  <FT_Gun_TurretAA.comps.CompAmmoSwitch.ammos.0.label>穿甲曳光彈</FT_Gun_TurretAA.comps.CompAmmoSwitch.ammos.0.label>
+  <!-- EN: Uranium-cored tracer rounds for direct hits. -->
+  <FT_Gun_TurretAA.comps.CompAmmoSwitch.ammos.0.description>鈾芯曳光彈，用於直接命中。</FT_Gun_TurretAA.comps.CompAmmoSwitch.ammos.0.description>
+  <!-- EN: airburst -->
+  <FT_Gun_TurretAA.comps.CompAmmoSwitch.ammos.1.label>空爆彈</FT_Gun_TurretAA.comps.CompAmmoSwitch.ammos.1.label>
+  <!-- EN: Time-fused rounds that burst just short of the target and spray fragments over an area. Weak against armor. -->
+  <FT_Gun_TurretAA.comps.CompAmmoSwitch.ammos.1.description>定時引信彈，在目標前方炸開，將破片灑向一片區域。對裝甲效果差。</FT_Gun_TurretAA.comps.CompAmmoSwitch.ammos.1.description>
+  
+  <!-- EN: airburst -->
+  <FT_Gun_TurretQuadAA.comps.CompAmmoSwitch.ammos.0.label>空爆彈</FT_Gun_TurretQuadAA.comps.CompAmmoSwitch.ammos.0.label>
+  <!-- EN: Time-fused rounds that burst just short of the target and spray fragments over an area. Weak against armor. -->
+  <FT_Gun_TurretQuadAA.comps.CompAmmoSwitch.ammos.0.description>定時引信彈，在目標前方炸開，將破片灑向一片區域。對裝甲效果差。</FT_Gun_TurretQuadAA.comps.CompAmmoSwitch.ammos.0.description>
+  <!-- EN: armor-piercing tracer -->
+  <FT_Gun_TurretQuadAA.comps.CompAmmoSwitch.ammos.1.label>穿甲曳光彈</FT_Gun_TurretQuadAA.comps.CompAmmoSwitch.ammos.1.label>
+  <!-- EN: Uranium-cored tracer rounds for direct hits. -->
+  <FT_Gun_TurretQuadAA.comps.CompAmmoSwitch.ammos.1.description>鈾芯曳光彈，用於直接命中。</FT_Gun_TurretQuadAA.comps.CompAmmoSwitch.ammos.1.description>
+  
+  <!-- EN: armor-piercing -->
+  <FT_Gun_TurretEmpero.comps.CompAmmoSwitch.ammos.0.label>穿甲彈</FT_Gun_TurretEmpero.comps.CompAmmoSwitch.ammos.0.label>
+  <!-- EN: Heavy solid shot that punches through the thickest armor. Small blast. -->
+  <FT_Gun_TurretEmpero.comps.CompAmmoSwitch.ammos.0.description>能貫穿最厚裝甲的重型實心彈，爆炸範圍小。</FT_Gun_TurretEmpero.comps.CompAmmoSwitch.ammos.0.description>
+  <!-- EN: high-explosive -->
+  <FT_Gun_TurretEmpero.comps.CompAmmoSwitch.ammos.1.label>高爆彈</FT_Gun_TurretEmpero.comps.CompAmmoSwitch.ammos.1.label>
+  <!-- EN: Heavy high-explosive shell. Low penetration, wide concussive blast. -->
+  <FT_Gun_TurretEmpero.comps.CompAmmoSwitch.ammos.1.description>重型高爆彈。穿透力低，震盪爆炸範圍大。</FT_Gun_TurretEmpero.comps.CompAmmoSwitch.ammos.1.description>
+  <!-- EN: smoke -->
+  <FT_Gun_TurretEmpero.comps.CompAmmoSwitch.ammos.2.label>煙霧彈</FT_Gun_TurretEmpero.comps.CompAmmoSwitch.ammos.2.label>
+  <!-- EN: Lays a smoke screen at the target. Does no damage. -->
+  <FT_Gun_TurretEmpero.comps.CompAmmoSwitch.ammos.2.description>在目標處施放煙幕，不造成傷害。</FT_Gun_TurretEmpero.comps.CompAmmoSwitch.ammos.2.description>
+  
+  <!-- EN: high-explosive shell -->
+  <FT_Bullet_ATShell_HE.label>高爆砲彈</FT_Bullet_ATShell_HE.label>
+  
+  <!-- EN: airburst shell -->
+  <FT_Bullet_AAShell_Airburst.label>空爆砲彈</FT_Bullet_AAShell_Airburst.label>
+  
+  <!-- EN: heavy high-explosive shell -->
+  <FT_Bullet_HeavyShell_HE.label>重型高爆砲彈</FT_Bullet_HeavyShell_HE.label>
+  
+</LanguageData>

@@ -434,10 +434,36 @@
                 <burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
                 <burstOffsetRange>(2,6)</burstOffsetRange>
             </li>
+            <li Class="Fortified.CompProperties_AmmoSwitch">
+                <includeDefaultAmmo>false</includeDefaultAmmo>
+                <defaultIndex>0</defaultIndex>
+                <switchCooldown>180</switchCooldown>
+                <soundSwitch>Artillery_ShellLoaded</soundSwitch>
+                <ammos>
+                    <li>
+                        <label>armor-piercing</label>
+                        <description>Heavy solid shot that punches through the thickest armor. Small blast.</description>
+                        <projectileDef>FT_Bullet_HeavyFlakShell</projectileDef>
+                        <iconPath>UI/Ammoswitch/Shell_Sabot</iconPath>
+                    </li>
+                    <li>
+                        <label>high-explosive</label>
+                        <description>Heavy high-explosive shell. Low penetration, wide concussive blast.</description>
+                        <projectileDef>FT_Bullet_HeavyShell_HE</projectileDef>
+                        <iconPath>UI/Ammoswitch/Shell_HE</iconPath>
+                    </li>
+                    <li>
+                        <label>smoke</label>
+                        <description>Lays a smoke screen at the target. Does no damage.</description>
+                        <projectileDef>Bullet_Shell_Smoke</projectileDef>
+                        <iconPath>UI/Ammoswitch/Shell_Smoke</iconPath>
+                    </li>
+                </ammos>
+            </li>
         </comps>
         <verbs>
             <li>
-                <verbClass>Verb_Shoot</verbClass>
+                <verbClass>Fortified.Verb_Shoot_AmmoSwitch</verbClass>
                 <defaultProjectile>FT_Bullet_HeavyFlakShell</defaultProjectile>
                 <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
                 <warmupTime>5.0</warmupTime>
@@ -475,14 +501,43 @@
         </projectile>
         <comps>
             <li Class="CompProperties_Explosive">
-                <explosiveRadius>4.4</explosiveRadius>
+                <explosiveRadius>2.4</explosiveRadius>
                 <explosiveDamageType>FT_Bomb_Concussive</explosiveDamageType>
                 <armorPenetrationBase>0.5</armorPenetrationBase>
-                <damageAmountBase>75</damageAmountBase>
+                <damageAmountBase>50</damageAmountBase>
                 <explodeOnDestroyed>true</explodeOnDestroyed>
                 <explodeOnKilled>true</explodeOnKilled>
                 <applyDamageToExplosionCellsNeighbors>false</applyDamageToExplosionCellsNeighbors>
             </li>
         </comps>
     </ThingDef>
+    <ThingDef ParentName="BaseBullet">
+        <defName>FT_Bullet_HeavyShell_HE</defName>
+        <label>heavy high-explosive shell</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>2.5</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>40</damageAmountBase>
+            <armorPenetrationBase>0.3</armorPenetrationBase>
+            <stoppingPower>4</stoppingPower>
+            <speed>80</speed>
+            <shadowSize>0.6</shadowSize>
+        </projectile>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>4.9</explosiveRadius>
+                <explosiveDamageType>FT_Bomb_Concussive</explosiveDamageType>
+                <armorPenetrationBase>0.2</armorPenetrationBase>
+                <damageAmountBase>90</damageAmountBase>
+                <explodeOnDestroyed>true</explodeOnDestroyed>
+                <explodeOnKilled>true</explodeOnKilled>
+                <applyDamageToExplosionCellsNeighbors>false</applyDamageToExplosionCellsNeighbors>
+            </li>
+        </comps>
+    </ThingDef>
+
 </Defs>

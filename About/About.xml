@@ -7,6 +7,7 @@
 		<li>1.4</li>
 		<li>1.5</li>
 		<li>1.6</li>
+		<li>1.7</li>
 	</supportedVersions>
 	<packageId>Aoba.Fortress.Industrial</packageId>
 	<description>Fortifications have been needed since the dawn of time, it is no different within the Rim, securing a settlement is paramount to its survival.</description>
@@ -59,5 +60,19 @@
 				<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3498575851</steamWorkshopUrl>
 			</li>
 		</v1.6>
+		<v1.7>
+			<li>
+				<packageId>brrainz.harmony</packageId>
+				<displayName>Harmony</displayName>
+				<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+				<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+			</li>
+			<li>
+				<packageId>AOBA.Framework</packageId>
+				<displayName>Fortified Feature Framework</displayName>
+				<downloadUrl>https://github.com/AobaKuma/Fortified-Framework</downloadUrl>
+				<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3498575851</steamWorkshopUrl>
+			</li>
+		</v1.7>
 	</modDependenciesByVersion>
 </ModMetaData>

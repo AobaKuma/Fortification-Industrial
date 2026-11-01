@@ -390,10 +390,6 @@
 				<multiplier>0.75</multiplier>
 			</li>
 			<li MayRequire="ASEL.MonolynRace">
-				<damageDef>PurificationBurn</damageDef>
-				<multiplier>0.75</multiplier>
-			</li>
-			<li MayRequire="ASEL.MonolynRace">
 				<damageDef>MNVaporize</damageDef>
 				<multiplier>0.5</multiplier>
 			</li>
